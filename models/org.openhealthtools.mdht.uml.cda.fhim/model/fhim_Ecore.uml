@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Default="http:///schemas/Default/1" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_qQyD8jxVEd6JwqSGecoePg" name="fhim">
+    <packageImport xmi:id="_-xRsgDxVEd6JwqSGecoePg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wDMM0GEHEd6bFO5yxRh3Nw" name="MyDocument">
+      <ownedRule xmi:id="_kAJ3ANYHEd-W9eZTvpn_Fg" name="ContinuityOfCareDocumentTemplateId" constrainedElement="_wDMM0GEHEd6bFO5yxRh3Nw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAKeENYHEd-W9eZTvpn_Fg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '1.2.3.4')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_kAt3sNYHEd-W9eZTvpn_Fg" name="MyDocumentMySection" constrainedElement="_wDMM0GEHEd6bFO5yxRh3Nw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAuewNYHEd-W9eZTvpn_Fg">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(fhim::MySection))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_ZyMtMKX2Ed6JRdOhEffuGA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_Ze7UsGESEd69D7zx7EkLMA"/>
+      </generalization>
+      <ownedOperation xmi:id="_kAuewdYHEd-W9eZTvpn_Fg" name="getMySection" bodyCondition="_kAvF0tYHEd-W9eZTvpn_Fg">
+        <ownedRule xmi:id="_kAvF0tYHEd-W9eZTvpn_Fg" name="body" constrainedElement="_kAuewdYHEd-W9eZTvpn_Fg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAvF09YHEd-W9eZTvpn_Fg">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(fhim::MySection))->asSequence()->first().oclAsType(fhim::MySection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_kAvF0NYHEd-W9eZTvpn_Fg" type="_Ucv9baX0Ed6JRdOhEffuGA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kAvF0dYHEd-W9eZTvpn_Fg" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Ucv9baX0Ed6JRdOhEffuGA" name="MySection">
+      <ownedComment xmi:id="_Ucv9bqX0Ed6JRdOhEffuGA" annotatedElement="_Ucv9baX0Ed6JRdOhEffuGA">
+        <body>&lt;p align=&quot;left&quot;>&#xD;
+    &lt;font size=&quot;2&quot;>Represents the specific reason for which the summarization was generated, such as in response to a&#xD;
+    request.&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font size=&quot;2&quot;>The general use case does not require a purpose. Purpose should be utilized when the CCD has a specific&#xD;
+    purpose such as a transfer, referral, or patient request.&lt;/font>&#xD;
+&lt;/p></body>
+      </ownedComment>
+      <ownedRule xmi:id="_kAUPENYHEd-W9eZTvpn_Fg" name="MySectionTemplateId" constrainedElement="_Ucv9baX0Ed6JRdOhEffuGA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAU2INYHEd-W9eZTvpn_Fg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '1.2.3.4.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_kArbcNYHEd-W9eZTvpn_Fg" name="MySectionCode" constrainedElement="_Ucv9baX0Ed6JRdOhEffuGA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_kArbcdYHEd-W9eZTvpn_Fg">
+          <language>OCL</language>
+          <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (&#xA;value.code = '48764-5' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_kAspkNYHEd-W9eZTvpn_Fg" name="MySectionTitle" constrainedElement="_Ucv9baX0Ed6JRdOhEffuGA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAtQoNYHEd-W9eZTvpn_Fg">
+          <language>OCL</language>
+          <body>not self.title.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_kA_kgNYHEd-W9eZTvpn_Fg" name="MySectionMyObservation" constrainedElement="_Ucv9baX0Ed6JRdOhEffuGA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_kA_kgdYHEd-W9eZTvpn_Fg">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(fhim::MyObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_Ucv9b6X0Ed6JRdOhEffuGA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedOperation xmi:id="_kBAyoNYHEd-W9eZTvpn_Fg" name="getMyObservation" bodyCondition="_kBBZsNYHEd-W9eZTvpn_Fg">
+        <ownedRule xmi:id="_kBBZsNYHEd-W9eZTvpn_Fg" name="body" constrainedElement="_kBAyoNYHEd-W9eZTvpn_Fg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBBZsdYHEd-W9eZTvpn_Fg">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(fhim::MyObservation))->asSequence()->first().oclAsType(fhim::MyObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_kBAyodYHEd-W9eZTvpn_Fg" type="_BC-8wNX3Ed-6XOd0tJeDPw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kBAyotYHEd-W9eZTvpn_Fg" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BC-8wNX3Ed-6XOd0tJeDPw" name="MyObservation">
+      <ownedRule xmi:id="_kAvs4NYHEd-W9eZTvpn_Fg" name="MyObservationTemplateId" constrainedElement="_BC-8wNX3Ed-6XOd0tJeDPw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAvs4dYHEd-W9eZTvpn_Fg">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '5.6.7.8')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_BExFcNX3Ed-6XOd0tJeDPw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
+      <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_SMdMMJmzEd6BO7rW3XxHIA">
+      <eAnnotations xmi:id="_SMdzQJmzEd6BO7rW3XxHIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_j85usNYHEd-W9eZTvpn_Fg">
+      <eAnnotations xmi:id="_j85usdYHEd-W9eZTvpn_Fg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CDATemplate xmi:id="_1dDy4JmOEd6T5tg3G_f09Q" message="FHIM My Document SHALL contain the template identifier 1.2.3.4" base_Class="_wDMM0GEHEd6bFO5yxRh3Nw" templateId="1.2.3.4"/>
+  <CDA:CodegenSupport xmi:id="_THvvwJmzEd6BO7rW3XxHIA" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="fhim" nsURI="http://www.openhealthtools.org/mdht/uml/cda/fhim" packageName="fhim" prefix="FHIM" base_Namespace="_qQyD8jxVEd6JwqSGecoePg"/>
+  <CDA:CDATemplate xmi:id="_Uc5uYKX0Ed6JRdOhEffuGA" message="FHIM My Activity SHALL contain the template identifier 1.2.3.4.2" templateId="1.2.3.4.2"/>
+  <Default:Documentation xmi:id="_Uc5uYaX0Ed6JRdOhEffuGA" base_Comment="_Ucv9YaX0Ed6JRdOhEffuGA"/>
+  <CDA:PropertyValidation xmi:id="_Uc5uZKX0Ed6JRdOhEffuGA" message="FHIM My Activity SHALL contain [1..1] @classCode = &quot;ACT&quot;"/>
+  <CDA:PropertyValidation xmi:id="_Uc5uZaX0Ed6JRdOhEffuGA" message="FHIM My Activity SHALL contain [1..1] @moodCode = &quot;EVN&quot;"/>
+  <CDA:CDATemplate xmi:id="_Uc5uaaX0Ed6JRdOhEffuGA" message="FHIM My Section SHALL contain the template identifier 1.2.3.4.1" base_Class="_Ucv9baX0Ed6JRdOhEffuGA" templateId="1.2.3.4.1"/>
+  <Default:Documentation xmi:id="_Uc5uaqX0Ed6JRdOhEffuGA" base_Comment="_Ucv9bqX0Ed6JRdOhEffuGA"/>
+  <CDA:Entry xmi:id="_auV_cK0UEd6_kOk8Ilc2Dw" message="FHIM My Section SHOULD contain [1..*] entry such that it, SHALL contain [1..1] @typeCode=&quot;COMP&quot; COMP (component), SHALL contain [1..1] My Activity (templateId: 1.2.3.4.2)" severity="WARNING"/>
+  <CDA:CodeSystemConstraint xmi:id="_68FaADOiEd-4N_xqnt9Yew" code="23745001" displayName="Documentation procedure" message="FHIM My Activity SHALL contain [1..1] code/@code = &quot;23745001&quot; Documentation procedure (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT STATIC 20080731)">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_68JEYDOiEd-4N_xqnt9Yew" code="completed" message="FHIM My Activity SHALL contain [1..1] statusCode/@code = &quot;completed&quot;  (CodeSystem: 2.16.840.1.113883.5.14 ActStatus STATIC V3NE08)">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_ZOKuYNX3Ed-6XOd0tJeDPw" base_Class="_BC-8wNX3Ed-6XOd0tJeDPw" templateId="5.6.7.8" assigningAuthorityName="ONC"/>
+  <Ecore:EPackage xmi:id="_j-ZjgNYHEd-W9eZTvpn_Fg" base_Package="_qQyD8jxVEd6JwqSGecoePg" packageName="fhim" nsPrefix="fhim" nsURI="http://www.openhealthtools.org/mdht/uml/cda/fhim" basePackage="org.openhealthtools.mdht.uml.cda" prefix="FHIM"/>
+  <CDA:ConformsTo xmi:id="_j-2PcNYHEd-W9eZTvpn_Fg" base_Generalization="_ZyMtMKX2Ed6JRdOhEffuGA"/>
+  <Ecore:EClass xmi:id="_kALFINYHEd-W9eZTvpn_Fg" base_Class="_wDMM0GEHEd6bFO5yxRh3Nw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.2.3.4' constraints.validation.error='ContinuityOfCareDocumentTemplateId MyDocumentMySection'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_kAU2IdYHEd-W9eZTvpn_Fg" base_Class="_Ucv9baX0Ed6JRdOhEffuGA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='1.2.3.4.1' code.displayName='Summary purpose' constraints.validation.error='MySectionTemplateId MySectionCode MySectionTitle' code.codeSystemName='LOINC' constraints.validation.warning='MySectionMyObservation' code.code='48764-5'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_kAwT8NYHEd-W9eZTvpn_Fg" base_Class="_BC-8wNX3Ed-6XOd0tJeDPw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='5.6.7.8' constraints.validation.error='MyObservationTemplateId'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>

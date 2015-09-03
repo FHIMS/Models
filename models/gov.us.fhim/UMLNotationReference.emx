@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<!--Rational Software Architect 9.1.2-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:Standard="http://www.eclipse.org/uml2/schemas/Standard/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http://www.eclipse.org/uml2/schemas/Standard/1 pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w">
+  <uml:Model xmi:id="_YA8EEGHDEeK73_u7KyErow" name="UMLNotationReference">
+    <eAnnotations xmi:id="_YA8EEWHDEeK73_u7KyErow" source="uml2.diagrams"/>
+    <packageImport xmi:id="_YA8EE2HDEeK73_u7KyErow">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_oTsyIpAyEd-vzr_-PBHu3w" name="A. UML Notation Reference">
+      <eAnnotations xmi:id="_oTsyI5AyEd-vzr_-PBHu3w" source="uml2.diagrams"/>
+      <ownedComment xmi:id="_oTsyJJAyEd-vzr_-PBHu3w" annotatedElement="_oTsyIpAyEd-vzr_-PBHu3w">
+        <body>The following document makes use of class diagrams and use case diagrams to convey               the scope of information as well as the structure and semantics of this domain               information model. Therefore this section provides a convenient guide to how UML is               applied throughout this domain and across the Federal Health Information Model             (FHIM).</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Package" xmi:id="_oTsyJZAyEd-vzr_-PBHu3w" name="A.1. HL7 Version 3 RIM Considerations">
+        <eAnnotations xmi:id="_oTsyJpAyEd-vzr_-PBHu3w" source="uml2.diagrams"/>
+        <ownedComment xmi:id="_oTsyJ5AyEd-vzr_-PBHu3w" annotatedElement="_oTsyJZAyEd-vzr_-PBHu3w">
+          <body>An information model is a structured specification of the information within a                 specific domain of interest. It expresses the classes of information required and                 the properties of those classes, including attributes, relationships, constraints,                 and states. In HL7, the scope of a domain of interest ranges from the domain of the                 entire system of health services to the specific context of a set of information                 exchanges to meet a particular identified business purpose. The FHIM model relies on                 the following three HL7 Version 3 (V3) standards: the Reference Information Model                 (RIM), abstract data types and vocabulary specifications. The HL7 RIM is a critical                 component and is the root of all information models and structures developed as part                 of the V3 development process. The RIM consists of classes assigned to one or more                 subject area packages. Attributes, Relationships, and State Machines are associated                 with the classes. The following is a summary of these conventions based on the                 application of HL7 Version 3 design principles to the development of FHIM                 information domains. Note that HL7 RIM classes are color coded according their main                 class type or stereotype.</body>
+        </ownedComment>
+        <ownedRule xmi:id="_97LvEKAkEd-q0KkyZZn6tA" name="8. Act-Role-Entity Pattern" constrainedElement="_oTsyLpAyEd-vzr_-PBHu3w">
+          <ownedComment xmi:id="_-j3fsKAkEd-q0KkyZZn6tA" annotatedElement="_97LvEKAkEd-q0KkyZZn6tA">
+            <body>The &amp;amp;apos; back-bone&amp;amp;apos; of the RIM is used to express the clinical and administrative                   content of health care, and is comprised of six classes:   Act   which represents                   the actions that are executed and must be documented as health care is provided.                   Act classes are depicted in pale Red on the UML diagrams;   Participation   which                   expresses the context for an act in terms such as who performed it, for whom it                   was done, where it was done, etc. Participation classes are depicted in Blue on                   UML diagrams;   Entity   which represents the physical things and beings that are                   of interest to, and take part in health care. Entity classes are depicted in Green                   on the UML diagrams;   Role   which establishes the roles that entities play as                   they participate in health care acts. Role classes are depicted in Yellow on the                   UML diagrams;   ActRelationship   which represents the binding of one act to                   another, such as the relationship between an order for an observation and the                   observation event as it occurs. ActRelationships may only appear as stereotyped                   associations between classes; and   RoleLink   which represents relationships                   between individual roles. RoleLink classes are depicted in pale Yellow/Green on                   UML diagrams. Three of these classes   Act, Entity and Role   are further                   represented by a set of specialized classes or sub-types.</body>
+          </ownedComment>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_97LvEaAkEd-q0KkyZZn6tA"/>
+        </ownedRule>
+        <ownedRule xmi:id="_oTsyKJAyEd-vzr_-PBHu3w" name="5. Stereotypes  based on HL7 V3 RIM Classes" constrainedElement="_oTsyLpAyEd-vzr_-PBHu3w">
+          <ownedComment xmi:id="_oTsyKZAyEd-vzr_-PBHu3w" annotatedElement="_oTsyKJAyEd-vzr_-PBHu3w">
+            <body> A stereotype is one of three types of extensibility mechanisms in the Unified                   Modeling Language (UML). They allow designers to extend the vocabulary of UML in                   order to create new model elements, derived from existing ones, but that have                   specific properties that are suitable for a particular problem domain or otherwise                   specialized usage. The nomenclature is derived from the original meaning of                   stereotype, used in printing. For example, when modeling a network we could                   symbols for representing routers and hubs. By using stereotyped nodes you can make                   these things appear as primitive building blocks. Graphically, a stereotype is                   rendered as a name enclosed by guillemets (     ) and placed above the name of                   another element. In addition or alternatively it may be indicated by a specific                   icon. The icon image may even replace the entire UML symbol. We will use the                    guillemets  notation in this publication.</body>
+          </ownedComment>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oTsyKpAyEd-vzr_-PBHu3w"/>
+        </ownedRule>
+        <ownedRule xmi:id="_oTsyK5AyEd-vzr_-PBHu3w" name="6. Terminology Binding" constrainedElement="_oTsyJZAyEd-vzr_-PBHu3w">
+          <ownedComment xmi:id="_oTsyLJAyEd-vzr_-PBHu3w" annotatedElement="_oTsyK5AyEd-vzr_-PBHu3w">
+            <body>The HL7 vocabulary model allows a coded attribute to be associated with either                   a coded concept, a coding system or a coding system and a value set consisting of                   allowable coded concepts. An important aspect of both the FHIM and HL7 models is                   that they explicitly link &amp;amp;apos; coded concepts&amp;amp;apos; to their corresponding vocabularies.                   This is necessary for two reasons: first because external terminologies (such as                   SNOMED) already exist and must be referenced by the model; and second, because to                   model those terminologies in UML would be both redundant and overly complex. It is                   far more efficient to simply link to the existing terminology. The structural                   model, expressed in UML, and the terminology are two sides of the same coin; one                   cannot fully describe the relevant concepts without having both models. Both                   models must be designed to complement each other.</body>
+          </ownedComment>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oTsyLZAyEd-vzr_-PBHu3w"/>
+        </ownedRule>
+        <ownedRule xmi:id="_5XYpMKAjEd-q0KkyZZn6tA" name="1. Class" constrainedElement="_oTsyJZAyEd-vzr_-PBHu3w">
+          <ownedComment xmi:id="_7WfaMKAjEd-q0KkyZZn6tA" annotatedElement="_5XYpMKAjEd-q0KkyZZn6tA">
+            <body>Each class within the RIM represents information about a concept that is                   documented and communicated within the health care environment. A class is an                   abstraction of things or concepts that are subjects of interest in a given                   application domain. Classes are the people, places, roles, things, and events                   about which information is kept. Classes have a name, description, sets of                   attributes, relationships, and states. The instances of classes are called                   objects. While classes represent categories of concepts, people and things,                   objects represent the individual things themselves. Classes relate to other                   classes in various ways. Such relationships are of two types: Generalization and                   Association.</body>
+          </ownedComment>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_5XiaMKAjEd-q0KkyZZn6tA"/>
+        </ownedRule>
+        <ownedRule xmi:id="__w360KAjEd-q0KkyZZn6tA" name="2. Generalization" constrainedElement="_oTsyJZAyEd-vzr_-PBHu3w">
+          <ownedComment xmi:id="_BHAAQKAkEd-q0KkyZZn6tA" annotatedElement="__w360KAjEd-q0KkyZZn6tA">
+            <body>A generalization relationship is a connection between classes (as opposed to                   objects). It is an association between two classes (a superclass and a subclass)                   in which the subclass is derived from the superclass (i.e., the superclass                   generalizes the subclass and the subclass is a specialization of the superclass).                   The subclass inherits all properties from the superclass, including attributes,                   relationships and states. Instances of a subclass are also instances of the                   superclass. In addition, the subclass has other properties that are unique to the                   subclass. Each subclass may in turn have subclasses of its own. Thus, a class can                   be both a subclass of its superclass and a superclass of its subclasses. A                   generalization usually has multiple specializations. However, not all of the                   conceptual specializations have to be represented in the model. Only the concepts                   that warrant special properties (e.g., attributes, relationships, states) are                   modeled as specialized classes. If all specializations are fully enumerated as                   subclasses in the model, the superclass is considered to be an &amp;amp;apos; abstract&amp;amp;apos; class.                   An abstract class is designed only as a parent class from which implementable                   child classes may be derived. Abstract classes are often used to represent                   abstract concepts or entities. The incomplete features of the abstract class are                   shared by a group of subclasses which add different variations of the missing                   pieces. An abstract class is never instantiated directly, but only through one of                   its specializations. </body>
+          </ownedComment>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="__w360aAjEd-q0KkyZZn6tA"/>
+        </ownedRule>
+        <ownedRule xmi:id="_GHrE0KAkEd-q0KkyZZn6tA" name="3. Association" constrainedElement="_oTsyJZAyEd-vzr_-PBHu3w">
+          <ownedComment xmi:id="_HKRxUKAkEd-q0KkyZZn6tA" annotatedElement="_GHrE0KAkEd-q0KkyZZn6tA">
+            <body>An association defines a relationship between a class to another class or to                   itself, or a connection between two objects (instances of classes). Associations                   in the HL7 information models have at least two ends (source and target). The                   target end of an association must contain an end name (endName) and the                   multiplicity/cardinality of the relationship. Associations may be directed (one                   way) or bi-directional. If the association is directed, the association line has                   an arrow at the target end of the association. If the association is                   bi-directional, both association end names must be specified (on source and                   target), but no arrows are included on the association. Each end of the                   association instance connects with one and only one object. However, one object                   may be associated with more than one object of the same class by the same                   association. In this case, multiple association instances exist, each connecting                   exactly two objects. The number of instances of an association that can connect to                   one object is regulated by the multiplicity/cardinality of the association. An                   association multiplicity/cardinality specifies the minimum and maximum number of                   objects of each class participating in the association. Multiplicity/cardinality                   is usually expressed as a pair of numbers on the end of the association e.g.,                   [minimum..maximum]. The lower bound minimum is usually zero or one. The upper                   bound maximum is greater or equal to minimum, but is usually one, or unlimited. To                   specify that an association (or attribute) can repeat any number of times, the                   asterisk (*) notation is used. The default is [1..1] if not otherwise specified.                   In the UML diagrams included within this publication, multiplicity is displayed                   without the [square brackets] on association endNames, but within the classes                   themselves, the square bracket notation is used to describe the multiplicity on                   attributes.</body>
+          </ownedComment>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_GHrE0aAkEd-q0KkyZZn6tA"/>
+        </ownedRule>
+        <ownedRule xmi:id="_WVZQoKAkEd-q0KkyZZn6tA" name="4. Attribute" constrainedElement="_oTsyJZAyEd-vzr_-PBHu3w">
+          <ownedComment xmi:id="_ebzXEKAkEd-q0KkyZZn6tA" annotatedElement="_WVZQoKAkEd-q0KkyZZn6tA">
+            <body>Class attributes are the core components of an information model. The                   attributes are the source for all the information content of HL7. The majority of                   attributes are descriptive and depict aspects of classes that are important for                   communication between healthcare systems. Beside the descriptive attributes, there                   are four special kinds of attributes in the information model of note: identifier,                   classifier, structural and state attributes. a. Identifier Attributes: Identifier                   attributes can be used to identify an instance of a class. (Sometimes more than                   one attribute may be needed to identify an instance of a class.) Identifier                   attributes always have a value and the values of identifier attributes are unique                   among all instances of the class. Since identity is static, values of identifier                   attributes never change. Identifier attributes are assigned the  set of instance                   identifier data type and generally have the name &amp;amp;apos;id&amp;amp;apos; which allow for multiple                   identifiers to be specified. Examples of identifier attributes from the RIM                   include Entity.id and Act.id, which uniquely identify a particular Entity or Act                   respectively. In each case, the identifier attributes are a set of instance                   identifiers. This indicates that there may be multiple, unique identifiers for an                   Entity or Act. Entity identifiers might include device serial numbers, social                   security numbers, driver license numbers, and others. Act identifiers might                   include placer accession numbers, filler accession numbers, and others. b.                   Classifier Attributes: The classifier attributes are a critical aspect of classes                   forming the backbone of the RIM (Entity, Role, Act, Participation, ActRelationship                   and RoleLink classes). Classifier attributes are named &amp;amp;apos;classCode&amp;amp;apos;. The classifier                   attributes provide a great flexibility and extensibility in the information model.                   The vocabulary for classifier attributes include an entry for each specialization                   of the backbone class. For example, the vocabulary domain specified for                   Entity.classCode includes living subject, organization, place and material. The                   vocabulary domain may also include entries that are not explicitly expressed as                   classes in the model. For example, group is a valid Entity classCode (or                   specialization of Entity) but does not appear in the RIM as a class. c. Structural                   Attributes: Structural attributes are attributes whose coded values are needed to                   fully interpret the classes they classify. They are four mandatory attributes and                   include the classifier attribute, ClassCode described in the previous paragraph.                   The other three are moodCode, typeCode and determinerCode. All four are not found                   in every class (neither Acts or Entities use determinerCode). There is a bounded                   vocabulary managed by HL7 for each use of a structural attribute. For instance,                   for Act, there is an actMood vocabulary. d. State Attributes: A state attribute is                   used in subject classes (subject classes are those that a Technical Committee                   designates as the central focus of a collection of messages). A state attribute                   contains a value that indicates the current state (named condition) of the class.                   A subject class must have only one state attribute. The state attribute must be                   assigned the data type &amp;amp;apos; set of code value&amp;amp;apos; that allows multiple state flags to be                   specified. State attributes are named status_cd and are associated with vocabulary                   domains defined by HL7 that correspond to the state machine defined for the                   subject class. For example, Act.status_cd has the domain values which include                   active, suspended, cancelled, completed, and aborted. </body>
+          </ownedComment>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WVZQoaAkEd-q0KkyZZn6tA"/>
+        </ownedRule>
+        <ownedRule xmi:id="_s2xy4KAkEd-q0KkyZZn6tA" name="7. Constraints" constrainedElement="_oTsyJZAyEd-vzr_-PBHu3w">
+          <ownedComment xmi:id="_v6SAIKAkEd-q0KkyZZn6tA" annotatedElement="_s2xy4KAkEd-q0KkyZZn6tA">
+            <body>Constraints narrow the set of possible values that an attribute can take on.                   Constraints include vocabulary domain constraints (e.g., this attribute must be a                   LOINC code), range constraints (e.g., this attribute must be a floating point                   number between 0 and 1), etc. While the term &amp;amp;apos; constraint&amp;amp;apos; has the connotation of                   restricting and limiting, the objective in defining constraints is to provide                   guidance in the proper use of a class or attribute.</body>
+          </ownedComment>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_s27j4KAkEd-q0KkyZZn6tA"/>
+        </ownedRule>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_oTsyLpAyEd-vzr_-PBHu3w" name="A.2 Information Modeling Notation Overview">
+        <eAnnotations xmi:id="_oTsyL5AyEd-vzr_-PBHu3w" source="uml2.diagrams" references="_oTsyMJAyEd-vzr_-PBHu3w">
+          <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_oTsyMJAyEd-vzr_-PBHu3w" type="Class" name="A.2: Class Diagram Notation and HL7 Reference Information Model Example" description="Figure A.2 shows how the UML graphical notation elements for class diagrams (e.g. class, associations, attributes) are used to represent a specific set of data (e.g. air flight scheduling and operation) using the HL7 Version 3 Reference Information Model (RIM) pattern and associated conventions specified by the FHIM model. Note that the HL7 RIM classes are color coded according their main class   type or stereotype.  Entities play a Role (patient, provider, person, etc.) as they participate in Acts (planned or  unplanned events or actions).  A Participation is an association between an Act  and a Role. The Entity playing the Role is the actor. Each Entity involved in  an Act is linked to the Act by one Participation-instance.  Entities are  depicted in green, Roles in yellow, Acts in light red and Participation in blue.  A description for additiional HL7 Version 3 stereotypes are included in the description of the illustrative classes and attributes included in the diagram below.">
+            <children xmi:type="notation:Shape" xmi:id="_oTsyMZAyEd-vzr_-PBHu3w" type="shadowRectangle" fontHeight="8" fillColor="15132390" lineColor="12632258" lineWidth="1">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyMpAyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyM5AyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <styles xmi:type="notation:TextStyle" xmi:id="_oTsyNZAyEd-vzr_-PBHu3w"/>
+              <styles xmi:type="notation:LineTypeStyle" xmi:id="_oTsyNpAyEd-vzr_-PBHu3w"/>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsyN5AyEd-vzr_-PBHu3w" x="-634" y="-951" width="5371" height="9550"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsyOJAyEd-vzr_-PBHu3w" type="shadowRectangle" fontHeight="8" fillColor="13956346" lineColor="12632258" lineWidth="1">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyOZAyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyOpAyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <styles xmi:type="notation:TextStyle" xmi:id="_oTsyPJAyEd-vzr_-PBHu3w"/>
+              <styles xmi:type="notation:LineTypeStyle" xmi:id="_oTsyPZAyEd-vzr_-PBHu3w"/>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsyPpAyEd-vzr_-PBHu3w" x="12045" y="-951" width="13402" height="9550"/>
+            </children>
+            <children xmi:type="umlnotation:UMLShape" xmi:id="_oTsyP5AyEd-vzr_-PBHu3w" element="_oTs0E5AyEd-vzr_-PBHu3w" fontHeight="8" showListSignature="true" fillColor="8487423" lineColor="4194368" showStereotype="Label">
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsyQJAyEd-vzr_-PBHu3w" type="ImageCompartment">
+                <layoutConstraint xmi:type="notation:Size" xmi:id="_oTsyQZAyEd-vzr_-PBHu3w" width="1320" height="1320"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyQpAyEd-vzr_-PBHu3w" type="Stereotype"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyQ5AyEd-vzr_-PBHu3w" type="Name"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyRJAyEd-vzr_-PBHu3w" type="Parent"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsyRZAyEd-vzr_-PBHu3w" type="AttributeCompartment"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsyR5AyEd-vzr_-PBHu3w" type="OperationCompartment"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsySZAyEd-vzr_-PBHu3w" visible="false" type="SignalCompartment"/>
+              <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_oTsyS5AyEd-vzr_-PBHu3w" visible="false" type="StructureCompartment"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsyTpAyEd-vzr_-PBHu3w" x="13948" y="-317"/>
+            </children>
+            <children xmi:type="umlnotation:UMLShape" xmi:id="_oTsyT5AyEd-vzr_-PBHu3w" element="_oTs0HZAyEd-vzr_-PBHu3w" fontHeight="8" showListSignature="true" fillColor="8519679" lineColor="4194368" showStereotype="Label">
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsyUJAyEd-vzr_-PBHu3w" type="ImageCompartment">
+                <layoutConstraint xmi:type="notation:Size" xmi:id="_oTsyUZAyEd-vzr_-PBHu3w" width="1320" height="1320"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyUpAyEd-vzr_-PBHu3w" type="Stereotype"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyU5AyEd-vzr_-PBHu3w" type="Name"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyVJAyEd-vzr_-PBHu3w" type="Parent"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsyVZAyEd-vzr_-PBHu3w" type="AttributeCompartment"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsyV5AyEd-vzr_-PBHu3w" type="OperationCompartment"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsyWZAyEd-vzr_-PBHu3w" visible="false" type="SignalCompartment"/>
+              <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_oTsyW5AyEd-vzr_-PBHu3w" visible="false" type="StructureCompartment"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsyXpAyEd-vzr_-PBHu3w" x="6974" y="-317"/>
+            </children>
+            <children xmi:type="umlnotation:UMLShape" xmi:id="_oTsyX5AyEd-vzr_-PBHu3w" element="_oTs0J5AyEd-vzr_-PBHu3w" fontHeight="8" showListSignature="true" fillColor="8519553" lineColor="4194368" showStereotype="Label">
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsyYJAyEd-vzr_-PBHu3w" type="ImageCompartment">
+                <layoutConstraint xmi:type="notation:Size" xmi:id="_oTsyYZAyEd-vzr_-PBHu3w" width="1320" height="1320"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyYpAyEd-vzr_-PBHu3w" type="Stereotype"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyY5AyEd-vzr_-PBHu3w" type="Name"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyZJAyEd-vzr_-PBHu3w" type="Parent"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsyZZAyEd-vzr_-PBHu3w" type="AttributeCompartment"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsyZ5AyEd-vzr_-PBHu3w" type="OperationCompartment"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsyaZAyEd-vzr_-PBHu3w" visible="false" type="SignalCompartment"/>
+              <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_oTsya5AyEd-vzr_-PBHu3w" visible="false" type="StructureCompartment"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsybpAyEd-vzr_-PBHu3w" x="317" y="-317"/>
+            </children>
+            <children xmi:type="umlnotation:UMLShape" xmi:id="_oTsyb5AyEd-vzr_-PBHu3w" element="_oTs0KZAyEd-vzr_-PBHu3w" fontHeight="8" showListSignature="true" fillColor="8519679" lineColor="4194368" showStereotype="Label">
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsycJAyEd-vzr_-PBHu3w" type="ImageCompartment">
+                <layoutConstraint xmi:type="notation:Size" xmi:id="_oTsycZAyEd-vzr_-PBHu3w" width="1320" height="1320"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsycpAyEd-vzr_-PBHu3w" type="Stereotype"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyc5AyEd-vzr_-PBHu3w" type="Name"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsydJAyEd-vzr_-PBHu3w" type="Parent"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsydZAyEd-vzr_-PBHu3w" type="AttributeCompartment"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsyd5AyEd-vzr_-PBHu3w" type="OperationCompartment"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsyeZAyEd-vzr_-PBHu3w" visible="false" type="SignalCompartment"/>
+              <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_oTsye5AyEd-vzr_-PBHu3w" visible="false" type="StructureCompartment"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsyfpAyEd-vzr_-PBHu3w" x="6657" y="5389"/>
+            </children>
+            <children xmi:type="umlnotation:UMLShape" xmi:id="_oTsyf5AyEd-vzr_-PBHu3w" element="_oTs0NZAyEd-vzr_-PBHu3w" fontHeight="8" showListSignature="true" fillColor="8519553" lineColor="4194368" showStereotype="Label">
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsygJAyEd-vzr_-PBHu3w" type="ImageCompartment">
+                <layoutConstraint xmi:type="notation:Size" xmi:id="_oTsygZAyEd-vzr_-PBHu3w" width="1320" height="1320"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsygpAyEd-vzr_-PBHu3w" type="Stereotype"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyg5AyEd-vzr_-PBHu3w" type="Name"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyhJAyEd-vzr_-PBHu3w" type="Parent"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsyhZAyEd-vzr_-PBHu3w" type="AttributeCompartment"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsyh5AyEd-vzr_-PBHu3w" type="OperationCompartment"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsyiZAyEd-vzr_-PBHu3w" visible="false" type="SignalCompartment"/>
+              <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_oTsyi5AyEd-vzr_-PBHu3w" visible="false" type="StructureCompartment"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsyjpAyEd-vzr_-PBHu3w" x="317" y="5389"/>
+            </children>
+            <children xmi:type="umlnotation:UMLShape" xmi:id="_oTsyj5AyEd-vzr_-PBHu3w" element="_oTs0QpAyEd-vzr_-PBHu3w" fontHeight="8" showListSignature="true" fillColor="8487423" lineColor="4194368" showStereotype="Label">
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsykJAyEd-vzr_-PBHu3w" type="ImageCompartment">
+                <layoutConstraint xmi:type="notation:Size" xmi:id="_oTsykZAyEd-vzr_-PBHu3w" width="1320" height="1320"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsykpAyEd-vzr_-PBHu3w" type="Stereotype"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyk5AyEd-vzr_-PBHu3w" type="Name"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsylJAyEd-vzr_-PBHu3w" type="Parent"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsylZAyEd-vzr_-PBHu3w" type="AttributeCompartment"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsyl5AyEd-vzr_-PBHu3w" type="OperationCompartment"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsymZAyEd-vzr_-PBHu3w" visible="false" type="SignalCompartment"/>
+              <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_oTsym5AyEd-vzr_-PBHu3w" visible="false" type="StructureCompartment"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsynpAyEd-vzr_-PBHu3w" x="12363" y="5706"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsyn5AyEd-vzr_-PBHu3w" type="Text" fontHeight="12" bold="true" description="Entities (classes) " fillColor="9171426" lineColor="4194368">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyoJAyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyoZAyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsyo5AyEd-vzr_-PBHu3w" x="634" y="7608"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsypJAyEd-vzr_-PBHu3w" type="Text" fontHeight="12" bold="true" description="Roles (classes)" fillColor="9171426" lineColor="4194368">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsypZAyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyppAyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsyqJAyEd-vzr_-PBHu3w" x="6657" y="7608"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsyqZAyEd-vzr_-PBHu3w" type="Text" fontHeight="12" bold="true" description="Acts (classes)" fillColor="9171426" lineColor="4194368">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyqpAyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyq5AyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsyrZAyEd-vzr_-PBHu3w" x="13325" y="7608"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsyrpAyEd-vzr_-PBHu3w" type="Text" fontHeight="8" description="Act – something that has happened or may happen  " fillColor="9171426" lineColor="4194368">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyr5AyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsysJAyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsyspAyEd-vzr_-PBHu3w" x="3170" y="10144" width="7908" height="633"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsys5AyEd-vzr_-PBHu3w" type="Text" fontColor="8421504" fontHeight="8" description="Directed Association" fillColor="9171426" lineColor="4194368">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsytJAyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsytZAyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsyt5AyEd-vzr_-PBHu3w" x="4121" y="634"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsyuJAyEd-vzr_-PBHu3w" type="Text" fontColor="8421504" fontHeight="8" description="Two Directed Associations - or a bi-directional association" fillColor="9171426" lineColor="4194368">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyuZAyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyupAyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsyvJAyEd-vzr_-PBHu3w" x="12680" y="3804" width="3808" height="1242"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsyvZAyEd-vzr_-PBHu3w" type="Text" fontColor="8421504" fontHeight="8" description="Association Class" fillColor="9171426" lineColor="4194368">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyvpAyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyv5AyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsywZAyEd-vzr_-PBHu3w" x="9510"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsywpAyEd-vzr_-PBHu3w" type="Text" fontHeight="8" description="Role – a responsibility of, or part played by, an Entity  " fillColor="8047085" lineColor="4194368">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyw5AyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyxJAyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsyxpAyEd-vzr_-PBHu3w" x="3170" y="8876"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsyx5AyEd-vzr_-PBHu3w" type="Text" fontHeight="8" description="Participation – the involvement of a Role in an Act  " fillColor="9171426" lineColor="4194368">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyyJAyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyyZAyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsyy5AyEd-vzr_-PBHu3w" x="13948" y="8876"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsyzJAyEd-vzr_-PBHu3w" type="Text" fontHeight="8" description="Act Relationship – a relationship between two Acts  " fillColor="9171426" lineColor="4194368">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyzZAyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsyzpAyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsy0JAyEd-vzr_-PBHu3w" x="13948" y="9510"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsy0ZAyEd-vzr_-PBHu3w" type="Text" fontHeight="8" description="Role Link – a relationship between two Roles. " fillColor="9171426" lineColor="4194368">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsy0pAyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsy05AyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsy1ZAyEd-vzr_-PBHu3w" x="13948" y="10144"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsy1pAyEd-vzr_-PBHu3w" type="Text" fontHeight="8" description="Entity – a person, animal, organization, or thing   " fillColor="9171426" lineColor="4194368">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsy15AyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsy2JAyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsy2pAyEd-vzr_-PBHu3w" x="3170" y="9510"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsy25AyEd-vzr_-PBHu3w" type="rectangle" fontHeight="8" fillColor="65280" lineColor="12632258" lineWidth="1">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsy3JAyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsy3ZAyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <styles xmi:type="notation:TextStyle" xmi:id="_oTsy35AyEd-vzr_-PBHu3w"/>
+              <styles xmi:type="notation:LineTypeStyle" xmi:id="_oTsy4JAyEd-vzr_-PBHu3w"/>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsy4ZAyEd-vzr_-PBHu3w" x="2536" y="9510" width="317" height="317"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsy4pAyEd-vzr_-PBHu3w" type="rectangle" fontHeight="8" fillColor="65535" lineColor="12632258" lineWidth="1">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsy45AyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsy5JAyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <styles xmi:type="notation:TextStyle" xmi:id="_oTsy5pAyEd-vzr_-PBHu3w"/>
+              <styles xmi:type="notation:LineTypeStyle" xmi:id="_oTsy55AyEd-vzr_-PBHu3w"/>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsy6JAyEd-vzr_-PBHu3w" x="2536" y="8876" width="317" height="317"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsy6ZAyEd-vzr_-PBHu3w" type="rectangle" fontHeight="8" fillColor="8684799" lineColor="12632258" lineWidth="1">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsy6pAyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsy65AyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <styles xmi:type="notation:TextStyle" xmi:id="_oTsy7ZAyEd-vzr_-PBHu3w"/>
+              <styles xmi:type="notation:LineTypeStyle" xmi:id="_oTsy7pAyEd-vzr_-PBHu3w"/>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsy75AyEd-vzr_-PBHu3w" x="2535" y="10144" width="370" height="317"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsy8JAyEd-vzr_-PBHu3w" type="rectangle" fontHeight="8" fillColor="13956346" lineColor="8905185" lineWidth="1">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsy8ZAyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsy8pAyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <styles xmi:type="notation:TextStyle" xmi:id="_oTsy9JAyEd-vzr_-PBHu3w"/>
+              <styles xmi:type="notation:LineTypeStyle" xmi:id="_oTsy9ZAyEd-vzr_-PBHu3w"/>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsy9pAyEd-vzr_-PBHu3w" x="13314" y="10144" width="317" height="317"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsy95AyEd-vzr_-PBHu3w" type="rectangle" fontHeight="8" fillColor="16777088" lineColor="12632258" lineWidth="1">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsy-JAyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsy-ZAyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <styles xmi:type="notation:TextStyle" xmi:id="_oTsy-5AyEd-vzr_-PBHu3w"/>
+              <styles xmi:type="notation:LineTypeStyle" xmi:id="_oTsy_JAyEd-vzr_-PBHu3w"/>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTsy_ZAyEd-vzr_-PBHu3w" x="13314" y="8876" width="316" height="316"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_oTsy_pAyEd-vzr_-PBHu3w" type="rectangle" fontHeight="8" fillColor="14013951" lineColor="12632258" lineWidth="1">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsy_5AyEd-vzr_-PBHu3w" type="DiagramName">
+                <element xsi:nil="true"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszAJAyEd-vzr_-PBHu3w" type="Description">
+                <element xsi:nil="true"/>
+              </children>
+              <styles xmi:type="notation:TextStyle" xmi:id="_oTszApAyEd-vzr_-PBHu3w"/>
+              <styles xmi:type="notation:LineTypeStyle" xmi:id="_oTszA5AyEd-vzr_-PBHu3w"/>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTszBJAyEd-vzr_-PBHu3w" x="13305" y="9502" width="317" height="317"/>
+            </children>
+            <element xsi:nil="true"/>
+            <edges xmi:type="umlnotation:UMLConnector" xmi:id="_oTszBpAyEd-vzr_-PBHu3w" element="_oTs0MZAyEd-vzr_-PBHu3w" source="_oTsyT5AyEd-vzr_-PBHu3w" target="_oTsyX5AyEd-vzr_-PBHu3w" fontHeight="8" lineColor="4194368" lineWidth="1" showStereotype="Text">
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszB5AyEd-vzr_-PBHu3w" type="NameLabel">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszCJAyEd-vzr_-PBHu3w" type="Stereotype"/>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszCZAyEd-vzr_-PBHu3w" type="Name"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTszCpAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszC5AyEd-vzr_-PBHu3w" type="ToMultiplicityLabel" element="_oTs0MpAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszDJAyEd-vzr_-PBHu3w" type="ToMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszDZAyEd-vzr_-PBHu3w" y="396"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszDpAyEd-vzr_-PBHu3w" type="ToRoleLabel" element="_oTs0MpAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszD5AyEd-vzr_-PBHu3w" type="ToRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszEJAyEd-vzr_-PBHu3w" y="-397"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszEZAyEd-vzr_-PBHu3w" type="FromMultiplicityLabel" element="_oTs0H5AyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszEpAyEd-vzr_-PBHu3w" type="FromMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszE5AyEd-vzr_-PBHu3w" y="396"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszFJAyEd-vzr_-PBHu3w" type="FromRoleLabel" element="_oTs0H5AyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszFZAyEd-vzr_-PBHu3w" type="FromRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszFpAyEd-vzr_-PBHu3w" x="-153" y="-329"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszF5AyEd-vzr_-PBHu3w" type="ToQualifierLabel" element="_oTs0MpAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTszGJAyEd-vzr_-PBHu3w" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszGpAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszG5AyEd-vzr_-PBHu3w" type="FromQualifierLabel" element="_oTs0H5AyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTszHJAyEd-vzr_-PBHu3w" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszHpAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszH5AyEd-vzr_-PBHu3w" type="ToConstraintLabel" element="_oTs0MpAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:ListCompartment" xmi:id="_oTszIJAyEd-vzr_-PBHu3w" type="ToConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszIpAyEd-vzr_-PBHu3w" y="1058"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszI5AyEd-vzr_-PBHu3w" type="FromConstraintLabel" element="_oTs0H5AyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:ListCompartment" xmi:id="_oTszJJAyEd-vzr_-PBHu3w" type="FromConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszJpAyEd-vzr_-PBHu3w" y="1058"/>
+              </children>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oTszKJAyEd-vzr_-PBHu3w" points="[-33, 9, 176, -63]$[-170, 43, 39, -29]"/>
+            </edges>
+            <edges xmi:type="umlnotation:UMLConnector" xmi:id="_oTszKZAyEd-vzr_-PBHu3w" element="_oTs0N5AyEd-vzr_-PBHu3w" source="_oTsyT5AyEd-vzr_-PBHu3w" target="_oTsyf5AyEd-vzr_-PBHu3w" fontHeight="8" lineColor="0" lineWidth="1" showStereotype="Text">
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszKpAyEd-vzr_-PBHu3w" type="NameLabel">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszK5AyEd-vzr_-PBHu3w" type="Stereotype"/>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszLJAyEd-vzr_-PBHu3w" type="Name"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTszLZAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszLpAyEd-vzr_-PBHu3w" type="ToMultiplicityLabel" element="_oTs0OJAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszL5AyEd-vzr_-PBHu3w" type="ToMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszMJAyEd-vzr_-PBHu3w" y="396"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszMZAyEd-vzr_-PBHu3w" type="ToRoleLabel" element="_oTs0OJAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszMpAyEd-vzr_-PBHu3w" type="ToRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszM5AyEd-vzr_-PBHu3w" y="-397"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszNJAyEd-vzr_-PBHu3w" type="FromMultiplicityLabel" element="_oTs0I5AyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszNZAyEd-vzr_-PBHu3w" type="FromMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszNpAyEd-vzr_-PBHu3w" y="396"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszN5AyEd-vzr_-PBHu3w" type="FromRoleLabel" element="_oTs0I5AyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszOJAyEd-vzr_-PBHu3w" type="FromRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszOZAyEd-vzr_-PBHu3w" y="-397"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszOpAyEd-vzr_-PBHu3w" type="ToQualifierLabel" element="_oTs0OJAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTszO5AyEd-vzr_-PBHu3w" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszPZAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszPpAyEd-vzr_-PBHu3w" type="FromQualifierLabel" element="_oTs0I5AyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTszP5AyEd-vzr_-PBHu3w" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszQZAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszQpAyEd-vzr_-PBHu3w" type="ToConstraintLabel" element="_oTs0OJAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:ListCompartment" xmi:id="_oTszQ5AyEd-vzr_-PBHu3w" type="ToConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszRZAyEd-vzr_-PBHu3w" y="1058"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszRpAyEd-vzr_-PBHu3w" type="FromConstraintLabel" element="_oTs0I5AyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:ListCompartment" xmi:id="_oTszR5AyEd-vzr_-PBHu3w" type="FromConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszSZAyEd-vzr_-PBHu3w" y="1058"/>
+              </children>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oTszS5AyEd-vzr_-PBHu3w" points="[-33, 22, 181, -122]$[-168, 115, 46, -29]"/>
+            </edges>
+            <edges xmi:type="umlnotation:UMLConnector" xmi:id="_oTszTJAyEd-vzr_-PBHu3w" element="_oTs0O5AyEd-vzr_-PBHu3w" source="_oTsyT5AyEd-vzr_-PBHu3w" target="_oTsyb5AyEd-vzr_-PBHu3w" fontHeight="8" lineColor="4194368" lineWidth="1" showStereotype="Text">
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszTZAyEd-vzr_-PBHu3w" type="ToMultiplicityLabel" element="_oTs0P5AyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszTpAyEd-vzr_-PBHu3w" type="ToMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszT5AyEd-vzr_-PBHu3w" y="396"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszUJAyEd-vzr_-PBHu3w" type="ToRoleLabel" element="_oTs0P5AyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszUZAyEd-vzr_-PBHu3w" type="ToRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszUpAyEd-vzr_-PBHu3w" y="-397"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszU5AyEd-vzr_-PBHu3w" type="FromMultiplicityLabel" element="_oTs0PJAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszVJAyEd-vzr_-PBHu3w" type="FromMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszVZAyEd-vzr_-PBHu3w" y="396"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszVpAyEd-vzr_-PBHu3w" type="FromRoleLabel" element="_oTs0PJAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszV5AyEd-vzr_-PBHu3w" type="FromRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszWJAyEd-vzr_-PBHu3w" y="-397"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszWZAyEd-vzr_-PBHu3w" type="ToQualifierLabel" element="_oTs0P5AyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTszWpAyEd-vzr_-PBHu3w" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszXJAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszXZAyEd-vzr_-PBHu3w" type="FromQualifierLabel" element="_oTs0PJAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTszXpAyEd-vzr_-PBHu3w" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszYJAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszYZAyEd-vzr_-PBHu3w" type="ToConstraintLabel" element="_oTs0P5AyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:ListCompartment" xmi:id="_oTszYpAyEd-vzr_-PBHu3w" type="ToConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszZJAyEd-vzr_-PBHu3w" y="1058"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszZZAyEd-vzr_-PBHu3w" type="FromConstraintLabel" element="_oTs0PJAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:ListCompartment" xmi:id="_oTszZpAyEd-vzr_-PBHu3w" type="FromConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszaJAyEd-vzr_-PBHu3w" y="1058"/>
+              </children>
+              <children xmi:type="umlnotation:UMLShape" xmi:id="_oTszaZAyEd-vzr_-PBHu3w" fontHeight="8" showListSignature="true" fillColor="9171426" lineColor="4194368" showStereotype="Label">
+                <children xmi:type="notation:DecorationNode" xmi:id="_oTszapAyEd-vzr_-PBHu3w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_oTsza5AyEd-vzr_-PBHu3w" width="1320" height="1320"/>
+                </children>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszbJAyEd-vzr_-PBHu3w" type="Stereotype"/>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszbZAyEd-vzr_-PBHu3w" type="Name"/>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszbpAyEd-vzr_-PBHu3w" type="Parent"/>
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTszb5AyEd-vzr_-PBHu3w" visible="false" type="AttributeCompartment"/>
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTszcZAyEd-vzr_-PBHu3w" visible="false" type="OperationCompartment"/>
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTszc5AyEd-vzr_-PBHu3w" visible="false" type="SignalCompartment"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTszdpAyEd-vzr_-PBHu3w" x="329" y="-2008"/>
+              </children>
+              <styles xmi:type="notation:FillStyle" xmi:id="_oTszeJAyEd-vzr_-PBHu3w" fillColor="8519679"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oTszeZAyEd-vzr_-PBHu3w" points="[3, 29, -6, -103]$[23, 103, 14, -29]"/>
+            </edges>
+            <edges xmi:type="umlnotation:UMLConnector" xmi:id="_oTszepAyEd-vzr_-PBHu3w" element="_oTs0SZAyEd-vzr_-PBHu3w" source="_oTsyj5AyEd-vzr_-PBHu3w" target="_oTsyP5AyEd-vzr_-PBHu3w" fontHeight="8" lineColor="4194368" lineWidth="1" showStereotype="Text">
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsze5AyEd-vzr_-PBHu3w" type="NameLabel">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszfJAyEd-vzr_-PBHu3w" type="Stereotype"/>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszfZAyEd-vzr_-PBHu3w" type="Name"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTszfpAyEd-vzr_-PBHu3w" x="528" y="-100"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszf5AyEd-vzr_-PBHu3w" type="ToMultiplicityLabel" element="_oTs0FZAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszgJAyEd-vzr_-PBHu3w" type="ToMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszgZAyEd-vzr_-PBHu3w" y="396"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszgpAyEd-vzr_-PBHu3w" type="ToRoleLabel" element="_oTs0FZAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszg5AyEd-vzr_-PBHu3w" type="ToRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszhJAyEd-vzr_-PBHu3w" y="-397"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszhZAyEd-vzr_-PBHu3w" type="FromMultiplicityLabel" element="_oTs0RJAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszhpAyEd-vzr_-PBHu3w" type="FromMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszh5AyEd-vzr_-PBHu3w" y="396"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsziJAyEd-vzr_-PBHu3w" type="FromRoleLabel" element="_oTs0RJAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsziZAyEd-vzr_-PBHu3w" type="FromRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszipAyEd-vzr_-PBHu3w" x="14" y="-565"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszi5AyEd-vzr_-PBHu3w" type="ToQualifierLabel" element="_oTs0FZAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTszjJAyEd-vzr_-PBHu3w" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszjpAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszj5AyEd-vzr_-PBHu3w" type="FromQualifierLabel" element="_oTs0RJAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTszkJAyEd-vzr_-PBHu3w" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszkpAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszk5AyEd-vzr_-PBHu3w" type="ToConstraintLabel" element="_oTs0FZAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:ListCompartment" xmi:id="_oTszlJAyEd-vzr_-PBHu3w" type="ToConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszlpAyEd-vzr_-PBHu3w" y="1058"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszl5AyEd-vzr_-PBHu3w" type="FromConstraintLabel" element="_oTs0RJAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:ListCompartment" xmi:id="_oTszmJAyEd-vzr_-PBHu3w" type="FromConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszmpAyEd-vzr_-PBHu3w" y="1058"/>
+              </children>
+              <styles xmi:type="notation:FillStyle" xmi:id="_oTsznJAyEd-vzr_-PBHu3w" fillColor="12303359"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oTsznZAyEd-vzr_-PBHu3w" points="[4, -29, -2, 151]$[48, -151, 42, 29]"/>
+            </edges>
+            <edges xmi:type="umlnotation:UMLConnector" xmi:id="_oTsznpAyEd-vzr_-PBHu3w" element="_oTs0TJAyEd-vzr_-PBHu3w" source="_oTsyb5AyEd-vzr_-PBHu3w" target="_oTsyX5AyEd-vzr_-PBHu3w" fontHeight="8" lineColor="0" lineWidth="1" showStereotype="Text">
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszn5AyEd-vzr_-PBHu3w" type="NameLabel">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszoJAyEd-vzr_-PBHu3w" type="Stereotype"/>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszoZAyEd-vzr_-PBHu3w" type="Name"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTszopAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszo5AyEd-vzr_-PBHu3w" type="ToMultiplicityLabel" element="_oTs0TZAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszpJAyEd-vzr_-PBHu3w" type="ToMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszpZAyEd-vzr_-PBHu3w" y="396"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszppAyEd-vzr_-PBHu3w" type="ToRoleLabel" element="_oTs0TZAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszp5AyEd-vzr_-PBHu3w" type="ToRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszqJAyEd-vzr_-PBHu3w" y="-397"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszqZAyEd-vzr_-PBHu3w" type="FromMultiplicityLabel" element="_oTs0K5AyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszqpAyEd-vzr_-PBHu3w" type="FromMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszq5AyEd-vzr_-PBHu3w" y="396"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszrJAyEd-vzr_-PBHu3w" type="FromRoleLabel" element="_oTs0K5AyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszrZAyEd-vzr_-PBHu3w" type="FromRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszrpAyEd-vzr_-PBHu3w" y="-397"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszr5AyEd-vzr_-PBHu3w" type="ToQualifierLabel" element="_oTs0TZAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTszsJAyEd-vzr_-PBHu3w" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszspAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszs5AyEd-vzr_-PBHu3w" type="FromQualifierLabel" element="_oTs0K5AyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsztJAyEd-vzr_-PBHu3w" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTsztpAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszt5AyEd-vzr_-PBHu3w" type="ToConstraintLabel" element="_oTs0TZAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:ListCompartment" xmi:id="_oTszuJAyEd-vzr_-PBHu3w" type="ToConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszupAyEd-vzr_-PBHu3w" y="1058"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszu5AyEd-vzr_-PBHu3w" type="FromConstraintLabel" element="_oTs0K5AyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:ListCompartment" xmi:id="_oTszvJAyEd-vzr_-PBHu3w" type="FromConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszvpAyEd-vzr_-PBHu3w" y="1058"/>
+              </children>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oTszwJAyEd-vzr_-PBHu3w" points="[-35, -29, 159, 127]$[-155, -129, 39, 27]"/>
+            </edges>
+            <edges xmi:type="umlnotation:UMLConnector" xmi:id="_oTszwZAyEd-vzr_-PBHu3w" element="_oTs0UJAyEd-vzr_-PBHu3w" source="_oTsyb5AyEd-vzr_-PBHu3w" target="_oTsyf5AyEd-vzr_-PBHu3w" fontHeight="8" lineColor="4194368" lineWidth="1" showStereotype="Text">
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszwpAyEd-vzr_-PBHu3w" type="NameLabel">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszw5AyEd-vzr_-PBHu3w" type="Stereotype"/>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszxJAyEd-vzr_-PBHu3w" type="Name"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTszxZAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszxpAyEd-vzr_-PBHu3w" type="ToMultiplicityLabel" element="_oTs0UZAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszx5AyEd-vzr_-PBHu3w" type="ToMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszyJAyEd-vzr_-PBHu3w" y="396"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszyZAyEd-vzr_-PBHu3w" type="ToRoleLabel" element="_oTs0UZAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszypAyEd-vzr_-PBHu3w" type="ToRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszy5AyEd-vzr_-PBHu3w" y="-397"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszzJAyEd-vzr_-PBHu3w" type="FromMultiplicityLabel" element="_oTs0LpAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTszzZAyEd-vzr_-PBHu3w" type="FromMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTszzpAyEd-vzr_-PBHu3w" y="396"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTszz5AyEd-vzr_-PBHu3w" type="FromRoleLabel" element="_oTs0LpAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsz0JAyEd-vzr_-PBHu3w" type="FromRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTsz0ZAyEd-vzr_-PBHu3w" y="-397"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsz0pAyEd-vzr_-PBHu3w" type="ToQualifierLabel" element="_oTs0UZAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsz05AyEd-vzr_-PBHu3w" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTsz1ZAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsz1pAyEd-vzr_-PBHu3w" type="FromQualifierLabel" element="_oTs0LpAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsz15AyEd-vzr_-PBHu3w" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTsz2ZAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsz2pAyEd-vzr_-PBHu3w" type="ToConstraintLabel" element="_oTs0UZAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:ListCompartment" xmi:id="_oTsz25AyEd-vzr_-PBHu3w" type="ToConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTsz3ZAyEd-vzr_-PBHu3w" y="1058"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsz3pAyEd-vzr_-PBHu3w" type="FromConstraintLabel" element="_oTs0LpAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:ListCompartment" xmi:id="_oTsz35AyEd-vzr_-PBHu3w" type="FromConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTsz4ZAyEd-vzr_-PBHu3w" y="1058"/>
+              </children>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oTsz45AyEd-vzr_-PBHu3w" points="[-42, -2, 145, -2]$[-140, -2, 47, -2]"/>
+            </edges>
+            <edges xmi:type="umlnotation:UMLConnector" xmi:id="_oTsz5JAyEd-vzr_-PBHu3w" element="_oTs0VJAyEd-vzr_-PBHu3w" source="_oTsyP5AyEd-vzr_-PBHu3w" target="_oTsyT5AyEd-vzr_-PBHu3w" fontHeight="8" lineColor="4194368" lineWidth="1" showStereotype="Text">
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsz5ZAyEd-vzr_-PBHu3w" type="ToMultiplicityLabel" element="_oTs0WJAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsz5pAyEd-vzr_-PBHu3w" type="ToMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTsz55AyEd-vzr_-PBHu3w" x="-328" y="-284"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsz6JAyEd-vzr_-PBHu3w" type="ToRoleLabel" element="_oTs0WJAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsz6ZAyEd-vzr_-PBHu3w" type="ToRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTsz6pAyEd-vzr_-PBHu3w" y="-397"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsz65AyEd-vzr_-PBHu3w" type="FromMultiplicityLabel" element="_oTs0VZAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsz7JAyEd-vzr_-PBHu3w" type="FromMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTsz7ZAyEd-vzr_-PBHu3w" x="365" y="314"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsz7pAyEd-vzr_-PBHu3w" type="FromRoleLabel" element="_oTs0VZAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTsz75AyEd-vzr_-PBHu3w" type="FromRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTsz8JAyEd-vzr_-PBHu3w" y="-397"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsz8ZAyEd-vzr_-PBHu3w" type="ToQualifierLabel" element="_oTs0WJAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsz8pAyEd-vzr_-PBHu3w" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTsz9JAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsz9ZAyEd-vzr_-PBHu3w" type="FromQualifierLabel" element="_oTs0VZAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTsz9pAyEd-vzr_-PBHu3w" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTsz-JAyEd-vzr_-PBHu3w" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsz-ZAyEd-vzr_-PBHu3w" type="ToConstraintLabel" element="_oTs0WJAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:ListCompartment" xmi:id="_oTsz-pAyEd-vzr_-PBHu3w" type="ToConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTsz_JAyEd-vzr_-PBHu3w" y="1058"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTsz_ZAyEd-vzr_-PBHu3w" type="FromConstraintLabel" element="_oTs0VZAyEd-vzr_-PBHu3w">
+                <children xmi:type="notation:ListCompartment" xmi:id="_oTsz_pAyEd-vzr_-PBHu3w" type="FromConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_oTs0AJAyEd-vzr_-PBHu3w" y="1058"/>
+              </children>
+              <children xmi:type="umlnotation:UMLShape" xmi:id="_oTs0AZAyEd-vzr_-PBHu3w" fontHeight="8" showListSignature="true" fillColor="16776960" lineColor="4194368" showStereotype="Label">
+                <children xmi:type="notation:DecorationNode" xmi:id="_oTs0ApAyEd-vzr_-PBHu3w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_oTs0A5AyEd-vzr_-PBHu3w" width="1320" height="1320"/>
+                </children>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTs0BJAyEd-vzr_-PBHu3w" type="Stereotype"/>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTs0BZAyEd-vzr_-PBHu3w" type="Name"/>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTs0BpAyEd-vzr_-PBHu3w" type="Parent"/>
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTs0B5AyEd-vzr_-PBHu3w" type="AttributeCompartment"/>
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTs0CZAyEd-vzr_-PBHu3w" type="OperationCompartment"/>
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTs0C5AyEd-vzr_-PBHu3w" visible="false" type="SignalCompartment"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTs0DpAyEd-vzr_-PBHu3w" x="-22" y="-1255"/>
+              </children>
+              <styles xmi:type="notation:FillStyle" xmi:id="_oTs0EJAyEd-vzr_-PBHu3w" fillColor="16777088"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oTs0EZAyEd-vzr_-PBHu3w" points="[-83, -4, 231, -1]$[-330, -31, -16, -28]"/>
+            </edges>
+            <edges xmi:type="umlnotation:UMLConnector" xmi:id="_CErbcJp8Ed-foup1swjvUg" element="_CDMNsJp8Ed-foup1swjvUg" source="_oTsyj5AyEd-vzr_-PBHu3w" target="_oTsyj5AyEd-vzr_-PBHu3w" fontHeight="8" routing="Rectilinear" lineColor="4194368" lineWidth="1" showStereotype="Text">
+              <children xmi:type="notation:DecorationNode" xmi:id="_CE1MdJp8Ed-foup1swjvUg" type="ToMultiplicityLabel" element="_CDo5opp8Ed-foup1swjvUg">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_CE1Mdpp8Ed-foup1swjvUg" type="ToMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_CE1MdZp8Ed-foup1swjvUg" y="396"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_CE1Md5p8Ed-foup1swjvUg" type="ToRoleLabel" element="_CDo5opp8Ed-foup1swjvUg">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_CE1MeZp8Ed-foup1swjvUg" type="ToRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_CE1MeJp8Ed-foup1swjvUg" y="-397"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_CE1Mepp8Ed-foup1swjvUg" type="FromMultiplicityLabel" element="_CDfIoJp8Ed-foup1swjvUg">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_CE1MfJp8Ed-foup1swjvUg" type="FromMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_CE1Me5p8Ed-foup1swjvUg" y="396"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_CE1MfZp8Ed-foup1swjvUg" type="FromRoleLabel" element="_CDfIoJp8Ed-foup1swjvUg">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_CE1Mf5p8Ed-foup1swjvUg" type="FromRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_CE1Mfpp8Ed-foup1swjvUg" y="-397"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_CE1MgJp8Ed-foup1swjvUg" type="ToQualifierLabel" element="_CDo5opp8Ed-foup1swjvUg">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_CE1Mgpp8Ed-foup1swjvUg" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_CE1MgZp8Ed-foup1swjvUg" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_CE1MhJp8Ed-foup1swjvUg" type="FromQualifierLabel" element="_CDfIoJp8Ed-foup1swjvUg">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_CE1Mhpp8Ed-foup1swjvUg" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_CE1MhZp8Ed-foup1swjvUg" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_CE1MiJp8Ed-foup1swjvUg" type="ToConstraintLabel" element="_CDo5opp8Ed-foup1swjvUg">
+                <children xmi:type="notation:ListCompartment" xmi:id="_CE1Mipp8Ed-foup1swjvUg" type="ToConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_CE1MiZp8Ed-foup1swjvUg" y="1058"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_CE-WYJp8Ed-foup1swjvUg" type="FromConstraintLabel" element="_CDfIoJp8Ed-foup1swjvUg">
+                <children xmi:type="notation:ListCompartment" xmi:id="_CE-WYpp8Ed-foup1swjvUg" type="FromConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_CE-WYZp8Ed-foup1swjvUg" y="1058"/>
+              </children>
+              <children xmi:type="umlnotation:UMLShape" xmi:id="_CE-WZJp8Ed-foup1swjvUg" fontHeight="8" showListSignature="true" fillColor="10265827" lineColor="4194368" showStereotype="Label">
+                <children xmi:type="notation:DecorationNode" xmi:id="_CE-WZ5p8Ed-foup1swjvUg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_CE-WaJp8Ed-foup1swjvUg" width="1320" height="1320"/>
+                </children>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_CE-WaZp8Ed-foup1swjvUg" type="Stereotype"/>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_CE-Wapp8Ed-foup1swjvUg" type="Name"/>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_CE-Wa5p8Ed-foup1swjvUg" type="Parent"/>
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_CE-WbJp8Ed-foup1swjvUg" type="AttributeCompartment"/>
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_CE-Wbpp8Ed-foup1swjvUg" type="OperationCompartment"/>
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_CE-WcJp8Ed-foup1swjvUg" visible="false" type="SignalCompartment"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CE-WZpp8Ed-foup1swjvUg" x="-915" y="1842"/>
+              </children>
+              <styles xmi:type="notation:FillStyle" xmi:id="_QTu7IJp8Ed-foup1swjvUg" fillColor="12303359"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CErbcpp8Ed-foup1swjvUg" points="[4140, 285, 4140, 285]$[5776, 285, 5776, 285]$[5776, -1513, 5776, -1513]$[702, -1513, 702, -1513]$[702, -834, 702, -834]"/>
+            </edges>
+          </contents>
+        </eAnnotations>
+        <ownedComment xmi:id="_oTs0EpAyEd-vzr_-PBHu3w" annotatedElement="_oTsyLpAyEd-vzr_-PBHu3w">
+          <body> This section is intended to provide an overview of the Unified Modeling                 Language (UML) used throughout the FHIM to describe the information contained within                 the Behavioral Health model. </body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Class" xmi:id="_oTs0E5AyEd-vzr_-PBHu3w" name="AirFlight">
+          <ownedComment xmi:id="_oTs0FJAyEd-vzr_-PBHu3w" annotatedElement="_oTs0E5AyEd-vzr_-PBHu3w">
+            <body>This class represents an example &amp;amp;apos;Act&amp;amp;apos; class declaration as indicated by the                   stereotype  Act . The HL7 Version Reference Information Model specifies the                   attributes of any classes intended to as &amp;amp;apos;a record of something that is being                   done, has been done, can be done, or is intended or requested to be done. For                   example, in this case an Act class is used to document an air flight.</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_oTs0FZAyEd-vzr_-PBHu3w" name="flightSchedule" visibility="public" type="_oTs0QpAyEd-vzr_-PBHu3w" association="_oTs0SZAyEd-vzr_-PBHu3w">
+            <ownedComment xmi:id="_oTs0FpAyEd-vzr_-PBHu3w" annotatedElement="_oTs0FZAyEd-vzr_-PBHu3w">
+              <body> This represents an association of an AirFlight to a FlightSchedule. The                     association will appear as a property of a class (AirFlight) and named for the                     far end of the association.</body>
+            </ownedComment>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oTs0F5AyEd-vzr_-PBHu3w" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oTs0GJAyEd-vzr_-PBHu3w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_oTs0GZAyEd-vzr_-PBHu3w" name="effectiveTime" visibility="public">
+            <ownedComment xmi:id="_oTs0GpAyEd-vzr_-PBHu3w" annotatedElement="_oTs0GZAyEd-vzr_-PBHu3w">
+              <body>This is an example attribute declaration. As seen here the attribute name is                     &amp;amp;apos;effectiveTime&amp;amp;apos; and the type of that attribute is &amp;amp;apos;PointInTime&amp;amp;apos;. PointInTime is                     a concrete/implementable class defined in the FHIM Datatypes package. The Class                     notation identifies that PointInTime is a UML class. FHIM domain models reuse                     the data types defined the HL7 Abstract Data Type specification. The stereotype                      TS  specifies that the PointInTime class uses the extensions required for an                     HL7 TS abstract data type. The [0..1] notation specifies the                     cardinality/multiplicity allowed for the effectiveTime attribute by specifying                     the minimum and maximum number of occurrences for this attribute (e.g. minimum 0                     and maximum 1 in this case). To specify that an attribute or association can                     repeat any number of time, the * notation is used for example [0..*] would                     specify that a an attribute may be omitted or it may be repeated without a                     predefined limit. The Default is a cardinality is [1..1] if not otherwise                     specified.</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oTs0G5AyEd-vzr_-PBHu3w" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oTs0HJAyEd-vzr_-PBHu3w"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_oTs0HZAyEd-vzr_-PBHu3w" name="Pilot">
+          <ownedComment xmi:id="_oTs0HpAyEd-vzr_-PBHu3w" annotatedElement="_oTs0HZAyEd-vzr_-PBHu3w">
+            <body>This class is used to specify the role of pilot in relation to an scheduled                   flight.</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_oTs0H5AyEd-vzr_-PBHu3w" name="player" visibility="public" type="_oTs0J5AyEd-vzr_-PBHu3w" association="_oTs0MZAyEd-vzr_-PBHu3w">
+            <ownedComment xmi:id="_oTs0IJAyEd-vzr_-PBHu3w" annotatedElement="_oTs0H5AyEd-vzr_-PBHu3w">
+              <body>The association to the entity (Person) that plays the role specified by the                     &amp;amp;apos;Pilot&amp;amp;apos; role class is identified by the association end. This notation indicates                     that the entity Person is played by the Role Pilot.</body>
+            </ownedComment>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oTs0IZAyEd-vzr_-PBHu3w" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oTs0IpAyEd-vzr_-PBHu3w"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_oTs0I5AyEd-vzr_-PBHu3w" name="scoper" visibility="public" type="_oTs0NZAyEd-vzr_-PBHu3w" association="_oTs0N5AyEd-vzr_-PBHu3w">
+            <ownedComment xmi:id="_oTs0JJAyEd-vzr_-PBHu3w" annotatedElement="_oTs0I5AyEd-vzr_-PBHu3w">
+              <body>The association to the entity (Airline) that defines the role specified by                     the &amp;amp;apos;Pilot&amp;amp;apos; role class is identified by the association end. This notation                     indicates that the entity Airline scopes the role of the entity Person played by                     the Role Pilot.</body>
+            </ownedComment>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oTs0JZAyEd-vzr_-PBHu3w" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oTs0JpAyEd-vzr_-PBHu3w"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_oTs0J5AyEd-vzr_-PBHu3w" name="Person">
+          <ownedComment xmi:id="_oTs0KJAyEd-vzr_-PBHu3w" annotatedElement="_oTs0J5AyEd-vzr_-PBHu3w">
+            <body>This is an entity class with a stereotype of  Person . Other entity                   stereotypes describe other types of physical objects: materials, organizations,                   etc. In UML stereotypes are used to specify extensions. The stereotypes used in                   this sample diagram are based on the HL7 RIM profile for UML developed by the Open                   Health Tools MDHT project. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_oTs0KZAyEd-vzr_-PBHu3w" name="Co-pilot">
+          <ownedComment xmi:id="_oTs0KpAyEd-vzr_-PBHu3w" annotatedElement="_oTs0KZAyEd-vzr_-PBHu3w">
+            <body> This class illustrates how a role (specified by the  Role  stereotype and                   color coded according to the HL7 RIM convention) is specified in an information                   model. A role is specified in the HL7 Version 3 RIM as &amp;amp;apos;a competency of the Entity                   that plays the Role as identified, defined, guaranteed, or acknowledged by the                   Entity that scopes the Role&amp;amp;apos;. </body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_oTs0K5AyEd-vzr_-PBHu3w" name="person" visibility="public" type="_oTs0J5AyEd-vzr_-PBHu3w" association="_oTs0TJAyEd-vzr_-PBHu3w">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oTs0LJAyEd-vzr_-PBHu3w" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oTs0LZAyEd-vzr_-PBHu3w"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_oTs0LpAyEd-vzr_-PBHu3w" name="airline" visibility="public" type="_oTs0NZAyEd-vzr_-PBHu3w" association="_oTs0UJAyEd-vzr_-PBHu3w">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oTs0L5AyEd-vzr_-PBHu3w" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oTs0MJAyEd-vzr_-PBHu3w"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_oTs0MZAyEd-vzr_-PBHu3w" memberEnd="_oTs0H5AyEd-vzr_-PBHu3w _oTs0MpAyEd-vzr_-PBHu3w">
+          <ownedComment xmi:id="_tQOSIJdnEd-1hLYGSfVdpQ" annotatedElement="_oTs0MZAyEd-vzr_-PBHu3w">
+            <body> This directed association describes role that the entity Person plays (as a                   Pilot). An Entity participates in an Act in the guise of a particular Role. Each                   role is &amp;amp;apos;played&amp;amp;apos; by one Entity, called the &amp;amp;apos;player&amp;amp;apos; and is &amp;amp;apos;scoped&amp;amp;apos; by another                   Entity, called the &amp;amp;apos;scoper&amp;amp;apos;. Thus the Role of &amp;amp;apos;Pilot&amp;amp;apos; may be played by a person                   and scoped by the Airline for which the pilot works. Similarly, the Airline scopes                   the &amp;amp;apos;Pilot&amp;amp;apos; role. &amp;amp;gt; The identifier of the Role identifies the Entity playing the                   role in that role. This identifier is assigned by the scoper to the player. The                   scoper NEED NOT have issued the identifier, but MAY have re-used an existing                   identifier. &amp;amp;gt; Most attributes of Role are attributes of the playing entity while                   in the particular role. </body>
+          </ownedComment>
+          <ownedEnd xmi:id="_oTs0MpAyEd-vzr_-PBHu3w" name="" visibility="private" type="_oTs0HZAyEd-vzr_-PBHu3w" association="_oTs0MZAyEd-vzr_-PBHu3w">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oTs0M5AyEd-vzr_-PBHu3w" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oTs0NJAyEd-vzr_-PBHu3w"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_oTs0NZAyEd-vzr_-PBHu3w" name="Airline">
+          <ownedComment xmi:id="_oTs0NpAyEd-vzr_-PBHu3w" annotatedElement="_oTs0NZAyEd-vzr_-PBHu3w">
+            <body>This class represents an entity which is defined as &amp;amp;apos;a physical thing, group                   of physical things or an organization capable of participating in Acts while                   playing a specific role&amp;amp;apos;. The Organization stereotype is a specialization of an                   Entity class and represents a formalized group of persons or other organizations                   with a common purpose and the infrastructure to carry out that purpose.</body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_oTs0N5AyEd-vzr_-PBHu3w" memberEnd="_oTs0I5AyEd-vzr_-PBHu3w _oTs0OJAyEd-vzr_-PBHu3w">
+          <ownedComment xmi:id="_PPHHkJdqEd-1hLYGSfVdpQ" annotatedElement="_oTs0N5AyEd-vzr_-PBHu3w">
+            <body> Each role is &amp;amp;apos;played&amp;amp;apos; by one Entity, called the &amp;amp;apos;player&amp;amp;apos; and is &amp;amp;apos;scoped&amp;amp;apos; by                   another Entity, called the &amp;amp;apos;scoper&amp;amp;apos;. Each role is &amp;amp;apos;played&amp;amp;apos; by one Entity, called                   the &amp;amp;apos;player&amp;amp;apos; and is &amp;amp;apos;scoped&amp;amp;apos; by another Entity, called the &amp;amp;apos;scoper&amp;amp;apos;. Thus the Role                   of &amp;amp;apos;Pilot&amp;amp;apos; is played by a Person and scoped by the Airline for which the pilot                   works. This directed association describes this relationship between the Role of                   Pilot and the Entity Airline which is the organization for which the pilot works.                   The identifier of the Role identifies the Entity playing the role in that role.                   This identifier is assigned by the scoper to the player. The scoper NEED NOT have                   issued the identifier, but MAY have re-used an existing identifier. </body>
+          </ownedComment>
+          <ownedEnd xmi:id="_oTs0OJAyEd-vzr_-PBHu3w" name="" visibility="private" type="_oTs0HZAyEd-vzr_-PBHu3w" association="_oTs0N5AyEd-vzr_-PBHu3w">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oTs0OZAyEd-vzr_-PBHu3w" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oTs0OpAyEd-vzr_-PBHu3w"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:AssociationClass" xmi:id="_oTs0O5AyEd-vzr_-PBHu3w" name="Assistant" memberEnd="_oTs0PJAyEd-vzr_-PBHu3w _oTs0P5AyEd-vzr_-PBHu3w">
+          <ownedComment xmi:id="_SGNZ4JdREd-1hLYGSfVdpQ" annotatedElement="_oTs0O5AyEd-vzr_-PBHu3w">
+            <body>The HL7 Version 3 definition for the RoleLink stereotype is a connection                   between two roles expressing a dependency between those roles and permitting the                   authorization or nullification of a dependent role based on status changes in its                   causal or directing role.&amp;amp;apos; This association class describes a type of relationship                   between roles (not between people or other entities). People (or other Entities)                   are primarily related by the player/scoper relationships for player&amp;amp;apos;s Role and                   more generally through their interactions (i.e. their participations in acts). The                   associations of RoleLink are source (Co-pilot) and target (Pilot). An association                   class is rendered by a dashed line from the association to the class rectangle.                   Each link in the association is an object of the association class. </body>
+          </ownedComment>
+          <ownedEnd xmi:id="_oTs0PJAyEd-vzr_-PBHu3w" name="" visibility="private" type="_oTs0KZAyEd-vzr_-PBHu3w" association="_oTs0O5AyEd-vzr_-PBHu3w">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oTs0PZAyEd-vzr_-PBHu3w" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oTs0PpAyEd-vzr_-PBHu3w" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:id="_oTs0P5AyEd-vzr_-PBHu3w" name="" visibility="private" type="_oTs0HZAyEd-vzr_-PBHu3w" association="_oTs0O5AyEd-vzr_-PBHu3w">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oTs0QJAyEd-vzr_-PBHu3w" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oTs0QZAyEd-vzr_-PBHu3w" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_oTs0QpAyEd-vzr_-PBHu3w" name="FlightSchedule">
+          <ownedComment xmi:id="_oTs0Q5AyEd-vzr_-PBHu3w" annotatedElement="_oTs0QpAyEd-vzr_-PBHu3w">
+            <body>This is an example act class that is used to specify the properties of a                   flight schedule.</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_oTs0RJAyEd-vzr_-PBHu3w" name="airFlight" visibility="public" type="_oTs0E5AyEd-vzr_-PBHu3w" association="_oTs0SZAyEd-vzr_-PBHu3w">
+            <ownedComment xmi:id="_MZtgYJdtEd-1hLYGSfVdpQ" annotatedElement="_oTs0RJAyEd-vzr_-PBHu3w">
+              <body> This represents an association of a FlightSchedule to an AirFlight. The                     association will appear as a property of a class (FlightSchedule) and named for                     the far end of the association.</body>
+            </ownedComment>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oTs0RZAyEd-vzr_-PBHu3w" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oTs0RpAyEd-vzr_-PBHu3w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_oTs0R5AyEd-vzr_-PBHu3w" name="airlineCode" visibility="public">
+            <ownedComment xmi:id="_oTs0SJAyEd-vzr_-PBHu3w" annotatedElement="_oTs0R5AyEd-vzr_-PBHu3w">
+              <body>This is an example coded attribute with an identified binding to a coding                     system. In this case, it represents the codes assigned to various airlines which                     can then be associated to a particular flight schedule. If the coding system is                     not specified here it may be specified runtime. This example shows how a coding                     system, coded concept, and value set may be assigned to a coded attribute. Note                     that if only a coding system is specified, then the graphical representation for                     the vocabulary binding will identify the coding system (preceded by the prefix                     &amp;amp;apos;C:&amp;amp;apos; on the diagram). If however, a specific value set is assigned, then the                     value set will be identified on the class diagram (preceded by the prefix                   &amp;amp;apos;V:&amp;amp;apos;).</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_oTs0SZAyEd-vzr_-PBHu3w" name="schedule" memberEnd="_oTs0RJAyEd-vzr_-PBHu3w _oTs0FZAyEd-vzr_-PBHu3w">
+          <eAnnotations xmi:id="_oTs0SpAyEd-vzr_-PBHu3w" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          <ownedComment xmi:id="_oTs0S5AyEd-vzr_-PBHu3w" annotatedElement="_oTs0SZAyEd-vzr_-PBHu3w">
+            <body>This ActRelationship describes the relationship between FlightSchedule and                   AirFlight. ActRelationship is a directed association between a source Act and a                   target Act (in this case it is a bi-directional association) as specified by the                   HL7 V3 RIM. The relationships associated with an Act are considered properties of                   the source act object. This means that the author of an Act-instance is also                   considered the author of all of the act relationships that have this Act as their                   source, (though not necessarily of the target Acts of those relationships). There                   are no exceptions to this rule. The meaning and purpose of an ActRelationship is                   specified in the ActRelationship.typeCode attribute. Every ActRelationship                   instance is like an arrow with a point (headed to the target) and a butt (coming                   from the source). The functions that source and target Acts play in that                   association are defined for each ActRelationship type differently. For instance,                   in a composition relationship, the source is the composite and the targets are the                   components. In a reason-relationship the source is any Act and the target is the                   reason or indication for the source-Act. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_oTs0TJAyEd-vzr_-PBHu3w" memberEnd="_oTs0K5AyEd-vzr_-PBHu3w _oTs0TZAyEd-vzr_-PBHu3w">
+          <ownedComment xmi:id="_kiNjsJdoEd-1hLYGSfVdpQ" annotatedElement="_oTs0TJAyEd-vzr_-PBHu3w">
+            <body>This directed association describes that the entity Person is in the role                   Pilot.</body>
+          </ownedComment>
+          <ownedEnd xmi:id="_oTs0TZAyEd-vzr_-PBHu3w" name="" visibility="private" type="_oTs0KZAyEd-vzr_-PBHu3w" association="_oTs0TJAyEd-vzr_-PBHu3w">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oTs0TpAyEd-vzr_-PBHu3w" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oTs0T5AyEd-vzr_-PBHu3w"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_oTs0UJAyEd-vzr_-PBHu3w" memberEnd="_oTs0LpAyEd-vzr_-PBHu3w _oTs0UZAyEd-vzr_-PBHu3w">
+          <ownedEnd xmi:id="_oTs0UZAyEd-vzr_-PBHu3w" name="" visibility="private" type="_oTs0KZAyEd-vzr_-PBHu3w" association="_oTs0UJAyEd-vzr_-PBHu3w">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oTs0UpAyEd-vzr_-PBHu3w" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oTs0U5AyEd-vzr_-PBHu3w"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:AssociationClass" xmi:id="_oTs0VJAyEd-vzr_-PBHu3w" name="Operator" memberEnd="_oTs0VZAyEd-vzr_-PBHu3w _oTs0WJAyEd-vzr_-PBHu3w">
+          <ownedComment xmi:id="_lrnUYJdrEd-1hLYGSfVdpQ" annotatedElement="_oTs0VJAyEd-vzr_-PBHu3w">
+            <body>The HL7 Version 3 definition for Participation class is an association between                   an Act and a Role. The Entity playing the Role is the actor. In this example, the                   Entity Pilot is participating in the Act of an AirFlight in the Role of operator                   of an AirFlight. A Participation represents performance of an Act.</body>
+          </ownedComment>
+          <ownedEnd xmi:id="_oTs0VZAyEd-vzr_-PBHu3w" name="" visibility="private" type="_oTs0HZAyEd-vzr_-PBHu3w" association="_oTs0VJAyEd-vzr_-PBHu3w">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oTs0VpAyEd-vzr_-PBHu3w" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oTs0V5AyEd-vzr_-PBHu3w" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:id="_oTs0WJAyEd-vzr_-PBHu3w" name="" visibility="private" type="_oTs0E5AyEd-vzr_-PBHu3w" association="_oTs0VJAyEd-vzr_-PBHu3w">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oTs0WZAyEd-vzr_-PBHu3w" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oTs0WpAyEd-vzr_-PBHu3w" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:AssociationClass" xmi:id="_CDMNsJp8Ed-foup1swjvUg" name="Replaces" memberEnd="_CDfIoJp8Ed-foup1swjvUg _CDo5opp8Ed-foup1swjvUg">
+          <ownedComment xmi:id="_rkhLwJp8Ed-foup1swjvUg" annotatedElement="_CDMNsJp8Ed-foup1swjvUg">
+            <body>This association class represents an example ActRelationship that used to                   associate two FlightSchedule instances.</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_IkbGEJp8Ed-foup1swjvUg" name="type" visibility="public">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          </ownedAttribute>
+          <ownedEnd xmi:id="_CDfIoJp8Ed-foup1swjvUg" name="new" visibility="public" type="_oTs0QpAyEd-vzr_-PBHu3w" association="_CDMNsJp8Ed-foup1swjvUg">
+            <ownedComment xmi:id="_9BmmMJwHEd-AoMmpzXPtCw" annotatedElement="_CDfIoJp8Ed-foup1swjvUg">
+              <body>This association represents the new or current flight schedule associated                     with a particular air flight.</body>
+            </ownedComment>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CDo5oZp8Ed-foup1swjvUg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CDo5oJp8Ed-foup1swjvUg" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:id="_CDo5opp8Ed-foup1swjvUg" name="old" visibility="public" type="_oTs0QpAyEd-vzr_-PBHu3w" association="_CDMNsJp8Ed-foup1swjvUg">
+            <ownedComment xmi:id="_i2vmYJwIEd-AoMmpzXPtCw" annotatedElement="_CDo5opp8Ed-foup1swjvUg">
+              <body>This association represents the flight schedule that was replaced by the new                     flight schedule associated with a particular air flight.</body>
+            </ownedComment>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CDo5pJp8Ed-foup1swjvUg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CDo5o5p8Ed-foup1swjvUg" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_oTs0W5AyEd-vzr_-PBHu3w" name="A.3 Use Case Notation Overview">
+        <eAnnotations xmi:id="_oTs0XJAyEd-vzr_-PBHu3w" source="uml2.diagrams" references="_oTs0XZAyEd-vzr_-PBHu3w">
+          <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_oTs0XZAyEd-vzr_-PBHu3w" type="Usecase" name="A.3: Actors, Use Cases, and Relationships " description="Figure A.3 shows the use of the UML diagram to identify actors, systems and use cases. As seen here, the actor uses a  capability implemented by a system. The capabilities supported by the system are directly based on the business use cases  analyzed as a part of domain analysis. Those use cases that require interoperability are elaborated further and described  using sequence diagrams.">
+            <children xmi:type="umlnotation:UMLComponent" xmi:id="_oTs0XpAyEd-vzr_-PBHu3w" element="_oTs0qpAyEd-vzr_-PBHu3w" fontHeight="8" showListSignature="true" fillColor="9171426" lineColor="4194368" showStereotype="Label">
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTs0X5AyEd-vzr_-PBHu3w" type="ImageCompartment">
+                <layoutConstraint xmi:type="notation:Size" xmi:id="_oTs0YJAyEd-vzr_-PBHu3w" width="1320" height="1320"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTs0YZAyEd-vzr_-PBHu3w" type="Stereotype"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTs0YpAyEd-vzr_-PBHu3w" type="Kind"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTs0Y5AyEd-vzr_-PBHu3w" type="Name"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTs0ZJAyEd-vzr_-PBHu3w" type="Parent"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTs0ZZAyEd-vzr_-PBHu3w" visible="false" type="AttributeCompartment"/>
+              <children xmi:type="notation:SemanticListCompartment" xmi:id="_oTs0Z5AyEd-vzr_-PBHu3w" visible="false" type="OperationCompartment"/>
+              <children xmi:type="notation:ListCompartment" xmi:id="_oTs0aZAyEd-vzr_-PBHu3w" visible="false" type="RealizationListCompartment"/>
+              <children xmi:type="notation:ListCompartment" xmi:id="_oTs0a5AyEd-vzr_-PBHu3w" visible="false" type="RequiredInterfaceListCompartment" showTitle="true"/>
+              <children xmi:type="notation:ListCompartment" xmi:id="_oTs0bZAyEd-vzr_-PBHu3w" visible="false" type="ProvidedInterfaceListCompartment" showTitle="true"/>
+              <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_oTs0b5AyEd-vzr_-PBHu3w" type="UseCaseShapeCompartment">
+                <children xmi:type="umlnotation:UMLClassifierShape" xmi:id="_4sCM0KAoEd-GiONa6WTwkg" element="_DDXaIJa_Ed-1hLYGSfVdpQ" fontHeight="8" showListSignature="true" fillColor="9171426" lineColor="4194368" showStereotype="Image">
+                  <children xmi:type="notation:DecorationNode" xmi:id="_4sCM06AoEd-GiONa6WTwkg" type="ImageCompartment">
+                    <layoutConstraint xmi:type="notation:Size" xmi:id="_4sCM1KAoEd-GiONa6WTwkg" width="2216" height="1322"/>
+                  </children>
+                  <children xmi:type="notation:BasicDecorationNode" xmi:id="_4sCM1aAoEd-GiONa6WTwkg" type="Stereotype"/>
+                  <children xmi:type="notation:BasicDecorationNode" xmi:id="_4sCM1qAoEd-GiONa6WTwkg" type="Name"/>
+                  <children xmi:type="notation:BasicDecorationNode" xmi:id="_4sCM16AoEd-GiONa6WTwkg" type="Parent"/>
+                  <children xmi:type="notation:ListCompartment" xmi:id="_4sCM2KAoEd-GiONa6WTwkg" visible="false" type="Extension_Points"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4sCM0qAoEd-GiONa6WTwkg" x="1880" y="2087" width="7248"/>
+                </children>
+              </children>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTs0fJAyEd-vzr_-PBHu3w" x="6021" y="634" width="10552" height="7644"/>
+            </children>
+            <children xmi:type="umlnotation:UMLClassifierShape" xmi:id="_oTs0fZAyEd-vzr_-PBHu3w" element="_oTs0rJAyEd-vzr_-PBHu3w" fontHeight="8" showListSignature="true" fillColor="10265827" lineColor="4194368" showStereotype="Image">
+              <children xmi:type="notation:DecorationNode" xmi:id="_oTs0fpAyEd-vzr_-PBHu3w" type="ImageCompartment">
+                <layoutConstraint xmi:type="notation:Size" xmi:id="_oTs0f5AyEd-vzr_-PBHu3w" width="1455" height="2381"/>
+              </children>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTs0gJAyEd-vzr_-PBHu3w" type="Stereotype"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTs0gZAyEd-vzr_-PBHu3w" type="Name"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_oTs0gpAyEd-vzr_-PBHu3w" type="Parent"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTs0hJAyEd-vzr_-PBHu3w" x="1585" y="3170"/>
+            </children>
+            <element xsi:nil="true"/>
+            <edges xmi:type="umlnotation:UMLConnector" xmi:id="_7WpY8KAoEd-GiONa6WTwkg" element="_7WWeAKAoEd-GiONa6WTwkg" source="_oTs0fZAyEd-vzr_-PBHu3w" target="_4sCM0KAoEd-GiONa6WTwkg" fontHeight="8" lineColor="4194368" lineWidth="1" showStereotype="Text">
+              <children xmi:type="notation:DecorationNode" xmi:id="_7WpY86AoEd-GiONa6WTwkg" type="NameLabel">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_7WpY9aAoEd-GiONa6WTwkg" type="Stereotype"/>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_7WpY9qAoEd-GiONa6WTwkg" type="Name"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7WpY9KAoEd-GiONa6WTwkg" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_7WpY96AoEd-GiONa6WTwkg" visible="false" type="ToMultiplicityLabel" element="_7WgPA6AoEd-GiONa6WTwkg">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_7WpY-aAoEd-GiONa6WTwkg" type="ToMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_7WpY-KAoEd-GiONa6WTwkg" y="396"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_7WpY-qAoEd-GiONa6WTwkg" visible="false" type="ToRoleLabel" element="_7WgPA6AoEd-GiONa6WTwkg">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_7WpY_KAoEd-GiONa6WTwkg" type="ToRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_7WpY-6AoEd-GiONa6WTwkg" y="-397"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_7WpY_aAoEd-GiONa6WTwkg" visible="false" type="FromMultiplicityLabel" element="_7WgPAKAoEd-GiONa6WTwkg">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_7WpY_6AoEd-GiONa6WTwkg" type="FromMultiplicity"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_7WpY_qAoEd-GiONa6WTwkg" y="396"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_7WpZAKAoEd-GiONa6WTwkg" visible="false" type="FromRoleLabel" element="_7WgPAKAoEd-GiONa6WTwkg">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_7WpZAqAoEd-GiONa6WTwkg" type="FromRole"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_7WpZAaAoEd-GiONa6WTwkg" y="-397"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_7WzJ8KAoEd-GiONa6WTwkg" type="ToQualifierLabel" element="_7WgPA6AoEd-GiONa6WTwkg">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_7WzJ8qAoEd-GiONa6WTwkg" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_7WzJ8aAoEd-GiONa6WTwkg" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_7WzJ9KAoEd-GiONa6WTwkg" type="FromQualifierLabel" element="_7WgPAKAoEd-GiONa6WTwkg">
+                <children xmi:type="notation:SemanticListCompartment" xmi:id="_7WzJ9qAoEd-GiONa6WTwkg" type="QualifierCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_7WzJ9aAoEd-GiONa6WTwkg" y="-186"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_7WzJ-KAoEd-GiONa6WTwkg" type="ToConstraintLabel" element="_7WgPA6AoEd-GiONa6WTwkg">
+                <children xmi:type="notation:ListCompartment" xmi:id="_7WzJ-qAoEd-GiONa6WTwkg" type="ToConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_7WzJ-aAoEd-GiONa6WTwkg" y="1058"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_7WzJ_KAoEd-GiONa6WTwkg" type="FromConstraintLabel" element="_7WgPAKAoEd-GiONa6WTwkg">
+                <children xmi:type="notation:ListCompartment" xmi:id="_7WzJ_qAoEd-GiONa6WTwkg" type="FromConstraintCompartment"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_7WzJ_aAoEd-GiONa6WTwkg" y="1058"/>
+              </children>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7WpY8qAoEd-GiONa6WTwkg" points="[30, -6, -271, 45]$[248, -48, -53, 3]"/>
+            </edges>
+          </contents>
+        </eAnnotations>
+        <ownedComment xmi:id="_oTs0qZAyEd-vzr_-PBHu3w" annotatedElement="_oTs0W5AyEd-vzr_-PBHu3w">
+          <body> The following is a brief summary of the UML used to graphically communicate the                 structure, content, and vocabulary semantics of this domain as well as other FHIM                 domains.</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Component" xmi:id="_oTs0qpAyEd-vzr_-PBHu3w" name="System A" useCase="_DDXaIJa_Ed-1hLYGSfVdpQ">
+          <ownedComment xmi:id="_oTs0q5AyEd-vzr_-PBHu3w" annotatedElement="_oTs0qpAyEd-vzr_-PBHu3w">
+            <body> This is an example subsystem (specified by the  subsystem  stereotype) that                   implements a specific use case as a set of functionality used by business users                   (i.e. actors). It represents independent, behavioral units in a system. Subsystems                   are used in class, component, and use case diagrams to represent large-scale                   components of the system at the center of a interoperability use case.. An entire                   system may be represented as a hierarchy of subsystems. You can also define the                   behavior that each subsystem represents by specifying interfaces to the subsystems                   and the operations that support the interfaces. </body>
+          </ownedComment>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_DDXaIJa_Ed-1hLYGSfVdpQ" name="Use Case #1 implemented by System A and invoked by Actor 1" subject="_oTs0qpAyEd-vzr_-PBHu3w">
+            <ownedComment xmi:id="_DDXaIZa_Ed-1hLYGSfVdpQ" annotatedElement="_DDXaIJa_Ed-1hLYGSfVdpQ">
+              <body>A use case describes a sequence of actions that provide something of                     measurable value to an actor. The use case icon is drawn as a horizontal                     ellipse. A use case in software engineering and systems is a description of a                     system s behavior as it responds to a request that originates from outside that                     system. In other words, a use case describes &amp;amp;apos;who&amp;amp;apos; can do &amp;amp;apos;what&amp;amp;apos; with the system                     in question. The use case technique is used to capture the business domain s                     perspective of a system&amp;amp;apos;s behavioral requirements by detailing scenario-driven                     threads through the functional requirements. </body>
+            </ownedComment>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Actor" xmi:id="_oTs0rJAyEd-vzr_-PBHu3w" name="Actor 1">
+          <ownedComment xmi:id="_oTs0rZAyEd-vzr_-PBHu3w" annotatedElement="_oTs0rJAyEd-vzr_-PBHu3w">
+            <body>An actor in the Unified Modeling Language (UML) specifies a role played by a                   user or any other system that interacts with the subject (e.g. subsystem). Actors                   may represent roles played by human users, external hardware, or other subjects.                   Note that an actor does not necessarily represent a specific physical entity but                   merely a particular facet (i.e.,  role ) of some entity that is relevant to the                   specification of its associated use cases. Thus, a single physical instance may                   play the role of several different actors and, conversely, a given actor may be                   played by multiple different instances. Even though UML 2 does not permit                   associations between actors, generalization/specialization relationship between                   actors is useful in modeling overlapping behaviors. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_7WWeAKAoEd-GiONa6WTwkg" memberEnd="_7WgPAKAoEd-GiONa6WTwkg _7WgPA6AoEd-GiONa6WTwkg" navigableOwnedEnd="_7WgPAKAoEd-GiONa6WTwkg _7WgPA6AoEd-GiONa6WTwkg">
+          <ownedEnd xmi:id="_7WgPAKAoEd-GiONa6WTwkg" name="use Case #1 implemented by System A and invoked by Actor 1" visibility="private" type="_DDXaIJa_Ed-1hLYGSfVdpQ" association="_7WWeAKAoEd-GiONa6WTwkg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7WgPAqAoEd-GiONa6WTwkg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7WgPAaAoEd-GiONa6WTwkg" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:id="_7WgPA6AoEd-GiONa6WTwkg" name="actor 1" visibility="private" type="_oTs0rJAyEd-vzr_-PBHu3w" association="_7WWeAKAoEd-GiONa6WTwkg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7WgPBaAoEd-GiONa6WTwkg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7WgPBKAoEd-GiONa6WTwkg" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_YA8EFGHDEeK73_u7KyErow">
+      <eAnnotations xmi:id="_YA8EFWHDEeK73_u7KyErow" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_YA8EFmHDEeK73_u7KyErow">
+      <eAnnotations xmi:id="_YA8EF2HDEeK73_u7KyErow" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_YA8EGGHDEeK73_u7KyErow">
+      <eAnnotations xmi:id="_YA8EGWHDEeK73_u7KyErow" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_4OVBUD0TEeKt-L0gyEptgQ?Deployment/Deployment?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+    </profileApplication>
+  </uml:Model>
+  <Default:Documentation xmi:id="_ddsnsGHDEeK73_u7KyErow" base_Comment="_oTsyJJAyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_ddsnsWHDEeK73_u7KyErow" base_Comment="_oTsyJ5AyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_ddtOwGHDEeK73_u7KyErow" base_Comment="_-j3fsKAkEd-q0KkyZZn6tA"/>
+  <Default:Documentation xmi:id="_ddtOwWHDEeK73_u7KyErow" base_Comment="_oTsyKZAyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_ddtOwmHDEeK73_u7KyErow" base_Comment="_oTsyLJAyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_ddtOw2HDEeK73_u7KyErow" base_Comment="_7WfaMKAjEd-q0KkyZZn6tA"/>
+  <Default:Documentation xmi:id="_ddtOxGHDEeK73_u7KyErow" base_Comment="_BHAAQKAkEd-q0KkyZZn6tA"/>
+  <Default:Documentation xmi:id="_ddtOxWHDEeK73_u7KyErow" base_Comment="_HKRxUKAkEd-q0KkyZZn6tA"/>
+  <Default:Documentation xmi:id="_ddtOxmHDEeK73_u7KyErow" base_Comment="_ebzXEKAkEd-q0KkyZZn6tA"/>
+  <Default:Documentation xmi:id="_ddtOx2HDEeK73_u7KyErow" base_Comment="_v6SAIKAkEd-q0KkyZZn6tA"/>
+  <Default:Documentation xmi:id="_ddtOyGHDEeK73_u7KyErow" base_Comment="_oTs0EpAyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_ddtOyWHDEeK73_u7KyErow" base_Comment="_oTs0FJAyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_ddtOymHDEeK73_u7KyErow" base_Comment="_oTs0FpAyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_ddtOy2HDEeK73_u7KyErow" base_Comment="_oTs0GpAyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_ddtOzGHDEeK73_u7KyErow" base_Comment="_oTs0HpAyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_ddt10GHDEeK73_u7KyErow" base_Comment="_oTs0IJAyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_ddt10WHDEeK73_u7KyErow" base_Comment="_oTs0JJAyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_ddt10mHDEeK73_u7KyErow" base_Comment="_oTs0KJAyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_ddt102HDEeK73_u7KyErow" base_Comment="_oTs0KpAyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_ddt11GHDEeK73_u7KyErow" base_Comment="_tQOSIJdnEd-1hLYGSfVdpQ"/>
+  <Default:Documentation xmi:id="_ddt11WHDEeK73_u7KyErow" base_Comment="_oTs0NpAyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_ddt11mHDEeK73_u7KyErow" base_Comment="_PPHHkJdqEd-1hLYGSfVdpQ"/>
+  <Default:Documentation xmi:id="_ddt112HDEeK73_u7KyErow" base_Comment="_SGNZ4JdREd-1hLYGSfVdpQ"/>
+  <Default:Documentation xmi:id="_ddt12GHDEeK73_u7KyErow" base_Comment="_oTs0Q5AyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_ddt12WHDEeK73_u7KyErow" base_Comment="_MZtgYJdtEd-1hLYGSfVdpQ"/>
+  <Default:Documentation xmi:id="_ddt12mHDEeK73_u7KyErow" base_Comment="_oTs0SJAyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_dduc4GHDEeK73_u7KyErow" base_Comment="_oTs0S5AyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_dduc4WHDEeK73_u7KyErow" base_Comment="_kiNjsJdoEd-1hLYGSfVdpQ"/>
+  <Default:Documentation xmi:id="_dduc4mHDEeK73_u7KyErow" base_Comment="_lrnUYJdrEd-1hLYGSfVdpQ"/>
+  <Default:Documentation xmi:id="_dduc42HDEeK73_u7KyErow" base_Comment="_rkhLwJp8Ed-foup1swjvUg"/>
+  <Default:Documentation xmi:id="_dduc5GHDEeK73_u7KyErow" base_Comment="_9BmmMJwHEd-AoMmpzXPtCw"/>
+  <Default:Documentation xmi:id="_dduc5WHDEeK73_u7KyErow" base_Comment="_i2vmYJwIEd-AoMmpzXPtCw"/>
+  <Default:Documentation xmi:id="_dduc5mHDEeK73_u7KyErow" base_Comment="_oTs0qZAyEd-vzr_-PBHu3w"/>
+  <Standard:Subsystem xmi:id="_dduc52HDEeK73_u7KyErow" base_Component="_oTs0qpAyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_dduc6GHDEeK73_u7KyErow" base_Comment="_oTs0q5AyEd-vzr_-PBHu3w"/>
+  <Default:Documentation xmi:id="_dduc6WHDEeK73_u7KyErow" base_Comment="_DDXaIZa_Ed-1hLYGSfVdpQ"/>
+  <Default:Documentation xmi:id="_dduc6mHDEeK73_u7KyErow" base_Comment="_oTs0rZAyEd-vzr_-PBHu3w"/>
+</xmi:XMI>

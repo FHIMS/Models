@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trace:Trace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:trace="http:///www.eclipse.org/m2m/qvt/operational/trace.ecore">
+  <traceRecords>
+    <mappingOperation name="toCDA" package="fhim2cda" module="fhim2cda">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2cda.qvtox#//toCDA"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhim/FHIMLAB.emx#_K1Wp4GdvEeC2Bo_BG2At6Q"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Package">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.cda.model/model/cdasilab.emx#__JekoGhKEeC-5cBizZnhzA"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="applyProfiles" package="fhim2cda" module="fhim2cda">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2cda.qvtox#//applyProfiles"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Profile">
+        <value>
+          <modelElement href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters kind="INOUT" name="package" type="Package">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.cda.model/model/cdasilab.emx#__JekoGhKEeC-5cBizZnhzA"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="applyProfiles" package="fhim2cda" module="fhim2cda">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2cda.qvtox#//applyProfiles"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Profile">
+        <value>
+          <modelElement href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters kind="INOUT" name="package" type="Package">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.cda.model/model/cdasilab.emx#__JekoGhKEeC-5cBizZnhzA"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="applyProfiles" package="fhim2cda" module="fhim2cda">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2cda.qvtox#//applyProfiles"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Profile">
+        <value>
+          <modelElement href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters kind="INOUT" name="package" type="Package">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.cda.model/model/cdasilab.emx#__JekoGhKEeC-5cBizZnhzA"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="applyProfiles" package="fhim2cda" module="fhim2cda">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2cda.qvtox#//applyProfiles"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Profile">
+        <value>
+          <modelElement href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters kind="INOUT" name="package" type="Package">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.cda.model/model/cdasilab.emx#__JekoGhKEeC-5cBizZnhzA"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="toCDA" package="fhim2cda" module="fhim2cda">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2cda.qvtox#//toCDA.1"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhim/FHIMLAB.emx#_Iry_kGdzEeC2Bo_BG2At6Q"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters kind="INOUT" name="package" type="Package">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.cda.model/model/cdasilab.emx#__JekoGhKEeC-5cBizZnhzA"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="section" type="Class">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.cda.model/model/cdasilab.emx#__JekpmhKEeC-5cBizZnhzA"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="cloneAppliedStereotypes" package="fhim2cda" module="fhim2cda">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2cda.qvtox#//cloneAppliedStereotypes"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.cda.model/model/cdasilab.emx#__JeksmhKEeC-5cBizZnhzA"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="sourceProperty" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhim/FHIMLAB.emx#_MTgtIGdzEeC2Bo_BG2At6Q"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="cloneAppliedStereotypes" package="fhim2cda" module="fhim2cda">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2cda.qvtox#//cloneAppliedStereotypes"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.cda.model/model/cdasilab.emx#__JektWhKEeC-5cBizZnhzA"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="sourceProperty" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhim/FHIMLAB.emx#_MTgtI2dzEeC2Bo_BG2At6Q"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+</trace:Trace>

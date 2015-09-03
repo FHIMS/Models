@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://niem.gov/niem/domains/jxdm/4.0" version="1" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" xmlns:i="http://niem.gov/niem/appinfo/2.0">
+  <xsd:annotation>
+    <xsd:documentation>Justice</xsd:documentation>
+    <xsd:appinfo>
+      <i:ConformantIndicator>true</i:ConformantIndicator>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:import schemaLocation="../../../structures/2.0/structures.xsd" namespace="http://niem.gov/niem/structures/2.0"/>
+  <xsd:import schemaLocation="../../../appinfo/2.0/appinfo.xsd" namespace="http://niem.gov/niem/appinfo/2.0"/>
+  <xsd:import schemaLocation="../../../niem-core/2.0/niem-core.xsd" namespace="http://niem.gov/niem/niem-core/2.0"/>
+  <xsd:complexType name="BookingType">
+    <xsd:annotation>
+      <xsd:documentation>A data type for an administrative step taken after an arrest subject is brought to a police station or detention facility.</xsd:documentation>
+      <xsd:appinfo>
+        <i:Base i:namespace="http://niem.gov/niem/niem-core/2.0" i:name="ActivityType"/>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="nc:ActivityType">
+        <xsd:sequence>
+          <xsd:element ref="j:BookingAgencyRecordIdentification" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="Booking" type="j:BookingType" nillable="true">
+    <xsd:annotation>
+      <xsd:documentation>Details about an administrative step taken after an arrested subject is brought to a police station or detention facility, which involves entry of the subject&apos;s name and other relevant facts on the police &quot;blotter&quot;, and which may also include photographing, fingerprinting, and the like. </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="BookingAgencyRecordIdentification" type="nc:IdentificationType" nillable="true">
+    <xsd:annotation>
+      <xsd:documentation>A booking identifier of the originating case agency.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="CourtOrderSignatureMethodText" type="nc:TextType" nillable="true">
+    <xsd:annotation>
+      <xsd:documentation>A method used to obtain a signature on a court order.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="PersonFBIIdentification" type="nc:IdentificationType" nillable="true">
+    <xsd:annotation>
+      <xsd:documentation>A number issued by the FBI&apos;s Automated Fingerprint Identification System (AFIS) based on submitted fingerprints.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+</xsd:schema>

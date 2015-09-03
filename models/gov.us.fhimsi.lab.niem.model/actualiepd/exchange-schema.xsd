@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 rel. 2 (http://www.altova.com) by VENDOR (STATE OF CALIFORNIA/DEPT. OF JUSTICE) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadojMMHTransSum="http://doj.ca.gov/niem/MMHTransSum/Document/1.0" xmlns:cadoj="http://doj.ca.gov/niem/MMHTransSum/Extension/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" targetNamespace="http://doj.ca.gov/niem/MMHTransSum/Document/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<xsd:annotation>
+		<xsd:documentation>This namespace defines the root element and type for the California In-state IEPD</xsd:documentation>
+	</xsd:annotation>
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://doj.ca.gov/niem/MMHTransSum/Extension/1.0" schemaLocation="..\MMHTransSum\extension-schema.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\MMHTransSum\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\MMHTransSum\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/jxdm/4.0" schemaLocation="..\MMHTransSum\niem\domains\jxdm\4.0\jxdm.xsd"/>
+	<xsd:complexType name="CaliforniaDOJMMHTransSumType">
+		<xsd:annotation>
+			<xsd:documentation>This is the document (root) type for the California DOJ Medical Mental Health Transfer Summary</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<!-- Exchange Elements Generated Start Here -->
+					<xsd:element ref="cadoj:MedicalStaff"/>
+					<xsd:element ref="cadoj:Inmate"/>
+					<xsd:element ref="cadoj:Diagnosis"/>
+					<xsd:element ref="cadoj:LabTest"/>
+					<xsd:element ref="cadoj:Xray"/>
+					<xsd:element ref="cadoj:PPD"/>
+					<xsd:element ref="cadoj:ExchangeAgency"/>
+					<xsd:element ref="cadoj:CDCIntakeFacility"/>
+					<xsd:element ref="cadoj:DetentionFacility"/>
+					<xsd:element ref="cadoj:MedicalRecords"/>
+					<xsd:element ref="j:BookingAgencyRecordIdentification"/>
+					<!-- Exchange Elements Generated End Here -->
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!--Root Element for the Medical/Mental Health Transfer Summary Exchange -->
+	<xsd:element name="CaliforniaDOJMMHTransSum" type="cadojMMHTransSum:CaliforniaDOJMMHTransSumType"/>
+</xsd:schema>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="fhim2niem"
+	xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
+	
+	<taskdef name="xmlmodelingtask" classname="com.xmlmodeling.uml2.xsd.ant.taskdefs.XmlModelingTask" />
+		
+	<target name="fhim2niem">
+		
+	
+ 		<qvto:transformation uri="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvto">
+ 			<in uri="platform:/resource/gov.us.fhim/FHIMLAB.emx" />
+			<in uri="platform:/resource/gov.us.niem.core.model/model/gov.us.niem.core.uml" /> 			
+			<out uri="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.emx" /> 						
+		</qvto:transformation>
+		
+	   	<replace dir="${basedir}" token="&lt;uml:Package " value="&lt;uml:Model ">
+			<include name="model/*.emx" />
+		</replace>
+
+	   	<replace dir="${basedir}" token="&lt;/uml:Package&gt;" value="&lt;/uml:Model&gt;">
+			<include name="model/*.emx" />
+		</replace>
+	
+	
+		<xmlmodelingtask model="model/niemsilab.emx">
+
+			<GenerateXSD  destdir="${basedir}/schemas" >
+				<modelElement qname="NIEMFHIMLAB" nested="true"  />
+			</GenerateXSD>
+
+		</xmlmodelingtask >
+	
+	
+		<eclipse.refreshLocal resource="gov.us.fhimsi.lab.niem.model/model" depth="infinite"/>
+		<eclipse.refreshLocal resource="gov.us.fhimsi.lab.niem.model/schemas" depth="infinite"/>
+		
+	</target>
+</project>

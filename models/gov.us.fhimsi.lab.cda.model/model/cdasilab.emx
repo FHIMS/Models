@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="__JekoGhKEeC-5cBizZnhzA" name="FHIMLAB">
+    <packagedElement xmi:type="uml:Class" xmi:id="__JekoWhKEeC-5cBizZnhzA" name="CodedLabTestDocument">
+      <generalization xmi:id="__JekomhKEeC-5cBizZnhzA">
+        <general xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_wDMM0GEHEd6bFO5yxRh3Nw"/>
+      </generalization>
+      <ownedAttribute xmi:id="__Jeko2hKEeC-5cBizZnhzA" name="section" type="__JekpmhKEeC-5cBizZnhzA" association="__Jekq2hKEeC-5cBizZnhzA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__JekpGhKEeC-5cBizZnhzA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__JekpWhKEeC-5cBizZnhzA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="__JekpmhKEeC-5cBizZnhzA" name="CodedLabTestSection">
+      <generalization xmi:id="__Jekp2hKEeC-5cBizZnhzA">
+        <general xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_jWj60MfhEd6VjLXh4DcWSg"/>
+      </generalization>
+      <ownedAttribute xmi:id="__JekqGhKEeC-5cBizZnhzA" name="LabTestPromise" type="__Jekr2hKEeC-5cBizZnhzA" association="__JekuGhKEeC-5cBizZnhzA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__JekqWhKEeC-5cBizZnhzA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__JekqmhKEeC-5cBizZnhzA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="__Jekq2hKEeC-5cBizZnhzA" memberEnd="__Jeko2hKEeC-5cBizZnhzA __JekrGhKEeC-5cBizZnhzA">
+      <ownedEnd xmi:id="__JekrGhKEeC-5cBizZnhzA" name="" type="__JekoWhKEeC-5cBizZnhzA" association="__Jekq2hKEeC-5cBizZnhzA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__JekrWhKEeC-5cBizZnhzA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__JekrmhKEeC-5cBizZnhzA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="__Jekr2hKEeC-5cBizZnhzA" name="LabTestPromise">
+      <ownedComment xmi:id="__JeksGhKEeC-5cBizZnhzA" annotatedElement="__Jekr2hKEeC-5cBizZnhzA">
+        <body>&lt;p >cda=SimpleObservation&lt;/p>&lt;p >niem=Extension&lt;/p>&lt;p >niema=ActivityType&lt;/p></body>
+      </ownedComment>
+      <generalization xmi:id="__JeksWhKEeC-5cBizZnhzA">
+        <general xmi:type="uml:Class" href="platform:/resource/org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_dLvb0K4NEd6_ioDelDcPPg"/>
+      </generalization>
+      <ownedAttribute xmi:id="__JeksmhKEeC-5cBizZnhzA" name="priority" visibility="public">
+        <type xmi:type="uml:Class" href="platform:/resource/gov.us.fhim/Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?Datatypes/CD?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__Jeks2hKEeC-5cBizZnhzA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__JektGhKEeC-5cBizZnhzA" value="1"/>
+        <redefinedProperty href="platform:/resource/gov.us.fhim/Lab.efx#_VHctsLTlEd2sMvQnSCqOzA?Lab/LabTestPromise/priority?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="__JektWhKEeC-5cBizZnhzA" name="status" visibility="public">
+        <type xmi:type="uml:Class" href="platform:/resource/gov.us.fhim/Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?Datatypes/CD?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__JektmhKEeC-5cBizZnhzA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__Jekt2hKEeC-5cBizZnhzA" value="1"/>
+        <redefinedProperty href="platform:/resource/gov.us.fhim/Lab.efx#_avdfELTlEd2sMvQnSCqOzA?Lab/LabTestPromise/status?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="__JekuGhKEeC-5cBizZnhzA" memberEnd="__JekqGhKEeC-5cBizZnhzA __JekuWhKEeC-5cBizZnhzA">
+      <ownedEnd xmi:id="__JekuWhKEeC-5cBizZnhzA" name="" type="__JekpmhKEeC-5cBizZnhzA" association="__JekuGhKEeC-5cBizZnhzA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__JekumhKEeC-5cBizZnhzA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__Jeku2hKEeC-5cBizZnhzA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <profileApplication xmi:id="__JekvGhKEeC-5cBizZnhzA">
+      <eAnnotations xmi:id="__JekvWhKEeC-5cBizZnhzA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="__JekvmhKEeC-5cBizZnhzA">
+      <eAnnotations xmi:id="__Jekv2hKEeC-5cBizZnhzA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="__JekwGhKEeC-5cBizZnhzA">
+      <eAnnotations xmi:id="__JekwWhKEeC-5cBizZnhzA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="__JekwmhKEeC-5cBizZnhzA">
+      <eAnnotations xmi:id="__Jekw2hKEeC-5cBizZnhzA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:ValueSetConstraint xmi:id="__JekxGhKEeC-5cBizZnhzA" base_Property="__JeksmhKEeC-5cBizZnhzA">
+    <reference href="platform:/resource/org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_RJk1gCvEEd-1GpmIcz-YjA"/>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="__JekxWhKEeC-5cBizZnhzA" base_Property="__JektWhKEeC-5cBizZnhzA">
+    <reference href="platform:/resource/org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dkK5gaDqEd-dVeaMP0XXQw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:CDATemplate xmi:id="__JekxmhKEeC-5cBizZnhzA" base_Class="__JekoWhKEeC-5cBizZnhzA" templateId="1111-2222-3333-4444"/>
+  <CDA:CDATemplate xmi:id="__Jekx2hKEeC-5cBizZnhzA" base_Class="__JekpmhKEeC-5cBizZnhzA" templateId="1111-2222-3333-4444"/>
+  <CDA:CodegenSupport xmi:id="__JekyGhKEeC-5cBizZnhzA" basePackage="gov.us.fhim.exchange.cda" nsPrefix="lab" nsURI="http://gov.us.fhim.exchange/cda/lab" packageName="lab" prefix="Lab" base_Namespace="__JekoGhKEeC-5cBizZnhzA"/>
+</xmi:XMI>

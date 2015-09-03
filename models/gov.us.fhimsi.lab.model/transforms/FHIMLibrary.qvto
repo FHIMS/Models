@@ -1,0 +1,59 @@
+library FHIMLibrary;
+import Strings;
+modeltype uml uses 'http://www.eclipse.org/uml2/2.1.0/UML';
+modeltype ecore "strict" uses ecore('http://www.eclipse.org/emf/2002/Ecore');
+modeltype term uses 'http://www.openhealthtools.org/mdht/schemas/term/1';
+
+query uml::Comment::getMappings(in key: String ) : String
+{
+	var mappingValue : String := '';
+    var mappings : Sequence(String) := self.body.split('\n<>');
+    var pos : Integer := 1;
+    var found : Boolean := false;
+	while(pos <= mappings->size() and found = false) {
+		if (mappings->at(pos).find(key) > 0) then {
+			found := true;
+ 			mappingValue  := mappings->at(pos).substringAfter(key).trim();
+ 			mappingValue  := mappingValue.split('<')->at(1);
+		} endif;
+ 		pos := pos + 1;
+	};
+	return mappingValue ;
+}
+
+query uml::getClassByName(in umlModel: uml,in cdaClassName: String ) : uml::Class
+{   
+	return umlModel.objectsOfType(uml::Class)->asSequence()->select(cdaClassName=name)->first();
+}
+
+
+query uml::Model::getPackageImport(in packageName: String )  : uml::Package
+{
+	 return self.packageImport->select(packageName=importedPackage.name)->asSequence()->first().importedPackage;
+}
+
+
+// Add to general purpose qvt library  
+ 
+mapping uml::PackageImport::displayPackage() 
+{
+	log('uml::Package is ' +self.importedPackage.qualifiedName);
+}
+
+mapping uml::Stereotype::displayStereotype()
+{
+	log('uml::Stereotype is ' + self.qualifiedName);	
+}
+
+mapping ecore::EClass::foo()
+{
+	self.dump();
+}
+mapping uml::NamedElement::displayNamedElement()
+{
+
+	var foo : uml::NamedElement := self.deepclone().oclAsType(uml::NamedElement);
+	
+
+	log('uml::NameElement is ' + foo.qualifiedName);	
+}

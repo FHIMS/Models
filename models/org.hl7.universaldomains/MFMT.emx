@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:HDF="http:///schemas/HDF/_D_mP4FwxEd63D_E2UJKpvQ/12" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/HDF/_D_mP4FwxEd63D_E2UJKpvQ/12 pathmap://HL7_PROFILES/HDF.profile.uml#_D_tkoFwxEd63D_E2UJKpvQ http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+  <uml:Model xmi:id="_kd0iYColEeCf84yuDUMATg" name="MFMT">
+    <eAnnotations xmi:id="_nlPmUColEeCf84yuDUMATg" source="org.openhealthtools.mdht.uml.hl7.mif2uml.ifc">
+      <details xmi:id="_nlPmUSolEeCf84yuDUMATg" key="CMET::COCT_MT090000UV01::AssignedEntity" value="R_AssignedEntityUniversal"/>
+      <details xmi:id="_nlvVkColEeCf84yuDUMATg" key="CMET::COCT_MT050000UV::Patient" value="R_PatientUniversal"/>
+    </eAnnotations>
+    <packageImport xmi:id="_niiQkColEeCf84yuDUMATg">
+      <importedPackage href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_nkexUColEeCf84yuDUMATg">
+      <importedPackage href="pathmap://HL7_RIM_UV/RIM.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="MFMT_HD002000UV01" name="MFMT_HD002000UV01">
+      <eAnnotations xmi:id="_nhz30ColEeCf84yuDUMATg" source="uml2.alias">
+        <details xmi:id="_nhz30SolEeCf84yuDUMATg" key="Act Reference"/>
+      </eAnnotations>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_HD002000UV01-ActReference" name="ActReference" clientDependency="_nl8J4SolEeCf84yuDUMATg">
+        <ownedComment xmi:id="_njItgSolEeCf84yuDUMATg">
+          <body> 
+                      There are 2 MTs related to this RMIM. In the MT used for initial notifications to the registry, and in response messages, the participations shown are mandatory. In the MT used by update messages, the participations are optional. All the participations relate to the act that is referenced. Refer to the Trigger Event Control Act for the participations of the referential update request. 
+                  </body>
+        </ownedComment>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-ActReference-classCode" name="classCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CS"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nilT4iolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nilT4SolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-ActReference-moodCode" name="moodCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CS"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_niqMYiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_niqMYSolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-ActReference-id" name="id" type="MFMT_HD002000UV01-DSETII">
+          <ownedComment xmi:id="_nivr8SolEeCf84yuDUMATg">
+            <body> 
+                         act identifier 
+                     </body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nivr8ColEeCf84yuDUMATg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nivE4SolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-ActReference-code" name="code">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CD"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ni3AsiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ni3AsSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-ActReference-statusCode" name="statusCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CS"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ni75MiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ni75MSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-ActReference-effectiveTime" name="effectiveTime" type="MFMT_HD002000UV01-QSETTS">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_njAxsiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_njAxsSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-ActReference-activityTime" name="activityTime" type="MFMT_HD002000UV01-QSETTS">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_njD1AColEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_njDN8SolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-ActReference-confidentialityCode" name="confidentialityCode" type="MFMT_HD002000UV01-DSETCD">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_njGRQiolEeCf84yuDUMATg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_njGRQSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-ActReference-author" name="author" type="MFMT_HD002000UV01-Author" association="_njzb4SolEeCf84yuDUMATg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nj2fMiolEeCf84yuDUMATg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nj2fMSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-ActReference-recordTarget" name="recordTarget" type="MFMT_HD002000UV01-RecordTarget" association="_nkh0oColEeCf84yuDUMATg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nkkQ4iolEeCf84yuDUMATg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nkkQ4SolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_nl8J4SolEeCf84yuDUMATg" supplier="MFMT_HD002000UV01-ActReference.1" client="MFMT_HD002000UV01-ActReference" contract="MFMT_HD002000UV01-ActReference.1"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_HD002000UV01-DSETII" name="DSET&lt;II>"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_HD002000UV01-QSETTS" name="QSET&lt;TS>"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_HD002000UV01-DSETCD" name="DSET&lt;CD>"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_HD002000UV01-Author" name="Author">
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-Author-typeCode" name="typeCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CS"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_njSegiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_njSegSolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-Author-noteText" name="noteText">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#ED"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_njX-EColEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_njXXASolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-Author-time" name="time" type="MFMT_HD002000UV01-IVLTS">
+          <ownedComment xmi:id="_njaaUyolEeCf84yuDUMATg">
+            <body> 
+                         Time of creation or performance 
+                     </body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_njaaUiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_njaaUSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-Author-modeCode" name="modeCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CD"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_njhvEiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_njhvESolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-Author-signatureCode" name="signatureCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CD"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_njnOoColEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_njmnkSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-Author-signatureText" name="signatureText">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#ED"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_njsHIiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_njsHISolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-Author-assignedEntity" name="assignedEntity" association="_nlPmUiolEeCf84yuDUMATg">
+          <type xmi:type="uml:Class" href="CMET.emx#COCT_MT090000UV01-AssignedEntity?CMET/COCT_MT090000UV01/AssignedEntity?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlTQsiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlTQsSolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_HD002000UV01-IVLTS" name="IVL&lt;TS>">
+        <templateBinding xmi:id="MFMT_HD002000UV01-IVLTS-_templateBinding.0">
+          <signature xmi:type="uml:RedefinableTemplateSignature" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#_Ot6LNSo1Ed65BMwZ7dmx2w"/>
+          <parameterSubstitution xmi:id="_njX-EyolEeCf84yuDUMATg">
+            <formal xmi:type="uml:ClassifierTemplateParameter" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#_Ot6LNio1Ed65BMwZ7dmx2w"/>
+            <actual xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#TS"/>
+          </parameterSubstitution>
+        </templateBinding>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_HD002000UV01-RecordTarget" name="RecordTarget">
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-RecordTarget-typeCode" name="typeCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CS"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_njw_oiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_njw_oSolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_HD002000UV01-RecordTarget-patient" name="patient" association="_nlvVkSolEeCf84yuDUMATg">
+          <type xmi:type="uml:Class" href="CMET.emx#COCT_MT050000UV-Patient?CMET/COCT_MT050000UV/Patient?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlyY4iolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlyY4SolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_njzb4SolEeCf84yuDUMATg" memberEnd="_njzb4iolEeCf84yuDUMATg MFMT_HD002000UV01-ActReference-author">
+        <ownedEnd xmi:id="_njzb4iolEeCf84yuDUMATg" type="MFMT_HD002000UV01-ActReference" association="_njzb4SolEeCf84yuDUMATg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_nkh0oColEeCf84yuDUMATg" memberEnd="_nkh0oSolEeCf84yuDUMATg MFMT_HD002000UV01-ActReference-recordTarget">
+        <ownedEnd xmi:id="_nkh0oSolEeCf84yuDUMATg" type="MFMT_HD002000UV01-ActReference" association="_nkh0oColEeCf84yuDUMATg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_nlPmUiolEeCf84yuDUMATg" memberEnd="_nlPmUyolEeCf84yuDUMATg MFMT_HD002000UV01-Author-assignedEntity">
+        <ownedEnd xmi:id="_nlPmUyolEeCf84yuDUMATg" type="MFMT_HD002000UV01-Author" association="_nlPmUiolEeCf84yuDUMATg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_nlvVkSolEeCf84yuDUMATg" memberEnd="_nlvVkiolEeCf84yuDUMATg MFMT_HD002000UV01-RecordTarget-patient">
+        <ownedEnd xmi:id="_nlvVkiolEeCf84yuDUMATg" type="MFMT_HD002000UV01-RecordTarget" association="_nlvVkSolEeCf84yuDUMATg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="MFMT_HD002000UV01-ActReference.1" name="ActReference">
+        <ownedComment xmi:id="_nl01ISolEeCf84yuDUMATg">
+          <body> 
+                   Description: Used to capture the data and associations that are needed to capture summary information of Acts that exist in applications. This summary information is stored in a centralized Act Registry, which can in turn be queried by applications. 
+               </body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="MFMT_MT002001UV01" name="MFMT_MT002001UV01">
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_MT002001UV01-ActReference" name="ActReference" clientDependency="_oW9XISolEeCf84yuDUMATg">
+        <ownedComment xmi:id="_oVNDoSolEeCf84yuDUMATg">
+          <body> 
+                      There are 2 MTs related to this RMIM. In the MT used for initial notifications to the registry, and in response messages, the participations shown are mandatory. In the MT used by update messages, the participations are optional. All the participations relate to the act that is referenced. Refer to the Trigger Event Control Act for the participations of the referential update request. 
+                  </body>
+        </ownedComment>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-ActReference-classCode" name="classCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CS"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oUpqAColEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oUpC8SolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-ActReference-moodCode" name="moodCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CS"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oUuigiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oUuigSolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-ActReference-id" name="id" type="MFMT_MT002001UV01-DSETII">
+          <ownedComment xmi:id="_oUzbAyolEeCf84yuDUMATg">
+            <body> 
+                         act identifier 
+                     </body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oUzbAiolEeCf84yuDUMATg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oUzbASolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-ActReference-code" name="code">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CD"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oU6vwiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU6vwSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-ActReference-statusCode" name="statusCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CS"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oVAPUiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oVAPUSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-ActReference-effectiveTime" name="effectiveTime" type="MFMT_MT002001UV01-QSETTS">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oVFH0iolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oVFH0SolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-ActReference-activityTime" name="activityTime" type="MFMT_MT002001UV01-QSETTS">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oVHkEiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oVHkESolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-ActReference-confidentialityCode" name="confidentialityCode" type="MFMT_MT002001UV01-DSETCD">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oVKnYiolEeCf84yuDUMATg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oVKnYSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-ActReference-author" name="author" type="MFMT_MT002001UV01-Author" association="_oV4ZESolEeCf84yuDUMATg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oV61UiolEeCf84yuDUMATg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oV61USolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-ActReference-recordTarget" name="recordTarget" type="MFMT_MT002001UV01-RecordTarget" association="_oWmx0ColEeCf84yuDUMATg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oWpOEiolEeCf84yuDUMATg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oWpOESolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_oW9XISolEeCf84yuDUMATg" supplier="MFMT_MT002001UV01-ActReference.1" client="MFMT_MT002001UV01-ActReference" contract="MFMT_MT002001UV01-ActReference.1"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_MT002001UV01-DSETII" name="DSET&lt;II>"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_MT002001UV01-QSETTS" name="QSET&lt;TS>"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_MT002001UV01-DSETCD" name="DSET&lt;CD>"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_MT002001UV01-Author" name="Author">
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-Author-typeCode" name="typeCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CS"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oVW0oiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oVW0oSolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-Author-noteText" name="noteText">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#ED"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oVcUMSolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oVcUMColEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-Author-time" name="time" type="MFMT_MT002001UV01-IVLTS">
+          <ownedComment xmi:id="_oVfXgSolEeCf84yuDUMATg">
+            <body> 
+                         Time of creation or performance 
+                     </body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oVfXgColEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oVewcSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-Author-modeCode" name="modeCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CD"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oVmsQiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oVmsQSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-Author-signatureCode" name="signatureCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CD"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oVrkwiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oVrkwSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-Author-signatureText" name="signatureText">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#ED"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oVwdQiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oVwdQSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-Author-assignedEntity" name="assignedEntity" association="_oWsRYColEeCf84yuDUMATg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oWutoiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oWutoSolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_MT002001UV01-IVLTS" name="IVL&lt;TS>">
+        <templateBinding xmi:id="MFMT_MT002001UV01-IVLTS-_templateBinding.0">
+          <signature xmi:type="uml:RedefinableTemplateSignature" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#_Ot6LNSo1Ed65BMwZ7dmx2w"/>
+          <parameterSubstitution xmi:id="_oVcUNColEeCf84yuDUMATg">
+            <formal xmi:type="uml:ClassifierTemplateParameter" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#_Ot6LNio1Ed65BMwZ7dmx2w"/>
+            <actual xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#TS"/>
+          </parameterSubstitution>
+        </templateBinding>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_MT002001UV01-RecordTarget" name="RecordTarget">
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-RecordTarget-typeCode" name="typeCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CS"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oV180iolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oV180SolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002001UV01-RecordTarget-patient" name="patient" association="_oWxJ4ColEeCf84yuDUMATg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oWzmIiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oWzmISolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_oV4ZESolEeCf84yuDUMATg" memberEnd="_oV4ZEiolEeCf84yuDUMATg MFMT_MT002001UV01-ActReference-author">
+        <ownedEnd xmi:id="_oV4ZEiolEeCf84yuDUMATg" type="MFMT_MT002001UV01-ActReference" association="_oV4ZESolEeCf84yuDUMATg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_oWmx0ColEeCf84yuDUMATg" memberEnd="_oWmx0SolEeCf84yuDUMATg MFMT_MT002001UV01-ActReference-recordTarget">
+        <ownedEnd xmi:id="_oWmx0SolEeCf84yuDUMATg" type="MFMT_MT002001UV01-ActReference" association="_oWmx0ColEeCf84yuDUMATg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_oWsRYColEeCf84yuDUMATg" memberEnd="_oWsRYSolEeCf84yuDUMATg MFMT_MT002001UV01-Author-assignedEntity">
+        <ownedEnd xmi:id="_oWsRYSolEeCf84yuDUMATg" type="MFMT_MT002001UV01-Author" association="_oWsRYColEeCf84yuDUMATg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_oWxJ4ColEeCf84yuDUMATg" memberEnd="_oWxJ4SolEeCf84yuDUMATg MFMT_MT002001UV01-RecordTarget-patient">
+        <ownedEnd xmi:id="_oWxJ4SolEeCf84yuDUMATg" type="MFMT_MT002001UV01-RecordTarget" association="_oWxJ4ColEeCf84yuDUMATg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="MFMT_MT002001UV01-ActReference.1" name="ActReference">
+        <ownedComment xmi:id="_oW2pcColEeCf84yuDUMATg">
+          <body> 
+                   Description: Used to capture the data and associations that are needed to capture summary information of Acts that exist in applications. This summary information is stored in a centralized Act Registry, which can in turn be queried by applications. 
+               </body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="MFMT_MT002002UV01" name="MFMT_MT002002UV01">
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_MT002002UV01-ActReference" name="ActReference" clientDependency="_oYxVASolEeCf84yuDUMATg">
+        <ownedComment xmi:id="_oXqhwSolEeCf84yuDUMATg">
+          <body> 
+                      There are 2 MTs related to this RMIM. In the MT used for initial notifications to the registry, and in response messages, the participations shown are mandatory. In the MT used by update messages, the participations are optional. All the participations relate to the act that is referenced. Refer to the Trigger Event Control Act for the participations of the referential update request. 
+                  </body>
+        </ownedComment>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-ActReference-classCode" name="classCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CS"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oXHIIiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oXHIISolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-ActReference-moodCode" name="moodCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CS"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oXMnsColEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oXMAoSolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-ActReference-id" name="id" type="MFMT_MT002002UV01-DSETII">
+          <ownedComment xmi:id="_oXRgMyolEeCf84yuDUMATg">
+            <body> 
+                         act identifier 
+                     </body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oXRgMiolEeCf84yuDUMATg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oXRgMSolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-ActReference-code" name="code">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CD"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oXY08iolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oXY08SolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-ActReference-statusCode" name="statusCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CS"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oXdtciolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oXdtcSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-ActReference-effectiveTime" name="effectiveTime" type="MFMT_MT002002UV01-QSETTS">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oXjNASolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oXjNAColEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-ActReference-activityTime" name="activityTime" type="MFMT_MT002002UV01-QSETTS">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oXlpQiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oXlpQSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-ActReference-confidentialityCode" name="confidentialityCode" type="MFMT_MT002002UV01-DSETCD">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oXoFgiolEeCf84yuDUMATg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oXoFgSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-ActReference-author" name="author" type="MFMT_MT002002UV01-Author" association="_oYVQISolEeCf84yuDUMATg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oYYTciolEeCf84yuDUMATg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oYYTcSolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-ActReference-recordTarget" name="recordTarget" type="MFMT_MT002002UV01-RecordTarget" association="_oYavsColEeCf84yuDUMATg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oYdL8iolEeCf84yuDUMATg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oYdL8SolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_oYxVASolEeCf84yuDUMATg" supplier="MFMT_MT002002UV01-ActReference.1" client="MFMT_MT002002UV01-ActReference" contract="MFMT_MT002002UV01-ActReference.1"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_MT002002UV01-DSETII" name="DSET&lt;II>"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_MT002002UV01-QSETTS" name="QSET&lt;TS>"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_MT002002UV01-DSETCD" name="DSET&lt;CD>"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_MT002002UV01-Author" name="Author">
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-Author-typeCode" name="typeCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CS"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oX050ColEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oX0SwSolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-Author-noteText" name="noteText">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#ED"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oX5yUiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oX5yUSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-Author-time" name="time" type="MFMT_MT002002UV01-IVLTS">
+          <ownedComment xmi:id="_oX81oColEeCf84yuDUMATg">
+            <body> 
+                         Time of creation or performance 
+                     </body>
+          </ownedComment>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oX8OkiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oX8OkSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-Author-modeCode" name="modeCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CD"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oYEKYColEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oYDjUSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-Author-signatureCode" name="signatureCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CD"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oYJC4iolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oYJC4SolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-Author-signatureText" name="signatureText">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#ED"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oYN7YiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oYN7YSolEeCf84yuDUMATg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-Author-assignedEntity" name="assignedEntity" association="_oYgPQColEeCf84yuDUMATg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oYirgiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oYirgSolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_MT002002UV01-IVLTS" name="IVL&lt;TS>">
+        <templateBinding xmi:id="MFMT_MT002002UV01-IVLTS-_templateBinding.0">
+          <signature xmi:type="uml:RedefinableTemplateSignature" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#_Ot6LNSo1Ed65BMwZ7dmx2w"/>
+          <parameterSubstitution xmi:id="_oX5yVSolEeCf84yuDUMATg">
+            <formal xmi:type="uml:ClassifierTemplateParameter" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#_Ot6LNio1Ed65BMwZ7dmx2w"/>
+            <actual xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#TS"/>
+          </parameterSubstitution>
+        </templateBinding>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="MFMT_MT002002UV01-RecordTarget" name="RecordTarget">
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-RecordTarget-typeCode" name="typeCode">
+          <type xmi:type="uml:Interface" href="pathmap://HL7_DT_UV/DEFN=UV=DT=1.0.uml#CS"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oYSz4iolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oYSz4SolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="MFMT_MT002002UV01-RecordTarget-patient" name="patient" association="_oYlHwColEeCf84yuDUMATg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oYnkAiolEeCf84yuDUMATg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oYnkASolEeCf84yuDUMATg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_oYVQISolEeCf84yuDUMATg" memberEnd="_oYVQIiolEeCf84yuDUMATg MFMT_MT002002UV01-ActReference-author">
+        <ownedEnd xmi:id="_oYVQIiolEeCf84yuDUMATg" type="MFMT_MT002002UV01-ActReference" association="_oYVQISolEeCf84yuDUMATg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_oYavsColEeCf84yuDUMATg" memberEnd="_oYavsSolEeCf84yuDUMATg MFMT_MT002002UV01-ActReference-recordTarget">
+        <ownedEnd xmi:id="_oYavsSolEeCf84yuDUMATg" type="MFMT_MT002002UV01-ActReference" association="_oYavsColEeCf84yuDUMATg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_oYgPQColEeCf84yuDUMATg" memberEnd="_oYgPQSolEeCf84yuDUMATg MFMT_MT002002UV01-Author-assignedEntity">
+        <ownedEnd xmi:id="_oYgPQSolEeCf84yuDUMATg" type="MFMT_MT002002UV01-Author" association="_oYgPQColEeCf84yuDUMATg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_oYlHwColEeCf84yuDUMATg" memberEnd="_oYlHwSolEeCf84yuDUMATg MFMT_MT002002UV01-RecordTarget-patient">
+        <ownedEnd xmi:id="_oYlHwSolEeCf84yuDUMATg" type="MFMT_MT002002UV01-RecordTarget" association="_oYlHwColEeCf84yuDUMATg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="MFMT_MT002002UV01-ActReference.1" name="ActReference">
+        <ownedComment xmi:id="_oYqnUColEeCf84yuDUMATg">
+          <body> 
+                   Description: Used to capture the data and associations that are needed to capture summary information of Acts that exist in applications. This summary information is stored in a centralized Act Registry, which can in turn be queried by applications. 
+               </body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_mzVoQColEeCf84yuDUMATg">
+      <eAnnotations xmi:id="_mzVoQSolEeCf84yuDUMATg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_mzWPUColEeCf84yuDUMATg">
+      <eAnnotations xmi:id="_mzWPUSolEeCf84yuDUMATg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://HL7_PROFILES/RIM.profile.uml#_tkA5gERaEdyoutEhWTC49A"/>
+    </profileApplication>
+    <profileApplication xmi:id="_mzWPUiolEeCf84yuDUMATg">
+      <eAnnotations xmi:id="_mzWPUyolEeCf84yuDUMATg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://HL7_PROFILES/HDF.profile.uml#_D_tkoFwxEd63D_E2UJKpvQ"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://HL7_PROFILES/HDF.profile.uml#_XQSZwERPEdyoutEhWTC49A"/>
+    </profileApplication>
+  </uml:Model>
+  <HDF:HDFPackage xmi:id="_nhw0gColEeCf84yuDUMATg" base_Package="MFMT_HD002000UV01" title="Act Reference" packageKind="id" conformanceLevel="International" realmNamespace="UV" artifact="HD" root="DEFN" section="IM" subSection="MF" domain="MT" version="01"/>
+  <RIM:ActHeir xmi:id="_nh1tAColEeCf84yuDUMATg" base_Class="MFMT_HD002000UV01-ActReference"/>
+  <HDF:HDFAttribute xmi:id="_nilT4ColEeCf84yuDUMATg" sortKey="1" base_Property="MFMT_HD002000UV01-ActReference-classCode" isMandatory="true" conformance="R" isImmutable="true"/>
+  <HDF:ValueSetConstraint xmi:id="_ninwIColEeCf84yuDUMATg" base_Property="MFMT_HD002000UV01-ActReference-classCode" name="ActClass ActClassRoot" codingStrength="CNE" rootCode="ACT"/>
+  <HDF:HDFAttribute xmi:id="_niqMYColEeCf84yuDUMATg" sortKey="2" base_Property="MFMT_HD002000UV01-ActReference-moodCode" isMandatory="true" conformance="R" isImmutable="true"/>
+  <HDF:ConceptDomainConstraint xmi:id="_nisooColEeCf84yuDUMATg" base_Property="MFMT_HD002000UV01-ActReference-moodCode" name="ActMoodCompletionTrack"/>
+  <HDF:HDFAttribute xmi:id="_nivE4ColEeCf84yuDUMATg" sortKey="3" base_Property="MFMT_HD002000UV01-ActReference-id" isMandatory="true" conformance="R"/>
+  <HDF:DesignComments xmi:id="_niyIMColEeCf84yuDUMATg" base_Comment="_nivr8SolEeCf84yuDUMATg"/>
+  <Default:Documentation xmi:id="_ni0kcColEeCf84yuDUMATg" base_Comment="_nivr8SolEeCf84yuDUMATg"/>
+  <HDF:HDFAttribute xmi:id="_ni3AsColEeCf84yuDUMATg" sortKey="4" base_Property="MFMT_HD002000UV01-ActReference-code" conformance="R"/>
+  <HDF:ConceptDomainConstraint xmi:id="_ni5c8ColEeCf84yuDUMATg" base_Property="MFMT_HD002000UV01-ActReference-code" name="ActCode"/>
+  <HDF:HDFAttribute xmi:id="_ni75MColEeCf84yuDUMATg" sortKey="5" base_Property="MFMT_HD002000UV01-ActReference-statusCode" conformance="R"/>
+  <HDF:ConceptDomainConstraint xmi:id="_ni-VcColEeCf84yuDUMATg" base_Property="MFMT_HD002000UV01-ActReference-statusCode" name="ActStatus"/>
+  <HDF:HDFAttribute xmi:id="_njAxsColEeCf84yuDUMATg" sortKey="6" base_Property="MFMT_HD002000UV01-ActReference-effectiveTime"/>
+  <HDF:HDFAttribute xmi:id="_njDN8ColEeCf84yuDUMATg" sortKey="7" base_Property="MFMT_HD002000UV01-ActReference-activityTime"/>
+  <HDF:HDFAttribute xmi:id="_njGRQColEeCf84yuDUMATg" sortKey="8" base_Property="MFMT_HD002000UV01-ActReference-confidentialityCode" conformance="R"/>
+  <HDF:ConceptDomainConstraint xmi:id="_njItgColEeCf84yuDUMATg" base_Property="MFMT_HD002000UV01-ActReference-confidentialityCode" name="Confidentiality"/>
+  <HDF:DesignComments xmi:id="_njLJwColEeCf84yuDUMATg" base_Comment="_njItgSolEeCf84yuDUMATg"/>
+  <Default:Documentation xmi:id="_njNmAColEeCf84yuDUMATg" base_Comment="_njItgSolEeCf84yuDUMATg"/>
+  <RIM:Participation xmi:id="_njQCQColEeCf84yuDUMATg" base_Class="MFMT_HD002000UV01-Author"/>
+  <HDF:HDFAttribute xmi:id="_njSegColEeCf84yuDUMATg" sortKey="1" base_Property="MFMT_HD002000UV01-Author-typeCode" isMandatory="true" conformance="R" isImmutable="true"/>
+  <HDF:ValueSetConstraint xmi:id="_njU6wColEeCf84yuDUMATg" base_Property="MFMT_HD002000UV01-Author-typeCode" name="ParticipationAuthorOriginator" codingStrength="CNE" rootCode="AUT"/>
+  <HDF:HDFAttribute xmi:id="_njXXAColEeCf84yuDUMATg" sortKey="2" base_Property="MFMT_HD002000UV01-Author-noteText"/>
+  <HDF:HDFAttribute xmi:id="_njaaUColEeCf84yuDUMATg" sortKey="3" base_Property="MFMT_HD002000UV01-Author-time"/>
+  <HDF:DesignComments xmi:id="_njc2kColEeCf84yuDUMATg" base_Comment="_njaaUyolEeCf84yuDUMATg"/>
+  <Default:Documentation xmi:id="_njfS0ColEeCf84yuDUMATg" base_Comment="_njaaUyolEeCf84yuDUMATg"/>
+  <HDF:HDFAttribute xmi:id="_njhvEColEeCf84yuDUMATg" sortKey="4" base_Property="MFMT_HD002000UV01-Author-modeCode"/>
+  <HDF:ConceptDomainConstraint xmi:id="_njkLUColEeCf84yuDUMATg" base_Property="MFMT_HD002000UV01-Author-modeCode" name="ParticipationMode"/>
+  <HDF:HDFAttribute xmi:id="_njmnkColEeCf84yuDUMATg" sortKey="5" base_Property="MFMT_HD002000UV01-Author-signatureCode"/>
+  <HDF:ConceptDomainConstraint xmi:id="_njpq4ColEeCf84yuDUMATg" base_Property="MFMT_HD002000UV01-Author-signatureCode" name="ParticipationSignature"/>
+  <HDF:HDFAttribute xmi:id="_njsHIColEeCf84yuDUMATg" sortKey="6" base_Property="MFMT_HD002000UV01-Author-signatureText"/>
+  <RIM:Participation xmi:id="_njujYColEeCf84yuDUMATg" base_Class="MFMT_HD002000UV01-RecordTarget"/>
+  <HDF:HDFAttribute xmi:id="_njw_oColEeCf84yuDUMATg" sortKey="1" base_Property="MFMT_HD002000UV01-RecordTarget-typeCode" isMandatory="true" conformance="R" isImmutable="true"/>
+  <HDF:ValueSetConstraint xmi:id="_njzb4ColEeCf84yuDUMATg" base_Property="MFMT_HD002000UV01-RecordTarget-typeCode" name="ParticipationRecordTarget" codingStrength="CNE" rootCode="RCT"/>
+  <HDF:HDFAssociationEnd xmi:id="_nj2fMColEeCf84yuDUMATg" sortKey="AEA_______" base_Property="MFMT_HD002000UV01-ActReference-author" conformance="R">
+    <derivationSupplier href="pathmap://HL7_RIM_UV/RIM.uml#Act-participation"/>
+  </HDF:HDFAssociationEnd>
+  <HDF:HDFAssociationEnd xmi:id="_nkkQ4ColEeCf84yuDUMATg" sortKey="ABA_______" base_Property="MFMT_HD002000UV01-ActReference-recordTarget" conformance="R">
+    <derivationSupplier href="pathmap://HL7_RIM_UV/RIM.uml#Act-participation"/>
+  </HDF:HDFAssociationEnd>
+  <HDF:HDFAssociationEnd xmi:id="_nlTQsColEeCf84yuDUMATg" sortKey="BZ" base_Property="MFMT_HD002000UV01-Author-assignedEntity" conformance="R">
+    <derivationSupplier href="pathmap://HL7_RIM_UV/RIM.uml#Participation-role"/>
+  </HDF:HDFAssociationEnd>
+  <HDF:HDFAssociationEnd xmi:id="_nlyY4ColEeCf84yuDUMATg" sortKey="BZ" base_Property="MFMT_HD002000UV01-RecordTarget-patient" conformance="R">
+    <derivationSupplier href="pathmap://HL7_RIM_UV/RIM.uml#Participation-role"/>
+  </HDF:HDFAssociationEnd>
+  <HDF:Description xmi:id="_nl3RYColEeCf84yuDUMATg" base_Comment="_nl01ISolEeCf84yuDUMATg"/>
+  <Default:Documentation xmi:id="_nl5toColEeCf84yuDUMATg" base_Comment="_nl01ISolEeCf84yuDUMATg"/>
+  <HDF:EntryPoint xmi:id="_nl8J4ColEeCf84yuDUMATg" base_Interface="MFMT_HD002000UV01-ActReference.1" useKind="SemanticPayload"/>
+  <HDF:HDFPackage xmi:id="_oT6DIColEeCf84yuDUMATg" base_Package="MFMT_MT002001UV01" packageKind="id" conformanceLevel="International" realmNamespace="UV" artifact="MT" root="DEFN" section="IM" subSection="MF" domain="MT" version="01"/>
+  <RIM:ActHeir xmi:id="_oT-7oColEeCf84yuDUMATg" base_Class="MFMT_MT002001UV01-ActReference"/>
+  <HDF:HDFAttribute xmi:id="_oUpC8ColEeCf84yuDUMATg" sortKey="1" base_Property="MFMT_MT002001UV01-ActReference-classCode" isMandatory="true" conformance="R" isImmutable="true"/>
+  <HDF:ValueSetConstraint xmi:id="_oUsGQColEeCf84yuDUMATg" base_Property="MFMT_MT002001UV01-ActReference-classCode" name="ActClass ActClassRoot" codingStrength="CNE" rootCode="ACT"/>
+  <HDF:HDFAttribute xmi:id="_oUuigColEeCf84yuDUMATg" sortKey="2" base_Property="MFMT_MT002001UV01-ActReference-moodCode" isMandatory="true" conformance="R" isImmutable="true"/>
+  <HDF:ConceptDomainConstraint xmi:id="_oUw-wColEeCf84yuDUMATg" base_Property="MFMT_MT002001UV01-ActReference-moodCode" name="ActMoodCompletionTrack"/>
+  <HDF:HDFAttribute xmi:id="_oUzbAColEeCf84yuDUMATg" sortKey="3" base_Property="MFMT_MT002001UV01-ActReference-id" isMandatory="true" conformance="R"/>
+  <HDF:DesignComments xmi:id="_oU13QColEeCf84yuDUMATg" base_Comment="_oUzbAyolEeCf84yuDUMATg"/>
+  <Default:Documentation xmi:id="_oU4TgColEeCf84yuDUMATg" base_Comment="_oUzbAyolEeCf84yuDUMATg"/>
+  <HDF:HDFAttribute xmi:id="_oU6vwColEeCf84yuDUMATg" sortKey="4" base_Property="MFMT_MT002001UV01-ActReference-code" conformance="R"/>
+  <HDF:ConceptDomainConstraint xmi:id="_oU9MAColEeCf84yuDUMATg" base_Property="MFMT_MT002001UV01-ActReference-code" name="ActCode"/>
+  <HDF:HDFAttribute xmi:id="_oVAPUColEeCf84yuDUMATg" sortKey="5" base_Property="MFMT_MT002001UV01-ActReference-statusCode" conformance="R"/>
+  <HDF:ConceptDomainConstraint xmi:id="_oVCrkColEeCf84yuDUMATg" base_Property="MFMT_MT002001UV01-ActReference-statusCode" name="ActStatus"/>
+  <HDF:HDFAttribute xmi:id="_oVFH0ColEeCf84yuDUMATg" sortKey="6" base_Property="MFMT_MT002001UV01-ActReference-effectiveTime"/>
+  <HDF:HDFAttribute xmi:id="_oVHkEColEeCf84yuDUMATg" sortKey="7" base_Property="MFMT_MT002001UV01-ActReference-activityTime"/>
+  <HDF:HDFAttribute xmi:id="_oVKnYColEeCf84yuDUMATg" sortKey="8" base_Property="MFMT_MT002001UV01-ActReference-confidentialityCode" conformance="R"/>
+  <HDF:ConceptDomainConstraint xmi:id="_oVNDoColEeCf84yuDUMATg" base_Property="MFMT_MT002001UV01-ActReference-confidentialityCode" name="Confidentiality"/>
+  <HDF:DesignComments xmi:id="_oVPf4ColEeCf84yuDUMATg" base_Comment="_oVNDoSolEeCf84yuDUMATg"/>
+  <Default:Documentation xmi:id="_oVR8IColEeCf84yuDUMATg" base_Comment="_oVNDoSolEeCf84yuDUMATg"/>
+  <RIM:Participation xmi:id="_oVUYYColEeCf84yuDUMATg" base_Class="MFMT_MT002001UV01-Author"/>
+  <HDF:HDFAttribute xmi:id="_oVW0oColEeCf84yuDUMATg" sortKey="1" base_Property="MFMT_MT002001UV01-Author-typeCode" isMandatory="true" conformance="R" isImmutable="true"/>
+  <HDF:ValueSetConstraint xmi:id="_oVZQ4ColEeCf84yuDUMATg" base_Property="MFMT_MT002001UV01-Author-typeCode" name="ParticipationAuthorOriginator" codingStrength="CNE" rootCode="AUT"/>
+  <HDF:HDFAttribute xmi:id="_oVbtIColEeCf84yuDUMATg" sortKey="2" base_Property="MFMT_MT002001UV01-Author-noteText"/>
+  <HDF:HDFAttribute xmi:id="_oVewcColEeCf84yuDUMATg" sortKey="3" base_Property="MFMT_MT002001UV01-Author-time"/>
+  <HDF:DesignComments xmi:id="_oVhzwColEeCf84yuDUMATg" base_Comment="_oVfXgSolEeCf84yuDUMATg"/>
+  <Default:Documentation xmi:id="_oVkQAColEeCf84yuDUMATg" base_Comment="_oVfXgSolEeCf84yuDUMATg"/>
+  <HDF:HDFAttribute xmi:id="_oVmsQColEeCf84yuDUMATg" sortKey="4" base_Property="MFMT_MT002001UV01-Author-modeCode"/>
+  <HDF:ConceptDomainConstraint xmi:id="_oVpIgColEeCf84yuDUMATg" base_Property="MFMT_MT002001UV01-Author-modeCode" name="ParticipationMode"/>
+  <HDF:HDFAttribute xmi:id="_oVrkwColEeCf84yuDUMATg" sortKey="5" base_Property="MFMT_MT002001UV01-Author-signatureCode"/>
+  <HDF:ConceptDomainConstraint xmi:id="_oVuBAColEeCf84yuDUMATg" base_Property="MFMT_MT002001UV01-Author-signatureCode" name="ParticipationSignature"/>
+  <HDF:HDFAttribute xmi:id="_oVwdQColEeCf84yuDUMATg" sortKey="6" base_Property="MFMT_MT002001UV01-Author-signatureText"/>
+  <RIM:Participation xmi:id="_oVzgkColEeCf84yuDUMATg" base_Class="MFMT_MT002001UV01-RecordTarget"/>
+  <HDF:HDFAttribute xmi:id="_oV180ColEeCf84yuDUMATg" sortKey="1" base_Property="MFMT_MT002001UV01-RecordTarget-typeCode" isMandatory="true" conformance="R" isImmutable="true"/>
+  <HDF:ValueSetConstraint xmi:id="_oV4ZEColEeCf84yuDUMATg" base_Property="MFMT_MT002001UV01-RecordTarget-typeCode" name="ParticipationRecordTarget" codingStrength="CNE" rootCode="RCT"/>
+  <HDF:HDFAssociationEnd xmi:id="_oV61UColEeCf84yuDUMATg" sortKey="AEA_______" base_Property="MFMT_MT002001UV01-ActReference-author" conformance="R">
+    <derivationSupplier href="pathmap://HL7_RIM_UV/RIM.uml#Act-participation"/>
+  </HDF:HDFAssociationEnd>
+  <HDF:HDFAssociationEnd xmi:id="_oWpOEColEeCf84yuDUMATg" sortKey="ABA_______" base_Property="MFMT_MT002001UV01-ActReference-recordTarget" conformance="R">
+    <derivationSupplier href="pathmap://HL7_RIM_UV/RIM.uml#Act-participation"/>
+  </HDF:HDFAssociationEnd>
+  <HDF:HDFAssociationEnd xmi:id="_oWutoColEeCf84yuDUMATg" sortKey="BZ" base_Property="MFMT_MT002001UV01-Author-assignedEntity" conformance="R">
+    <derivationSupplier href="pathmap://HL7_RIM_UV/RIM.uml#Participation-role"/>
+  </HDF:HDFAssociationEnd>
+  <HDF:HDFAssociationEnd xmi:id="_oWzmIColEeCf84yuDUMATg" sortKey="BZ" base_Property="MFMT_MT002001UV01-RecordTarget-patient" conformance="R">
+    <derivationSupplier href="pathmap://HL7_RIM_UV/RIM.uml#Participation-role"/>
+  </HDF:HDFAssociationEnd>
+  <HDF:Description xmi:id="_oW4eoColEeCf84yuDUMATg" base_Comment="_oW2pcColEeCf84yuDUMATg"/>
+  <Default:Documentation xmi:id="_oW664ColEeCf84yuDUMATg" base_Comment="_oW2pcColEeCf84yuDUMATg"/>
+  <HDF:EntryPoint xmi:id="_oW9XIColEeCf84yuDUMATg" base_Interface="MFMT_MT002001UV01-ActReference.1" useKind="SemanticPayload"/>
+  <HDF:HDFPackage xmi:id="_oW_zYColEeCf84yuDUMATg" base_Package="MFMT_MT002002UV01" packageKind="id" conformanceLevel="International" realmNamespace="UV" artifact="MT" root="DEFN" section="IM" subSection="MF" domain="MT" version="01"/>
+  <RIM:ActHeir xmi:id="_oXEr4ColEeCf84yuDUMATg" base_Class="MFMT_MT002002UV01-ActReference"/>
+  <HDF:HDFAttribute xmi:id="_oXHIIColEeCf84yuDUMATg" sortKey="1" base_Property="MFMT_MT002002UV01-ActReference-classCode" isMandatory="true" conformance="R" isImmutable="true"/>
+  <HDF:ValueSetConstraint xmi:id="_oXJkYColEeCf84yuDUMATg" base_Property="MFMT_MT002002UV01-ActReference-classCode" name="ActClass ActClassRoot" codingStrength="CNE" rootCode="ACT"/>
+  <HDF:HDFAttribute xmi:id="_oXMAoColEeCf84yuDUMATg" sortKey="2" base_Property="MFMT_MT002002UV01-ActReference-moodCode" isMandatory="true" conformance="R" isImmutable="true"/>
+  <HDF:ConceptDomainConstraint xmi:id="_oXPD8ColEeCf84yuDUMATg" base_Property="MFMT_MT002002UV01-ActReference-moodCode" name="ActMoodCompletionTrack"/>
+  <HDF:HDFAttribute xmi:id="_oXRgMColEeCf84yuDUMATg" sortKey="3" base_Property="MFMT_MT002002UV01-ActReference-id" isMandatory="true" conformance="R"/>
+  <HDF:DesignComments xmi:id="_oXT8cColEeCf84yuDUMATg" base_Comment="_oXRgMyolEeCf84yuDUMATg"/>
+  <Default:Documentation xmi:id="_oXWYsColEeCf84yuDUMATg" base_Comment="_oXRgMyolEeCf84yuDUMATg"/>
+  <HDF:HDFAttribute xmi:id="_oXY08ColEeCf84yuDUMATg" sortKey="4" base_Property="MFMT_MT002002UV01-ActReference-code" conformance="R"/>
+  <HDF:ConceptDomainConstraint xmi:id="_oXbRMColEeCf84yuDUMATg" base_Property="MFMT_MT002002UV01-ActReference-code" name="ActCode"/>
+  <HDF:HDFAttribute xmi:id="_oXdtcColEeCf84yuDUMATg" sortKey="5" base_Property="MFMT_MT002002UV01-ActReference-statusCode" conformance="R"/>
+  <HDF:ConceptDomainConstraint xmi:id="_oXgJsColEeCf84yuDUMATg" base_Property="MFMT_MT002002UV01-ActReference-statusCode" name="ActStatus"/>
+  <HDF:HDFAttribute xmi:id="_oXil8ColEeCf84yuDUMATg" sortKey="6" base_Property="MFMT_MT002002UV01-ActReference-effectiveTime"/>
+  <HDF:HDFAttribute xmi:id="_oXlpQColEeCf84yuDUMATg" sortKey="7" base_Property="MFMT_MT002002UV01-ActReference-activityTime"/>
+  <HDF:HDFAttribute xmi:id="_oXoFgColEeCf84yuDUMATg" sortKey="8" base_Property="MFMT_MT002002UV01-ActReference-confidentialityCode" conformance="R"/>
+  <HDF:ConceptDomainConstraint xmi:id="_oXqhwColEeCf84yuDUMATg" base_Property="MFMT_MT002002UV01-ActReference-confidentialityCode" name="Confidentiality"/>
+  <HDF:DesignComments xmi:id="_oXs-AColEeCf84yuDUMATg" base_Comment="_oXqhwSolEeCf84yuDUMATg"/>
+  <Default:Documentation xmi:id="_oXvaQColEeCf84yuDUMATg" base_Comment="_oXqhwSolEeCf84yuDUMATg"/>
+  <RIM:Participation xmi:id="_oXx2gColEeCf84yuDUMATg" base_Class="MFMT_MT002002UV01-Author"/>
+  <HDF:HDFAttribute xmi:id="_oX0SwColEeCf84yuDUMATg" sortKey="1" base_Property="MFMT_MT002002UV01-Author-typeCode" isMandatory="true" conformance="R" isImmutable="true"/>
+  <HDF:ValueSetConstraint xmi:id="_oX3WEColEeCf84yuDUMATg" base_Property="MFMT_MT002002UV01-Author-typeCode" name="ParticipationAuthorOriginator" codingStrength="CNE" rootCode="AUT"/>
+  <HDF:HDFAttribute xmi:id="_oX5yUColEeCf84yuDUMATg" sortKey="2" base_Property="MFMT_MT002002UV01-Author-noteText"/>
+  <HDF:HDFAttribute xmi:id="_oX8OkColEeCf84yuDUMATg" sortKey="3" base_Property="MFMT_MT002002UV01-Author-time"/>
+  <HDF:DesignComments xmi:id="_oX_R4ColEeCf84yuDUMATg" base_Comment="_oX81oColEeCf84yuDUMATg"/>
+  <Default:Documentation xmi:id="_oYBHEColEeCf84yuDUMATg" base_Comment="_oX81oColEeCf84yuDUMATg"/>
+  <HDF:HDFAttribute xmi:id="_oYDjUColEeCf84yuDUMATg" sortKey="4" base_Property="MFMT_MT002002UV01-Author-modeCode"/>
+  <HDF:ConceptDomainConstraint xmi:id="_oYGmoColEeCf84yuDUMATg" base_Property="MFMT_MT002002UV01-Author-modeCode" name="ParticipationMode"/>
+  <HDF:HDFAttribute xmi:id="_oYJC4ColEeCf84yuDUMATg" sortKey="5" base_Property="MFMT_MT002002UV01-Author-signatureCode"/>
+  <HDF:ConceptDomainConstraint xmi:id="_oYLfIColEeCf84yuDUMATg" base_Property="MFMT_MT002002UV01-Author-signatureCode" name="ParticipationSignature"/>
+  <HDF:HDFAttribute xmi:id="_oYN7YColEeCf84yuDUMATg" sortKey="6" base_Property="MFMT_MT002002UV01-Author-signatureText"/>
+  <RIM:Participation xmi:id="_oYQXoColEeCf84yuDUMATg" base_Class="MFMT_MT002002UV01-RecordTarget"/>
+  <HDF:HDFAttribute xmi:id="_oYSz4ColEeCf84yuDUMATg" sortKey="1" base_Property="MFMT_MT002002UV01-RecordTarget-typeCode" isMandatory="true" conformance="R" isImmutable="true"/>
+  <HDF:ValueSetConstraint xmi:id="_oYVQIColEeCf84yuDUMATg" base_Property="MFMT_MT002002UV01-RecordTarget-typeCode" name="ParticipationRecordTarget" codingStrength="CNE" rootCode="RCT"/>
+  <HDF:HDFAssociationEnd xmi:id="_oYYTcColEeCf84yuDUMATg" sortKey="AEA_______" base_Property="MFMT_MT002002UV01-ActReference-author" isMandatory="true" conformance="R">
+    <derivationSupplier href="pathmap://HL7_RIM_UV/RIM.uml#Act-participation"/>
+  </HDF:HDFAssociationEnd>
+  <HDF:HDFAssociationEnd xmi:id="_oYdL8ColEeCf84yuDUMATg" sortKey="ABA_______" base_Property="MFMT_MT002002UV01-ActReference-recordTarget" isMandatory="true" conformance="R">
+    <derivationSupplier href="pathmap://HL7_RIM_UV/RIM.uml#Act-participation"/>
+  </HDF:HDFAssociationEnd>
+  <HDF:HDFAssociationEnd xmi:id="_oYirgColEeCf84yuDUMATg" sortKey="BZ" base_Property="MFMT_MT002002UV01-Author-assignedEntity" conformance="R">
+    <derivationSupplier href="pathmap://HL7_RIM_UV/RIM.uml#Participation-role"/>
+  </HDF:HDFAssociationEnd>
+  <HDF:HDFAssociationEnd xmi:id="_oYnkAColEeCf84yuDUMATg" sortKey="BZ" base_Property="MFMT_MT002002UV01-RecordTarget-patient" conformance="R">
+    <derivationSupplier href="pathmap://HL7_RIM_UV/RIM.uml#Participation-role"/>
+  </HDF:HDFAssociationEnd>
+  <HDF:Description xmi:id="_oYscgColEeCf84yuDUMATg" base_Comment="_oYqnUColEeCf84yuDUMATg"/>
+  <Default:Documentation xmi:id="_oYu4wColEeCf84yuDUMATg" base_Comment="_oYqnUColEeCf84yuDUMATg"/>
+  <HDF:EntryPoint xmi:id="_oYxVAColEeCf84yuDUMATg" base_Interface="MFMT_MT002002UV01-ActReference.1" useKind="SemanticPayload"/>
+</xmi:XMI>

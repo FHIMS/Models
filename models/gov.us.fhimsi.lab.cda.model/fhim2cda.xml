@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="fhim2cda"
+	xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
+	
+	<taskdef name="xmlmodelingtask" classname="com.xmlmodeling.uml2.xsd.ant.taskdefs.XmlModelingTask" />
+		
+	<target name="fhim2cda">
+		
+	
+		
+ 		<qvto:transformation uri="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2cda.qvto">
+ 			<in uri="platform:/resource/gov.us.fhim/FHIMLAB.emx" />
+			<in uri="platform:/resource/org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml" /> 			
+			<out uri="platform:/resource/gov.us.fhimsi.lab.cda.model/model/cdasilab.emx" /> 			
+			<trace uri="platform:/resource/gov.us.fhimsi.lab.cda.model/trace/fhim2cda.qvtotrace" />
+		</qvto:transformation>
+		
+		<eclipse.refreshLocal resource="gov.us.fhimsi.lab.cda.model/model" depth="infinite"/>
+		<eclipse.refreshLocal resource="gov.us.fhimsi.lab.cda.model/schemas" depth="infinite"/>
+		
+	</target>
+</project>

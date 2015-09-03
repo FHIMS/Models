@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trace:Trace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:trace="http:///www.eclipse.org/m2m/qvt/operational/trace.ecore">
+  <traceRecords>
+    <mappingOperation name="toNIEM" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//toNIEM"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.model/model/fhimsilab.uml#420A62FD03B6"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Package">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_6pZOEGdtEeC2Bo_BG2At6Q"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapEnumerations" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapEnumerations"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.model/model/fhimsilab.uml#_9w8iwFPCEeCdyYap8WlsfA"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters kind="INOUT" name="codesPackage" type="Package">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_6pZOEmdtEeC2Bo_BG2At6Q"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapTerminology" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapTerminology.1"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.model/model/fhimsilab.uml#_BdRqkFPDEeCdyYap8WlsfA"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Enumeration">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_6pZOFGdtEeC2Bo_BG2At6Q"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="cloneClass" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//cloneClass"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.model/model/fhimsilab.uml#_9w8iwFPCEeCdyYap8WlsfA"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters kind="INOUT" name="codesPackage" type="Package">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_6pZOEmdtEeC2Bo_BG2At6Q"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Class">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_6pZOJ2dtEeC2Bo_BG2At6Q"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapCodeConstraint" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapCodeConstraint"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.model/model/fhimsilab.uml#_BdRqkFPDEeCdyYap8WlsfA"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters kind="INOUT" name="cloneClass" type="Class">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_6pZOJ2dtEeC2Bo_BG2At6Q"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="codesPackage" type="Package">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_6pZOEmdtEeC2Bo_BG2At6Q"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapExtensions" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapExtensions"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Class">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_6pZOJ2dtEeC2Bo_BG2At6Q"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapGenerals" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapGenerals"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Classifier">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.model/models/fhimsi.uml#_420A62FD03B64230F39A02CC"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters kind="INOUT" name="extensionClass" type="Class">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_6pZOJ2dtEeC2Bo_BG2At6Q"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapDatatype" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapDatatype"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_420A62FD03B64230FA430262"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="niemDataType" type="String">
+        <value primitiveValue="IdentificationType"/>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapDatatype" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapDatatype"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_Q--ZYO6jEd-crcWiXVDZrQ"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="niemDataType" type="String">
+        <value primitiveValue="TimeMeasureType"/>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapDatatype" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapDatatype"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_420A62FD03B645783AF70191"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="niemDataType" type="String">
+        <value primitiveValue="TimeMeasureType"/>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapDatatype" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapDatatype"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_420A62FD03B6454F738F00EA"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="niemDataType" type="String">
+        <value primitiveValue="TimeMeasureType"/>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapDatatype" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapDatatype"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_6pZOLWdtEeC2Bo_BG2At6Q"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="niemDataType" type="String">
+        <value primitiveValue="TextType"/>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapDatatype" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapDatatype"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_420A62FD03B6458957D801FC"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="niemDataType" type="String">
+        <value primitiveValue="ComplexObjectType"/>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapDatatype" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapDatatype"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_AssRoRp5EdyGEZE1_tomRg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="niemDataType" type="String">
+        <value primitiveValue="ComplexObjectType"/>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapDatatype" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapDatatype"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_420A62FD03B6454F718403C3"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="niemDataType" type="String">
+        <value primitiveValue="ComplexObjectType"/>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapDatatype" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapDatatype"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_-uoAsX8TEd-6KMbY3gBFOQ"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="niemDataType" type="String">
+        <value primitiveValue="ComplexObjectType"/>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapDatatype" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapDatatype"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_8N71AMTBEd-6Z_53K--WsA"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="niemDataType" type="String">
+        <value primitiveValue="ComplexObjectType"/>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapDatatype" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapDatatype"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_Y1GXsOOYEd-8X4J7aT-aiQ"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="niemDataType" type="String">
+        <value primitiveValue="ComplexObjectType"/>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapConstraintsToExchange" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapConstraintsToExchange"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_6pZOJ2dtEeC2Bo_BG2At6Q"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="focalName" type="String">
+        <value primitiveValue="LabTestPromise"/>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_6pZOOWdtEeC2Bo_BG2At6Q"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapApplyXSDGlobalElement" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapApplyXSDGlobalElement"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Property">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_6pZOOWdtEeC2Bo_BG2At6Q"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapNiemNaming" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapNiemNaming"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Class">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_6pZOJ2dtEeC2Bo_BG2At6Q"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapNiemNaming" package="fhim2niem" module="fhim2niem">
+      <runtimeMappingOperation href="platform:/resource/gov.us.fhimsi.lab.model/transforms/fhim2niem.qvtox#//mapNiemNaming"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="Class">
+        <value>
+          <modelElement href="platform:/resource/gov.us.fhimsi.lab.niem.model/model/niemsilab.uml#_6pZON2dtEeC2Bo_BG2At6Q"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result/>
+  </traceRecords>
+</trace:Trace>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_-8LR4GdtEeC2Bo_BG2At6Q" name="niemfhimsilab">
+  <packageImport xmi:id="_-8LR4WdtEeC2Bo_BG2At6Q">
+    <importedPackage href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_WO-Jg2BIEeCKfMPVc50wQw"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_-8LR4mdtEeC2Bo_BG2At6Q" name="codes">
+    <packageImport xmi:id="_-8LR42dtEeC2Bo_BG2At6Q">
+      <importedPackage href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_WO-Jg2BIEeCKfMPVc50wQw"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-8LR5GdtEeC2Bo_BG2At6Q" name="Medication Vehicle">
+      <generalization xmi:id="_-8LR5WdtEeC2Bo_BG2At6Q">
+        <general xmi:type="uml:DataType" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzJSUtXEdqhPYJq3sEkGA"/>
+      </generalization>
+      <ownedLiteral xmi:id="_-8LR5mdtEeC2Bo_BG2At6Q" name="5955009"/>
+      <ownedLiteral xmi:id="_-8LR52dtEeC2Bo_BG2At6Q" name="81886002"/>
+      <ownedLiteral xmi:id="_-8LR6GdtEeC2Bo_BG2At6Q" name="301862003"/>
+      <ownedLiteral xmi:id="_-8LR6WdtEeC2Bo_BG2At6Q" name="80582002"/>
+      <ownedLiteral xmi:id="_-8LR6mdtEeC2Bo_BG2At6Q" name="52086008"/>
+      <ownedLiteral xmi:id="_-8LR62dtEeC2Bo_BG2At6Q" name="87645001"/>
+      <ownedLiteral xmi:id="_-8LR7GdtEeC2Bo_BG2At6Q" name="421383005"/>
+      <ownedLiteral xmi:id="_-8LR7WdtEeC2Bo_BG2At6Q" name="412298006"/>
+      <ownedLiteral xmi:id="_-8LR7mdtEeC2Bo_BG2At6Q" name="8030004"/>
+      <ownedLiteral xmi:id="_-8LR72dtEeC2Bo_BG2At6Q" name="9471005"/>
+      <ownedLiteral xmi:id="_-8LR8GdtEeC2Bo_BG2At6Q" name="13668001"/>
+      <ownedLiteral xmi:id="_-8LR8WdtEeC2Bo_BG2At6Q" name="126070004"/>
+      <ownedLiteral xmi:id="_-8LR8mdtEeC2Bo_BG2At6Q" name="17916009"/>
+      <ownedLiteral xmi:id="_-8LR82dtEeC2Bo_BG2At6Q" name="412308004"/>
+      <ownedLiteral xmi:id="_-8LR9GdtEeC2Bo_BG2At6Q" name="7608003"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_-8LR9WdtEeC2Bo_BG2At6Q" name="extension">
+    <packageImport xmi:id="_-8LR9mdtEeC2Bo_BG2At6Q">
+      <importedPackage href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_WO-Jg2BIEeCKfMPVc50wQw"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-8LR92dtEeC2Bo_BG2At6Q" name="LabTestPromiseType">
+      <ownedComment xmi:id="_-8LR-GdtEeC2Bo_BG2At6Q">
+        <body>cda=SimpleObservation&#xD;
+niem=Extension
+niema=ActivityType</body>
+      </ownedComment>
+      <generalization xmi:id="_-8LR-WdtEeC2Bo_BG2At6Q">
+        <general xmi:type="uml:Class" href="../../gov.us.fhimsi.model/models/fhimsi.uml#_420A62FD03B64230F39A02CC"/>
+      </generalization>
+      <ownedAttribute xmi:id="_-8LR-mdtEeC2Bo_BG2At6Q" name="procedureCode" visibility="public" type="_-8LR5GdtEeC2Bo_BG2At6Q">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-8LR-2dtEeC2Bo_BG2At6Q" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-8LR_GdtEeC2Bo_BG2At6Q"/>
+        <redefinedProperty href="../../gov.us.fhimsi.model/models/fhimsi.uml#_RlZjQLTlEd2sMvQnSCqOzA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-8LR_WdtEeC2Bo_BG2At6Q" name="status" visibility="public">
+        <ownedComment xmi:id="_-8LR_mdtEeC2Bo_BG2At6Q" annotatedElement="_-8LR_WdtEeC2Bo_BG2At6Q">
+          <body>Identifies the status of the Lab Test Promise act.</body>
+        </ownedComment>
+        <type xmi:type="uml:DataType" href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_XrKatWBIEeCKfMPVc50wQw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-8LR_2dtEeC2Bo_BG2At6Q" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-8LSAGdtEeC2Bo_BG2At6Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-8LSAWdtEeC2Bo_BG2At6Q" name="testCategory" visibility="public">
+        <ownedComment xmi:id="_-8LSAmdtEeC2Bo_BG2At6Q" annotatedElement="_-8LSAWdtEeC2Bo_BG2At6Q">
+          <body>Categories the type of lab test ordered and performed.  Possible values include Chemistry/Hematology, Microbiology (to include bacteriology, parasitology, mycology, mycobateriology, and virology), Cytopathology, Anatomic Pathology, Autopsy, etc.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B645783AF70191" name="dateReportCompleted" visibility="public">
+        <eAnnotations xmi:id="_M42DCeLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <ownedComment xmi:id="_M42DB-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B645783AF70191">
+          <body>This attribute is added to indicate the date lab report is completed.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_XsP_1WBIEeCKfMPVc50wQw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_euwfM-LjEdutr_MT9HkPyQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_euwfMuLjEdutr_MT9HkPyQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B642FD1B7A02FE" name="accessionDate" visibility="public">
+        <eAnnotations xmi:id="_M42DAeLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <ownedComment xmi:id="_M4s5HOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642FD1B7A02FE">
+          <body>The timestamp for the time the lab accessioned the lab order.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_XsP_1WBIEeCKfMPVc50wQw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_euwfMeLjEdutr_MT9HkPyQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_euwfMOLjEdutr_MT9HkPyQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_AssRoRp5EdyGEZE1_tomRg" name="performingOrganization" visibility="public">
+        <ownedComment xmi:id="__yh_YMDpEd2cYoIY7XWEQw" annotatedElement="_AssRoRp5EdyGEZE1_tomRg">
+          <body>An association from LabTestPromise to Institution identifying the organization/service responsible for performing the service.  </body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_SFImUGBIEeCKfMPVc50wQw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AsyYQBp5EdyGEZE1_tomRg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AssRohp5EdyGEZE1_tomRg"/>
+        <association href="../../gov.us.fhimsi.model/models/fhimsi.uml#_AssRoBp5EdyGEZE1_tomRg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_VHctsLTlEd2sMvQnSCqOzA" name="priority" visibility="public">
+        <ownedComment xmi:id="_Xn1yMMDrEd2cYoIY7XWEQw" annotatedElement="_VHctsLTlEd2sMvQnSCqOzA">
+          <body>This field has been retained for backward compatibility only.  It is not used.  Previously priority (e.g., STAT, ASAP), but that information is carried as the sixth component of OBR-27-quantity/timing.</body>
+        </ownedComment>
+        <type xmi:type="uml:DataType" href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_XrKatWBIEeCKfMPVc50wQw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u9EVodOWEd2aQZomWdBJLg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u9EVoNOWEd2aQZomWdBJLg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B6458957D801FC" name="labTestRequest" visibility="public" isUnique="false">
+        <ownedComment xmi:id="_hMqpUMDpEd2cYoIY7XWEQw" annotatedElement="_420A62FD03B6458957D801FC">
+          <body>An association from labTestPromise to LabTestRequest identifying the test (or battery of tests) as it was ordered by the Ordering Practitioner. </body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_SFImUGBIEeCKfMPVc50wQw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ND4OWuLiEduGJrQyRGTO1A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ND4OWeLiEduGJrQyRGTO1A" value="1"/>
+        <association href="../../gov.us.fhimsi.model/models/fhimsi.uml#_420A62FD03B6458957D6012F"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_lcJQYOObEd-8X4J7aT-aiQ" name="labReferral" visibility="public">
+        <type xmi:type="uml:Class" href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_SFImUGBIEeCKfMPVc50wQw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lcKegOObEd-8X4J7aT-aiQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lcJ3cOObEd-8X4J7aT-aiQ"/>
+        <association href="../../gov.us.fhimsi.model/models/fhimsi.uml#_lcG0IOObEd-8X4J7aT-aiQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B64230FA430262" name="accessionId" visibility="public">
+        <ownedComment xmi:id="_M42DBOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64230FA430262">
+          <body>Identification of test(s) ordered.  Used for identity of filler in the act of accepting  a laboratory test, and entering the test into the laboratory's workload.  An identifier assigned to the accepted laboratory test(s) identifying the samples, specimens, and results.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_XuD9s2BIEeCKfMPVc50wQw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B6454F738F00EA" name="dateSpecimenReceived" visibility="public">
+        <eAnnotations xmi:id="_M4_0AeLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <ownedComment xmi:id="_M42DEOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6454F738F00EA">
+          <body>Contains the date the the specimen  was received.&#xD;
+&#xD;
+</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_XsP_1WBIEeCKfMPVc50wQw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_euwfN-LjEdutr_MT9HkPyQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_euwfNuLjEdutr_MT9HkPyQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q--ZYO6jEd-crcWiXVDZrQ" name="dateExpected" visibility="public">
+        <type xmi:type="uml:Class" href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_XsP_1WBIEeCKfMPVc50wQw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-uoAsX8TEd-6KMbY3gBFOQ" name="verifier" visibility="public">
+        <type xmi:type="uml:Class" href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_SFImUGBIEeCKfMPVc50wQw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-uxKoX8TEd-6KMbY3gBFOQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-uxKoH8TEd-6KMbY3gBFOQ"/>
+        <association href="../../gov.us.fhimsi.model/models/fhimsi.uml#_-uoAsH8TEd-6KMbY3gBFOQ"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_-8LSA2dtEeC2Bo_BG2At6Q" name="constraints">
+    <packageImport xmi:id="_-8LSBGdtEeC2Bo_BG2At6Q">
+      <importedPackage href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_WO-Jg2BIEeCKfMPVc50wQw"/>
+    </packageImport>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_-8LSBWdtEeC2Bo_BG2At6Q" name="exchange">
+    <packageImport xmi:id="_-8LSBmdtEeC2Bo_BG2At6Q">
+      <importedPackage href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_WO-Jg2BIEeCKfMPVc50wQw"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-8LSB2dtEeC2Bo_BG2At6Q" name="NIEMExchangeOfLabReportExampleType">
+      <generalization xmi:id="_-8LSCGdtEeC2Bo_BG2At6Q">
+        <general xmi:type="uml:Class" href="../../gov.us.niem.core.model/model/gov.us.niem.core.uml#_SFImUGBIEeCKfMPVc50wQw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_-8LSCWdtEeC2Bo_BG2At6Q" name="LabTestPromise" type="_-8LR92dtEeC2Bo_BG2At6Q"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

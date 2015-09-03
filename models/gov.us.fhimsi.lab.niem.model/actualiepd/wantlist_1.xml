@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<w:WantList w:release="2.0" w:product="NIEM" xmlns:w="http://niem.gov/niem/wantlist/1">
+  <w:Element w:prefix="j" w:name="Booking" w:isReference="false"/>
+  <w:Element w:prefix="j" w:name="CourtOrderSignatureMethodText" w:isReference="false"/>
+  <w:Element w:prefix="j" w:name="PersonFBIIdentification" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="Address" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="DateTime" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="Organization" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="Person" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="PersonDigitizedSignatureImage" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="PersonName" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="PersonSexCode" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="RoleOfPerson" w:isReference="true"/>
+  <w:Element w:prefix="nc" w:name="StructuredAddress" w:isReference="false"/>
+  <w:Type w:prefix="j" w:name="BookingType" w:isRequested="false">
+    <w:ElementInType w:prefix="j"
+      w:name="BookingAgencyRecordIdentification" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="CaseType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="CaseFiling" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="CaseTrackingID" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="DocumentType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="DocumentFiledDate" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="IdentificationType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="IdentificationID" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="OrganizationType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="OrganizationName" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="PersonNameType" w:isRequested="false">
+    <w:AttributeInType w:prefix="nc" w:name="personNameCommentText"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonFullName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonGivenName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonMaidenName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonMiddleName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonNamePrefixText" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonNameSuffixText" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonSurName" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="PersonType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="PersonAlternateName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonBirthDate" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonSex" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="StructuredAddressType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="AddressDeliveryPoint" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="AddressRecipientName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="LocationCityName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="LocationCountry" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="LocationCounty" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="LocationPostalCode" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="LocationPostalExtensionCode" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="LocationState" w:isReference="false"/>
+  </w:Type>
+</w:WantList>

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:MDA="http:///schemas/MDA/_lNaFgFKiEd6SoIkAjsfZig/43" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmlns:xsd="http:///schemas/XMLSchema/_eC-IEA-uEd2ng-v1tnpITw/3" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default? http:///schemas/MDA/_lNaFgFKiEd6SoIkAjsfZig/43 pathmap://VHIM_PROFILES/MDAProfile.epx#_lNaFgVKiEd6SoIkAjsfZig?MDA/MDA? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA http:///schemas/XMLSchema/_eC-IEA-uEd2ng-v1tnpITw/3 pathmap://XMLmodeling_PROFILES/XMLSchema.profile.uml#_eDH5EA-uEd2ng-v1tnpITw">
+  <uml:Package xmi:id="_420A62FD03B645465F2F00A1" name="EligibilityTransaction">
+    <eAnnotations xmi:id="_A-6G8OLqEdu45_8D8ShJ7w" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_A-wV8OLqEdu45_8D8ShJ7w" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Model" href="VHIM.emx#420A62FD03B6?VHIM?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_PlQl8eLiEduGJrQyRGTO1A" source="uml2.diagrams" references="_420A62FD03B645465F4C00D7">
+      <contents xmi:type="notation:Diagram" xmi:id="_420A62FD03B645465F4C00D7" type="Class" name="EligibilityTransaction">
+        <children xmi:id="_SNWCneLiEduGJrQyRGTO1A" type="Note">
+          <children xmi:id="_SNWCoOLiEduGJrQyRGTO1A" type="DiagramName">
+            <element xsi:nil="true"/>
+          </children>
+          <children xmi:id="_SNWCoeLiEduGJrQyRGTO1A" type="Description">
+            <element xsi:nil="true"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_SNWCnuLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="10" description="Eligibility Transaction Domain&#xA;Version 3.8&#xA;12/31/2006&#xA;" fillColor="16777088" lineColor="3342489"/>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SNWCn-LiEduGJrQyRGTO1A" x="558" y="177" width="5181" height="1744"/>
+        </children>
+        <children xmi:id="_SNWCsuLiEduGJrQyRGTO1A">
+          <children xmi:id="_SNWCteLiEduGJrQyRGTO1A" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_SNWCtuLiEduGJrQyRGTO1A" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_SNWCt-LiEduGJrQyRGTO1A" type="Stereotype"/>
+          <children xmi:id="_SNWCuOLiEduGJrQyRGTO1A" type="Name"/>
+          <children xmi:id="_SNWCueLiEduGJrQyRGTO1A" type="Parent"/>
+          <children xmi:id="_SNWCuuLiEduGJrQyRGTO1A" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_SNWCu-LiEduGJrQyRGTO1A"/>
+          </children>
+          <children xmi:id="_SNWCvOLiEduGJrQyRGTO1A" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_SNWCveLiEduGJrQyRGTO1A"/>
+          </children>
+          <children xmi:id="_SNWCvuLiEduGJrQyRGTO1A" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_SNWCv-LiEduGJrQyRGTO1A"/>
+          </children>
+          <children xmi:id="_SNWCwOLiEduGJrQyRGTO1A" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_SNWCweLiEduGJrQyRGTO1A" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_SNWCs-LiEduGJrQyRGTO1A" fontName="Arial" fontHeight="10" showListStereotype="Text" fillColor="8519553" lineColor="3342489" showStereotype="Text"/>
+          <element xmi:type="uml:Class" href="PersonDemographics.efx#_420A62FD03B6425125E800E0?VHIM/PersonDemographics/Person?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SNWCtOLiEduGJrQyRGTO1A" x="9510" y="634"/>
+        </children>
+        <children xmi:id="_SNWCwuLiEduGJrQyRGTO1A" element="_420A62FD03B645466193009E">
+          <children xmi:id="_SNWCxeLiEduGJrQyRGTO1A" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_SNWCxuLiEduGJrQyRGTO1A" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_SNWCx-LiEduGJrQyRGTO1A" type="Stereotype"/>
+          <children xmi:id="_SNWCyOLiEduGJrQyRGTO1A" type="Name"/>
+          <children xmi:id="_SNWCyeLiEduGJrQyRGTO1A" type="Parent"/>
+          <children xmi:id="_SNWCyuLiEduGJrQyRGTO1A" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_SNWCy-LiEduGJrQyRGTO1A"/>
+          </children>
+          <children xmi:id="_SNfMcOLiEduGJrQyRGTO1A" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_SNfMceLiEduGJrQyRGTO1A"/>
+          </children>
+          <children xmi:id="_SNfMcuLiEduGJrQyRGTO1A" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_SNfMc-LiEduGJrQyRGTO1A"/>
+          </children>
+          <children xmi:id="_SNfMdOLiEduGJrQyRGTO1A" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_SNfMdeLiEduGJrQyRGTO1A" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_SNWCw-LiEduGJrQyRGTO1A" fontName="Arial" fontHeight="10" showListStereotype="Text" fillColor="8519679" lineColor="3342489" showStereotype="Text"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SNWCxOLiEduGJrQyRGTO1A" x="22190" y="13340"/>
+        </children>
+        <children xmi:id="_SNfMmeLiEduGJrQyRGTO1A" element="_420A62FD03B6454662F10302">
+          <children xmi:id="_SNfMnOLiEduGJrQyRGTO1A" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_SNfMneLiEduGJrQyRGTO1A" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_SNfMnuLiEduGJrQyRGTO1A" type="Stereotype"/>
+          <children xmi:id="_SNfMn-LiEduGJrQyRGTO1A" type="Name"/>
+          <children xmi:id="_SNfMoOLiEduGJrQyRGTO1A" type="Parent"/>
+          <children xmi:id="_SNfMoeLiEduGJrQyRGTO1A" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_SNfMouLiEduGJrQyRGTO1A"/>
+          </children>
+          <children xmi:id="_SNfMo-LiEduGJrQyRGTO1A" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_SNfMpOLiEduGJrQyRGTO1A"/>
+          </children>
+          <children xmi:id="_SNfMpeLiEduGJrQyRGTO1A" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_SNfMpuLiEduGJrQyRGTO1A"/>
+          </children>
+          <children xmi:id="_SNfMp-LiEduGJrQyRGTO1A" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_SNfMqOLiEduGJrQyRGTO1A" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_SNfMmuLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="10" showListStereotype="Text" fillColor="8519679" lineColor="3342489" showStereotype="Text"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SNfMm-LiEduGJrQyRGTO1A" x="20922" y="2219"/>
+        </children>
+        <children xmi:id="_SNfMqeLiEduGJrQyRGTO1A" element="_420A62FD03B64546640100C0">
+          <children xmi:id="_SNfMrOLiEduGJrQyRGTO1A" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_SNfMreLiEduGJrQyRGTO1A" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_SNfMruLiEduGJrQyRGTO1A" type="Stereotype"/>
+          <children xmi:id="_SNfMr-LiEduGJrQyRGTO1A" type="Name"/>
+          <children xmi:id="_SNfMsOLiEduGJrQyRGTO1A" type="Parent"/>
+          <children xmi:id="_SNfMseLiEduGJrQyRGTO1A" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_SNfMsuLiEduGJrQyRGTO1A"/>
+          </children>
+          <children xmi:id="_SNfMs-LiEduGJrQyRGTO1A" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_SNfMtOLiEduGJrQyRGTO1A"/>
+          </children>
+          <children xmi:id="_SNfMteLiEduGJrQyRGTO1A" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_SNfMtuLiEduGJrQyRGTO1A"/>
+          </children>
+          <children xmi:id="_SNfMt-LiEduGJrQyRGTO1A" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_SNfMuOLiEduGJrQyRGTO1A" canonical="false"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_SNfMquLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="10" showListStereotype="Text" fillColor="8487423" lineColor="3342489" showStereotype="Text"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SNfMq-LiEduGJrQyRGTO1A" x="8242" y="14265"/>
+        </children>
+        <children xmi:id="_7wjYQAglEd6eWYJXJewDdQ">
+          <children xmi:id="_7wjYQwglEd6eWYJXJewDdQ" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_7wjYRAglEd6eWYJXJewDdQ" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_7wjYRQglEd6eWYJXJewDdQ" type="Stereotype"/>
+          <children xmi:id="_7wjYRgglEd6eWYJXJewDdQ" type="Name"/>
+          <children xmi:id="_7wjYRwglEd6eWYJXJewDdQ" type="Parent"/>
+          <children xmi:id="_7wjYSAglEd6eWYJXJewDdQ" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_7wjYSQglEd6eWYJXJewDdQ"/>
+          </children>
+          <children xmi:id="_7wjYSgglEd6eWYJXJewDdQ" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_7wjYSwglEd6eWYJXJewDdQ"/>
+          </children>
+          <children xmi:id="_7wjYTAglEd6eWYJXJewDdQ" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_7wjYTQglEd6eWYJXJewDdQ"/>
+          </children>
+          <children xmi:id="_7wjYTgglEd6eWYJXJewDdQ" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_7wjYTwglEd6eWYJXJewDdQ"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_7wjYQQglEd6eWYJXJewDdQ" fillColor="8519679" showStereotype="Label"/>
+          <element xmi:type="uml:Class" href="Common.efx#_420A62FD03B6428B45E201B4?VHIM/Common/PatientLite?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7wjYQgglEd6eWYJXJewDdQ" y="6023"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_PlQl8-LiEduGJrQyRGTO1A"/>
+        <element xsi:nil="true"/>
+        <edges xmi:id="_EI144AgmEd6eWYJXJewDdQ" element="_EIi98AgmEd6eWYJXJewDdQ" source="_SNfMqeLiEduGJrQyRGTO1A" target="_SNWCsuLiEduGJrQyRGTO1A">
+          <children xmi:id="_EI144wgmEd6eWYJXJewDdQ" type="NameLabel">
+            <children xmi:id="_EI145QgmEd6eWYJXJewDdQ" type="Stereotype"/>
+            <children xmi:id="_EI145ggmEd6eWYJXJewDdQ" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EI145AgmEd6eWYJXJewDdQ" y="-186"/>
+          </children>
+          <children xmi:id="_EI145wgmEd6eWYJXJewDdQ" type="ToMultiplicityLabel" element="_EIsu8wgmEd6eWYJXJewDdQ">
+            <children xmi:id="_EI146QgmEd6eWYJXJewDdQ" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_EI146AgmEd6eWYJXJewDdQ" y="396"/>
+          </children>
+          <children xmi:id="_EI146ggmEd6eWYJXJewDdQ" type="ToRoleLabel" element="_EIsu8wgmEd6eWYJXJewDdQ">
+            <children xmi:id="_EI147AgmEd6eWYJXJewDdQ" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_EI146wgmEd6eWYJXJewDdQ" y="-397"/>
+          </children>
+          <children xmi:id="_EI147QgmEd6eWYJXJewDdQ" type="FromMultiplicityLabel" element="_EIsu8AgmEd6eWYJXJewDdQ">
+            <children xmi:id="_EI147wgmEd6eWYJXJewDdQ" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_EI147ggmEd6eWYJXJewDdQ" y="396"/>
+          </children>
+          <children xmi:id="_EI148AgmEd6eWYJXJewDdQ" type="FromRoleLabel" element="_EIsu8AgmEd6eWYJXJewDdQ">
+            <children xmi:id="_EI148ggmEd6eWYJXJewDdQ" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_EI148QgmEd6eWYJXJewDdQ" x="-643" y="-519"/>
+          </children>
+          <children xmi:id="_EI148wgmEd6eWYJXJewDdQ" type="ToQualifierLabel" element="_EIsu8wgmEd6eWYJXJewDdQ">
+            <children xmi:id="_EI149QgmEd6eWYJXJewDdQ" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_EI149ggmEd6eWYJXJewDdQ"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_EI149AgmEd6eWYJXJewDdQ" y="-186"/>
+          </children>
+          <children xmi:id="_EI149wgmEd6eWYJXJewDdQ" type="FromQualifierLabel" element="_EIsu8AgmEd6eWYJXJewDdQ">
+            <children xmi:id="_EI14-QgmEd6eWYJXJewDdQ" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_EI14-ggmEd6eWYJXJewDdQ"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_EI14-AgmEd6eWYJXJewDdQ" y="-186"/>
+          </children>
+          <children xmi:id="_EI14-wgmEd6eWYJXJewDdQ" type="ToConstraintLabel" element="_EIsu8wgmEd6eWYJXJewDdQ">
+            <children xmi:id="_EI_p4AgmEd6eWYJXJewDdQ" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_EI_p4QgmEd6eWYJXJewDdQ"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_EI14_AgmEd6eWYJXJewDdQ" y="1058"/>
+          </children>
+          <children xmi:id="_EI_p4ggmEd6eWYJXJewDdQ" type="FromConstraintLabel" element="_EIsu8AgmEd6eWYJXJewDdQ">
+            <children xmi:id="_EI_p5AgmEd6eWYJXJewDdQ" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_EI_p5QgmEd6eWYJXJewDdQ"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_EI_p4wgmEd6eWYJXJewDdQ" y="1058"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_EI144QgmEd6eWYJXJewDdQ" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EI144ggmEd6eWYJXJewDdQ" points="[-7, -59, 4, 281]$[-7, -152, 4, 188]"/>
+        </edges>
+        <edges xmi:id="_O0zsUAgmEd6eWYJXJewDdQ" element="_O0gxYAgmEd6eWYJXJewDdQ" source="_SNfMmeLiEduGJrQyRGTO1A" target="_SNWCsuLiEduGJrQyRGTO1A">
+          <children xmi:id="_O0zsUwgmEd6eWYJXJewDdQ" type="NameLabel">
+            <children xmi:id="_O0zsVQgmEd6eWYJXJewDdQ" type="Stereotype"/>
+            <children xmi:id="_O0zsVggmEd6eWYJXJewDdQ" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O0zsVAgmEd6eWYJXJewDdQ" y="-186"/>
+          </children>
+          <children xmi:id="_O0zsVwgmEd6eWYJXJewDdQ" type="ToMultiplicityLabel">
+            <children xmi:id="_O0zsWQgmEd6eWYJXJewDdQ" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="PersonDemographics.efx#_O0p7UAgmEd6eWYJXJewDdQ?VHIM/PersonDemographics/Person/payer?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_O0zsWAgmEd6eWYJXJewDdQ" y="396"/>
+          </children>
+          <children xmi:id="_O0zsWggmEd6eWYJXJewDdQ" type="ToRoleLabel">
+            <children xmi:id="_O0zsXAgmEd6eWYJXJewDdQ" type="ToRole"/>
+            <element xmi:type="uml:Property" href="PersonDemographics.efx#_O0p7UAgmEd6eWYJXJewDdQ?VHIM/PersonDemographics/Person/payer?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_O0zsWwgmEd6eWYJXJewDdQ" y="-397"/>
+          </children>
+          <children xmi:id="_O0zsXQgmEd6eWYJXJewDdQ" type="FromMultiplicityLabel" element="_O0gxYQgmEd6eWYJXJewDdQ">
+            <children xmi:id="_O0zsXwgmEd6eWYJXJewDdQ" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_O0zsXggmEd6eWYJXJewDdQ" y="396"/>
+          </children>
+          <children xmi:id="_O0zsYAgmEd6eWYJXJewDdQ" type="FromRoleLabel" element="_O0gxYQgmEd6eWYJXJewDdQ">
+            <children xmi:id="_O0zsYggmEd6eWYJXJewDdQ" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_O0zsYQgmEd6eWYJXJewDdQ" y="-397"/>
+          </children>
+          <children xmi:id="_O0zsYwgmEd6eWYJXJewDdQ" type="ToQualifierLabel">
+            <children xmi:id="_O0zsZQgmEd6eWYJXJewDdQ" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_O0zsZggmEd6eWYJXJewDdQ"/>
+            </children>
+            <element xmi:type="uml:Property" href="PersonDemographics.efx#_O0p7UAgmEd6eWYJXJewDdQ?VHIM/PersonDemographics/Person/payer?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_O0zsZAgmEd6eWYJXJewDdQ" y="-186"/>
+          </children>
+          <children xmi:id="_O0zsZwgmEd6eWYJXJewDdQ" type="FromQualifierLabel" element="_O0gxYQgmEd6eWYJXJewDdQ">
+            <children xmi:id="_O0zsaQgmEd6eWYJXJewDdQ" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_O0zsaggmEd6eWYJXJewDdQ"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_O0zsaAgmEd6eWYJXJewDdQ" y="-186"/>
+          </children>
+          <children xmi:id="_O0zsawgmEd6eWYJXJewDdQ" type="ToConstraintLabel">
+            <children xmi:id="_O0zsbQgmEd6eWYJXJewDdQ" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_O0zsbggmEd6eWYJXJewDdQ"/>
+            </children>
+            <element xmi:type="uml:Property" href="PersonDemographics.efx#_O0p7UAgmEd6eWYJXJewDdQ?VHIM/PersonDemographics/Person/payer?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_O0zsbAgmEd6eWYJXJewDdQ" y="1058"/>
+          </children>
+          <children xmi:id="_O0zsbwgmEd6eWYJXJewDdQ" type="FromConstraintLabel" element="_O0gxYQgmEd6eWYJXJewDdQ">
+            <children xmi:id="_O0zscQgmEd6eWYJXJewDdQ" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_O0zscggmEd6eWYJXJewDdQ"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_O0zscAgmEd6eWYJXJewDdQ" y="1058"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_O0zsUQgmEd6eWYJXJewDdQ" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O0zsUggmEd6eWYJXJewDdQ" points="[-140, 16, 322, -60]$[-290, 30, 172, -46]"/>
+        </edges>
+        <edges xmi:id="_wthTMAgmEd6eWYJXJewDdQ" element="_wtOYQAgmEd6eWYJXJewDdQ" source="_SNWCwuLiEduGJrQyRGTO1A" target="_SNWCsuLiEduGJrQyRGTO1A">
+          <children xmi:id="_wthTMwgmEd6eWYJXJewDdQ" type="NameLabel">
+            <children xmi:id="_wthTNQgmEd6eWYJXJewDdQ" type="Stereotype"/>
+            <children xmi:id="_wthTNggmEd6eWYJXJewDdQ" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wthTNAgmEd6eWYJXJewDdQ" y="-186"/>
+          </children>
+          <children xmi:id="_wthTNwgmEd6eWYJXJewDdQ" type="ToMultiplicityLabel">
+            <children xmi:id="_wthTOQgmEd6eWYJXJewDdQ" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="PersonDemographics.efx#_wtYJQwgmEd6eWYJXJewDdQ?VHIM/PersonDemographics/Person/policyholder?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wthTOAgmEd6eWYJXJewDdQ" y="396"/>
+          </children>
+          <children xmi:id="_wthTOggmEd6eWYJXJewDdQ" type="ToRoleLabel">
+            <children xmi:id="_wthTPAgmEd6eWYJXJewDdQ" type="ToRole"/>
+            <element xmi:type="uml:Property" href="PersonDemographics.efx#_wtYJQwgmEd6eWYJXJewDdQ?VHIM/PersonDemographics/Person/policyholder?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wthTOwgmEd6eWYJXJewDdQ" y="-397"/>
+          </children>
+          <children xmi:id="_wthTPQgmEd6eWYJXJewDdQ" type="FromMultiplicityLabel" element="_wtYJQAgmEd6eWYJXJewDdQ">
+            <children xmi:id="_wthTPwgmEd6eWYJXJewDdQ" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wthTPggmEd6eWYJXJewDdQ" y="396"/>
+          </children>
+          <children xmi:id="_wthTQAgmEd6eWYJXJewDdQ" type="FromRoleLabel" element="_wtYJQAgmEd6eWYJXJewDdQ">
+            <children xmi:id="_wthTQggmEd6eWYJXJewDdQ" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wthTQQgmEd6eWYJXJewDdQ" x="-737" y="219"/>
+          </children>
+          <children xmi:id="_wthTQwgmEd6eWYJXJewDdQ" type="ToQualifierLabel">
+            <children xmi:id="_wthTRQgmEd6eWYJXJewDdQ" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wthTRggmEd6eWYJXJewDdQ"/>
+            </children>
+            <element xmi:type="uml:Property" href="PersonDemographics.efx#_wtYJQwgmEd6eWYJXJewDdQ?VHIM/PersonDemographics/Person/policyholder?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wthTRAgmEd6eWYJXJewDdQ" y="-186"/>
+          </children>
+          <children xmi:id="_wthTRwgmEd6eWYJXJewDdQ" type="FromQualifierLabel" element="_wtYJQAgmEd6eWYJXJewDdQ">
+            <children xmi:id="_wthTSQgmEd6eWYJXJewDdQ" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wthTSggmEd6eWYJXJewDdQ"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wthTSAgmEd6eWYJXJewDdQ" y="-186"/>
+          </children>
+          <children xmi:id="_wthTSwgmEd6eWYJXJewDdQ" type="ToConstraintLabel">
+            <children xmi:id="_wthTTQgmEd6eWYJXJewDdQ" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wthTTggmEd6eWYJXJewDdQ"/>
+            </children>
+            <element xmi:type="uml:Property" href="PersonDemographics.efx#_wtYJQwgmEd6eWYJXJewDdQ?VHIM/PersonDemographics/Person/policyholder?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wthTTAgmEd6eWYJXJewDdQ" y="1058"/>
+          </children>
+          <children xmi:id="_wthTTwgmEd6eWYJXJewDdQ" type="FromConstraintLabel" element="_wtYJQAgmEd6eWYJXJewDdQ">
+            <children xmi:id="_wthTUQgmEd6eWYJXJewDdQ" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wthTUggmEd6eWYJXJewDdQ"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wthTUAgmEd6eWYJXJewDdQ" y="1058"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_wthTMQgmEd6eWYJXJewDdQ" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wthTMggmEd6eWYJXJewDdQ" points="[-75, -51, 384, 281]$[-287, -188, 172, 144]"/>
+        </edges>
+      </contents>
+    </eAnnotations>
+    <eAnnotations xmi:id="_PlQl9OLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B645466193009E" name="PolicyHolder">
+      <eAnnotations xmi:id="_Pkz6B-LiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+      <ownedComment xmi:id="_dgLWkMYlEd2ZAepatfUxXw" annotatedElement="_420A62FD03B645466193009E">
+        <body>This class contains attributes that identify the person who owns the health plan (Health insurance policy) that provides coverage for medicine, visits to the doctor or emergency room, hospital stays and other medical expenses.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_420A62FD03B6454661FF03E5" name="id" visibility="public">
+        <ownedComment xmi:id="_PkqJBeLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6454661FF03E5">
+          <body>A unique identifier that the payer or information source can use to identify the person as a Policy Holder.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="BaseDatatypes.efx#_eE_dREeDEdyIZay-9vWL7Q?VHIM/BaseDatatypes/HL72EntityIdentifier?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B6454662290146" name="groupId" visibility="public">
+        <ownedComment xmi:id="_Pkz6AuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6454662290146">
+          <body>A unique identifer that the payer or information source uses to identify a specific Group OR an Identifier assigned by the health plan to be used as a key to the group's contractual benefits.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="BaseDatatypes.efx#_eE_dREeDEdyIZay-9vWL7Q?VHIM/BaseDatatypes/HL72EntityIdentifier?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B6454662960263" name="policyId" visibility="public">
+        <ownedComment xmi:id="_Pkz6BeLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6454662960263">
+          <body>A unique identifier that the payer or information source uses to identify the Policy Holder as belonging to a specific Plan.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="BaseDatatypes.efx#_eE_dREeDEdyIZay-9vWL7Q?VHIM/BaseDatatypes/HL72EntityIdentifier?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B6454662E50014" name="_person" visibility="public" isUnique="false" association="_420A62FD03B6454662E40321">
+        <type xmi:type="uml:Class" href="PersonDemographics.efx#_420A62FD03B6425125E800E0?VHIM/PersonDemographics/Person?"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6454662F10302" name="Payer">
+      <eAnnotations xmi:id="_Pk9D9-LiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+      <ownedComment xmi:id="_Pkz6CuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6454662F10302">
+        <body>The public or private organization that is responsible for payment for health care expenses. Payers may be insurance companies or self-insured employers. </body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_420A62FD03B6454663120296" name="Address" visibility="public">
+        <ownedComment xmi:id="_Pkz6DeLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6454663120296">
+          <body>The full address of the organization (e.g. 112 Main St, Suite 23, Cambridge, MA, 02140-3314, USA)  it is broken down into its constituent parts (street address line 1, street address line 2, city name, state or province code, postal code, country code)</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="BaseDatatypes.efx#_420A62FD03B6418A8DCD02C2?VHIM/BaseDatatypes/MailingAddress?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B645466360027B" name="id" visibility="public">
+        <ownedComment xmi:id="_Pk9D8uLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B645466360027B">
+          <body>A unique identifier that is used to identify the payer. For example Medicare assigns an identifier to a payer, Blue Cross/Blue Shield assigns an identifier to a payer.
+
+270/271 p 343, 358 example
+</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="BaseDatatypes.efx#_eE_dREeDEdyIZay-9vWL7Q?VHIM/BaseDatatypes/HL72EntityIdentifier?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B6454663A3028F" name="name" visibility="public">
+        <ownedComment xmi:id="_Pk9D9eLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6454663A3028F">
+          <body>The name of the organization (e.g. Harvard Pilgrim Health Care)</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B64546640100C0" name="Plan">
+      <eAnnotations xmi:id="_PlG0-uLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+      <ownedComment xmi:id="_Pk9D-uLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64546640100C0">
+        <body>A grouping of one or more Lines of Business administered together.  Examples are HMO, PPO, etc.&#xD;
+&#xD;
+Suggestion per teleconference is to use Lines of Service instead of Lines of Business.&#xD;
+</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_420A62FD03B64546642F0075" name="effectiveDate" visibility="public">
+        <ownedComment xmi:id="_Pk9D_eLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64546642F0075">
+          <body>The date the plan is activated for providing services to the patient.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="BaseDatatypes.efx#_420A62FD03B64244824602F5?VHIM/BaseDatatypes/PointInTime?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B64546644F024C" name="id" visibility="public">
+        <ownedComment xmi:id="_PlG08uLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64546644F024C">
+          <body>A unique identifier that the payer or information source uses to identify the Plan.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="BaseDatatypes.efx#_eE_dREeDEdyIZay-9vWL7Q?VHIM/BaseDatatypes/HL72EntityIdentifier?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B64546648F00D9" name="insuranceType" visibility="public">
+        <ownedComment xmi:id="_PlG09eLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64546648F00D9">
+          <body>Such as HMO, PPO, Medicare, etc.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="BaseDatatypes.efx#_OwVa0D-BEdy0ooNeIA2VyA?VHIM/BaseDatatypes/VACode?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B6454664AA010A" name="name" visibility="public">
+        <ownedComment xmi:id="_PlG0-OLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6454664AA010A">
+          <body>The name of the Plan as assigned by the Payer.  Should this be &quot;description&quot; instead of &quot;name&quot;?
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EIsu8AgmEd6eWYJXJewDdQ" name="planIdentity" visibility="public" association="_EIi98AgmEd6eWYJXJewDdQ">
+        <ownedComment xmi:id="_ZxKsMAgmEd6eWYJXJewDdQ" annotatedElement="_EIsu8AgmEd6eWYJXJewDdQ">
+          <body>A subtype of LivingSubject representing a human being.  A human being identified to the VA as a person of interest or related to a person of interest</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="PersonDemographics.efx#_420A62FD03B6425125E800E0?VHIM/PersonDemographics/Person?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EIsu8ggmEd6eWYJXJewDdQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EIsu8QgmEd6eWYJXJewDdQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_420A62FD03B6454662E40321" memberEnd="_420A62FD03B6454662E50014 _420A62FD03B6454662E50016">
+      <ownedComment xmi:id="_Lh-WIMq7Ed2LsfgHXbEskQ" annotatedElement="_420A62FD03B6454662E40321">
+        <body>Identify the person who owns the health plan (Health insurance policy) that provides coverage for medicine.</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_420A62FD03B6454662E50016" name="" visibility="public" type="_420A62FD03B645466193009E" isUnique="false" association="_420A62FD03B6454662E40321"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EIi98AgmEd6eWYJXJewDdQ" memberEnd="_EIsu8AgmEd6eWYJXJewDdQ _EIsu8wgmEd6eWYJXJewDdQ">
+      <ownedEnd xmi:id="_EIsu8wgmEd6eWYJXJewDdQ" name="" visibility="private" type="_420A62FD03B64546640100C0" association="_EIi98AgmEd6eWYJXJewDdQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EIsu9QgmEd6eWYJXJewDdQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EIsu9AgmEd6eWYJXJewDdQ"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_O0gxYAgmEd6eWYJXJewDdQ">
+      <ownedEnd xmi:id="_O0gxYQgmEd6eWYJXJewDdQ" name="payer" visibility="public" association="_O0gxYAgmEd6eWYJXJewDdQ">
+        <ownedComment xmi:id="_kH0W8AgmEd6eWYJXJewDdQ" annotatedElement="_O0gxYQgmEd6eWYJXJewDdQ">
+          <body> Payers may be insurance companies or self-insured employers. </body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="PersonDemographics.efx#_420A62FD03B6425125E800E0?VHIM/PersonDemographics/Person?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O0gxYwgmEd6eWYJXJewDdQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O0gxYggmEd6eWYJXJewDdQ" value="1"/>
+      </ownedEnd>
+      <memberEnd href="#_O0gxYQgmEd6eWYJXJewDdQ?VHIM/EligibilityTransaction/%3CAssociation%3E/payer?"/>
+      <memberEnd href="PersonDemographics.efx#_O0p7UAgmEd6eWYJXJewDdQ?VHIM/PersonDemographics/Person/payer?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wtOYQAgmEd6eWYJXJewDdQ">
+      <ownedEnd xmi:id="_wtYJQAgmEd6eWYJXJewDdQ" name="policyOwner" visibility="public" association="_wtOYQAgmEd6eWYJXJewDdQ">
+        <ownedComment xmi:id="_0TJWEAgmEd6eWYJXJewDdQ" annotatedElement="_wtYJQAgmEd6eWYJXJewDdQ">
+          <body>he person who owns the health plan (Health insurance policy) that provides coverage for medicine, visits to the doctor or emergency room, hospital stays and other medical expenses.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="PersonDemographics.efx#_420A62FD03B6425125E800E0?VHIM/PersonDemographics/Person?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtYJQggmEd6eWYJXJewDdQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtYJQQgmEd6eWYJXJewDdQ" value="1"/>
+      </ownedEnd>
+      <memberEnd href="#_wtYJQAgmEd6eWYJXJewDdQ?VHIM/EligibilityTransaction/%3CAssociation%3E/policyOwner?"/>
+      <memberEnd href="PersonDemographics.efx#_wtYJQwgmEd6eWYJXJewDdQ?VHIM/PersonDemographics/Person/policyholder?"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_Pkz6AOLiEduGJrQyRGTO1A" base_Comment="_PkqJBeLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_Pkz6A-LiEduGJrQyRGTO1A" base_Comment="_Pkz6AuLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_Pkz6BuLiEduGJrQyRGTO1A" base_Comment="_Pkz6BeLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_Pkz6C-LiEduGJrQyRGTO1A" base_Comment="_Pkz6CuLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_Pk9D8OLiEduGJrQyRGTO1A" base_Comment="_Pkz6DeLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_Pk9D8-LiEduGJrQyRGTO1A" base_Comment="_Pk9D8uLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_Pk9D9uLiEduGJrQyRGTO1A" base_Comment="_Pk9D9eLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_Pk9D--LiEduGJrQyRGTO1A" base_Comment="_Pk9D-uLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_PlG08OLiEduGJrQyRGTO1A" base_Comment="_Pk9D_eLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_PlG08-LiEduGJrQyRGTO1A" base_Comment="_PlG08uLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_PlG09uLiEduGJrQyRGTO1A" base_Comment="_PlG09eLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_PlG0-eLiEduGJrQyRGTO1A" base_Comment="_PlG0-OLiEduGJrQyRGTO1A"/>
+  <xsd:Schema xmi:id="_voyt8LSvEd2HdLiXSQnQ7g" base_Package="_420A62FD03B645465F2F00A1" targetNamespace="Eligibilitytransaction" targetNamespacePrefix="eligibilitytransaction" elementFormDefault="unqualified" attributeFormDefault="unqualified"/>
+  <Default:Documentation xmi:id="_dgUggMYlEd2ZAepatfUxXw" base_Comment="_dgLWkMYlEd2ZAepatfUxXw"/>
+  <Default:Documentation xmi:id="_LiHgEMq7Ed2LsfgHXbEskQ" base_Comment="_Lh-WIMq7Ed2LsfgHXbEskQ"/>
+  <Default:Documentation xmi:id="_ZxdnIAgmEd6eWYJXJewDdQ" base_Comment="_ZxKsMAgmEd6eWYJXJewDdQ"/>
+  <Default:Documentation xmi:id="_kIHR4AgmEd6eWYJXJewDdQ" base_Comment="_kH0W8AgmEd6eWYJXJewDdQ"/>
+  <Default:Documentation xmi:id="_0Tc4EAgmEd6eWYJXJewDdQ" base_Comment="_0TJWEAgmEd6eWYJXJewDdQ"/>
+  <RIM:Act xmi:id="_wKA9MVLHEd6-4-oWZUjasQ" base_Class="_420A62FD03B64546640100C0"/>
+  <RIM:Role xmi:id="_xgrzMFLdEd6-4-oWZUjasQ" base_Class="_420A62FD03B645466193009E"/>
+  <RIM:Role xmi:id="_xgrzMVLdEd6-4-oWZUjasQ" base_Class="_420A62FD03B6454662F10302"/>
+  <MDA:MDAPackage xmi:id="_8WNgKlrREd6wSsSpRi74Kw" base_Package="_420A62FD03B645465F2F00A1">
+    <client xmi:id="_t3LooPG1Ed-ZlYn0p4HjQw">HDR</client>
+  </MDA:MDAPackage>
+</xmi:XMI>

@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadoj="http://doj.ca.gov/niem/MMHTransSum/Extension/1.0" xmlns:cadojMMHTransSumcodes="http://doj.ca.gov/niem/MMHTransSum/Codes/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" targetNamespace="http://doj.ca.gov/niem/MMHTransSum/Extension/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\MMHTransSum\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\MMHTransSum\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/proxy/xsd/2.0" schemaLocation="..\MMHTransSum\niem\proxy\xsd\2.0\xsd.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/jxdm/4.0" schemaLocation="..\MMHTransSum\niem\domains\jxdm\4.0\jxdm.xsd"/>
+	<xsd:import namespace="http://doj.ca.gov/niem/MMHTransSum/Codes/1.0" schemaLocation="..\MMHTransSum\codes-schema.xsd"/>
+	<!-- Type definitions for Extensions -->
+	<xsd:complexType name="PersonType">
+		<xsd:annotation>
+			<xsd:documentation>A data type extension to NIEM Person Type.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:PersonType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the collection of signature artifacts.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonDigitizedSignatureImage" minOccurs="0"/>
+					<xsd:element ref="cadoj:SignatureDate" minOccurs="0"/>
+					<xsd:element ref="nc:PersonFullName" minOccurs="0"/>
+					<xsd:element ref="j:CourtOrderSignatureMethodText" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SubjectType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the Subjects Information</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PersonIdentification"/>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="nc:PersonBirthDate"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Generated IEPD Type Extensions Start Here -->
+	<xsd:complexType name="AlergyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Alergy </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:AlergyDescription"/>
+					<xsd:element ref="cadoj:AlergyRelationships"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="CDCIntakeFacilityType">
+		<xsd:annotation>
+			<xsd:documentation>A data type CDCIntakeFacility </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:OrganizationName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="CommunicableDiseaseType">
+		<xsd:annotation>
+			<xsd:documentation>A data type CommunicableDisease </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:CommunicableDiseaseTreatmentFlag"/>
+					<xsd:element ref="cadoj:CommunicableDiseaseTreatmentDate"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ComplaintType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Complaint </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PrimaryComplaintDate"/>
+					<xsd:element ref="cadoj:PrimaryComplaintDescription"/>
+					<xsd:element ref="cadoj:PrimaryComplaintStatus"/>
+					<xsd:element ref="cadoj:SecondaryComplaintDate"/>
+					<xsd:element ref="cadoj:SecondaryComplaintDescription"/>
+					<xsd:element ref="cadoj:SecondaryComplaintStatus"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DetentionFacilityType">
+		<xsd:annotation>
+			<xsd:documentation>A data type DetentionFacility </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:OrganizationName"/>
+					<xsd:element ref="cadoj:TypeOfHousing"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DiagnosisType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Diagnosis </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:MedicalDiagnosisCode"/>
+					<xsd:element ref="cadoj:MedicalDiagnosisDate"/>
+					<xsd:element ref="cadoj:PsychiatricDiagnosisCode"/>
+					<xsd:element ref="cadoj:PsychiatricDiagnosisDate"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ExchangeAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type ExchangeAgency </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:ContactTelephoneNumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ImunizationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Imunization </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:ImunizationDate"/>
+					<xsd:element ref="cadoj:ImunizationType"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="InmateType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Inmate </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonBirthDate"/>
+					<xsd:element ref="nc:PersonSexCode"/>
+					<xsd:element ref="nc:PersonAlternateName"/>
+					<xsd:element ref="cadoj:PhysicalNeeds"/>
+					<xsd:element ref="cadoj:MedicalAppointment"/>
+					<xsd:element ref="cadoj:Complaint"/>
+					<xsd:element ref="cadoj:Pregnancy"/>
+					<xsd:element ref="cadoj:CommunicableDisease"/>
+					<xsd:element ref="cadoj:Alergy"/>
+					<xsd:element ref="cadoj:Imunization"/>
+					<xsd:element ref="cadoj:Medication"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="LabTestType">
+		<xsd:annotation>
+			<xsd:documentation>A data type LabTest </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:LabTestName"/>
+					<xsd:element ref="cadoj:LabTestDate"/>
+					<xsd:element ref="cadoj:LabTestResults"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="MedicalAppointmentType">
+		<xsd:annotation>
+			<xsd:documentation>A data type MedicalAppointment </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:AppointmentDate"/>
+					<xsd:element ref="cadoj:AppointmentType"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="MedicalRecordsType">
+		<xsd:annotation>
+			<xsd:documentation>A data type MedicalRecords </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:MedicalRecordStatus"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="MedicalStaffType">
+		<xsd:annotation>
+			<xsd:documentation>A data type MedicalStaff </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="MedicationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Medication </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:LastDoseDate"/>
+					<xsd:element ref="cadoj:LastDoseTime"/>
+					<xsd:element ref="cadoj:MedicationDose"/>
+					<xsd:element ref="cadoj:MedicationFrequency"/>
+					<xsd:element ref="cadoj:MedicationName"/>
+					<xsd:element ref="cadoj:MedicationRoute"/>
+					<xsd:element ref="cadoj:MedicationStartDate"/>
+					<xsd:element ref="cadoj:MedicationStopDate"/>
+					<xsd:element ref="cadoj:OtherTreatmentFrequency"/>
+					<xsd:element ref="cadoj:OtherTreatmentLastDate"/>
+					<xsd:element ref="cadoj:OtherTreatmentStartDate"/>
+					<xsd:element ref="cadoj:OtherTreatmentStopDate"/>
+					<xsd:element ref="cadoj:OtherTreatmentText"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="MMHTransSumType">
+		<xsd:annotation>
+			<xsd:documentation>A data type MMHTransSum </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:MedicalExaminationNeededFlag"/>
+					<xsd:element ref="cadoj:FormCompletionDate"/>
+					<xsd:element ref="cadoj:MedicalConditionComments"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PersonIdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type PersonIdentification </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PersonDOJIdentification"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PhysicalNeedsType">
+		<xsd:annotation>
+			<xsd:documentation>A data type PhysicalNeeds </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:AssistiveDevices"/>
+					<xsd:element ref="cadoj:EnvironmentNeeds"/>
+					<xsd:element ref="cadoj:MobilityLimitations"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PPDType">
+		<xsd:annotation>
+			<xsd:documentation>A data type PPD </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PPDDateofLastTest"/>
+					<xsd:element ref="cadoj:PPDResult"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PregnancyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Pregnancy </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PregnancyDeliveryDate"/>
+					<xsd:element ref="cadoj:PregnancyStatusFlag"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="XrayType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Xray </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:XrayDate"/>
+					<xsd:element ref="cadoj:XrayResult"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Generated IEPD Type Extensions End Here -->
+	<!-- Global Element Deffinitions -->
+	<xsd:element name="PersonIdentification" type="cadoj:PersonIdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>Identification Numbers Assigned to a Person by and Agency Information.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PersonDOJIdentification" type="nc:IdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>Identification DOJ Assigns to a person.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Signature" type="cadoj:SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>Artifacts of a signature.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SignatureDate" type="niem-xsd:dateTime">
+		<xsd:annotation>
+			<xsd:documentation>Date of signiture.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!-- Generated IEPD Attributes Start Here -->
+	<xsd:element name="Alergy" type="cadoj:AlergyType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Alergy</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AlergyDescription" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Description of the jail inmate's allergy. </xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AlergyRelationships" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>An indication as to whether the allergy is related to environmental conditions, food, drugs or other.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CDCIntakeFacility" type="cadoj:CDCIntakeFacilityType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for CDCIntakeFacility</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OrganizationName" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The name of the CDC intake facility where the subject will be delivered.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CommunicableDisease" type="cadoj:CommunicableDiseaseType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for CommunicableDisease</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CommunicableDiseaseTreatmentFlag" type="cadojMMHTransSumcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/ no indicator as to whether inmate has received treatment for a communicable disease found through test results reported on the summary sheet.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CommunicableDiseaseTreatmentDate" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Date inmate began treatment for a communicable disease found through test results reported on the summary sheet.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Complaint" type="cadoj:ComplaintType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Complaint</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PrimaryComplaintDate" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The date the primary self-reported medical complaint of the inmate was recorded.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PrimaryComplaintDescription" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A short description of the inmate's  primary self-reported medical problem.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PrimaryComplaintStatus" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A description as to the current condition of the inmate's primary self-reported medical complaint and whether or how the condition is being treated  (e.g., controlled by medication, in remission, etc.).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SecondaryComplaintDate" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The date the secondary self-reported medical complaint of the inmate was recorded.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SecondaryComplaintDescription" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A short description of the inmate's secondary self-reported medical problem.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SecondaryComplaintStatus" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A description as to the current condition of the inmate's secondary self-reported medical complaint and whether or how the condition is being treated (e.g., controlled by medication, in remission, etc.)</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DetentionFacility" type="cadoj:DetentionFacilityType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for DetentionFacility</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="TypeOfHousing" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The type of housing unit the inmate has been living in at the local detention facility, based on medical need, such as general population, correctional treatment center, forensic outpatient, skilled nursing, "pill module", etc.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Diagnosis" type="cadoj:DiagnosisType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Diagnosis</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicalDiagnosisCode" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A diagnosis made by a doctor of the inmate's medical problems, using the ICD9 codes.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicalDiagnosisDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date on which the jail inmate was diagnosed with a specific medical condition.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PsychiatricDiagnosisCode" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The diagnosis made by a doctor of the inmate's psychiatric disorder, using the DSM IV.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PsychiatricDiagnosisDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date on which the psychiatric diagnosis was made.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ExchangeAgency" type="cadoj:ExchangeAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for ExchangeAgency</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ContactTelephoneNumber" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Complex element contains all of the components associated with the telephone number of the person to be contacted concerning the subject of the exchange.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Imunization" type="cadoj:ImunizationType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Imunization</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ImunizationDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the inmate received an immunization. </xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ImunizationType" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The type of immunization the inmate received.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Inmate" type="cadoj:InmateType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Inmate</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AlternateName" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Other names used by the inmate.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Gender" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The gender of the inmate.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PersonName" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The full name of the person incarcerated in a jail.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabTest" type="cadoj:LabTestType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for LabTest</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabTestDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date of the lab test to screen inmates for communicable diseases.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabTestResults" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The results or findings of the laboratory test performed to screen inmates for communicable diseases, such as HIV/AIDS, hepatitis, venereal disease (e.g., positive, negative, pending).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabTestName" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The name of  the laboratory test performed to screen inmates for communicable diseases, such as HIV/AIDS, hepatitis, venereal disease.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicalAppointment" type="cadoj:MedicalAppointmentType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for MedicalAppointment</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AppointmentDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date of the future medical appointment the inmate is scheduled to receive.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AppointmentType" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The type of future medical appointment the inmate is scheduled to receive.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicalRecords" type="cadoj:MedicalRecordsType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for MedicalRecords</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicalRecordStatus" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>An indication as to whether (1)  no pertinent medical information exists for the subject or (2) the local detention facility was unable to locate the jail inmate's medical record but will search.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicalStaff" type="cadoj:MedicalStaffType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for MedicalStaff</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Medication" type="cadoj:MedicationType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Medication</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LastDoseDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the inmate received the last dose of medication before leaving the local facility.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LastDoseTime" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The time the inmate received the last dose of medication before arriving at the CDC intake facility.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicationDose" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The amount of the prescription medication being taken by the inmate. </xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicationFrequency" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>How often the inmate receives the medication, using standard medical codes for frequency (e.g., TID, PRN, etc.)</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicationName" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The name of the prescription medication being taken by the  inmate.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicationRoute" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The method of administering the prescription medication to the inmate, such as by mouth, topical application, injection, etc.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicationStartDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the inmate began taking this prescription medication.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicationStopDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the inmate's current prescription expires or the date the inmate should stop taking this prescription medication.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OtherTreatmentFrequency" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>How often the inmate receives any "other" treatment (non-medication), using standard medical codes for frequency (e.g., TID, PRN, etc.)</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OtherTreatmentLastDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the inmate received the last "other" treatment (non-medication) before leaving the local facility.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OtherTreatmentStartDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the inmate began having the "other" treatment (non-medication).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OtherTreatmentStopDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the "other" treatment (non-medication) for the inmate should cease.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OtherTreatmentText" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A description of orders concerning the "other" treatment of the medical condition of the inmate, other than medication.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MMHTransSum" type="cadoj:MMHTransSumType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for MMHTransSum</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicalExaminationNeededFlag" type="cadojMMHTransSumcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A flag indicating that the subject should receive a medical examination on a priority basis after reaching the CDC transfer destination.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="FormCompletionDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the medical transfer summary was prepared.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicalConditionComments" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Any other comments concerning the medical or psychological condition or treatment of the inmate</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PhysicalNeeds" type="cadoj:PhysicalNeedsType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for PhysicalNeeds</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AssistiveDevices" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A list of the assistive devices needed by the inmate (crutches, respiratory, wheelchair, etc.)</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EnvironmentNeeds" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation> A description of the inmate's needs with respect to the physical environment (e.g., isolation, negative pressure, one level, etc.)</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MobilityLimitations" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Description of any mobility concerns or limitation of the inmate.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PPD" type="cadoj:PPDType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for PPD</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PPDDateofLastTest" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date of the last tuberculin skin test.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PPDResult" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>An indication as to whether the tuberculin skin test resulted in a positive or negative result or was not performed.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Pregnancy" type="cadoj:PregnancyType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Pregnancy</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PregnancyDeliveryDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The estimated date the jail inmate will deliver her baby.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PregnancyStatusFlag" type="cadojMMHTransSumcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>An indication as to whether the inmate is (1) pregnant (2) not pregnant or (3) unknown</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Xray" type="cadoj:XrayType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Xray</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="XrayDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the last chest x-ray was taken of the inmate.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="XrayResult" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>An indication as to whether the chest x-ray resulted in a positive or negative result or was not taken.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!-- Generated IEPD Attributes End Here -->
+</xsd:schema>

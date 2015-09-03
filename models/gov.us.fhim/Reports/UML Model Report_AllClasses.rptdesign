@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.22" id="1">
+    <property name="comments">Licensed Materials - Property of IBM 
+Copyright IBM Corporation 2008. All Rights Reserved 
+
+U.S. Government Users Restricted Rights -  Use, duplication or disclosure restricted by GSA ADP  Schedule Contract with IBM Corp. 
+
+Use restricted, please refer to the "Samples Gallery" terms and conditions in the IBM International Program License Agreement.</property>
+    <property name="createdBy">Eclipse BIRT Designer Version 2.6.2.r262_v20110209 Build &lt;2.6.2.v20110214-1523></property>
+    <html-property name="description">Blank starter report for creating a new UML model report.</html-property>
+    <property name="units">in</property>
+    <text-property name="displayName">UML Class/Attribute Report - Enrollment/Eligibitity/Coordination Of Benefits</text-property>
+    <property name="layoutPreference">auto layout</property>
+    <data-sources>
+        <oda-data-source extensionID="com.ibm.ccl.oda.uml" name="Main package" id="4">
+            <property name="instancemodels">platform:/resource/gov.us.fhim/FHIM.emx</property>
+            <property name="metamodels">http://www.eclipse.org/uml2/2.1.0/UML http://www.eclipse.org/gmf/runtime/1.0.1/notation</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="Package Root" id="7">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">uri</property>
+                    <text-property name="displayName">uri</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">name</property>
+                    <text-property name="displayName">name</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">documentation</property>
+                    <text-property name="displayName">documentation</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">documentation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Main package</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">uri</property>
+                    <property name="nativeName">uri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">name</property>
+                    <property name="nativeName">name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">documentation</property>
+                    <property name="nativeName">documentation</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/2.1.0/UML#//Package</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">instanceOf(*,"uml:Package")</property>
+            <property name="columnQueries">uri;getURI(.);String#-#name;@name;String#-#documentation;getElementsWithStereotype(ownedComment, 'Default::Documentation')[1]/@body;String</property>
+            <property name="rowType">uml.Package</property>
+        </oda-data-set>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="Packages" id="9">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">documentation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">classCount</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Main package</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">uri</property>
+                    <property name="nativeName">uri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">name</property>
+                    <property name="nativeName">name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">qualifiedName</property>
+                    <property name="nativeName">qualifiedName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">documentation</property>
+                    <property name="nativeName">documentation</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">classCount</property>
+                    <property name="nativeName">classCount</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/2.1.0/UML#//Package</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">//Package</property>
+            <property name="columnQueries">uri;getURI(.);String#-#name;@name;String#-#qualifiedName;@qualifiedName;String#-#documentation;getElementsWithStereotype(ownedComment, 'Default::Documentation')[1]/@body;String#-#classCount;count(oclQuery(ownedMember, "self.oclIsKindOf(uml::Class)"));Integer</property>
+            <property name="rowType">uml.Package</property>
+        </oda-data-set>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="Package Diagrams" id="19">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">uri</property>
+                    <text-property name="displayName">uri</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">name</property>
+                    <text-property name="displayName">name</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">type</property>
+                    <text-property name="displayName">type</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">description</property>
+                    <text-property name="displayName">description</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">image</property>
+                    <text-property name="displayName">image</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">packageQName</property>
+                    <text-property name="displayName">packageQName</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">description</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">image</property>
+                        <property name="dataType">blob</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">packageQName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Main package</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">uri</property>
+                    <property name="nativeName">uri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">name</property>
+                    <property name="nativeName">name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">type</property>
+                    <property name="nativeName">type</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">description</property>
+                    <property name="nativeName">description</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">image</property>
+                    <property name="nativeName">image</property>
+                    <property name="dataType">blob</property>
+                    <property name="nativeDataType">1</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">packageQName</property>
+                    <property name="nativeName">packageQName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/gmf/runtime/1.0.1/notation#//Diagram</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">getDiagrams(instanceOf(//*, "uml:Package"))</property>
+            <property name="columnQueries">uri;getURI(.);String#-#name;@name;String#-#type;@type;String#-#description;styles[1]/@description;String#-#image;getDiagramImage(.);Blob#-#packageQName;../../@qualifiedName;String</property>
+            <property name="rowType">notation.Diagram</property>
+        </oda-data-set>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="Classes" id="10">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">documentation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">attributeCount</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">operationCount</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Main package</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">uri</property>
+                    <property name="nativeName">uri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">name</property>
+                    <property name="nativeName">name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">qualifiedName</property>
+                    <property name="nativeName">qualifiedName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">documentation</property>
+                    <property name="nativeName">documentation</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">attributeCount</property>
+                    <property name="nativeName">attributeCount</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">operationCount</property>
+                    <property name="nativeName">operationCount</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/2.1.0/UML#//Class</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">//Class</property>
+            <property name="columnQueries">uri;getURI(.);String#-#name;@name;String#-#qualifiedName;@qualifiedName;String#-#documentation;getElementsWithStereotype(ownedComment, 'Default::Documentation')[1]/@body;String#-#attributeCount;count(attribute);Integer#-#operationCount;count(ownedOperation);Integer</property>
+            <property name="rowType">uml.Class</property>
+        </oda-data-set>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="Class Attributes" id="11">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">uri</property>
+                    <text-property name="displayName">uri</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">name</property>
+                    <text-property name="displayName">name</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">qualifiedName</property>
+                    <text-property name="displayName">qualifiedName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">visibility</property>
+                    <text-property name="displayName">visibility</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">documentation</property>
+                    <text-property name="displayName">documentation</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">classURI</property>
+                    <text-property name="displayName">classURI</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">datatypename</property>
+                    <text-property name="displayName">datatypename</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">datatypevisibility</property>
+                    <text-property name="displayName">datatypevisibility</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">datatypequalifiedName</property>
+                    <text-property name="displayName">datatypequalifiedName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">datatypeuri</property>
+                    <text-property name="displayName">datatypeuri</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">visibility</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">documentation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">classURI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">datatypename</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">datatypevisibility</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">datatypequalifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">datatypeuri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Main package</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">uri</property>
+                    <property name="nativeName">uri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">name</property>
+                    <property name="nativeName">name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">qualifiedName</property>
+                    <property name="nativeName">qualifiedName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">visibility</property>
+                    <property name="nativeName">visibility</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">documentation</property>
+                    <property name="nativeName">documentation</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">classURI</property>
+                    <property name="nativeName">classURI</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">datatypename</property>
+                    <property name="nativeName">datatypename</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">datatypevisibility</property>
+                    <property name="nativeName">datatypevisibility</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">datatypequalifiedName</property>
+                    <property name="nativeName">datatypequalifiedName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">datatypeuri</property>
+                    <property name="nativeName">datatypeuri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/2.1.0/UML#//Property</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">//Class/ownedAttribute</property>
+            <property name="columnQueries">uri;getURI(.);String#-#name;@name;String#-#qualifiedName;@qualifiedName;String#-#visibility;@visibility;String#-#documentation;getElementsWithStereotype(ownedComment, 'Default::Documentation')[1]/@body;String#-#classURI;getURI(..);String#-#datatypename;type/@name;String#-#datatypevisibility;type/@visibility;String#-#datatypequalifiedName;type/@qualifiedName;String#-#datatypeuri;getURI(./type);String</property>
+            <property name="rowType">uml.Property</property>
+            <property name="evaluateOnInstances">true</property>
+        </oda-data-set>
+        <joint-data-set name="Classes with Attributes" id="13">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Classes::uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Classes::name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Classes::qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">Classes::documentation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">Classes::attributeCount</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">Classes::operationCount</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">Class Attributes::uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">Class Attributes::name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">Class Attributes::qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">Class Attributes::visibility</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">Class Attributes::documentation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">Class Attributes::classURI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">Class Attributes::datatypename</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">Class Attributes::datatypevisibility</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">Class Attributes::datatypequalifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">Class Attributes::datatypeuri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <simple-property-list name="dataSets">
+                <value>Classes</value>
+                <value>Class Attributes</value>
+            </simple-property-list>
+            <list-property name="joinConditions">
+                <structure>
+                    <property name="joinType">left-out</property>
+                    <property name="joinOperator">eq</property>
+                    <property name="leftDataSet">Classes</property>
+                    <property name="rightDataSet">Class Attributes</property>
+                    <expression name="leftExpression">dataSetRow["uri"]</expression>
+                    <expression name="rightExpression">dataSetRow["classURI"]</expression>
+                </structure>
+            </list-property>
+        </joint-data-set>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="Class Operations" id="14">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">documentation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">classURI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Main package</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">uri</property>
+                    <property name="nativeName">uri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">name</property>
+                    <property name="nativeName">name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">qualifiedName</property>
+                    <property name="nativeName">qualifiedName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">documentation</property>
+                    <property name="nativeName">documentation</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">classURI</property>
+                    <property name="nativeName">classURI</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/2.1.0/UML#//Operation</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">//Class/ownedOperation</property>
+            <property name="columnQueries">uri;getURI(.);String#-#name;@name;String#-#qualifiedName;@qualifiedName;String#-#documentation;getElementsWithStereotype(ownedComment, 'Default::Documentation')[1]/@body;String#-#classURI;getURI(..);String</property>
+            <property name="rowType">uml.Operation</property>
+        </oda-data-set>
+        <joint-data-set name="Classes with Operations" id="16">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Classes::uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Classes::name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Classes::qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">Classes::documentation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">Classes::attributeCount</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">Classes::operationCount</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">Class Operations::uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">Class Operations::name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">Class Operations::qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">Class Operations::documentation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">Class Operations::classURI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <simple-property-list name="dataSets">
+                <value>Classes</value>
+                <value>Class Operations</value>
+            </simple-property-list>
+            <list-property name="joinConditions">
+                <structure>
+                    <property name="joinType">left-out</property>
+                    <property name="joinOperator">eq</property>
+                    <property name="leftDataSet">Classes</property>
+                    <property name="rightDataSet">Class Operations</property>
+                    <expression name="leftExpression">dataSetRow["uri"]</expression>
+                    <expression name="rightExpression">dataSetRow["classURI"]</expression>
+                </structure>
+            </list-property>
+        </joint-data-set>
+        <joint-data-set name="Subclasses" id="668">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Classes::uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Classes::name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Classes::qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">Classes::documentation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">Classes::attributeCount</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">Classes::operationCount</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">Generalizations::uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">Generalizations::name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">Generalizations::qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">Generalizations::generalURI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">Generalizations::generalName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">Generalizations::generalQName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">Generalizations::specificURI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">Generalizations::specificName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">Generalizations::specificQName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <simple-property-list name="dataSets">
+                <value>Classes</value>
+                <value>Generalizations</value>
+            </simple-property-list>
+            <list-property name="joinConditions">
+                <structure>
+                    <property name="joinType">left-out</property>
+                    <property name="joinOperator">eq</property>
+                    <property name="leftDataSet">Classes</property>
+                    <property name="rightDataSet">Generalizations</property>
+                    <expression name="leftExpression">dataSetRow["uri"]</expression>
+                    <expression name="rightExpression">dataSetRow["generalURI"]</expression>
+                </structure>
+            </list-property>
+        </joint-data-set>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="Interfaces" id="18">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">documentation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Main package</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">uri</property>
+                    <property name="nativeName">uri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">name</property>
+                    <property name="nativeName">name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">qualifiedName</property>
+                    <property name="nativeName">qualifiedName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">documentation</property>
+                    <property name="nativeName">documentation</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/2.1.0/UML#//Interface</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">//Interface</property>
+            <property name="columnQueries">uri;getURI(.);String#-#name;@name;String#-#qualifiedName;@qualifiedName;String#-#documentation;getElementsWithStereotype(ownedComment, 'Default::Documentation')[1]/@body;String</property>
+            <property name="rowType">uml.Interface</property>
+        </oda-data-set>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="Dependencies" id="21">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">clientURI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">clientName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">clientQName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">supplierURI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">supplierName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">supplierQName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Main package</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">uri</property>
+                    <property name="nativeName">uri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">name</property>
+                    <property name="nativeName">name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">qualifiedName</property>
+                    <property name="nativeName">qualifiedName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">type</property>
+                    <property name="nativeName">type</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">clientURI</property>
+                    <property name="nativeName">clientURI</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">clientName</property>
+                    <property name="nativeName">clientName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">clientQName</property>
+                    <property name="nativeName">clientQName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">supplierURI</property>
+                    <property name="nativeName">supplierURI</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">supplierName</property>
+                    <property name="nativeName">supplierName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">supplierQName</property>
+                    <property name="nativeName">supplierQName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/2.1.0/UML#//Dependency</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">oclQuery(//*, "self.oclIsKindOf(uml::Dependency)")</property>
+            <property name="columnQueries">uri;getURI(.);String#-#name;@name;String#-#qualifiedName;@qualifiedName;String#-#type;getXMIType(.);String#-#clientURI;getURI(client[1]);String#-#clientName;client[1]/@name;String#-#clientQName;client[1]/@qualifiedName;String#-#supplierURI;getURI(supplier[1]);String#-#supplierName;supplier[1]/@name;String#-#supplierQName;supplier[1]/@qualifiedName;String</property>
+            <property name="rowType">uml.Dependency</property>
+        </oda-data-set>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="Associations" id="22">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">end1URI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">end1Name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">end1QName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">end2URI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">end2Name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">end2QName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Main package</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">uri</property>
+                    <property name="nativeName">uri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">name</property>
+                    <property name="nativeName">name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">qualifiedName</property>
+                    <property name="nativeName">qualifiedName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">end1URI</property>
+                    <property name="nativeName">end1URI</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">end1Name</property>
+                    <property name="nativeName">end1Name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">end1QName</property>
+                    <property name="nativeName">end1QName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">end2URI</property>
+                    <property name="nativeName">end2URI</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">end2Name</property>
+                    <property name="nativeName">end2Name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">end2QName</property>
+                    <property name="nativeName">end2QName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/2.1.0/UML#//Association</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">//Association</property>
+            <property name="columnQueries">uri;getURI(.);String#-#name;@name;String#-#qualifiedName;@qualifiedName;String#-#end1URI;getURI(memberEnd[1]/type);String#-#end1Name;memberEnd[1]/type/@name;String#-#end1QName;memberEnd[1]/type/@qualifiedName;String#-#end2URI;getURI(memberEnd[2]/type);String#-#end2Name;memberEnd[2]/type/@name;String#-#end2QName;memberEnd[2]/type/@qualifiedName;String</property>
+            <property name="rowType">uml.Association</property>
+        </oda-data-set>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="Generalizations" id="26">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">generalURI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">generalName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">generalQName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">specificURI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">specificName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">specificQName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Main package</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">uri</property>
+                    <property name="nativeName">uri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">name</property>
+                    <property name="nativeName">name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">qualifiedName</property>
+                    <property name="nativeName">qualifiedName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">generalURI</property>
+                    <property name="nativeName">generalURI</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">generalName</property>
+                    <property name="nativeName">generalName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">generalQName</property>
+                    <property name="nativeName">generalQName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">specificURI</property>
+                    <property name="nativeName">specificURI</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">specificName</property>
+                    <property name="nativeName">specificName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">specificQName</property>
+                    <property name="nativeName">specificQName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/2.1.0/UML#//Generalization</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">//Generalization</property>
+            <property name="columnQueries">uri;getURI(.);String#-#name;@name;String#-#qualifiedName;@qualifiedName;String#-#generalURI;getURI(general[1]);String#-#generalName;general[1]/@name;String#-#generalQName;general[1]/@qualifiedName;String#-#specificURI;getURI(specific[1]);String#-#specificName;specific[1]/@name;String#-#specificQName;specific[1]/@qualifiedName;String</property>
+            <property name="rowType">uml.Generalization</property>
+        </oda-data-set>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="Applied Profiles" id="23">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">packageURI</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">packageName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">packageQName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Main package</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">uri</property>
+                    <property name="nativeName">uri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">name</property>
+                    <property name="nativeName">name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">qualifiedName</property>
+                    <property name="nativeName">qualifiedName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">packageURI</property>
+                    <property name="nativeName">packageURI</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">packageName</property>
+                    <property name="nativeName">packageName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">packageQName</property>
+                    <property name="nativeName">packageQName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/2.1.0/UML#//ProfileApplication</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">//ProfileApplication</property>
+            <property name="columnQueries">uri;getURI(appliedProfile[1]);String#-#name;appliedProfile[1]/@name;String#-#qualifiedName;appliedProfile[1]/@qualifiedName;String#-#packageURI;getURI(applyingPackage[1]);String#-#packageName;applyingPackage[1]/@name;String#-#packageQName;applyingPackage[1]/@qualifiedName;String</property>
+            <property name="rowType">uml.ProfileApplication</property>
+        </oda-data-set>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="All Elements" id="20">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">documentation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Main package</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">uri</property>
+                    <property name="nativeName">uri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">type</property>
+                    <property name="nativeName">type</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">documentation</property>
+                    <property name="nativeName">documentation</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/2.1.0/UML#//Element</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">oclQuery(//*, "self.oclIsKindOf(uml::Element)")</property>
+            <property name="columnQueries">uri;getURI(.);String#-#type;getXMIType(.);String#-#documentation;getElementsWithStereotype(ownedComment, 'Default::Documentation')[1]/@body;String</property>
+            <property name="rowType">uml.Element</property>
+        </oda-data-set>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="All Named Elements" id="25">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">documentation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Main package</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">uri</property>
+                    <property name="nativeName">uri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">name</property>
+                    <property name="nativeName">name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">qualifiedName</property>
+                    <property name="nativeName">qualifiedName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">type</property>
+                    <property name="nativeName">type</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">documentation</property>
+                    <property name="nativeName">documentation</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/2.1.0/UML#//NamedElement</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">oclQuery(//*, "self.oclIsKindOf(uml::NamedElement)")</property>
+            <property name="columnQueries">uri;getURI(.);String#-#name;@name;String#-#qualifiedName;@qualifiedName;String#-#type;getXMIType(.);String#-#documentation;getElementsWithStereotype(ownedComment, 'Default::Documentation')[1]/@body;String</property>
+            <property name="rowType">uml.NamedElement</property>
+        </oda-data-set>
+    </data-sets>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="topMargin">1in</property>
+            <property name="leftMargin">1.25in</property>
+            <property name="bottomMargin">1in</property>
+            <property name="rightMargin">1.25in</property>
+            <page-footer>
+                <text id="3">
+                    <property name="fontFamily">"Arial"</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="paddingBottom">10pt</property>
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>Packages.com.ibm.icu.text.DateFormat.getDateTimeInstance(Packages.com.ibm.icu.text.DateFormat.LONG, Packages.com.ibm.icu.text.DateFormat.MEDIUM).format(new java.util.Date());</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="791">
+            <property name="width">100%</property>
+            <property name="dataSet">Classes with Attributes</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Classes::uri</property>
+                    <text-property name="displayName">Classes::uri</text-property>
+                    <expression name="expression">dataSetRow["Classes::uri"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Classes::name</property>
+                    <text-property name="displayName">Classes::name</text-property>
+                    <expression name="expression">dataSetRow["Classes::name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Classes::qualifiedName</property>
+                    <text-property name="displayName">Classes::qualifiedName</text-property>
+                    <expression name="expression">dataSetRow["Classes::qualifiedName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Classes::documentation</property>
+                    <text-property name="displayName">Classes::documentation</text-property>
+                    <expression name="expression">dataSetRow["Classes::documentation"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Classes::attributeCount</property>
+                    <text-property name="displayName">Classes::attributeCount</text-property>
+                    <expression name="expression">dataSetRow["Classes::attributeCount"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Classes::operationCount</property>
+                    <text-property name="displayName">Classes::operationCount</text-property>
+                    <expression name="expression">dataSetRow["Classes::operationCount"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Class Attributes::uri</property>
+                    <text-property name="displayName">Class Attributes::uri</text-property>
+                    <expression name="expression">dataSetRow["Class Attributes::uri"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Class Attributes::name</property>
+                    <text-property name="displayName">Class Attributes::name</text-property>
+                    <expression name="expression">dataSetRow["Class Attributes::name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Class Attributes::qualifiedName</property>
+                    <text-property name="displayName">Class Attributes::qualifiedName</text-property>
+                    <expression name="expression">dataSetRow["Class Attributes::qualifiedName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Class Attributes::visibility</property>
+                    <text-property name="displayName">Class Attributes::visibility</text-property>
+                    <expression name="expression">dataSetRow["Class Attributes::visibility"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Class Attributes::documentation</property>
+                    <text-property name="displayName">Class Attributes::documentation</text-property>
+                    <expression name="expression">dataSetRow["Class Attributes::documentation"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Class Attributes::classURI</property>
+                    <text-property name="displayName">Class Attributes::classURI</text-property>
+                    <expression name="expression">dataSetRow["Class Attributes::classURI"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Class Attributes::datatypename</property>
+                    <text-property name="displayName">Class Attributes::datatypename</text-property>
+                    <expression name="expression">dataSetRow["Class Attributes::datatypename"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="888"/>
+            <column id="877"/>
+            <column id="863"/>
+            <column id="867"/>
+            <column id="870"/>
+            <column id="872"/>
+            <header>
+                <row id="792">
+                    <cell id="885">
+                        <label id="890">
+                            <text-property name="text">Classes::qualifiedName</text-property>
+                        </label>
+                    </cell>
+                    <cell id="874">
+                        <label id="881">
+                            <text-property name="text">Classes::name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="799">
+                        <label id="800">
+                            <text-property name="text">Classes::documentation</text-property>
+                        </label>
+                    </cell>
+                    <cell id="807">
+                        <label id="808">
+                            <text-property name="text">Class Attributes::name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="813">
+                        <label id="814">
+                            <text-property name="text">Class Attributes::documentation</text-property>
+                        </label>
+                    </cell>
+                    <cell id="817">
+                        <label id="818">
+                            <text-property name="text">Class Attributes::datatypename</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="819">
+                    <cell id="886">
+                        <data id="891">
+                            <property name="whiteSpace">nowrap</property>
+                            <property name="resultSetColumn">Classes::qualifiedName</property>
+                        </data>
+                    </cell>
+                    <cell id="875">
+                        <data id="882">
+                            <property name="whiteSpace">nowrap</property>
+                            <property name="resultSetColumn">Classes::name</property>
+                        </data>
+                    </cell>
+                    <cell id="826">
+                        <data id="827">
+                            <property name="resultSetColumn">Classes::documentation</property>
+                        </data>
+                    </cell>
+                    <cell id="834">
+                        <data id="835">
+                            <property name="resultSetColumn">Class Attributes::name</property>
+                        </data>
+                    </cell>
+                    <cell id="840">
+                        <data id="841">
+                            <property name="resultSetColumn">Class Attributes::documentation</property>
+                        </data>
+                    </cell>
+                    <cell id="844">
+                        <data id="845">
+                            <property name="resultSetColumn">Class Attributes::datatypename</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="846">
+                    <cell id="887"/>
+                    <cell id="876"/>
+                    <cell id="850"/>
+                    <cell id="854"/>
+                    <cell id="857"/>
+                    <cell id="859"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>
