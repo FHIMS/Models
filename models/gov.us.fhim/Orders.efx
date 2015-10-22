@@ -193,7 +193,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_OAqyWuPREeCbbuWBGGTBrA" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_OAqyXOPREeCbbuWBGGTBrA" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_OAqyXuPREeCbbuWBGGTBrA" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Radiology.efx#_420A62FD03B64586F4B502F6?FHIM/Radiology/RadiologyNuclearMedicineRequest?"/>
+          <element xmi:type="uml:Class" href="Imaging.efx#_420A62FD03B64586F4B502F6?FHIM/Imaging/RadiologyNuclearMedicineRequest?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OAqyUuPREeCbbuWBGGTBrA" x="10778" y="6023"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_7W1YwOrIEeCgerddwRbJUw" fontName="Arial" fontHeight="10" showListVisibility="None" fillColor="16777088" lineColor="3342489" showParent="Name" showStereotype="Text">
@@ -463,7 +463,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_5Qua6Eh2EeKFm6BiMe_FyA" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_5Qua6Uh2EeKFm6BiMe_FyA" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_5Qua6kh2EeKFm6BiMe_FyA" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5Qua4Uh2EeKFm6BiMe_FyA" x="10461" y="-15850"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5Qua4Uh2EeKFm6BiMe_FyA" x="11412" y="-15850"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_7sy0sEh2EeKFm6BiMe_FyA" element="_420A62FD03B64589572B02E8" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_7sy0skh2EeKFm6BiMe_FyA" type="ImageCompartment">
@@ -1395,7 +1395,7 @@
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_4Rw_9UcQEeKfi9U1UyJHLg" type="Name"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4Rw_80cQEeKfi9U1UyJHLg" y="-186"/>
           </children>
-          <element xmi:type="uml:Generalization" href="Radiology.efx#_4RnO8EcQEeKfi9U1UyJHLg?FHIM/Radiology/RadiologyNuclearMedicineRequest/%3CGeneralization%3E?"/>
+          <element xmi:type="uml:Generalization" href="Imaging.efx#_4RnO8EcQEeKfi9U1UyJHLg?FHIM/Imaging/RadiologyNuclearMedicineRequest/%3CGeneralization%3E?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_4Rw_8UcQEeKfi9U1UyJHLg" points="[634, -725, 3964, 2960]$[634, -1397, 3964, 2288]$[-3276, -1397, 54, 2288]$[-3276, -2524, 54, 1161]"/>
         </edges>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_7sy0u0h2EeKFm6BiMe_FyA" element="_Q98HIAcwEeGfLeiV6Brugg" source="_7sy0sEh2EeKFm6BiMe_FyA" target="_63a5YBCaEeGYNskcagX10g" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -1813,7 +1813,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_7tYq5Uh2EeKFm6BiMe_FyA" type="FromRoleLabel" element="_v4ihEMoSEeGas4Yp_oUthg">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_7tYq50h2EeKFm6BiMe_FyA" type="FromRole"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_7tYq5kh2EeKFm6BiMe_FyA" y="-397"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_7tYq5kh2EeKFm6BiMe_FyA" x="-708" y="-413"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_7tYq6Eh2EeKFm6BiMe_FyA" visible="false" type="ToQualifierLabel" element="_v4oAoMoSEeGas4Yp_oUthg">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_7tYq6kh2EeKFm6BiMe_FyA" type="QualifierCompartment"/>
@@ -2453,7 +2453,7 @@
           <body>&quot;Contains the telephone number to call for clarification of a request or other information regarding the order.&quot; - HL7 Version 2.8, ORC-14.&#xD;
 &quot;Contains the telephone number for reporting a status or a result&quot; - HL7 Version 2.8, OBR-17.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_fImbAAEYEd-ZUM5xZsXWyw?FHIM/Datatypes/Telecommunications?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_fImbAAEYEd-ZUM5xZsXWyw?FHIM/Datatypes/ContactPoint?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Oya20OO6EeCbbuWBGGTBrA" name="confidentialityCode" visibility="public">
         <ownedComment xmi:id="_OhGOEAcsEeGfLeiV6Brugg" annotatedElement="_Oya20OO6EeCbbuWBGGTBrA">
@@ -2519,6 +2519,14 @@
           <body>&quot;This field indicates whether the order is to be executed in an inpatient setting or an outpatient setting.&quot; - HL7 Version 2.8, ORC-29</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3S-u0Fi2EeWPFcZL8Pri7w" name="precautionType" visibility="public">
+        <ownedComment xmi:id="_vCm-oFi3EeWPFcZL8Pri7w" annotatedElement="_3S-u0Fi2EeWPFcZL8Pri7w">
+          <body>This property indicates the kind of precaution(s) to prevent transmission of infectious disease.  Possible values include: blood-borne pathogen precaution, airborne pathogen precaution, droplet precaution, contact precautions, etc. Note that for a system that implements a Boolean flag to indicate that the patient is to be in an isolation protocol, one approach would be to set that flag based on the content of this property.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v3nUAFi3EeWPFcZL8Pri7w" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v3ms8Fi3EeWPFcZL8Pri7w"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B64589570A015B" name="placerOrderId" visibility="public">
         <ownedComment xmi:id="_MC55gOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64589570A015B">
@@ -3438,4 +3446,5 @@ A code specifying the status of the Order.  Valid status codes should reflect th
   <RIM:Role xmi:id="_uoetYOtMEd-UtpmJtcZCZg" base_Class="_61ai4MTBEd-6Z_53K--WsA"/>
   <RIM:RoleLink xmi:id="_-pOmwMqAEeC9Pb3leltpqQ" base_Class="_Q13E8LxMEeCjnsq0FtkmeA"/>
   <Default:Documentation xmi:id="_3huY4EFwEeOWAYGYxfkLag" base_Comment="_3dagoEFwEeOWAYGYxfkLag"/>
+  <Default:Documentation xmi:id="_vCvhgFi3EeWPFcZL8Pri7w" base_Comment="_vCm-oFi3EeWPFcZL8Pri7w"/>
 </xmi:XMI>

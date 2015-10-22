@@ -1333,11 +1333,15 @@ These are documented in CDC local codes table, CDCPHINVS (Value set OID 2.16.840
         <ownedLiteral xmi:id="_i8J1oPApEeS1qetF27ECmQ" name="old"/>
         <ownedLiteral xmi:id="_ki1fkPApEeS1qetF27ECmQ" name="maiden"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Wwx7gKRMEeGZ6ueex_Me0w" name="Body Site Value Set"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_WwluQKRMEeGZ6ueex_Me0w" name="SNOMED-CT"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_X8KJgKRMEeGZ6ueex_Me0w" name="Unified Code for Units of Measure Value Set"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_X8UhkKRMEeGZ6ueex_Me0w" name="Unified Code for Units of Measure"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_ilRJYPaiEeGpCd694FcdqQ" name="CommonProductVocab">
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_XViOYKRMEeGZ6ueex_Me0w" name="NDC-FDA Drug Registration and Listing System"/>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_XmKrYKRMEeGZ6ueex_Me0w" name="NDF-RT (Drug Classification)"/>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_W5OF0KRMEeGZ6ueex_Me0w" name="Unique Ingredient Identifier (UNII)"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_W5OF0KRMEeGZ6ueex_Me0w" name="Unique Ingredient Identifier"/>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_Xf-j0KRMEeGZ6ueex_Me0w" name="RxNorm"/>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_W3b9IKRMEeGZ6ueex_Me0w" name="Drug Active Ingredients"/>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_W5SXQKRMEeGZ6ueex_Me0w" name="Drug Product (NDC)"/>
@@ -1534,11 +1538,7 @@ These are documented in CDC local codes table, CDCPHINVS (Value set OID 2.16.840
         <ownedLiteral xmi:id="_XnJi0aRMEeGZ6ueex_Me0w" name="412308004"/>
         <ownedLiteral xmi:id="_XnKJ4KRMEeGZ6ueex_Me0w" name="7608003"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_WwluQKRMEeGZ6ueex_Me0w" name="SNOMED-CT"/>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Wwx7gKRMEeGZ6ueex_Me0w" name="Body Site Value Set"/>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_XmjF4KRMEeGZ6ueex_Me0w" name="NCI Thesaurus"/>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_X8KJgKRMEeGZ6ueex_Me0w" name="Units of Measure"/>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_X8UhkKRMEeGZ6ueex_Me0w" name="UCUM - Unified Code for Units of Measure"/>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_X2ipsKRMEeGZ6ueex_Me0w" name="Semantic Clinical Drug (Ingredient plus strength and dose form)"/>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_X6FF4KRMEeGZ6ueex_Me0w" name="Semantic Clinical Drug Form (Ingredient plus dose form)"/>
     </packagedElement>
@@ -3335,11 +3335,7 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_V5mBxhJeEeKEjrc2hUE4_Q" conceptName="Very susceptible" usageNote="Abnormal flags (HL7)" base_EnumerationLiteral="_V5mBxRJeEeKEjrc2hUE4_Q"/>
   <term:ValueSetCode xmi:id="_V5mByBJeEeKEjrc2hUE4_Q" conceptName="Worse" usageNote="Abnormal flags (HL7)" base_EnumerationLiteral="_V5mBxxJeEeKEjrc2hUE4_Q"/>
   <term:CodeSystemVersion xmi:id="_V5jlgRJeEeKEjrc2hUE4_Q" identifier="2.16.840.1.113883.12.78" version="HL7 v2.5" source="HL70078" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=FCD24BBC-617F-DD11-B38D-00188B398520" base_Enumeration="_V5jlgBJeEeKEjrc2hUE4_Q"/>
-  <term:CodeSystemVersion xmi:id="_WwluQaRMEeGZ6ueex_Me0w" identifier="2.16.840.1.113883.6.96" version="20100731" source="SCT" base_Enumeration="_WwluQKRMEeGZ6ueex_Me0w"/>
-  <term:ValueSetVersion xmi:id="_Wwx7gaRMEeGZ6ueex_Me0w" identifier="2.16.840.1.113883.3.88.12.3221.8.9" version="3" fullName="Body Site Value Set" definition="Body site value set is based upon the concepts descending from the SNOMED CT Anatomical Structure (91723000) hierarchy." revisionDate="07/07/2009" codeSystem="_WwluQaRMEeGZ6ueex_Me0w" base_Enumeration="_Wwx7gKRMEeGZ6ueex_Me0w"/>
   <term:CodeSystemVersion xmi:id="_XmjF4aRMEeGZ6ueex_Me0w" identifier="2.16.840.1.113883.3.26.1.1" version="20090526" source="NCIT" base_Enumeration="_XmjF4KRMEeGZ6ueex_Me0w"/>
-  <term:ValueSetVersion xmi:id="_X8KJgaRMEeGZ6ueex_Me0w" identifier="2.16.840.1.114222.4.11.838" version="1" fullName="Units of Measure" definition="Units of Measure based on UCUM std which also includes dimension" revisionDate="10/22/2008" codeSystem="_X8VIoKRMEeGZ6ueex_Me0w" base_Enumeration="_X8KJgKRMEeGZ6ueex_Me0w"/>
-  <term:CodeSystemVersion xmi:id="_X8VIoKRMEeGZ6ueex_Me0w" identifier="2.16.840.1.113883.6.8" version="1.7" source="UCUM" base_Enumeration="_X8UhkKRMEeGZ6ueex_Me0w"/>
   <term:ValueSetVersion xmi:id="_XmRZEKRMEeGZ6ueex_Me0w" identifier="2.16.840.1.113883.3.88.12.80.64" version="1" fullName="Medication Fill Status Value Set" definition="The HL7 ActStatus has been limited by HITSP. This identifies whether the medication has been fulfilled, such as completed and aborted" revisionDate="07/23/2009" codeSystem="_XmWRkKRMEeGZ6ueex_Me0w" base_Enumeration="_XmQyAKRMEeGZ6ueex_Me0w"/>
   <term:ValueSetCode xmi:id="_XmWRkqRMEeGZ6ueex_Me0w" conceptName="Aborted" usageNote="ActStatus" base_EnumerationLiteral="_XmWRkaRMEeGZ6ueex_Me0w"/>
   <term:ValueSetCode xmi:id="_XmW4oaRMEeGZ6ueex_Me0w" conceptName="Completed" usageNote="ActStatus" base_EnumerationLiteral="_XmW4oKRMEeGZ6ueex_Me0w"/>
@@ -5595,4 +5591,8 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_h2jfgfApEeS1qetF27ECmQ" conceptName="Anonymous" base_EnumerationLiteral="_h2jfgPApEeS1qetF27ECmQ"/>
   <term:ValueSetCode xmi:id="_i8J1ofApEeS1qetF27ECmQ" conceptName="Old" base_EnumerationLiteral="_i8J1oPApEeS1qetF27ECmQ"/>
   <term:ValueSetCode xmi:id="_ki1fkfApEeS1qetF27ECmQ" conceptName="Maiden" base_EnumerationLiteral="_ki1fkPApEeS1qetF27ECmQ"/>
+  <term:ValueSetVersion xmi:id="_Wwx7gaRMEeGZ6ueex_Me0w" identifier="2.16.840.1.113883.3.88.12.3221.8.9" version="3" fullName="Body Site Value Set" definition="Body site value set is based upon the concepts descending from the SNOMED CT Anatomical Structure (91723000) hierarchy." revisionDate="07/07/2009" codeSystem="_WwluQaRMEeGZ6ueex_Me0w" base_Enumeration="_Wwx7gKRMEeGZ6ueex_Me0w"/>
+  <term:CodeSystemVersion xmi:id="_WwluQaRMEeGZ6ueex_Me0w" identifier="2.16.840.1.113883.6.96" version="20100731" source="SCT" base_Enumeration="_WwluQKRMEeGZ6ueex_Me0w"/>
+  <term:ValueSetVersion xmi:id="_X8KJgaRMEeGZ6ueex_Me0w" identifier="2.16.840.1.114222.4.11.838" version="1" fullName="Units of Measure" definition="Units of Measure based on UCUM std which also includes dimension" revisionDate="10/22/2008" codeSystem="_X8VIoKRMEeGZ6ueex_Me0w" base_Enumeration="_X8KJgKRMEeGZ6ueex_Me0w"/>
+  <term:CodeSystemVersion xmi:id="_X8VIoKRMEeGZ6ueex_Me0w" identifier="2.16.840.1.113883.6.8" version="1.7" source="UCUM" base_Enumeration="_X8UhkKRMEeGZ6ueex_Me0w"/>
 </xmi:XMI>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect 9.1.2-->
+<!--Rational Software Architect Designer 9.5-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
@@ -1747,12 +1747,6 @@ Note that the classes in this package are not full-fledged FHIM classes, and do 
       <ownedComment xmi:id="_oQlmkPwIEd-3ndaGus2qMA" annotatedElement="_dtt5gEncEdyXcM5TklTDNg">
         <body>Represents the HL7 V2 Coded Element (CE) datatype.  The CE datatype is made up of 6 pieces: Identifier, Text, Name of Coding System, Alternate Identifier, Alternate Text, and Alternate Name of Coding System.</body>
       </ownedComment>
-      <generalization xmi:id="_Rdo9MOZTEeGuIoEQ4Mvu0w">
-        <eAnnotations xmi:id="_aMdugOZTEeGuIoEQ4Mvu0w" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <details xmi:id="_aMdugeZTEeGuIoEQ4Mvu0w" key="ReplacedBy"/>
-        </eAnnotations>
-        <general xmi:type="uml:Class" href="Datatypes.efx#_mARwQOZSEeGuIoEQ4Mvu0w?FHIM/Datatypes/NullableCode?"/>
-      </generalization>
       <ownedAttribute xmi:id="_DkMWcEndEdyXcM5TklTDNg" name="identifier" visibility="public">
         <ownedComment xmi:id="_8EmEkO0KEd-KQpEfY1umCw" annotatedElement="_DkMWcEndEdyXcM5TklTDNg">
           <body>&quot;Sequence of characters (the code) that uniquely identifies the item being referenced. Different coding schemes will have  different elements here.&quot; - HL7 V2</body>
@@ -2127,12 +2121,6 @@ Note that the classes in this package are not full-fledged FHIM classes, and do 
       <ownedComment xmi:id="_WMfOwJCDEeCMBO4kb261_A" annotatedElement="_JGDkAJCDEeCMBO4kb261_A">
         <body>&quot;Coded data in its simplest form, where only the code is not predetermined. The code system and code system version are fixed by the context in which CS value occurs. CS is used for coded attributes that have a single HL7-defined value set.&quot; - HL7 V3</body>
       </ownedComment>
-      <generalization xmi:id="_QzhpMOZTEeGuIoEQ4Mvu0w">
-        <eAnnotations xmi:id="_aMb5UOZTEeGuIoEQ4Mvu0w" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <details xmi:id="_aMb5UeZTEeGuIoEQ4Mvu0w" key="ReplacedBy"/>
-        </eAnnotations>
-        <general xmi:type="uml:Class" href="Datatypes.efx#_mARwQOZSEeGuIoEQ4Mvu0w?FHIM/Datatypes/NullableCode?"/>
-      </generalization>
       <ownedAttribute xmi:id="_JGDkA5CDEeCMBO4kb261_A" name="code" visibility="public">
         <ownedComment xmi:id="_JGDkBJCDEeCMBO4kb261_A" annotatedElement="_JGDkA5CDEeCMBO4kb261_A">
           <body>&quot;The plain code symbol defined by the code system, or an expression in a syntax defined by the code system which describes the concept.&quot; - HL7 V3</body>
@@ -2173,12 +2161,6 @@ Note that the classes in this package are not full-fledged FHIM classes, and do 
       <ownedComment xmi:id="_JBQ4sJCFEeCMBO4kb261_A" annotatedElement="_aRSsUJBUEeCMBO4kb261_A">
         <body>&quot;A reference to a concept defined in a code system&quot; - HL7 V3</body>
       </ownedComment>
-      <generalization xmi:id="_SXU-QOZTEeGuIoEQ4Mvu0w">
-        <eAnnotations xmi:id="_aMarMOZTEeGuIoEQ4Mvu0w" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <details xmi:id="_aMarMeZTEeGuIoEQ4Mvu0w" key="ReplacedBy"/>
-        </eAnnotations>
-        <general xmi:type="uml:Class" href="Datatypes.efx#_mARwQOZSEeGuIoEQ4Mvu0w?FHIM/Datatypes/NullableCode?"/>
-      </generalization>
       <ownedAttribute xmi:id="_bXNykJBUEeCMBO4kb261_A" name="code" visibility="public">
         <ownedComment xmi:id="_bXNykZBUEeCMBO4kb261_A" annotatedElement="_bXNykJBUEeCMBO4kb261_A">
           <body>&quot;The plain code symbol defined by the code system, or an expression in a syntax defined by the code system which describes the concept.&quot; - HL7 V3</body>
@@ -2317,12 +2299,6 @@ Note that the classes in this package are not full-fledged FHIM classes, and do 
       <ownedComment xmi:id="_1y5bYPwQEd-3ndaGus2qMA" annotatedElement="_OwVa0D-BEdy0ooNeIA2VyA">
         <body>This class represents a codified concept as used within the VA Enterprise Terminology Systems (VETS).  This class is anticipated to only be used by VA clients.  It contains VA Unique concept Identifiers (VUIDs) for the concept, the surface form (or designation), and the Value Set of which the concept is a proper member.  It also contains a display text, which is the surface form of the Desination VUID, which while technically not necessary, is useful to store in the class in order to avoid a call to a terminology service.  In addition, this class contains four properties to contain alternate code information, primarily for use when an application requires a code from a particular coding system (e.g., a billing system needs a CPT code).  Finally, this class contains an alternate Reason property to indicate why the alternate fields are populated (e.g., perhaps because of a mediation failure).</body>
       </ownedComment>
-      <generalization xmi:id="_S4l4QOZTEeGuIoEQ4Mvu0w">
-        <eAnnotations xmi:id="_aMYO8OZTEeGuIoEQ4Mvu0w" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <details xmi:id="_aMY2AOZTEeGuIoEQ4Mvu0w" key="ReplacedBy"/>
-        </eAnnotations>
-        <general xmi:type="uml:Class" href="Datatypes.efx#_mARwQOZSEeGuIoEQ4Mvu0w?FHIM/Datatypes/NullableCode?"/>
-      </generalization>
       <ownedAttribute xmi:id="_Rhzc7D-BEdy0ooNeIA2VyA" name="conceptVuid">
         <ownedComment xmi:id="_I8K-MO5vEd-crcWiXVDZrQ" annotatedElement="_Rhzc7D-BEdy0ooNeIA2VyA">
           <body>Identifies the concept being conveyed in this class, regardless of the surface form or designation used to describe the  concept.</body>

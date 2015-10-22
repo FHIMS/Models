@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect 9.1.2-->
+<!--Rational Software Architect Designer 9.5-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
@@ -1322,15 +1322,15 @@
           <body>&quot;History of falling: This is scored as 25 if the patient has fallen during the present hospital admission or if there was an immediate history of physiological falls, such as from seizures or an impaired gait prior to admission. If the patient has not fallen, this is scored 0. Note: If a patient falls for the first time, then his or her score immediately increases by 25.&quot; - LOINC</body>
         </ownedComment>
         <ownedAttribute xmi:id="_uZ4MQHB6EeKknILXOCcS7w" name="No" visibility="public">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_ah9UsHB8EeKknILXOCcS7w" value="seq=1; code=LA32-8; value=0">
-            <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_kvADkHaBEeWta9wYoikasQ" value="seq=1; code=LA32-8; value=0">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           </defaultValue>
         </ownedAttribute>
         <ownedAttribute xmi:id="_z6Sg0HB6EeKknILXOCcS7w" name="Yes" visibility="public">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_YONJYHB8EeKknILXOCcS7w" value="seq=2; code=LA33-6; value=25">
-            <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_mu9JIHaBEeWta9wYoikasQ" value="seq=2; code=LA33-6; value=25">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           </defaultValue>
         </ownedAttribute>
       </packagedElement>
@@ -1343,15 +1343,15 @@
           <body>&quot;Secondary diagnosis: This is scored as 15 if more than one medical diagnosis is listed on the patient’s chart; if not, score 0.&quot; - LOINC</body>
         </ownedComment>
         <ownedAttribute xmi:id="_Lq2hFHB9EeKknILXOCcS7w" name="No" visibility="public">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Lq2hFXB9EeKknILXOCcS7w" value="seq=1; code=LA32-8; value=0">
-            <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_0RLYAHaBEeWta9wYoikasQ" value="seq=1; code=LA32-8; value=0">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           </defaultValue>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Lq2hFnB9EeKknILXOCcS7w" name="Yes" visibility="public">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Lq2hF3B9EeKknILXOCcS7w" value="seq=2; code=LA33-6; value=15">
-            <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_2c0JIHaBEeWta9wYoikasQ" value="seq=2; code=LA33-6; value=15">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           </defaultValue>
         </ownedAttribute>
       </packagedElement>
@@ -1364,15 +1364,15 @@
           <body>&quot;Intravenous therapy: This is scored as 20 if the patient has an intravenous apparatus or a heparin lock inserted; if not, score 0.&quot; - LOINC</body>
         </ownedComment>
         <ownedAttribute xmi:id="_QD2WFXCHEeKknILXOCcS7w" name="No" visibility="public">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_QD2WFnCHEeKknILXOCcS7w" value="seq=1; code=LA32-8; value=0">
-            <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_p0BcoHaBEeWta9wYoikasQ" value="seq=1; code=LA32-8; value=0">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           </defaultValue>
         </ownedAttribute>
         <ownedAttribute xmi:id="_QD2WF3CHEeKknILXOCcS7w" name="Yes" visibility="public">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_QD2WGHCHEeKknILXOCcS7w" value="seq=2; code=LA33-6; value=20">
-            <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_rw_foHaBEeWta9wYoikasQ" value="seq=2; code=LA33-6; value=20">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           </defaultValue>
         </ownedAttribute>
       </packagedElement>
@@ -1385,21 +1385,21 @@
           <body>&quot;Ambulatory aids: This is scored as 0 if the patient walks without a walking aid (even if assisted by a nurse), uses a wheelchair, or is on a bed rest and does not get out of bed at all. If the patient uses crutches, a cane, or a walker, this item scores 15; if the patient ambulates clutching onto the furniture for support, score this item 30.&quot; - LOINC</body>
         </ownedComment>
         <ownedAttribute xmi:id="_-m9zBXCHEeKknILXOCcS7w" name="Bed rest/nurse assist" visibility="public">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_-m9zBnCHEeKknILXOCcS7w" value="seq=1; code=LA13030-4; value=0">
-            <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Tva9AHaBEeWta9wYoikasQ" value="seq=1; code=LA13030-4; value=0">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           </defaultValue>
         </ownedAttribute>
         <ownedAttribute xmi:id="_-m9zB3CHEeKknILXOCcS7w" name="Crutches/cane/walker" visibility="public">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_-m9zCHCHEeKknILXOCcS7w" value="seq=2; code=LA13031-2; value=15">
-            <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_WLjoQHaBEeWta9wYoikasQ" value="seq=2; code=LA13031-2; value=15">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           </defaultValue>
         </ownedAttribute>
         <ownedAttribute xmi:id="_UbczAHCIEeKknILXOCcS7w" name="Furniture" visibility="public">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_UbczAXCIEeKknILXOCcS7w" value="seq=3; code=LA13032-0; value=30">
-            <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Y0YEoHaBEeWta9wYoikasQ" value="seq=3; code=LA13032-0; value=30">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           </defaultValue>
         </ownedAttribute>
       </packagedElement>
@@ -1412,21 +1412,21 @@
           <body>&quot;Gait: A normal gait is characterized by the patient walking with head erect, arms swinging freely at the side, and striding without hesitant. This gait scores 0. With a weak gait (score as 10), the patient is stooped but is able to lift the head while walking without losing balance. Steps are short and the patient may shuffle. With an impaired gait (score 20), the patient may have difficulty rising from the chair, attempting to get up by pushing on the arms of the chair/or by bouncing (i.e., by using several attempts to rise). The patient’s head is down, and he or she watches the ground when walking. Because the patient’s balance is poor, the patient grasps onto the furniture, a support person, or a walking aid for support and cannot walk without this assistance.&quot; - LOINC</body>
         </ownedComment>
         <ownedAttribute xmi:id="_3rTzBXCIEeKknILXOCcS7w" name="Normal/bedrest/immobile" visibility="public">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_3rTzBnCIEeKknILXOCcS7w" value="seq=1; code=LA13033-8; value=0">
-            <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_evQHoHaBEeWta9wYoikasQ" value="seq=1; code=LA13033-8; value=0">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           </defaultValue>
         </ownedAttribute>
         <ownedAttribute xmi:id="_3rTzB3CIEeKknILXOCcS7w" name="Weak" visibility="public">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_3rTzCHCIEeKknILXOCcS7w" value="seq=2; code=LA13034-6; value=10">
-            <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_g-ipsHaBEeWta9wYoikasQ" value="seq=2; code=LA13034-6; value=10">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           </defaultValue>
         </ownedAttribute>
         <ownedAttribute xmi:id="_3rTzCXCIEeKknILXOCcS7w" name="Impaired" visibility="public">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_3rTzCnCIEeKknILXOCcS7w" value="seq=3; code=LA13035-3; value=20">
-            <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_cpQrgHaBEeWta9wYoikasQ" value="seq=3; code=LA13035-3; value=20">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           </defaultValue>
         </ownedAttribute>
       </packagedElement>
@@ -1439,15 +1439,15 @@
           <body>&quot;Mental status: When using this Scale, mental status is measured by checking the patient’s own self-assessment of his or her own abilities. Ask the patient, “Are you able to go the bathroom alone or do you need assistance?” If the patient’s reply judging his or her own ability is consistent with the ambulatory nursing order, the patient is rated as “normal” and scored 0. If the patient’s response is not consistent with the nursing orders or if the patient’s response is unrealistic, then the patient is considered to overestimate his or her own abilities and to be forgetful of limitations and scored as 15.&quot; - LOINC</body>
         </ownedComment>
         <ownedAttribute xmi:id="_fWGGMnCJEeKknILXOCcS7w" name="Oriented to own ability" visibility="public">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_fWGGM3CJEeKknILXOCcS7w" value="seq=1; code=LA13036-1; value=0">
-            <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_x2s5oHaBEeWta9wYoikasQ" value="seq=1; code=LA13036-1; value=0">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           </defaultValue>
         </ownedAttribute>
         <ownedAttribute xmi:id="_fWGGNHCJEeKknILXOCcS7w" name="Forgets limitations" visibility="public">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_fWGGNXCJEeKknILXOCcS7w" value="seq=2; code=LA13037-9; value=15">
-            <type xmi:type="uml:Class" href="Datatypes.efx#_Bjnn0HB8EeKknILXOCcS7w?FHIM/Datatypes/LoincAnswerCode?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_vnpoIHaBEeWta9wYoikasQ" value="seq=2; code=LA13037-9; value=15">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           </defaultValue>
         </ownedAttribute>
       </packagedElement>
