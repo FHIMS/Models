@@ -114,7 +114,7 @@
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_bLYKdAoXEeC_TY76TuIe4Q" visible="false" type="StructureCompartment"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bLW8VAoXEeC_TY76TuIe4Q" x="-2853" y="6974"/>
         </children>
-        <children xmi:type="umlnotation:UMLShape" xmi:id="_bLcb4AoXEeC_TY76TuIe4Q" element="_420A62FD03B64586C73900D7" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519553" lineColor="3342489" showStereotype="Text">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_bLcb4AoXEeC_TY76TuIe4Q" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519553" lineColor="3342489" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_bLcb4woXEeC_TY76TuIe4Q" type="ImageCompartment">
             <layoutConstraint xmi:type="notation:Size" xmi:id="_bLcb5AoXEeC_TY76TuIe4Q" width="1320" height="1320"/>
           </children>
@@ -125,6 +125,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_bLdC8goXEeC_TY76TuIe4Q" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_bLdC9AoXEeC_TY76TuIe4Q" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_bLdC9goXEeC_TY76TuIe4Q" visible="false" type="StructureCompartment"/>
+          <element xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64586C73900D7?FHIM/Datatypes/Image?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bLcb4goXEeC_TY76TuIe4Q" x="-12046" y="5072"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_bLe4IAoXEeC_TY76TuIe4Q" element="_H3VW8Aq7Ed-426xscrxYmQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="16777088" lineColor="3342489" showStereotype="Text">
@@ -2185,80 +2186,6 @@ Verifying Calibrator, used for periodic calibration checks.</body>
           <body>The name of the manufactured material.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B64586C73900D7" name="Image">
-      <eAnnotations xmi:id="_MB3Xu-LiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
-      <ownedComment xmi:id="_avU4QBHFEeCBuOUrBnIXmQ" annotatedElement="_420A62FD03B64586C73900D7">
-        <body>This class represents an Image, particularly but not limited to, diagnostic images. The class may also be used for scanned documents and incoming facsimiles.&#xD;
-Note that this class is equivalent to a the FHIR Attachment data type.</body>
-      </ownedComment>
-      <ownedAttribute xmi:id="_TnwcgAY4EeWwo6SB9Lnb3w" name="contentType" visibility="public">
-        <ownedComment xmi:id="_a1kcIAY6EeWwo6SB9Lnb3w" annotatedElement="_TnwcgAY4EeWwo6SB9Lnb3w">
-          <body>&quot;Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.&quot; - HL7 FHIR, Attachment.contentType.&#xD;
-The FHIM will likely use the system at OID: 2.16.840.1.113883.5.79.  See the IANA site at: http://www.iana.org/assignments/media-types/media-types.xhtml</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nHCfsAY4EeWwo6SB9Lnb3w" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nHB4oAY4EeWwo6SB9Lnb3w"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_O6GLAL7vEeKtWYfISwMY5w" name="data" visibility="public">
-        <ownedComment xmi:id="_h_6lUL7vEeKtWYfISwMY5w" annotatedElement="_O6GLAL7vEeKtWYfISwMY5w">
-          <body>Contains the image itself.  Note that while this property is modeled as a string, this will usually be implemented using a binary representation such as base64.&#xD;
-&quot;The actual data of the attachment - a sequence of bytes. In XML, represented using base64.&quot; - HL7 FHIR, Attachment.data.</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__No8gPslEeSc9M34gwVpgg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__NoVcPslEeSc9M34gwVpgg"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_8eAAwAY5EeWwo6SB9Lnb3w" name="dateCreated" visibility="public">
-        <ownedComment xmi:id="_NJTLIB59EeWS1-JMuZSk0g" annotatedElement="_8eAAwAY5EeWwo6SB9Lnb3w">
-          <body>&quot;The date that the attachment was first created.&quot; - HL7 FHIR, Attachment.creation.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8eAAwQY5EeWwo6SB9Lnb3w" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8eAAwgY5EeWwo6SB9Lnb3w"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_ouRjQAY4EeWwo6SB9Lnb3w" name="hash" visibility="public">
-        <ownedComment xmi:id="_ouRjQQY4EeWwo6SB9Lnb3w" annotatedElement="_ouRjQAY4EeWwo6SB9Lnb3w">
-          <body>A hash function is any function that can be used to map data of arbitrary size to data of fixed size.  Note that while this property is modeled as a string, this will usually be implemented using a binary representation such as base64.&#xD;
-&quot;The calculated hash of the data using SHA-1. Represented using base64.&quot; - HL7 FHIR, Attachment.hash.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_3rC6AAY3EeWwo6SB9Lnb3w?FHIM/Datatypes/BinaryImage?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ouRjQgY4EeWwo6SB9Lnb3w" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ouRjQwY4EeWwo6SB9Lnb3w"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_kI2QQAY4EeWwo6SB9Lnb3w" name="language" visibility="public">
-        <ownedComment xmi:id="_rTkm0B58EeWS1-JMuZSk0g" annotatedElement="_kI2QQAY4EeWwo6SB9Lnb3w">
-          <body>&quot;The human language of the content. The value can be any valid value according to BCP 47.&quot; - HL7 FHIR, Attachment.language.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mNKRYAY4EeWwo6SB9Lnb3w" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mNJqUAY4EeWwo6SB9Lnb3w"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_xsuPgAY5EeWwo6SB9Lnb3w" name="size" visibility="public">
-        <ownedComment xmi:id="_-Js_UB58EeWS1-JMuZSk0g" annotatedElement="_xsuPgAY5EeWwo6SB9Lnb3w">
-          <body>&quot;The number of bytes of data that make up this attachment.&quot; - HL7 FHIR, Attachment.size.</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xsuPgQY5EeWwo6SB9Lnb3w" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xsuPggY5EeWwo6SB9Lnb3w"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_3vN9cAY5EeWwo6SB9Lnb3w" name="title" visibility="public">
-        <ownedComment xmi:id="_HupgUB59EeWS1-JMuZSk0g" annotatedElement="_3vN9cAY5EeWwo6SB9Lnb3w">
-          <body>&quot;A label or set of text to display in place of the data.&quot; - HL7 FHIR, Attachment.title.</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3vN9cQY5EeWwo6SB9Lnb3w" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3vN9cgY5EeWwo6SB9Lnb3w"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_6pzk8PslEeSc9M34gwVpgg" name="url" visibility="public">
-        <ownedComment xmi:id="_57M-kB58EeWS1-JMuZSk0g" annotatedElement="_6pzk8PslEeSc9M34gwVpgg">
-          <body>&quot;An alternative location where the data can be accessed.&quot; - HL7 FHIR, Attachment.url.</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__yWzIPslEeSc9M34gwVpgg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__yWMEPslEeSc9M34gwVpgg"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6424070DB0209" name="Diagnosis">
@@ -5914,7 +5841,6 @@ For Observations, this is a pointer to any device(s) that generated the Clinical
   <Default:Documentation xmi:id="_aDMjhFZMEeCNYNwvTI8hbQ" base_Comment="_ZlCn5VZMEeCNYNwvTI8hbQ"/>
   <Default:Documentation xmi:id="_aDMjhlZMEeCNYNwvTI8hbQ" base_Comment="_ZlCn7lZMEeCNYNwvTI8hbQ"/>
   <Default:Documentation xmi:id="_aDMjhVZMEeCNYNwvTI8hbQ" base_Comment="_ZlCn6lZMEeCNYNwvTI8hbQ"/>
-  <Default:Documentation xmi:id="_avepQBHFEeCBuOUrBnIXmQ" base_Comment="_avU4QBHFEeCBuOUrBnIXmQ"/>
   <Default:Documentation xmi:id="_AvN4cBHdEeCBuOUrBnIXmQ" base_Comment="_AvDgYBHdEeCBuOUrBnIXmQ"/>
   <Default:Documentation xmi:id="_AwrwsBHgEeCBuOUrBnIXmQ" base_Comment="_Awh_sBHgEeCBuOUrBnIXmQ"/>
   <Default:Documentation xmi:id="_bWM38FZWEeCNYNwvTI8hbQ" base_Comment="_bWDG8FZWEeCNYNwvTI8hbQ"/>
@@ -5936,7 +5862,6 @@ For Observations, this is a pointer to any device(s) that generated the Clinical
   <Default:Documentation xmi:id="_hwAgoPGjEd-ZlYn0p4HjQw" base_Comment="_hv2IkPGjEd-ZlYn0p4HjQw"/>
   <Default:Documentation xmi:id="_HYdmsBHEEeCBuOUrBnIXmQ" base_Comment="_HYT1sBHEEeCBuOUrBnIXmQ"/>
   <Default:Documentation xmi:id="_ICkz0DNpEeKkw_YjK6aRcw" base_Comment="_ICc4ADNpEeKkw_YjK6aRcw"/>
-  <Default:Documentation xmi:id="_iEEFgL7vEeKtWYfISwMY5w" base_Comment="_h_6lUL7vEeKtWYfISwMY5w"/>
   <Default:Documentation xmi:id="_IFVpUPGPEd-ZlYn0p4HjQw" base_Comment="_IFLRQPGPEd-ZlYn0p4HjQw"/>
   <Default:Documentation xmi:id="_iJoscIyBEeCBU92aoqPk5w" base_Comment="_iJaC8IyBEeCBU92aoqPk5w"/>
   <Default:Documentation xmi:id="_IVY9Ie6SEd-crcWiXVDZrQ" base_Comment="_IVY9IO6SEd-crcWiXVDZrQ"/>
@@ -6055,7 +5980,6 @@ For Observations, this is a pointer to any device(s) that generated the Clinical
   <RIM:ControlAct xmi:id="_XrSp0FYPEd6WMdl70LfmUg" base_Class="_420A62FD03B643BD69A10200"/>
   <RIM:Device xmi:id="_a2_JwFYPEd6WMdl70LfmUg" base_Class="_420A62FD03B6425C004E004C"/>
   <RIM:Device xmi:id="_sf5K4Kc2EeCkJ6Eur_P0ag" base_Class="_MsausFCxEeCsN-3dTKIrUA"/>
-  <RIM:Entity xmi:id="_geHKUFYPEd6WMdl70LfmUg" base_Class="_420A62FD03B64586C73900D7"/>
   <RIM:ManagedParticipation xmi:id="_vR5m0FZVEeCNYNwvTI8hbQ" base_Class="_oZ07wFZVEeCNYNwvTI8hbQ"/>
   <RIM:ManufacturedMaterial xmi:id="_c05GsFz7Ed6WkeJA5pW9UA" base_Class="_420A62FD03B645919EF10138"/>
   <RIM:ManufacturedMaterial xmi:id="_fiEtAAMIEeC6TLUcQZx_GQ" base_Class="_oDnb8AF2EeC0SO5AWIN0Qg"/>
@@ -6174,11 +6098,4 @@ For Observations, this is a pointer to any device(s) that generated the Clinical
   <term:ValueSetConstraint xmi:id="_Ir9pMOd_EeSlqtEJq7r6DQ" base_Property="_nbH1TVaeEd6rJ7jpZ7LBFg">
     <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_zpSIcGQyEeODL8RnVGcWEw"/>
   </term:ValueSetConstraint>
-  <Default:Documentation xmi:id="_ouSxYAY4EeWwo6SB9Lnb3w" base_Comment="_ouRjQQY4EeWwo6SB9Lnb3w"/>
-  <Default:Documentation xmi:id="_a1tmEAY6EeWwo6SB9Lnb3w" base_Comment="_a1kcIAY6EeWwo6SB9Lnb3w"/>
-  <Default:Documentation xmi:id="_rTuX0B58EeWS1-JMuZSk0g" base_Comment="_rTkm0B58EeWS1-JMuZSk0g"/>
-  <Default:Documentation xmi:id="_57ggkB58EeWS1-JMuZSk0g" base_Comment="_57M-kB58EeWS1-JMuZSk0g"/>
-  <Default:Documentation xmi:id="_-J2JQB58EeWS1-JMuZSk0g" base_Comment="_-Js_UB58EeWS1-JMuZSk0g"/>
-  <Default:Documentation xmi:id="_Hu9CUB59EeWS1-JMuZSk0g" base_Comment="_HupgUB59EeWS1-JMuZSk0g"/>
-  <Default:Documentation xmi:id="_NJcVEB59EeWS1-JMuZSk0g" base_Comment="_NJTLIB59EeWS1-JMuZSk0g"/>
 </xmi:XMI>
