@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.5-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:FHIM="http://gov.us.fhim/profile/1" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
   <uml:Package xmi:id="_DVq1IAY0EeGz0dkadElrkQ" name="CarePlan">
     <eAnnotations xmi:id="_NhDbYEDLEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_Ng8GoEDLEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -2791,4 +2791,53 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
   <Default:Documentation xmi:id="_VCoEUN1BEeSZfdq7h5ueSA" base_Comment="_VCjL0N1BEeSZfdq7h5ueSA"/>
   <Default:Documentation xmi:id="_Ku94AHdkEeWxwI-cgx2UYQ" base_Comment="_Ku0uEHdkEeWxwI-cgx2UYQ"/>
   <Default:Documentation xmi:id="_VOZEQHdkEeWxwI-cgx2UYQ" base_Comment="_VOGJUHdkEeWxwI-cgx2UYQ"/>
+  <FHIM:Mapping xmi:id="_ZMMocLoREeWqFd182BzgAw" base_Property="_ZajFENpHEeSOxtrN8-7DcQ">
+    <index xmi:id="_ZMMocboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.activity.detail.code"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMOdoLoREeWqFd182BzgAw" base_Property="_ncg7ENozEeSOxtrN8-7DcQ">
+    <index xmi:id="_ZMOdoboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.activity.actionResulting"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMQS0LoREeWqFd182BzgAw" base_Property="_JchssNpIEeSOxtrN8-7DcQ">
+    <index xmi:id="_ZMQS0boREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.activity.detail.goal"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMRg8LoREeWqFd182BzgAw" base_Property="_TVheIXdkEeWxwI-cgx2UYQ">
+    <index xmi:id="_ZMRg8boREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.activity.detail.reason[x]"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMTWILoREeWqFd182BzgAw" base_Property="_DOFXENSuEeSyzs7OQneM_g">
+    <index xmi:id="_ZMTWIboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.activity.detail.product"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMVLULoREeWqFd182BzgAw" base_Property="_rHfC4NoxEeSOxtrN8-7DcQ">
+    <index xmi:id="_ZMVLUboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.activity"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMWZcLoREeWqFd182BzgAw" base_Property="_eDCaMAY1EeGz0dkadElrkQ">
+    <index xmi:id="_ZMWZcboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.participant"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMYOoLoREeWqFd182BzgAw" base_Property="_HODKAAY2EeGz0dkadElrkQ">
+    <index xmi:id="_ZMYOoboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.goal"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMaq4LoREeWqFd182BzgAw" base_Property="_Slt3wAY0EeGz0dkadElrkQ">
+    <index xmi:id="_ZMaq4boREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.patient"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMb5ALoREeWqFd182BzgAw" base_Property="_DSq54NpFEeSOxtrN8-7DcQ">
+    <index xmi:id="_ZMb5AboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.support"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ftIl4LoREeWqFd182BzgAw" base_Classifier="_rZMYcAY0EeGz0dkadElrkQ">
+    <index xmi:id="_ftIl4boREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.3"/>
+    <index xmi:id="_ftIl4roREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Plan of Care Activity Act"/>
+    <index xmi:id="_ftIl47oREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="None"/>
+    <index xmi:id="_ftJ0ALoREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.44"/>
+    <index xmi:id="_ftJ0AboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Plan of Care Activity Observation"/>
+    <index xmi:id="_ftJ0AroREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="None"/>
+    <index xmi:id="_ftLCILoREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.41"/>
+    <index xmi:id="_ftLCIboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Plan of Care Activity Procedure"/>
+    <index xmi:id="_ftLCIroREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="None"/>
+    <index xmi:id="_ftLpMLoREeWqFd182BzgAw" standardOrProject="MU2" value="Diagnostic Test(s) pending"/>
+    <index xmi:id="_ftLpMboREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.42"/>
+    <index xmi:id="_ftLpMroREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Plan of Care Activity Substance Administration"/>
+    <index xmi:id="_ftLpM7oREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="None"/>
+    <index xmi:id="_ftM3ULoREeWqFd182BzgAw" standardOrProject="MU2" value="Future appointments"/>
+    <index xmi:id="_ftM3UboREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.43"/>
+    <index xmi:id="_ftM3UroREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Plan of Care Activity Supply "/>
+    <index xmi:id="_ftM3U7oREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="None"/>
+  </FHIM:Mapping>
 </xmi:XMI>

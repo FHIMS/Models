@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.5-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:FHIM="http://gov.us.fhim/profile/1" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
   <uml:Package xmi:id="_nbBsIFaeEd6rJ7jpZ7LBFg" name="ClinicalObservation">
     <eAnnotations xmi:id="_laZ2IEDLEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_laU9oEDLEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -1302,4 +1302,68 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
   <term:ValueSetConstraint xmi:id="_s_epIOeAEeSlqtEJq7r6DQ" base_Property="_yzWXYBcBEeOL3Nw-k5HkNw">
     <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_3XEWQMQZEeSaFayJQBK5xQ"/>
   </term:ValueSetConstraint>
+  <FHIM:Mapping xmi:id="_ZMduMLoREeWqFd182BzgAw" base_Property="_r6RaUO3MEeCFZuasLkncZQ">
+    <index xmi:id="_ZMduMboREeWqFd182BzgAw" standardOrProject="HL7v2" value="OBR-33"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMfjYLoREeWqFd182BzgAw" base_Property="_420A62FD03B64263C9AE023E">
+    <index xmi:id="_ZMfjYboREeWqFd182BzgAw" standardOrProject="HL7v2" value="OBX-8"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMhYkLoREeWqFd182BzgAw" base_Property="_oiRjwO3MEeCFZuasLkncZQ">
+    <index xmi:id="_ZMhYkboREeWqFd182BzgAw" standardOrProject="HL7v2" value="OBR-32"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMjNwLoREeWqFd182BzgAw" base_Property="_nbH1L1aeEd6rJ7jpZ7LBFg">
+    <index xmi:id="_ZMjNwboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.bodySite"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMlC8LoREeWqFd182BzgAw" base_Property="_B66X0HyZEeOHq5zPTCjDoQ">
+    <index xmi:id="_ZMlC8boREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.comments"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMmRELoREeWqFd182BzgAw" base_Property="_EpMB8HywEeSWGIFkX6Zyfg">
+    <index xmi:id="_ZMmREboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.dataAbsentReason"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMoGQLoREeWqFd182BzgAw" base_Property="_nbH1NVaeEd6rJ7jpZ7LBFg">
+    <index xmi:id="_ZMoGQboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.applies"/>
+    <index xmi:id="_ZMpUYLoREeWqFd182BzgAw" standardOrProject="HL7v2" value="OBX-14"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMrJkLoREeWqFd182BzgAw" base_Property="_PKp3ABybEeOR-a0_xUg6BQ">
+    <index xmi:id="_ZMrJkboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.encounter"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMs-wLoREeWqFd182BzgAw" base_Property="_l45L8BcpEeOL3Nw-k5HkNw">
+    <index xmi:id="_ZMs-wboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.interpretation"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMuM4LoREeWqFd182BzgAw" base_Property="_nbH1QlaeEd6rJ7jpZ7LBFg">
+    <index xmi:id="_ZMuM4boREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.method"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMwCELoREeWqFd182BzgAw" base_Property="_qRz1UBcbEeOL3Nw-k5HkNw">
+    <index xmi:id="_ZMwCEboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.code"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZMyeULoREeWqFd182BzgAw" base_Property="_LYGwEPDOEeO_Te8vAbT_YQ">
+    <index xmi:id="_ZMyeUboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.referenceRange"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZM0TgLoREeWqFd182BzgAw" base_Property="_nbH1TFaeEd6rJ7jpZ7LBFg">
+    <index xmi:id="_ZM0TgboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.reliability"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZM2vwLoREeWqFd182BzgAw" base_Property="_VCEnMPOOEeGMQvy2b7FvNg">
+    <index xmi:id="_ZM2vwboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.value"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZM4k8LoREeWqFd182BzgAw" base_Property="_4ZqJEPDNEeO_Te8vAbT_YQ">
+    <index xmi:id="_ZM4k8boREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.referenceRange.high"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZM6aILoREeWqFd182BzgAw" base_Property="_zW9EMPDNEeO_Te8vAbT_YQ">
+    <index xmi:id="_ZM7BMLoREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.referenceRange.low"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZM82YLoREeWqFd182BzgAw" base_Property="__GqzoPDNEeO_Te8vAbT_YQ">
+    <index xmi:id="_ZM82YboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.referenceRange.meaning"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZM-rkLoREeWqFd182BzgAw" base_Property="_6IeGAN13EeSq65vB-N1vxw">
+    <index xmi:id="_ZM-rkboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.referenceRange.text"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ftz7ULoREeWqFd182BzgAw" base_Classifier="_nbH1BlaeEd6rJ7jpZ7LBFg">
+    <index xmi:id="_ftz7UboREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.1"/>
+    <index xmi:id="_ftz7UroREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Results Organizer (2.16.840.1.113883.10.20.22.4.1)"/>
+    <index xmi:id="_ftz7U7oREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/list-daf-dafresultlist"/>
+    <index xmi:id="_ft5a4LoREeWqFd182BzgAw" standardOrProject="MU2" value="Functional Status"/>
+    <index xmi:id="_ft5a4boREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Functional Status Result Organizer (2.16.840.1.113883.10.20.22.4.66)"/>
+    <index xmi:id="_ft6pALoREeWqFd182BzgAw" standardOrProject="MU2" value="Cognitive Status"/>
+    <index xmi:id="_ft6pAboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Cognitive Status Result Organizer (2.16.840.1.113883.10.20.22.4.75)"/>
+  </FHIM:Mapping>
 </xmi:XMI>

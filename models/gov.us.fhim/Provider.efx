@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.5-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:FHIM="http://gov.us.fhim/profile/1" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
   <uml:Package xmi:id="_WG-84JNmEeCyufOLCDZkFA" name="Provider">
     <eAnnotations xmi:id="_J7qFMEDPEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_Jild4EDPEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -3123,4 +3123,39 @@ Electronic Service Information = &quot;All information reasonably necessary to d
   <Default:Documentation xmi:id="_WAQU0PnKEeSJ3abZ9RQzyQ" base_Comment="_WAF8wPnKEeSJ3abZ9RQzyQ"/>
   <Default:Documentation xmi:id="_5-vz8JegEeWqb554qzI9zg" base_Comment="_5-t-wJegEeWqb554qzI9zg"/>
   <Default:Documentation xmi:id="_WTmewJejEeWqb554qzI9zg" base_Comment="_WTkCgJejEeWqb554qzI9zg"/>
+  <FHIM:Mapping xmi:id="_ZYR8oLoREeWqFd182BzgAw" base_Property="_420A62FD03B64563738E00AD">
+    <index xmi:id="_ZYR8oboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXO-14"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZYTKwLoREeWqFd182BzgAw" base_Property="_lZ8wQB2TEd-4VI-lpu-JjQ">
+    <index xmi:id="_ZYTKwboREeWqFd182BzgAw" standardOrProject="HL7v2" value="AFF-5"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZYTx0LoREeWqFd182BzgAw" base_Property="_oaLHYB2QEd-4VI-lpu-JjQ">
+    <index xmi:id="_ZYTx0boREeWqFd182BzgAw" standardOrProject="HL7v2" value="AFF-4"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZYU_8LoREeWqFd182BzgAw" base_Property="__zk2oO6dEd-crcWiXVDZrQ">
+    <index xmi:id="_ZYU_8boREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-28"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZYVnALoREeWqFd182BzgAw" base_Property="_AvIWQOcIEeGjtvsfy1ZDDQ">
+    <index xmi:id="_ZYVnAboREeWqFd182BzgAw" standardOrProject="NCPDPTelecom" value="307-C7"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_fs-04LoREeWqFd182BzgAw" base_Classifier="_aW26cBsbEd--ZY2-pbJ-Pw">
+    <index xmi:id="_fs-04boREeWqFd182BzgAw" standardOrProject="MU2" value="Provider name and contact information"/>
+    <index xmi:id="_fs-04roREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.1.1"/>
+    <index xmi:id="_fs-047oREeWqFd182BzgAw" standardOrProject="HL7CDA" value="/ClinicalDocument/documentationOf/serviceEvent/performer/assignedEntity/"/>
+    <index xmi:id="_fs-05LoREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/pract-daf-dafpract"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ftADALoREeWqFd182BzgAw" base_Property="_1kWlICrmEeOKCrmlnw-Z_w">
+    <index xmi:id="_ftADAboREeWqFd182BzgAw" standardOrProject="MU2" value="Provider name and contact information"/>
+    <index xmi:id="_ftADAroREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.1.1"/>
+    <index xmi:id="_ftADA7oREeWqFd182BzgAw" standardOrProject="HL7CDA" value="/ClinicalDocument/documentationOf/serviceEvent/performer/assignedEntity/id"/>
+    <index xmi:id="_ftADBLoREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/pract-daf-dafpract"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ftCfQLoREeWqFd182BzgAw" base_Classifier="_420A62FD03B6418A6B760063">
+    <index xmi:id="_ftCfQboREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/encounter-daf-dafencounter"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ftdWALoREeWqFd182BzgAw" base_Classifier="_420A62FD03B64242CAB30303">
+    <index xmi:id="_ftdWAboREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.32"/>
+    <index xmi:id="_ftdWAroREeWqFd182BzgAw" standardOrProject="HL7CDA" value=" Service Delivery Location (identifier: 2.16.840.1.113883.10.20.22.4.32)"/>
+    <index xmi:id="_ftdWA7oREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/location-daf-daflocation"/>
+  </FHIM:Mapping>
 </xmi:XMI>
