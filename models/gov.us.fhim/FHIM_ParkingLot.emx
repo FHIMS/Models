@@ -108,6 +108,52 @@
     <packageImport xmi:id="_ZLwkpZ1cEeKGRqm0H7Eu1A">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XThr4Je9EeWqb554qzI9zg" name="HealthcareService">
+      <ownedAttribute xmi:id="_gU8pEJe9EeWqb554qzI9zg" name="id" visibility="public">
+        <ownedComment xmi:id="_lEtj0Je9EeWqb554qzI9zg" annotatedElement="_gU8pEJe9EeWqb554qzI9zg">
+          <body>&quot;External identifiers for this item.&quot; - HL7 FHIR, HealthcareService.identifier.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j3imEJe9EeWqb554qzI9zg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j3h_AJe9EeWqb554qzI9zg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_sIXz0Je9EeWqb554qzI9zg" name="serviceCategory" visibility="public">
+        <ownedComment xmi:id="_xB5ukJe9EeWqb554qzI9zg" annotatedElement="_sIXz0Je9EeWqb554qzI9zg">
+          <body>&quot;Identifies the broad category of service being performed or delivered.&quot; - HL7 FHIR, HealthcareService.serviceCategory.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_5ytc4Je9EeWqb554qzI9zg" name="serviceType" visibility="public">
+        <ownedComment xmi:id="_5ytc4Ze9EeWqb554qzI9zg" annotatedElement="_5ytc4Je9EeWqb554qzI9zg">
+          <body>&quot;A specific type of service that may be delivered or performed.&quot; - HL7 FHIR, HealthcareService.serviceType.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_H9rt0Je-EeWqb554qzI9zg" name="serviceName" visibility="public">
+        <ownedComment xmi:id="_H9rt0Ze-EeWqb554qzI9zg" annotatedElement="_H9rt0Je-EeWqb554qzI9zg">
+          <body>&quot;Further description of the service as it would be presented to a consumer while searching.&quot; - HL7 FHIR, HealthcareService.name.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YiHwgZe-EeWqb554qzI9zg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YiHwgJe-EeWqb554qzI9zg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_S5G5kJe-EeWqb554qzI9zg" name="comment" visibility="public">
+        <ownedComment xmi:id="_S5G5kZe-EeWqb554qzI9zg" annotatedElement="_S5G5kJe-EeWqb554qzI9zg">
+          <body>&quot;Any additional description of the service and/or any specific issues not covered by the other attributes, which can be displayed as further detail under the serviceName.&quot; - HL7 FHIR, HealthcareService.comment.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zhb4cZe-EeWqb554qzI9zg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zhb4cJe-EeWqb554qzI9zg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_hTZY4Je-EeWqb554qzI9zg" name="extraDetails" visibility="public">
+        <ownedComment xmi:id="_hTZY4Ze-EeWqb554qzI9zg" annotatedElement="_hTZY4Je-EeWqb554qzI9zg">
+          <body>&quot;Extra details about the service that can't be placed in the other fields.&quot; - HL7 FHIR, HealthcareService.extraDetails.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hTZY4pe-EeWqb554qzI9zg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hTZY45e-EeWqb554qzI9zg"/>
+      </ownedAttribute>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" href="StructuredDataCapture.efx#_oollsL4vEeKOk7Rt2VRC6g?FHIM_ParkingLot/StructuredDataCapture?"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B642A5D0A00279" name="_deprecated_AdverseReactionReportingEvent">
       <eAnnotations xmi:id="_L2iRceLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -3129,4 +3175,10 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <Default:Documentation xmi:id="_L2FlgOLiEduGJrQyRGTO1A" base_Comment="_LtJr9eLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_L2iRcOLiEduGJrQyRGTO1A" base_Comment="_L2ZHg-LiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_L2ZHgeLiEduGJrQyRGTO1A" base_Comment="_L2ZHgOLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_lEwAEJe9EeWqb554qzI9zg" base_Comment="_lEtj0Je9EeWqb554qzI9zg"/>
+  <Default:Documentation xmi:id="_xB-AAJe9EeWqb554qzI9zg" base_Comment="_xB5ukJe9EeWqb554qzI9zg"/>
+  <Default:Documentation xmi:id="_5yvSEJe9EeWqb554qzI9zg" base_Comment="_5ytc4Ze9EeWqb554qzI9zg"/>
+  <Default:Documentation xmi:id="_H9sU4Je-EeWqb554qzI9zg" base_Comment="_H9rt0Ze-EeWqb554qzI9zg"/>
+  <Default:Documentation xmi:id="_S5HgoJe-EeWqb554qzI9zg" base_Comment="_S5G5kZe-EeWqb554qzI9zg"/>
+  <Default:Documentation xmi:id="_hTZ_8Je-EeWqb554qzI9zg" base_Comment="_hTZY4Ze-EeWqb554qzI9zg"/>
 </xmi:XMI>

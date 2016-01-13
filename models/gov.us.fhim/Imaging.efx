@@ -2425,13 +2425,6 @@ Another possible axis is to categorize the software system or package that gener
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M2w_cOLiEduGJrQyRGTO1A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M2w_b-LiEduGJrQyRGTO1A"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B6456DF50F002C" name="imageRouteEvent" visibility="public" type="_420A62FD03B6456DF4A901F2" isUnique="false" association="_420A62FD03B6456DF50D034A">
-        <ownedComment xmi:id="_M2ddcOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6456DF50F002C">
-          <body>Contains the data elements and associations related to an DICOM (Digital Imaging and Communications in Medicine)-compliant image copy event.  Maintains an audit trail of the copy.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M2nOYuLiEduGJrQyRGTO1A" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M2nOYeLiEduGJrQyRGTO1A"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B64550AAFD02FF" name="patient" visibility="public" isUnique="false" association="_420A62FD03B64550AAFD02FE">
         <ownedComment xmi:id="_M1RKneLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64550AAFD02FF">
           <body>The patient that the image or object belongs to.  Pinter to File #2.</body>
@@ -2478,56 +2471,11 @@ Another possible axis is to categorize the software system or package that gener
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M1RKmOLiEduGJrQyRGTO1A"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6456DF4A901F2" name="ImageRouteEvent">
-      <eAnnotations xmi:id="_M0hjseLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
-      <ownedComment xmi:id="_M0YZxOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6456DF4A901F2">
-        <body>This class contains the data elements and associations related to an DICOM (Digital Imaging and Communications in Medicine)-compliant image copy event.  Maintains an audit trail of the copy.</body>
-      </ownedComment>
-      <ownedAttribute xmi:id="_v0hssICDEd-cvdR-JEsOjQ" name="destinationId" visibility="public">
-        <ownedComment xmi:id="_v0hssYCDEd-cvdR-JEsOjQ" annotatedElement="_v0hssICDEd-cvdR-JEsOjQ">
-          <body>Identifies the destination organization of the transmission.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_KlRn0ICDEd-cvdR-JEsOjQ" name="destinationName" visibility="public">
-        <ownedComment xmi:id="_KlRn0YCDEd-cvdR-JEsOjQ" annotatedElement="_KlRn0ICDEd-cvdR-JEsOjQ">
-          <body>Identifies the destination organization of the transmission.</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B6456DF45803E0" name="logId" visibility="public">
-        <ownedComment xmi:id="_M0OoyOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6456DF45803E0">
-          <body>It is an integer number that indicates the entry in the &quot;permanent&quot; log of all routed copies of the current image (as required by HIPAA).  This value is used to record when images are purged from their routed destination.  </body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B6456DF53E0341" name="purgeTime" visibility="public">
-        <ownedComment xmi:id="_M0YZyuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6456DF53E0341">
-          <body>The date and time when the copy of the current image was purged from the location that is described in the current record.  </body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B6456DF4C901E4" name="transmitTime" visibility="public">
-        <ownedComment xmi:id="_M0YZx-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6456DF4C901E4">
-          <body>The date and time when the current image was transmitted to the location described in the current record.  </body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B6456DF23600F6" name="imageType" visibility="public">
-        <ownedComment xmi:id="_M0E3y-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6456DF23600F6">
-          <body>Indicates what type of image file was transmitted).  Possible values are NON-DICOM; IMAGE; CURVE; OVERLAY; LUT; PRES_STATE; AVEFORM; SR; etc.  [non-dicom images might need more classification]</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-      </ownedAttribute>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_420A62FD03B64550AAFD02EE" memberEnd="_420A62FD03B64550AAFD02EF _420A62FD03B64550AAFD02F0">
       <ownedEnd xmi:id="_420A62FD03B64550AAFD02F0" name="" visibility="public" type="_420A62FD03B6456AF07F0009" isUnique="false" association="_420A62FD03B64550AAFD02EE"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_420A62FD03B64550AAFD02FE" memberEnd="_420A62FD03B64550AAFD02FF _420A62FD03B64550AAFD0300">
       <ownedEnd xmi:id="_420A62FD03B64550AAFD0300" name="" visibility="public" type="_420A62FD03B64550AAFD02CE" isUnique="false" association="_420A62FD03B64550AAFD02FE"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_420A62FD03B6456DF50D034A" memberEnd="_420A62FD03B6456DF50F002C _420A62FD03B6456DF50F0036">
-      <ownedEnd xmi:id="_420A62FD03B6456DF50F0036" name="" visibility="public" type="_420A62FD03B64550AAFD02CE" isUnique="false" association="_420A62FD03B6456DF50D034A"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_420A62FD03B645910C2F0135" memberEnd="_420A62FD03B645910C300032 _420A62FD03B645910C3000FA">
       <ownedEnd xmi:id="_420A62FD03B645910C3000FA" name="" visibility="public" type="_420A62FD03B64550AAFD02CE" isUnique="false" association="_420A62FD03B645910C2F0135"/>
@@ -2941,15 +2889,9 @@ Note that in FHIR, the data type for this property is an oid. We may wish to mak
     </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_BUnP0H_2Ed-Ure_vzgD_TA" base_Comment="_BUUU4H_2Ed-Ure_vzgD_TA"/>
-  <Default:Documentation xmi:id="_crCd4oCEEd-cvdR-JEsOjQ" base_Comment="_M0OoyOLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_dIM30oCAEd-cvdR-JEsOjQ" base_Comment="_dIM30YCAEd-cvdR-JEsOjQ"/>
-  <Default:Documentation xmi:id="_KlRn0oCDEd-cvdR-JEsOjQ" base_Comment="_KlRn0YCDEd-cvdR-JEsOjQ"/>
-  <Default:Documentation xmi:id="_M0hjsOLiEduGJrQyRGTO1A" base_Comment="_M0YZyuLiEduGJrQyRGTO1A"/>
-  <Default:Documentation xmi:id="_M0YZxeLiEduGJrQyRGTO1A" base_Comment="_M0YZxOLiEduGJrQyRGTO1A"/>
-  <Default:Documentation xmi:id="_M0YZyOLiEduGJrQyRGTO1A" base_Comment="_M0YZx-LiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_M1RKl-LiEduGJrQyRGTO1A" base_Comment="_M1RKluLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_M1RKnuLiEduGJrQyRGTO1A" base_Comment="_M1RKneLiEduGJrQyRGTO1A"/>
-  <Default:Documentation xmi:id="_M2nOYOLiEduGJrQyRGTO1A" base_Comment="_M2ddcOLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_M2w_buLiEduGJrQyRGTO1A" base_Comment="_M2w_beLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MycgEeLiEduGJrQyRGTO1A" base_Comment="_MycgEOLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MycgFOLiEduGJrQyRGTO1A" base_Comment="_MycgE-LiEduGJrQyRGTO1A"/>
@@ -2960,11 +2902,8 @@ Note that in FHIR, the data type for this property is an oid. We may wish to mak
   <Default:Documentation xmi:id="_MzfB4OLiEduGJrQyRGTO1A" base_Comment="_MzVQ7OLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MzVQ5uLiEduGJrQyRGTO1A" base_Comment="_MzVQ5eLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MzVQ6uLiEduGJrQyRGTO1A" base_Comment="_MzVQ6eLiEduGJrQyRGTO1A"/>
-  <Default:Documentation xmi:id="_o57cooCEEd-cvdR-JEsOjQ" base_Comment="_M0E3y-LiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_RwP6YoB7Ed-cvdR-JEsOjQ" base_Comment="_RwP6YYB7Ed-cvdR-JEsOjQ"/>
-  <Default:Documentation xmi:id="_v0hssoCDEd-cvdR-JEsOjQ" base_Comment="_v0hssYCDEd-cvdR-JEsOjQ"/>
   <RIM:Act xmi:id="_Jql0c1LIEd6-4-oWZUjasQ" base_Class="_420A62FD03B6456AF07F0009"/>
-  <RIM:Act xmi:id="_Jql0cVLIEd6-4-oWZUjasQ" base_Class="_420A62FD03B6456DF4A901F2"/>
   <RIM:Act xmi:id="_Jql0d1LIEd6-4-oWZUjasQ"/>
   <RIM:Act xmi:id="_Jql0eFLIEd6-4-oWZUjasQ" base_Class="_420A62FD03B64550AAFD02CE"/>
   <RIM:ActRelationship xmi:id="_RLK1MIBsEd-cvdR-JEsOjQ" base_Class="_420A62FD03B64550AAFD0313"/>

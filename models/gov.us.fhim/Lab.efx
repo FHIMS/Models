@@ -3483,7 +3483,7 @@ This is the criteron by which the reference range is valid.  Different reference
           <body>The quantification the organism detected.  e.g.,  >100,000 CFU/ML.&#xD;
 &quot;Contains the value observed by the observation producer....  It is not a required field because some systems will report only the Interpretation Codes.... This field may repeat for multipart, single answer results.&quot; - HL7 Version 2.8, OBX-5.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B642691855010A" name="antibioticSensitivity" visibility="public" type="_420A62FD03B64263C8F8030F" isUnique="false" association="_420A62FD03B6426918530274">
         <ownedComment xmi:id="_NA5LxuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642691855010A">
@@ -3712,7 +3712,7 @@ It should be noted that while a Specimen Collection Promise logically occurs in 
           <body>&quot;Specifies the volume or mass of the collected specimen.&quot; - HL7 Version 2.8, SPM-12.&#xD;
 &quot;The volume of a specimen.&quot; - HL7 Version 2.8, OBR-9.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_KYTcwn8YEd-6KMbY3gBFOQ" name="collectionMethod" visibility="public">
         <ownedComment xmi:id="_KYTcw38YEd-6KMbY3gBFOQ" annotatedElement="_KYTcwn8YEd-6KMbY3gBFOQ">
@@ -4178,7 +4178,7 @@ A code specifying the status of the Order.  Valid status codes should reflect th
           <body>&quot;Identifies the distance from the Point of Reference to the separator material (barrier) within the container in units specified below. This distance may be provided by the LAS to the instrument and/or specimen processing/handling device to facilitate the insertion of a sampling probe into the specimen without touching the separator.&quot; - HL7 Version 2.8, SAC-18.&#xD;
 &quot;The distance from the point of reference to the separator material (barrier) within a container.&quot; - HL7 Version 3 (Container.barrierDeltaQuantity).</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VyJbIkWREeKmiJoj9rWMSg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VyJbI0WREeKmiJoj9rWMSg"/>
       </ownedAttribute>
@@ -4187,7 +4187,7 @@ A code specifying the status of the Order.  Valid status codes should reflect th
           <body>&quot;Identifies the distance from the Point of Reference to the separator material (barrier) within the container in units specified below. This distance may be provided by the LAS to the instrument and/or specimen processing/handling device to facilitate the insertion of a sampling probe into the specimen without touching the separator.&quot; - HL7 Version 2.8, SAC-18.&#xD;
 &quot;The distance from the point of reference to the separator material (barrier) within a container.&quot; - HL7 Version 3 (Container.barrierDeltaQuantity).</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3ZdI8kWREeKmiJoj9rWMSg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3ZdI80WREeKmiJoj9rWMSg"/>
       </ownedAttribute>
@@ -4206,7 +4206,7 @@ A code specifying the status of the Order.  Valid status codes should reflect th
 &quot;The unit identifier that is being used to describe the volume of the container....&quot; - HL7 Version 2.8, SAC-24.&#xD;
 &quot;The functional capacity of the container.&quot; - HL7 Version 3 (Container.capacityQuantity).</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vKAioEWOEeKmiJoj9rWMSg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vJ_7kEWOEeKmiJoj9rWMSg"/>
       </ownedAttribute>
@@ -4216,7 +4216,7 @@ A code specifying the status of the Order.  Valid status codes should reflect th
 &quot;The unit identifier that is being used to describe the volume of the container....&quot; - HL7 Version 2.8, SAC-24.&#xD;
 &quot;The outside diameter of the container.&quot; - HL7 Version 3 (Container.diameterQuantity).</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_SF89kEWOEeKmiJoj9rWMSg" name="containerHeight" visibility="public">
         <ownedComment xmi:id="_SF89kUWOEeKmiJoj9rWMSg" annotatedElement="_SF89kEWOEeKmiJoj9rWMSg">
@@ -4224,7 +4224,7 @@ A code specifying the status of the Order.  Valid status codes should reflect th
 &quot;The unit identifier that is being used to describe the volume of the container....&quot; - HL7 Version 2.8, SAC-24.&#xD;
 &quot;The height of the container.&quot; - HL7 Version 3 (Container.heightQuantity).</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ubM74EWOEeKmiJoj9rWMSg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ubMU0EWOEeKmiJoj9rWMSg"/>
       </ownedAttribute>
@@ -4306,7 +4306,7 @@ A code specifying the status of the Order.  Valid status codes should reflect th
     <packagedElement xmi:type="uml:Package" xmi:id="__rYpEGIOEeCHAoM78Lf2xA" name="Autopsy">
       <eAnnotations xmi:id="__rldYGIOEeCHAoM78Lf2xA" source="uml2.diagrams" references="__rldYWIOEeCHAoM78Lf2xA">
         <contents xmi:type="umlnotation:UMLDiagram" xmi:id="__rldYWIOEeCHAoM78Lf2xA" type="Class" name="_Autopsy" description="This package contains classes related to Autopsy results, which were included in the VHIM, but deemed out of scope for the FHIM Laboratory Domain.  This package serves to preserve these classes as they may prove useful in the future should Autopsy be modeled.&#xD;&#xA;&#xD;&#xA;Note that the classes in this package are not full-fledged FHIM classes, and may be fully defined.  They all begin with an underscore to distinguish them from other FHIM classes, which also enables us to remove them automatically when necessary.">
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_XNlvIGIPEeCHAoM78Lf2xA" fontName="Arial" fontHeight="10" showListVisibility="None" fillColor="8519553" lineColor="3342489" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_XNlvIGIPEeCHAoM78Lf2xA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519553" lineColor="3342489" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_XNmWMGIPEeCHAoM78Lf2xA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_XNmWMWIPEeCHAoM78Lf2xA" width="1320" height="1320"/>
             </children>
@@ -4320,7 +4320,7 @@ A code specifying the status of the Order.  Valid status codes should reflect th
             <element xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64586C73900D7?FHIM/Datatypes/Image?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XNlvImIPEeCHAoM78Lf2xA" x="21522" y="6678"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_YFb9IGIPEeCHAoM78Lf2xA" fontName="Arial" fontHeight="10" showListVisibility="None" fillColor="8487423" lineColor="3342489" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_YFb9IGIPEeCHAoM78Lf2xA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" lineColor="3342489" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_YFdLQGIPEeCHAoM78Lf2xA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_YFdLQWIPEeCHAoM78Lf2xA" width="1320" height="1320"/>
             </children>
@@ -4334,7 +4334,7 @@ A code specifying the status of the Order.  Valid status codes should reflect th
             <element xmi:type="uml:Class" href="Common.efx#_420A62FD03B6424070DB0209?FHIM/Common/Diagnosis?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YFb9ImIPEeCHAoM78Lf2xA" x="21556" y="12363"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_c2U5QGIPEeCHAoM78Lf2xA" element="_420A62FD03B6420CDAE00271" fontName="Arial" fontHeight="10" showListVisibility="None" fillColor="8487423" lineColor="3342489" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_c2U5QGIPEeCHAoM78Lf2xA" element="_420A62FD03B6420CDAE00271" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" lineColor="3342489" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_c2VgUGIPEeCHAoM78Lf2xA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_c2VgUWIPEeCHAoM78Lf2xA" width="1320" height="1320"/>
             </children>
@@ -4345,9 +4345,9 @@ A code specifying the status of the Order.  Valid status codes should reflect th
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_c2WucGIPEeCHAoM78Lf2xA" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_c2WucmIPEeCHAoM78Lf2xA" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_c2XVgGIPEeCHAoM78Lf2xA" visible="false" type="StructureCompartment"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c2U5QmIPEeCHAoM78Lf2xA" x="5706" y="2219"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c2U5QmIPEeCHAoM78Lf2xA" x="6340" y="2536"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_c2a_4GIPEeCHAoM78Lf2xA" element="_420A62FD03B6420BEC8900C6" fontName="Arial" fontHeight="10" showListVisibility="None" fillColor="8487423" lineColor="3342489" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_c2a_4GIPEeCHAoM78Lf2xA" element="_420A62FD03B6420BEC8900C6" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" lineColor="3342489" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_c2cOAGIPEeCHAoM78Lf2xA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_c2cOAWIPEeCHAoM78Lf2xA" width="1320" height="1320"/>
             </children>
@@ -4360,7 +4360,7 @@ A code specifying the status of the Order.  Valid status codes should reflect th
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_c2eDMGIPEeCHAoM78Lf2xA" visible="false" type="StructureCompartment"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c2a_4mIPEeCHAoM78Lf2xA" x="5389" y="8876"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_sHnSAGIPEeCHAoM78Lf2xA" fontName="Arial" fontHeight="10" showListVisibility="None" fillColor="8519679" lineColor="3342489" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_sHnSAGIPEeCHAoM78Lf2xA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519679" lineColor="3342489" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_sHn5EGIPEeCHAoM78Lf2xA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_sHn5EWIPEeCHAoM78Lf2xA" width="1320" height="1320"/>
             </children>
@@ -4395,7 +4395,7 @@ A code specifying the status of the Order.  Valid status codes should reflect th
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_r5E2c8YjEeGsb4KXw2Babg" type="CommentBody"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r5EPYcYjEeGsb4KXw2Babg" x="-2219" y="4755" width="6532" height="2512"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="__DL64MYjEeGsb4KXw2Babg" element="_420A62FD03B64587F4F2036A" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="__DL64MYjEeGsb4KXw2Babg" element="_420A62FD03B64587F4F2036A" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="__DMh8MYjEeGsb4KXw2Babg" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="__DMh8cYjEeGsb4KXw2Babg" width="1320" height="1320"/>
             </children>
@@ -4419,7 +4419,7 @@ A code specifying the status of the Order.  Valid status codes should reflect th
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_Dx8wE8YkEeGsb4KXw2Babg" type="CommentBody"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dx8JAcYkEeGsb4KXw2Babg" x="21873" y="20605" width="5210" height="3306"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_bTRzUDwkEeOgEtsAzr0sGA" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" fillColor="8519679" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_bTRzUDwkEeOgEtsAzr0sGA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519679" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_bTSaYDwkEeOgEtsAzr0sGA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_bTSaYTwkEeOgEtsAzr0sGA" width="1320" height="1320"/>
             </children>
@@ -4431,7 +4431,7 @@ A code specifying the status of the Order.  Valid status codes should reflect th
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_bTTogDwkEeOgEtsAzr0sGA" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_bTTogTwkEeOgEtsAzr0sGA" visible="false" type="StructureCompartment"/>
             <element xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bTRzUTwkEeOgEtsAzr0sGA" x="21239" y="2219"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bTRzUTwkEeOgEtsAzr0sGA" x="21556" y="2219"/>
           </children>
           <element xsi:nil="true"/>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_c2iUpmIPEeCHAoM78Lf2xA" element="_420A62FD03B645871A74033F" source="_c2a_4GIPEeCHAoM78Lf2xA" target="_bTRzUDwkEeOgEtsAzr0sGA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -4635,7 +4635,7 @@ A code specifying the status of the Order.  Valid status codes should reflect th
               <children xmi:type="notation:ListCompartment" xmi:id="_c2sssGIPEeCHAoM78Lf2xA" type="FromConstraintCompartment"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_c2sFq2IPEeCHAoM78Lf2xA" y="1058"/>
             </children>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_c2q3gmIPEeCHAoM78Lf2xA" points="[3148, -331, -11292, 3990]$[14271, -1498, -169, 2823]$[14271, -3371, -169, 950]"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_c2q3gmIPEeCHAoM78Lf2xA" points="[3148, -1136, -12443, 1708]$[8556, -3086, -7035, -242]$[12986, -3086, -2605, -242]"/>
           </edges>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_sJ0RcGIPEeCHAoM78Lf2xA" element="_420A62FD03B6420BF01A0336" source="_c2a_4GIPEeCHAoM78Lf2xA" target="_sHnSAGIPEeCHAoM78Lf2xA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_sJ04gGIPEeCHAoM78Lf2xA" visible="false" type="NameLabel">
@@ -4814,7 +4814,7 @@ A code specifying the status of the Order.  Valid status codes should reflect th
 &#xD;
 Note that the classes in this package are not full-fledged FHIM classes, and may be fully defined.  They all begin with an underscore to distinguish them from other FHIM classes, which also enables us to remove them automatically when necessary.</body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6420CDAE00271" name="_AnatomicMeasurement">
+      <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6420CDAE00271" name="AnatomicMeasurement">
         <eAnnotations xmi:id="_M5mQ8eLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <ownedComment xmi:id="_M5cf8-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6420CDAE00271">
           <body>This class contains measurements of various organs and structures to include the entire body.  The bodySite property indicates the organ or structure to be measured, e.g., Brain.  The measurementType indicates whether we're measuring the length, volume, or weight.  The measurementValue property holds the actual measurement e.g., 1500 grams.    In VA's VistA system, the following fields are specificaly called out, which would be contained in this class, along with potentially others: Body Height, Body Weight, Length Of Aortic Valve, Length Of Mitral Valve, Length Of Pulmonic Valve, Length Of Tricuspid Valve, Length Of Ventricle (Left), Length Of Ventricle (Right), Volume Of Pericardial Cavity, Volume Of Peritoneal Cavity, Volume Of Pleural Cavity (Left), Volume Of Pleural Cavity (Right), Weight Of Adrenal Gland (Left), Weight Of Adrenal Gland(Right), Weight Of Brain , Weight Of Heart , Weight Of Kidney (Left), Weight Of Kidney (Right), Weight Of Liver, Weight Of Lung (Left), Weight Of Lung (Right), Weight Of Ovary (Left), Weight Of Ovary (Right), Weight Of Pancreas, Weight Of Parathyroid (Left Lower), Weight Of Parathyroid (Left Upper), Weight Of Parathyroid (Right Lower), Weight Of Parathyroid (Right Upper), Weight Of Pituitary Gland, Weight Of Spleen, Weight Of Testis (Left), Weight Of Testis (Right), Weight Of Thyroid Gland</body>
@@ -4835,10 +4835,10 @@ Note that the classes in this package are not full-fledged FHIM classes, and may
           <ownedComment xmi:id="_M5cf_OLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6420E441D035C">
             <body>Contains the actual measurement of the organ or bodily structure measured.  Note that this is a physical quantity, so the datatype contains both the measurement value and the unit of measure (e.g., 1500 grams).</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B64587F4F2036A" name="_AutopsyDocumentReference">
+      <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B64587F4F2036A" name="AutopsyDocumentReference">
         <eAnnotations xmi:id="_M96wReLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <ownedComment xmi:id="_M9w_ROLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64587F4F2036A">
           <body>Contains all documentation produced as a result of the autopsy.   </body>
@@ -4862,7 +4862,7 @@ Note that the classes in this package are not full-fledged FHIM classes, and may
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6420BEC8900C6" name="_AutopsyEvent">
+      <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6420BEC8900C6" name="AutopsyEvent">
         <eAnnotations xmi:id="_M6CV1eLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <ownedComment xmi:id="_M5mQ9OLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6420BEC8900C6">
           <body>Clinical documents commonly have 'Subjective' and 'Objective' findings, both of which are kinds of Observations. In addition, clinical documents commonly contain 'Assessments', which are also kinds of Observations. Thus, the establishment of a diagnosis is an Observation.    </body>
@@ -4871,7 +4871,7 @@ Note that the classes in this package are not full-fledged FHIM classes, and may
           <ownedComment xmi:id="_M5mQ9-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64586CB0302AA">
             <body>Contains the age of the patient at the time of death.</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_420A62FD03B642FFAA72039E" name="autopsyDate" visibility="public">
           <ownedComment xmi:id="_M5mQ-uLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642FFAA72039E">
@@ -5133,7 +5133,7 @@ Note that we need to model more details regarding chain of custody in general an
         <ownedComment xmi:id="_dX3P8EU8EeKmiJoj9rWMSg" annotatedElement="_IzS1ULxPEeCjnsq0FtkmeA">
           <body>The maximum temperature to which the specimen was exposed during the Specimen Handling episode described by this class.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I8xEwEU8EeKmiJoj9rWMSg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I8wdsEU8EeKmiJoj9rWMSg"/>
       </ownedAttribute>
@@ -5141,7 +5141,7 @@ Note that we need to model more details regarding chain of custody in general an
         <ownedComment xmi:id="_aD9PMEU8EeKmiJoj9rWMSg" annotatedElement="_9W_xILxOEeCjnsq0FtkmeA">
           <body>The minimum temperature to which the specimen was exposed during the Specimen Handling episode described by this class.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IJf0wUU8EeKmiJoj9rWMSg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IJf0wEU8EeKmiJoj9rWMSg"/>
       </ownedAttribute>
@@ -5206,7 +5206,7 @@ Note that we need to model more details regarding chain of custody in general an
         <ownedComment xmi:id="_eHOyEAl0EeGe4v7RnpTDUQ" annotatedElement="_K0C58MHSEeCdLPayeDTWtA">
           <body>&quot;The amount of specimen that currently exists or is available for use in further testing.&quot; - HL7 Version 2.8, SPM-25.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RCXykJ_tEeOScYv3wgSwlA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RCXLgJ_tEeOScYv3wgSwlA"/>
       </ownedAttribute>
@@ -5258,7 +5258,7 @@ Note that we need to model more details regarding chain of custody in general an
         <ownedComment xmi:id="_Daa9QEWOEeKmiJoj9rWMSg" annotatedElement="_1LQI0EWNEeKmiJoj9rWMSg">
           <body>&quot;Identifies the specimen temperature in degrees Celsius&quot; - HL7 Version 2.8, SAC-31.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ZlGAEWNEeKmiJoj9rWMSg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Zke8EWNEeKmiJoj9rWMSg"/>
       </ownedAttribute>
@@ -5506,7 +5506,7 @@ It is recommended that LOINC be used.  Note that VA's VistA system uses the VA N
         <ownedComment xmi:id="_CEPbMEWTEeKmiJoj9rWMSg" annotatedElement="_-fxS0CtPEeKKgp1v3A6sOA">
           <body>Indicates the amount of the substance that is identified in the additiveType property exists in this instance.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_8W5HgCjuEeKdfLgBSxgNnA" name="specimenProcessingEvent_additive" memberEnd="_8W-nECjuEeKdfLgBSxgNnA _8XFUwCjuEeKdfLgBSxgNnA">
