@@ -753,7 +753,7 @@
             <children xmi:type="notation:ListCompartment" xmi:id="_dGNNEPs5EeSc9M34gwVpgg" type="FromConstraintCompartment"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_dGMmCPs5EeSc9M34gwVpgg" y="1058"/>
           </children>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dGKw0fs5EeSc9M34gwVpgg" points="[-175, 121, -8332, -19685]$[-175, 19806, -8332, 0]$[8030, 19806, -127, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dGKw0fs5EeSc9M34gwVpgg" points="[0, 78, -7706, -20760]$[0, 20639, -7706, -199]$[7579, 20639, -127, -199]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_T35lAFiwEeWPFcZL8Pri7w" id="(0.5165064772252402,0.9486343253159397)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BigrYF49EeWQiN9lTU6tCQ" id="(0.02501454333915067,0.5468607825295724)"/>
         </edges>
@@ -2074,7 +2074,9 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B64586EE2E00B9" name="MedicalImagingEvent">
       <eAnnotations xmi:id="_QCAzYuLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedComment xmi:id="_QBa9iuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64586EE2E00B9">
-        <body>This class contains attributes related to Radiology \ Nuclear Medicine imaging examinations.  </body>
+        <body>This class contains attributes associated with Radiology or Nuclear Medicine imaging examinations. Historically, both diagnostic imaging and the scanning and retrieval of paper documents have been included in the &quot;imaging&quot; domain as they both share certain characteristics in terms of the equipment used to store and retrieve the images.  Yet a distinction is often made with respect to the amount and type of metadata associated with the images. For example, &quot;Diagnostic Images&quot; are those stored and retrieved in Picture Archive and Communications Systems (PACS) which require certain codified information regarding the modality of the image, body site, etc., and are organized into Studies, Series, Images, and subsets (regions) of images. In contrast, scanned documents do not require any of these metadata.  As patient-generated images become more commonplace, we foresee a need to store these images (for example, a patient uses a smart phone to take a picture of a wound and emails it to a clinician) as well. We would foresee such images stored in the &quot;Medical Imaging Event&quot; hierarchy, even if a relatively-empty Study and Series construct would be required to contain such images.  However, scanned documents simply need a pointer to the resulting image(s), and we therefore find it useful to continue with a logical separation of the two kinds of images.&#xD;
+&#xD;
+Note that this class represents information about the act of performing the medical imaging event, with the majority of the results stored in the Study, Series, Image hierarchy.  From a DICOM point of view, the Study and the Imaging Event are roughly synonymous, with the activities surrounding the production of the Study being implied in the resulting data.  We make the distinction primarily in order to be consistent with how orders and accessions (aka promises) are treated elsewhere in the FHIM.  Therefore this class could easily be merged with the Study class in resulting implementations.</body>
       </ownedComment>
       <generalization xmi:id="_ExJvcF4uEeWQiN9lTU6tCQ" general="_420A62FD03B64550AAFD02CE"/>
       <ownedAttribute xmi:id="_420A62FD03B64586EEDA00F3" name="status" visibility="public">
@@ -2282,6 +2284,9 @@
       <ownedComment xmi:id="_QCdfWuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64586FBA701A8">
         <body>Represents the radiology/nuclear medicine report as known by the originating VistA system.  Equivalent to File 74.</body>
       </ownedComment>
+      <generalization xmi:id="_0x1EMMU0EeW7a6OfPDMv9g">
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation(Abstract)?"/>
+      </generalization>
       <ownedAttribute xmi:id="_420A62FD03B64586FBE90276" name="additionalClinicalHistory" visibility="public">
         <ownedComment xmi:id="_QCwaReLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64586FBE90276">
           <body>Contain a patient's clinical history as well as instructions to the interpreting physician.  For example, the  instructions might be for the physician to interpret the exam images to rule out the possibility of the patient having a certain disease. The 'additional clinical history' is written by the interpreting physician and is entered into the system by the transcriptionist.  Voice Recognition systems allow the interpreting physician to directly enter this information into the 'additional clinical history' field.  </body>
@@ -2338,19 +2343,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QIt4YOLiEduGJrQyRGTO1A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QIt4X-LiEduGJrQyRGTO1A" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_MAwEUYCkEd-cvdR-JEsOjQ" name="relatedReport" visibility="public" type="_KPWYIICkEd-cvdR-JEsOjQ" association="_MAwEUICkEd-cvdR-JEsOjQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MAwEU4CkEd-cvdR-JEsOjQ" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MAwEUoCkEd-cvdR-JEsOjQ"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_KPWYIICkEd-cvdR-JEsOjQ" name="RelatedReport">
-      <ownedAttribute xmi:id="_MA5OQICkEd-cvdR-JEsOjQ" name="radNucReport" visibility="public" type="_420A62FD03B64586FBA701A8" association="_MAwEUICkEd-cvdR-JEsOjQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MA5OQoCkEd-cvdR-JEsOjQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MA5OQYCkEd-cvdR-JEsOjQ" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_UMhy8ICkEd-cvdR-JEsOjQ" name="relatedReportCategory" visibility="public">
-        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B64550AAFD0313" name="ImageGroup">
       <eAnnotations xmi:id="_MycgFeLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -2373,36 +2365,40 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B64550AAFD02CE" name="ImagingEvent(Abstract)">
       <eAnnotations xmi:id="_MzMG-uLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedComment xmi:id="_MyvbAeLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64550AAFD02CE">
-        <body>This class contains attributes and associations that are helpful in  interpretation of the radiology/nuclear medicine image as known by the originating VistA system.  File 2005.</body>
+        <body>This class contains those attributes and associations common to both Radiology / Nuclear Medicine imaging examinations and the scanning of paper documents into an image storage and retrieval system. Historically, both diagnostic imaging and the scanning and retrieval of paper documents have been included in the &quot;imaging&quot; domain as they both share certain characteristics in terms of the equipment used to store and retrieve the images.  Yet a distinction is often made with respect to the amount and type of metadata associated with the images. For example, &quot;Diagnostic Images&quot; are those stored and retrieved in Picture Archive and Communications Systems (PACS) which require certain codified information regarding the modality of the image, body site, etc., and are organized into Studies, Series, Images, and subsets (regions) of images. In contrast, scanned documents do not require any of these metadata.  As patient-generated images become more commonplace, we foresee a need to store these images (for example, a patient uses a smart phone to take a picture of a wound and emails it to a clinician) as well. We would foresee such images stored in the &quot;Medical Imaging Event&quot; hierarchy, even if a relatively-empty Study and Series construct would be required to contain such images.  However, scanned documents simply need a pointer to the resulting image(s), and we therefore find it useful to continue with a logical separation of the two kinds of images.</body>
       </ownedComment>
       <ownedAttribute xmi:id="__R3I8IB5Ed-cvdR-JEsOjQ" name="dateTime" visibility="public">
+        <ownedComment xmi:id="_g_VF4MU7EeW7a6OfPDMv9g" annotatedElement="__R3I8IB5Ed-cvdR-JEsOjQ">
+          <body>The date (and optionally time) that the Imaging Event occurred.</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B64550AAFD02D6" name="description" visibility="public">
         <ownedComment xmi:id="_MzCV8uLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64550AAFD02D6">
-          <body>This is the description of the image at length. </body>
+          <body>This property provides further narrative of the imaging event or of the images that were produced as part of the imaging event.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B64550AAFD02CF" name="id" visibility="public">
         <ownedComment xmi:id="_MyvbBOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64550AAFD02CF">
-          <body>The Internal Entry Number of the Image File Entry  </body>
+          <body>This property is used to uniquely identify the Imaging Event and therefore the set of images resulting from the Imaging Event.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_RwP6YIB7Ed-cvdR-JEsOjQ" name="imageCategory" visibility="public">
         <ownedComment xmi:id="_RwP6YYB7Ed-cvdR-JEsOjQ" annotatedElement="_RwP6YIB7Ed-cvdR-JEsOjQ">
-          <body>A categorization of the image, which can be used for searching and sorting.&#xD;
+          <body>A categorization of the image, which can be used for searching and sorting. We can imagine many possible mechanisms or axes by which images can be categorized, but none which can be easily standardized for universal use, so this property is modeled as string rather than a code.  It is anticipated that this one string field may be implemented by one or more coded and/or non-coded fields in any given implementation depending on the categorization needs of the system.&#xD;
 &#xD;
-The VA's VistA system has several categorization mechanisms that may or may not be used here, depending on how broadly applicable the categorizations are.  See:&#xD;
+It is noted that the VA's VistA system has several categorization mechanisms that might inform how this field may be used here, for example:&#xD;
 VistA table 2005.82 which includes: Administrative, Clinical, Admin/Clinical.&#xD;
 VistA table 2005.83&#xD;
 VistA table 2005.84 which categorizes the image by specialty/subspecialty&#xD;
+Another possible axis is to categorize the procedure that generated the image.  Possible values include: Colonoscopy, Surgery, Surgical pathology, Radiology. &#xD;
+Another possible axis is to categorize the software system or package that generated and/or accesses the image.  Possible values include (from the VA): Radiology, Laboratory, Medicine, Clinical Document, Surgery, Photo ID, etc.&#xD;
 &#xD;
-Another possible axis is to categorize the procedure that generated the image.  Possible values include: Colonoscopy, Surgery, Surgical pathology, Radiology.  This property can be used to help locate individual images or even classes of images for research. &#xD;
-Another possible axis is to categorize the software system or package that generated and/or accesses the image.  Possible values include (from the VA): Radiology, Laboratory, Medicine, Clinical Document, Surgery, Photo ID, etc.</body>
+When the image is a scanned document, this field might be used to identify the kind of document contained in the image.  Possible values (from the VA) include: Insurance form, Eligibility form, Patient Rights and Responsibilities form, Means Test form, Allied Veteran form, Appointment of a VSO as claimant's representative, DD214 enlisted record and report of separation, Death certificate, Miscellaneous document, etc.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_5Q9icX_1Ed-Ure_vzgD_TA" name="acquisitionSite" visibility="public" association="_5Q9icH_1Ed-Ure_vzgD_TA">
         <ownedComment xmi:id="_BUUU4H_2Ed-Ure_vzgD_TA" annotatedElement="_5Q9icX_1Ed-Ure_vzgD_TA">
@@ -2434,31 +2430,21 @@ Another possible axis is to categorize the software system or package that gener
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M1RKn-LiEduGJrQyRGTO1A" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6456AF07F0009" name="NonMedicalImagingEvent">
+    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6456AF07F0009" name="DocumentImagingEvent">
       <eAnnotations xmi:id="_MzfB4eLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedComment xmi:id="_MzVQ5eLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6456AF07F0009">
-        <body>This class contains attributes associated with Document (Medical Document) Imaging.  </body>
+        <body>This class contains attributes associated with scanned documents. Historically, both diagnostic imaging and the scanning and retrieval of paper documents have been included in the &quot;imaging&quot; domain as they both share certain characteristics in terms of the equipment used to store and retrieve the images.  Yet a distinction is often made with respect to the amount and type of metadata associated with the images. For example, &quot;Diagnostic Images&quot; are those stored and retrieved in Picture Archive and Communications Systems (PACS) which require certain codified information regarding the modality of the image, body site, etc., and are organized into Studies, Series, Images, and subsets (regions) of images. In contrast, scanned documents do not require any of these metadata.  As patient-generated images become more commonplace, we foresee a need to store these images (for example, a patient uses a smart phone to take a picture of a wound and emails it to a clinician) as well. We would foresee such images stored in the &quot;Medical Imaging Event&quot; hierarchy, even if a relatively-empty Study and Series construct would be required to contain such images.  However, scanned documents simply need a pointer to the resulting image(s), and we therefore find it useful to continue with a logical separation of the two kinds of images.</body>
       </ownedComment>
       <generalization xmi:id="_420A62FD03B6456AF0D6031B" general="_420A62FD03B64550AAFD02CE"/>
-      <ownedAttribute xmi:id="_dIM30ICAEd-cvdR-JEsOjQ" name="documentCategory" visibility="public">
-        <ownedComment xmi:id="_dIM30YCAEd-cvdR-JEsOjQ" annotatedElement="_dIM30ICAEd-cvdR-JEsOjQ">
-          <body>Categorizes the type of imaged medical document.  Used for indexing and searching of documents, which allow clinicians to apply sort filters when viewing or researching images.  Possible values include (from the VA): Insurance form, Eligibility form, Patient Rights and Responsibilities form, Means Test form, Allied Veteran form, Appointment of a VSO as claimant's representative, DD214 enlisted record and report of separation, Death certificate, Miscellaneous document, etc.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6456AF10D02DE" name="documentDate" visibility="public">
         <ownedComment xmi:id="_MzVQ6eLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6456AF10D02DE">
-          <body>The date of the document when image is a document.</body>
+          <body>If the item being scanned is a dated document, this property identifies the date of the document.  For example, if on 1/15/2016 a patient's birth certificate dated 6/17/1961 were scanned, this property would contain the birth certificate date (6/17/1961), while the ImagingEvent.dateTime would contain the date that the document was scanned (1/15/2016).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sirKEMU3EeW7a6OfPDMv9g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sip78MU3EeW7a6OfPDMv9g"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B6456AF1700006" name="remarks" visibility="public">
-        <ownedComment xmi:id="_MzVQ7OLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6456AF1700006">
-          <body>It further describes the type of document image.  [This is mainly for Document Imaging.]  </body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_dF_KoPs5EeSc9M34gwVpgg" name="ImageInstance" visibility="private" type="_oErcYPAuEeS1qetF27ECmQ" association="_dF98gPs5EeSc9M34gwVpgg">
+      <ownedAttribute xmi:id="_dF_KoPs5EeSc9M34gwVpgg" name="ImageInstance" visibility="public" type="_oErcYPAuEeS1qetF27ECmQ" association="_dF98gPs5EeSc9M34gwVpgg">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dF_xsfs5EeSc9M34gwVpgg" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dF_xsPs5EeSc9M34gwVpgg"/>
       </ownedAttribute>
@@ -2753,7 +2739,6 @@ Note that in FHIR, the data type for this property is an oid. We may wish to mak
     <packagedElement xmi:type="uml:Association" xmi:id="_dF98gPs5EeSc9M34gwVpgg" name="documentImagingEvent_imageInstance" memberEnd="_dF_KoPs5EeSc9M34gwVpgg _dGA_0Ps5EeSc9M34gwVpgg">
       <ownedEnd xmi:id="_dGA_0Ps5EeSc9M34gwVpgg" name="" visibility="private" type="_420A62FD03B6456AF07F0009" association="_dF98gPs5EeSc9M34gwVpgg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_MAwEUICkEd-cvdR-JEsOjQ" name="radNucReport_relatedReport" memberEnd="_MAwEUYCkEd-cvdR-JEsOjQ _MA5OQICkEd-cvdR-JEsOjQ"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_420A62FD03B645C08F11031E" name="radNucReport_relatedCase" memberEnd="_420A62FD03B645C08F130077 _420A62FD03B645C08F13008B">
       <ownedEnd xmi:id="_420A62FD03B645C08F13008B" name="" visibility="public" type="_420A62FD03B64586FBA701A8" isUnique="false" association="_420A62FD03B645C08F11031E"/>
     </packagedElement>
@@ -2889,7 +2874,6 @@ Note that in FHIR, the data type for this property is an oid. We may wish to mak
     </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_BUnP0H_2Ed-Ure_vzgD_TA" base_Comment="_BUUU4H_2Ed-Ure_vzgD_TA"/>
-  <Default:Documentation xmi:id="_dIM30oCAEd-cvdR-JEsOjQ" base_Comment="_dIM30YCAEd-cvdR-JEsOjQ"/>
   <Default:Documentation xmi:id="_M1RKl-LiEduGJrQyRGTO1A" base_Comment="_M1RKluLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_M1RKnuLiEduGJrQyRGTO1A" base_Comment="_M1RKneLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_M2w_buLiEduGJrQyRGTO1A" base_Comment="_M2w_beLiEduGJrQyRGTO1A"/>
@@ -2899,7 +2883,6 @@ Note that in FHIR, the data type for this property is an oid. We may wish to mak
   <Default:Documentation xmi:id="_MyvbAuLiEduGJrQyRGTO1A" base_Comment="_MyvbAeLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MyvbBeLiEduGJrQyRGTO1A" base_Comment="_MyvbBOLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MzCV8-LiEduGJrQyRGTO1A" base_Comment="_MzCV8uLiEduGJrQyRGTO1A"/>
-  <Default:Documentation xmi:id="_MzfB4OLiEduGJrQyRGTO1A" base_Comment="_MzVQ7OLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MzVQ5uLiEduGJrQyRGTO1A" base_Comment="_MzVQ5eLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MzVQ6uLiEduGJrQyRGTO1A" base_Comment="_MzVQ6eLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_RwP6YoB7Ed-cvdR-JEsOjQ" base_Comment="_RwP6YYB7Ed-cvdR-JEsOjQ"/>
@@ -2947,7 +2930,6 @@ Note that in FHIR, the data type for this property is an oid. We may wish to mak
   <RIM:Act xmi:id="_fiQrYVLIEd6-4-oWZUjasQ" base_Class="_420A62FD03B64586F4B502F6"/>
   <RIM:Act xmi:id="_fiQrZlLIEd6-4-oWZUjasQ" base_Class="_420A62FD03B6459176EB0167"/>
   <RIM:Act xmi:id="_fiQrZVLIEd6-4-oWZUjasQ" base_Class="_420A62FD03B64586FBA701A8"/>
-  <RIM:ActRelationship xmi:id="_PizOwICkEd-cvdR-JEsOjQ" base_Class="_KPWYIICkEd-cvdR-JEsOjQ"/>
   <RIM:Role xmi:id="_eunpEFLiEd6-4-oWZUjasQ" base_Class="_420A62FD03B64591DC700378"/>
   <RIM:Role xmi:id="_eunpEVLiEd6-4-oWZUjasQ" base_Class="_420A62FD03B6459565A30145"/>
   <Default:Documentation xmi:id="_hWDY8FjAEeWPFcZL8Pri7w" base_Comment="_xw0zkYB-Ed-cvdR-JEsOjQ"/>
@@ -2992,4 +2974,5 @@ Note that in FHIR, the data type for this property is an oid. We may wish to mak
   <Default:Documentation xmi:id="_5gu2sH9AEeW8SPVtPHwMkQ" base_Comment="_5gowEH9AEeW8SPVtPHwMkQ"/>
   <RIM:Act xmi:id="_8PNPIH9AEeW8SPVtPHwMkQ" base_Class="_19LbkPsWEeSc9M34gwVpgg"/>
   <RIM:Act xmi:id="_TB4VsH9BEeW8SPVtPHwMkQ" base_Class="_Yv8YIF45EeWQiN9lTU6tCQ"/>
+  <Default:Documentation xmi:id="_g_h6MMU7EeW7a6OfPDMv9g" base_Comment="_g_VF4MU7EeW7a6OfPDMv9g"/>
 </xmi:XMI>
