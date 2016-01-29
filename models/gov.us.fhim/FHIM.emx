@@ -44,7 +44,7 @@
       <references xmi:type="uml:Package" href="WomensHealth.efx#_420A62FD03B6436137C60273?FHIM/WomensHealth?"/>
     </eAnnotations>
     <eAnnotations xmi:id="_8Ra5kOLoEdu45_8D8ShJ7w" source="uml2.diagrams" references="_420A62FD03B6420A62FD03C1">
-      <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_420A62FD03B6420A62FD03C1" type="Class" name="FHIM Overview Diagram" description="The FHIM is organized into information “domains”, which are simply logical groupings of related concepts. These domains are represented in the model by using UML Packages. It is important to note that every element in the model can “see” every other element in the model – the packages serve as convenient containers for groups of elements, not hermetic barriers. Therefore, domain diagrams can and do routinely include classes from other parts of the model. In order to explicitly indicate when a class from another package is being referenced, the class will be annotated with the owning package name.&#xD;&#xA;&#xD;&#xA;The FHIM was initially populated using existing models contributed by the partner agencies, including the VHA Health Information Model (VHIM), the Biomedical Research Integrated Domain Group (BRIDG) Model, the Common Product Model (CPM), the Integrated Case Safety Report (ICSR), and various other models developed by the agencies directly at HL7. Since the VHIM was the most comprehensive model, it was used as the starting point, with the FHIM modeling style applied. Then each domain is refined by teams comprised of representatives from the federal partner organizations. Therefore, the FHIM contains domains that are in various states of completion, ranging from not started (aside from the initial application of the FHIM modeling style to the VHIM content) to in-progress to completed.&#xD;&#xA;&#xD;&#xA;This diagram is the main diagram of the FHIM, and it simply shows the UML packages which make up the FHIM. The packages are color-coded to indicate the current state of completion. Packages which are unchanged from the federal partner-supplied models are red, packages which are in-progress are yellow, and completed packages are green.&#xD;&#xA;&#xD;&#xA;FHIM data elements use simple or “primitive” datatypes wherever possible, but the FHIM does define several common structures for complex yet common cases (e.g, “Address). See the Datatypes package for details on these.">
+      <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_420A62FD03B6420A62FD03C1" type="Class" name="FHIM Overview Diagram" description="The FHIM is organized into information “domains”, which are simply logical groupings of related concepts. These domains are represented in the model by using UML Packages. It is important to note that every element in the model can “see” every other element in the model – the packages serve as convenient containers for groups of elements, not barriers. Therefore, domain diagrams can and do routinely include classes from other parts of the model. In order to explicitly indicate when a class from another package is being referenced, the class will be annotated with the owning package name.&#xD;&#xA;&#xD;&#xA;The FHIM was initially populated using existing models contributed by the partner agencies, including the VHA Health Information Model (VHIM), the Biomedical Research Integrated Domain Group (BRIDG) Model, the Common Product Model (CPM), the Integrated Case Safety Report (ICSR), and various other models developed by the agencies directly at HL7. Since the VHIM was the most comprehensive model, it was used as the starting point, with the FHIM modeling style applied. Then each domain is refined by teams comprised of representatives from the federal partner organizations. Therefore, the FHIM contains domains that are in various states of completion, ranging from not started (aside from the initial application of the FHIM modeling style to the VHIM content) to in-progress to completed.&#xD;&#xA;&#xD;&#xA;This diagram is the main diagram of the FHIM, and it simply shows the UML packages which make up the FHIM. The packages are color-coded to indicate the current state of completion. Packages which are unchanged from the federal partner-supplied models are gray, packages which are in-progress are purple, and completed packages are green.  Note that the packages marked in-progress may either be undergoing UML modeling or have completed the UML modeling phase but are awaiting or undergoing the Terminology modeling phase.&#xD;&#xA;&#xD;&#xA;FHIM data elements use simple or “primitive” datatypes wherever possible, but the FHIM does define several common structures for complex yet common cases (e.g, “Address). See the Datatypes package for details on these.">
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TA5mZeLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" fillColor="14020053" lineColor="15912618" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_TA5maOLiEduGJrQyRGTO1A" type="ImageCompartment">
             <layoutConstraint xmi:type="notation:Size" xmi:id="_TA5maeLiEduGJrQyRGTO1A" width="1320" height="1320"/>
@@ -56,7 +56,7 @@
           <element xmi:type="uml:Package" href="Allergies.efx#_420A62FD03B6418AB45103D1?FHIM/Allergies?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TA5mZ-LiEduGJrQyRGTO1A" x="4438" y="3170" width="3500" height="1500"/>
         </children>
-        <children xmi:type="umlnotation:UMLShape" xmi:id="_TA5mb-LiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" fillColor="14020053" lineColor="15912618" showStereotype="Text">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_TA5mb-LiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" fillColor="15652322" lineColor="12464763" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_TA5mcuLiEduGJrQyRGTO1A" type="ImageCompartment">
             <layoutConstraint xmi:type="notation:Size" xmi:id="_TA5mc-LiEduGJrQyRGTO1A" width="1320" height="1320"/>
           </children>
@@ -67,7 +67,7 @@
           <element xmi:type="uml:Package" href="Encounter.efx#_420A62FD03B6420A57DF03CA?FHIM/Encounter?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TA5mceLiEduGJrQyRGTO1A" x="4438" y="6974" width="3500" height="1500"/>
         </children>
-        <children xmi:type="umlnotation:UMLShape" xmi:id="_TA5meeLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" fillColor="14869218" lineColor="11842740" showStereotype="Text">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_TA5meeLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" fillColor="15652322" lineColor="12464763" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_TA5mfOLiEduGJrQyRGTO1A" type="ImageCompartment">
             <layoutConstraint xmi:type="notation:Size" xmi:id="_TA5mfeLiEduGJrQyRGTO1A" width="1320" height="1320"/>
           </children>
@@ -89,7 +89,7 @@
           <element xmi:type="uml:Package" href="Lab.efx#_420A62FD03B6420A57B401F1?FHIM/Lab?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TA5mheLiEduGJrQyRGTO1A" x="4438" y="8876" width="3500" height="1500"/>
         </children>
-        <children xmi:type="umlnotation:UMLShape" xmi:id="_TA5mjeLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" fillColor="14020053" lineColor="15912618" showStereotype="Text">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_TA5mjeLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" fillColor="15652322" lineColor="12464763" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_TA5mkOLiEduGJrQyRGTO1A" type="ImageCompartment">
             <layoutConstraint xmi:type="notation:Size" xmi:id="_TA5mkeLiEduGJrQyRGTO1A" width="1320" height="1320"/>
           </children>
@@ -177,7 +177,7 @@
           <element xmi:type="uml:Package" href="Immunization.efx#_420A62FD03B64294DF9F0087?FHIM/Immunization?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBCwnOLiEduGJrQyRGTO1A" x="634" y="8876" width="3500" height="1500"/>
         </children>
-        <children xmi:type="umlnotation:UMLShape" xmi:id="_TBCwpOLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" fillColor="14020053" lineColor="15912618" showStereotype="Text">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_TBCwpOLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" fillColor="15652322" lineColor="12464763" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_TBCwp-LiEduGJrQyRGTO1A" type="ImageCompartment">
             <layoutConstraint xmi:type="notation:Size" xmi:id="_TBCwqOLiEduGJrQyRGTO1A" width="1320" height="1320"/>
           </children>
@@ -287,7 +287,7 @@
           <element xmi:type="uml:Package" href="BloodBank.efx#_420A62FD03B64447DE3C024C?FHIM/BloodBank?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhpOLiEduGJrQyRGTO1A" x="19654" y="3170" width="3500" height="1500"/>
         </children>
-        <children xmi:type="umlnotation:UMLShape" xmi:id="_TBMhrOLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" fillColor="14869218" lineColor="11842740" showStereotype="Text">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_TBMhrOLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" fillColor="15652322" lineColor="12464763" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_TBMhr-LiEduGJrQyRGTO1A" type="ImageCompartment">
             <layoutConstraint xmi:type="notation:Size" xmi:id="_TBMhsOLiEduGJrQyRGTO1A" width="1320" height="1320"/>
           </children>
@@ -309,7 +309,7 @@
           <element xmi:type="uml:Package" href="OncologyRegistry.efx#_420A62FD03B64447DEE00169?FHIM/OncologyRegistry?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhuOLiEduGJrQyRGTO1A" x="8242" y="8876" width="3500" height="1500"/>
         </children>
-        <children xmi:type="umlnotation:UMLShape" xmi:id="_TBWSWuLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" fillColor="14020053" lineColor="15912618" showStereotype="Text">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_TBWSWuLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" fillColor="15652322" lineColor="12464763" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_TBWSXeLiEduGJrQyRGTO1A" type="ImageCompartment">
             <layoutConstraint xmi:type="notation:Size" xmi:id="_TBWSXuLiEduGJrQyRGTO1A" width="1320" height="1320"/>
           </children>
@@ -396,7 +396,7 @@
           <styles xmi:type="notation:TextStyle" xmi:id="_--SwQnTrEeCTtoDuhU1lcg"/>
           <styles xmi:type="notation:LineTypeStyle" xmi:id="_--SwQ3TrEeCTtoDuhU1lcg"/>
           <element xsi:nil="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_--SwRHTrEeCTtoDuhU1lcg" x="634" y="16484" width="15847" height="4735"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_--SwRHTrEeCTtoDuhU1lcg" x="634" y="16484" width="8888" height="4735"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_AV50sHTyEeCTtoDuhU1lcg" type="rectangle" fontName="Arial" fontHeight="8" description="Unchanged from the VHIM" fillColor="14869218" lineColor="11842740">
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_AV50tXTyEeCTtoDuhU1lcg" type="DiagramName">
@@ -408,9 +408,9 @@
           <styles xmi:type="notation:TextStyle" xmi:id="_AV50snTyEeCTtoDuhU1lcg"/>
           <styles xmi:type="notation:LineTypeStyle" xmi:id="_AV50s3TyEeCTtoDuhU1lcg"/>
           <element xsi:nil="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AV50tHTyEeCTtoDuhU1lcg" x="951" y="19337" width="6032" height="952"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AV50tHTyEeCTtoDuhU1lcg" x="2561" y="19681" width="6032" height="952"/>
         </children>
-        <children xmi:type="notation:Shape" xmi:id="_igDJ0HTyEeCTtoDuhU1lcg" type="rectangle" fontName="Arial" fontHeight="8" description="FHIM UML modeling in progress" fillColor="15652322" lineColor="12464763">
+        <children xmi:type="notation:Shape" xmi:id="_igDJ0HTyEeCTtoDuhU1lcg" type="rectangle" fontName="Arial" fontHeight="8" description="FHIM UML or Terminiology modeling in progress" fillColor="15652322" lineColor="12464763">
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_igGNIHTyEeCTtoDuhU1lcg" type="DiagramName">
             <element xsi:nil="true"/>
           </children>
@@ -420,9 +420,9 @@
           <styles xmi:type="notation:TextStyle" xmi:id="_igDJ0nTyEeCTtoDuhU1lcg"/>
           <styles xmi:type="notation:LineTypeStyle" xmi:id="_igDJ03TyEeCTtoDuhU1lcg"/>
           <element xsi:nil="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_igDJ1HTyEeCTtoDuhU1lcg" x="926" y="18044" width="6032" height="952"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_igDJ1HTyEeCTtoDuhU1lcg" x="2536" y="18388" width="6032" height="952"/>
         </children>
-        <children xmi:type="notation:Shape" xmi:id="_tXTAMHTyEeCTtoDuhU1lcg" type="rectangle" fontName="Arial" fontHeight="8" description="FHIM UML modeling complete" fillColor="14020053" lineColor="15912618">
+        <children xmi:type="notation:Shape" xmi:id="_tXTAMHTyEeCTtoDuhU1lcg" type="rectangle" fontName="Arial" fontHeight="8" description="FHIM UML and Terminology modeling complete" fillColor="14020053" lineColor="15912618">
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_tXTANXTyEeCTtoDuhU1lcg" type="DiagramName">
             <element xsi:nil="true"/>
           </children>
@@ -432,7 +432,7 @@
           <styles xmi:type="notation:TextStyle" xmi:id="_tXTAMnTyEeCTtoDuhU1lcg"/>
           <styles xmi:type="notation:LineTypeStyle" xmi:id="_tXTAM3TyEeCTtoDuhU1lcg"/>
           <element xsi:nil="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tXTANHTyEeCTtoDuhU1lcg" x="926" y="16774" width="6032" height="952"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tXTANHTyEeCTtoDuhU1lcg" x="2536" y="17118" width="6032" height="952"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_WHR30JNmEeCyufOLCDZkFA" fontName="Arial" fontHeight="8" showListVisibility="None" fillColor="14020053" lineColor="15912618" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_WHR305NmEeCyufOLCDZkFA" type="ImageCompartment">
@@ -445,7 +445,7 @@
           <element xmi:type="uml:Package" href="Provider.efx#_WG-84JNmEeCyufOLCDZkFA?FHIM/Provider?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WHR30pNmEeCyufOLCDZkFA" x="8242" y="10778" width="3500" height="1500"/>
         </children>
-        <children xmi:type="umlnotation:UMLShape" xmi:id="_H--ikAY0EeGz0dkadElrkQ" fontName="Arial" fontHeight="8" showListVisibility="None" fillColor="15652322" lineColor="12464763" showStereotype="Text">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_H--ikAY0EeGz0dkadElrkQ" fontName="Arial" fontHeight="8" showListVisibility="None" fillColor="14020053" lineColor="15912618" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_H-_JoAY0EeGz0dkadElrkQ" type="ImageCompartment">
             <layoutConstraint xmi:type="notation:Size" xmi:id="_H-_JoQY0EeGz0dkadElrkQ" width="1320" height="1320"/>
           </children>
@@ -468,7 +468,7 @@
           <element xsi:nil="true"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8F3pNVjKEeG6Pp3Py7p1bw" x="634" y="634"/>
         </children>
-        <children xmi:type="umlnotation:UMLShape" xmi:id="_vLm_wJ93EeGVHtLvLEEdog" fontName="Arial" fontHeight="8" showListVisibility="None" fillColor="15652322" lineColor="12464763" showStereotype="Text">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_vLm_wJ93EeGVHtLvLEEdog" fontName="Arial" fontHeight="8" showListVisibility="None" fillColor="14869218" lineColor="11842740" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_vLwwwJ93EeGVHtLvLEEdog" type="ImageCompartment">
             <layoutConstraint xmi:type="notation:Size" xmi:id="_vLwwwZ93EeGVHtLvLEEdog" width="1320" height="1320"/>
           </children>
@@ -561,7 +561,7 @@
     <ownedComment xmi:id="_zAUigLEeEeKVutcKIuRG4A" annotatedElement="420A62FD03B6">
       <body>The Federal Health Information Model (FHIM) is a Unified Modeling Language (UML) model that describes the health-related Information needed by the Federal Health Architecture (FHA) federal partner organizations. The FHIM is a Logical Information Model, suitable to guide the Enterprise Architecture of the federal partner organizations – in other words, each agency’s Enterprise Data Architecture would conceivably subset and specialize the FHIM models. The FHIM model is aligned with existing and emerging healthcare IT standards, such as those issued by HL7 and IHE, and those endorsed or profiled by HITSP and the ONC Standards and Interoperability Framework for incorporation into Meaningful Use regulations.&#xD;
 &#xD;
-One of the primary goals of the FHIM is to enable meaningful information exchange within the partner agencies and externally with the broader health community. Therefore, the FHIM provides a semantic information basis for information exchange, traceability, and alignment into industry information models and standards. FHIM classes and attributes are aligned to the HL7 3.0 Reference Information Model (RIM).  This allows standards developers to transform the FHIM into a form that can be used to generate  industry-standard HL7 payloads and messaging. The FHIM currently supports transforms to HL7 V3 and NIEM, but other standards are envisioned, including HL7 version 2, ASC X12, Oracle, Java, etc.&#xD;
+One of the primary goals of the FHIM is to enable meaningful information exchange within the partner agencies and externally with the broader health community. Therefore, the FHIM provides a semantic information basis for information exchange, traceability, and alignment into industry information models and standards. FHIM classes and attributes are aligned to the HL7 V3 Reference Information Model (RIM).  This allows standards developers to transform the FHIM into a form that can be used to generate  industry-standard HL7 payloads and messaging. The FHIM currently supports transforms to HL7 V3, FHIR and NIEM, but other standards are envisioned, including HL7 version 2, ASC X12, Oracle, Java, etc.&#xD;
 &#xD;
 The FHIM is an integrated model, and each diagram shows only a portion of the model; otherwise it would become too unwieldy to navigate. When a class in a diagram comes from a different package, it will contain “(from &lt;package>)” beneath the class name, where &lt;package> is the name of the package containing that class. Whenever you see a class on a diagram that contains “(from &lt;package>)”, please view that package for more information on what other relationships that class may have.</body>
     </ownedComment>
