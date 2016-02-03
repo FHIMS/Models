@@ -2481,12 +2481,11 @@ When the image is a scanned document, this field might be used to identify the k
       </generalization>
       <ownedAttribute xmi:id="_xYzjYPsUEeSc9M34gwVpgg" name="availability" visibility="public">
         <ownedComment xmi:id="_6r3lsF4mEeWQiN9lTU6tCQ" annotatedElement="_xYzjYPsUEeSc9M34gwVpgg">
-          <body>&quot;Availability of study (online, offline or nearline).&quot; - HL7 FHIR, ImagingStudy.availability</body>
+          <body>&quot;Availability of study (online, offline or nearline).&quot; - HL7 FHIR, ImagingStudy.availabilityThis property indicates whether the image is immediately available, or is stored on a medium that must be located (if available) and loaded.  The need for a field like this is based on older technology and is arguably not needed anymore.  FHIM is retaining this property for compatibility to FHIR, but is modeling the property as a string rather than a code in order to avoid the need to maintain a standardized value-set.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_GeXn4PsVEeSc9M34gwVpgg" name="clinicalInformation" visibility="public">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ag8-gMqrEeW_D7b30NnZGw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ag57MMqrEeW_D7b30NnZGw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_cq_QgPsUEeSc9M34gwVpgg" name="dateTimeStarted" visibility="public">
         <ownedComment xmi:id="_fjRnwF4mEeWQiN9lTU6tCQ" annotatedElement="_cq_QgPsUEeSc9M34gwVpgg">
