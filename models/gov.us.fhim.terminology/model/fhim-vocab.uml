@@ -1751,6 +1751,13 @@ These are documented in CDC local codes table, CDCPHINVS (Value set OID 2.16.840
         <ownedLiteral xmi:id="_SHNdEN-nEeSzEeYgFgxEPA" name="19939008 (subacute)"/>
         <ownedLiteral xmi:id="_IYTfoOd6EeSlqtEJq7r6DQ" name="-newCode- (peracute)"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_L-mioOU7EeWlUtxA-8RVeQ" name="risk-probability">
+        <ownedLiteral xmi:id="_cJSBgOU7EeWlUtxA-8RVeQ" name="negligible"/>
+        <ownedLiteral xmi:id="_tRm0YOU7EeWlUtxA-8RVeQ" name="low"/>
+        <ownedLiteral xmi:id="_8rEcQOU8EeWlUtxA-8RVeQ" name="moderate"/>
+        <ownedLiteral xmi:id="_Is2zIOU9EeWlUtxA-8RVeQ" name="high"/>
+        <ownedLiteral xmi:id="_RBm3kOU9EeWlUtxA-8RVeQ" name="certain"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_vURsYBJeEeKBDeGP59RrVA" name="LabVocab">
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_XW1O4KRMEeGZ6ueex_Me0w" name="Lab Test Result Name"/>
@@ -2954,6 +2961,31 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_I0V1AOdyEeSKGaa1qzZLJg" name="likely"/>
         <ownedLiteral xmi:id="_KqgscOdyEeSKGaa1qzZLJg" name="confirmed"/>
       </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ClzrcOU0EeWlUtxA-8RVeQ" name="CarePlan">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_KsnagOU0EeWlUtxA-8RVeQ" name="CarePlanKind"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_9TE-0OU5EeWlUtxA-8RVeQ" name="InterventionPlanningStatus">
+        <ownedLiteral xmi:id="_U1qfYOU6EeWlUtxA-8RVeQ" name="accepted"/>
+        <ownedLiteral xmi:id="_EfPDgOU6EeWlUtxA-8RVeQ" name="proposed"/>
+        <ownedLiteral xmi:id="_Yvrd4OU6EeWlUtxA-8RVeQ" name="rejected"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_UEl5oOX8EeWMCcMdatPOjA" name="CarePlanActivityStatus">
+        <ownedLiteral xmi:id="_3CHzgOX8EeWMCcMdatPOjA" name="not-started"/>
+        <ownedLiteral xmi:id="_4SEYcOX8EeWMCcMdatPOjA" name="scheduled"/>
+        <ownedLiteral xmi:id="_GkgjUOX9EeWMCcMdatPOjA" name="in-progress"/>
+        <ownedLiteral xmi:id="_INAyMOX9EeWMCcMdatPOjA" name="on-hold"/>
+        <ownedLiteral xmi:id="_Iuo4kOX9EeWMCcMdatPOjA" name="completed"/>
+        <ownedLiteral xmi:id="_JcKs8OX9EeWMCcMdatPOjA" name="cancelled"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_inWjAOX9EeWMCcMdatPOjA" name="CarePlanStatus">
+        <ownedLiteral xmi:id="_x_ZEAOX9EeWMCcMdatPOjA" name="proposed"/>
+        <ownedLiteral xmi:id="_z2DqsOX9EeWMCcMdatPOjA" name="draft"/>
+        <ownedLiteral xmi:id="_01a18OX9EeWMCcMdatPOjA" name="active"/>
+        <ownedLiteral xmi:id="_3IK7sOX9EeWMCcMdatPOjA" name="completed"/>
+        <ownedLiteral xmi:id="_3z1H0OX9EeWMCcMdatPOjA" name="cancelled"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_qRfHsOX-EeWMCcMdatPOjA" name="CarePlanActivity"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_f44qQOYAEeWMCcMdatPOjA" name="HealthGoalStatus"/>
     </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -5595,4 +5627,30 @@ The following is an example coded concept:</body>
   <term:CodeSystemVersion xmi:id="_WwluQaRMEeGZ6ueex_Me0w" identifier="2.16.840.1.113883.6.96" version="20100731" source="SCT" base_Enumeration="_WwluQKRMEeGZ6ueex_Me0w"/>
   <term:ValueSetVersion xmi:id="_X8KJgaRMEeGZ6ueex_Me0w" identifier="2.16.840.1.114222.4.11.838" version="1" fullName="Units of Measure" definition="Units of Measure based on UCUM std which also includes dimension" revisionDate="10/22/2008" codeSystem="_X8VIoKRMEeGZ6ueex_Me0w" base_Enumeration="_X8KJgKRMEeGZ6ueex_Me0w"/>
   <term:CodeSystemVersion xmi:id="_X8VIoKRMEeGZ6ueex_Me0w" identifier="2.16.840.1.113883.6.8" version="1.7" source="UCUM" base_Enumeration="_X8UhkKRMEeGZ6ueex_Me0w"/>
+  <term:ValueSetVersion xmi:id="_Ksrr8OU0EeWlUtxA-8RVeQ" identifier="2.16.840.1.113883.3.2074.1.1.69" fullName="Care Plan Kind" url="TBD" definition="Kinds of plan, including plans for diseases, specialties, and settings.  Note that this is a &quot;grouping value set&quot; as the values can come from SNOMED or NUCC Provider Taxonomy.  In the future, we may wish to add concepts for settings (such as home, inpatient, etc.)." binding="Dynamic" base_Enumeration="_KsnagOU0EeWlUtxA-8RVeQ"/>
+  <term:ValueSetVersion xmi:id="_9TFl4OU5EeWlUtxA-8RVeQ" base_Enumeration="_9TE-0OU5EeWlUtxA-8RVeQ"/>
+  <term:ValueSetCode xmi:id="_EfPqkOU6EeWlUtxA-8RVeQ" base_EnumerationLiteral="_EfPDgOU6EeWlUtxA-8RVeQ"/>
+  <term:ValueSetCode xmi:id="_U1qfYeU6EeWlUtxA-8RVeQ" base_EnumerationLiteral="_U1qfYOU6EeWlUtxA-8RVeQ"/>
+  <term:ValueSetCode xmi:id="_YvsE8OU6EeWlUtxA-8RVeQ" base_EnumerationLiteral="_Yvrd4OU6EeWlUtxA-8RVeQ"/>
+  <term:ValueSetVersion xmi:id="_L-mioeU7EeWlUtxA-8RVeQ" identifier="2.16.840.1.113883.4.642.2.262" fullName="Risk Probability" url="http://hl7.org/fhir/ValueSet/risk-probability" base_Enumeration="_L-mioOU7EeWlUtxA-8RVeQ"/>
+  <term:ValueSetCode xmi:id="_cJSokOU7EeWlUtxA-8RVeQ" conceptName="Negligible likelihood" usageNote="The specified outcome is exceptionally unlikely." base_EnumerationLiteral="_cJSBgOU7EeWlUtxA-8RVeQ"/>
+  <term:ValueSetCode xmi:id="_tRm0YeU7EeWlUtxA-8RVeQ" conceptName="Low likelihood" usageNote="The specified outcome is possible but unlikely." base_EnumerationLiteral="_tRm0YOU7EeWlUtxA-8RVeQ"/>
+  <term:ValueSetCode xmi:id="_8rFDUOU8EeWlUtxA-8RVeQ" conceptName="Moderate likelihood" usageNote="The specified outcome has a reasonable likelihood of occurrence." base_EnumerationLiteral="_8rEcQOU8EeWlUtxA-8RVeQ"/>
+  <term:ValueSetCode xmi:id="_Is3aMOU9EeWlUtxA-8RVeQ" conceptName="High likelihood" usageNote="The specified outcome is more likely to occur than not." base_EnumerationLiteral="_Is2zIOU9EeWlUtxA-8RVeQ"/>
+  <term:ValueSetCode xmi:id="_RBneoOU9EeWlUtxA-8RVeQ" conceptName="Certain" usageNote="The specified outcome is effectively guaranteed." base_EnumerationLiteral="_RBm3kOU9EeWlUtxA-8RVeQ"/>
+  <term:ValueSetVersion xmi:id="_UErZMOX8EeWMCcMdatPOjA" fullName="care-plan-activity-status" url="http://hl7.org/fhir/care-plan-activity-status" base_Enumeration="_UEl5oOX8EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_3CIakOX8EeWMCcMdatPOjA" base_EnumerationLiteral="_3CHzgOX8EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_4SE_gOX8EeWMCcMdatPOjA" base_EnumerationLiteral="_4SEYcOX8EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_GkhKYOX9EeWMCcMdatPOjA" base_EnumerationLiteral="_GkgjUOX9EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_INBZQOX9EeWMCcMdatPOjA" base_EnumerationLiteral="_INAyMOX9EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_Iuo4keX9EeWMCcMdatPOjA" base_EnumerationLiteral="_Iuo4kOX9EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_JcKs8eX9EeWMCcMdatPOjA" base_EnumerationLiteral="_JcKs8OX9EeWMCcMdatPOjA"/>
+  <term:ValueSetVersion xmi:id="_inXKEOX9EeWMCcMdatPOjA" identifier="2.16.840.1.113883.4.642.2.60" fullName="CarePlanStatus" url="http://hl7-fhir.github.io/valueset-care-plan-status.html" base_Enumeration="_inWjAOX9EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_x_ZrEOX9EeWMCcMdatPOjA" base_EnumerationLiteral="_x_ZEAOX9EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_z2DqseX9EeWMCcMdatPOjA" base_EnumerationLiteral="_z2DqsOX9EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_01a18eX9EeWMCcMdatPOjA" base_EnumerationLiteral="_01a18OX9EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_3IK7seX9EeWMCcMdatPOjA" base_EnumerationLiteral="_3IK7sOX9EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_3z1u4OX9EeWMCcMdatPOjA" base_EnumerationLiteral="_3z1H0OX9EeWMCcMdatPOjA"/>
+  <term:ValueSetVersion xmi:id="_qRfuwOX-EeWMCcMdatPOjA" identifier="2.16.840.1.113883.4.642.2.64" url="http://hl7.org/fhir/ValueSet/care-plan-activity" definition="Note: This should be replaced by &quot;Procedure&quot; as all the elements are from the SNOMED CT Procedure hierarchy" base_Enumeration="_qRfHsOX-EeWMCcMdatPOjA"/>
+  <term:ValueSetVersion xmi:id="_f45RUOYAEeWMCcMdatPOjA" definition="Need to define.  Grouping value-set of FHIR plus the 3 SCT values for improving, stabilizing, and deteriorating." base_Enumeration="_f44qQOYAEeWMCcMdatPOjA"/>
 </xmi:XMI>
