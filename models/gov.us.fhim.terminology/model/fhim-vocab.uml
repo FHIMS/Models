@@ -2985,7 +2985,39 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_3z1H0OX9EeWMCcMdatPOjA" name="cancelled"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_qRfHsOX-EeWMCcMdatPOjA" name="CarePlanActivity"/>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_f44qQOYAEeWMCcMdatPOjA" name="HealthGoalStatus"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_f44qQOYAEeWMCcMdatPOjA" name="HealthGoalStatus">
+        <ownedLiteral xmi:id="_k8SMEOt5EeW_d52hJF-Rwg" name="proposed"/>
+        <ownedLiteral xmi:id="_ntYasOt5EeW_d52hJF-Rwg" name="complete"/>
+        <ownedLiteral xmi:id="_5m_gkOt5EeW_d52hJF-Rwg" name="planned"/>
+        <ownedLiteral xmi:id="_627ecOt5EeW_d52hJF-Rwg" name="accepted"/>
+        <ownedLiteral xmi:id="_7l1L0Ot5EeW_d52hJF-Rwg" name="rejected"/>
+        <ownedLiteral xmi:id="_8h2vMOt5EeW_d52hJF-Rwg" name="in-progress"/>
+        <ownedLiteral xmi:id="_-tzCUOt5EeW_d52hJF-Rwg" name="on-hold"/>
+        <ownedLiteral xmi:id="__rBfkOt5EeW_d52hJF-Rwg" name="cancelled"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_U1dgMOt-EeW_d52hJF-Rwg" name="GoalAchievementState">
+        <ownedLiteral xmi:id="_Z6-ogOt-EeW_d52hJF-Rwg" name="in-progress"/>
+        <ownedLiteral xmi:id="_e2v-8Ot-EeW_d52hJF-Rwg" name="sustaining"/>
+        <ownedLiteral xmi:id="_gqAsUOt-EeW_d52hJF-Rwg" name="improving"/>
+        <ownedLiteral xmi:id="_hsbyoOt-EeW_d52hJF-Rwg" name="stable"/>
+        <ownedLiteral xmi:id="_i1HR8Ot-EeW_d52hJF-Rwg" name="deteriorating"/>
+        <ownedLiteral xmi:id="_j7tGkOt-EeW_d52hJF-Rwg" name="achieved"/>
+        <ownedLiteral xmi:id="_kqUgEOt-EeW_d52hJF-Rwg" name="optimal"/>
+        <ownedLiteral xmi:id="_leaPcOt-EeW_d52hJF-Rwg" name="abandoned"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_0OWpQOx8EeW5tJ4V3DOBLA" name="CareTeamMemberRole">
+        <ownedLiteral xmi:id="_3BIS4Ox8EeW5tJ4V3DOBLA" name="careGiver"/>
+        <ownedLiteral xmi:id="_575a4Ox8EeW5tJ4V3DOBLA" name="patient"/>
+        <ownedLiteral xmi:id="_81jIkOx8EeW5tJ4V3DOBLA" name="stakeholder"/>
+        <ownedLiteral xmi:id="_C0HYwOx9EeW5tJ4V3DOBLA" name="supportingMember"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_HIracO0bEeWjUp19yClo5Q" name="GoalCategory">
+        <ownedLiteral xmi:id="_erwqQO0bEeWjUp19yClo5Q" name="behavioral"/>
+        <ownedLiteral xmi:id="_Vbpw0O0bEeWjUp19yClo5Q" name="dietary"/>
+        <ownedLiteral xmi:id="_hJYjQO0bEeWjUp19yClo5Q" name="nursing"/>
+        <ownedLiteral xmi:id="_inb1oO0bEeWjUp19yClo5Q" name="physiotherapy"/>
+        <ownedLiteral xmi:id="_c0b8QO0bEeWjUp19yClo5Q" name="safety"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -5653,4 +5685,32 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_3z1u4OX9EeWMCcMdatPOjA" base_EnumerationLiteral="_3z1H0OX9EeWMCcMdatPOjA"/>
   <term:ValueSetVersion xmi:id="_qRfuwOX-EeWMCcMdatPOjA" identifier="2.16.840.1.113883.4.642.2.64" url="http://hl7.org/fhir/ValueSet/care-plan-activity" definition="Note: This should be replaced by &quot;Procedure&quot; as all the elements are from the SNOMED CT Procedure hierarchy" base_Enumeration="_qRfHsOX-EeWMCcMdatPOjA"/>
   <term:ValueSetVersion xmi:id="_f45RUOYAEeWMCcMdatPOjA" definition="Need to define.  Grouping value-set of FHIR plus the 3 SCT values for improving, stabilizing, and deteriorating." base_Enumeration="_f44qQOYAEeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_k8YSsOt5EeW_d52hJF-Rwg" base_EnumerationLiteral="_k8SMEOt5EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_ntZBwOt5EeW_d52hJF-Rwg" base_EnumerationLiteral="_ntYasOt5EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_5nAHoOt5EeW_d52hJF-Rwg" base_EnumerationLiteral="_5m_gkOt5EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_628FgOt5EeW_d52hJF-Rwg" base_EnumerationLiteral="_627ecOt5EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_7l1L0et5EeW_d52hJF-Rwg" base_EnumerationLiteral="_7l1L0Ot5EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_8h3WQOt5EeW_d52hJF-Rwg" base_EnumerationLiteral="_8h2vMOt5EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_-tzpYOt5EeW_d52hJF-Rwg" base_EnumerationLiteral="_-tzCUOt5EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="__rBfket5EeW_d52hJF-Rwg" base_EnumerationLiteral="__rBfkOt5EeW_d52hJF-Rwg"/>
+  <term:ValueSetVersion xmi:id="_U1dgMet-EeW_d52hJF-Rwg" base_Enumeration="_U1dgMOt-EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_Z6-oget-EeW_d52hJF-Rwg" base_EnumerationLiteral="_Z6-ogOt-EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_e2wmAOt-EeW_d52hJF-Rwg" base_EnumerationLiteral="_e2v-8Ot-EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_gqAsUet-EeW_d52hJF-Rwg" base_EnumerationLiteral="_gqAsUOt-EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_hsbyoet-EeW_d52hJF-Rwg" base_EnumerationLiteral="_hsbyoOt-EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_i1HR8et-EeW_d52hJF-Rwg" base_EnumerationLiteral="_i1HR8Ot-EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_j7ttoOt-EeW_d52hJF-Rwg" base_EnumerationLiteral="_j7tGkOt-EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_kqUgEet-EeW_d52hJF-Rwg" base_EnumerationLiteral="_kqUgEOt-EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_lebdkOt-EeW_d52hJF-Rwg" base_EnumerationLiteral="_leaPcOt-EeW_d52hJF-Rwg"/>
+  <term:ValueSetVersion xmi:id="_0OXQUOx8EeW5tJ4V3DOBLA" base_Enumeration="_0OWpQOx8EeW5tJ4V3DOBLA"/>
+  <term:ValueSetCode xmi:id="_3BI58Ox8EeW5tJ4V3DOBLA" base_EnumerationLiteral="_3BIS4Ox8EeW5tJ4V3DOBLA"/>
+  <term:ValueSetCode xmi:id="_576pAOx8EeW5tJ4V3DOBLA" base_EnumerationLiteral="_575a4Ox8EeW5tJ4V3DOBLA"/>
+  <term:ValueSetCode xmi:id="_81jIkex8EeW5tJ4V3DOBLA" base_EnumerationLiteral="_81jIkOx8EeW5tJ4V3DOBLA"/>
+  <term:ValueSetCode xmi:id="_C0H_0Ox9EeW5tJ4V3DOBLA" base_EnumerationLiteral="_C0HYwOx9EeW5tJ4V3DOBLA"/>
+  <term:ValueSetVersion xmi:id="_HIsBgO0bEeWjUp19yClo5Q" identifier="2.16.840.1.113883.4.642.2.411" url="http://hl7.org/fhir/ValueSet/goal-category" base_Enumeration="_HIracO0bEeWjUp19yClo5Q"/>
+  <term:ValueSetCode xmi:id="_VbqX4O0bEeWjUp19yClo5Q" base_EnumerationLiteral="_Vbpw0O0bEeWjUp19yClo5Q"/>
+  <term:ValueSetCode xmi:id="_c0cjUO0bEeWjUp19yClo5Q" base_EnumerationLiteral="_c0b8QO0bEeWjUp19yClo5Q"/>
+  <term:ValueSetCode xmi:id="_erxRUO0bEeWjUp19yClo5Q" base_EnumerationLiteral="_erwqQO0bEeWjUp19yClo5Q"/>
+  <term:ValueSetCode xmi:id="_hJZKUO0bEeWjUp19yClo5Q" base_EnumerationLiteral="_hJYjQO0bEeWjUp19yClo5Q"/>
+  <term:ValueSetCode xmi:id="_inccsO0bEeWjUp19yClo5Q" base_EnumerationLiteral="_inb1oO0bEeWjUp19yClo5Q"/>
 </xmi:XMI>
