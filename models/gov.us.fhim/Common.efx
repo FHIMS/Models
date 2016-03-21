@@ -1890,16 +1890,24 @@ Represents &quot;the section of the diagnostic service where the observation was
           <body>&quot;The role on the care team. Includes non-physician providers such as physical therapist, LCSW, nutritionist, who might be part of care team.&quot; - ONC S&amp;I Clinical Element Data Dictionary (CEDD), March 2012.  Note that this property is used distinguish between the roles a person might be playing, rather than the degree or specialty that they have.  So, despite the implication in the CEDD defintion above, this property might contain Primary Care Physician or Designated Provider, but specialty information like LCSW or Physical Therapist would be in the provider's specialty instance.&#xD;
 &quot;Indicates specific responsibility of an individual within the care plan. E.g. &quot;Primary physician&quot;, &quot;Team coordinator&quot;, &quot;Caregiver&quot;, etc.&quot; - HL7 FHIR, CarePlan.participant.role.</body>
         </ownedComment>
-        <type xmi:type="uml:Enumeration" href="CarePlan.efx#_nBL7INS7EeSyzs7OQneM_g?FHIM/CarePlan/CareTeamMemberRole?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xyj9MH7hEeOYQJZKXKAJnw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XyjWIH7hEeOYQJZKXKAJnw"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_Lq-PAO0dEeWjUp19yClo5Q">
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <language></language>
+          <body>(CareTeamMemberRole)</body>
+        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8a-YoNS6EeSyzs7OQneM_g" name="healthcareProvider" visibility="private" association="_8a9KgNS6EeSyzs7OQneM_g">
         <type xmi:type="uml:Class" href="Provider.efx#_aW26cBsbEd--ZY2-pbJ-Pw?FHIM/Provider/HealthcareProvider?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8a-_sdS6EeSyzs7OQneM_g" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8a-_sNS6EeSyzs7OQneM_g"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_J-M3oNS8EeSyzs7OQneM_g" name="entity" visibility="private" association="_J-MQkNS8EeSyzs7OQneM_g">
+      <ownedAttribute xmi:id="_J-M3oNS8EeSyzs7OQneM_g" name="entity" visibility="public" association="_J-MQkNS8EeSyzs7OQneM_g">
+        <ownedComment xmi:id="_oqIo4O7REeWGc6zSCrskfQ" annotatedElement="_J-M3oNS8EeSyzs7OQneM_g">
+          <body>Identifies the Person or Organization who is Participating as a Care Team Member. This property is a pointer to an Entity rather than a Provider because the Care Team Member might be the Patient him/herself or a member of the Patient’s family, whereas elsewhere in the FHIM, most Participation classes assume the Participating Entity is a Provider.</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Person.efx#_MF0JYOEVEd6EKMSYA1gKjA?FHIM/Person/Entity(Abstract)?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J-NesdS8EeSyzs7OQneM_g" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J-NesNS8EeSyzs7OQneM_g" value="1"/>
@@ -5775,9 +5783,9 @@ For Observations, this is a pointer to any device(s) that generated the Clinical
       <ownedEnd xmi:id="_8a_mwNS6EeSyzs7OQneM_g" name="" visibility="private" type="_GY1OsAY1EeGz0dkadElrkQ" association="_8a9KgNS6EeSyzs7OQneM_g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_ukzdkNS7EeSyzs7OQneM_g" client="_GY1OsAY1EeGz0dkadElrkQ">
-      <supplier xmi:type="uml:Enumeration" href="CarePlan.efx#_nBL7INS7EeSyzs7OQneM_g?FHIM/CarePlan/CareTeamMemberRole?"/>
+      <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_0OWpQOx8EeW5tJ4V3DOBLA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_J-MQkNS8EeSyzs7OQneM_g" memberEnd="_J-M3oNS8EeSyzs7OQneM_g _J-Os0NS8EeSyzs7OQneM_g">
+    <packagedElement xmi:type="uml:Association" xmi:id="_J-MQkNS8EeSyzs7OQneM_g" name="careTeamMember_entity" memberEnd="_J-M3oNS8EeSyzs7OQneM_g _J-Os0NS8EeSyzs7OQneM_g">
       <ownedEnd xmi:id="_J-Os0NS8EeSyzs7OQneM_g" name="" visibility="private" type="_GY1OsAY1EeGz0dkadElrkQ" association="_J-MQkNS8EeSyzs7OQneM_g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_0QKFgNfqEeSxkr3j6jZ3ag" name="ResearchProvenance">
@@ -6259,4 +6267,5 @@ For Observations, this is a pointer to any device(s) that generated the Clinical
     <index xmi:id="_ftcH4boREeWqFd182BzgAw" standardOrProject="HL7CDA" value="&quot;Act.code:  &quot;&quot;29308-4&quot;&quot; Diagnosis &quot;"/>
     <index xmi:id="_ftcH4roREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="None"/>
   </FHIM:Mapping>
+  <Default:Documentation xmi:id="_oqRy0O7REeWGc6zSCrskfQ" base_Comment="_oqIo4O7REeWGc6zSCrskfQ"/>
 </xmi:XMI>
