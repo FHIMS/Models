@@ -1337,6 +1337,11 @@ These are documented in CDC local codes table, CDCPHINVS (Value set OID 2.16.840
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_WwluQKRMEeGZ6ueex_Me0w" name="SNOMED-CT"/>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_X8KJgKRMEeGZ6ueex_Me0w" name="Unified Code for Units of Measure Value Set"/>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_X8UhkKRMEeGZ6ueex_Me0w" name="Unified Code for Units of Measure"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_uXEAcPCHEeWoT_0zIvvImQ" name="BodySiteLaterality">
+        <ownedLiteral xmi:id="_-LHvEPCHEeWoT_0zIvvImQ" name="419161000 (Unilateral left)"/>
+        <ownedLiteral xmi:id="_EhA6IPCIEeWoT_0zIvvImQ" name="419465000 (Unilateral right)"/>
+        <ownedLiteral xmi:id="_Ir_s0PCIEeWoT_0zIvvImQ" name="51440002 (Bilateral)"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_ilRJYPaiEeGpCd694FcdqQ" name="CommonProductVocab">
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_XViOYKRMEeGZ6ueex_Me0w" name="NDC-FDA Drug Registration and Listing System"/>
@@ -2962,7 +2967,7 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_KqgscOdyEeSKGaa1qzZLJg" name="confirmed"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_ClzrcOU0EeWlUtxA-8RVeQ" name="CarePlan">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ClzrcOU0EeWlUtxA-8RVeQ" name="CarePlanVocab">
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_KsnagOU0EeWlUtxA-8RVeQ" name="CarePlanKind"/>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_9TE-0OU5EeWlUtxA-8RVeQ" name="InterventionPlanningStatus">
         <ownedLiteral xmi:id="_U1qfYOU6EeWlUtxA-8RVeQ" name="accepted"/>
@@ -3018,6 +3023,85 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_inb1oO0bEeWjUp19yClo5Q" name="physiotherapy"/>
         <ownedLiteral xmi:id="_c0b8QO0bEeWjUp19yClo5Q" name="safety"/>
       </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_oBYGMPCGEeWoT_0zIvvImQ" name="ImagingVocab">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_v5NlIPCGEeWoT_0zIvvImQ" name="AcquisitionModalityCode">
+        <ownedLiteral xmi:id="_Xkk4YPCNEeWoT_0zIvvImQ" name="AR (Autorefraction)"/>
+        <ownedLiteral xmi:id="_nrGakPCOEeWoT_0zIvvImQ" name="BMD (Bone Mineral Densitometry)"/>
+        <ownedLiteral xmi:id="_p6qCYPCOEeWoT_0zIvvImQ" name="BDUS (Ultrasound Bone Densitometry)"/>
+        <ownedLiteral xmi:id="_tpRpMPCOEeWoT_0zIvvImQ" name="EPS (Cardiac Electrophysiology)"/>
+        <ownedLiteral xmi:id="_vqmnwPCOEeWoT_0zIvvImQ" name="CR (Computed Radiography)"/>
+        <ownedLiteral xmi:id="_xuDtQPCOEeWoT_0zIvvImQ" name="CT (Computed Tomography)"/>
+        <ownedLiteral xmi:id="_076JUPCOEeWoT_0zIvvImQ" name="DX (Digital Radiography)"/>
+        <ownedLiteral xmi:id="_19VxIPCOEeWoT_0zIvvImQ" name="ECG (Electrocardiography)"/>
+        <ownedLiteral xmi:id="_4WO7IPCOEeWoT_0zIvvImQ" name="ES (Endoscopy)"/>
+        <ownedLiteral xmi:id="_659cIPCOEeWoT_0zIvvImQ" name="XC (External-camera Photography)"/>
+        <ownedLiteral xmi:id="_70g_4PCOEeWoT_0zIvvImQ" name="GM (General Microscopy)"/>
+        <ownedLiteral xmi:id="_98icUPCOEeWoT_0zIvvImQ" name="HD (Hemodynamic Waveform)"/>
+        <ownedLiteral xmi:id="_AviIYPCPEeWoT_0zIvvImQ" name="IO (Intra-oral Radiography)"/>
+        <ownedLiteral xmi:id="_CmtscPCPEeWoT_0zIvvImQ" name="IVOCT (Intravascular Optical Coherence Tomography)"/>
+        <ownedLiteral xmi:id="_E-p0MPCPEeWoT_0zIvvImQ" name="IVUS (Intravascular Ultrasound)"/>
+        <ownedLiteral xmi:id="_HoinkPCPEeWoT_0zIvvImQ" name="KER (Keratometry)"/>
+        <ownedLiteral xmi:id="_JWVmIPCPEeWoT_0zIvvImQ" name="LEN (Lensometry)"/>
+        <ownedLiteral xmi:id="_K7XqQPCPEeWoT_0zIvvImQ" name="MR (Magnetic Resonance)"/>
+        <ownedLiteral xmi:id="_Mv14kPCPEeWoT_0zIvvImQ" name="MG (Mammography)"/>
+        <ownedLiteral xmi:id="_PHfFYPCPEeWoT_0zIvvImQ" name="NM (Nuclear Medicine)"/>
+        <ownedLiteral xmi:id="_QDRYMPCPEeWoT_0zIvvImQ" name="OAM (Ophthalmic Axial Measurements)"/>
+        <ownedLiteral xmi:id="_SAM-8PCPEeWoT_0zIvvImQ" name="OCT (Optical Coherence Tomography)"/>
+        <ownedLiteral xmi:id="_T00XMPCPEeWoT_0zIvvImQ" name="OPM (Ophthalmic Mapping)"/>
+        <ownedLiteral xmi:id="_VeS2cPCPEeWoT_0zIvvImQ" name="OP (Ophthalmic Photography)"/>
+        <ownedLiteral xmi:id="_XGZcsPCPEeWoT_0zIvvImQ" name="OPR (Ophthalmic Refraction)"/>
+        <ownedLiteral xmi:id="_Y4MKcPCPEeWoT_0zIvvImQ" name="OPT (Ophthalmic Tomography)"/>
+        <ownedLiteral xmi:id="_a6D7kPCPEeWoT_0zIvvImQ" name="OPV (Ophthalmic Visual Field)"/>
+        <ownedLiteral xmi:id="_chrZoPCPEeWoT_0zIvvImQ" name="OSS (Optical Surface Scanner)"/>
+        <ownedLiteral xmi:id="_ehc5APCPEeWoT_0zIvvImQ" name="PX (Panoramic X-Ray)"/>
+        <ownedLiteral xmi:id="_gFsS8PCPEeWoT_0zIvvImQ" name="PT (Positron emission tomography)"/>
+        <ownedLiteral xmi:id="_iuBAEPCPEeWoT_0zIvvImQ" name="RF (Radiofluoroscopy)"/>
+        <ownedLiteral xmi:id="_jrOPMPCPEeWoT_0zIvvImQ" name="RG (Radiographic imaging)"/>
+        <ownedLiteral xmi:id="_lV198PCPEeWoT_0zIvvImQ" name="SM (Slide Microscopy)"/>
+        <ownedLiteral xmi:id="_m581APCPEeWoT_0zIvvImQ" name="SRF (Subjective Refraction)"/>
+        <ownedLiteral xmi:id="_ok1CcPCPEeWoT_0zIvvImQ" name="US (Ultrasound)"/>
+        <ownedLiteral xmi:id="_rMNUYPCPEeWoT_0zIvvImQ" name="VA (Visual Acuity)"/>
+        <ownedLiteral xmi:id="_sLXrUPCPEeWoT_0zIvvImQ" name="XA (X-Ray Angiography)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_hsPeMPCIEeWoT_0zIvvImQ" name="KOSTitle">
+        <ownedLiteral xmi:id="_gvqZ0PCLEeWoT_0zIvvImQ" name="113000 (Of Interest)"/>
+        <ownedLiteral xmi:id="_kWBcgPCLEeWoT_0zIvvImQ" name="113001 (Rejected for Quality Reasons)"/>
+        <ownedLiteral xmi:id="_q9KvoPCLEeWoT_0zIvvImQ" name="113002 (For Referring Provider)"/>
+        <ownedLiteral xmi:id="_t79cAPCLEeWoT_0zIvvImQ" name="113003 (For Surgery)"/>
+        <ownedLiteral xmi:id="_xU0OMPCLEeWoT_0zIvvImQ" name="113004 (For Teaching)"/>
+        <ownedLiteral xmi:id="_ywGgcPCLEeWoT_0zIvvImQ" name="113005 (For Conference)"/>
+        <ownedLiteral xmi:id="_2VkyUPCLEeWoT_0zIvvImQ" name="113006 (For Therapy)"/>
+        <ownedLiteral xmi:id="_47pcsPCLEeWoT_0zIvvImQ" name="113007 (For Patient)"/>
+        <ownedLiteral xmi:id="_9XpG4PCLEeWoT_0zIvvImQ" name="113008 (For Peer Review)"/>
+        <ownedLiteral xmi:id="_AGiWEPCMEeWoT_0zIvvImQ" name="113009 (For Research)"/>
+        <ownedLiteral xmi:id="_CqYL0PCMEeWoT_0zIvvImQ" name="113010 (Quality Issue)"/>
+        <ownedLiteral xmi:id="_Fqa1YPCMEeWoT_0zIvvImQ" name="113013 (Best In Set)"/>
+        <ownedLiteral xmi:id="_Jv3AwPCMEeWoT_0zIvvImQ" name="113018 (For Printing)"/>
+        <ownedLiteral xmi:id="_R51_oPCMEeWoT_0zIvvImQ" name="113020 (For Report Attachment)"/>
+        <ownedLiteral xmi:id="_UOwokPCMEeWoT_0zIvvImQ" name="113021 (For Litigation)"/>
+        <ownedLiteral xmi:id="_YIRQwPCMEeWoT_0zIvvImQ" name="113030 (Manifest)"/>
+        <ownedLiteral xmi:id="_bMdagPCMEeWoT_0zIvvImQ" name="113031 (Signed Manifest)"/>
+        <ownedLiteral xmi:id="_ctoSUPCMEeWoT_0zIvvImQ" name="113032 (Complete Study Content)"/>
+        <ownedLiteral xmi:id="_ft3JIPCMEeWoT_0zIvvImQ" name="113033 (Signed Complete Study Content)"/>
+        <ownedLiteral xmi:id="_iOYlIPCMEeWoT_0zIvvImQ" name="113034 (Complete Acquisition Content)"/>
+        <ownedLiteral xmi:id="_lnG0cPCMEeWoT_0zIvvImQ" name="113035 (Signed Complete Acquisition Content)"/>
+        <ownedLiteral xmi:id="_oynHIPCMEeWoT_0zIvvImQ" name="113036 (Group of Frames for Display)"/>
+        <ownedLiteral xmi:id="_rvnDwPCMEeWoT_0zIvvImQ" name="113037 (Rejected for Patient Safety Reasons)"/>
+        <ownedLiteral xmi:id="_tZGxIPCMEeWoT_0zIvvImQ" name="113038 (Incorrect Modality Worklist Entry)"/>
+        <ownedLiteral xmi:id="_w8xsMPCMEeWoT_0zIvvImQ" name="113039 (Data Retention Policy Expired)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_8CxtEPCIEeWoT_0zIvvImQ" name="ImageReportStatus">
+        <ownedLiteral xmi:id="_Km6r8PCJEeWoT_0zIvvImQ" name="P (Preliminary results)"/>
+        <ownedLiteral xmi:id="_OlqZcPCJEeWoT_0zIvvImQ" name="F (Final)"/>
+        <ownedLiteral xmi:id="_QydBIPCJEeWoT_0zIvvImQ" name="C (Corrected)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_ebJrcPCJEeWoT_0zIvvImQ" name="ImageEventStatus">
+        <ownedLiteral xmi:id="_rWpRgPCJEeWoT_0zIvvImQ" name="R (Results stored not yet verified)"/>
+        <ownedLiteral xmi:id="_u1mEoPCJEeWoT_0zIvvImQ" name="F (Final results verified)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_aZ4Y8PCKEeWoT_0zIvvImQ" name="ImageOrderKind"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="__d9voPCKEeWoT_0zIvvImQ" name="ImagingBodySite"/>
     </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -5713,4 +5797,81 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_erxRUO0bEeWjUp19yClo5Q" base_EnumerationLiteral="_erwqQO0bEeWjUp19yClo5Q"/>
   <term:ValueSetCode xmi:id="_hJZKUO0bEeWjUp19yClo5Q" base_EnumerationLiteral="_hJYjQO0bEeWjUp19yClo5Q"/>
   <term:ValueSetCode xmi:id="_inccsO0bEeWjUp19yClo5Q" base_EnumerationLiteral="_inb1oO0bEeWjUp19yClo5Q"/>
+  <term:ValueSetVersion xmi:id="_v5NlIfCGEeWoT_0zIvvImQ" identifier="2.16.840.1.113883.4.642.2.158" url="http://hl7.org/fhir/ValueSet/dicom-cid29" definition="This Value Set includes codes that may be used to identify an image or waveform acquisition modality, as used in the ImagingStudy resource, Dicom Attribute Modality (0008,0060) or HL7 v2 Table 0259 (see HL7 v2.6 Chapter 8 Section 8.8.8.47). It generally corresponds to a class of diagnostic equipment, or to a specific acquisition function or technique in a device." base_Enumeration="_v5NlIPCGEeWoT_0zIvvImQ"/>
+  <term:ValueSetVersion xmi:id="_uXEAcfCHEeWoT_0zIvvImQ" identifier="2.16.840.1.113883.4.642.2.442" fullName="Laterality" url="http://hl7.org/fhir/valueset-bodysite-laterality.html" definition="Laterality: SNOMED-CT concepts for 'left', 'right', and 'bilateral'" codeSystem="_WwluQaRMEeGZ6ueex_Me0w" base_Enumeration="_uXEAcPCHEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_-LHvEfCHEeWoT_0zIvvImQ" conceptName="Unilateral left" base_EnumerationLiteral="_-LHvEPCHEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_EhA6IfCIEeWoT_0zIvvImQ" conceptName="Unilateral right" base_EnumerationLiteral="_EhA6IPCIEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_Ir_s0fCIEeWoT_0zIvvImQ" conceptName="Bilateral" base_EnumerationLiteral="_Ir_s0PCIEeWoT_0zIvvImQ"/>
+  <term:ValueSetVersion xmi:id="_hsPeMfCIEeWoT_0zIvvImQ" identifier="2.16.840.1.113883.4.642.2.159" fullName="KOStitle" url="http://hl7.org/fhir/valueset-kos-title.html" definition="The document title code of key object selection" base_Enumeration="_hsPeMPCIEeWoT_0zIvvImQ"/>
+  <term:ValueSetVersion xmi:id="_8CxtEfCIEeWoT_0zIvvImQ" identifier="tbd" url="tbd" definition="Status of an image interpretation report. Values adapted from HL7 V2 table 85" base_Enumeration="_8CxtEPCIEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_Km6r8fCJEeWoT_0zIvvImQ" conceptName="Preliminary results" base_EnumerationLiteral="_Km6r8PCJEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_Ol0KcPCJEeWoT_0zIvvImQ" conceptName="Final" base_EnumerationLiteral="_OlqZcPCJEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_QydBIfCJEeWoT_0zIvvImQ" conceptName="Corrected" base_EnumerationLiteral="_QydBIPCJEeWoT_0zIvvImQ"/>
+  <term:ValueSetVersion xmi:id="_ebJrcfCJEeWoT_0zIvvImQ" identifier="tbd" url="tbd" definition="Status of an image study procedure. Values adapted from HL7 V2 table 123" base_Enumeration="_ebJrcPCJEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_rWpRgfCJEeWoT_0zIvvImQ" conceptName="Results stored not yet verified" base_EnumerationLiteral="_rWpRgPCJEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_u1mEofCJEeWoT_0zIvvImQ" conceptName="Final results verified" base_EnumerationLiteral="_u1mEoPCJEeWoT_0zIvvImQ"/>
+  <term:ValueSetVersion xmi:id="_aZ4Y8fCKEeWoT_0zIvvImQ" identifier="tbd" url="tbd" definition="The image procedure ordered or fulfilled" codeSystem="_W2h-MKRMEeGZ6ueex_Me0w" base_Enumeration="_aZ4Y8PCKEeWoT_0zIvvImQ"/>
+  <term:ValueSetVersion xmi:id="__d9vofCKEeWoT_0zIvvImQ" identifier="tbd" url="tbd" definition="Subset of Body Sites commonly used for imaging studies. From DICOM pending DICOM/SNOMED CT integration" codeSystem="_WwluQaRMEeGZ6ueex_Me0w" base_Enumeration="__d9voPCKEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_gvqZ0fCLEeWoT_0zIvvImQ" conceptName="Of Interest" base_EnumerationLiteral="_gvqZ0PCLEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_kWCDkPCLEeWoT_0zIvvImQ" conceptName="Rejected for Quality Reasons" base_EnumerationLiteral="_kWBcgPCLEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_q9KvofCLEeWoT_0zIvvImQ" conceptName="For Referring Provider" base_EnumerationLiteral="_q9KvoPCLEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_t79cAfCLEeWoT_0zIvvImQ" conceptName="For Surgery" base_EnumerationLiteral="_t79cAPCLEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_xU0OMfCLEeWoT_0zIvvImQ" conceptName="For Teaching" base_EnumerationLiteral="_xU0OMPCLEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_ywGgcfCLEeWoT_0zIvvImQ" conceptName="For Conference" base_EnumerationLiteral="_ywGgcPCLEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_2VkyUfCLEeWoT_0zIvvImQ" conceptName="For Therapy" base_EnumerationLiteral="_2VkyUPCLEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_47pcsfCLEeWoT_0zIvvImQ" conceptName="For Patient" base_EnumerationLiteral="_47pcsPCLEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_9XpG4fCLEeWoT_0zIvvImQ" conceptName="For Peer Review" base_EnumerationLiteral="_9XpG4PCLEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_AGiWEfCMEeWoT_0zIvvImQ" conceptName="For Research" base_EnumerationLiteral="_AGiWEPCMEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_CqYL0fCMEeWoT_0zIvvImQ" conceptName="Quality Issue" base_EnumerationLiteral="_CqYL0PCMEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_Fqa1YfCMEeWoT_0zIvvImQ" conceptName="Best In Set" base_EnumerationLiteral="_Fqa1YPCMEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_Jv3AwfCMEeWoT_0zIvvImQ" conceptName="For Printing" base_EnumerationLiteral="_Jv3AwPCMEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_R51_ofCMEeWoT_0zIvvImQ" conceptName="For Report Attachment" base_EnumerationLiteral="_R51_oPCMEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_UOwokfCMEeWoT_0zIvvImQ" conceptName="For Litigation" base_EnumerationLiteral="_UOwokPCMEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_YIRQwfCMEeWoT_0zIvvImQ" conceptName="Manifest" base_EnumerationLiteral="_YIRQwPCMEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_bMdagfCMEeWoT_0zIvvImQ" conceptName="Signed Manifest" base_EnumerationLiteral="_bMdagPCMEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_ctoSUfCMEeWoT_0zIvvImQ" conceptName="Complete Study Content" base_EnumerationLiteral="_ctoSUPCMEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_ft3JIfCMEeWoT_0zIvvImQ" conceptName="Signed Complete Study Content" base_EnumerationLiteral="_ft3JIPCMEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_iOYlIfCMEeWoT_0zIvvImQ" conceptName="Complete Acquisition Content" base_EnumerationLiteral="_iOYlIPCMEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_lnG0cfCMEeWoT_0zIvvImQ" conceptName="Signed Complete Acquisition Content" base_EnumerationLiteral="_lnG0cPCMEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_oynHIfCMEeWoT_0zIvvImQ" conceptName="Group of Frames for Display" base_EnumerationLiteral="_oynHIPCMEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_rvnq0PCMEeWoT_0zIvvImQ" conceptName="Rejected for Patient Safety Reasons" base_EnumerationLiteral="_rvnDwPCMEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_tZGxIfCMEeWoT_0zIvvImQ" conceptName="Incorrect Modality Worklist Entry" base_EnumerationLiteral="_tZGxIPCMEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_w862IPCMEeWoT_0zIvvImQ" conceptName="Data Retention Policy Expired" base_EnumerationLiteral="_w8xsMPCMEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_Xkk4YfCNEeWoT_0zIvvImQ" conceptName="Autorefraction" base_EnumerationLiteral="_Xkk4YPCNEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_nrGakfCOEeWoT_0zIvvImQ" conceptName="Bone Mineral Densitometry" base_EnumerationLiteral="_nrGakPCOEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_p6qCYfCOEeWoT_0zIvvImQ" conceptName="Ultrasound Bone Densitometry" base_EnumerationLiteral="_p6qCYPCOEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_tpRpMfCOEeWoT_0zIvvImQ" base_EnumerationLiteral="_tpRpMPCOEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_vqwYwPCOEeWoT_0zIvvImQ" conceptName="Computed Radiography" base_EnumerationLiteral="_vqmnwPCOEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_xuDtQfCOEeWoT_0zIvvImQ" conceptName="Computed Tomography" base_EnumerationLiteral="_xuDtQPCOEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_08D6UPCOEeWoT_0zIvvImQ" conceptName="Digital Radiography" base_EnumerationLiteral="_076JUPCOEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_19VxIfCOEeWoT_0zIvvImQ" conceptName="Electrocardiography" base_EnumerationLiteral="_19VxIPCOEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_4WO7IfCOEeWoT_0zIvvImQ" conceptName="Endoscopy" base_EnumerationLiteral="_4WO7IPCOEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_659cIfCOEeWoT_0zIvvImQ" conceptName="External-camera Photography" base_EnumerationLiteral="_659cIPCOEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_70g_4fCOEeWoT_0zIvvImQ" conceptName="General Microscopy" base_EnumerationLiteral="_70g_4PCOEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_98icUfCOEeWoT_0zIvvImQ" conceptName="Hemodynamic Waveform" base_EnumerationLiteral="_98icUPCOEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_AviIYfCPEeWoT_0zIvvImQ" conceptName="Intra-oral Radiography" base_EnumerationLiteral="_AviIYPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_CmtscfCPEeWoT_0zIvvImQ" conceptName="Intravascular Optical Coherence Tomography" base_EnumerationLiteral="_CmtscPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_E-p0MfCPEeWoT_0zIvvImQ" conceptName="Intravascular Ultrasound" base_EnumerationLiteral="_E-p0MPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_HoinkfCPEeWoT_0zIvvImQ" conceptName="Keratometry" base_EnumerationLiteral="_HoinkPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_JWVmIfCPEeWoT_0zIvvImQ" conceptName="Lensometry" base_EnumerationLiteral="_JWVmIPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_K7XqQfCPEeWoT_0zIvvImQ" conceptName="Magnetic Resonance" base_EnumerationLiteral="_K7XqQPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_Mv14kfCPEeWoT_0zIvvImQ" conceptName="Mammography" base_EnumerationLiteral="_Mv14kPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_PHfFYfCPEeWoT_0zIvvImQ" conceptName="Nuclear Medicine" base_EnumerationLiteral="_PHfFYPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_QDRYMfCPEeWoT_0zIvvImQ" conceptName="Ophthalmic Axial Measurements" base_EnumerationLiteral="_QDRYMPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_SAM-8fCPEeWoT_0zIvvImQ" conceptName="Optical Coherence Tomography" base_EnumerationLiteral="_SAM-8PCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_T00XMfCPEeWoT_0zIvvImQ" conceptName="Ophthalmic Mapping" base_EnumerationLiteral="_T00XMPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_VeS2cfCPEeWoT_0zIvvImQ" conceptName="Ophthalmic Photography" base_EnumerationLiteral="_VeS2cPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_XGZcsfCPEeWoT_0zIvvImQ" conceptName="Ophthalmic Refraction" base_EnumerationLiteral="_XGZcsPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_Y4MKcfCPEeWoT_0zIvvImQ" conceptName="Ophthalmic Tomography" base_EnumerationLiteral="_Y4MKcPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_a6D7kfCPEeWoT_0zIvvImQ" conceptName="Ophthalmic Visual Field" base_EnumerationLiteral="_a6D7kPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_chrZofCPEeWoT_0zIvvImQ" conceptName="Optical Surface Scanner" base_EnumerationLiteral="_chrZoPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_ehc5AfCPEeWoT_0zIvvImQ" conceptName="Panoramic X-Ray" base_EnumerationLiteral="_ehc5APCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_gFsS8fCPEeWoT_0zIvvImQ" conceptName="Positron emission tomography" base_EnumerationLiteral="_gFsS8PCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_iuBAEfCPEeWoT_0zIvvImQ" conceptName="Radiofluoroscopy" base_EnumerationLiteral="_iuBAEPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_jrOPMfCPEeWoT_0zIvvImQ" conceptName="Radiographic imaging" base_EnumerationLiteral="_jrOPMPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_lV198fCPEeWoT_0zIvvImQ" conceptName="Slide Microscopy" base_EnumerationLiteral="_lV198PCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_m581AfCPEeWoT_0zIvvImQ" conceptName="Subjective Refraction" base_EnumerationLiteral="_m581APCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_ok1CcfCPEeWoT_0zIvvImQ" conceptName="Ultrasound" base_EnumerationLiteral="_ok1CcPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_rMNUYfCPEeWoT_0zIvvImQ" conceptName="Visual Acuity" base_EnumerationLiteral="_rMNUYPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_sLYSYPCPEeWoT_0zIvvImQ" conceptName="X-Ray Angiography" base_EnumerationLiteral="_sLXrUPCPEeWoT_0zIvvImQ"/>
 </xmi:XMI>
