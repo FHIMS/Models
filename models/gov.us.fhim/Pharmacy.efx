@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.5-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:FHIM="http://gov.us.fhim/profile/1" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
   <uml:Package xmi:id="_420A62FD03B6418FEF4E01D8" name="Pharmacy">
     <eAnnotations xmi:id="_BihQAEDPEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_BI6dMEDPEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -2470,7 +2470,7 @@
           <body>&quot;Use when [DispensedDrug] does not specify the strength.  This is the numeric part of the strength, of a single dosage unit of the dispensed product&quot; - HL7 Version 2.8, RXD-16.&#xD;
 &quot;Use when [DispensedDrug] does not specify the strength.  This is the unit of the strength, of a single dosage unit of the dispensed product&quot; - HL7 Version 2.8, RXD-17.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6446E0D6303E4" name="dateTimeDispensed" visibility="public">
         <eAnnotations xmi:id="_d_bxEEcPEeKfi9U1UyJHLg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -2507,12 +2507,22 @@ Dispense = &quot;to make up and distribute (medicine), esp. on prescription.&quo
 &quot;Code indicating the quantity dispensed is a partial fill or the completion of a partial fill. Used only in situations where inventory shortages do not allow the full quantity to be dispensed.&quot; - NCPDP Telecommunication (Field 343-HD, Data Dictionary 201104).  Possible values include: Partial Fill; Completion of Partial Fill.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_-PhBUPUxEeW9y7MYMG87Xg">
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <language></language>
+          <body>(DispenseType)</body>
+        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_0pIdsNOTEeGputPQx0HXoA" name="dispenseMethod" visibility="public">
         <ownedComment xmi:id="_7YHeMNOTEeGputPQx0HXoA" annotatedElement="_0pIdsNOTEeGputPQx0HXoA">
           <body>&quot;Contains the method by which treatment is dispensed.&quot; - HL7 Version 2.8, RXD-24.  Possible values (from HL7 Table 321) include: Traditional; Unit Dose; Floor Stock; Automatic Dispensing.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_D3TwQPUyEeW9y7MYMG87Xg">
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <language></language>
+          <body>(DispenseMethod)</body>
+        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="__AhaMEuNEdyGhN1DL5AQjA" name="dispenseNotes" visibility="public">
         <ownedComment xmi:id="_1bv1cL-vEd2cYoIY7XWEQw" annotatedElement="__AhaMEuNEdyGhN1DL5AQjA">
@@ -2568,7 +2578,7 @@ Dispense = &quot;to make up and distribute (medicine), esp. on prescription.&quo
           <body>The quanitity of the medication dispensed to this patient in fulfillment of a request.&#xD;
 &quot;Quantity dispensed expressed in metric decimal units.&quot; - NCPDP Telecommunication (Field 442-E7, Data Dictionary 201104).</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O_pXEUuTEdyGhN1DL5AQjA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O_pXEEuTEdyGhN1DL5AQjA"/>
       </ownedAttribute>
@@ -2577,12 +2587,17 @@ Dispense = &quot;to make up and distribute (medicine), esp. on prescription.&quo
           <body>&quot;Code indicating the type of dispensing dose.&quot; - NCPDP Telecommunication (Field 429-DT, Data Dictionary 201104).  Possible values include: Not Unit Dose; Manufacturer Unit Dose; Pharmacy Unit Dose; Pharmacy Unit Dose Patient Compliance Packaging; Pharmacy Multi-drug Patient Compliance Packaging; Remote Device Unit Dose; Remote Device Multi- drug Compliance; Manufacturer Unit of Use Package (not unit dose); Not Specified.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_ILhXcPUyEeW9y7MYMG87Xg">
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <language></language>
+          <body>(SpecialPackagingIndicator)</body>
+        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_rlbiMNOLEeGputPQx0HXoA" name="totalDailyDose" visibility="public">
         <ownedComment xmi:id="_2qCfINOLEeGputPQx0HXoA" annotatedElement="_rlbiMNOLEeGputPQx0HXoA">
           <body>&quot;Contains the total daily dose being dispensed as expressed in terms of the actual dispense units.&quot; - HL7 Version 2.8, RXD-12.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oPb9YHpeEd-44ra0dfiJCw" name="attender" visibility="public" association="_oPSzcHpeEd-44ra0dfiJCw">
         <ownedComment xmi:id="_pbV_gE5rEeSkCZQ0odaC4w" annotatedElement="_oPb9YHpeEd-44ra0dfiJCw">
@@ -2898,12 +2913,22 @@ Dispense = &quot;to make up and distribute (medicine), esp. on prescription.&quo
 &quot;Code indicating the quantity dispensed is a partial fill or the completion of a partial fill. Used only in situations where inventory shortages do not allow the full quantity to be dispensed.&quot; - NCPDP Telecommunication (Field 343-HD, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_voJIQPUxEeW9y7MYMG87Xg">
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <language></language>
+          <body>(DispensingStatus)</body>
+        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Jh2PIGuXEeCZQ_Ui4wPHHw" name="paymentType" visibility="public">
         <ownedComment xmi:id="_dSL4gE5vEeSkCZQ0odaC4w" annotatedElement="_Jh2PIGuXEeCZQ_Ui4wPHHw">
           <body>&quot;The type of prescription benefit plan that adjudicated and paid for the prescription.&quot; - NCPDP Telecommunication (Field A29-ZS, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_1iFXIPUxEeW9y7MYMG87Xg">
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <language></language>
+          <body>(ReportedPaymentType)</body>
+        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sera4GuWEeCZQ_Ui4wPHHw" name="salesTransactionId" visibility="public">
         <ownedComment xmi:id="_uB1kICbvEeOyp-Ce3y08Wg" annotatedElement="_sera4GuWEeCZQ_Ui4wPHHw">
@@ -3278,12 +3303,22 @@ Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requ
           <body>The site of the patient's body at which the infusion takes place.  Note that there is a question, in cases where the patient is receiving multiple infusions simultaneously, whether this code should include something about the specific line, or whether there needs to be another attribtue.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_irHRIPUxEeW9y7MYMG87Xg">
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <language></language>
+          <body>(InfusionSite)</body>
+        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B64592CC40037D" name="infusionVelocity" visibility="public">
         <ownedComment xmi:id="_NdgPReLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64592CC40037D">
           <body>Indicates whether the infusion is Continuous or Intermittant. (or Bolus?)    Another possible name is infustionPersistance?    (May need a better name)</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_oFvGwPUxEeW9y7MYMG87Xg">
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <language></language>
+          <body>(InfusionVelocity)</body>
+        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B64592CBD9029B" name="ivType" visibility="public">
         <ownedComment xmi:id="_NdgPSOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64592CBD9029B">
@@ -3349,6 +3384,11 @@ Note that neither NCPDP SCRIPT nor NCPDP Telecom contain this information direct
 &quot;Action taken in response to a conflict.&quot; - NCPDP Script (Field 7881, Data Dictionary 201104)</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_Oc3PIPUxEeW9y7MYMG87Xg">
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <language></language>
+          <body>(DueProfessionalService)</body>
+        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_o-n8kBd4EeC9Abp3tFVARg" name="reasonForService" visibility="public">
         <ownedComment xmi:id="_jXrwECT0EeGLU77N-kQBww" annotatedElement="_o-n8kBd4EeC9Abp3tFVARg">
@@ -3357,6 +3397,11 @@ Note that neither NCPDP SCRIPT nor NCPDP Telecom contain this information direct
 &quot;For further explanation, conflict, or clarification of services related to drug use evaluation.... Code identifying the type of conflict detected.  When this composite is used, DUE Reason For Service Code is mandatory.&quot; - NCPDP Script (Field 7880, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_WM2ZoPUxEeW9y7MYMG87Xg">
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <language></language>
+          <body>(DueReasonForService)</body>
+        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_LZFJIBd6EeC9Abp3tFVARg" name="serviceResultCode" visibility="public">
         <ownedComment xmi:id="_NK8LoCT1EeGLU77N-kQBww" annotatedElement="_LZFJIBd6EeC9Abp3tFVARg">
@@ -3364,6 +3409,11 @@ Note that neither NCPDP SCRIPT nor NCPDP Telecom contain this information direct
 &quot;Action taken in response to a conflict.&quot; - NCPDP Script (Field 7882, Data Dictionary 201104)</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_bCvKgPUxEeW9y7MYMG87Xg">
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <language></language>
+          <body>(DueResultOfService)</body>
+        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_l0BaEBd-EeC9Abp3tFVARg" name="author" visibility="public" association="_lz-90Bd-EeC9Abp3tFVARg">
         <ownedComment xmi:id="_DyNC0EpsEeSqlerh7YvyAA" annotatedElement="_l0BaEBd-EeC9Abp3tFVARg">
@@ -3625,7 +3675,7 @@ Note that neither NCPDP SCRIPT nor NCPDP Telecom contain this information direct
         <ownedComment xmi:id="_zq7d4E74EeSJI4YBId-MmA" annotatedElement="_CJmc0Md5EeCVr54V6VtSNQ">
           <body>The amount of the pharmaceutical product that was returned to stock.  For example, 3 tablets.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/PhysicalQuantity?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_hL7Q8MdvEeCVr54V6VtSNQ" name="patientReportedMedication_orderablePharmacyItem" memberEnd="_hL7Q8cdvEeCVr54V6VtSNQ _hL7Q9MdvEeCVr54V6VtSNQ">
@@ -3889,5 +3939,34 @@ Note that neither NCPDP SCRIPT nor NCPDP Telecom contain this information direct
   <Default:Documentation xmi:id="_u85sNKMxEeSjK-UNpoDZuQ" base_Comment="_u85sMaMxEeSjK-UNpoDZuQ"/>
   <Default:Documentation xmi:id="_GWP_ELeoEeSQgZxVzux2oQ" base_Comment="_RDeGcNOLEeGputPQx0HXoA"/>
   <Default:Documentation xmi:id="_OIIccM2gEeSo7MqZXqyeFA" base_Comment="_OH7BEM2gEeSo7MqZXqyeFA"/>
-
+  <term:ValueSetConstraint xmi:id="_JjFcwPUxEeW9y7MYMG87Xg" base_Property="__MPY0Bd5EeC9Abp3tFVARg">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_2uNAEfTxEeWvwZaMZtWyqQ"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_We2voPUxEeW9y7MYMG87Xg" base_Property="_o-n8kBd4EeC9Abp3tFVARg">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_gmLuIfTzEeWvwZaMZtWyqQ"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_bQKigPUxEeW9y7MYMG87Xg" base_Property="_LZFJIBd6EeC9Abp3tFVARg">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_RF7aYPT1EeWvwZaMZtWyqQ"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_i4JAgPUxEeW9y7MYMG87Xg" base_Property="_yfwsYDh5EeC17O99ZX8o-w">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_HBFsAPUvEeWDHO3eL5eRfg"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_oQjPoPUxEeW9y7MYMG87Xg" base_Property="_420A62FD03B64592CC40037D">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_1Uge4PUVEeWp_Mwb77TLSQ"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_v-cvcPUxEeW9y7MYMG87Xg" base_Property="_CvTogGuQEeCZQ_Ui4wPHHw">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_ZLX0gfUWEeWp_Mwb77TLSQ"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_1umJIPUxEeW9y7MYMG87Xg" base_Property="_Jh2PIGuXEeCZQ_Ui4wPHHw">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_vPTwUPUXEeWp_Mwb77TLSQ"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_-rhA0PUxEeW9y7MYMG87Xg" base_Property="_3X-dkNQXEeG6j-OawvA6JA">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_MdivoPUZEeWp_Mwb77TLSQ"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_ECnoYPUyEeW9y7MYMG87Xg" base_Property="_0pIdsNOTEeGputPQx0HXoA">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_BsKbQPUaEeWp_Mwb77TLSQ"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_IUVVMPUyEeW9y7MYMG87Xg" base_Property="_La7GUGYVEeC_U5wVHbS9Yw">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_2W4voPUaEeWp_Mwb77TLSQ"/>
+  </term:ValueSetConstraint>
 </xmi:XMI>
