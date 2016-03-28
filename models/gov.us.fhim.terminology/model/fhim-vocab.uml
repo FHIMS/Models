@@ -2629,32 +2629,169 @@ These are documented in CDC local codes table, CDCPHINVS (Value set OID 2.16.840
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_gmLuIPTzEeWvwZaMZtWyqQ" name="DueReasonForService"/>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_RF6zUPT1EeWvwZaMZtWyqQ" name="DueResultOfService">
-        <ownedLiteral xmi:id="_Tz3nUPT1EeWvwZaMZtWyqQ" name="1A"/>
-        <ownedLiteral xmi:id="_VmKrYPT1EeWvwZaMZtWyqQ" name="1B"/>
-        <ownedLiteral xmi:id="_aQtH4PT1EeWvwZaMZtWyqQ" name="1C"/>
-        <ownedLiteral xmi:id="_bO_8IPT1EeWvwZaMZtWyqQ" name="1D"/>
-        <ownedLiteral xmi:id="_dxkmkPT1EeWvwZaMZtWyqQ" name="1E"/>
-        <ownedLiteral xmi:id="_e06S4PT1EeWvwZaMZtWyqQ" name="1F"/>
-        <ownedLiteral xmi:id="_hcJa4PT1EeWvwZaMZtWyqQ" name="1G"/>
-        <ownedLiteral xmi:id="_iut2APT1EeWvwZaMZtWyqQ" name="1H"/>
-        <ownedLiteral xmi:id="_lLRYAPT1EeWvwZaMZtWyqQ" name="1J"/>
-        <ownedLiteral xmi:id="_mPgcMPT1EeWvwZaMZtWyqQ" name="1K"/>
-        <ownedLiteral xmi:id="_oMRD0PT1EeWvwZaMZtWyqQ" name="2A"/>
-        <ownedLiteral xmi:id="_pUblwPT1EeWvwZaMZtWyqQ" name="2B"/>
-        <ownedLiteral xmi:id="_rJ_ZMPT1EeWvwZaMZtWyqQ" name="3A"/>
-        <ownedLiteral xmi:id="_sWC8oPT1EeWvwZaMZtWyqQ" name="3B"/>
-        <ownedLiteral xmi:id="_uc5UYPT1EeWvwZaMZtWyqQ" name="3C"/>
-        <ownedLiteral xmi:id="_vqiMMPT1EeWvwZaMZtWyqQ" name="3D"/>
-        <ownedLiteral xmi:id="_x1HNYPT1EeWvwZaMZtWyqQ" name="3E"/>
-        <ownedLiteral xmi:id="_wod-oPT2EeWvwZaMZtWyqQ" name="3F"/>
-        <ownedLiteral xmi:id="_yyZfkPT2EeWvwZaMZtWyqQ" name="3G"/>
-        <ownedLiteral xmi:id="_1LPmQPT2EeWvwZaMZtWyqQ" name="3H"/>
-        <ownedLiteral xmi:id="_6qdoAPT2EeWvwZaMZtWyqQ" name="3J"/>
-        <ownedLiteral xmi:id="_BB7gYPT3EeWvwZaMZtWyqQ" name="3K"/>
-        <ownedLiteral xmi:id="_LLpiYPT3EeWvwZaMZtWyqQ" name="3M"/>
-        <ownedLiteral xmi:id="_MIBEAPT3EeWvwZaMZtWyqQ" name="3N"/>
-        <ownedLiteral xmi:id="_NTDTwPT3EeWvwZaMZtWyqQ" name="00"/>
-        <ownedLiteral xmi:id="_O61J4PT3EeWvwZaMZtWyqQ" name="4A"/>
+        <ownedLiteral xmi:id="_Tz3nUPT1EeWvwZaMZtWyqQ" name="1A (Filled As Is, False Positive)"/>
+        <ownedLiteral xmi:id="_VmKrYPT1EeWvwZaMZtWyqQ" name="1B (Filled Prescription As Is)"/>
+        <ownedLiteral xmi:id="_aQtH4PT1EeWvwZaMZtWyqQ" name="1C (Filled, With Different Dose)"/>
+        <ownedLiteral xmi:id="_bO_8IPT1EeWvwZaMZtWyqQ" name="1D (Filled, With Different Directions)"/>
+        <ownedLiteral xmi:id="_dxkmkPT1EeWvwZaMZtWyqQ" name="1E (Filled, With Different Drug)"/>
+        <ownedLiteral xmi:id="_e06S4PT1EeWvwZaMZtWyqQ" name="1F (Filled, With Different Quantity)"/>
+        <ownedLiteral xmi:id="_hcJa4PT1EeWvwZaMZtWyqQ" name="1G (Filled, With Prescriber Approval)"/>
+        <ownedLiteral xmi:id="_iut2APT1EeWvwZaMZtWyqQ" name="1H (Brand-to-Generic Change)"/>
+        <ownedLiteral xmi:id="_lLRYAPT1EeWvwZaMZtWyqQ" name="1J (Rx-to-OTC Change)"/>
+        <ownedLiteral xmi:id="_mPgcMPT1EeWvwZaMZtWyqQ" name="1K (Filled with Different Dosage Form)"/>
+        <ownedLiteral xmi:id="_oMRD0PT1EeWvwZaMZtWyqQ" name="2A (Prescription Not Filled)"/>
+        <ownedLiteral xmi:id="_pUblwPT1EeWvwZaMZtWyqQ" name="2B (Not Filled, Directions Clarified)"/>
+        <ownedLiteral xmi:id="_rJ_ZMPT1EeWvwZaMZtWyqQ" name="3A (Recommendation Accepted)"/>
+        <ownedLiteral xmi:id="_sWC8oPT1EeWvwZaMZtWyqQ" name="3B (Recommendation Not Accepted)"/>
+        <ownedLiteral xmi:id="_uc5UYPT1EeWvwZaMZtWyqQ" name="3C (Discontinued Drug)"/>
+        <ownedLiteral xmi:id="_vqiMMPT1EeWvwZaMZtWyqQ" name="3D (Regimen Changed)"/>
+        <ownedLiteral xmi:id="_x1HNYPT1EeWvwZaMZtWyqQ" name="3E (Therapy Changed)"/>
+        <ownedLiteral xmi:id="_wod-oPT2EeWvwZaMZtWyqQ" name="3F (Therapy Changed)"/>
+        <ownedLiteral xmi:id="_yyZfkPT2EeWvwZaMZtWyqQ" name="3G (Drug Therapy Unchanged)"/>
+        <ownedLiteral xmi:id="_1LPmQPT2EeWvwZaMZtWyqQ" name="3H (Follow-Up/Report)"/>
+        <ownedLiteral xmi:id="_6qdoAPT2EeWvwZaMZtWyqQ" name="3J (Patient Referral)"/>
+        <ownedLiteral xmi:id="_BB7gYPT3EeWvwZaMZtWyqQ" name="3K (Instructions Understood)"/>
+        <ownedLiteral xmi:id="_LLpiYPT3EeWvwZaMZtWyqQ" name="3M (Compliance Aid Provided)"/>
+        <ownedLiteral xmi:id="_MIBEAPT3EeWvwZaMZtWyqQ" name="3N (Medication Administered)"/>
+        <ownedLiteral xmi:id="_NTDTwPT3EeWvwZaMZtWyqQ" name="00 (Not Specified)"/>
+        <ownedLiteral xmi:id="_O61J4PT3EeWvwZaMZtWyqQ" name="4A (Prescribed with acknowledgements)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_1Uf30PUVEeWp_Mwb77TLSQ" name="InfusionVelocity">
+        <ownedLiteral xmi:id="_AW3ZEPUWEeWp_Mwb77TLSQ" name="261754007 (Continuous infusion)"/>
+        <ownedLiteral xmi:id="_Gf9eQPUWEeWp_Mwb77TLSQ" name="397801003 (Single bolus)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZLX0gPUWEeWp_Mwb77TLSQ" name="DispensingStatus">
+        <ownedLiteral xmi:id="_pZK40PUWEeWp_Mwb77TLSQ" name="P (Partial Fill)"/>
+        <ownedLiteral xmi:id="_qE59cPUWEeWp_Mwb77TLSQ" name="C (Completion of Partial Fill)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_vPTJQPUXEeWp_Mwb77TLSQ" name="ReportedPaymentType">
+        <ownedLiteral xmi:id="_0Q6pAPUXEeWp_Mwb77TLSQ" name="1 (Medicaid)"/>
+        <ownedLiteral xmi:id="_5X-pcPUXEeWp_Mwb77TLSQ" name="2 (Medicare)"/>
+        <ownedLiteral xmi:id="_7hghwPUXEeWp_Mwb77TLSQ" name="3 (Commercial)"/>
+        <ownedLiteral xmi:id="_-Bt0sPUXEeWp_Mwb77TLSQ" name="4 (Workers Compensation)"/>
+        <ownedLiteral xmi:id="__l0rwPUXEeWp_Mwb77TLSQ" name="5 (Discount Program)"/>
+        <ownedLiteral xmi:id="_CXwA0PUYEeWp_Mwb77TLSQ" name="6 (Coupon)"/>
+        <ownedLiteral xmi:id="_EB7DoPUYEeWp_Mwb77TLSQ" name="7 (Voucher)"/>
+        <ownedLiteral xmi:id="_GgsMIPUYEeWp_Mwb77TLSQ" name="8 (Military / VA)"/>
+        <ownedLiteral xmi:id="_H5kDkPUYEeWp_Mwb77TLSQ" name="99 (Other)"/>
+        <ownedLiteral xmi:id="_K1-xYPUYEeWp_Mwb77TLSQ" name="0 (Cash)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_MdiIkPUZEeWp_Mwb77TLSQ" name="DispenseType">
+        <ownedLiteral xmi:id="_aeoEwPUZEeWp_Mwb77TLSQ" name="B (Trial Quantity Balance)"/>
+        <ownedLiteral xmi:id="_e7JTYPUZEeWp_Mwb77TLSQ" name="C (Compassionate Fill)"/>
+        <ownedLiteral xmi:id="_gWda0PUZEeWp_Mwb77TLSQ" name="N (New/Renew - Full Fill)"/>
+        <ownedLiteral xmi:id="_jNB_UPUZEeWp_Mwb77TLSQ" name="P (New/Renew - Part Fill)"/>
+        <ownedLiteral xmi:id="_kbGU8PUZEeWp_Mwb77TLSQ" name="Q (Refill - Part Fill)"/>
+        <ownedLiteral xmi:id="_nCem4PUZEeWp_Mwb77TLSQ" name="R (Refill - Full Fill)"/>
+        <ownedLiteral xmi:id="_o7W0EPUZEeWp_Mwb77TLSQ" name="S (Manufacturer Sample)"/>
+        <ownedLiteral xmi:id="_qDW98PUZEeWp_Mwb77TLSQ" name="T (Trial Quantity)"/>
+        <ownedLiteral xmi:id="_sUZMcPUZEeWp_Mwb77TLSQ" name="Z (Non-Prescription Fill)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_BsJ0MPUaEeWp_Mwb77TLSQ" name="DispenseMethod">
+        <ownedLiteral xmi:id="_F5WNYPUaEeWp_Mwb77TLSQ" name="AD (Automatic Dispensing)"/>
+        <ownedLiteral xmi:id="_aftNYPUaEeWp_Mwb77TLSQ" name="F (Floor Stock)"/>
+        <ownedLiteral xmi:id="_hQIYUPUaEeWp_Mwb77TLSQ" name="TR (Traditional)"/>
+        <ownedLiteral xmi:id="_jhQtcPUaEeWp_Mwb77TLSQ" name="UD (Unit Dose)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_2W4IkPUaEeWp_Mwb77TLSQ" name="SpecialPackagingIndicator">
+        <ownedLiteral xmi:id="_-SxoIPUaEeWp_Mwb77TLSQ" name="1 (Not Unit Dose)"/>
+        <ownedLiteral xmi:id="_ZtpB0PUbEeWp_Mwb77TLSQ" name="2 (Manufacturer Unit Dose)"/>
+        <ownedLiteral xmi:id="_c34JMPUbEeWp_Mwb77TLSQ" name="3 (Pharmacy Unit Dose)"/>
+        <ownedLiteral xmi:id="_fxrn4PUbEeWp_Mwb77TLSQ" name="4 (Pharmacy Unit Dose Patient Compliance Packaging)"/>
+        <ownedLiteral xmi:id="_lzc9EPUbEeWp_Mwb77TLSQ" name="5 (Pharmacy Multi-drug Patient Compliance Packaging)"/>
+        <ownedLiteral xmi:id="_n2LCwPUbEeWp_Mwb77TLSQ" name="6 (Remote Device Unit Dose)"/>
+        <ownedLiteral xmi:id="_s6IE0PUbEeWp_Mwb77TLSQ" name="7 (Remote Device Multi- drug Compliance)"/>
+        <ownedLiteral xmi:id="_uMN-0PUbEeWp_Mwb77TLSQ" name="8 (Manufacturer Unit of Use Package (not unit dose))"/>
+        <ownedLiteral xmi:id="_w8zQEPUbEeWp_Mwb77TLSQ" name="0 (Not Specified)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_oI58EPUcEeWp_Mwb77TLSQ" name="SubstitutionStatus">
+        <ownedLiteral xmi:id="_52CsMPUcEeWp_Mwb77TLSQ" name="0"/>
+        <ownedLiteral xmi:id="_ANYBsPUdEeWp_Mwb77TLSQ" name="1"/>
+        <ownedLiteral xmi:id="_DIz4EPUdEeWp_Mwb77TLSQ" name="2"/>
+        <ownedLiteral xmi:id="_EG7tMPUdEeWp_Mwb77TLSQ" name="3"/>
+        <ownedLiteral xmi:id="_GSvdcPUdEeWp_Mwb77TLSQ" name="4"/>
+        <ownedLiteral xmi:id="_HVjlUPUdEeWp_Mwb77TLSQ" name="5"/>
+        <ownedLiteral xmi:id="_Jtwy0PUdEeWp_Mwb77TLSQ" name="7"/>
+        <ownedLiteral xmi:id="_KWDh4PUdEeWp_Mwb77TLSQ" name="8"/>
+        <ownedLiteral xmi:id="_L8X_cPUdEeWp_Mwb77TLSQ" name="G"/>
+        <ownedLiteral xmi:id="_NcH68PUdEeWp_Mwb77TLSQ" name="N"/>
+        <ownedLiteral xmi:id="_QphrEPUdEeWp_Mwb77TLSQ" name="T"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_gcCFEPUeEeWp_Mwb77TLSQ" name="ProductSelection">
+        <ownedLiteral xmi:id="_jklxcPUeEeWp_Mwb77TLSQ" name="1"/>
+        <ownedLiteral xmi:id="_pfdNYPUeEeWp_Mwb77TLSQ" name="2"/>
+        <ownedLiteral xmi:id="_qtS5gPUeEeWp_Mwb77TLSQ" name="3"/>
+        <ownedLiteral xmi:id="_uEHEUPUeEeWp_Mwb77TLSQ" name="4"/>
+        <ownedLiteral xmi:id="_vBpDkPUeEeWp_Mwb77TLSQ" name="5"/>
+        <ownedLiteral xmi:id="_wq45UPUeEeWp_Mwb77TLSQ" name="6"/>
+        <ownedLiteral xmi:id="_xnFb0PUeEeWp_Mwb77TLSQ" name="7"/>
+        <ownedLiteral xmi:id="_G1xAEPUfEeWp_Mwb77TLSQ" name="8"/>
+        <ownedLiteral xmi:id="_Ik_iAPUfEeWp_Mwb77TLSQ" name="9"/>
+        <ownedLiteral xmi:id="_LA1SUPUfEeWp_Mwb77TLSQ" name="0"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_ksGWoPUfEeWp_Mwb77TLSQ" name="OrderModality"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_-VucMPUfEeWp_Mwb77TLSQ" name="PrescriptionOrigin">
+        <ownedLiteral xmi:id="_OLtdcPUgEeWp_Mwb77TLSQ" name="1 (Written)"/>
+        <ownedLiteral xmi:id="_R63PwPUgEeWp_Mwb77TLSQ" name="2 (Telephone)"/>
+        <ownedLiteral xmi:id="_Sv3lIPUgEeWp_Mwb77TLSQ" name="3 (Electronic)"/>
+        <ownedLiteral xmi:id="_VDTnYPUgEeWp_Mwb77TLSQ" name="4 (Facsimile)"/>
+        <ownedLiteral xmi:id="_Xwg0gPUgEeWp_Mwb77TLSQ" name="5 (Pharmacy)"/>
+        <ownedLiteral xmi:id="_YuITUPUgEeWp_Mwb77TLSQ" name="0 (Not Known)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_bkdKwPUhEeWp_Mwb77TLSQ" name="AuthorizationMode">
+        <ownedLiteral xmi:id="_hiG08PUhEeWp_Mwb77TLSQ" name="EM (E-mail)"/>
+        <ownedLiteral xmi:id="_idQ1oPUhEeWp_Mwb77TLSQ" name="EL (Electronic)"/>
+        <ownedLiteral xmi:id="_mtsJAPUhEeWp_Mwb77TLSQ" name="FX (Fax)"/>
+        <ownedLiteral xmi:id="_oz1WIPUhEeWp_Mwb77TLSQ" name="IP (In Person)"/>
+        <ownedLiteral xmi:id="_r9ywsPUhEeWp_Mwb77TLSQ" name="MA (Mail)"/>
+        <ownedLiteral xmi:id="_tX9ooPUhEeWp_Mwb77TLSQ" name="PA (Paper)"/>
+        <ownedLiteral xmi:id="_z1r6APUhEeWp_Mwb77TLSQ" name="PH (Phone)"/>
+        <ownedLiteral xmi:id="_1YM1oPUhEeWp_Mwb77TLSQ" name="RE (Reflexive (Automated system))"/>
+        <ownedLiteral xmi:id="_3pAaoPUhEeWp_Mwb77TLSQ" name="VC (Video-conference)"/>
+        <ownedLiteral xmi:id="_96wFgPUhEeWp_Mwb77TLSQ" name="VO (Voice)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_p9PYwPUiEeWp_Mwb77TLSQ" name="StrengthFormTerminology"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_bpNnkPUkEeWp_Mwb77TLSQ" name="PharmacyOrder">
+        <ownedLiteral xmi:id="_hKdCkPUkEeWp_Mwb77TLSQ" name="M (Medication)"/>
+        <ownedLiteral xmi:id="_mUh6wPUkEeWp_Mwb77TLSQ" name="O (Other solution as medication orders)"/>
+        <ownedLiteral xmi:id="_s_xqwPUkEeWp_Mwb77TLSQ" name="S (IV Large Volume Solutions)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_r9X9IPUlEeWp_Mwb77TLSQ" name="ClinicalSignificance">
+        <ownedLiteral xmi:id="_w8RgEPUlEeWp_Mwb77TLSQ" name="1 (Major)"/>
+        <ownedLiteral xmi:id="_0-IzAPUlEeWp_Mwb77TLSQ" name="2 (Moderate)"/>
+        <ownedLiteral xmi:id="_3bniEPUlEeWp_Mwb77TLSQ" name="3 (Minor)"/>
+        <ownedLiteral xmi:id="_5ZaEcPUlEeWp_Mwb77TLSQ" name="9 (Undetermined)"/>
+        <ownedLiteral xmi:id="_76uKoPUlEeWp_Mwb77TLSQ" name="(blank) (Not Specified)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Y83rMPUmEeWp_Mwb77TLSQ" name="DurPpsLevelOfEffort">
+        <ownedLiteral xmi:id="_iWUG0PUmEeWp_Mwb77TLSQ" name="11 (Level 1 (Lowest))"/>
+        <ownedLiteral xmi:id="_mE0Y4PUmEeWp_Mwb77TLSQ" name="12 (Level 2 (Low Complexity))"/>
+        <ownedLiteral xmi:id="_odybYPUmEeWp_Mwb77TLSQ" name="13 (Level 3 (Moderate Complexity))"/>
+        <ownedLiteral xmi:id="_qkmW4PUmEeWp_Mwb77TLSQ" name="14 (Level 4 (High Complexity))"/>
+        <ownedLiteral xmi:id="_uOoYoPUmEeWp_Mwb77TLSQ" name="15 (Level 5 (Highest))"/>
+        <ownedLiteral xmi:id="_vZlI0PUmEeWp_Mwb77TLSQ" name="0 (Not Specified)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_HBCosPUvEeWDHO3eL5eRfg" name="InfusionSite">
+        <ownedLiteral xmi:id="_HBCosfUvEeWDHO3eL5eRfg" name="128553008 (antecubital vein)"/>
+        <ownedLiteral xmi:id="_HBCosvUvEeWDHO3eL5eRfg" name="71585003 (external jugular vein)"/>
+        <ownedLiteral xmi:id="_HBCos_UvEeWDHO3eL5eRfg" name="83419000 (femoral vein)"/>
+        <ownedLiteral xmi:id="_HBCotPUvEeWDHO3eL5eRfg" name="278015009 (foot vein)"/>
+        <ownedLiteral xmi:id="_HBCotfUvEeWDHO3eL5eRfg" name="308046002 (superficial forearm vein)"/>
+        <ownedLiteral xmi:id="_HBCotvUvEeWDHO3eL5eRfg" name="363577004 (vein of hand)"/>
+        <ownedLiteral xmi:id="_HBCot_UvEeWDHO3eL5eRfg" name="12123001 (internal jugular vein)"/>
+        <ownedLiteral xmi:id="_HBCouPUvEeWDHO3eL5eRfg" name="29850006 (iliac crest)"/>
+        <ownedLiteral xmi:id="_HBCoufUvEeWDHO3eL5eRfg" name="310652005 (distal femur)"/>
+        <ownedLiteral xmi:id="_HBCouvUvEeWDHO3eL5eRfg" name="64605006 (distal tibia)"/>
+        <ownedLiteral xmi:id="_HBCou_UvEeWDHO3eL5eRfg" name="119535006 (sternum)"/>
+        <ownedLiteral xmi:id="_HBCovPUvEeWDHO3eL5eRfg" name="20285007 (proximal tibia)"/>
+        <ownedLiteral xmi:id="_HBCovfUvEeWDHO3eL5eRfg" name="61685007 (lower limb)"/>
+        <ownedLiteral xmi:id="_HBCovvUvEeWDHO3eL5eRfg" name="421466002 (peripheral vein)"/>
+        <ownedLiteral xmi:id="_HBCov_UvEeWDHO3eL5eRfg" name="41695006 (scalp)"/>
+        <ownedLiteral xmi:id="_HBCowPUvEeWDHO3eL5eRfg" name="9454009 (subclavian vein)"/>
+        <ownedLiteral xmi:id="_HBCowfUvEeWDHO3eL5eRfg" name="78220002 (umbilical structure)"/>
+        <ownedLiteral xmi:id="_HBCowvUvEeWDHO3eL5eRfg" name="40983000 (upper arm)"/>
+        <ownedLiteral xmi:id="_HBCow_UvEeWDHO3eL5eRfg" name="52359001 (radial vein)"/>
+        <ownedLiteral xmi:id="_HBCoxPUvEeWDHO3eL5eRfg" name="85050009 (humerus)"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_D4gFUA6mEeSRtMKZGaK6Zw" name="SecurityPrivacyVocab">
@@ -3084,28 +3221,6 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_hJYjQO0bEeWjUp19yClo5Q" name="nursing"/>
         <ownedLiteral xmi:id="_inb1oO0bEeWjUp19yClo5Q" name="physiotherapy"/>
         <ownedLiteral xmi:id="_c0b8QO0bEeWjUp19yClo5Q" name="safety"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_72DmgPT4EeWvwZaMZtWyqQ" name="InfusionSite">
-        <ownedLiteral xmi:id="__Hs9cPT4EeWvwZaMZtWyqQ" name="128553008"/>
-        <ownedLiteral xmi:id="_F4bDUPT5EeWvwZaMZtWyqQ" name="71585003"/>
-        <ownedLiteral xmi:id="_HHamAPT5EeWvwZaMZtWyqQ" name="83419000"/>
-        <ownedLiteral xmi:id="_JwikYPT5EeWvwZaMZtWyqQ" name="278015009"/>
-        <ownedLiteral xmi:id="_LV704PT5EeWvwZaMZtWyqQ" name="308046002"/>
-        <ownedLiteral xmi:id="_NsjuAPT5EeWvwZaMZtWyqQ" name="363577004"/>
-        <ownedLiteral xmi:id="_PElQ4PT5EeWvwZaMZtWyqQ" name="12123001"/>
-        <ownedLiteral xmi:id="_ReH7IPT5EeWvwZaMZtWyqQ" name="29850006"/>
-        <ownedLiteral xmi:id="_VseK4PT5EeWvwZaMZtWyqQ" name="310652005"/>
-        <ownedLiteral xmi:id="_Xcf-EPT5EeWvwZaMZtWyqQ" name="64605006"/>
-        <ownedLiteral xmi:id="_bYpDgPT5EeWvwZaMZtWyqQ" name="119535006"/>
-        <ownedLiteral xmi:id="_dVUyoPT5EeWvwZaMZtWyqQ" name="20285007"/>
-        <ownedLiteral xmi:id="_gprfUPT5EeWvwZaMZtWyqQ" name="61685007"/>
-        <ownedLiteral xmi:id="_ihR6IPT5EeWvwZaMZtWyqQ" name="421466002"/>
-        <ownedLiteral xmi:id="_lpoyMPT5EeWvwZaMZtWyqQ" name="41695006"/>
-        <ownedLiteral xmi:id="_qQMtoPT5EeWvwZaMZtWyqQ" name="9454009"/>
-        <ownedLiteral xmi:id="_u8s5APT5EeWvwZaMZtWyqQ" name="78220002"/>
-        <ownedLiteral xmi:id="_wD7m0PT5EeWvwZaMZtWyqQ" name="40983000"/>
-        <ownedLiteral xmi:id="_yXN4EPT5EeWvwZaMZtWyqQ" name="52359001"/>
-        <ownedLiteral xmi:id="__wVt8PT8EeWvwZaMZtWyqQ" name="85050009"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_hKnIgPUBEeWvwZaMZtWyqQ" name="CarePlanActivityStatusCodeSystem"/>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_D8EqYPUEEeWvwZaMZtWyqQ" name="GoalCategoryCodeSystem"/>
@@ -5960,11 +6075,11 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_ok1CcfCPEeWoT_0zIvvImQ" conceptName="Ultrasound" base_EnumerationLiteral="_ok1CcPCPEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_rMNUYfCPEeWoT_0zIvvImQ" conceptName="Visual Acuity" base_EnumerationLiteral="_rMNUYPCPEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_sLYSYPCPEeWoT_0zIvvImQ" conceptName="X-Ray Angiography" base_EnumerationLiteral="_sLXrUPCPEeWoT_0zIvvImQ"/>
-  <term:ValueSetVersion xmi:id="_UBvBAPTxEeWvwZaMZtWyqQ" url="http://fhim.onc.us.gov/terms/temporary/NcpdpCoagentValueSet" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_UBl3EPTxEeWvwZaMZtWyqQ"/>
-  <term:ValueSetVersion xmi:id="_gAn04fTxEeWvwZaMZtWyqQ" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_gAn04PTxEeWvwZaMZtWyqQ"/>
-  <term:ValueSetVersion xmi:id="_l23PgfTxEeWvwZaMZtWyqQ" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_l23PgPTxEeWvwZaMZtWyqQ"/>
-  <term:ValueSetVersion xmi:id="_pmoF0fTxEeWvwZaMZtWyqQ" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_pmoF0PTxEeWvwZaMZtWyqQ"/>
-  <term:ValueSetVersion xmi:id="_2uNAEfTxEeWvwZaMZtWyqQ" url="http://fhim.onc.us.gov/terms/temporary/NcpdpprofessionalServiceCodeValueSet" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_2uNAEPTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_UBvBAPTxEeWvwZaMZtWyqQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpCoagentValueSet" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_UBl3EPTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_gAn04fTxEeWvwZaMZtWyqQ" identifier="tbd" definition="Grouping valueset that indicates the status of a drug in the relevant formulary" base_Enumeration="_gAn04PTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_l23PgfTxEeWvwZaMZtWyqQ" identifier="tbd" source="HL7 v2" url="http://hl7.org/fhir/v2/0478" definition="Status of drug in hospital formulary" base_Enumeration="_l23PgPTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_pmoF0fTxEeWvwZaMZtWyqQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpDrugCoverageCodeValueSet" definition="Status of drug in prescription formulary" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_pmoF0PTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_2uNAEfTxEeWvwZaMZtWyqQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpprofessionalServiceCodeValueSet" definition="Service provided by pharmacist" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_2uNAEPTxEeWvwZaMZtWyqQ"/>
   <term:ValueSetCode xmi:id="_mszjkfTyEeWvwZaMZtWyqQ" conceptName="00" base_EnumerationLiteral="_mszjkPTyEeWvwZaMZtWyqQ"/>
   <term:ValueSetCode xmi:id="_oej1EfTyEeWvwZaMZtWyqQ" conceptName="AS" base_EnumerationLiteral="_oej1EPTyEeWvwZaMZtWyqQ"/>
   <term:ValueSetCode xmi:id="_rCntQfTyEeWvwZaMZtWyqQ" conceptName="CC" base_EnumerationLiteral="_rCntQPTyEeWvwZaMZtWyqQ"/>
@@ -5990,57 +6105,159 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_TWziwfTzEeWvwZaMZtWyqQ" conceptName="TC" base_EnumerationLiteral="_TWziwPTzEeWvwZaMZtWyqQ"/>
   <term:ValueSetCode xmi:id="_VpKm8fTzEeWvwZaMZtWyqQ" conceptName="TH" base_EnumerationLiteral="_VpKm8PTzEeWvwZaMZtWyqQ"/>
   <term:ValueSetCode xmi:id="_Xd7JIfTzEeWvwZaMZtWyqQ" conceptName="ZZ" base_EnumerationLiteral="_Xd7JIPTzEeWvwZaMZtWyqQ"/>
-  <term:ValueSetVersion xmi:id="_gmLuIfTzEeWvwZaMZtWyqQ" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_gmLuIPTzEeWvwZaMZtWyqQ"/>
-  <term:ValueSetVersion xmi:id="_RF7aYPT1EeWvwZaMZtWyqQ" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_RF6zUPT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_Tz3nUfT1EeWvwZaMZtWyqQ" conceptName="1A (Filled As Is, False Positive)" base_EnumerationLiteral="_Tz3nUPT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_VmLScPT1EeWvwZaMZtWyqQ" conceptName="1B (Filled Prescription As Is)" base_EnumerationLiteral="_VmKrYPT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_aQtu8PT1EeWvwZaMZtWyqQ" conceptName="1C (Filled, With Different Dose)" base_EnumerationLiteral="_aQtH4PT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_bPAjMPT1EeWvwZaMZtWyqQ" conceptName="1D (Filled, With Different Directions)" base_EnumerationLiteral="_bO_8IPT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_dxlNoPT1EeWvwZaMZtWyqQ" conceptName="1E (Filled, With Different Drug)" base_EnumerationLiteral="_dxkmkPT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_e0658PT1EeWvwZaMZtWyqQ" conceptName="1F (Filled, With Different Quantity)" base_EnumerationLiteral="_e06S4PT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_hcKB8PT1EeWvwZaMZtWyqQ" conceptName="1G (Filled, With Prescriber Approval)" base_EnumerationLiteral="_hcJa4PT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_iuudEPT1EeWvwZaMZtWyqQ" conceptName="1H (Brand-to-Generic Change)" base_EnumerationLiteral="_iut2APT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_lLR_EPT1EeWvwZaMZtWyqQ" conceptName="1J (Rx-to-OTC Change)" base_EnumerationLiteral="_lLRYAPT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_mPgcMfT1EeWvwZaMZtWyqQ" conceptName="1K (Filled with Different Dosage Form)" base_EnumerationLiteral="_mPgcMPT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_oMRD0fT1EeWvwZaMZtWyqQ" conceptName="2A (Prescription Not Filled)" base_EnumerationLiteral="_oMRD0PT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_pUcM0PT1EeWvwZaMZtWyqQ" conceptName="2B (Not Filled, Directions Clarified)" base_EnumerationLiteral="_pUblwPT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_rKAAQPT1EeWvwZaMZtWyqQ" conceptName="3A (Recommendation Accepted)" base_EnumerationLiteral="_rJ_ZMPT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_sWDjsPT1EeWvwZaMZtWyqQ" conceptName="3B (Recommendation Not Accepted)" base_EnumerationLiteral="_sWC8oPT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_uc57cPT1EeWvwZaMZtWyqQ" conceptName="3C (Discontinued Drug)" base_EnumerationLiteral="_uc5UYPT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_vqizQPT1EeWvwZaMZtWyqQ" conceptName="3D (Regimen Changed)" base_EnumerationLiteral="_vqiMMPT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_x1H0cPT1EeWvwZaMZtWyqQ" conceptName="3E (Therapy Changed)" base_EnumerationLiteral="_x1HNYPT1EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_woelsPT2EeWvwZaMZtWyqQ" conceptName="3F (Therapy Changed)" base_EnumerationLiteral="_wod-oPT2EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_yyatsPT2EeWvwZaMZtWyqQ" conceptName="3G (Drug Therapy Unchanged)" base_EnumerationLiteral="_yyZfkPT2EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_1LQNUPT2EeWvwZaMZtWyqQ" conceptName="3H (Follow-Up/Report)" base_EnumerationLiteral="_1LPmQPT2EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_6qePEPT2EeWvwZaMZtWyqQ" conceptName="3J (Patient Referral)" base_EnumerationLiteral="_6qdoAPT2EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_BB8HcPT3EeWvwZaMZtWyqQ" conceptName="3K (Instructions Understood)" base_EnumerationLiteral="_BB7gYPT3EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_LLqJcPT3EeWvwZaMZtWyqQ" conceptName="3M (Compliance Aid Provided)" base_EnumerationLiteral="_LLpiYPT3EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_MIBrEPT3EeWvwZaMZtWyqQ" conceptName="3N (Medication Administere)" base_EnumerationLiteral="_MIBEAPT3EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_NTD60PT3EeWvwZaMZtWyqQ" conceptName="00 (Not Specified)" base_EnumerationLiteral="_NTDTwPT3EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_O61w8PT3EeWvwZaMZtWyqQ" conceptName="4A (Prescribed with acknowledgements)" base_EnumerationLiteral="_O61J4PT3EeWvwZaMZtWyqQ"/>
-  <term:ValueSetVersion xmi:id="_72ENkPT4EeWvwZaMZtWyqQ" base_Enumeration="_72DmgPT4EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="__HtkgPT4EeWvwZaMZtWyqQ" conceptName="128553008 (antecubital vein)" base_EnumerationLiteral="__Hs9cPT4EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_F4bDUfT5EeWvwZaMZtWyqQ" conceptName="71585003  (external jugular vein)" base_EnumerationLiteral="_F4bDUPT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_HHamAfT5EeWvwZaMZtWyqQ" conceptName="83419000  (femoral vein)" base_EnumerationLiteral="_HHamAPT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_JwjLcPT5EeWvwZaMZtWyqQ" conceptName="278015009 (foot vein)" base_EnumerationLiteral="_JwikYPT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_LV704fT5EeWvwZaMZtWyqQ" conceptName="308046002 (superficial forearm vein)" base_EnumerationLiteral="_LV704PT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_NsjuAfT5EeWvwZaMZtWyqQ" conceptName="363577004 (vein of hand)" base_EnumerationLiteral="_NsjuAPT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_PElQ4fT5EeWvwZaMZtWyqQ" conceptName="12123001  (internal jugular vein)" base_EnumerationLiteral="_PElQ4PT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_ReH7IfT5EeWvwZaMZtWyqQ" conceptName="29850006  (iliac crest)" base_EnumerationLiteral="_ReH7IPT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_Vsex8PT5EeWvwZaMZtWyqQ" conceptName="310652005 (distal femur)" base_EnumerationLiteral="_VseK4PT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_XcglIPT5EeWvwZaMZtWyqQ" conceptName="64605006  (distal tibia)" base_EnumerationLiteral="_Xcf-EPT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_bYpqkPT5EeWvwZaMZtWyqQ" conceptName="119535006 (sternum)" base_EnumerationLiteral="_bYpDgPT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_dVVZsPT5EeWvwZaMZtWyqQ" conceptName="20285007  (proximal tibia)" base_EnumerationLiteral="_dVUyoPT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_gpstcPT5EeWvwZaMZtWyqQ" conceptName="61685007  (lower limb)" base_EnumerationLiteral="_gprfUPT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_ihShMPT5EeWvwZaMZtWyqQ" conceptName="421466002 (peripheral vein)" base_EnumerationLiteral="_ihR6IPT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_lppZQPT5EeWvwZaMZtWyqQ" conceptName="41695006  (scalp)" base_EnumerationLiteral="_lpoyMPT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_qQMtofT5EeWvwZaMZtWyqQ" conceptName="9454009   (subclavian vein)" base_EnumerationLiteral="_qQMtoPT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_u8s5AfT5EeWvwZaMZtWyqQ" conceptName="78220002  (umbilical structure)" base_EnumerationLiteral="_u8s5APT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_wD7m0fT5EeWvwZaMZtWyqQ" conceptName="40983000  (upper arm)" base_EnumerationLiteral="_wD7m0PT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="_yXOfIPT5EeWvwZaMZtWyqQ" conceptName="52359001  (radial vein)" base_EnumerationLiteral="_yXN4EPT5EeWvwZaMZtWyqQ"/>
-  <term:ValueSetCode xmi:id="__wVt8fT8EeWvwZaMZtWyqQ" conceptName="85050009  (humerus)" base_EnumerationLiteral="__wVt8PT8EeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_gmLuIfTzEeWvwZaMZtWyqQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpreasonForServiceValueSet" definition="Reason why the service provided by the pharmacist was needed" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_gmLuIPTzEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_RF7aYPT1EeWvwZaMZtWyqQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpserviceResultCodeValueSet" definition="Outcome of service provided by pharmacist" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_RF6zUPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_Tz3nUfT1EeWvwZaMZtWyqQ" conceptName="1A" base_EnumerationLiteral="_Tz3nUPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_VmLScPT1EeWvwZaMZtWyqQ" conceptName="1B" base_EnumerationLiteral="_VmKrYPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_aQtu8PT1EeWvwZaMZtWyqQ" conceptName="1C" base_EnumerationLiteral="_aQtH4PT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_bPAjMPT1EeWvwZaMZtWyqQ" conceptName="1D" base_EnumerationLiteral="_bO_8IPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_dxlNoPT1EeWvwZaMZtWyqQ" conceptName="1E" base_EnumerationLiteral="_dxkmkPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_e0658PT1EeWvwZaMZtWyqQ" conceptName="1F" base_EnumerationLiteral="_e06S4PT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_hcKB8PT1EeWvwZaMZtWyqQ" conceptName="1G" base_EnumerationLiteral="_hcJa4PT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_iuudEPT1EeWvwZaMZtWyqQ" conceptName="1H" base_EnumerationLiteral="_iut2APT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_lLR_EPT1EeWvwZaMZtWyqQ" conceptName="1J" base_EnumerationLiteral="_lLRYAPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_mPgcMfT1EeWvwZaMZtWyqQ" conceptName="1K" base_EnumerationLiteral="_mPgcMPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_oMRD0fT1EeWvwZaMZtWyqQ" conceptName="2A" base_EnumerationLiteral="_oMRD0PT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_pUcM0PT1EeWvwZaMZtWyqQ" conceptName="2B" base_EnumerationLiteral="_pUblwPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_rKAAQPT1EeWvwZaMZtWyqQ" conceptName="3A" base_EnumerationLiteral="_rJ_ZMPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_sWDjsPT1EeWvwZaMZtWyqQ" conceptName="3B" base_EnumerationLiteral="_sWC8oPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_uc57cPT1EeWvwZaMZtWyqQ" conceptName="3C" base_EnumerationLiteral="_uc5UYPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_vqizQPT1EeWvwZaMZtWyqQ" conceptName="3D" base_EnumerationLiteral="_vqiMMPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_x1H0cPT1EeWvwZaMZtWyqQ" conceptName="3E" base_EnumerationLiteral="_x1HNYPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_woelsPT2EeWvwZaMZtWyqQ" conceptName="3F" base_EnumerationLiteral="_wod-oPT2EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_yyatsPT2EeWvwZaMZtWyqQ" conceptName="3G" base_EnumerationLiteral="_yyZfkPT2EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_1LQNUPT2EeWvwZaMZtWyqQ" conceptName="3H" base_EnumerationLiteral="_1LPmQPT2EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_6qePEPT2EeWvwZaMZtWyqQ" conceptName="3J" base_EnumerationLiteral="_6qdoAPT2EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_BB8HcPT3EeWvwZaMZtWyqQ" conceptName="3K" base_EnumerationLiteral="_BB7gYPT3EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_LLqJcPT3EeWvwZaMZtWyqQ" conceptName="3M" base_EnumerationLiteral="_LLpiYPT3EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_MIBrEPT3EeWvwZaMZtWyqQ" conceptName="3N" base_EnumerationLiteral="_MIBEAPT3EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_NTD60PT3EeWvwZaMZtWyqQ" conceptName="00" base_EnumerationLiteral="_NTDTwPT3EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_O61w8PT3EeWvwZaMZtWyqQ" conceptName="4A" base_EnumerationLiteral="_O61J4PT3EeWvwZaMZtWyqQ"/>
   <term:CodeSystemVersion xmi:id="_dPtrIPT_EeWvwZaMZtWyqQ" identifier="1.2.840.10008.2.16.4" url="http://dicom.nema.org" base_Enumeration="_dPtEEPT_EeWvwZaMZtWyqQ"/>
   <term:CodeSystemVersion xmi:id="_hKnvkPUBEeWvwZaMZtWyqQ" identifier="2.16.840.1.113883.4.642.1.65" url="http://hl7.org/fhir/valueset-care-plan-activity-status.html" base_Enumeration="_hKnIgPUBEeWvwZaMZtWyqQ"/>
   <term:CodeSystemVersion xmi:id="_D8FRcPUEEeWvwZaMZtWyqQ" identifier="2.16.840.1.113883.4.642.1.411" source="HL7 FHIR" url="http://hl7.org/fhir/valueset-goal-category.html" base_Enumeration="_D8EqYPUEEeWvwZaMZtWyqQ"/>
   <term:CodeSystemVersion xmi:id="_VN3JAPUJEeWp_Mwb77TLSQ" identifier="tbd" fullName="NCPDP valuesets" url="tbd" base_Enumeration="_VN0FsPUJEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_1Uge4PUVEeWp_Mwb77TLSQ" identifier="tbd" source="SNOMED-CT" url="tbd" definition="Qualitative rate of infusion" codeSystem="_WwluQaRMEeGZ6ueex_Me0w" base_Enumeration="_1Uf30PUVEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_AW3ZEfUWEeWp_Mwb77TLSQ" conceptName="Continuous infusion" base_EnumerationLiteral="_AW3ZEPUWEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_Gf-FUPUWEeWp_Mwb77TLSQ" conceptName="Single bolus" base_EnumerationLiteral="_Gf9eQPUWEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_ZLX0gfUWEeWp_Mwb77TLSQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdppartialFillStatusValueSet" definition="Portion of prescription dispensed" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_ZLX0gPUWEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_pZLf4PUWEeWp_Mwb77TLSQ" conceptName="Partial Fill" base_EnumerationLiteral="_pZK40PUWEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_qE6kgPUWEeWp_Mwb77TLSQ" conceptName="Completion of Partial Fill" base_EnumerationLiteral="_qE59cPUWEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_vPTwUPUXEeWp_Mwb77TLSQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdppaymentTypeValueSet" definition="Program or source of payment for medication" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_vPTJQPUXEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_0Q7QEPUXEeWp_Mwb77TLSQ" conceptName="Medicaid" base_EnumerationLiteral="_0Q6pAPUXEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_5X_QgPUXEeWp_Mwb77TLSQ" conceptName="Medicare" base_EnumerationLiteral="_5X-pcPUXEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_7hghwfUXEeWp_Mwb77TLSQ" conceptName="Commercial" base_EnumerationLiteral="_7hghwPUXEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_-BubwPUXEeWp_Mwb77TLSQ" conceptName="Workers Compensation" base_EnumerationLiteral="_-Bt0sPUXEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="__l0rwfUXEeWp_Mwb77TLSQ" conceptName="Discount Program" base_EnumerationLiteral="__l0rwPUXEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_CXwn4PUYEeWp_Mwb77TLSQ" conceptName="Coupon" base_EnumerationLiteral="_CXwA0PUYEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_EB7qsPUYEeWp_Mwb77TLSQ" conceptName="Voucher" base_EnumerationLiteral="_EB7DoPUYEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_GgsMIfUYEeWp_Mwb77TLSQ" conceptName="Military / VA" base_EnumerationLiteral="_GgsMIPUYEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_H5kqoPUYEeWp_Mwb77TLSQ" conceptName="Other" base_EnumerationLiteral="_H5kDkPUYEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_K1-xYfUYEeWp_Mwb77TLSQ" conceptName="Cash" base_EnumerationLiteral="_K1-xYPUYEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_MdivoPUZEeWp_Mwb77TLSQ" identifier="tbd" source="HL7 v2" url="http://hl7.org/fhir/v2/0484" definition="Dispense classified by completeness, recurrence, and other factors" base_Enumeration="_MdiIkPUZEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_aeor0PUZEeWp_Mwb77TLSQ" conceptName="Trial Quantity Balance" base_EnumerationLiteral="_aeoEwPUZEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_e7JTYfUZEeWp_Mwb77TLSQ" conceptName="Compassionate Fill" base_EnumerationLiteral="_e7JTYPUZEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_gWeB4PUZEeWp_Mwb77TLSQ" conceptName="New/Renew - Full Fill" base_EnumerationLiteral="_gWda0PUZEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_jNCmYPUZEeWp_Mwb77TLSQ" conceptName="New/Renew - Part Fill" base_EnumerationLiteral="_jNB_UPUZEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_kbG8APUZEeWp_Mwb77TLSQ" conceptName="Refill - Part Fill" base_EnumerationLiteral="_kbGU8PUZEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_nCf1APUZEeWp_Mwb77TLSQ" conceptName="Refill - Full Fill" base_EnumerationLiteral="_nCem4PUZEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_o7XbIPUZEeWp_Mwb77TLSQ" conceptName="Manufacturer Sample" base_EnumerationLiteral="_o7W0EPUZEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_qDXlAPUZEeWp_Mwb77TLSQ" conceptName="Trial Quantity" base_EnumerationLiteral="_qDW98PUZEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_sUZzgPUZEeWp_Mwb77TLSQ" conceptName="Non-Prescription Fill" base_EnumerationLiteral="_sUZMcPUZEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_BsKbQPUaEeWp_Mwb77TLSQ" identifier="tbd" source="HL7 v2" url="http://hl7.org/fhir/v2/0321" definition="How dispensing is provided" base_Enumeration="_BsJ0MPUaEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_F5W0cPUaEeWp_Mwb77TLSQ" conceptName="Automatic Dispensing" base_EnumerationLiteral="_F5WNYPUaEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_aftNYfUaEeWp_Mwb77TLSQ" conceptName="Floor Stock" base_EnumerationLiteral="_aftNYPUaEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_hQI_YPUaEeWp_Mwb77TLSQ" conceptName="Traditional" base_EnumerationLiteral="_hQIYUPUaEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_jhRUgPUaEeWp_Mwb77TLSQ" conceptName="Unit Dose" base_EnumerationLiteral="_jhQtcPUaEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_2W4voPUaEeWp_Mwb77TLSQ" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpspecialPackagingValueSet" definition="Packaging for dispensed medication" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_2W4IkPUaEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_-SxoIfUaEeWp_Mwb77TLSQ" conceptName="Not Unit Dose" base_EnumerationLiteral="_-SxoIPUaEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_ZtpB0fUbEeWp_Mwb77TLSQ" conceptName="Manufacturer Unit Dose" base_EnumerationLiteral="_ZtpB0PUbEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_c34wQPUbEeWp_Mwb77TLSQ" conceptName="Pharmacy Unit Dose" base_EnumerationLiteral="_c34JMPUbEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_fxsO8PUbEeWp_Mwb77TLSQ" conceptName="Pharmacy Unit Dose Patient Compliance Packaging" base_EnumerationLiteral="_fxrn4PUbEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_lzdkIPUbEeWp_Mwb77TLSQ" conceptName="Pharmacy Multi-drug Patient Compliance Packaging" base_EnumerationLiteral="_lzc9EPUbEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_n2MQ4PUbEeWp_Mwb77TLSQ" conceptName="Remote Device Unit Dose" base_EnumerationLiteral="_n2LCwPUbEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_s6Ir4PUbEeWp_Mwb77TLSQ" conceptName="Remote Device Multi- drug Compliance" base_EnumerationLiteral="_s6IE0PUbEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_uMN-0fUbEeWp_Mwb77TLSQ" conceptName="Manufacturer Unit of Use Package (not unit dose)" base_EnumerationLiteral="_uMN-0PUbEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_w8z3IPUbEeWp_Mwb77TLSQ" conceptName="Not Specified" base_EnumerationLiteral="_w8zQEPUbEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_oI6jIPUcEeWp_Mwb77TLSQ" identifier="tbd" source="HL7 v2" url="http://hl7.org/fhir/v2/0167" definition="Rule by which product was selected to fufill order" base_Enumeration="_oI58EPUcEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_52D6UPUcEeWp_Mwb77TLSQ" conceptName="No product selection indicated" base_EnumerationLiteral="_52CsMPUcEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_ANYowPUdEeWp_Mwb77TLSQ" conceptName="Substitution not allowed by prescriber" base_EnumerationLiteral="_ANYBsPUdEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_DI0fIPUdEeWp_Mwb77TLSQ" conceptName="Substitution allowed - patient requested product dispensed" base_EnumerationLiteral="_DIz4EPUdEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_EG8UQPUdEeWp_Mwb77TLSQ" conceptName="Substitution allowed - pharmacist selected product dispensed" base_EnumerationLiteral="_EG7tMPUdEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_GSvdcfUdEeWp_Mwb77TLSQ" conceptName="Substitution allowed - generic drug not in stock" base_EnumerationLiteral="_GSvdcPUdEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_HVkMYPUdEeWp_Mwb77TLSQ" conceptName="Substitution allowed - brand drug dispensed as a generic" base_EnumerationLiteral="_HVjlUPUdEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_JtxZ4PUdEeWp_Mwb77TLSQ" conceptName="Substitution not allowed - brand drug mandated by law" base_EnumerationLiteral="_Jtwy0PUdEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_KWEI8PUdEeWp_Mwb77TLSQ" conceptName="Substitution allowed - generic drug not available in marketplace" base_EnumerationLiteral="_KWDh4PUdEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_L8X_cfUdEeWp_Mwb77TLSQ" conceptName="A generic substitution was dispensed" base_EnumerationLiteral="_L8X_cPUdEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_NcIiAPUdEeWp_Mwb77TLSQ" conceptName="No substitute was dispensed. This is equivalent to the default (null) value" base_EnumerationLiteral="_NcH68PUdEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_QpiSIPUdEeWp_Mwb77TLSQ" conceptName="A therapeutic substitution was dispensed" base_EnumerationLiteral="_QphrEPUdEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_gcCsIPUeEeWp_Mwb77TLSQ" identifier="tbd" url="tbd" definition="Rule by which product was selected to fufill prescription" base_Enumeration="_gcCFEPUeEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_jkmYgPUeEeWp_Mwb77TLSQ" conceptName="Substitution Not Allowed by Prescriber" base_EnumerationLiteral="_jklxcPUeEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_pfd0cPUeEeWp_Mwb77TLSQ" conceptName="Substitution Allowed-Patient Requested Product Dispensed" base_EnumerationLiteral="_pfdNYPUeEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_qtS5gfUeEeWp_Mwb77TLSQ" conceptName="Substitution Allowed-Pharmacist Selected Product Dispensed" base_EnumerationLiteral="_qtS5gPUeEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_uEHEUfUeEeWp_Mwb77TLSQ" conceptName="Substitution Allowed-Generic Drug Not in Stock" base_EnumerationLiteral="_uEHEUPUeEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_vBpDkfUeEeWp_Mwb77TLSQ" conceptName="Substitution Allowed-Brand Drug Dispensed as a Generic" base_EnumerationLiteral="_vBpDkPUeEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_wq5gYPUeEeWp_Mwb77TLSQ" conceptName="Override" base_EnumerationLiteral="_wq45UPUeEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_xnFb0fUeEeWp_Mwb77TLSQ" conceptName="Substitution Not Allowed-Brand Drug Mandated by Law" base_EnumerationLiteral="_xnFb0PUeEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_G1xAEfUfEeWp_Mwb77TLSQ" conceptName="Substitution Allowed-Generic Drug Not Available in Marketplace" base_EnumerationLiteral="_G1xAEPUfEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_IlAJEPUfEeWp_Mwb77TLSQ" conceptName="Substitution Allowed By Prescriber but Plan Requests Brand" base_EnumerationLiteral="_Ik_iAPUfEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_LA15YPUfEeWp_Mwb77TLSQ" conceptName="No Product Selection Indicated" base_EnumerationLiteral="_LA1SUPUfEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_ksG9sPUfEeWp_Mwb77TLSQ" identifier="tbd" url="http://fhim.onc.us.gov/terms/temporary/NcpdporderModalityValueSet" definition="Grouping value-set of communications channels by which the request is placed" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_ksGWoPUfEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_-VvDQPUfEeWp_Mwb77TLSQ" identifier="tbd" url="tbd" definition="Channel by which prescription is placed" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_-VucMPUfEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_OLtdcfUgEeWp_Mwb77TLSQ" conceptName="Written" base_EnumerationLiteral="_OLtdcPUgEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_R6320PUgEeWp_Mwb77TLSQ" conceptName="Telephone" base_EnumerationLiteral="_R63PwPUgEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_Sv4MMPUgEeWp_Mwb77TLSQ" conceptName="Electronic" base_EnumerationLiteral="_Sv3lIPUgEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_VDUOcPUgEeWp_Mwb77TLSQ" conceptName="Facsimile" base_EnumerationLiteral="_VDTnYPUgEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_XwhbkPUgEeWp_Mwb77TLSQ" conceptName="Pharmacy" base_EnumerationLiteral="_Xwg0gPUgEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_YuITUfUgEeWp_Mwb77TLSQ" conceptName="Not Known" base_EnumerationLiteral="_YuITUPUgEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_bkdx0PUhEeWp_Mwb77TLSQ" identifier="tbd" source="HL7 v2" url="http://hl7.org/fhir/v2/0483" definition="Channel by which order is placed" base_Enumeration="_bkdKwPUhEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_hiHcAPUhEeWp_Mwb77TLSQ" conceptName="E-mail" base_EnumerationLiteral="_hiG08PUhEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_idRcsPUhEeWp_Mwb77TLSQ" conceptName="Electronic" base_EnumerationLiteral="_idQ1oPUhEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_mtswEPUhEeWp_Mwb77TLSQ" conceptName="Fax" base_EnumerationLiteral="_mtsJAPUhEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_oz19MPUhEeWp_Mwb77TLSQ" conceptName="In Person" base_EnumerationLiteral="_oz1WIPUhEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_r9zXwPUhEeWp_Mwb77TLSQ" conceptName="Mail" base_EnumerationLiteral="_r9ywsPUhEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_tX-PsPUhEeWp_Mwb77TLSQ" conceptName="Paper" base_EnumerationLiteral="_tX9ooPUhEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_z1shEPUhEeWp_Mwb77TLSQ" conceptName="Phone" base_EnumerationLiteral="_z1r6APUhEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_1YNcsPUhEeWp_Mwb77TLSQ" conceptName="Reflexive (Automated system)" base_EnumerationLiteral="_1YM1oPUhEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_3pBBsPUhEeWp_Mwb77TLSQ" conceptName="Video-conference" base_EnumerationLiteral="_3pAaoPUhEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_96wskPUhEeWp_Mwb77TLSQ" conceptName="Voice" base_EnumerationLiteral="_96wFgPUhEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_p9P_0PUiEeWp_Mwb77TLSQ" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_p9PYwPUiEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_bpOOoPUkEeWp_Mwb77TLSQ" identifier="tbd" source="HL7 v2" url="http://hl7.org/fhir/v2/0480" definition="General class of physical form of medication" base_Enumeration="_bpNnkPUkEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_hKdpoPUkEeWp_Mwb77TLSQ" conceptName="Medication" base_EnumerationLiteral="_hKdCkPUkEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_mUh6wfUkEeWp_Mwb77TLSQ" conceptName="Other solution as medication orders" base_EnumerationLiteral="_mUh6wPUkEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_s_yR0PUkEeWp_Mwb77TLSQ" conceptName="IV Large Volume Solutions" base_EnumerationLiteral="_s_xqwPUkEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_r9X9IfUlEeWp_Mwb77TLSQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpclinicalSignifanceCodeValueSet" definition="Criticality of risk for medication" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_r9X9IPUlEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_w8RgEfUlEeWp_Mwb77TLSQ" conceptName="Major" base_EnumerationLiteral="_w8RgEPUlEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_0-IzAfUlEeWp_Mwb77TLSQ" conceptName="Moderate" base_EnumerationLiteral="_0-IzAPUlEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_3boJIPUlEeWp_Mwb77TLSQ" conceptName="Minor" base_EnumerationLiteral="_3bniEPUlEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_5ZargPUlEeWp_Mwb77TLSQ" conceptName="Undetermined" base_EnumerationLiteral="_5ZaEcPUlEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_76uxsPUlEeWp_Mwb77TLSQ" conceptName="Not Specified" base_EnumerationLiteral="_76uKoPUlEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_Y84SQPUmEeWp_Mwb77TLSQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdplevelOfEffortValueSet" definition="Classification of quantity of effort expended by service provider" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_Y83rMPUmEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_iWUt4PUmEeWp_Mwb77TLSQ" conceptName="Level 1 (Lowest)" base_EnumerationLiteral="_iWUG0PUmEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_mE0_8PUmEeWp_Mwb77TLSQ" conceptName="Level 2 (Low Complexity)" base_EnumerationLiteral="_mE0Y4PUmEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_odybYfUmEeWp_Mwb77TLSQ" conceptName="Level 3 (Moderate Complexity)" base_EnumerationLiteral="_odybYPUmEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_qkmW4fUmEeWp_Mwb77TLSQ" conceptName="Level 4 (High Complexity)" base_EnumerationLiteral="_qkmW4PUmEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_uOoYofUmEeWp_Mwb77TLSQ" conceptName="Level 5 (Highest)" base_EnumerationLiteral="_uOoYoPUmEeWp_Mwb77TLSQ"/>
+  <term:ValueSetCode xmi:id="_vZlv4PUmEeWp_Mwb77TLSQ" conceptName="Not Specified" base_EnumerationLiteral="_vZlI0PUmEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_HBFsAPUvEeWDHO3eL5eRfg" identifier="tbd" url="tbd" definition="Access site for infusion" base_Enumeration="_HBCosPUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsAfUvEeWDHO3eL5eRfg" conceptName="128553008" base_EnumerationLiteral="_HBCosfUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsAvUvEeWDHO3eL5eRfg" conceptName="71585003" base_EnumerationLiteral="_HBCosvUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsA_UvEeWDHO3eL5eRfg" conceptName="83419000" base_EnumerationLiteral="_HBCos_UvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsBPUvEeWDHO3eL5eRfg" conceptName="278015009" base_EnumerationLiteral="_HBCotPUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsBfUvEeWDHO3eL5eRfg" conceptName="308046002" base_EnumerationLiteral="_HBCotfUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsBvUvEeWDHO3eL5eRfg" conceptName="363577004" base_EnumerationLiteral="_HBCotvUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsB_UvEeWDHO3eL5eRfg" conceptName="12123001" base_EnumerationLiteral="_HBCot_UvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsCPUvEeWDHO3eL5eRfg" conceptName="29850006" base_EnumerationLiteral="_HBCouPUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsCfUvEeWDHO3eL5eRfg" conceptName="310652005" base_EnumerationLiteral="_HBCoufUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsCvUvEeWDHO3eL5eRfg" conceptName="64605006" base_EnumerationLiteral="_HBCouvUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsC_UvEeWDHO3eL5eRfg" conceptName="119535006" base_EnumerationLiteral="_HBCou_UvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsDPUvEeWDHO3eL5eRfg" conceptName="20285007" base_EnumerationLiteral="_HBCovPUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsDfUvEeWDHO3eL5eRfg" conceptName="61685007" base_EnumerationLiteral="_HBCovfUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsDvUvEeWDHO3eL5eRfg" conceptName="421466002" base_EnumerationLiteral="_HBCovvUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsD_UvEeWDHO3eL5eRfg" conceptName="41695006" base_EnumerationLiteral="_HBCov_UvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsEPUvEeWDHO3eL5eRfg" conceptName="9454009" base_EnumerationLiteral="_HBCowPUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsEfUvEeWDHO3eL5eRfg" conceptName="78220002" base_EnumerationLiteral="_HBCowfUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsEvUvEeWDHO3eL5eRfg" conceptName="40983000" base_EnumerationLiteral="_HBCowvUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsE_UvEeWDHO3eL5eRfg" conceptName="52359001" base_EnumerationLiteral="_HBCow_UvEeWDHO3eL5eRfg"/>
+  <term:ValueSetCode xmi:id="_HBFsFPUvEeWDHO3eL5eRfg" conceptName="85050009" base_EnumerationLiteral="_HBCoxPUvEeWDHO3eL5eRfg"/>
 </xmi:XMI>
