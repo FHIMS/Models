@@ -1342,6 +1342,8 @@ These are documented in CDC local codes table, CDCPHINVS (Value set OID 2.16.840
         <ownedLiteral xmi:id="_EhA6IPCIEeWoT_0zIvvImQ" name="419465000 (Unilateral right)"/>
         <ownedLiteral xmi:id="_Ir_s0PCIEeWoT_0zIvvImQ" name="51440002 (Bilateral)"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_dPtEEPT_EeWvwZaMZtWyqQ" name="DICOM"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_VN0FsPUJEeWp_Mwb77TLSQ" name="NCPDP"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_ilRJYPaiEeGpCd694FcdqQ" name="CommonProductVocab">
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_XViOYKRMEeGZ6ueex_Me0w" name="NDC-FDA Drug Registration and Listing System"/>
@@ -2594,6 +2596,66 @@ These are documented in CDC local codes table, CDCPHINVS (Value set OID 2.16.840
         <ownedLiteral xmi:id="_X2at4aRMEeGZ6ueex_Me0w" name="WND"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_X2PHsKRMEeGZ6ueex_Me0w" name="Route of administration (HL7)"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_UBl3EPTxEeWvwZaMZtWyqQ" name="CoAgentKind"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_gAn04PTxEeWvwZaMZtWyqQ" name="FormularyCoverage"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_l23PgPTxEeWvwZaMZtWyqQ" name="FormularyStatus"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_pmoF0PTxEeWvwZaMZtWyqQ" name="DrugCoverageStatus"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_2uNAEPTxEeWvwZaMZtWyqQ" name="DueProfessionalService">
+        <ownedLiteral xmi:id="_mszjkPTyEeWvwZaMZtWyqQ" name="00 (No intervention)"/>
+        <ownedLiteral xmi:id="_oej1EPTyEeWvwZaMZtWyqQ" name="AS (Patient assessment)"/>
+        <ownedLiteral xmi:id="_rCntQPTyEeWvwZaMZtWyqQ" name="CC (Coordination of care)"/>
+        <ownedLiteral xmi:id="_txu-4PTyEeWvwZaMZtWyqQ" name="DE (Dosing evaluation/determination)"/>
+        <ownedLiteral xmi:id="_uhKQsPTyEeWvwZaMZtWyqQ" name="DP (Dosage evaluated)"/>
+        <ownedLiteral xmi:id="_xRHP0PTyEeWvwZaMZtWyqQ" name="FE (Formulary enforcement)"/>
+        <ownedLiteral xmi:id="_001OMPTyEeWvwZaMZtWyqQ" name="GP (Generic product selection)"/>
+        <ownedLiteral xmi:id="_3_ArMPTyEeWvwZaMZtWyqQ" name="M0 (Prescriber consulted)"/>
+        <ownedLiteral xmi:id="_7XRAcPTyEeWvwZaMZtWyqQ" name="MA (Medication administration)"/>
+        <ownedLiteral xmi:id="_8BIc0PTyEeWvwZaMZtWyqQ" name="MB (Overriding benefit)"/>
+        <ownedLiteral xmi:id="_9cyigPTyEeWvwZaMZtWyqQ" name="MP (Patient will be monitored)"/>
+        <ownedLiteral xmi:id="__X3vIPTyEeWvwZaMZtWyqQ" name="MR (Medication review)"/>
+        <ownedLiteral xmi:id="_CRckUPTzEeWvwZaMZtWyqQ" name="PA (Previous patient tolerance)"/>
+        <ownedLiteral xmi:id="_C_QskPTzEeWvwZaMZtWyqQ" name="PE (Patient education/instruction)"/>
+        <ownedLiteral xmi:id="_EijEQPTzEeWvwZaMZtWyqQ" name="PH (Patient medication history)"/>
+        <ownedLiteral xmi:id="_GB-2sPTzEeWvwZaMZtWyqQ" name="PM (Patient monitoring)"/>
+        <ownedLiteral xmi:id="_I6Z1UPTzEeWvwZaMZtWyqQ" name="P0 (Patient consulted)"/>
+        <ownedLiteral xmi:id="_JiUJ4PTzEeWvwZaMZtWyqQ" name="PT (Perform laboratory test)"/>
+        <ownedLiteral xmi:id="_K_130PTzEeWvwZaMZtWyqQ" name="R0 (Pharmacist consulted other source)"/>
+        <ownedLiteral xmi:id="_MqeNoPTzEeWvwZaMZtWyqQ" name="RT (Recommend laboratory test)"/>
+        <ownedLiteral xmi:id="_OqFU8PTzEeWvwZaMZtWyqQ" name="SC (Self-care consultation)"/>
+        <ownedLiteral xmi:id="_QUqncPTzEeWvwZaMZtWyqQ" name="SW (Literature search/review)"/>
+        <ownedLiteral xmi:id="_TWziwPTzEeWvwZaMZtWyqQ" name="TC (Payer/processor consulted)"/>
+        <ownedLiteral xmi:id="_VpKm8PTzEeWvwZaMZtWyqQ" name="TH (Therapeutic product interchange)"/>
+        <ownedLiteral xmi:id="_Xd7JIPTzEeWvwZaMZtWyqQ" name="ZZ (Other Acknowledgement)"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_gmLuIPTzEeWvwZaMZtWyqQ" name="DueReasonForService"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_RF6zUPT1EeWvwZaMZtWyqQ" name="DueResultOfService">
+        <ownedLiteral xmi:id="_Tz3nUPT1EeWvwZaMZtWyqQ" name="1A"/>
+        <ownedLiteral xmi:id="_VmKrYPT1EeWvwZaMZtWyqQ" name="1B"/>
+        <ownedLiteral xmi:id="_aQtH4PT1EeWvwZaMZtWyqQ" name="1C"/>
+        <ownedLiteral xmi:id="_bO_8IPT1EeWvwZaMZtWyqQ" name="1D"/>
+        <ownedLiteral xmi:id="_dxkmkPT1EeWvwZaMZtWyqQ" name="1E"/>
+        <ownedLiteral xmi:id="_e06S4PT1EeWvwZaMZtWyqQ" name="1F"/>
+        <ownedLiteral xmi:id="_hcJa4PT1EeWvwZaMZtWyqQ" name="1G"/>
+        <ownedLiteral xmi:id="_iut2APT1EeWvwZaMZtWyqQ" name="1H"/>
+        <ownedLiteral xmi:id="_lLRYAPT1EeWvwZaMZtWyqQ" name="1J"/>
+        <ownedLiteral xmi:id="_mPgcMPT1EeWvwZaMZtWyqQ" name="1K"/>
+        <ownedLiteral xmi:id="_oMRD0PT1EeWvwZaMZtWyqQ" name="2A"/>
+        <ownedLiteral xmi:id="_pUblwPT1EeWvwZaMZtWyqQ" name="2B"/>
+        <ownedLiteral xmi:id="_rJ_ZMPT1EeWvwZaMZtWyqQ" name="3A"/>
+        <ownedLiteral xmi:id="_sWC8oPT1EeWvwZaMZtWyqQ" name="3B"/>
+        <ownedLiteral xmi:id="_uc5UYPT1EeWvwZaMZtWyqQ" name="3C"/>
+        <ownedLiteral xmi:id="_vqiMMPT1EeWvwZaMZtWyqQ" name="3D"/>
+        <ownedLiteral xmi:id="_x1HNYPT1EeWvwZaMZtWyqQ" name="3E"/>
+        <ownedLiteral xmi:id="_wod-oPT2EeWvwZaMZtWyqQ" name="3F"/>
+        <ownedLiteral xmi:id="_yyZfkPT2EeWvwZaMZtWyqQ" name="3G"/>
+        <ownedLiteral xmi:id="_1LPmQPT2EeWvwZaMZtWyqQ" name="3H"/>
+        <ownedLiteral xmi:id="_6qdoAPT2EeWvwZaMZtWyqQ" name="3J"/>
+        <ownedLiteral xmi:id="_BB7gYPT3EeWvwZaMZtWyqQ" name="3K"/>
+        <ownedLiteral xmi:id="_LLpiYPT3EeWvwZaMZtWyqQ" name="3M"/>
+        <ownedLiteral xmi:id="_MIBEAPT3EeWvwZaMZtWyqQ" name="3N"/>
+        <ownedLiteral xmi:id="_NTDTwPT3EeWvwZaMZtWyqQ" name="00"/>
+        <ownedLiteral xmi:id="_O61J4PT3EeWvwZaMZtWyqQ" name="4A"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_D4gFUA6mEeSRtMKZGaK6Zw" name="SecurityPrivacyVocab">
       <ownedComment xmi:id="_rGR28A6nEeSRtMKZGaK6Zw">
@@ -2983,11 +3045,11 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_JcKs8OX9EeWMCcMdatPOjA" name="cancelled"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_inWjAOX9EeWMCcMdatPOjA" name="CarePlanStatus">
-        <ownedLiteral xmi:id="_x_ZEAOX9EeWMCcMdatPOjA" name="proposed"/>
-        <ownedLiteral xmi:id="_z2DqsOX9EeWMCcMdatPOjA" name="draft"/>
         <ownedLiteral xmi:id="_01a18OX9EeWMCcMdatPOjA" name="active"/>
-        <ownedLiteral xmi:id="_3IK7sOX9EeWMCcMdatPOjA" name="completed"/>
         <ownedLiteral xmi:id="_3z1H0OX9EeWMCcMdatPOjA" name="cancelled"/>
+        <ownedLiteral xmi:id="_3IK7sOX9EeWMCcMdatPOjA" name="completed"/>
+        <ownedLiteral xmi:id="_z2DqsOX9EeWMCcMdatPOjA" name="draft (pending)"/>
+        <ownedLiteral xmi:id="_x_ZEAOX9EeWMCcMdatPOjA" name="proposed"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_qRfHsOX-EeWMCcMdatPOjA" name="CarePlanActivity"/>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_f44qQOYAEeWMCcMdatPOjA" name="HealthGoalStatus">
@@ -3023,6 +3085,30 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_inb1oO0bEeWjUp19yClo5Q" name="physiotherapy"/>
         <ownedLiteral xmi:id="_c0b8QO0bEeWjUp19yClo5Q" name="safety"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_72DmgPT4EeWvwZaMZtWyqQ" name="InfusionSite">
+        <ownedLiteral xmi:id="__Hs9cPT4EeWvwZaMZtWyqQ" name="128553008"/>
+        <ownedLiteral xmi:id="_F4bDUPT5EeWvwZaMZtWyqQ" name="71585003"/>
+        <ownedLiteral xmi:id="_HHamAPT5EeWvwZaMZtWyqQ" name="83419000"/>
+        <ownedLiteral xmi:id="_JwikYPT5EeWvwZaMZtWyqQ" name="278015009"/>
+        <ownedLiteral xmi:id="_LV704PT5EeWvwZaMZtWyqQ" name="308046002"/>
+        <ownedLiteral xmi:id="_NsjuAPT5EeWvwZaMZtWyqQ" name="363577004"/>
+        <ownedLiteral xmi:id="_PElQ4PT5EeWvwZaMZtWyqQ" name="12123001"/>
+        <ownedLiteral xmi:id="_ReH7IPT5EeWvwZaMZtWyqQ" name="29850006"/>
+        <ownedLiteral xmi:id="_VseK4PT5EeWvwZaMZtWyqQ" name="310652005"/>
+        <ownedLiteral xmi:id="_Xcf-EPT5EeWvwZaMZtWyqQ" name="64605006"/>
+        <ownedLiteral xmi:id="_bYpDgPT5EeWvwZaMZtWyqQ" name="119535006"/>
+        <ownedLiteral xmi:id="_dVUyoPT5EeWvwZaMZtWyqQ" name="20285007"/>
+        <ownedLiteral xmi:id="_gprfUPT5EeWvwZaMZtWyqQ" name="61685007"/>
+        <ownedLiteral xmi:id="_ihR6IPT5EeWvwZaMZtWyqQ" name="421466002"/>
+        <ownedLiteral xmi:id="_lpoyMPT5EeWvwZaMZtWyqQ" name="41695006"/>
+        <ownedLiteral xmi:id="_qQMtoPT5EeWvwZaMZtWyqQ" name="9454009"/>
+        <ownedLiteral xmi:id="_u8s5APT5EeWvwZaMZtWyqQ" name="78220002"/>
+        <ownedLiteral xmi:id="_wD7m0PT5EeWvwZaMZtWyqQ" name="40983000"/>
+        <ownedLiteral xmi:id="_yXN4EPT5EeWvwZaMZtWyqQ" name="52359001"/>
+        <ownedLiteral xmi:id="__wVt8PT8EeWvwZaMZtWyqQ" name="85050009"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_hKnIgPUBEeWvwZaMZtWyqQ" name="CarePlanActivityStatusCodeSystem"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_D8EqYPUEEeWvwZaMZtWyqQ" name="GoalCategoryCodeSystem"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_oBYGMPCGEeWoT_0zIvvImQ" name="ImagingVocab">
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_v5NlIPCGEeWoT_0zIvvImQ" name="AcquisitionModalityCode">
@@ -5743,7 +5829,7 @@ The following is an example coded concept:</body>
   <term:CodeSystemVersion xmi:id="_WwluQaRMEeGZ6ueex_Me0w" identifier="2.16.840.1.113883.6.96" version="20100731" source="SCT" base_Enumeration="_WwluQKRMEeGZ6ueex_Me0w"/>
   <term:ValueSetVersion xmi:id="_X8KJgaRMEeGZ6ueex_Me0w" identifier="2.16.840.1.114222.4.11.838" version="1" fullName="Units of Measure" definition="Units of Measure based on UCUM std which also includes dimension" revisionDate="10/22/2008" codeSystem="_X8VIoKRMEeGZ6ueex_Me0w" base_Enumeration="_X8KJgKRMEeGZ6ueex_Me0w"/>
   <term:CodeSystemVersion xmi:id="_X8VIoKRMEeGZ6ueex_Me0w" identifier="2.16.840.1.113883.6.8" version="1.7" source="UCUM" base_Enumeration="_X8UhkKRMEeGZ6ueex_Me0w"/>
-  <term:ValueSetVersion xmi:id="_Ksrr8OU0EeWlUtxA-8RVeQ" identifier="2.16.840.1.113883.3.2074.1.1.69" fullName="Care Plan Kind" url="TBD" definition="Kinds of plan, including plans for diseases, specialties, and settings.  Note that this is a &quot;grouping value set&quot; as the values can come from SNOMED or NUCC Provider Taxonomy.  In the future, we may wish to add concepts for settings (such as home, inpatient, etc.)." binding="Dynamic" base_Enumeration="_KsnagOU0EeWlUtxA-8RVeQ"/>
+  <term:ValueSetVersion xmi:id="_Ksrr8OU0EeWlUtxA-8RVeQ" identifier="2.16.840.1.113883.3.2074.1.1.69" fullName="Care Plan Kind" url="tbd" definition="Kinds of plan, including plans for diseases, specialties, and settings.  Note that this is a &quot;grouping value set&quot; as the values can come from SNOMED or NUCC Provider Taxonomy.  In the future, we may wish to add concepts for settings (such as home, inpatient, etc.)." binding="Dynamic" base_Enumeration="_KsnagOU0EeWlUtxA-8RVeQ"/>
   <term:ValueSetVersion xmi:id="_9TFl4OU5EeWlUtxA-8RVeQ" base_Enumeration="_9TE-0OU5EeWlUtxA-8RVeQ"/>
   <term:ValueSetCode xmi:id="_EfPqkOU6EeWlUtxA-8RVeQ" base_EnumerationLiteral="_EfPDgOU6EeWlUtxA-8RVeQ"/>
   <term:ValueSetCode xmi:id="_U1qfYeU6EeWlUtxA-8RVeQ" base_EnumerationLiteral="_U1qfYOU6EeWlUtxA-8RVeQ"/>
@@ -5754,55 +5840,55 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_8rFDUOU8EeWlUtxA-8RVeQ" conceptName="Moderate likelihood" usageNote="The specified outcome has a reasonable likelihood of occurrence." base_EnumerationLiteral="_8rEcQOU8EeWlUtxA-8RVeQ"/>
   <term:ValueSetCode xmi:id="_Is3aMOU9EeWlUtxA-8RVeQ" conceptName="High likelihood" usageNote="The specified outcome is more likely to occur than not." base_EnumerationLiteral="_Is2zIOU9EeWlUtxA-8RVeQ"/>
   <term:ValueSetCode xmi:id="_RBneoOU9EeWlUtxA-8RVeQ" conceptName="Certain" usageNote="The specified outcome is effectively guaranteed." base_EnumerationLiteral="_RBm3kOU9EeWlUtxA-8RVeQ"/>
-  <term:ValueSetVersion xmi:id="_UErZMOX8EeWMCcMdatPOjA" fullName="care-plan-activity-status" url="http://hl7.org/fhir/care-plan-activity-status" base_Enumeration="_UEl5oOX8EeWMCcMdatPOjA"/>
-  <term:ValueSetCode xmi:id="_3CIakOX8EeWMCcMdatPOjA" base_EnumerationLiteral="_3CHzgOX8EeWMCcMdatPOjA"/>
-  <term:ValueSetCode xmi:id="_4SE_gOX8EeWMCcMdatPOjA" base_EnumerationLiteral="_4SEYcOX8EeWMCcMdatPOjA"/>
-  <term:ValueSetCode xmi:id="_GkhKYOX9EeWMCcMdatPOjA" base_EnumerationLiteral="_GkgjUOX9EeWMCcMdatPOjA"/>
-  <term:ValueSetCode xmi:id="_INBZQOX9EeWMCcMdatPOjA" base_EnumerationLiteral="_INAyMOX9EeWMCcMdatPOjA"/>
-  <term:ValueSetCode xmi:id="_Iuo4keX9EeWMCcMdatPOjA" base_EnumerationLiteral="_Iuo4kOX9EeWMCcMdatPOjA"/>
-  <term:ValueSetCode xmi:id="_JcKs8eX9EeWMCcMdatPOjA" base_EnumerationLiteral="_JcKs8OX9EeWMCcMdatPOjA"/>
+  <term:ValueSetVersion xmi:id="_UErZMOX8EeWMCcMdatPOjA" identifier="2.16.840.1.113883.4.642.2.65" fullName="care-plan-activity-status" url="http://hl7.org/fhir/care-plan-activity-status" codeSystem="_hKnvkPUBEeWvwZaMZtWyqQ" base_Enumeration="_UEl5oOX8EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_3CIakOX8EeWMCcMdatPOjA" conceptName="not-started" base_EnumerationLiteral="_3CHzgOX8EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_4SE_gOX8EeWMCcMdatPOjA" conceptName="scheduled" base_EnumerationLiteral="_4SEYcOX8EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_GkhKYOX9EeWMCcMdatPOjA" conceptName="in-progress" base_EnumerationLiteral="_GkgjUOX9EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_INBZQOX9EeWMCcMdatPOjA" conceptName="on-hold" base_EnumerationLiteral="_INAyMOX9EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_Iuo4keX9EeWMCcMdatPOjA" conceptName="completed" base_EnumerationLiteral="_Iuo4kOX9EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_JcKs8eX9EeWMCcMdatPOjA" conceptName="cancelled" base_EnumerationLiteral="_JcKs8OX9EeWMCcMdatPOjA"/>
   <term:ValueSetVersion xmi:id="_inXKEOX9EeWMCcMdatPOjA" identifier="2.16.840.1.113883.4.642.2.60" fullName="CarePlanStatus" url="http://hl7-fhir.github.io/valueset-care-plan-status.html" base_Enumeration="_inWjAOX9EeWMCcMdatPOjA"/>
-  <term:ValueSetCode xmi:id="_x_ZrEOX9EeWMCcMdatPOjA" base_EnumerationLiteral="_x_ZEAOX9EeWMCcMdatPOjA"/>
-  <term:ValueSetCode xmi:id="_z2DqseX9EeWMCcMdatPOjA" base_EnumerationLiteral="_z2DqsOX9EeWMCcMdatPOjA"/>
-  <term:ValueSetCode xmi:id="_01a18eX9EeWMCcMdatPOjA" base_EnumerationLiteral="_01a18OX9EeWMCcMdatPOjA"/>
-  <term:ValueSetCode xmi:id="_3IK7seX9EeWMCcMdatPOjA" base_EnumerationLiteral="_3IK7sOX9EeWMCcMdatPOjA"/>
-  <term:ValueSetCode xmi:id="_3z1u4OX9EeWMCcMdatPOjA" base_EnumerationLiteral="_3z1H0OX9EeWMCcMdatPOjA"/>
-  <term:ValueSetVersion xmi:id="_qRfuwOX-EeWMCcMdatPOjA" identifier="2.16.840.1.113883.4.642.2.64" url="http://hl7.org/fhir/ValueSet/care-plan-activity" definition="Note: This should be replaced by &quot;Procedure&quot; as all the elements are from the SNOMED CT Procedure hierarchy" base_Enumeration="_qRfHsOX-EeWMCcMdatPOjA"/>
-  <term:ValueSetVersion xmi:id="_f45RUOYAEeWMCcMdatPOjA" definition="Need to define.  Grouping value-set of FHIR plus the 3 SCT values for improving, stabilizing, and deteriorating." base_Enumeration="_f44qQOYAEeWMCcMdatPOjA"/>
-  <term:ValueSetCode xmi:id="_k8YSsOt5EeW_d52hJF-Rwg" base_EnumerationLiteral="_k8SMEOt5EeW_d52hJF-Rwg"/>
-  <term:ValueSetCode xmi:id="_ntZBwOt5EeW_d52hJF-Rwg" base_EnumerationLiteral="_ntYasOt5EeW_d52hJF-Rwg"/>
-  <term:ValueSetCode xmi:id="_5nAHoOt5EeW_d52hJF-Rwg" base_EnumerationLiteral="_5m_gkOt5EeW_d52hJF-Rwg"/>
-  <term:ValueSetCode xmi:id="_628FgOt5EeW_d52hJF-Rwg" base_EnumerationLiteral="_627ecOt5EeW_d52hJF-Rwg"/>
-  <term:ValueSetCode xmi:id="_7l1L0et5EeW_d52hJF-Rwg" base_EnumerationLiteral="_7l1L0Ot5EeW_d52hJF-Rwg"/>
-  <term:ValueSetCode xmi:id="_8h3WQOt5EeW_d52hJF-Rwg" base_EnumerationLiteral="_8h2vMOt5EeW_d52hJF-Rwg"/>
-  <term:ValueSetCode xmi:id="_-tzpYOt5EeW_d52hJF-Rwg" base_EnumerationLiteral="_-tzCUOt5EeW_d52hJF-Rwg"/>
-  <term:ValueSetCode xmi:id="__rBfket5EeW_d52hJF-Rwg" base_EnumerationLiteral="__rBfkOt5EeW_d52hJF-Rwg"/>
-  <term:ValueSetVersion xmi:id="_U1dgMet-EeW_d52hJF-Rwg" base_Enumeration="_U1dgMOt-EeW_d52hJF-Rwg"/>
-  <term:ValueSetCode xmi:id="_Z6-oget-EeW_d52hJF-Rwg" base_EnumerationLiteral="_Z6-ogOt-EeW_d52hJF-Rwg"/>
-  <term:ValueSetCode xmi:id="_e2wmAOt-EeW_d52hJF-Rwg" base_EnumerationLiteral="_e2v-8Ot-EeW_d52hJF-Rwg"/>
-  <term:ValueSetCode xmi:id="_gqAsUet-EeW_d52hJF-Rwg" base_EnumerationLiteral="_gqAsUOt-EeW_d52hJF-Rwg"/>
-  <term:ValueSetCode xmi:id="_hsbyoet-EeW_d52hJF-Rwg" base_EnumerationLiteral="_hsbyoOt-EeW_d52hJF-Rwg"/>
-  <term:ValueSetCode xmi:id="_i1HR8et-EeW_d52hJF-Rwg" base_EnumerationLiteral="_i1HR8Ot-EeW_d52hJF-Rwg"/>
-  <term:ValueSetCode xmi:id="_j7ttoOt-EeW_d52hJF-Rwg" base_EnumerationLiteral="_j7tGkOt-EeW_d52hJF-Rwg"/>
-  <term:ValueSetCode xmi:id="_kqUgEet-EeW_d52hJF-Rwg" base_EnumerationLiteral="_kqUgEOt-EeW_d52hJF-Rwg"/>
-  <term:ValueSetCode xmi:id="_lebdkOt-EeW_d52hJF-Rwg" base_EnumerationLiteral="_leaPcOt-EeW_d52hJF-Rwg"/>
-  <term:ValueSetVersion xmi:id="_0OXQUOx8EeW5tJ4V3DOBLA" base_Enumeration="_0OWpQOx8EeW5tJ4V3DOBLA"/>
-  <term:ValueSetCode xmi:id="_3BI58Ox8EeW5tJ4V3DOBLA" base_EnumerationLiteral="_3BIS4Ox8EeW5tJ4V3DOBLA"/>
-  <term:ValueSetCode xmi:id="_576pAOx8EeW5tJ4V3DOBLA" base_EnumerationLiteral="_575a4Ox8EeW5tJ4V3DOBLA"/>
-  <term:ValueSetCode xmi:id="_81jIkex8EeW5tJ4V3DOBLA" base_EnumerationLiteral="_81jIkOx8EeW5tJ4V3DOBLA"/>
-  <term:ValueSetCode xmi:id="_C0H_0Ox9EeW5tJ4V3DOBLA" base_EnumerationLiteral="_C0HYwOx9EeW5tJ4V3DOBLA"/>
-  <term:ValueSetVersion xmi:id="_HIsBgO0bEeWjUp19yClo5Q" identifier="2.16.840.1.113883.4.642.2.411" url="http://hl7.org/fhir/ValueSet/goal-category" base_Enumeration="_HIracO0bEeWjUp19yClo5Q"/>
-  <term:ValueSetCode xmi:id="_VbqX4O0bEeWjUp19yClo5Q" base_EnumerationLiteral="_Vbpw0O0bEeWjUp19yClo5Q"/>
-  <term:ValueSetCode xmi:id="_c0cjUO0bEeWjUp19yClo5Q" base_EnumerationLiteral="_c0b8QO0bEeWjUp19yClo5Q"/>
-  <term:ValueSetCode xmi:id="_erxRUO0bEeWjUp19yClo5Q" base_EnumerationLiteral="_erwqQO0bEeWjUp19yClo5Q"/>
-  <term:ValueSetCode xmi:id="_hJZKUO0bEeWjUp19yClo5Q" base_EnumerationLiteral="_hJYjQO0bEeWjUp19yClo5Q"/>
-  <term:ValueSetCode xmi:id="_inccsO0bEeWjUp19yClo5Q" base_EnumerationLiteral="_inb1oO0bEeWjUp19yClo5Q"/>
-  <term:ValueSetVersion xmi:id="_v5NlIfCGEeWoT_0zIvvImQ" identifier="2.16.840.1.113883.4.642.2.158" url="http://hl7.org/fhir/ValueSet/dicom-cid29" definition="This Value Set includes codes that may be used to identify an image or waveform acquisition modality, as used in the ImagingStudy resource, Dicom Attribute Modality (0008,0060) or HL7 v2 Table 0259 (see HL7 v2.6 Chapter 8 Section 8.8.8.47). It generally corresponds to a class of diagnostic equipment, or to a specific acquisition function or technique in a device." base_Enumeration="_v5NlIPCGEeWoT_0zIvvImQ"/>
+  <term:ValueSetCode xmi:id="_x_ZrEOX9EeWMCcMdatPOjA" conceptName="proposed" base_EnumerationLiteral="_x_ZEAOX9EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_z2DqseX9EeWMCcMdatPOjA" conceptName="pending" base_EnumerationLiteral="_z2DqsOX9EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_01a18eX9EeWMCcMdatPOjA" conceptName="active" base_EnumerationLiteral="_01a18OX9EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_3IK7seX9EeWMCcMdatPOjA" conceptName="completed" base_EnumerationLiteral="_3IK7sOX9EeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_3z1u4OX9EeWMCcMdatPOjA" conceptName="cancelled" base_EnumerationLiteral="_3z1H0OX9EeWMCcMdatPOjA"/>
+  <term:ValueSetVersion xmi:id="_qRfuwOX-EeWMCcMdatPOjA" identifier="2.16.840.1.113883.4.642.2.64" url="http://hl7.org/fhir/ValueSet/care-plan-activity" definition="Note: This should be replaced by &quot;Procedure&quot; as all the elements are from the SNOMED CT Procedure hierarchy" type="Intensional" binding="Dynamic" codeSystem="_WwluQaRMEeGZ6ueex_Me0w" base_Enumeration="_qRfHsOX-EeWMCcMdatPOjA"/>
+  <term:ValueSetVersion xmi:id="_f45RUOYAEeWMCcMdatPOjA" identifier="tbd" source="HL7 FHIR" url="tbd" definition="Workflow status of the health goal.  Subset of the FHIR Goal Status value set." base_Enumeration="_f44qQOYAEeWMCcMdatPOjA"/>
+  <term:ValueSetCode xmi:id="_k8YSsOt5EeW_d52hJF-Rwg" conceptName="proposed" base_EnumerationLiteral="_k8SMEOt5EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_ntZBwOt5EeW_d52hJF-Rwg" conceptName="complete" base_EnumerationLiteral="_ntYasOt5EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_5nAHoOt5EeW_d52hJF-Rwg" conceptName="planned" base_EnumerationLiteral="_5m_gkOt5EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_628FgOt5EeW_d52hJF-Rwg" conceptName="accepted" base_EnumerationLiteral="_627ecOt5EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_7l1L0et5EeW_d52hJF-Rwg" conceptName="rejected" base_EnumerationLiteral="_7l1L0Ot5EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_8h3WQOt5EeW_d52hJF-Rwg" conceptName="in-progress" base_EnumerationLiteral="_8h2vMOt5EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_-tzpYOt5EeW_d52hJF-Rwg" conceptName="on-hold" base_EnumerationLiteral="_-tzCUOt5EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="__rBfket5EeW_d52hJF-Rwg" conceptName="cancelled" base_EnumerationLiteral="__rBfkOt5EeW_d52hJF-Rwg"/>
+  <term:ValueSetVersion xmi:id="_U1dgMet-EeW_d52hJF-Rwg" identifier="tbd" url="tbd" base_Enumeration="_U1dgMOt-EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_Z6-oget-EeW_d52hJF-Rwg" conceptName="in-progress" base_EnumerationLiteral="_Z6-ogOt-EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_e2wmAOt-EeW_d52hJF-Rwg" conceptName="sustaining" base_EnumerationLiteral="_e2v-8Ot-EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_gqAsUet-EeW_d52hJF-Rwg" conceptName="improving" base_EnumerationLiteral="_gqAsUOt-EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_hsbyoet-EeW_d52hJF-Rwg" conceptName="stable" base_EnumerationLiteral="_hsbyoOt-EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_i1HR8et-EeW_d52hJF-Rwg" conceptName="deteriorating" base_EnumerationLiteral="_i1HR8Ot-EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_j7ttoOt-EeW_d52hJF-Rwg" conceptName="achieved" base_EnumerationLiteral="_j7tGkOt-EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_kqUgEet-EeW_d52hJF-Rwg" conceptName="optimal" base_EnumerationLiteral="_kqUgEOt-EeW_d52hJF-Rwg"/>
+  <term:ValueSetCode xmi:id="_lebdkOt-EeW_d52hJF-Rwg" conceptName="abandoned" base_EnumerationLiteral="_leaPcOt-EeW_d52hJF-Rwg"/>
+  <term:ValueSetVersion xmi:id="_0OXQUOx8EeW5tJ4V3DOBLA" identifier="tbd" url="tbd" base_Enumeration="_0OWpQOx8EeW5tJ4V3DOBLA"/>
+  <term:ValueSetCode xmi:id="_3BI58Ox8EeW5tJ4V3DOBLA" conceptName="careGiver" base_EnumerationLiteral="_3BIS4Ox8EeW5tJ4V3DOBLA"/>
+  <term:ValueSetCode xmi:id="_576pAOx8EeW5tJ4V3DOBLA" conceptName="patient" base_EnumerationLiteral="_575a4Ox8EeW5tJ4V3DOBLA"/>
+  <term:ValueSetCode xmi:id="_81jIkex8EeW5tJ4V3DOBLA" conceptName="stakeholder" base_EnumerationLiteral="_81jIkOx8EeW5tJ4V3DOBLA"/>
+  <term:ValueSetCode xmi:id="_C0H_0Ox9EeW5tJ4V3DOBLA" conceptName="supportingMember" base_EnumerationLiteral="_C0HYwOx9EeW5tJ4V3DOBLA"/>
+  <term:ValueSetVersion xmi:id="_HIsBgO0bEeWjUp19yClo5Q" identifier="2.16.840.1.113883.4.642.2.411" url="http://hl7.org/fhir/ValueSet/goal-category" codeSystem="_D8FRcPUEEeWvwZaMZtWyqQ" base_Enumeration="_HIracO0bEeWjUp19yClo5Q"/>
+  <term:ValueSetCode xmi:id="_VbqX4O0bEeWjUp19yClo5Q" conceptName="dietary" base_EnumerationLiteral="_Vbpw0O0bEeWjUp19yClo5Q"/>
+  <term:ValueSetCode xmi:id="_c0cjUO0bEeWjUp19yClo5Q" conceptName="safety" base_EnumerationLiteral="_c0b8QO0bEeWjUp19yClo5Q"/>
+  <term:ValueSetCode xmi:id="_erxRUO0bEeWjUp19yClo5Q" conceptName="behavioral" base_EnumerationLiteral="_erwqQO0bEeWjUp19yClo5Q"/>
+  <term:ValueSetCode xmi:id="_hJZKUO0bEeWjUp19yClo5Q" conceptName="nursing" base_EnumerationLiteral="_hJYjQO0bEeWjUp19yClo5Q"/>
+  <term:ValueSetCode xmi:id="_inccsO0bEeWjUp19yClo5Q" conceptName="physiotherapy" base_EnumerationLiteral="_inb1oO0bEeWjUp19yClo5Q"/>
+  <term:ValueSetVersion xmi:id="_v5NlIfCGEeWoT_0zIvvImQ" identifier="2.16.840.1.113883.4.642.2.158" url="http://hl7.org/fhir/ValueSet/dicom-cid29" definition="This Value Set includes codes that may be used to identify an image or waveform acquisition modality, as used in the ImagingStudy resource, Dicom Attribute Modality (0008,0060) or HL7 v2 Table 0259 (see HL7 v2.6 Chapter 8 Section 8.8.8.47). It generally corresponds to a class of diagnostic equipment, or to a specific acquisition function or technique in a device." codeSystem="_dPtrIPT_EeWvwZaMZtWyqQ" base_Enumeration="_v5NlIPCGEeWoT_0zIvvImQ"/>
   <term:ValueSetVersion xmi:id="_uXEAcfCHEeWoT_0zIvvImQ" identifier="2.16.840.1.113883.4.642.2.442" fullName="Laterality" url="http://hl7.org/fhir/valueset-bodysite-laterality.html" definition="Laterality: SNOMED-CT concepts for 'left', 'right', and 'bilateral'" codeSystem="_WwluQaRMEeGZ6ueex_Me0w" base_Enumeration="_uXEAcPCHEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_-LHvEfCHEeWoT_0zIvvImQ" conceptName="Unilateral left" base_EnumerationLiteral="_-LHvEPCHEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_EhA6IfCIEeWoT_0zIvvImQ" conceptName="Unilateral right" base_EnumerationLiteral="_EhA6IPCIEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_Ir_s0fCIEeWoT_0zIvvImQ" conceptName="Bilateral" base_EnumerationLiteral="_Ir_s0PCIEeWoT_0zIvvImQ"/>
-  <term:ValueSetVersion xmi:id="_hsPeMfCIEeWoT_0zIvvImQ" identifier="2.16.840.1.113883.4.642.2.159" fullName="KOStitle" url="http://hl7.org/fhir/valueset-kos-title.html" definition="The document title code of key object selection" base_Enumeration="_hsPeMPCIEeWoT_0zIvvImQ"/>
+  <term:ValueSetVersion xmi:id="_hsPeMfCIEeWoT_0zIvvImQ" identifier="2.16.840.1.113883.4.642.2.159" fullName="KOStitle" url="http://hl7.org/fhir/valueset-kos-title.html" definition="The document title code of key object selection" codeSystem="_dPtrIPT_EeWvwZaMZtWyqQ" base_Enumeration="_hsPeMPCIEeWoT_0zIvvImQ"/>
   <term:ValueSetVersion xmi:id="_8CxtEfCIEeWoT_0zIvvImQ" identifier="tbd" url="tbd" definition="Status of an image interpretation report. Values adapted from HL7 V2 table 85" base_Enumeration="_8CxtEPCIEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_Km6r8fCJEeWoT_0zIvvImQ" conceptName="Preliminary results" base_EnumerationLiteral="_Km6r8PCJEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_Ol0KcPCJEeWoT_0zIvvImQ" conceptName="Final" base_EnumerationLiteral="_OlqZcPCJEeWoT_0zIvvImQ"/>
@@ -5874,4 +5960,87 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_ok1CcfCPEeWoT_0zIvvImQ" conceptName="Ultrasound" base_EnumerationLiteral="_ok1CcPCPEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_rMNUYfCPEeWoT_0zIvvImQ" conceptName="Visual Acuity" base_EnumerationLiteral="_rMNUYPCPEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_sLYSYPCPEeWoT_0zIvvImQ" conceptName="X-Ray Angiography" base_EnumerationLiteral="_sLXrUPCPEeWoT_0zIvvImQ"/>
+  <term:ValueSetVersion xmi:id="_UBvBAPTxEeWvwZaMZtWyqQ" url="http://fhim.onc.us.gov/terms/temporary/NcpdpCoagentValueSet" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_UBl3EPTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_gAn04fTxEeWvwZaMZtWyqQ" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_gAn04PTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_l23PgfTxEeWvwZaMZtWyqQ" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_l23PgPTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_pmoF0fTxEeWvwZaMZtWyqQ" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_pmoF0PTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_2uNAEfTxEeWvwZaMZtWyqQ" url="http://fhim.onc.us.gov/terms/temporary/NcpdpprofessionalServiceCodeValueSet" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_2uNAEPTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_mszjkfTyEeWvwZaMZtWyqQ" conceptName="00" base_EnumerationLiteral="_mszjkPTyEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_oej1EfTyEeWvwZaMZtWyqQ" conceptName="AS" base_EnumerationLiteral="_oej1EPTyEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_rCntQfTyEeWvwZaMZtWyqQ" conceptName="CC" base_EnumerationLiteral="_rCntQPTyEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_txu-4fTyEeWvwZaMZtWyqQ" conceptName="DE" base_EnumerationLiteral="_txu-4PTyEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_uhKQsfTyEeWvwZaMZtWyqQ" conceptName="DP" base_EnumerationLiteral="_uhKQsPTyEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_xRHP0fTyEeWvwZaMZtWyqQ" conceptName="FE" base_EnumerationLiteral="_xRHP0PTyEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_001OMfTyEeWvwZaMZtWyqQ" conceptName="GP" base_EnumerationLiteral="_001OMPTyEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_3_ArMfTyEeWvwZaMZtWyqQ" conceptName="M0" base_EnumerationLiteral="_3_ArMPTyEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_7XRAcfTyEeWvwZaMZtWyqQ" conceptName="MA" base_EnumerationLiteral="_7XRAcPTyEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_8BIc0fTyEeWvwZaMZtWyqQ" conceptName="MB" base_EnumerationLiteral="_8BIc0PTyEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_9cyigfTyEeWvwZaMZtWyqQ" conceptName="MP" base_EnumerationLiteral="_9cyigPTyEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="__X3vIfTyEeWvwZaMZtWyqQ" conceptName="MR" base_EnumerationLiteral="__X3vIPTyEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_CRckUfTzEeWvwZaMZtWyqQ" conceptName="PA" base_EnumerationLiteral="_CRckUPTzEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_C_QskfTzEeWvwZaMZtWyqQ" conceptName="PE" base_EnumerationLiteral="_C_QskPTzEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_EijEQfTzEeWvwZaMZtWyqQ" conceptName="PH" base_EnumerationLiteral="_EijEQPTzEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_GB-2sfTzEeWvwZaMZtWyqQ" conceptName="PM" base_EnumerationLiteral="_GB-2sPTzEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_I6Z1UfTzEeWvwZaMZtWyqQ" conceptName="P0" base_EnumerationLiteral="_I6Z1UPTzEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_JiUw8PTzEeWvwZaMZtWyqQ" conceptName="PT" base_EnumerationLiteral="_JiUJ4PTzEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_K_2e4PTzEeWvwZaMZtWyqQ" conceptName="R0" base_EnumerationLiteral="_K_130PTzEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_MqeNofTzEeWvwZaMZtWyqQ" conceptName="RT" base_EnumerationLiteral="_MqeNoPTzEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_OqFU8fTzEeWvwZaMZtWyqQ" conceptName="SC" base_EnumerationLiteral="_OqFU8PTzEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_QUqncfTzEeWvwZaMZtWyqQ" conceptName="SW" base_EnumerationLiteral="_QUqncPTzEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_TWziwfTzEeWvwZaMZtWyqQ" conceptName="TC" base_EnumerationLiteral="_TWziwPTzEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_VpKm8fTzEeWvwZaMZtWyqQ" conceptName="TH" base_EnumerationLiteral="_VpKm8PTzEeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_Xd7JIfTzEeWvwZaMZtWyqQ" conceptName="ZZ" base_EnumerationLiteral="_Xd7JIPTzEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_gmLuIfTzEeWvwZaMZtWyqQ" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_gmLuIPTzEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_RF7aYPT1EeWvwZaMZtWyqQ" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_RF6zUPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_Tz3nUfT1EeWvwZaMZtWyqQ" conceptName="1A (Filled As Is, False Positive)" base_EnumerationLiteral="_Tz3nUPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_VmLScPT1EeWvwZaMZtWyqQ" conceptName="1B (Filled Prescription As Is)" base_EnumerationLiteral="_VmKrYPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_aQtu8PT1EeWvwZaMZtWyqQ" conceptName="1C (Filled, With Different Dose)" base_EnumerationLiteral="_aQtH4PT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_bPAjMPT1EeWvwZaMZtWyqQ" conceptName="1D (Filled, With Different Directions)" base_EnumerationLiteral="_bO_8IPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_dxlNoPT1EeWvwZaMZtWyqQ" conceptName="1E (Filled, With Different Drug)" base_EnumerationLiteral="_dxkmkPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_e0658PT1EeWvwZaMZtWyqQ" conceptName="1F (Filled, With Different Quantity)" base_EnumerationLiteral="_e06S4PT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_hcKB8PT1EeWvwZaMZtWyqQ" conceptName="1G (Filled, With Prescriber Approval)" base_EnumerationLiteral="_hcJa4PT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_iuudEPT1EeWvwZaMZtWyqQ" conceptName="1H (Brand-to-Generic Change)" base_EnumerationLiteral="_iut2APT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_lLR_EPT1EeWvwZaMZtWyqQ" conceptName="1J (Rx-to-OTC Change)" base_EnumerationLiteral="_lLRYAPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_mPgcMfT1EeWvwZaMZtWyqQ" conceptName="1K (Filled with Different Dosage Form)" base_EnumerationLiteral="_mPgcMPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_oMRD0fT1EeWvwZaMZtWyqQ" conceptName="2A (Prescription Not Filled)" base_EnumerationLiteral="_oMRD0PT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_pUcM0PT1EeWvwZaMZtWyqQ" conceptName="2B (Not Filled, Directions Clarified)" base_EnumerationLiteral="_pUblwPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_rKAAQPT1EeWvwZaMZtWyqQ" conceptName="3A (Recommendation Accepted)" base_EnumerationLiteral="_rJ_ZMPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_sWDjsPT1EeWvwZaMZtWyqQ" conceptName="3B (Recommendation Not Accepted)" base_EnumerationLiteral="_sWC8oPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_uc57cPT1EeWvwZaMZtWyqQ" conceptName="3C (Discontinued Drug)" base_EnumerationLiteral="_uc5UYPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_vqizQPT1EeWvwZaMZtWyqQ" conceptName="3D (Regimen Changed)" base_EnumerationLiteral="_vqiMMPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_x1H0cPT1EeWvwZaMZtWyqQ" conceptName="3E (Therapy Changed)" base_EnumerationLiteral="_x1HNYPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_woelsPT2EeWvwZaMZtWyqQ" conceptName="3F (Therapy Changed)" base_EnumerationLiteral="_wod-oPT2EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_yyatsPT2EeWvwZaMZtWyqQ" conceptName="3G (Drug Therapy Unchanged)" base_EnumerationLiteral="_yyZfkPT2EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_1LQNUPT2EeWvwZaMZtWyqQ" conceptName="3H (Follow-Up/Report)" base_EnumerationLiteral="_1LPmQPT2EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_6qePEPT2EeWvwZaMZtWyqQ" conceptName="3J (Patient Referral)" base_EnumerationLiteral="_6qdoAPT2EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_BB8HcPT3EeWvwZaMZtWyqQ" conceptName="3K (Instructions Understood)" base_EnumerationLiteral="_BB7gYPT3EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_LLqJcPT3EeWvwZaMZtWyqQ" conceptName="3M (Compliance Aid Provided)" base_EnumerationLiteral="_LLpiYPT3EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_MIBrEPT3EeWvwZaMZtWyqQ" conceptName="3N (Medication Administere)" base_EnumerationLiteral="_MIBEAPT3EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_NTD60PT3EeWvwZaMZtWyqQ" conceptName="00 (Not Specified)" base_EnumerationLiteral="_NTDTwPT3EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_O61w8PT3EeWvwZaMZtWyqQ" conceptName="4A (Prescribed with acknowledgements)" base_EnumerationLiteral="_O61J4PT3EeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_72ENkPT4EeWvwZaMZtWyqQ" base_Enumeration="_72DmgPT4EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="__HtkgPT4EeWvwZaMZtWyqQ" conceptName="128553008 (antecubital vein)" base_EnumerationLiteral="__Hs9cPT4EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_F4bDUfT5EeWvwZaMZtWyqQ" conceptName="71585003  (external jugular vein)" base_EnumerationLiteral="_F4bDUPT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_HHamAfT5EeWvwZaMZtWyqQ" conceptName="83419000  (femoral vein)" base_EnumerationLiteral="_HHamAPT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_JwjLcPT5EeWvwZaMZtWyqQ" conceptName="278015009 (foot vein)" base_EnumerationLiteral="_JwikYPT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_LV704fT5EeWvwZaMZtWyqQ" conceptName="308046002 (superficial forearm vein)" base_EnumerationLiteral="_LV704PT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_NsjuAfT5EeWvwZaMZtWyqQ" conceptName="363577004 (vein of hand)" base_EnumerationLiteral="_NsjuAPT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_PElQ4fT5EeWvwZaMZtWyqQ" conceptName="12123001  (internal jugular vein)" base_EnumerationLiteral="_PElQ4PT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_ReH7IfT5EeWvwZaMZtWyqQ" conceptName="29850006  (iliac crest)" base_EnumerationLiteral="_ReH7IPT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_Vsex8PT5EeWvwZaMZtWyqQ" conceptName="310652005 (distal femur)" base_EnumerationLiteral="_VseK4PT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_XcglIPT5EeWvwZaMZtWyqQ" conceptName="64605006  (distal tibia)" base_EnumerationLiteral="_Xcf-EPT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_bYpqkPT5EeWvwZaMZtWyqQ" conceptName="119535006 (sternum)" base_EnumerationLiteral="_bYpDgPT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_dVVZsPT5EeWvwZaMZtWyqQ" conceptName="20285007  (proximal tibia)" base_EnumerationLiteral="_dVUyoPT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_gpstcPT5EeWvwZaMZtWyqQ" conceptName="61685007  (lower limb)" base_EnumerationLiteral="_gprfUPT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_ihShMPT5EeWvwZaMZtWyqQ" conceptName="421466002 (peripheral vein)" base_EnumerationLiteral="_ihR6IPT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_lppZQPT5EeWvwZaMZtWyqQ" conceptName="41695006  (scalp)" base_EnumerationLiteral="_lpoyMPT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_qQMtofT5EeWvwZaMZtWyqQ" conceptName="9454009   (subclavian vein)" base_EnumerationLiteral="_qQMtoPT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_u8s5AfT5EeWvwZaMZtWyqQ" conceptName="78220002  (umbilical structure)" base_EnumerationLiteral="_u8s5APT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_wD7m0fT5EeWvwZaMZtWyqQ" conceptName="40983000  (upper arm)" base_EnumerationLiteral="_wD7m0PT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="_yXOfIPT5EeWvwZaMZtWyqQ" conceptName="52359001  (radial vein)" base_EnumerationLiteral="_yXN4EPT5EeWvwZaMZtWyqQ"/>
+  <term:ValueSetCode xmi:id="__wVt8fT8EeWvwZaMZtWyqQ" conceptName="85050009  (humerus)" base_EnumerationLiteral="__wVt8PT8EeWvwZaMZtWyqQ"/>
+  <term:CodeSystemVersion xmi:id="_dPtrIPT_EeWvwZaMZtWyqQ" identifier="1.2.840.10008.2.16.4" url="http://dicom.nema.org" base_Enumeration="_dPtEEPT_EeWvwZaMZtWyqQ"/>
+  <term:CodeSystemVersion xmi:id="_hKnvkPUBEeWvwZaMZtWyqQ" identifier="2.16.840.1.113883.4.642.1.65" url="http://hl7.org/fhir/valueset-care-plan-activity-status.html" base_Enumeration="_hKnIgPUBEeWvwZaMZtWyqQ"/>
+  <term:CodeSystemVersion xmi:id="_D8FRcPUEEeWvwZaMZtWyqQ" identifier="2.16.840.1.113883.4.642.1.411" source="HL7 FHIR" url="http://hl7.org/fhir/valueset-goal-category.html" base_Enumeration="_D8EqYPUEEeWvwZaMZtWyqQ"/>
+  <term:CodeSystemVersion xmi:id="_VN3JAPUJEeWp_Mwb77TLSQ" identifier="tbd" fullName="NCPDP valuesets" url="tbd" base_Enumeration="_VN0FsPUJEeWp_Mwb77TLSQ"/>
 </xmi:XMI>
