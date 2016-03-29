@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.5-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:FHIM="http://gov.us.fhim/profile/1" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:FHIM="http://gov.us.fhim/profile/1" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
   <uml:Package xmi:id="_DVq1IAY0EeGz0dkadElrkQ" name="CarePlan">
     <eAnnotations xmi:id="_NhDbYEDLEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_Ng8GoEDLEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -3095,4 +3095,22 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
   <Default:Documentation xmi:id="_IQhjYO94EeWkMe7GVfjMFQ" base_Comment="_IQYZcO94EeWkMe7GVfjMFQ"/>
   <Default:Documentation xmi:id="_T_2NEO9_EeWkMe7GVfjMFQ" base_Comment="_T_wGcO9_EeWkMe7GVfjMFQ"/>
   <Default:Documentation xmi:id="_NsotIO-AEeWkMe7GVfjMFQ" base_Comment="_Nscf4O-AEeWkMe7GVfjMFQ"/>
+  <term:ValueSetConstraint xmi:id="_IP1WoPWpEeWELv5y3V4qMA" base_Property="_ZajFENpHEeSOxtrN8-7DcQ">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_qRfuwOX-EeWMCcMdatPOjA"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_Moq_IPWpEeWELv5y3V4qMA" base_Property="_nTVVUAY_EeGz0dkadElrkQ">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_UErZMOX8EeWMCcMdatPOjA"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_VzOqMPWpEeWELv5y3V4qMA" base_Property="_NdGSENo7EeSOxtrN8-7DcQ">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_9TFl4OU5EeWlUtxA-8RVeQ"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_pmTMEPWpEeWELv5y3V4qMA" base_Property="_lY9q0OYEEeWMCcMdatPOjA">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_U1dgMet-EeW_d52hJF-Rwg"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_rIwdUPWpEeWELv5y3V4qMA" base_Property="_1267kAY0EeGz0dkadElrkQ">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_HIsBgO0bEeWjUp19yClo5Q"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_t0m_kPWpEeWELv5y3V4qMA" base_Property="_R1KOcAY9EeGz0dkadElrkQ">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_f45RUOYAEeWMCcMdatPOjA"/>
+  </term:ValueSetConstraint>
 </xmi:XMI>

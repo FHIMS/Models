@@ -3737,7 +3737,7 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_X2aG06RMEeGZ6ueex_Me0w" conceptName="Vaginal" usageNote="Route of administration (HL7)" base_EnumerationLiteral="_X2aG0qRMEeGZ6ueex_Me0w"/>
   <term:ValueSetCode xmi:id="_X2at4KRMEeGZ6ueex_Me0w" conceptName="Ventimask" usageNote="Route of administration (HL7)" base_EnumerationLiteral="_X2aG1KRMEeGZ6ueex_Me0w"/>
   <term:ValueSetCode xmi:id="_X2at4qRMEeGZ6ueex_Me0w" conceptName="Wound" usageNote="Route of administration (HL7)" base_EnumerationLiteral="_X2at4aRMEeGZ6ueex_Me0w"/>
-  <term:CodeSystemVersion xmi:id="_X2PHsaRMEeGZ6ueex_Me0w" identifier="2.16.840.1.113883.12.162" version="HL7 v2.5" source="HL70162" base_Enumeration="_X2PHsKRMEeGZ6ueex_Me0w"/>
+  <term:CodeSystemVersion xmi:id="_X2PHsaRMEeGZ6ueex_Me0w" identifier="2.16.840.1.113883.12.162" version="HL7 v2.5" fullName="Route of administration (HL7)" source="HL70162" base_Enumeration="_X2PHsKRMEeGZ6ueex_Me0w"/>
   <term:ValueSetVersion xmi:id="_W1k78aRMEeGZ6ueex_Me0w" identifier="2.16.840.1.113883.1.11.18877" version="1" fullName="Coverage Role Type Value Set" definition="This specifies if the patient is the subscriber or dependent within the context of the specified health plan" revisionDate="07/23/2009" codeSystem="_W1nYMaRMEeGZ6ueex_Me0w" base_Enumeration="_W1k78KRMEeGZ6ueex_Me0w"/>
   <term:ValueSetCode xmi:id="_W1n_QKRMEeGZ6ueex_Me0w" conceptName="Family dependent" usageNote="RoleCode" base_EnumerationLiteral="_W1nYMqRMEeGZ6ueex_Me0w"/>
   <term:ValueSetCode xmi:id="_W1n_QqRMEeGZ6ueex_Me0w" conceptName="Full-time student" usageNote="RoleCode" base_EnumerationLiteral="_W1n_QaRMEeGZ6ueex_Me0w"/>
@@ -5945,7 +5945,7 @@ The following is an example coded concept:</body>
   <term:ValueSetVersion xmi:id="_X8KJgaRMEeGZ6ueex_Me0w" identifier="2.16.840.1.114222.4.11.838" version="1" fullName="Units of Measure" definition="Units of Measure based on UCUM std which also includes dimension" revisionDate="10/22/2008" codeSystem="_X8VIoKRMEeGZ6ueex_Me0w" base_Enumeration="_X8KJgKRMEeGZ6ueex_Me0w"/>
   <term:CodeSystemVersion xmi:id="_X8VIoKRMEeGZ6ueex_Me0w" identifier="2.16.840.1.113883.6.8" version="1.7" source="UCUM" base_Enumeration="_X8UhkKRMEeGZ6ueex_Me0w"/>
   <term:ValueSetVersion xmi:id="_Ksrr8OU0EeWlUtxA-8RVeQ" identifier="2.16.840.1.113883.3.2074.1.1.69" fullName="Care Plan Kind" url="tbd" definition="Kinds of plan, including plans for diseases, specialties, and settings.  Note that this is a &quot;grouping value set&quot; as the values can come from SNOMED or NUCC Provider Taxonomy.  In the future, we may wish to add concepts for settings (such as home, inpatient, etc.)." binding="Dynamic" base_Enumeration="_KsnagOU0EeWlUtxA-8RVeQ"/>
-  <term:ValueSetVersion xmi:id="_9TFl4OU5EeWlUtxA-8RVeQ" base_Enumeration="_9TE-0OU5EeWlUtxA-8RVeQ"/>
+  <term:ValueSetVersion xmi:id="_9TFl4OU5EeWlUtxA-8RVeQ" fullName="Intervention Planning Status" base_Enumeration="_9TE-0OU5EeWlUtxA-8RVeQ"/>
   <term:ValueSetCode xmi:id="_EfPqkOU6EeWlUtxA-8RVeQ" base_EnumerationLiteral="_EfPDgOU6EeWlUtxA-8RVeQ"/>
   <term:ValueSetCode xmi:id="_U1qfYeU6EeWlUtxA-8RVeQ" base_EnumerationLiteral="_U1qfYOU6EeWlUtxA-8RVeQ"/>
   <term:ValueSetCode xmi:id="_YvsE8OU6EeWlUtxA-8RVeQ" base_EnumerationLiteral="_Yvrd4OU6EeWlUtxA-8RVeQ"/>
@@ -5955,21 +5955,21 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_8rFDUOU8EeWlUtxA-8RVeQ" conceptName="Moderate likelihood" usageNote="The specified outcome has a reasonable likelihood of occurrence." base_EnumerationLiteral="_8rEcQOU8EeWlUtxA-8RVeQ"/>
   <term:ValueSetCode xmi:id="_Is3aMOU9EeWlUtxA-8RVeQ" conceptName="High likelihood" usageNote="The specified outcome is more likely to occur than not." base_EnumerationLiteral="_Is2zIOU9EeWlUtxA-8RVeQ"/>
   <term:ValueSetCode xmi:id="_RBneoOU9EeWlUtxA-8RVeQ" conceptName="Certain" usageNote="The specified outcome is effectively guaranteed." base_EnumerationLiteral="_RBm3kOU9EeWlUtxA-8RVeQ"/>
-  <term:ValueSetVersion xmi:id="_UErZMOX8EeWMCcMdatPOjA" identifier="2.16.840.1.113883.4.642.2.65" fullName="care-plan-activity-status" url="http://hl7.org/fhir/care-plan-activity-status" codeSystem="_hKnvkPUBEeWvwZaMZtWyqQ" base_Enumeration="_UEl5oOX8EeWMCcMdatPOjA"/>
+  <term:ValueSetVersion xmi:id="_UErZMOX8EeWMCcMdatPOjA" identifier="2.16.840.1.113883.4.642.2.65" fullName="Care Plan Activity Status" url="http://hl7.org/fhir/care-plan-activity-status" codeSystem="_hKnvkPUBEeWvwZaMZtWyqQ" base_Enumeration="_UEl5oOX8EeWMCcMdatPOjA"/>
   <term:ValueSetCode xmi:id="_3CIakOX8EeWMCcMdatPOjA" conceptName="not-started" base_EnumerationLiteral="_3CHzgOX8EeWMCcMdatPOjA"/>
   <term:ValueSetCode xmi:id="_4SE_gOX8EeWMCcMdatPOjA" conceptName="scheduled" base_EnumerationLiteral="_4SEYcOX8EeWMCcMdatPOjA"/>
   <term:ValueSetCode xmi:id="_GkhKYOX9EeWMCcMdatPOjA" conceptName="in-progress" base_EnumerationLiteral="_GkgjUOX9EeWMCcMdatPOjA"/>
   <term:ValueSetCode xmi:id="_INBZQOX9EeWMCcMdatPOjA" conceptName="on-hold" base_EnumerationLiteral="_INAyMOX9EeWMCcMdatPOjA"/>
   <term:ValueSetCode xmi:id="_Iuo4keX9EeWMCcMdatPOjA" conceptName="completed" base_EnumerationLiteral="_Iuo4kOX9EeWMCcMdatPOjA"/>
   <term:ValueSetCode xmi:id="_JcKs8eX9EeWMCcMdatPOjA" conceptName="cancelled" base_EnumerationLiteral="_JcKs8OX9EeWMCcMdatPOjA"/>
-  <term:ValueSetVersion xmi:id="_inXKEOX9EeWMCcMdatPOjA" identifier="2.16.840.1.113883.4.642.2.60" fullName="CarePlanStatus" url="http://hl7-fhir.github.io/valueset-care-plan-status.html" base_Enumeration="_inWjAOX9EeWMCcMdatPOjA"/>
+  <term:ValueSetVersion xmi:id="_inXKEOX9EeWMCcMdatPOjA" identifier="2.16.840.1.113883.4.642.2.60" fullName="Care Plan Status" url="http://hl7-fhir.github.io/valueset-care-plan-status.html" base_Enumeration="_inWjAOX9EeWMCcMdatPOjA"/>
   <term:ValueSetCode xmi:id="_x_ZrEOX9EeWMCcMdatPOjA" conceptName="proposed" base_EnumerationLiteral="_x_ZEAOX9EeWMCcMdatPOjA"/>
   <term:ValueSetCode xmi:id="_z2DqseX9EeWMCcMdatPOjA" conceptName="pending" base_EnumerationLiteral="_z2DqsOX9EeWMCcMdatPOjA"/>
   <term:ValueSetCode xmi:id="_01a18eX9EeWMCcMdatPOjA" conceptName="active" base_EnumerationLiteral="_01a18OX9EeWMCcMdatPOjA"/>
   <term:ValueSetCode xmi:id="_3IK7seX9EeWMCcMdatPOjA" conceptName="completed" base_EnumerationLiteral="_3IK7sOX9EeWMCcMdatPOjA"/>
   <term:ValueSetCode xmi:id="_3z1u4OX9EeWMCcMdatPOjA" conceptName="cancelled" base_EnumerationLiteral="_3z1H0OX9EeWMCcMdatPOjA"/>
-  <term:ValueSetVersion xmi:id="_qRfuwOX-EeWMCcMdatPOjA" identifier="2.16.840.1.113883.4.642.2.64" url="http://hl7.org/fhir/ValueSet/care-plan-activity" definition="Note: This should be replaced by &quot;Procedure&quot; as all the elements are from the SNOMED CT Procedure hierarchy" type="Intensional" binding="Dynamic" codeSystem="_WwluQaRMEeGZ6ueex_Me0w" base_Enumeration="_qRfHsOX-EeWMCcMdatPOjA"/>
-  <term:ValueSetVersion xmi:id="_f45RUOYAEeWMCcMdatPOjA" identifier="tbd" source="HL7 FHIR" url="tbd" definition="Workflow status of the health goal.  Subset of the FHIR Goal Status value set." base_Enumeration="_f44qQOYAEeWMCcMdatPOjA"/>
+  <term:ValueSetVersion xmi:id="_qRfuwOX-EeWMCcMdatPOjA" identifier="2.16.840.1.113883.4.642.2.64" fullName="Care Plan Activity" url="http://hl7.org/fhir/ValueSet/care-plan-activity" definition="Note: This should be replaced by &quot;Procedure&quot; as all the elements are from the SNOMED CT Procedure hierarchy" type="Intensional" binding="Dynamic" codeSystem="_WwluQaRMEeGZ6ueex_Me0w" base_Enumeration="_qRfHsOX-EeWMCcMdatPOjA"/>
+  <term:ValueSetVersion xmi:id="_f45RUOYAEeWMCcMdatPOjA" identifier="tbd" fullName="Health Goal Status" source="HL7 FHIR" url="tbd" definition="Workflow status of the health goal.  Subset of the FHIR Goal Status value set." base_Enumeration="_f44qQOYAEeWMCcMdatPOjA"/>
   <term:ValueSetCode xmi:id="_k8YSsOt5EeW_d52hJF-Rwg" conceptName="proposed" base_EnumerationLiteral="_k8SMEOt5EeW_d52hJF-Rwg"/>
   <term:ValueSetCode xmi:id="_ntZBwOt5EeW_d52hJF-Rwg" conceptName="complete" base_EnumerationLiteral="_ntYasOt5EeW_d52hJF-Rwg"/>
   <term:ValueSetCode xmi:id="_5nAHoOt5EeW_d52hJF-Rwg" conceptName="planned" base_EnumerationLiteral="_5m_gkOt5EeW_d52hJF-Rwg"/>
@@ -5978,7 +5978,7 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_8h3WQOt5EeW_d52hJF-Rwg" conceptName="in-progress" base_EnumerationLiteral="_8h2vMOt5EeW_d52hJF-Rwg"/>
   <term:ValueSetCode xmi:id="_-tzpYOt5EeW_d52hJF-Rwg" conceptName="on-hold" base_EnumerationLiteral="_-tzCUOt5EeW_d52hJF-Rwg"/>
   <term:ValueSetCode xmi:id="__rBfket5EeW_d52hJF-Rwg" conceptName="cancelled" base_EnumerationLiteral="__rBfkOt5EeW_d52hJF-Rwg"/>
-  <term:ValueSetVersion xmi:id="_U1dgMet-EeW_d52hJF-Rwg" identifier="tbd" url="tbd" base_Enumeration="_U1dgMOt-EeW_d52hJF-Rwg"/>
+  <term:ValueSetVersion xmi:id="_U1dgMet-EeW_d52hJF-Rwg" identifier="tbd" fullName="Goal Achievement State" url="tbd" base_Enumeration="_U1dgMOt-EeW_d52hJF-Rwg"/>
   <term:ValueSetCode xmi:id="_Z6-oget-EeW_d52hJF-Rwg" conceptName="in-progress" base_EnumerationLiteral="_Z6-ogOt-EeW_d52hJF-Rwg"/>
   <term:ValueSetCode xmi:id="_e2wmAOt-EeW_d52hJF-Rwg" conceptName="sustaining" base_EnumerationLiteral="_e2v-8Ot-EeW_d52hJF-Rwg"/>
   <term:ValueSetCode xmi:id="_gqAsUet-EeW_d52hJF-Rwg" conceptName="improving" base_EnumerationLiteral="_gqAsUOt-EeW_d52hJF-Rwg"/>
@@ -5987,32 +5987,32 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_j7ttoOt-EeW_d52hJF-Rwg" conceptName="achieved" base_EnumerationLiteral="_j7tGkOt-EeW_d52hJF-Rwg"/>
   <term:ValueSetCode xmi:id="_kqUgEet-EeW_d52hJF-Rwg" conceptName="optimal" base_EnumerationLiteral="_kqUgEOt-EeW_d52hJF-Rwg"/>
   <term:ValueSetCode xmi:id="_lebdkOt-EeW_d52hJF-Rwg" conceptName="abandoned" base_EnumerationLiteral="_leaPcOt-EeW_d52hJF-Rwg"/>
-  <term:ValueSetVersion xmi:id="_0OXQUOx8EeW5tJ4V3DOBLA" identifier="tbd" url="tbd" base_Enumeration="_0OWpQOx8EeW5tJ4V3DOBLA"/>
+  <term:ValueSetVersion xmi:id="_0OXQUOx8EeW5tJ4V3DOBLA" identifier="tbd" fullName="Care Team Member Role" url="tbd" base_Enumeration="_0OWpQOx8EeW5tJ4V3DOBLA"/>
   <term:ValueSetCode xmi:id="_3BI58Ox8EeW5tJ4V3DOBLA" conceptName="careGiver" base_EnumerationLiteral="_3BIS4Ox8EeW5tJ4V3DOBLA"/>
   <term:ValueSetCode xmi:id="_576pAOx8EeW5tJ4V3DOBLA" conceptName="patient" base_EnumerationLiteral="_575a4Ox8EeW5tJ4V3DOBLA"/>
   <term:ValueSetCode xmi:id="_81jIkex8EeW5tJ4V3DOBLA" conceptName="stakeholder" base_EnumerationLiteral="_81jIkOx8EeW5tJ4V3DOBLA"/>
   <term:ValueSetCode xmi:id="_C0H_0Ox9EeW5tJ4V3DOBLA" conceptName="supportingMember" base_EnumerationLiteral="_C0HYwOx9EeW5tJ4V3DOBLA"/>
-  <term:ValueSetVersion xmi:id="_HIsBgO0bEeWjUp19yClo5Q" identifier="2.16.840.1.113883.4.642.2.411" url="http://hl7.org/fhir/ValueSet/goal-category" codeSystem="_D8FRcPUEEeWvwZaMZtWyqQ" base_Enumeration="_HIracO0bEeWjUp19yClo5Q"/>
+  <term:ValueSetVersion xmi:id="_HIsBgO0bEeWjUp19yClo5Q" identifier="2.16.840.1.113883.4.642.2.411" fullName="Goal Category" url="http://hl7.org/fhir/ValueSet/goal-category" codeSystem="_D8FRcPUEEeWvwZaMZtWyqQ" base_Enumeration="_HIracO0bEeWjUp19yClo5Q"/>
   <term:ValueSetCode xmi:id="_VbqX4O0bEeWjUp19yClo5Q" conceptName="dietary" base_EnumerationLiteral="_Vbpw0O0bEeWjUp19yClo5Q"/>
   <term:ValueSetCode xmi:id="_c0cjUO0bEeWjUp19yClo5Q" conceptName="safety" base_EnumerationLiteral="_c0b8QO0bEeWjUp19yClo5Q"/>
   <term:ValueSetCode xmi:id="_erxRUO0bEeWjUp19yClo5Q" conceptName="behavioral" base_EnumerationLiteral="_erwqQO0bEeWjUp19yClo5Q"/>
   <term:ValueSetCode xmi:id="_hJZKUO0bEeWjUp19yClo5Q" conceptName="nursing" base_EnumerationLiteral="_hJYjQO0bEeWjUp19yClo5Q"/>
   <term:ValueSetCode xmi:id="_inccsO0bEeWjUp19yClo5Q" conceptName="physiotherapy" base_EnumerationLiteral="_inb1oO0bEeWjUp19yClo5Q"/>
-  <term:ValueSetVersion xmi:id="_v5NlIfCGEeWoT_0zIvvImQ" identifier="2.16.840.1.113883.4.642.2.158" url="http://hl7.org/fhir/ValueSet/dicom-cid29" definition="This Value Set includes codes that may be used to identify an image or waveform acquisition modality, as used in the ImagingStudy resource, Dicom Attribute Modality (0008,0060) or HL7 v2 Table 0259 (see HL7 v2.6 Chapter 8 Section 8.8.8.47). It generally corresponds to a class of diagnostic equipment, or to a specific acquisition function or technique in a device." codeSystem="_dPtrIPT_EeWvwZaMZtWyqQ" base_Enumeration="_v5NlIPCGEeWoT_0zIvvImQ"/>
+  <term:ValueSetVersion xmi:id="_v5NlIfCGEeWoT_0zIvvImQ" identifier="2.16.840.1.113883.4.642.2.158" fullName="Acquisition Modality Code" source="DICOM" url="http://hl7.org/fhir/ValueSet/dicom-cid29" definition="This Value Set includes codes that may be used to identify an image or waveform acquisition modality, as used in the ImagingStudy resource, Dicom Attribute Modality (0008,0060) or HL7 v2 Table 0259 (see HL7 v2.6 Chapter 8 Section 8.8.8.47). It generally corresponds to a class of diagnostic equipment, or to a specific acquisition function or technique in a device." codeSystem="_dPtrIPT_EeWvwZaMZtWyqQ" base_Enumeration="_v5NlIPCGEeWoT_0zIvvImQ"/>
   <term:ValueSetVersion xmi:id="_uXEAcfCHEeWoT_0zIvvImQ" identifier="2.16.840.1.113883.4.642.2.442" fullName="Laterality" url="http://hl7.org/fhir/valueset-bodysite-laterality.html" definition="Laterality: SNOMED-CT concepts for 'left', 'right', and 'bilateral'" codeSystem="_WwluQaRMEeGZ6ueex_Me0w" base_Enumeration="_uXEAcPCHEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_-LHvEfCHEeWoT_0zIvvImQ" conceptName="Unilateral left" base_EnumerationLiteral="_-LHvEPCHEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_EhA6IfCIEeWoT_0zIvvImQ" conceptName="Unilateral right" base_EnumerationLiteral="_EhA6IPCIEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_Ir_s0fCIEeWoT_0zIvvImQ" conceptName="Bilateral" base_EnumerationLiteral="_Ir_s0PCIEeWoT_0zIvvImQ"/>
-  <term:ValueSetVersion xmi:id="_hsPeMfCIEeWoT_0zIvvImQ" identifier="2.16.840.1.113883.4.642.2.159" fullName="KOStitle" url="http://hl7.org/fhir/valueset-kos-title.html" definition="The document title code of key object selection" codeSystem="_dPtrIPT_EeWvwZaMZtWyqQ" base_Enumeration="_hsPeMPCIEeWoT_0zIvvImQ"/>
-  <term:ValueSetVersion xmi:id="_8CxtEfCIEeWoT_0zIvvImQ" identifier="tbd" url="tbd" definition="Status of an image interpretation report. Values adapted from HL7 V2 table 85" base_Enumeration="_8CxtEPCIEeWoT_0zIvvImQ"/>
+  <term:ValueSetVersion xmi:id="_hsPeMfCIEeWoT_0zIvvImQ" identifier="2.16.840.1.113883.4.642.2.159" fullName="KOS Title" source="DICOM" url="http://hl7.org/fhir/valueset-kos-title.html" definition="The document title code of key object selection" codeSystem="_dPtrIPT_EeWvwZaMZtWyqQ" base_Enumeration="_hsPeMPCIEeWoT_0zIvvImQ"/>
+  <term:ValueSetVersion xmi:id="_8CxtEfCIEeWoT_0zIvvImQ" identifier="tbd" fullName="Image Report Status" url="tbd" definition="Status of an image interpretation report. Values adapted from HL7 V2 table 85" base_Enumeration="_8CxtEPCIEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_Km6r8fCJEeWoT_0zIvvImQ" conceptName="Preliminary results" base_EnumerationLiteral="_Km6r8PCJEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_Ol0KcPCJEeWoT_0zIvvImQ" conceptName="Final" base_EnumerationLiteral="_OlqZcPCJEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_QydBIfCJEeWoT_0zIvvImQ" conceptName="Corrected" base_EnumerationLiteral="_QydBIPCJEeWoT_0zIvvImQ"/>
-  <term:ValueSetVersion xmi:id="_ebJrcfCJEeWoT_0zIvvImQ" identifier="tbd" url="tbd" definition="Status of an image study procedure. Values adapted from HL7 V2 table 123" base_Enumeration="_ebJrcPCJEeWoT_0zIvvImQ"/>
+  <term:ValueSetVersion xmi:id="_ebJrcfCJEeWoT_0zIvvImQ" identifier="tbd" fullName="Image Event Status" url="tbd" definition="Status of an image study procedure. Values adapted from HL7 V2 table 123" base_Enumeration="_ebJrcPCJEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_rWpRgfCJEeWoT_0zIvvImQ" conceptName="Results stored not yet verified" base_EnumerationLiteral="_rWpRgPCJEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_u1mEofCJEeWoT_0zIvvImQ" conceptName="Final results verified" base_EnumerationLiteral="_u1mEoPCJEeWoT_0zIvvImQ"/>
-  <term:ValueSetVersion xmi:id="_aZ4Y8fCKEeWoT_0zIvvImQ" identifier="tbd" url="tbd" definition="The image procedure ordered or fulfilled" codeSystem="_W2h-MKRMEeGZ6ueex_Me0w" base_Enumeration="_aZ4Y8PCKEeWoT_0zIvvImQ"/>
-  <term:ValueSetVersion xmi:id="__d9vofCKEeWoT_0zIvvImQ" identifier="tbd" url="tbd" definition="Subset of Body Sites commonly used for imaging studies. From DICOM pending DICOM/SNOMED CT integration" codeSystem="_WwluQaRMEeGZ6ueex_Me0w" base_Enumeration="__d9voPCKEeWoT_0zIvvImQ"/>
+  <term:ValueSetVersion xmi:id="_aZ4Y8fCKEeWoT_0zIvvImQ" identifier="tbd" fullName="Image Order Kind" url="tbd" definition="The image procedure ordered or fulfilled" codeSystem="_W2h-MKRMEeGZ6ueex_Me0w" base_Enumeration="_aZ4Y8PCKEeWoT_0zIvvImQ"/>
+  <term:ValueSetVersion xmi:id="__d9vofCKEeWoT_0zIvvImQ" identifier="tbd" fullName="Imaging Body Site" source="DICOM" url="tbd" definition="Subset of Body Sites commonly used for imaging studies. From DICOM pending DICOM/SNOMED CT integration" codeSystem="_WwluQaRMEeGZ6ueex_Me0w" base_Enumeration="__d9voPCKEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_gvqZ0fCLEeWoT_0zIvvImQ" conceptName="Of Interest" base_EnumerationLiteral="_gvqZ0PCLEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_kWCDkPCLEeWoT_0zIvvImQ" conceptName="Rejected for Quality Reasons" base_EnumerationLiteral="_kWBcgPCLEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_q9KvofCLEeWoT_0zIvvImQ" conceptName="For Referring Provider" base_EnumerationLiteral="_q9KvoPCLEeWoT_0zIvvImQ"/>
@@ -6075,11 +6075,11 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_ok1CcfCPEeWoT_0zIvvImQ" conceptName="Ultrasound" base_EnumerationLiteral="_ok1CcPCPEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_rMNUYfCPEeWoT_0zIvvImQ" conceptName="Visual Acuity" base_EnumerationLiteral="_rMNUYPCPEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_sLYSYPCPEeWoT_0zIvvImQ" conceptName="X-Ray Angiography" base_EnumerationLiteral="_sLXrUPCPEeWoT_0zIvvImQ"/>
-  <term:ValueSetVersion xmi:id="_UBvBAPTxEeWvwZaMZtWyqQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpCoagentValueSet" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_UBl3EPTxEeWvwZaMZtWyqQ"/>
-  <term:ValueSetVersion xmi:id="_gAn04fTxEeWvwZaMZtWyqQ" identifier="tbd" definition="Grouping valueset that indicates the status of a drug in the relevant formulary" base_Enumeration="_gAn04PTxEeWvwZaMZtWyqQ"/>
-  <term:ValueSetVersion xmi:id="_l23PgfTxEeWvwZaMZtWyqQ" identifier="tbd" source="HL7 v2" url="http://hl7.org/fhir/v2/0478" definition="Status of drug in hospital formulary" base_Enumeration="_l23PgPTxEeWvwZaMZtWyqQ"/>
-  <term:ValueSetVersion xmi:id="_pmoF0fTxEeWvwZaMZtWyqQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpDrugCoverageCodeValueSet" definition="Status of drug in prescription formulary" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_pmoF0PTxEeWvwZaMZtWyqQ"/>
-  <term:ValueSetVersion xmi:id="_2uNAEfTxEeWvwZaMZtWyqQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpprofessionalServiceCodeValueSet" definition="Service provided by pharmacist" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_2uNAEPTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_UBvBAPTxEeWvwZaMZtWyqQ" identifier="tbd" fullName="CoAgent Kind" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpCoagentValueSet" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_UBl3EPTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_gAn04fTxEeWvwZaMZtWyqQ" identifier="tbd" fullName="Formulary Coverage" definition="Grouping valueset that indicates the status of a drug in the relevant formulary" base_Enumeration="_gAn04PTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_l23PgfTxEeWvwZaMZtWyqQ" identifier="tbd" fullName="Formulary Status" source="HL7 v2" url="http://hl7.org/fhir/v2/0478" definition="Status of drug in hospital formulary" base_Enumeration="_l23PgPTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_pmoF0fTxEeWvwZaMZtWyqQ" identifier="tbd" fullName="Drug Coverage Status" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpDrugCoverageCodeValueSet" definition="Status of drug in prescription formulary" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_pmoF0PTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_2uNAEfTxEeWvwZaMZtWyqQ" identifier="tbd" fullName="Due Professional Service" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpprofessionalServiceCodeValueSet" definition="Service provided by pharmacist" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_2uNAEPTxEeWvwZaMZtWyqQ"/>
   <term:ValueSetCode xmi:id="_mszjkfTyEeWvwZaMZtWyqQ" conceptName="00" base_EnumerationLiteral="_mszjkPTyEeWvwZaMZtWyqQ"/>
   <term:ValueSetCode xmi:id="_oej1EfTyEeWvwZaMZtWyqQ" conceptName="AS" base_EnumerationLiteral="_oej1EPTyEeWvwZaMZtWyqQ"/>
   <term:ValueSetCode xmi:id="_rCntQfTyEeWvwZaMZtWyqQ" conceptName="CC" base_EnumerationLiteral="_rCntQPTyEeWvwZaMZtWyqQ"/>
@@ -6105,8 +6105,8 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_TWziwfTzEeWvwZaMZtWyqQ" conceptName="TC" base_EnumerationLiteral="_TWziwPTzEeWvwZaMZtWyqQ"/>
   <term:ValueSetCode xmi:id="_VpKm8fTzEeWvwZaMZtWyqQ" conceptName="TH" base_EnumerationLiteral="_VpKm8PTzEeWvwZaMZtWyqQ"/>
   <term:ValueSetCode xmi:id="_Xd7JIfTzEeWvwZaMZtWyqQ" conceptName="ZZ" base_EnumerationLiteral="_Xd7JIPTzEeWvwZaMZtWyqQ"/>
-  <term:ValueSetVersion xmi:id="_gmLuIfTzEeWvwZaMZtWyqQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpreasonForServiceValueSet" definition="Reason why the service provided by the pharmacist was needed" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_gmLuIPTzEeWvwZaMZtWyqQ"/>
-  <term:ValueSetVersion xmi:id="_RF7aYPT1EeWvwZaMZtWyqQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpserviceResultCodeValueSet" definition="Outcome of service provided by pharmacist" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_RF6zUPT1EeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_gmLuIfTzEeWvwZaMZtWyqQ" identifier="tbd" fullName="Due Reason For Service" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpreasonForServiceValueSet" definition="Reason why the service provided by the pharmacist was needed" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_gmLuIPTzEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_RF7aYPT1EeWvwZaMZtWyqQ" identifier="tbd" fullName="Due Result Of Service" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpserviceResultCodeValueSet" definition="Outcome of service provided by pharmacist" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_RF6zUPT1EeWvwZaMZtWyqQ"/>
   <term:ValueSetCode xmi:id="_Tz3nUfT1EeWvwZaMZtWyqQ" conceptName="1A" base_EnumerationLiteral="_Tz3nUPT1EeWvwZaMZtWyqQ"/>
   <term:ValueSetCode xmi:id="_VmLScPT1EeWvwZaMZtWyqQ" conceptName="1B" base_EnumerationLiteral="_VmKrYPT1EeWvwZaMZtWyqQ"/>
   <term:ValueSetCode xmi:id="_aQtu8PT1EeWvwZaMZtWyqQ" conceptName="1C" base_EnumerationLiteral="_aQtH4PT1EeWvwZaMZtWyqQ"/>
@@ -6134,16 +6134,16 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_NTD60PT3EeWvwZaMZtWyqQ" conceptName="00" base_EnumerationLiteral="_NTDTwPT3EeWvwZaMZtWyqQ"/>
   <term:ValueSetCode xmi:id="_O61w8PT3EeWvwZaMZtWyqQ" conceptName="4A" base_EnumerationLiteral="_O61J4PT3EeWvwZaMZtWyqQ"/>
   <term:CodeSystemVersion xmi:id="_dPtrIPT_EeWvwZaMZtWyqQ" identifier="1.2.840.10008.2.16.4" url="http://dicom.nema.org" base_Enumeration="_dPtEEPT_EeWvwZaMZtWyqQ"/>
-  <term:CodeSystemVersion xmi:id="_hKnvkPUBEeWvwZaMZtWyqQ" identifier="2.16.840.1.113883.4.642.1.65" url="http://hl7.org/fhir/valueset-care-plan-activity-status.html" base_Enumeration="_hKnIgPUBEeWvwZaMZtWyqQ"/>
-  <term:CodeSystemVersion xmi:id="_D8FRcPUEEeWvwZaMZtWyqQ" identifier="2.16.840.1.113883.4.642.1.411" source="HL7 FHIR" url="http://hl7.org/fhir/valueset-goal-category.html" base_Enumeration="_D8EqYPUEEeWvwZaMZtWyqQ"/>
+  <term:CodeSystemVersion xmi:id="_hKnvkPUBEeWvwZaMZtWyqQ" identifier="2.16.840.1.113883.4.642.1.65" fullName="Care Plan Activity Status Code System" url="http://hl7.org/fhir/valueset-care-plan-activity-status.html" base_Enumeration="_hKnIgPUBEeWvwZaMZtWyqQ"/>
+  <term:CodeSystemVersion xmi:id="_D8FRcPUEEeWvwZaMZtWyqQ" identifier="2.16.840.1.113883.4.642.1.411" fullName="Goal Category Code System" source="HL7 FHIR" url="http://hl7.org/fhir/valueset-goal-category.html" base_Enumeration="_D8EqYPUEEeWvwZaMZtWyqQ"/>
   <term:CodeSystemVersion xmi:id="_VN3JAPUJEeWp_Mwb77TLSQ" identifier="tbd" fullName="NCPDP valuesets" url="tbd" base_Enumeration="_VN0FsPUJEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_1Uge4PUVEeWp_Mwb77TLSQ" identifier="tbd" source="SNOMED-CT" url="tbd" definition="Qualitative rate of infusion" codeSystem="_WwluQaRMEeGZ6ueex_Me0w" base_Enumeration="_1Uf30PUVEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_1Uge4PUVEeWp_Mwb77TLSQ" identifier="tbd" fullName="Infusion Velocity" source="SNOMED-CT" url="tbd" definition="Qualitative rate of infusion" codeSystem="_WwluQaRMEeGZ6ueex_Me0w" base_Enumeration="_1Uf30PUVEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_AW3ZEfUWEeWp_Mwb77TLSQ" conceptName="Continuous infusion" base_EnumerationLiteral="_AW3ZEPUWEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_Gf-FUPUWEeWp_Mwb77TLSQ" conceptName="Single bolus" base_EnumerationLiteral="_Gf9eQPUWEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_ZLX0gfUWEeWp_Mwb77TLSQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdppartialFillStatusValueSet" definition="Portion of prescription dispensed" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_ZLX0gPUWEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_ZLX0gfUWEeWp_Mwb77TLSQ" identifier="tbd" fullName="Dispensing Status" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdppartialFillStatusValueSet" definition="Portion of prescription dispensed" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_ZLX0gPUWEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_pZLf4PUWEeWp_Mwb77TLSQ" conceptName="Partial Fill" base_EnumerationLiteral="_pZK40PUWEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_qE6kgPUWEeWp_Mwb77TLSQ" conceptName="Completion of Partial Fill" base_EnumerationLiteral="_qE59cPUWEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_vPTwUPUXEeWp_Mwb77TLSQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdppaymentTypeValueSet" definition="Program or source of payment for medication" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_vPTJQPUXEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_vPTwUPUXEeWp_Mwb77TLSQ" identifier="tbd" fullName="Reported Payment Type" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdppaymentTypeValueSet" definition="Program or source of payment for medication" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_vPTJQPUXEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_0Q7QEPUXEeWp_Mwb77TLSQ" conceptName="Medicaid" base_EnumerationLiteral="_0Q6pAPUXEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_5X_QgPUXEeWp_Mwb77TLSQ" conceptName="Medicare" base_EnumerationLiteral="_5X-pcPUXEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_7hghwfUXEeWp_Mwb77TLSQ" conceptName="Commercial" base_EnumerationLiteral="_7hghwPUXEeWp_Mwb77TLSQ"/>
@@ -6154,7 +6154,7 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_GgsMIfUYEeWp_Mwb77TLSQ" conceptName="Military / VA" base_EnumerationLiteral="_GgsMIPUYEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_H5kqoPUYEeWp_Mwb77TLSQ" conceptName="Other" base_EnumerationLiteral="_H5kDkPUYEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_K1-xYfUYEeWp_Mwb77TLSQ" conceptName="Cash" base_EnumerationLiteral="_K1-xYPUYEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_MdivoPUZEeWp_Mwb77TLSQ" identifier="tbd" source="HL7 v2" url="http://hl7.org/fhir/v2/0484" definition="Dispense classified by completeness, recurrence, and other factors" base_Enumeration="_MdiIkPUZEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_MdivoPUZEeWp_Mwb77TLSQ" identifier="tbd" fullName="Dispense Type" source="HL7 v2" url="http://hl7.org/fhir/v2/0484" definition="Dispense classified by completeness, recurrence, and other factors" base_Enumeration="_MdiIkPUZEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_aeor0PUZEeWp_Mwb77TLSQ" conceptName="Trial Quantity Balance" base_EnumerationLiteral="_aeoEwPUZEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_e7JTYfUZEeWp_Mwb77TLSQ" conceptName="Compassionate Fill" base_EnumerationLiteral="_e7JTYPUZEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_gWeB4PUZEeWp_Mwb77TLSQ" conceptName="New/Renew - Full Fill" base_EnumerationLiteral="_gWda0PUZEeWp_Mwb77TLSQ"/>
@@ -6164,12 +6164,12 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_o7XbIPUZEeWp_Mwb77TLSQ" conceptName="Manufacturer Sample" base_EnumerationLiteral="_o7W0EPUZEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_qDXlAPUZEeWp_Mwb77TLSQ" conceptName="Trial Quantity" base_EnumerationLiteral="_qDW98PUZEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_sUZzgPUZEeWp_Mwb77TLSQ" conceptName="Non-Prescription Fill" base_EnumerationLiteral="_sUZMcPUZEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_BsKbQPUaEeWp_Mwb77TLSQ" identifier="tbd" source="HL7 v2" url="http://hl7.org/fhir/v2/0321" definition="How dispensing is provided" base_Enumeration="_BsJ0MPUaEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_BsKbQPUaEeWp_Mwb77TLSQ" identifier="tbd" fullName="Dispense Method" source="HL7 v2" url="http://hl7.org/fhir/v2/0321" definition="How dispensing is provided" base_Enumeration="_BsJ0MPUaEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_F5W0cPUaEeWp_Mwb77TLSQ" conceptName="Automatic Dispensing" base_EnumerationLiteral="_F5WNYPUaEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_aftNYfUaEeWp_Mwb77TLSQ" conceptName="Floor Stock" base_EnumerationLiteral="_aftNYPUaEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_hQI_YPUaEeWp_Mwb77TLSQ" conceptName="Traditional" base_EnumerationLiteral="_hQIYUPUaEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_jhRUgPUaEeWp_Mwb77TLSQ" conceptName="Unit Dose" base_EnumerationLiteral="_jhQtcPUaEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_2W4voPUaEeWp_Mwb77TLSQ" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpspecialPackagingValueSet" definition="Packaging for dispensed medication" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_2W4IkPUaEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_2W4voPUaEeWp_Mwb77TLSQ" fullName="Special Packaging Indicator" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpspecialPackagingValueSet" definition="Packaging for dispensed medication" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_2W4IkPUaEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_-SxoIfUaEeWp_Mwb77TLSQ" conceptName="Not Unit Dose" base_EnumerationLiteral="_-SxoIPUaEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_ZtpB0fUbEeWp_Mwb77TLSQ" conceptName="Manufacturer Unit Dose" base_EnumerationLiteral="_ZtpB0PUbEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_c34wQPUbEeWp_Mwb77TLSQ" conceptName="Pharmacy Unit Dose" base_EnumerationLiteral="_c34JMPUbEeWp_Mwb77TLSQ"/>
@@ -6179,7 +6179,7 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_s6Ir4PUbEeWp_Mwb77TLSQ" conceptName="Remote Device Multi- drug Compliance" base_EnumerationLiteral="_s6IE0PUbEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_uMN-0fUbEeWp_Mwb77TLSQ" conceptName="Manufacturer Unit of Use Package (not unit dose)" base_EnumerationLiteral="_uMN-0PUbEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_w8z3IPUbEeWp_Mwb77TLSQ" conceptName="Not Specified" base_EnumerationLiteral="_w8zQEPUbEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_oI6jIPUcEeWp_Mwb77TLSQ" identifier="tbd" source="HL7 v2" url="http://hl7.org/fhir/v2/0167" definition="Rule by which product was selected to fufill order" base_Enumeration="_oI58EPUcEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_oI6jIPUcEeWp_Mwb77TLSQ" identifier="tbd" fullName="Substitution Status" source="HL7 v2" url="http://hl7.org/fhir/v2/0167" definition="Rule by which product was selected to fufill order" base_Enumeration="_oI58EPUcEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_52D6UPUcEeWp_Mwb77TLSQ" conceptName="No product selection indicated" base_EnumerationLiteral="_52CsMPUcEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_ANYowPUdEeWp_Mwb77TLSQ" conceptName="Substitution not allowed by prescriber" base_EnumerationLiteral="_ANYBsPUdEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_DI0fIPUdEeWp_Mwb77TLSQ" conceptName="Substitution allowed - patient requested product dispensed" base_EnumerationLiteral="_DIz4EPUdEeWp_Mwb77TLSQ"/>
@@ -6191,7 +6191,7 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_L8X_cfUdEeWp_Mwb77TLSQ" conceptName="A generic substitution was dispensed" base_EnumerationLiteral="_L8X_cPUdEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_NcIiAPUdEeWp_Mwb77TLSQ" conceptName="No substitute was dispensed. This is equivalent to the default (null) value" base_EnumerationLiteral="_NcH68PUdEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_QpiSIPUdEeWp_Mwb77TLSQ" conceptName="A therapeutic substitution was dispensed" base_EnumerationLiteral="_QphrEPUdEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_gcCsIPUeEeWp_Mwb77TLSQ" identifier="tbd" url="tbd" definition="Rule by which product was selected to fufill prescription" base_Enumeration="_gcCFEPUeEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_gcCsIPUeEeWp_Mwb77TLSQ" identifier="tbd" fullName="Product Selection" url="tbd" definition="Rule by which product was selected to fufill prescription" base_Enumeration="_gcCFEPUeEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_jkmYgPUeEeWp_Mwb77TLSQ" conceptName="Substitution Not Allowed by Prescriber" base_EnumerationLiteral="_jklxcPUeEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_pfd0cPUeEeWp_Mwb77TLSQ" conceptName="Substitution Allowed-Patient Requested Product Dispensed" base_EnumerationLiteral="_pfdNYPUeEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_qtS5gfUeEeWp_Mwb77TLSQ" conceptName="Substitution Allowed-Pharmacist Selected Product Dispensed" base_EnumerationLiteral="_qtS5gPUeEeWp_Mwb77TLSQ"/>
@@ -6202,15 +6202,15 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_G1xAEfUfEeWp_Mwb77TLSQ" conceptName="Substitution Allowed-Generic Drug Not Available in Marketplace" base_EnumerationLiteral="_G1xAEPUfEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_IlAJEPUfEeWp_Mwb77TLSQ" conceptName="Substitution Allowed By Prescriber but Plan Requests Brand" base_EnumerationLiteral="_Ik_iAPUfEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_LA15YPUfEeWp_Mwb77TLSQ" conceptName="No Product Selection Indicated" base_EnumerationLiteral="_LA1SUPUfEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_ksG9sPUfEeWp_Mwb77TLSQ" identifier="tbd" url="http://fhim.onc.us.gov/terms/temporary/NcpdporderModalityValueSet" definition="Grouping value-set of communications channels by which the request is placed" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_ksGWoPUfEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_-VvDQPUfEeWp_Mwb77TLSQ" identifier="tbd" url="tbd" definition="Channel by which prescription is placed" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_-VucMPUfEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_ksG9sPUfEeWp_Mwb77TLSQ" identifier="tbd" fullName="Order Modality" url="http://fhim.onc.us.gov/terms/temporary/NcpdporderModalityValueSet" definition="Grouping value-set of communications channels by which the request is placed" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_ksGWoPUfEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_-VvDQPUfEeWp_Mwb77TLSQ" identifier="tbd" fullName="Prescription Origin" url="tbd" definition="Channel by which prescription is placed" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_-VucMPUfEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_OLtdcfUgEeWp_Mwb77TLSQ" conceptName="Written" base_EnumerationLiteral="_OLtdcPUgEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_R6320PUgEeWp_Mwb77TLSQ" conceptName="Telephone" base_EnumerationLiteral="_R63PwPUgEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_Sv4MMPUgEeWp_Mwb77TLSQ" conceptName="Electronic" base_EnumerationLiteral="_Sv3lIPUgEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_VDUOcPUgEeWp_Mwb77TLSQ" conceptName="Facsimile" base_EnumerationLiteral="_VDTnYPUgEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_XwhbkPUgEeWp_Mwb77TLSQ" conceptName="Pharmacy" base_EnumerationLiteral="_Xwg0gPUgEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_YuITUfUgEeWp_Mwb77TLSQ" conceptName="Not Known" base_EnumerationLiteral="_YuITUPUgEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_bkdx0PUhEeWp_Mwb77TLSQ" identifier="tbd" source="HL7 v2" url="http://hl7.org/fhir/v2/0483" definition="Channel by which order is placed" base_Enumeration="_bkdKwPUhEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_bkdx0PUhEeWp_Mwb77TLSQ" identifier="tbd" fullName="Authorization Mode" source="HL7 v2" url="http://hl7.org/fhir/v2/0483" definition="Channel by which order is placed" base_Enumeration="_bkdKwPUhEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_hiHcAPUhEeWp_Mwb77TLSQ" conceptName="E-mail" base_EnumerationLiteral="_hiG08PUhEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_idRcsPUhEeWp_Mwb77TLSQ" conceptName="Electronic" base_EnumerationLiteral="_idQ1oPUhEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_mtswEPUhEeWp_Mwb77TLSQ" conceptName="Fax" base_EnumerationLiteral="_mtsJAPUhEeWp_Mwb77TLSQ"/>
@@ -6221,25 +6221,25 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_1YNcsPUhEeWp_Mwb77TLSQ" conceptName="Reflexive (Automated system)" base_EnumerationLiteral="_1YM1oPUhEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_3pBBsPUhEeWp_Mwb77TLSQ" conceptName="Video-conference" base_EnumerationLiteral="_3pAaoPUhEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_96wskPUhEeWp_Mwb77TLSQ" conceptName="Voice" base_EnumerationLiteral="_96wFgPUhEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_p9P_0PUiEeWp_Mwb77TLSQ" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_p9PYwPUiEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_bpOOoPUkEeWp_Mwb77TLSQ" identifier="tbd" source="HL7 v2" url="http://hl7.org/fhir/v2/0480" definition="General class of physical form of medication" base_Enumeration="_bpNnkPUkEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_p9P_0PUiEeWp_Mwb77TLSQ" fullName="Strength Form" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_p9PYwPUiEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_bpOOoPUkEeWp_Mwb77TLSQ" identifier="tbd" fullName="Pharmacy Order" source="HL7 v2" url="http://hl7.org/fhir/v2/0480" definition="General class of physical form of medication" base_Enumeration="_bpNnkPUkEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_hKdpoPUkEeWp_Mwb77TLSQ" conceptName="Medication" base_EnumerationLiteral="_hKdCkPUkEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_mUh6wfUkEeWp_Mwb77TLSQ" conceptName="Other solution as medication orders" base_EnumerationLiteral="_mUh6wPUkEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_s_yR0PUkEeWp_Mwb77TLSQ" conceptName="IV Large Volume Solutions" base_EnumerationLiteral="_s_xqwPUkEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_r9X9IfUlEeWp_Mwb77TLSQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpclinicalSignifanceCodeValueSet" definition="Criticality of risk for medication" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_r9X9IPUlEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_r9X9IfUlEeWp_Mwb77TLSQ" identifier="tbd" fullName="Clinical Significance" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpclinicalSignifanceCodeValueSet" definition="Criticality of risk for medication" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_r9X9IPUlEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_w8RgEfUlEeWp_Mwb77TLSQ" conceptName="Major" base_EnumerationLiteral="_w8RgEPUlEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_0-IzAfUlEeWp_Mwb77TLSQ" conceptName="Moderate" base_EnumerationLiteral="_0-IzAPUlEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_3boJIPUlEeWp_Mwb77TLSQ" conceptName="Minor" base_EnumerationLiteral="_3bniEPUlEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_5ZargPUlEeWp_Mwb77TLSQ" conceptName="Undetermined" base_EnumerationLiteral="_5ZaEcPUlEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_76uxsPUlEeWp_Mwb77TLSQ" conceptName="Not Specified" base_EnumerationLiteral="_76uKoPUlEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_Y84SQPUmEeWp_Mwb77TLSQ" identifier="tbd" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdplevelOfEffortValueSet" definition="Classification of quantity of effort expended by service provider" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_Y83rMPUmEeWp_Mwb77TLSQ"/>
+  <term:ValueSetVersion xmi:id="_Y84SQPUmEeWp_Mwb77TLSQ" identifier="tbd" fullName="Dur Pps Level Of Effort" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdplevelOfEffortValueSet" definition="Classification of quantity of effort expended by service provider" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_Y83rMPUmEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_iWUt4PUmEeWp_Mwb77TLSQ" conceptName="Level 1 (Lowest)" base_EnumerationLiteral="_iWUG0PUmEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_mE0_8PUmEeWp_Mwb77TLSQ" conceptName="Level 2 (Low Complexity)" base_EnumerationLiteral="_mE0Y4PUmEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_odybYfUmEeWp_Mwb77TLSQ" conceptName="Level 3 (Moderate Complexity)" base_EnumerationLiteral="_odybYPUmEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_qkmW4fUmEeWp_Mwb77TLSQ" conceptName="Level 4 (High Complexity)" base_EnumerationLiteral="_qkmW4PUmEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_uOoYofUmEeWp_Mwb77TLSQ" conceptName="Level 5 (Highest)" base_EnumerationLiteral="_uOoYoPUmEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_vZlv4PUmEeWp_Mwb77TLSQ" conceptName="Not Specified" base_EnumerationLiteral="_vZlI0PUmEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_HBFsAPUvEeWDHO3eL5eRfg" identifier="tbd" url="tbd" definition="Access site for infusion" base_Enumeration="_HBCosPUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetVersion xmi:id="_HBFsAPUvEeWDHO3eL5eRfg" identifier="tbd" fullName="Infusion Site" url="tbd" definition="Access site for infusion" base_Enumeration="_HBCosPUvEeWDHO3eL5eRfg"/>
   <term:ValueSetCode xmi:id="_HBFsAfUvEeWDHO3eL5eRfg" conceptName="128553008" base_EnumerationLiteral="_HBCosfUvEeWDHO3eL5eRfg"/>
   <term:ValueSetCode xmi:id="_HBFsAvUvEeWDHO3eL5eRfg" conceptName="71585003" base_EnumerationLiteral="_HBCosvUvEeWDHO3eL5eRfg"/>
   <term:ValueSetCode xmi:id="_HBFsA_UvEeWDHO3eL5eRfg" conceptName="83419000" base_EnumerationLiteral="_HBCos_UvEeWDHO3eL5eRfg"/>

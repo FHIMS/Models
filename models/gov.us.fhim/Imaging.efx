@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.5-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
   <uml:Package xmi:id="_420A62FD03B6420A5A37025A" name="Imaging">
     <eAnnotations xmi:id="_UCoAEEDNEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_UCjHkEDNEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -2870,4 +2870,25 @@ Note that as a sub-type of Imaging Event, Specimen Imaging Event includes all of
   <Default:Documentation xmi:id="_X4l8QPIcEeWI5dLNhw9XrQ" base_Comment="_X4cyUPIcEeWI5dLNhw9XrQ"/>
   <Default:Documentation xmi:id="_zZbbEPIcEeWI5dLNhw9XrQ" base_Comment="_zZS4MPIcEeWI5dLNhw9XrQ"/>
   <Default:Documentation xmi:id="_MXwg4PIdEeWI5dLNhw9XrQ" base_Comment="_MXs2gPIdEeWI5dLNhw9XrQ"/>
+  <term:ValueSetConstraint xmi:id="_DNJqcPWqEeWELv5y3V4qMA" base_Property="_420A62FD03B64586FBE90259">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_ebJrcfCJEeWoT_0zIvvImQ"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_HZWlIPWqEeWELv5y3V4qMA" base_Property="_ZcJhsPsvEeSc9M34gwVpgg">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_hsPeMfCIEeWoT_0zIvvImQ"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_MVIioPWqEeWELv5y3V4qMA" base_Property="_420A62FD03B64586EEDA00F3">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_ebJrcfCJEeWoT_0zIvvImQ"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_RhGRMPWqEeWELv5y3V4qMA" base_Property="_70pasPsVEeSc9M34gwVpgg">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_Wwx7gaRMEeGZ6ueex_Me0w"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_TAK3QPWqEeWELv5y3V4qMA" base_Property="_9isQ4PsVEeSc9M34gwVpgg">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_uXEAcfCHEeWoT_0zIvvImQ"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_Vl7YkPWqEeWELv5y3V4qMA" base_Property="_zFJT8PsVEeSc9M34gwVpgg">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_v5NlIfCGEeWoT_0zIvvImQ"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_ajDZ4PWqEeWELv5y3V4qMA" base_Property="_sAPjQPsUEeSc9M34gwVpgg">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_v5NlIfCGEeWoT_0zIvvImQ"/>
+  </term:ValueSetConstraint>
 </xmi:XMI>
