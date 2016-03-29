@@ -2793,6 +2793,9 @@ These are documented in CDC local codes table, CDCPHINVS (Value set OID 2.16.840
         <ownedLiteral xmi:id="_HBCow_UvEeWDHO3eL5eRfg" name="52359001 (radial vein)"/>
         <ownedLiteral xmi:id="_HBCoxPUvEeWDHO3eL5eRfg" name="85050009 (humerus)"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_jf2aUPXtEeW1BuvtDtBQzQ" name="ProductSubstitutionStatus"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_FypfsPXvEeW1BuvtDtBQzQ" name="RouteOfAdministration"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_kKu4cPXvEeW1BuvtDtBQzQ" name="PatientResidence"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_D4gFUA6mEeSRtMKZGaK6Zw" name="SecurityPrivacyVocab">
       <ownedComment xmi:id="_rGR28A6nEeSRtMKZGaK6Zw">
@@ -6075,8 +6078,8 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_ok1CcfCPEeWoT_0zIvvImQ" conceptName="Ultrasound" base_EnumerationLiteral="_ok1CcPCPEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_rMNUYfCPEeWoT_0zIvvImQ" conceptName="Visual Acuity" base_EnumerationLiteral="_rMNUYPCPEeWoT_0zIvvImQ"/>
   <term:ValueSetCode xmi:id="_sLYSYPCPEeWoT_0zIvvImQ" conceptName="X-Ray Angiography" base_EnumerationLiteral="_sLXrUPCPEeWoT_0zIvvImQ"/>
-  <term:ValueSetVersion xmi:id="_UBvBAPTxEeWvwZaMZtWyqQ" identifier="tbd" fullName="CoAgent Kind" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpCoagentValueSet" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_UBl3EPTxEeWvwZaMZtWyqQ"/>
-  <term:ValueSetVersion xmi:id="_gAn04fTxEeWvwZaMZtWyqQ" identifier="tbd" fullName="Formulary Coverage" definition="Grouping valueset that indicates the status of a drug in the relevant formulary" base_Enumeration="_gAn04PTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_UBvBAPTxEeWvwZaMZtWyqQ" identifier="tbd" fullName="CoAgent Kind" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpCoagentValueSet" definition="Drug, substance, procedure, condition, or other factor that might contribute to a drug reaction" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_UBl3EPTxEeWvwZaMZtWyqQ"/>
+  <term:ValueSetVersion xmi:id="_gAn04fTxEeWvwZaMZtWyqQ" identifier="tbd" fullName="Formulary Coverage" url="tbd" definition="Grouping valueset that indicates the status of a drug in the relevant formulary.  This is an amalgam of HL7 v2 table 478 and NCPDP Drug Coverage Status Code." base_Enumeration="_gAn04PTxEeWvwZaMZtWyqQ"/>
   <term:ValueSetVersion xmi:id="_l23PgfTxEeWvwZaMZtWyqQ" identifier="tbd" fullName="Formulary Status" source="HL7 v2" url="http://hl7.org/fhir/v2/0478" definition="Status of drug in hospital formulary" base_Enumeration="_l23PgPTxEeWvwZaMZtWyqQ"/>
   <term:ValueSetVersion xmi:id="_pmoF0fTxEeWvwZaMZtWyqQ" identifier="tbd" fullName="Drug Coverage Status" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpDrugCoverageCodeValueSet" definition="Status of drug in prescription formulary" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_pmoF0PTxEeWvwZaMZtWyqQ"/>
   <term:ValueSetVersion xmi:id="_2uNAEfTxEeWvwZaMZtWyqQ" identifier="tbd" fullName="Due Professional Service" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdpprofessionalServiceCodeValueSet" definition="Service provided by pharmacist" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_2uNAEPTxEeWvwZaMZtWyqQ"/>
@@ -6260,4 +6263,7 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_HBFsEvUvEeWDHO3eL5eRfg" conceptName="40983000" base_EnumerationLiteral="_HBCowvUvEeWDHO3eL5eRfg"/>
   <term:ValueSetCode xmi:id="_HBFsE_UvEeWDHO3eL5eRfg" conceptName="52359001" base_EnumerationLiteral="_HBCow_UvEeWDHO3eL5eRfg"/>
   <term:ValueSetCode xmi:id="_HBFsFPUvEeWDHO3eL5eRfg" conceptName="85050009" base_EnumerationLiteral="_HBCoxPUvEeWDHO3eL5eRfg"/>
+  <term:ValueSetVersion xmi:id="_jf2aUfXtEeW1BuvtDtBQzQ" identifier="tbd" url="http://fhim.onc.us.gov/terms/temporary/NcpdpproductSelectionCodeValueSet" definition="Rule by which product was selected to fufill request.  This is a grouping valueset which is an amalgam of HL7 v2 Table 167 and NCPDP Dispense As Written / Product Selection Codes" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_jf2aUPXtEeW1BuvtDtBQzQ"/>
+  <term:ValueSetVersion xmi:id="_FypfsfXvEeW1BuvtDtBQzQ" identifier="tbd" url="http://fhim.onc.us.gov/terms/temporary/NcpdprouteValueSet" definition="Route by which medication is to be administered. This is a grouping value-set which is an amalgam of HL7 v2 Table 162 and the FDA Route of administration codes" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_FypfsPXvEeW1BuvtDtBQzQ"/>
+  <term:ValueSetVersion xmi:id="_kKu4cfXvEeW1BuvtDtBQzQ" identifier="tbd" url="http://fhim.onc.us.gov/terms/temporary/NcpdpresidenceTypeValueSet" definition="This is a grouping value-set that is an almalgam of NCPDP Telecom codes and HL7 v2 and V3 Living Arrangement codes" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_kKu4cPXvEeW1BuvtDtBQzQ"/>
 </xmi:XMI>
