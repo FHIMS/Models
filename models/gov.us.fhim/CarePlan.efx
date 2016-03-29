@@ -2901,6 +2901,9 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
         <body>A desired future state, expressed as an Observation.  Note that this class is a subtype of Observation, although this observation is for a future state. In other words, this is an Observation in a &quot;Goal&quot; mood (in HL7 V3 speak). The observation date would in this case be the target date of the success criterion, not the date that an actual observation was made.  Note also that the value is an Any so it can handle textual goals (like “I want to walk my daughter down the aisle for her wedding”) as well as coded or structured goals such as “HbA1c below 7”.  The latter kind of goal could potentially be tested against lab results in an automated fashion.&#xD;
 &quot;Defines criteria which must be met to determine goal achievement.&quot; - HL7 Care Plan Domain Analysis Model</body>
       </ownedComment>
+      <generalization xmi:id="_FW28kPXkEeW1BuvtDtBQzQ">
+        <general xmi:type="uml:Class" href="ClinicalObservations.efx#_nbH1LVaeEd6rJ7jpZ7LBFg?FHIM/ClinicalObservation/Observation?"/>
+      </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_-_63oOt6EeW_d52hJF-Rwg" name="healthGoal_goalSuccessCriterion" memberEnd="_-__JEOt6EeW_d52hJF-Rwg __ABlUOt6EeW_d52hJF-Rwg">
       <ownedEnd xmi:id="__ABlUOt6EeW_d52hJF-Rwg" name="" visibility="private" type="_rZMYcAY0EeGz0dkadElrkQ" association="_-_63oOt6EeW_d52hJF-Rwg"/>
