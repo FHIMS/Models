@@ -1885,7 +1885,7 @@ As a consequence of this, all classes potentially have recursive relationships t
       <body>Resource Allocation is included for compatibility with the HL7 DAM, but is considered a separate process from Care Planning, and would therefore likely be in a different domain in the FHIM.</body>
     </ownedComment>
     <packagedElement xmi:type="uml:Association" xmi:id="_SlspoAY0EeGz0dkadElrkQ" name="carePlanEpisode_patient" memberEnd="_Slt3wAY0EeGz0dkadElrkQ _Slvs8AY0EeGz0dkadElrkQ">
-      <ownedEnd xmi:id="_Slvs8AY0EeGz0dkadElrkQ" name="" visibility="private" type="_zXMUUAY1EeGz0dkadElrkQ" association="_SlspoAY0EeGz0dkadElrkQ"/>
+      <ownedEnd xmi:id="_Slvs8AY0EeGz0dkadElrkQ" name="" visibility="public" type="_zXMUUAY1EeGz0dkadElrkQ" association="_SlspoAY0EeGz0dkadElrkQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_rZMYcAY0EeGz0dkadElrkQ" name="HealthGoal" clientDependency="_tB3SsOYAEeWMCcMdatPOjA _5jPfgO0aEeWjUp19yClo5Q _QEbtIO0eEeWjUp19yClo5Q">
       <ownedComment xmi:id="_CYO3UAZGEeGz0dkadElrkQ" annotatedElement="_rZMYcAY0EeGz0dkadElrkQ">
@@ -2029,7 +2029,7 @@ Note that a goal might be constructed of sub-goals, which might each be associat
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_eDAlAAY1EeGz0dkadElrkQ" name="carePlanEpisode_careTeamMember" memberEnd="_eDCaMAY1EeGz0dkadElrkQ _eDDBQAY1EeGz0dkadElrkQ">
-      <ownedEnd xmi:id="_eDDBQAY1EeGz0dkadElrkQ" name="" visibility="private" type="_zXMUUAY1EeGz0dkadElrkQ" association="_eDAlAAY1EeGz0dkadElrkQ"/>
+      <ownedEnd xmi:id="_eDDBQAY1EeGz0dkadElrkQ" name="" visibility="public" type="_zXMUUAY1EeGz0dkadElrkQ" association="_eDAlAAY1EeGz0dkadElrkQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_j-V7AAY1EeGz0dkadElrkQ" name="CarePlanGuideline">
       <ownedComment xmi:id="_lkrAsO65EeWGc6zSCrskfQ" annotatedElement="_j-V7AAY1EeGz0dkadElrkQ">
@@ -2049,7 +2049,7 @@ Note that a goal might be constructed of sub-goals, which might each be associat
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_l_xnQAY1EeGz0dkadElrkQ" name="carePlanEpisode_carePlanGuideline" memberEnd="_l_zccAY1EeGz0dkadElrkQ _l_2fwAY1EeGz0dkadElrkQ">
-      <ownedEnd xmi:id="_l_2fwAY1EeGz0dkadElrkQ" name="" visibility="private" type="_zXMUUAY1EeGz0dkadElrkQ" association="_l_xnQAY1EeGz0dkadElrkQ"/>
+      <ownedEnd xmi:id="_l_2fwAY1EeGz0dkadElrkQ" name="" visibility="public" type="_zXMUUAY1EeGz0dkadElrkQ" association="_l_xnQAY1EeGz0dkadElrkQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_zXMUUAY1EeGz0dkadElrkQ" name="CarePlanEpisode" clientDependency="_ZYaEEOU1EeWlUtxA-8RVeQ _6zf98OX9EeWMCcMdatPOjA">
       <ownedComment xmi:id="_6TV8UNewEeSTuOyAKngSWg" annotatedElement="_zXMUUAY1EeGz0dkadElrkQ">
@@ -2250,7 +2250,7 @@ Note that a goal might be constructed of sub-goals, which might each be associat
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_HOBU0AY2EeGz0dkadElrkQ" name="carePlanEpisode_healthGoal" memberEnd="_HODKAAY2EeGz0dkadElrkQ _HOGNUAY2EeGz0dkadElrkQ">
-      <ownedEnd xmi:id="_HOGNUAY2EeGz0dkadElrkQ" name="" visibility="private" type="_zXMUUAY1EeGz0dkadElrkQ" association="_HOBU0AY2EeGz0dkadElrkQ"/>
+      <ownedEnd xmi:id="_HOGNUAY2EeGz0dkadElrkQ" name="" visibility="public" type="_zXMUUAY1EeGz0dkadElrkQ" association="_HOBU0AY2EeGz0dkadElrkQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_mwEawAZAEeGz0dkadElrkQ" name="ActivityOutcomeReview">
       <ownedComment xmi:id="_422QsNfSEeSTuOyAKngSWg" annotatedElement="_mwEawAZAEeGz0dkadElrkQ">
@@ -2298,7 +2298,7 @@ WARNING: it is held by some that the efficacy of the Activity towards achieving 
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_pHlrwAZAEeGz0dkadElrkQ" name="careIntervention_activityOutcomeReview" memberEnd="_pHoIAAZAEeGz0dkadElrkQ _pHqkQAZAEeGz0dkadElrkQ">
-      <ownedEnd xmi:id="_pHqkQAZAEeGz0dkadElrkQ" name="" visibility="private" type="_HRcwALk9EeSvIbhHaIFeOA" association="_pHlrwAZAEeGz0dkadElrkQ"/>
+      <ownedEnd xmi:id="_pHqkQAZAEeGz0dkadElrkQ" name="" visibility="public" type="_HRcwALk9EeSvIbhHaIFeOA" association="_pHlrwAZAEeGz0dkadElrkQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_xLawkAZGEeGz0dkadElrkQ" name="GoalReview" clientDependency="_o6-c8Ot-EeW_d52hJF-Rwg">
       <ownedComment xmi:id="_SY__0NfUEeSTuOyAKngSWg" annotatedElement="_xLawkAZGEeGz0dkadElrkQ">
@@ -2366,13 +2366,13 @@ WARNING: it is held by some that the efficacy of the Activity towards achieving 
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="__tkycAZGEeGz0dkadElrkQ" name="healthGoal_goalReview" memberEnd="__tmnoAZGEeGz0dkadElrkQ __tpq8AZGEeGz0dkadElrkQ">
-      <ownedEnd xmi:id="__tpq8AZGEeGz0dkadElrkQ" name="" visibility="private" type="_rZMYcAY0EeGz0dkadElrkQ" association="__tkycAZGEeGz0dkadElrkQ"/>
+      <ownedEnd xmi:id="__tpq8AZGEeGz0dkadElrkQ" name="" visibility="public" type="_rZMYcAY0EeGz0dkadElrkQ" association="__tkycAZGEeGz0dkadElrkQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_AX_7sO_pEeOM48qnBkZzmw" name="healthGoal_healthConcern" memberEnd="_AYCX8O_pEeOM48qnBkZzmw _AYENIO_pEeOM48qnBkZzmw">
-      <ownedEnd xmi:id="_AYENIO_pEeOM48qnBkZzmw" name="" visibility="private" type="_rZMYcAY0EeGz0dkadElrkQ" association="_AX_7sO_pEeOM48qnBkZzmw"/>
+      <ownedEnd xmi:id="_AYENIO_pEeOM48qnBkZzmw" name="" visibility="public" type="_rZMYcAY0EeGz0dkadElrkQ" association="_AX_7sO_pEeOM48qnBkZzmw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_0dULAO_rEeOM48qnBkZzmw" name="activityOutcomeReview_observationStatement" memberEnd="_0dUyEO_rEeOM48qnBkZzmw _0dWnQO_rEeOM48qnBkZzmw">
-      <ownedEnd xmi:id="_0dWnQO_rEeOM48qnBkZzmw" name="" visibility="private" type="_mwEawAZAEeGz0dkadElrkQ" association="_0dULAO_rEeOM48qnBkZzmw"/>
+      <ownedEnd xmi:id="_0dWnQO_rEeOM48qnBkZzmw" name="" visibility="public" type="_mwEawAZAEeGz0dkadElrkQ" association="_0dULAO_rEeOM48qnBkZzmw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_A8TPQLPAEeS3iYN4R_wsuw" name="CareBarrier">
       <ownedComment xmi:id="_JwQOoMmtEeSWo8c3GHgn0Q" annotatedElement="_A8TPQLPAEeS3iYN4R_wsuw">
@@ -2772,7 +2772,7 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_bSMkMMRDEeSThJ7NwJgY1w" name="carePlanEpisode_planReview" memberEnd="_bSOZYMRDEeSThJ7NwJgY1w _bSRcsMRDEeSThJ7NwJgY1w">
-      <ownedEnd xmi:id="_bSRcsMRDEeSThJ7NwJgY1w" name="" visibility="private" type="_zXMUUAY1EeGz0dkadElrkQ" association="_bSMkMMRDEeSThJ7NwJgY1w"/>
+      <ownedEnd xmi:id="_bSRcsMRDEeSThJ7NwJgY1w" name="" visibility="public" type="_zXMUUAY1EeGz0dkadElrkQ" association="_bSMkMMRDEeSThJ7NwJgY1w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_cLDe0MRDEeSThJ7NwJgY1w" name="PlanSteward">
       <ownedComment xmi:id="_tQ0NAO65EeWGc6zSCrskfQ" annotatedElement="_cLDe0MRDEeSThJ7NwJgY1w">
@@ -2788,22 +2788,22 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_dfYNcMRDEeSThJ7NwJgY1w" name="carePlanEpisode_planSteward" memberEnd="_dfZbkMRDEeSThJ7NwJgY1w _dfce4MRDEeSThJ7NwJgY1w">
-      <ownedEnd xmi:id="_dfce4MRDEeSThJ7NwJgY1w" name="" visibility="private" type="_zXMUUAY1EeGz0dkadElrkQ" association="_dfYNcMRDEeSThJ7NwJgY1w"/>
+      <ownedEnd xmi:id="_dfce4MRDEeSThJ7NwJgY1w" name="" visibility="public" type="_zXMUUAY1EeGz0dkadElrkQ" association="_dfYNcMRDEeSThJ7NwJgY1w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_A8pjYM8xEeSxpbhu-p7faA" name="communication_source" memberEnd="_A8xfMM8xEeSxpbhu-p7faA _A86pIM8xEeSxpbhu-p7faA">
-      <ownedEnd xmi:id="_A86pIM8xEeSxpbhu-p7faA" name="" visibility="private" type="_jhwMoLksEeSvIbhHaIFeOA" association="_A8pjYM8xEeSxpbhu-p7faA"/>
+      <ownedEnd xmi:id="_A86pIM8xEeSxpbhu-p7faA" name="" visibility="public" type="_jhwMoLksEeSvIbhHaIFeOA" association="_A8pjYM8xEeSxpbhu-p7faA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_KsxZoM8xEeSxpbhu-p7faA" name="communication_receiver" memberEnd="_KszO0M8xEeSxpbhu-p7faA _Ks1rEM8xEeSxpbhu-p7faA">
-      <ownedEnd xmi:id="_Ks1rEM8xEeSxpbhu-p7faA" name="" visibility="private" type="_jhwMoLksEeSvIbhHaIFeOA" association="_KsxZoM8xEeSxpbhu-p7faA"/>
+      <ownedEnd xmi:id="_Ks1rEM8xEeSxpbhu-p7faA" name="" visibility="public" type="_jhwMoLksEeSvIbhHaIFeOA" association="_KsxZoM8xEeSxpbhu-p7faA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_DODh4NSuEeSyzs7OQneM_g" name="careIntervention_resourceAllocation" memberEnd="_DOFXENSuEeSyzs7OQneM_g _DOIaYNSuEeSyzs7OQneM_g">
-      <ownedEnd xmi:id="_DOIaYNSuEeSyzs7OQneM_g" name="" visibility="private" type="_HRcwALk9EeSvIbhHaIFeOA" association="_DODh4NSuEeSyzs7OQneM_g"/>
+      <ownedEnd xmi:id="_DOIaYNSuEeSyzs7OQneM_g" name="" visibility="public" type="_HRcwALk9EeSvIbhHaIFeOA" association="_DODh4NSuEeSyzs7OQneM_g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_dZYJ0NSvEeSyzs7OQneM_g" name="carePlanEpisode_communication" memberEnd="_dZZ_ANSvEeSyzs7OQneM_g _dZdCUNSvEeSyzs7OQneM_g">
-      <ownedEnd xmi:id="_dZdCUNSvEeSyzs7OQneM_g" name="" visibility="private" type="_zXMUUAY1EeGz0dkadElrkQ" association="_dZYJ0NSvEeSyzs7OQneM_g"/>
+      <ownedEnd xmi:id="_dZdCUNSvEeSyzs7OQneM_g" name="" visibility="public" type="_zXMUUAY1EeGz0dkadElrkQ" association="_dZYJ0NSvEeSyzs7OQneM_g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_hv_R0NS8EeSyzs7OQneM_g" name="planSteward_entity" memberEnd="_hwAf8NS8EeSyzs7OQneM_g _hwCVINS8EeSyzs7OQneM_g">
-      <ownedEnd xmi:id="_hwCVINS8EeSyzs7OQneM_g" name="" visibility="private" type="_cLDe0MRDEeSThJ7NwJgY1w" association="_hv_R0NS8EeSyzs7OQneM_g"/>
+      <ownedEnd xmi:id="_hwCVINS8EeSyzs7OQneM_g" name="" visibility="public" type="_cLDe0MRDEeSThJ7NwJgY1w" association="_hv_R0NS8EeSyzs7OQneM_g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_MGvssNfWEeSTuOyAKngSWg" name="Conversation">
       <ownedComment xmi:id="_Q0YggNfWEeSTuOyAKngSWg" annotatedElement="_MGvssNfWEeSTuOyAKngSWg">
@@ -2828,40 +2828,40 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_rHaxcNoxEeSOxtrN8-7DcQ" name="carePlanEpisode_careIntervention" memberEnd="_rHfC4NoxEeSOxtrN8-7DcQ _rHjUUNoxEeSOxtrN8-7DcQ">
-      <ownedEnd xmi:id="_rHjUUNoxEeSOxtrN8-7DcQ" name="" visibility="private" type="_zXMUUAY1EeGz0dkadElrkQ" association="_rHaxcNoxEeSOxtrN8-7DcQ"/>
+      <ownedEnd xmi:id="_rHjUUNoxEeSOxtrN8-7DcQ" name="" visibility="public" type="_zXMUUAY1EeGz0dkadElrkQ" association="_rHaxcNoxEeSOxtrN8-7DcQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Fl7TwNo2EeSOxtrN8-7DcQ" name="careIntervention_responsibleParty" memberEnd="_Fl8h4No2EeSOxtrN8-7DcQ _Fl-XENo2EeSOxtrN8-7DcQ">
-      <ownedEnd xmi:id="_Fl-XENo2EeSOxtrN8-7DcQ" name="" visibility="private" type="_HRcwALk9EeSvIbhHaIFeOA" association="_Fl7TwNo2EeSOxtrN8-7DcQ"/>
+      <ownedEnd xmi:id="_Fl-XENo2EeSOxtrN8-7DcQ" name="" visibility="public" type="_HRcwALk9EeSvIbhHaIFeOA" association="_Fl7TwNo2EeSOxtrN8-7DcQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ipznwNo4EeSOxtrN8-7DcQ" name="conversation_communication" memberEnd="_ip014No4EeSOxtrN8-7DcQ _ip2rENo4EeSOxtrN8-7DcQ">
-      <ownedEnd xmi:id="_ip2rENo4EeSOxtrN8-7DcQ" name="" visibility="private" type="_MGvssNfWEeSTuOyAKngSWg" association="_ipznwNo4EeSOxtrN8-7DcQ">
+      <ownedEnd xmi:id="_ip2rENo4EeSOxtrN8-7DcQ" name="" visibility="public" type="_MGvssNfWEeSTuOyAKngSWg" association="_ipznwNo4EeSOxtrN8-7DcQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ip3SIdo4EeSOxtrN8-7DcQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ip3SINo4EeSOxtrN8-7DcQ" value="1"/>
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_u_c5UNo5EeSOxtrN8-7DcQ" name="carePlanEpisode_acceptanceReview" memberEnd="_u_eHcNo5EeSOxtrN8-7DcQ _u_hKwNo5EeSOxtrN8-7DcQ">
-      <ownedEnd xmi:id="_u_hKwNo5EeSOxtrN8-7DcQ" name="" visibility="private" type="_zXMUUAY1EeGz0dkadElrkQ" association="_u_c5UNo5EeSOxtrN8-7DcQ"/>
+      <ownedEnd xmi:id="_u_hKwNo5EeSOxtrN8-7DcQ" name="" visibility="public" type="_zXMUUAY1EeGz0dkadElrkQ" association="_u_c5UNo5EeSOxtrN8-7DcQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_wjGdYNo5EeSOxtrN8-7DcQ" name="careIntervention_acceptanceReview" memberEnd="_wjHrgNo5EeSOxtrN8-7DcQ _wjI5oNo5EeSOxtrN8-7DcQ">
-      <ownedEnd xmi:id="_wjI5oNo5EeSOxtrN8-7DcQ" name="" visibility="private" type="_HRcwALk9EeSvIbhHaIFeOA" association="_wjGdYNo5EeSOxtrN8-7DcQ"/>
+      <ownedEnd xmi:id="_wjI5oNo5EeSOxtrN8-7DcQ" name="" visibility="public" type="_HRcwALk9EeSvIbhHaIFeOA" association="_wjGdYNo5EeSOxtrN8-7DcQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_DSprwNpFEeSOxtrN8-7DcQ" name="carePlanEpisode_supportingInformation" memberEnd="_DSq54NpFEeSOxtrN8-7DcQ _DStWINpFEeSOxtrN8-7DcQ">
-      <ownedEnd xmi:id="_DStWINpFEeSOxtrN8-7DcQ" name="" visibility="private" type="_zXMUUAY1EeGz0dkadElrkQ" association="_DSprwNpFEeSOxtrN8-7DcQ"/>
+      <ownedEnd xmi:id="_DStWINpFEeSOxtrN8-7DcQ" name="" visibility="public" type="_zXMUUAY1EeGz0dkadElrkQ" association="_DSprwNpFEeSOxtrN8-7DcQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_JcgekNpIEeSOxtrN8-7DcQ" name="careIntervention_healthGoal" memberEnd="_JchssNpIEeSOxtrN8-7DcQ _Jcjh4NpIEeSOxtrN8-7DcQ">
-      <ownedEnd xmi:id="_Jcjh4NpIEeSOxtrN8-7DcQ" name="" visibility="private" type="_HRcwALk9EeSvIbhHaIFeOA" association="_JcgekNpIEeSOxtrN8-7DcQ"/>
+      <ownedEnd xmi:id="_Jcjh4NpIEeSOxtrN8-7DcQ" name="" visibility="public" type="_HRcwALk9EeSvIbhHaIFeOA" association="_JcgekNpIEeSOxtrN8-7DcQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_5RktUN1CEeSZfdq7h5ueSA" name="carePlanEpisode_careBarrier" memberEnd="_5Rl7cN1CEeSZfdq7h5ueSA _5RnwoN1CEeSZfdq7h5ueSA">
-      <ownedEnd xmi:id="_5RnwoN1CEeSZfdq7h5ueSA" name="" visibility="private" type="_zXMUUAY1EeGz0dkadElrkQ" association="_5RktUN1CEeSZfdq7h5ueSA"/>
+      <ownedEnd xmi:id="_5RnwoN1CEeSZfdq7h5ueSA" name="" visibility="public" type="_zXMUUAY1EeGz0dkadElrkQ" association="_5RktUN1CEeSZfdq7h5ueSA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_7qoPYN1CEeSZfdq7h5ueSA" client="_HRcwALk9EeSvIbhHaIFeOA">
       <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_9TE-0OU5EeWlUtxA-8RVeQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_SlEVYN-1EeSQwMSQTXiDlA" name="carePlanEpisode_healthConcern" memberEnd="_SlH_wN-1EeSQwMSQTXiDlA _SlM4QN-1EeSQwMSQTXiDlA">
-      <ownedEnd xmi:id="_SlM4QN-1EeSQwMSQTXiDlA" name="" visibility="private" type="_zXMUUAY1EeGz0dkadElrkQ" association="_SlEVYN-1EeSQwMSQTXiDlA"/>
+      <ownedEnd xmi:id="_SlM4QN-1EeSQwMSQTXiDlA" name="" visibility="public" type="_zXMUUAY1EeGz0dkadElrkQ" association="_SlEVYN-1EeSQwMSQTXiDlA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_TVheIHdkEeWxwI-cgx2UYQ" name="careIntervention_reason" memberEnd="_TVheIXdkEeWxwI-cgx2UYQ _TVheJHdkEeWxwI-cgx2UYQ">
-      <ownedEnd xmi:id="_TVheJHdkEeWxwI-cgx2UYQ" name="" visibility="private" type="_HRcwALk9EeSvIbhHaIFeOA" association="_TVheIHdkEeWxwI-cgx2UYQ">
+      <ownedEnd xmi:id="_TVheJHdkEeWxwI-cgx2UYQ" name="" visibility="public" type="_HRcwALk9EeSvIbhHaIFeOA" association="_TVheIHdkEeWxwI-cgx2UYQ">
         <upperValue xmi:type="uml:OpaqueExpression" xmi:id="_TVheJndkEeWxwI-cgx2UYQ">
           <language></language>
           <body>(none)</body>
@@ -2873,13 +2873,13 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_wd9ZEJkzEeWp2-jxt6MtWQ" name="healthGoal_careIntervention" memberEnd="_weC4oJkzEeWp2-jxt6MtWQ _weGjAJkzEeWp2-jxt6MtWQ">
-      <ownedEnd xmi:id="_weGjAJkzEeWp2-jxt6MtWQ" name="" visibility="private" type="_rZMYcAY0EeGz0dkadElrkQ" association="_wd9ZEJkzEeWp2-jxt6MtWQ"/>
+      <ownedEnd xmi:id="_weGjAJkzEeWp2-jxt6MtWQ" name="" visibility="public" type="_rZMYcAY0EeGz0dkadElrkQ" association="_wd9ZEJkzEeWp2-jxt6MtWQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_yPXsUJkzEeWp2-jxt6MtWQ" name="goalReview_observation" memberEnd="_yPY6cJkzEeWp2-jxt6MtWQ _yPbWsJkzEeWp2-jxt6MtWQ">
-      <ownedEnd xmi:id="_yPbWsJkzEeWp2-jxt6MtWQ" name="" visibility="private" type="_xLawkAZGEeGz0dkadElrkQ" association="_yPXsUJkzEeWp2-jxt6MtWQ"/>
+      <ownedEnd xmi:id="_yPbWsJkzEeWp2-jxt6MtWQ" name="" visibility="public" type="_xLawkAZGEeGz0dkadElrkQ" association="_yPXsUJkzEeWp2-jxt6MtWQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_6WngQJkzEeWp2-jxt6MtWQ" name="goalReview_activityOutcomeReview" memberEnd="_6WouYJkzEeWp2-jxt6MtWQ _6WqjkJkzEeWp2-jxt6MtWQ">
-      <ownedEnd xmi:id="_6WqjkJkzEeWp2-jxt6MtWQ" name="" visibility="private" type="_xLawkAZGEeGz0dkadElrkQ" association="_6WngQJkzEeWp2-jxt6MtWQ"/>
+      <ownedEnd xmi:id="_6WqjkJkzEeWp2-jxt6MtWQ" name="" visibility="public" type="_xLawkAZGEeGz0dkadElrkQ" association="_6WngQJkzEeWp2-jxt6MtWQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_ZYaEEOU1EeWlUtxA-8RVeQ" client="_zXMUUAY1EeGz0dkadElrkQ">
       <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_KsnagOU0EeWlUtxA-8RVeQ"/>
@@ -2906,13 +2906,13 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_-_63oOt6EeW_d52hJF-Rwg" name="healthGoal_goalSuccessCriterion" memberEnd="_-__JEOt6EeW_d52hJF-Rwg __ABlUOt6EeW_d52hJF-Rwg">
-      <ownedEnd xmi:id="__ABlUOt6EeW_d52hJF-Rwg" name="" visibility="private" type="_rZMYcAY0EeGz0dkadElrkQ" association="_-_63oOt6EeW_d52hJF-Rwg"/>
+      <ownedEnd xmi:id="__ABlUOt6EeW_d52hJF-Rwg" name="" visibility="public" type="_rZMYcAY0EeGz0dkadElrkQ" association="_-_63oOt6EeW_d52hJF-Rwg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_o6-c8Ot-EeW_d52hJF-Rwg" client="_xLawkAZGEeGz0dkadElrkQ">
       <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_U1dgMOt-EeW_d52hJF-Rwg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_v7D0gOt-EeW_d52hJF-Rwg" name="goalReview_goalSuccessCriterion" memberEnd="_v7FCoOt-EeW_d52hJF-Rwg _v7G30Ot-EeW_d52hJF-Rwg">
-      <ownedEnd xmi:id="_v7G30Ot-EeW_d52hJF-Rwg" name="" visibility="private" type="_xLawkAZGEeGz0dkadElrkQ" association="_v7D0gOt-EeW_d52hJF-Rwg"/>
+      <ownedEnd xmi:id="_v7G30Ot-EeW_d52hJF-Rwg" name="" visibility="public" type="_xLawkAZGEeGz0dkadElrkQ" association="_v7D0gOt-EeW_d52hJF-Rwg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_5jPfgO0aEeWjUp19yClo5Q" client="_rZMYcAY0EeGz0dkadElrkQ">
       <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_U1dgMOt-EeW_d52hJF-Rwg"/>

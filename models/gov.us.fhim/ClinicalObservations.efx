@@ -32,7 +32,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_PptvKn_gEd-Ure_vzgD_TA" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_PptvLH_gEd-Ure_vzgD_TA" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_PptvLn_gEd-Ure_vzgD_TA" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PptvIn_gEd-Ure_vzgD_TA" x="-634" y="-2853"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PptvIn_gEd-Ure_vzgD_TA" x="-317" y="-2853"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_fcKUMH_gEd-Ure_vzgD_TA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519679" lineColor="3342489" showParent="Name" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_fcKUM3_gEd-Ure_vzgD_TA" type="ImageCompartment">
@@ -1007,9 +1007,7 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_nbH1BlaeEd6rJ7jpZ7LBFg" name="ObservationSet">
-      <eAnnotations xmi:id="_sswqwHy_EeSWGIFkX6Zyfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details xmi:id="_ssxR0Hy_EeSWGIFkX6Zyfg" key="Placeholder"/>
-      </eAnnotations>
+      <eAnnotations xmi:id="_sswqwHy_EeSWGIFkX6Zyfg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedComment xmi:id="_nbH1B1aeEd6rJ7jpZ7LBFg" annotatedElement="_nbH1BlaeEd6rJ7jpZ7LBFg">
         <body>This class is a PLACEHOLDER for some kind of panel of related observations</body>
       </ownedComment>
@@ -1158,10 +1156,10 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Xe14UH_gEd-Ure_vzgD_TA" name="observationSet_clinicalObservation" memberEnd="_Xe_pUH_gEd-Ure_vzgD_TA _Xe_pU3_gEd-Ure_vzgD_TA">
-      <ownedEnd xmi:id="_Xe_pU3_gEd-Ure_vzgD_TA" name="" visibility="private" type="_nbH1BlaeEd6rJ7jpZ7LBFg" association="_Xe14UH_gEd-Ure_vzgD_TA"/>
+      <ownedEnd xmi:id="_Xe_pU3_gEd-Ure_vzgD_TA" name="" visibility="public" type="_nbH1BlaeEd6rJ7jpZ7LBFg" association="_Xe14UH_gEd-Ure_vzgD_TA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_k1uZ4H_gEd-Ure_vzgD_TA" name="observationSet_patient" memberEnd="_k1uZ4X_gEd-Ure_vzgD_TA _k1uZ5H_gEd-Ure_vzgD_TA">
-      <ownedEnd xmi:id="_k1uZ5H_gEd-Ure_vzgD_TA" name="" visibility="private" type="_nbH1BlaeEd6rJ7jpZ7LBFg" association="_k1uZ4H_gEd-Ure_vzgD_TA"/>
+      <ownedEnd xmi:id="_k1uZ5H_gEd-Ure_vzgD_TA" name="" visibility="public" type="_nbH1BlaeEd6rJ7jpZ7LBFg" association="_k1uZ4H_gEd-Ure_vzgD_TA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_wBabQBcBEeOL3Nw-k5HkNw" name="ObservationQualifier" clientDependency="_6814MMQbEeSaFayJQBK5xQ">
       <ownedComment xmi:id="_zmpAEBcCEeOL3Nw-k5HkNw" annotatedElement="_wBabQBcBEeOL3Nw-k5HkNw">
@@ -1188,19 +1186,19 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_5HiSQBcBEeOL3Nw-k5HkNw" name="observationStatement_observationQualifier" memberEnd="_5HiSQRcBEeOL3Nw-k5HkNw _5HiSRBcBEeOL3Nw-k5HkNw">
-      <ownedEnd xmi:id="_5HiSRBcBEeOL3Nw-k5HkNw" name="" visibility="private" type="_nbH1LVaeEd6rJ7jpZ7LBFg" association="_5HiSQBcBEeOL3Nw-k5HkNw"/>
+      <ownedEnd xmi:id="_5HiSRBcBEeOL3Nw-k5HkNw" name="" visibility="public" type="_nbH1LVaeEd6rJ7jpZ7LBFg" association="_5HiSQBcBEeOL3Nw-k5HkNw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_evZN8BcOEeOL3Nw-k5HkNw" name="observationStatement_patient" memberEnd="_eviX4BcOEeOL3Nw-k5HkNw _eviX4xcOEeOL3Nw-k5HkNw">
-      <ownedEnd xmi:id="_eviX4xcOEeOL3Nw-k5HkNw" name="" visibility="private" type="_nbH1LVaeEd6rJ7jpZ7LBFg" association="_evZN8BcOEeOL3Nw-k5HkNw"/>
+      <ownedEnd xmi:id="_eviX4xcOEeOL3Nw-k5HkNw" name="" visibility="public" type="_nbH1LVaeEd6rJ7jpZ7LBFg" association="_evZN8BcOEeOL3Nw-k5HkNw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_l4390BcpEeOL3Nw-k5HkNw" name="observationStatement_interpretationEvent" memberEnd="_l45L8BcpEeOL3Nw-k5HkNw _l47oMBcpEeOL3Nw-k5HkNw">
-      <ownedEnd xmi:id="_l47oMBcpEeOL3Nw-k5HkNw" name="" visibility="private" type="_nbH1LVaeEd6rJ7jpZ7LBFg" association="_l4390BcpEeOL3Nw-k5HkNw"/>
+      <ownedEnd xmi:id="_l47oMBcpEeOL3Nw-k5HkNw" name="" visibility="public" type="_nbH1LVaeEd6rJ7jpZ7LBFg" association="_l4390BcpEeOL3Nw-k5HkNw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_PKmzsBybEeOR-a0_xUg6BQ" name="observationStatement_encounter" memberEnd="_PKp3ABybEeOR-a0_xUg6BQ _PKsTQBybEeOR-a0_xUg6BQ">
-      <ownedEnd xmi:id="_PKsTQBybEeOR-a0_xUg6BQ" name="" visibility="private" type="_nbH1LVaeEd6rJ7jpZ7LBFg" association="_PKmzsBybEeOR-a0_xUg6BQ"/>
+      <ownedEnd xmi:id="_PKsTQBybEeOR-a0_xUg6BQ" name="" visibility="public" type="_nbH1LVaeEd6rJ7jpZ7LBFg" association="_PKmzsBybEeOR-a0_xUg6BQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_B65JsHyZEeOHq5zPTCjDoQ" name="observationStatement_commentEvent" memberEnd="_B66X0HyZEeOHq5zPTCjDoQ _B66-4nyZEeOHq5zPTCjDoQ">
-      <ownedEnd xmi:id="_B66-4nyZEeOHq5zPTCjDoQ" name="" visibility="private" type="_nbH1LVaeEd6rJ7jpZ7LBFg" association="_B65JsHyZEeOHq5zPTCjDoQ"/>
+      <ownedEnd xmi:id="_B66-4nyZEeOHq5zPTCjDoQ" name="" visibility="public" type="_nbH1LVaeEd6rJ7jpZ7LBFg" association="_B65JsHyZEeOHq5zPTCjDoQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_xCtwsPDNEeO_Te8vAbT_YQ" name="ReferenceRange">
       <ownedComment xmi:id="_KE2YcPDOEeO_Te8vAbT_YQ" annotatedElement="_xCtwsPDNEeO_Te8vAbT_YQ">
@@ -1243,13 +1241,13 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_LYFh8PDOEeO_Te8vAbT_YQ" name="observationStatement_referenceRange" memberEnd="_LYGwEPDOEeO_Te8vAbT_YQ _LYH-MPDOEeO_Te8vAbT_YQ">
-      <ownedEnd xmi:id="_LYH-MPDOEeO_Te8vAbT_YQ" name="" visibility="private" type="_nbH1LVaeEd6rJ7jpZ7LBFg" association="_LYFh8PDOEeO_Te8vAbT_YQ"/>
+      <ownedEnd xmi:id="_LYH-MPDOEeO_Te8vAbT_YQ" name="" visibility="public" type="_nbH1LVaeEd6rJ7jpZ7LBFg" association="_LYFh8PDOEeO_Te8vAbT_YQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_oiPHgO3MEeCFZuasLkncZQ" name="interpretationEvent_principalResultInterpreter" memberEnd="_oiRjwO3MEeCFZuasLkncZQ _oiUAAO3MEeCFZuasLkncZQ">
-      <ownedEnd xmi:id="_oiUAAO3MEeCFZuasLkncZQ" name="" visibility="private" type="_eWYXgO3MEeCFZuasLkncZQ" association="_oiPHgO3MEeCFZuasLkncZQ"/>
+      <ownedEnd xmi:id="_oiUAAO3MEeCFZuasLkncZQ" name="" visibility="public" type="_eWYXgO3MEeCFZuasLkncZQ" association="_oiPHgO3MEeCFZuasLkncZQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_r6PlIO3MEeCFZuasLkncZQ" name="interpretationEvent_assistantResultInterpreter" memberEnd="_r6RaUO3MEeCFZuasLkncZQ _r6UdoO3MEeCFZuasLkncZQ">
-      <ownedEnd xmi:id="_r6UdoO3MEeCFZuasLkncZQ" name="" visibility="private" type="_eWYXgO3MEeCFZuasLkncZQ" association="_r6PlIO3MEeCFZuasLkncZQ"/>
+      <ownedEnd xmi:id="_r6UdoO3MEeCFZuasLkncZQ" name="" visibility="public" type="_eWYXgO3MEeCFZuasLkncZQ" association="_r6PlIO3MEeCFZuasLkncZQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_NmeRkMNzEeSFjdDJNF9NPA" client="_nbH1LVaeEd6rJ7jpZ7LBFg">
       <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_9MaIUMNxEeSFjdDJNF9NPA"/>
@@ -1356,14 +1354,5 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
   </FHIM:Mapping>
   <FHIM:Mapping xmi:id="_ZM-rkLoREeWqFd182BzgAw" base_Property="_6IeGAN13EeSq65vB-N1vxw">
     <index xmi:id="_ZM-rkboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.referenceRange.text"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ftz7ULoREeWqFd182BzgAw" base_Classifier="_nbH1BlaeEd6rJ7jpZ7LBFg">
-    <index xmi:id="_ftz7UboREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.1"/>
-    <index xmi:id="_ftz7UroREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Results Organizer (2.16.840.1.113883.10.20.22.4.1)"/>
-    <index xmi:id="_ftz7U7oREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/list-daf-dafresultlist"/>
-    <index xmi:id="_ft5a4LoREeWqFd182BzgAw" standardOrProject="MU2" value="Functional Status"/>
-    <index xmi:id="_ft5a4boREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Functional Status Result Organizer (2.16.840.1.113883.10.20.22.4.66)"/>
-    <index xmi:id="_ft6pALoREeWqFd182BzgAw" standardOrProject="MU2" value="Cognitive Status"/>
-    <index xmi:id="_ft6pAboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Cognitive Status Result Organizer (2.16.840.1.113883.10.20.22.4.75)"/>
   </FHIM:Mapping>
 </xmi:XMI>

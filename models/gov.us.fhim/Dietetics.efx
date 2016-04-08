@@ -908,7 +908,7 @@
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B643971F960186" name="DieteticsRequest(Abstract)">
+    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B643971F960186" name="DieteticsRequest" isAbstract="true">
       <eAnnotations xmi:id="_MQ6gV-LiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedComment xmi:id="_MQnlZ-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B643971F960186">
         <body>A record of a dietetics request for a patient.</body>
@@ -987,7 +987,7 @@
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_vxnVUH73EeOYQJZKXKAJnw" name="nutrientModification" visibility="private" type="_iz_oUH73EeOYQJZKXKAJnw" association="_vxmHMH73EeOYQJZKXKAJnw">
+      <ownedAttribute xmi:id="_vxnVUH73EeOYQJZKXKAJnw" name="nutrientModification" visibility="public" type="_iz_oUH73EeOYQJZKXKAJnw" association="_vxmHMH73EeOYQJZKXKAJnw">
         <ownedComment xmi:id="_SDS10H74EeOYQJZKXKAJnw" annotatedElement="_vxnVUH73EeOYQJZKXKAJnw">
           <body>Pointer to the nutrient which is to be modified (e.g., sodium, potassium).</body>
         </ownedComment>
@@ -1401,7 +1401,7 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_xxx5YE2HEd-N7JZGCuVoQQ" name="nutritionAssessment_patient" memberEnd="_xxx5YU2HEd-N7JZGCuVoQQ _xx7DUk2HEd-N7JZGCuVoQQ">
-      <ownedEnd xmi:id="_xx7DUk2HEd-N7JZGCuVoQQ" name="" visibility="private" type="_omJqkE13Ed-edbevC5ymeQ" association="_xxx5YE2HEd-N7JZGCuVoQQ"/>
+      <ownedEnd xmi:id="_xx7DUk2HEd-N7JZGCuVoQQ" name="" visibility="public" type="_omJqkE13Ed-edbevC5ymeQ" association="_xxx5YE2HEd-N7JZGCuVoQQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Tv9BkPOaEeGMQvy2b7FvNg" name="DietList">
       <ownedAttribute xmi:id="_Y-cfsPOaEeGMQvy2b7FvNg" name="precedence" visibility="public">
@@ -1416,10 +1416,10 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_eiYpYPOaEeGMQvy2b7FvNg" name="dietRequest_dietList" memberEnd="_eicTwPOaEeGMQvy2b7FvNg _eiglMPOaEeGMQvy2b7FvNg">
-      <ownedEnd xmi:id="_eiglMPOaEeGMQvy2b7FvNg" name="" visibility="private" type="_420A62FD03B643E6A22903C7" association="_eiYpYPOaEeGMQvy2b7FvNg"/>
+      <ownedEnd xmi:id="_eiglMPOaEeGMQvy2b7FvNg" name="" visibility="public" type="_420A62FD03B643E6A22903C7" association="_eiYpYPOaEeGMQvy2b7FvNg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_fLJ5kPOaEeGMQvy2b7FvNg" name="dietList_dietModification" memberEnd="_fLLuwPOaEeGMQvy2b7FvNg _fLNj8POaEeGMQvy2b7FvNg">
-      <ownedEnd xmi:id="_fLNj8POaEeGMQvy2b7FvNg" name="" visibility="private" type="_Tv9BkPOaEeGMQvy2b7FvNg" association="_fLJ5kPOaEeGMQvy2b7FvNg"/>
+      <ownedEnd xmi:id="_fLNj8POaEeGMQvy2b7FvNg" name="" visibility="public" type="_Tv9BkPOaEeGMQvy2b7FvNg" association="_fLJ5kPOaEeGMQvy2b7FvNg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_iz_oUH73EeOYQJZKXKAJnw" name="NutrientModification">
       <ownedComment xmi:id="_OfxrwH74EeOYQJZKXKAJnw" annotatedElement="_iz_oUH73EeOYQJZKXKAJnw">
@@ -1434,7 +1434,7 @@ Note that this definition would imply that some other information is needed such
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_vxmHMH73EeOYQJZKXKAJnw" name="dieteticsRequest_nutrientModification" memberEnd="_vxnVUH73EeOYQJZKXKAJnw _vxpKgH73EeOYQJZKXKAJnw">
-      <ownedEnd xmi:id="_vxpKgH73EeOYQJZKXKAJnw" name="" visibility="private" type="_420A62FD03B643971F960186" association="_vxmHMH73EeOYQJZKXKAJnw"/>
+      <ownedEnd xmi:id="_vxpKgH73EeOYQJZKXKAJnw" name="" visibility="public" type="_420A62FD03B643971F960186" association="_vxmHMH73EeOYQJZKXKAJnw"/>
     </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_MQ6gU-LiEduGJrQyRGTO1A" base_Comment="_MQ6gUuLiEduGJrQyRGTO1A"/>

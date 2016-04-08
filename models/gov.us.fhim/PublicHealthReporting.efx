@@ -237,7 +237,7 @@
           <element xmi:type="uml:Class" href="Provider.efx#_420A62FD03B6418A6B760063?FHIM/Provider/IndividualProvider?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g_kYMRydEeOR-a0_xUg6BQ" x="25994" y="19971"/>
         </children>
-        <children xmi:type="umlnotation:UMLShape" xmi:id="_26OJ4B95EeWsloQr5xbziw" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_26OJ4B95EeWsloQr5xbziw" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_26Ow8B95EeWsloQr5xbziw" type="ImageCompartment">
             <layoutConstraint xmi:type="notation:Size" xmi:id="_26Ow8R95EeWsloQr5xbziw" width="1320" height="1320"/>
           </children>
@@ -1942,10 +1942,10 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_9c--MJ94EeGVHtLvLEEdog" name="newbornHearingScreenReport_newborn" memberEnd="_9dFE0J94EeGVHtLvLEEdog _9dO10J94EeGVHtLvLEEdog">
-        <ownedEnd xmi:id="_9dO10J94EeGVHtLvLEEdog" name="" visibility="private" type="_2dI3MJ94EeGVHtLvLEEdog" association="_9c--MJ94EeGVHtLvLEEdog"/>
+        <ownedEnd xmi:id="_9dO10J94EeGVHtLvLEEdog" name="" visibility="public" type="_2dI3MJ94EeGVHtLvLEEdog" association="_9c--MJ94EeGVHtLvLEEdog"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_Ao65QJ96EeGVHtLvLEEdog" name="newbornHearingScreenReport_birthCertificate" memberEnd="_ApBm8J96EeGVHtLvLEEdog _ApHGgJ96EeGVHtLvLEEdog">
-        <ownedEnd xmi:id="_ApHGgJ96EeGVHtLvLEEdog" name="" visibility="private" type="_2dI3MJ94EeGVHtLvLEEdog" association="_Ao65QJ96EeGVHtLvLEEdog"/>
+        <ownedEnd xmi:id="_ApHGgJ96EeGVHtLvLEEdog" name="" visibility="public" type="_2dI3MJ94EeGVHtLvLEEdog" association="_Ao65QJ96EeGVHtLvLEEdog"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_cZLacKBGEeGlSr96AT8gww" name="HearingLossRiskFactor">
         <ownedAttribute xmi:id="_tJMf8KW1EeGMwKRzZx7F0w" name="description" visibility="public">
@@ -1961,7 +1961,7 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_eOQswKBGEeGlSr96AT8gww" name="newbornHearingScreenReport_hearingLossRiskFactor" memberEnd="_eOTwEKBGEeGlSr96AT8gww _eOXacKBGEeGlSr96AT8gww">
-        <ownedEnd xmi:id="_eOXacKBGEeGlSr96AT8gww" name="" visibility="private" type="_2dI3MJ94EeGVHtLvLEEdog" association="_eOQswKBGEeGlSr96AT8gww"/>
+        <ownedEnd xmi:id="_eOXacKBGEeGlSr96AT8gww" name="" visibility="public" type="_2dI3MJ94EeGVHtLvLEEdog" association="_eOQswKBGEeGlSr96AT8gww"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4RzMEKW1EeGMwKRzZx7F0w" name="ReferralRequest">
         <ownedAttribute xmi:id="_1nlzIKW2EeGMwKRzZx7F0w" name="category" visibility="public">
@@ -1989,16 +1989,16 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_0RT8sKW2EeGMwKRzZx7F0w" name="newbornHearingScreenReport_referral" memberEnd="_0RhYEKW2EeGMwKRzZx7F0w _0RkbYKW2EeGMwKRzZx7F0w">
-        <ownedEnd xmi:id="_0RkbYKW2EeGMwKRzZx7F0w" name="" visibility="private" type="_2dI3MJ94EeGVHtLvLEEdog" association="_0RT8sKW2EeGMwKRzZx7F0w"/>
+        <ownedEnd xmi:id="_0RkbYKW2EeGMwKRzZx7F0w" name="" visibility="public" type="_2dI3MJ94EeGVHtLvLEEdog" association="_0RT8sKW2EeGMwKRzZx7F0w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_tbRT4ME_EeGAMqxxrstEdQ" name="hearingLossRiskFactor_receivingProvider" memberEnd="_tbsxsME_EeGAMqxxrstEdQ _tb0tgME_EeGAMqxxrstEdQ">
-        <ownedEnd xmi:id="_tb0tgME_EeGAMqxxrstEdQ" name="" visibility="private" type="_cZLacKBGEeGlSr96AT8gww" association="_tbRT4ME_EeGAMqxxrstEdQ"/>
+        <ownedEnd xmi:id="_tb0tgME_EeGAMqxxrstEdQ" name="" visibility="public" type="_cZLacKBGEeGlSr96AT8gww" association="_tbRT4ME_EeGAMqxxrstEdQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_vD9ioNAqEeGSWKtsWhX3ww" name="referralRequest_referringProvider" memberEnd="_vEMzMNAqEeGSWKtsWhX3ww _vES50NAqEeGSWKtsWhX3ww">
-        <ownedEnd xmi:id="_vES50NAqEeGSWKtsWhX3ww" name="" visibility="private" type="_4RzMEKW1EeGMwKRzZx7F0w" association="_vD9ioNAqEeGSWKtsWhX3ww"/>
+        <ownedEnd xmi:id="_vES50NAqEeGSWKtsWhX3ww" name="" visibility="public" type="_4RzMEKW1EeGMwKRzZx7F0w" association="_vD9ioNAqEeGSWKtsWhX3ww"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_zfIGYNAqEeGSWKtsWhX3ww" name="referralRequest_prospectiveConsultingProvider" memberEnd="_zfO0ENAqEeGSWKtsWhX3ww _zfUToNAqEeGSWKtsWhX3ww">
-        <ownedEnd xmi:id="_zfUToNAqEeGSWKtsWhX3ww" name="" visibility="private" type="_4RzMEKW1EeGMwKRzZx7F0w" association="_zfIGYNAqEeGSWKtsWhX3ww"/>
+        <ownedEnd xmi:id="_zfUToNAqEeGSWKtsWhX3ww" name="" visibility="public" type="_4RzMEKW1EeGMwKRzZx7F0w" association="_zfIGYNAqEeGSWKtsWhX3ww"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_G-jTgNArEeGSWKtsWhX3ww" name="ReferralPromise">
         <ownedAttribute xmi:id="_Jmp-MNArEeGSWKtsWhX3ww" name="dateAcknowledged" visibility="public">
@@ -2026,22 +2026,22 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yr-FkdAtEeGSWKtsWhX3ww" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yr-FkNAtEeGSWKtsWhX3ww"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_MIQbcNAvEeGSWKtsWhX3ww" name="referralRequest" visibility="private" type="_4RzMEKW1EeGMwKRzZx7F0w" association="_MINYINAvEeGSWKtsWhX3ww">
+        <ownedAttribute xmi:id="_MIQbcNAvEeGSWKtsWhX3ww" name="referralRequest" visibility="public" type="_4RzMEKW1EeGMwKRzZx7F0w" association="_MINYINAvEeGSWKtsWhX3ww">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MIRCgdAvEeGSWKtsWhX3ww" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MIRCgNAvEeGSWKtsWhX3ww"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_dDswQNAsEeGSWKtsWhX3ww" name="referralRequest_referralAcknowledgement" memberEnd="_dDvMgNAsEeGSWKtsWhX3ww _dDxowNAsEeGSWKtsWhX3ww">
-        <ownedEnd xmi:id="_dDxowNAsEeGSWKtsWhX3ww" name="" visibility="private" type="_4RzMEKW1EeGMwKRzZx7F0w" association="_dDswQNAsEeGSWKtsWhX3ww"/>
+        <ownedEnd xmi:id="_dDxowNAsEeGSWKtsWhX3ww" name="" visibility="public" type="_4RzMEKW1EeGMwKRzZx7F0w" association="_dDswQNAsEeGSWKtsWhX3ww"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_dy28UNAsEeGSWKtsWhX3ww" name="referralPromise_consultingProvider" memberEnd="_dy4xgNAsEeGSWKtsWhX3ww _dy7NwNAsEeGSWKtsWhX3ww">
-        <ownedEnd xmi:id="_dy7NwNAsEeGSWKtsWhX3ww" name="" visibility="private" type="_G-jTgNArEeGSWKtsWhX3ww" association="_dy28UNAsEeGSWKtsWhX3ww"/>
+        <ownedEnd xmi:id="_dy7NwNAsEeGSWKtsWhX3ww" name="" visibility="public" type="_G-jTgNArEeGSWKtsWhX3ww" association="_dy28UNAsEeGSWKtsWhX3ww"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_JtvywNAtEeGSWKtsWhX3ww" name="referralPromise_diagnosisListEntry" memberEnd="_JtyPANAtEeGSWKtsWhX3ww _Jt0rQNAtEeGSWKtsWhX3ww">
-        <ownedEnd xmi:id="_Jt0rQNAtEeGSWKtsWhX3ww" name="" visibility="private" type="_G-jTgNArEeGSWKtsWhX3ww" association="_JtvywNAtEeGSWKtsWhX3ww"/>
+        <ownedEnd xmi:id="_Jt0rQNAtEeGSWKtsWhX3ww" name="" visibility="public" type="_G-jTgNArEeGSWKtsWhX3ww" association="_JtvywNAtEeGSWKtsWhX3ww"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_QK74oNAtEeGSWKtsWhX3ww" name="referralPromise_procedureListEntry" memberEnd="_QLAxINAtEeGSWKtsWhX3ww _QLFpoNAtEeGSWKtsWhX3ww">
-        <ownedEnd xmi:id="_QLFpoNAtEeGSWKtsWhX3ww" name="" visibility="private" type="_G-jTgNArEeGSWKtsWhX3ww" association="_QK74oNAtEeGSWKtsWhX3ww"/>
+        <ownedEnd xmi:id="_QLFpoNAtEeGSWKtsWhX3ww" name="" visibility="public" type="_G-jTgNArEeGSWKtsWhX3ww" association="_QK74oNAtEeGSWKtsWhX3ww"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_VJv8ANAtEeGSWKtsWhX3ww" name="FurtherReferral">
         <ownedAttribute xmi:id="_ZV5MUNAtEeGSWKtsWhX3ww" name="newReferral" visibility="public" type="_4RzMEKW1EeGMwKRzZx7F0w" association="_ZV1h8NAtEeGSWKtsWhX3ww">
@@ -2057,19 +2057,19 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_Yr5NENAtEeGSWKtsWhX3ww" name="referralPromise_furtherReferral" memberEnd="_Yr83cNAtEeGSWKtsWhX3ww _YsBv8NAtEeGSWKtsWhX3ww">
-        <ownedEnd xmi:id="_YsBv8NAtEeGSWKtsWhX3ww" name="" visibility="private" type="_G-jTgNArEeGSWKtsWhX3ww" association="_Yr5NENAtEeGSWKtsWhX3ww"/>
+        <ownedEnd xmi:id="_YsBv8NAtEeGSWKtsWhX3ww" name="" visibility="public" type="_G-jTgNArEeGSWKtsWhX3ww" association="_Yr5NENAtEeGSWKtsWhX3ww"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_ZV1h8NAtEeGSWKtsWhX3ww" name="furtherReferral_newReferral" memberEnd="_ZV5MUNAtEeGSWKtsWhX3ww _ZV8PoNAtEeGSWKtsWhX3ww">
-        <ownedEnd xmi:id="_ZV8PoNAtEeGSWKtsWhX3ww" name="" visibility="private" type="_VJv8ANAtEeGSWKtsWhX3ww" association="_ZV1h8NAtEeGSWKtsWhX3ww"/>
+        <ownedEnd xmi:id="_ZV8PoNAtEeGSWKtsWhX3ww" name="" visibility="public" type="_VJv8ANAtEeGSWKtsWhX3ww" association="_ZV1h8NAtEeGSWKtsWhX3ww"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_sYjIcNAuEeGSWKtsWhX3ww" name="furtherReferral_originalReferral" memberEnd="_sYk9oNAuEeGSWKtsWhX3ww _sYnZ4NAuEeGSWKtsWhX3ww">
         <ownedComment xmi:id="_PeKLAB-AEeWsloQr5xbziw" annotatedElement="_sYjIcNAuEeGSWKtsWhX3ww">
           <body>A's original Request to B</body>
         </ownedComment>
-        <ownedEnd xmi:id="_sYnZ4NAuEeGSWKtsWhX3ww" name="" visibility="private" type="_VJv8ANAtEeGSWKtsWhX3ww" association="_sYjIcNAuEeGSWKtsWhX3ww"/>
+        <ownedEnd xmi:id="_sYnZ4NAuEeGSWKtsWhX3ww" name="" visibility="public" type="_VJv8ANAtEeGSWKtsWhX3ww" association="_sYjIcNAuEeGSWKtsWhX3ww"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_MINYINAvEeGSWKtsWhX3ww" name="referralPromise_referralRequest" memberEnd="_MIQbcNAvEeGSWKtsWhX3ww _MITewNAvEeGSWKtsWhX3ww">
-        <ownedEnd xmi:id="_MITewNAvEeGSWKtsWhX3ww" name="" visibility="private" type="_G-jTgNArEeGSWKtsWhX3ww" association="_MINYINAvEeGSWKtsWhX3ww"/>
+        <ownedEnd xmi:id="_MITewNAvEeGSWKtsWhX3ww" name="" visibility="public" type="_G-jTgNArEeGSWKtsWhX3ww" association="_MINYINAvEeGSWKtsWhX3ww"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_ZSSg4NA8EeGSWKtsWhX3ww" name="NewbornHearingProcedure">
         <ownedAttribute xmi:id="_bjGSUKW9EeGMwKRzZx7F0w" name="leftEarResult" visibility="public">
@@ -2100,13 +2100,13 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_kNtFkNA8EeGSWKtsWhX3ww" name="newbornHearingScreenReport_newbornHearingProcedure" memberEnd="_kNvh0NA8EeGSWKtsWhX3ww _kNylINA8EeGSWKtsWhX3ww">
-        <ownedEnd xmi:id="_kNylINA8EeGSWKtsWhX3ww" name="" visibility="private" type="_2dI3MJ94EeGVHtLvLEEdog" association="_kNtFkNA8EeGSWKtsWhX3ww"/>
+        <ownedEnd xmi:id="_kNylINA8EeGSWKtsWhX3ww" name="" visibility="public" type="_2dI3MJ94EeGVHtLvLEEdog" association="_kNtFkNA8EeGSWKtsWhX3ww"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="__CIKUNA8EeGSWKtsWhX3ww" name="newbornHearingProcedure_diagnosis" memberEnd="__CMbwNA8EeGSWKtsWhX3ww __CO4ANA8EeGSWKtsWhX3ww">
-        <ownedEnd xmi:id="__CO4ANA8EeGSWKtsWhX3ww" name="" visibility="private" type="_ZSSg4NA8EeGSWKtsWhX3ww" association="__CIKUNA8EeGSWKtsWhX3ww"/>
+        <ownedEnd xmi:id="__CO4ANA8EeGSWKtsWhX3ww" name="" visibility="public" type="_ZSSg4NA8EeGSWKtsWhX3ww" association="__CIKUNA8EeGSWKtsWhX3ww"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_wa1UUNA9EeGSWKtsWhX3ww" name="newbornHearingScreenReport_diagnosis" memberEnd="_wa3JgNA9EeGSWKtsWhX3ww _wa5lwNA9EeGSWKtsWhX3ww">
-        <ownedEnd xmi:id="_wa5lwNA9EeGSWKtsWhX3ww" name="" visibility="private" type="_2dI3MJ94EeGVHtLvLEEdog" association="_wa1UUNA9EeGSWKtsWhX3ww"/>
+        <ownedEnd xmi:id="_wa5lwNA9EeGSWKtsWhX3ww" name="" visibility="public" type="_2dI3MJ94EeGVHtLvLEEdog" association="_wa1UUNA9EeGSWKtsWhX3ww"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_7OvQALF2EeGkU9GcFSzOCA" name="CommunicableDiseases">
@@ -3336,7 +3336,7 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_-uetMB91EeWsloQr5xbziw" name="reportableCondition_encounterEvent" memberEnd="_-ujlsB91EeWsloQr5xbziw _-unQEB91EeWsloQr5xbziw">
-        <ownedEnd xmi:id="_-unQEB91EeWsloQr5xbziw" name="" visibility="private" type="_Ckm70I_BEeGMX5b1YJ6DNQ" association="_-uetMB91EeWsloQr5xbziw">
+        <ownedEnd xmi:id="_-unQEB91EeWsloQr5xbziw" name="" visibility="public" type="_Ckm70I_BEeGMX5b1YJ6DNQ" association="_-uetMB91EeWsloQr5xbziw">
           <upperValue xmi:type="uml:OpaqueExpression" xmi:id="_-un3IR91EeWsloQr5xbziw">
             <language></language>
             <body>(none)</body>
@@ -3350,25 +3350,25 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_mPi7cLGFEeGkU9GcFSzOCA" name="notificationReport_notificationReportCategory" supplier="_L0_IMLGFEeGkU9GcFSzOCA" client="_O851ELC5EeGGPqUAHxbNLQ"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_CvMy8LGGEeGkU9GcFSzOCA" name="notificationReport_reportCreatedBy" memberEnd="_CvRrcLGGEeGkU9GcFSzOCA _CvXyELGGEeGkU9GcFSzOCA">
-      <ownedEnd xmi:id="_CvXyELGGEeGkU9GcFSzOCA" name="" visibility="private" type="_O851ELC5EeGGPqUAHxbNLQ" association="_CvMy8LGGEeGkU9GcFSzOCA"/>
+      <ownedEnd xmi:id="_CvXyELGGEeGkU9GcFSzOCA" name="" visibility="public" type="_O851ELC5EeGGPqUAHxbNLQ" association="_CvMy8LGGEeGkU9GcFSzOCA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Xeda0LGHEeGkU9GcFSzOCA" name="notificationReport_reportSentTo" memberEnd="_XehsQLGHEeGkU9GcFSzOCA _Xel9sLGHEeGkU9GcFSzOCA">
-      <ownedEnd xmi:id="_Xel9sLGHEeGkU9GcFSzOCA" name="" visibility="private" type="_O851ELC5EeGGPqUAHxbNLQ" association="_Xeda0LGHEeGkU9GcFSzOCA"/>
+      <ownedEnd xmi:id="_Xel9sLGHEeGkU9GcFSzOCA" name="" visibility="public" type="_O851ELC5EeGGPqUAHxbNLQ" association="_Xeda0LGHEeGkU9GcFSzOCA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_K-m9ALGJEeGkU9GcFSzOCA" name="notificationReport_reportSentBy" memberEnd="_K-qnYLGJEeGkU9GcFSzOCA _K-wG8LGJEeGkU9GcFSzOCA">
-      <ownedEnd xmi:id="_K-wG8LGJEeGkU9GcFSzOCA" name="" visibility="private" type="_O851ELC5EeGGPqUAHxbNLQ" association="_K-m9ALGJEeGkU9GcFSzOCA"/>
+      <ownedEnd xmi:id="_K-wG8LGJEeGkU9GcFSzOCA" name="" visibility="public" type="_O851ELC5EeGGPqUAHxbNLQ" association="_K-m9ALGJEeGkU9GcFSzOCA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_aiW3MLPYEeGd84AyH8JgAw" name="notificationReport_careGiver" memberEnd="_aibvsLPYEeGd84AyH8JgAw _aih2ULPYEeGd84AyH8JgAw">
-      <ownedEnd xmi:id="_aih2ULPYEeGd84AyH8JgAw" name="" visibility="private" type="_O851ELC5EeGGPqUAHxbNLQ" association="_aiW3MLPYEeGd84AyH8JgAw"/>
+      <ownedEnd xmi:id="_aih2ULPYEeGd84AyH8JgAw" name="" visibility="public" type="_O851ELC5EeGGPqUAHxbNLQ" association="_aiW3MLPYEeGd84AyH8JgAw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_hNJpULPaEeGd84AyH8JgAw" name="notificationReport_serviceDeliveryLocation" memberEnd="_hNOh0LPaEeGd84AyH8JgAw _hNTaULPaEeGd84AyH8JgAw">
-      <ownedEnd xmi:id="_hNTaULPaEeGd84AyH8JgAw" name="" visibility="private" type="_O851ELC5EeGGPqUAHxbNLQ" association="_hNJpULPaEeGd84AyH8JgAw"/>
+      <ownedEnd xmi:id="_hNTaULPaEeGd84AyH8JgAw" name="" visibility="public" type="_O851ELC5EeGGPqUAHxbNLQ" association="_hNJpULPaEeGd84AyH8JgAw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_IyTjsLPdEeGd84AyH8JgAw" name="notificationReport_reportSubject" memberEnd="_IyVY4LPdEeGd84AyH8JgAw _IyX1ILPdEeGd84AyH8JgAw">
-      <ownedEnd xmi:id="_IyX1ILPdEeGd84AyH8JgAw" name="" visibility="private" type="_O851ELC5EeGGPqUAHxbNLQ" association="_IyTjsLPdEeGd84AyH8JgAw"/>
+      <ownedEnd xmi:id="_IyX1ILPdEeGd84AyH8JgAw" name="" visibility="public" type="_O851ELC5EeGGPqUAHxbNLQ" association="_IyTjsLPdEeGd84AyH8JgAw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_5OQqMMxKEeGPzLWdRElHZQ" name="notificationReport_encounterEvent" memberEnd="_5OU7oMxKEeGPzLWdRElHZQ _5OZNEMxKEeGPzLWdRElHZQ">
-      <ownedEnd xmi:id="_5OZNEMxKEeGPzLWdRElHZQ" name="" visibility="private" type="_O851ELC5EeGGPqUAHxbNLQ" association="_5OQqMMxKEeGPzLWdRElHZQ"/>
+      <ownedEnd xmi:id="_5OZNEMxKEeGPzLWdRElHZQ" name="" visibility="public" type="_O851ELC5EeGGPqUAHxbNLQ" association="_5OQqMMxKEeGPzLWdRElHZQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ZrskUNgcEeG3E4mt6RKX5Q" name="VitalRecordsOrganization">
       <ownedAttribute xmi:id="_MVzSgNgiEeG3E4mt6RKX5Q" name="beginDate" visibility="public">
@@ -3390,7 +3390,7 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_hqBFwNgcEeG3E4mt6RKX5Q" name="vitalRecordsOrganization_jurisdiction" memberEnd="_hqDiANgcEeG3E4mt6RKX5Q _hqF-QNgcEeG3E4mt6RKX5Q">
-      <ownedEnd xmi:id="_hqF-QNgcEeG3E4mt6RKX5Q" name="" visibility="private" type="_ZrskUNgcEeG3E4mt6RKX5Q" association="_hqBFwNgcEeG3E4mt6RKX5Q"/>
+      <ownedEnd xmi:id="_hqF-QNgcEeG3E4mt6RKX5Q" name="" visibility="public" type="_ZrskUNgcEeG3E4mt6RKX5Q" association="_hqBFwNgcEeG3E4mt6RKX5Q"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_jraY8NggEeG3E4mt6RKX5Q" name="VitalRecordsOrganizationClient">
       <ownedAttribute xmi:id="_HYBw9dgiEeG3E4mt6RKX5Q" name="beginDate" visibility="public">
@@ -3424,10 +3424,10 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_nKsyoNynEeGh5_jMwegn_g" name="notificationReport_moreInformationlProvider" memberEnd="_nKxrINynEeGh5_jMwegn_g _nK3KsNynEeGh5_jMwegn_g">
-      <ownedEnd xmi:id="_nK3KsNynEeGh5_jMwegn_g" name="" visibility="private" type="_O851ELC5EeGGPqUAHxbNLQ" association="_nKsyoNynEeGh5_jMwegn_g"/>
+      <ownedEnd xmi:id="_nK3KsNynEeGh5_jMwegn_g" name="" visibility="public" type="_O851ELC5EeGGPqUAHxbNLQ" association="_nKsyoNynEeGh5_jMwegn_g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_cy6l0NyvEeGh5_jMwegn_g" name="notificationReport_medicationHistory" memberEnd="_cy-3QNyvEeGh5_jMwegn_g _czDvwNyvEeGh5_jMwegn_g">
-      <ownedEnd xmi:id="_czDvwNyvEeGh5_jMwegn_g" name="" visibility="private" type="_O851ELC5EeGGPqUAHxbNLQ" association="_cy6l0NyvEeGh5_jMwegn_g"/>
+      <ownedEnd xmi:id="_czDvwNyvEeGh5_jMwegn_g" name="" visibility="public" type="_O851ELC5EeGGPqUAHxbNLQ" association="_cy6l0NyvEeGh5_jMwegn_g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_qqiIgOVYEeGXKJmgI97urQ" name="CoreCommon">
       <eAnnotations xmi:id="_qqnoEOVYEeGXKJmgI97urQ" source="uml2.diagrams" references="_qqoPIOVYEeGXKJmgI97urQ">
@@ -3848,7 +3848,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_CHGugB95EeWsloQr5xbziw" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_CHGugR95EeWsloQr5xbziw" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_CHHVkB95EeWsloQr5xbziw" visible="false" type="StructureCompartment"/>
-            <element xmi:type="uml:Class" href="Person.efx#_420A62FD03B64248829E032E?FHIM/Person/ContactParty?"/>
+            <element xmi:type="uml:Class" href="Person.efx#_420A62FD03B64248829E032E?FHIM/Person/i?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CHDrMR95EeWsloQr5xbziw" x="39625" y="-2853"/>
           </children>
           <element xsi:nil="true"/>
@@ -5380,12 +5380,12 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_CHP4cR95EeWsloQr5xbziw" type="FromMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_CHP4cx95EeWsloQr5xbziw" type="FromMultiplicity"/>
-              <element xmi:type="uml:Property" href="Person.efx#_p4Fc0AMxEeKTM4I4vlc5xg?FHIM/Person/ContactParty/asPerson?"/>
+              <element xmi:type="uml:Property" href="Person.efx#_p4Fc0AMxEeKTM4I4vlc5xg?FHIM/Person/i/asPerson?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_CHP4ch95EeWsloQr5xbziw" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_CHQfgB95EeWsloQr5xbziw" type="FromRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_CHQfgh95EeWsloQr5xbziw" type="FromRole"/>
-              <element xmi:type="uml:Property" href="Person.efx#_p4Fc0AMxEeKTM4I4vlc5xg?FHIM/Person/ContactParty/asPerson?"/>
+              <element xmi:type="uml:Property" href="Person.efx#_p4Fc0AMxEeKTM4I4vlc5xg?FHIM/Person/i/asPerson?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_CHQfgR95EeWsloQr5xbziw" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_CHQfgx95EeWsloQr5xbziw" type="ToQualifierLabel">
@@ -5395,7 +5395,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_CHRGkR95EeWsloQr5xbziw" type="FromQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_CHRGkx95EeWsloQr5xbziw" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Person.efx#_p4Fc0AMxEeKTM4I4vlc5xg?FHIM/Person/ContactParty/asPerson?"/>
+              <element xmi:type="uml:Property" href="Person.efx#_p4Fc0AMxEeKTM4I4vlc5xg?FHIM/Person/i/asPerson?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_CHRGkh95EeWsloQr5xbziw" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_CHRGlB95EeWsloQr5xbziw" type="ToConstraintLabel">
@@ -5405,7 +5405,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_CHRtoB95EeWsloQr5xbziw" type="FromConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_CHRtoh95EeWsloQr5xbziw" type="FromConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Person.efx#_p4Fc0AMxEeKTM4I4vlc5xg?FHIM/Person/ContactParty/asPerson?"/>
+              <element xmi:type="uml:Property" href="Person.efx#_p4Fc0AMxEeKTM4I4vlc5xg?FHIM/Person/i/asPerson?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_CHRtoR95EeWsloQr5xbziw" y="1058"/>
             </children>
             <element xmi:type="uml:Association" href="Person.efx#_p3ZgUAMxEeKTM4I4vlc5xg?FHIM/Person/contactParty_asPerson?"/>
@@ -5563,7 +5563,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_s4HW2C6hEeOLMpgFE1m-ZQ" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_s4HW2S6hEeOLMpgFE1m-ZQ" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_s4HW2i6hEeOLMpgFE1m-ZQ" visible="false" type="StructureCompartment"/>
-            <element xmi:type="uml:Class" href="Person.efx#_420A62FD03B64248829E032E?FHIM/Person/ContactParty?"/>
+            <element xmi:type="uml:Class" href="Person.efx#_420A62FD03B64248829E032E?FHIM/Person/i?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s4HW0S6hEeOLMpgFE1m-ZQ" x="28847" y="-15533"/>
           </children>
           <element xsi:nil="true"/>
@@ -5919,12 +5919,12 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_s4Qg2C6hEeOLMpgFE1m-ZQ" type="FromMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_s4Qg2i6hEeOLMpgFE1m-ZQ" type="FromMultiplicity"/>
-              <element xmi:type="uml:Property" href="Person.efx#_p4Fc0AMxEeKTM4I4vlc5xg?FHIM/Person/ContactParty/asPerson?"/>
+              <element xmi:type="uml:Property" href="Person.efx#_p4Fc0AMxEeKTM4I4vlc5xg?FHIM/Person/i/asPerson?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_s4Qg2S6hEeOLMpgFE1m-ZQ" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_s4Qg2y6hEeOLMpgFE1m-ZQ" type="FromRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_s4Qg3S6hEeOLMpgFE1m-ZQ" type="FromRole"/>
-              <element xmi:type="uml:Property" href="Person.efx#_p4Fc0AMxEeKTM4I4vlc5xg?FHIM/Person/ContactParty/asPerson?"/>
+              <element xmi:type="uml:Property" href="Person.efx#_p4Fc0AMxEeKTM4I4vlc5xg?FHIM/Person/i/asPerson?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_s4Qg3C6hEeOLMpgFE1m-ZQ" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_s4Qg3i6hEeOLMpgFE1m-ZQ" visible="false" type="ToQualifierLabel">
@@ -5934,7 +5934,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_s4Qg4S6hEeOLMpgFE1m-ZQ" visible="false" type="FromQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_s4Qg4y6hEeOLMpgFE1m-ZQ" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Person.efx#_p4Fc0AMxEeKTM4I4vlc5xg?FHIM/Person/ContactParty/asPerson?"/>
+              <element xmi:type="uml:Property" href="Person.efx#_p4Fc0AMxEeKTM4I4vlc5xg?FHIM/Person/i/asPerson?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_s4Qg4i6hEeOLMpgFE1m-ZQ" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_s4Qg5C6hEeOLMpgFE1m-ZQ" visible="false" type="ToConstraintLabel">
@@ -5944,7 +5944,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_s4Qg5y6hEeOLMpgFE1m-ZQ" visible="false" type="FromConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_s4Qg6S6hEeOLMpgFE1m-ZQ" type="FromConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Person.efx#_p4Fc0AMxEeKTM4I4vlc5xg?FHIM/Person/ContactParty/asPerson?"/>
+              <element xmi:type="uml:Property" href="Person.efx#_p4Fc0AMxEeKTM4I4vlc5xg?FHIM/Person/i/asPerson?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_s4Qg6C6hEeOLMpgFE1m-ZQ" y="1058"/>
             </children>
             <element xmi:type="uml:Association" href="Person.efx#_p3ZgUAMxEeKTM4I4vlc5xg?FHIM/Person/contactParty_asPerson?"/>
@@ -5967,89 +5967,71 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_fxxKwAgsEeKpi5AGmkKVpg" name="Exposure">
         <ownedAttribute xmi:id="_4joNMBF0EeKu1LfuaJwFHw" name="activity" visibility="public">
-          <eAnnotations xmi:id="_kMRAkBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_kMRnoBF2EeKu1LfuaJwFHw" key="cc"/>
-          </eAnnotations>
+          <eAnnotations xmi:id="_kMRAkBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <ownedComment xmi:id="_4joNMRF0EeKu1LfuaJwFHw" annotatedElement="_4joNMBF0EeKu1LfuaJwFHw">
             <body>The activity at the time of the exposure or injury.  For Injury:  ICD-9-CM E-001 through E030 codes, ICD-10-CM Y-93 through Y-99 codes.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_dYg8MBFzEeKu1LfuaJwFHw" name="agent" visibility="public">
-          <eAnnotations xmi:id="_kMUD4BF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_kMUD4RF2EeKu1LfuaJwFHw" key="cc"/>
-          </eAnnotations>
+          <eAnnotations xmi:id="_kMUD4BF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <ownedComment xmi:id="_xSAPIBFzEeKu1LfuaJwFHw" annotatedElement="_dYg8MBFzEeKu1LfuaJwFHw">
             <body>The name of the agent to which the patient was exposed or by which the patient was injured.  For Injury:  ICD-9-CM E-codes, ICD-10-CM V through Y-codes.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_lgx5QBFyEeKu1LfuaJwFHw" name="category" visibility="public">
-          <eAnnotations xmi:id="_kMV5EBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_kMV5ERF2EeKu1LfuaJwFHw" key="cc"/>
-          </eAnnotations>
+          <eAnnotations xmi:id="_kMV5EBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <ownedComment xmi:id="_0X8h0BFyEeKu1LfuaJwFHw" annotatedElement="_lgx5QBFyEeKu1LfuaJwFHw">
             <body>Indicates the type of exposure (e.g., chemical, biological, physical, other).</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Ilvl8BF1EeKu1LfuaJwFHw" name="circumstances" visibility="public">
-          <eAnnotations xmi:id="_kMXuQBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_kMYVUBF2EeKu1LfuaJwFHw" key="cc"/>
-          </eAnnotations>
+          <eAnnotations xmi:id="_kMXuQBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="__NU6gBFzEeKu1LfuaJwFHw" name="exposureDuration" visibility="public">
-          <eAnnotations xmi:id="_kMb_sBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_kMb_sRF2EeKu1LfuaJwFHw" key="cc"/>
-          </eAnnotations>
+          <eAnnotations xmi:id="_kMb_sBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_X_QRIBF2EeKu1LfuaJwFHw" name="injuryContext" visibility="public">
-          <eAnnotations xmi:id="_kMcmwBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_kMcmwRF2EeKu1LfuaJwFHw" key="cc"/>
-          </eAnnotations>
+          <eAnnotations xmi:id="_kMcmwBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <ownedComment xmi:id="_alLKgBF2EeKu1LfuaJwFHw" annotatedElement="_X_QRIBF2EeKu1LfuaJwFHw">
             <body>Indicates whether the activity was due to work, both civilian and military, volunteering, or leisure.  ICD-9-CM E-000 code, ICD-10-CM Y-99 code.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_u_wqQBF0EeKu1LfuaJwFHw" name="location" visibility="public">
-          <eAnnotations xmi:id="_kMdN0BF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_kMd04BF2EeKu1LfuaJwFHw" key="cc"/>
-          </eAnnotations>
+          <eAnnotations xmi:id="_kMdN0BF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <ownedComment xmi:id="_u_wqQRF0EeKu1LfuaJwFHw" annotatedElement="_u_wqQBF0EeKu1LfuaJwFHw">
             <body>Indicates the place where the exposure / injury occurred (e.g., workplace, farm, etc).  For Injury:  ICD-9-CM E-849 codes , ICD-10-CM Y-92 codes.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_WXR68AioEeKmtKel3KkMBA" name="yearsInOccupation" visibility="public">
-          <eAnnotations xmi:id="_kMeb8BF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_kMeb8RF2EeKu1LfuaJwFHw" key="cc"/>
-          </eAnnotations>
+          <eAnnotations xmi:id="_kMeb8BF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_j8UNQAioEeKmtKel3KkMBA" name="employmentAtTimeOfExposure" visibility="public" association="_j8Qi4AioEeKmtKel3KkMBA">
-          <eAnnotations xmi:id="_kMaKgBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-            <details xmi:id="_kMaKgRF2EeKu1LfuaJwFHw" key="cc"/>
-          </eAnnotations>
+          <eAnnotations xmi:id="_kMaKgBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <type xmi:type="uml:Class" href="Person.efx#_420A62FD03B6418A501902C7?FHIM/Person/Employee?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j8WCcAioEeKmtKel3KkMBA" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j8VbYAioEeKmtKel3KkMBA"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_iL1uIAioEeKmtKel3KkMBA" name="notificationReport_exposure" memberEnd="_iL5_kAioEeKmtKel3KkMBA _iL-RAAioEeKmtKel3KkMBA">
-        <ownedEnd xmi:id="_iL-RAAioEeKmtKel3KkMBA" name="" visibility="private" type="_O851ELC5EeGGPqUAHxbNLQ" association="_iL1uIAioEeKmtKel3KkMBA"/>
+        <ownedEnd xmi:id="_iL-RAAioEeKmtKel3KkMBA" name="" visibility="public" type="_O851ELC5EeGGPqUAHxbNLQ" association="_iL1uIAioEeKmtKel3KkMBA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_j8Qi4AioEeKmtKel3KkMBA" name="exposure_employmentAtTimeOfExposure" memberEnd="_j8UNQAioEeKmtKel3KkMBA _j8Zs0AioEeKmtKel3KkMBA">
-        <ownedEnd xmi:id="_j8Zs0AioEeKmtKel3KkMBA" name="" visibility="private" type="_fxxKwAgsEeKpi5AGmkKVpg" association="_j8Qi4AioEeKmtKel3KkMBA"/>
+        <ownedEnd xmi:id="_j8Zs0AioEeKmtKel3KkMBA" name="" visibility="public" type="_fxxKwAgsEeKpi5AGmkKVpg" association="_j8Qi4AioEeKmtKel3KkMBA"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ONzH0AinEeKmtKel3KkMBA" name="CommunicableDiseaseReport">
       <generalization xmi:id="_UMCJAB94EeWsloQr5xbziw" general="_O851ELC5EeGGPqUAHxbNLQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_qlsOkAwuEeOmK_-AlU0SfQ" name="notificationReport_pregnancyMenstrualStatus" memberEnd="_qltcsAwuEeOmK_-AlU0SfQ _qlvR4AwuEeOmK_-AlU0SfQ">
-      <ownedEnd xmi:id="_qlvR4AwuEeOmK_-AlU0SfQ" name="" visibility="private" type="_O851ELC5EeGGPqUAHxbNLQ" association="_qlsOkAwuEeOmK_-AlU0SfQ"/>
+      <ownedEnd xmi:id="_qlvR4AwuEeOmK_-AlU0SfQ" name="" visibility="public" type="_O851ELC5EeGGPqUAHxbNLQ" association="_qlsOkAwuEeOmK_-AlU0SfQ"/>
     </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_0YFEsBFyEeKu1LfuaJwFHw" base_Comment="_0X8h0BFyEeKu1LfuaJwFHw"/>

@@ -2097,7 +2097,7 @@ Note that the FHIM makes a simplifying assumption that all Providers are associa
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6418AA15801A9" name="Organization" visibility="private">
+    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6418AA15801A9" name="Organization" visibility="public">
       <eAnnotations xmi:id="_L91zVeLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedComment xmi:id="_L9sCW-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6418AA15801A9">
         <body>&quot;An Entity representing a formalized group of entities with a common purpose (e.g. administrative, legal, political) and the infrastructure to carry out that purpose.&quot; (HL7)  </body>
@@ -2167,7 +2167,7 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jWbR0PTrEdy4NNd432ztnw"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B64242CAB30303" name="ServiceDeliveryLocation" visibility="private">
+    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B64242CAB30303" name="ServiceDeliveryLocation" visibility="public">
       <eAnnotations xmi:id="_L-IuReLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedComment xmi:id="_L9_kXOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64242CAB30303">
         <body>&quot;The location to which the patient is assigned. It is a role played by a place at which services may be provided. Note that a single physical place can play multiple service delivery location roles each with its own attributes. For example, a Podiatry clinic and Research clinic may meet on alternate days in the same physical location; each clinic uses its own mailing address and telephone number.&quot; - HL7 V3.  </body>
@@ -2629,26 +2629,26 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_sQORQBsyEd--ZY2-pbJ-Pw" name="providerEducation_educationalInstitution" memberEnd="_sQORQRsyEd--ZY2-pbJ-Pw _sQORRBsyEd--ZY2-pbJ-Pw">
-      <ownedEnd xmi:id="_sQORRBsyEd--ZY2-pbJ-Pw" name="" visibility="private" type="_fzybMBsxEd--ZY2-pbJ-Pw" association="_sQORQBsyEd--ZY2-pbJ-Pw"/>
+      <ownedEnd xmi:id="_sQORRBsyEd--ZY2-pbJ-Pw" name="" visibility="public" type="_fzybMBsxEd--ZY2-pbJ-Pw" association="_sQORQBsyEd--ZY2-pbJ-Pw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_420A62FD03B6456374DB027A" name="prescibingProvider_licensingJurisdiction" memberEnd="_420A62FD03B6456374DC0190 _420A62FD03B6456374DC01A1">
       <ownedEnd xmi:id="_420A62FD03B6456374DC01A1" name="" visibility="public" type="_420A62FD03B64563749D0053" isUnique="false" association="_420A62FD03B6456374DB027A"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_kTk44HWJEd-2SM6vxH_lvw" name="organization_organizationalProvider" memberEnd="_kTk44XWJEd-2SM6vxH_lvw _kTup4nWJEd-2SM6vxH_lvw"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_OoImgF0nEd-Rnfg4Du2i5g" name="organizationalProvider_networkAffiliation" memberEnd="_OoImgV0nEd-Rnfg4Du2i5g _OoImhF0nEd-Rnfg4Du2i5g">
-      <ownedEnd xmi:id="_OoImhF0nEd-Rnfg4Du2i5g" name="" visibility="private" type="_HC458BscEd--ZY2-pbJ-Pw" association="_OoImgF0nEd-Rnfg4Du2i5g"/>
+      <ownedEnd xmi:id="_OoImhF0nEd-Rnfg4Du2i5g" name="" visibility="public" type="_HC458BscEd--ZY2-pbJ-Pw" association="_OoImgF0nEd-Rnfg4Du2i5g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_L7BaEEvnEeCrON7ycdFLuQ" name="licensedProvider_licensingJurisdiction" memberEnd="_L7BaEUvnEeCrON7ycdFLuQ _L7EdYkvnEeCrON7ycdFLuQ">
-      <ownedEnd xmi:id="_L7EdYkvnEeCrON7ycdFLuQ" name="" visibility="private" type="_420A62FD03B6456373C80266" association="_L7BaEEvnEeCrON7ycdFLuQ">
+      <ownedEnd xmi:id="_L7EdYkvnEeCrON7ycdFLuQ" name="" visibility="public" type="_420A62FD03B6456373C80266" association="_L7BaEEvnEeCrON7ycdFLuQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L7HgsUvnEeCrON7ycdFLuQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L7HgsEvnEeCrON7ycdFLuQ" value="1"/>
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_HkfkoF0nEd-Rnfg4Du2i5g" name="individualProvider_providerAffiliation" memberEnd="_HkfkoV0nEd-Rnfg4Du2i5g _HkfkpF0nEd-Rnfg4Du2i5g">
-      <ownedEnd xmi:id="_HkfkpF0nEd-Rnfg4Du2i5g" name="" visibility="private" type="_420A62FD03B6418A6B760063" association="_HkfkoF0nEd-Rnfg4Du2i5g"/>
+      <ownedEnd xmi:id="_HkfkpF0nEd-Rnfg4Du2i5g" name="" visibility="public" type="_420A62FD03B6418A6B760063" association="_HkfkoF0nEd-Rnfg4Du2i5g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_zGtdYBsxEd--ZY2-pbJ-Pw" name="individualProvider_providerEducation" memberEnd="_zG2nUBsxEd--ZY2-pbJ-Pw _zG2nUxsxEd--ZY2-pbJ-Pw">
-      <ownedEnd xmi:id="_zG2nUxsxEd--ZY2-pbJ-Pw" name="" visibility="private" type="_420A62FD03B6418A6B760063" association="_zGtdYBsxEd--ZY2-pbJ-Pw"/>
+      <ownedEnd xmi:id="_zG2nUxsxEd--ZY2-pbJ-Pw" name="" visibility="public" type="_420A62FD03B6418A6B760063" association="_zGtdYBsxEd--ZY2-pbJ-Pw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_420A62FD03B6456374E20104" name="individualProvider_asPrescribingPractitioner" memberEnd="_420A62FD03B6456374E203E2 _420A62FD03B6456374E203E4">
       <ownedComment xmi:id="_323DcMb2Ed2P6e45_ze_yA" annotatedElement="_420A62FD03B6456374E20104">
@@ -2657,7 +2657,7 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
       <ownedEnd xmi:id="_420A62FD03B6456374E203E4" name="" visibility="public" type="_420A62FD03B6418A6B760063" isUnique="false" association="_420A62FD03B6456374E20104"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_XRoCUBswEd--ZY2-pbJ-Pw" name="healthcareProvider_licensedProvider" memberEnd="_XRxMQBswEd--ZY2-pbJ-Pw _XRxMQxswEd--ZY2-pbJ-Pw">
-      <ownedEnd xmi:id="_XRxMQxswEd--ZY2-pbJ-Pw" name="" visibility="private" type="_aW26cBsbEd--ZY2-pbJ-Pw" association="_XRoCUBswEd--ZY2-pbJ-Pw"/>
+      <ownedEnd xmi:id="_XRxMQxswEd--ZY2-pbJ-Pw" name="" visibility="public" type="_aW26cBsbEd--ZY2-pbJ-Pw" association="_XRoCUBswEd--ZY2-pbJ-Pw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_420A62FD03B645637304017E" name="healthcareProvider_specialty" memberEnd="_420A62FD03B6456373040353 _420A62FD03B6456373040363">
       <ownedComment xmi:id="_EaRLkMb1Ed2P6e45_ze_yA" annotatedElement="_420A62FD03B645637304017E">
@@ -2666,19 +2666,19 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
       <ownedEnd xmi:id="_420A62FD03B6456373040363" name="" visibility="public" type="_aW26cBsbEd--ZY2-pbJ-Pw" isUnique="false" association="_420A62FD03B645637304017E"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_MC3psB2HEd-4VI-lpu-JjQ" name="organizationLocation_organization" memberEnd="_MC3psR2HEd-4VI-lpu-JjQ _MDBasB2HEd-4VI-lpu-JjQ">
-      <ownedEnd xmi:id="_MDBasB2HEd-4VI-lpu-JjQ" name="" visibility="private" type="_420A62FD03B64242CAB30303" association="_MC3psB2HEd-4VI-lpu-JjQ"/>
+      <ownedEnd xmi:id="_MDBasB2HEd-4VI-lpu-JjQ" name="" visibility="public" type="_420A62FD03B64242CAB30303" association="_MC3psB2HEd-4VI-lpu-JjQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_mah68B18Ed-4VI-lpu-JjQ" name="organizationLocation_location" memberEnd="_mah68R18Ed-4VI-lpu-JjQ _mah69B18Ed-4VI-lpu-JjQ">
-      <ownedEnd xmi:id="_mah69B18Ed-4VI-lpu-JjQ" name="" visibility="private" type="_420A62FD03B64242CAB30303" association="_mah68B18Ed-4VI-lpu-JjQ"/>
+      <ownedEnd xmi:id="_mah69B18Ed-4VI-lpu-JjQ" name="" visibility="public" type="_420A62FD03B64242CAB30303" association="_mah68B18Ed-4VI-lpu-JjQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_0A9Q0EvqEeCrON7ycdFLuQ" name="providerAffiliation_privilegeOrResponsibility" memberEnd="_0BAUIEvqEeCrON7ycdFLuQ _0BDXcEvqEeCrON7ycdFLuQ">
-      <ownedEnd xmi:id="_0BDXcEvqEeCrON7ycdFLuQ" name="" visibility="private" type="_KCfh0B2REd-4VI-lpu-JjQ" association="_0A9Q0EvqEeCrON7ycdFLuQ">
+      <ownedEnd xmi:id="_0BDXcEvqEeCrON7ycdFLuQ" name="" visibility="public" type="_KCfh0B2REd-4VI-lpu-JjQ" association="_0A9Q0EvqEeCrON7ycdFLuQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0BDXckvqEeCrON7ycdFLuQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0BDXcUvqEeCrON7ycdFLuQ" value="1"/>
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_gy4SYEvqEeCrON7ycdFLuQ" name="providerAffiliation_position" memberEnd="_gy7VsEvqEeCrON7ycdFLuQ _gy-ZAEvqEeCrON7ycdFLuQ">
-      <ownedEnd xmi:id="_gy-ZAEvqEeCrON7ycdFLuQ" name="" visibility="private" type="_KCfh0B2REd-4VI-lpu-JjQ" association="_gy4SYEvqEeCrON7ycdFLuQ">
+      <ownedEnd xmi:id="_gy-ZAEvqEeCrON7ycdFLuQ" name="" visibility="public" type="_KCfh0B2REd-4VI-lpu-JjQ" association="_gy4SYEvqEeCrON7ycdFLuQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gy-ZAkvqEeCrON7ycdFLuQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gy-ZAUvqEeCrON7ycdFLuQ" value="1"/>
       </ownedEnd>
@@ -2725,13 +2725,13 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_lUxrAJONEeCRFv3DJq7yhQ" name="healthcareProvider_asMedicareProvider" memberEnd="_lVOW8JONEeCRFv3DJq7yhQ _lVrC4JONEeCRFv3DJq7yhQ">
-      <ownedEnd xmi:id="_lVrC4JONEeCRFv3DJq7yhQ" name="" visibility="private" type="_aW26cBsbEd--ZY2-pbJ-Pw" association="_lUxrAJONEeCRFv3DJq7yhQ">
+      <ownedEnd xmi:id="_lVrC4JONEeCRFv3DJq7yhQ" name="" visibility="public" type="_aW26cBsbEd--ZY2-pbJ-Pw" association="_lUxrAJONEeCRFv3DJq7yhQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lVrC4pONEeCRFv3DJq7yhQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lVrC4ZONEeCRFv3DJq7yhQ" value="1"/>
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_lwAOcJONEeCRFv3DJq7yhQ" name="healthcareProvider_asMedicaidProvider" memberEnd="_lwAOcZONEeCRFv3DJq7yhQ _lwJ_cpONEeCRFv3DJq7yhQ">
-      <ownedEnd xmi:id="_lwJ_cpONEeCRFv3DJq7yhQ" name="" visibility="private" type="_aW26cBsbEd--ZY2-pbJ-Pw" association="_lwAOcJONEeCRFv3DJq7yhQ">
+      <ownedEnd xmi:id="_lwJ_cpONEeCRFv3DJq7yhQ" name="" visibility="public" type="_aW26cBsbEd--ZY2-pbJ-Pw" association="_lwAOcJONEeCRFv3DJq7yhQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lwJ_dJONEeCRFv3DJq7yhQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lwJ_c5ONEeCRFv3DJq7yhQ" value="1"/>
       </ownedEnd>
@@ -2748,7 +2748,7 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_qTwGcJONEeCRFv3DJq7yhQ" name="medicaidProvider_state" memberEnd="_qTwGcZONEeCRFv3DJq7yhQ _qTwGdJONEeCRFv3DJq7yhQ">
-      <ownedEnd xmi:id="_qTwGdJONEeCRFv3DJq7yhQ" name="" visibility="private" type="_hZzDMJONEeCRFv3DJq7yhQ" association="_qTwGcJONEeCRFv3DJq7yhQ">
+      <ownedEnd xmi:id="_qTwGdJONEeCRFv3DJq7yhQ" name="" visibility="public" type="_hZzDMJONEeCRFv3DJq7yhQ" association="_qTwGcJONEeCRFv3DJq7yhQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qTwGdpONEeCRFv3DJq7yhQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qTwGdZONEeCRFv3DJq7yhQ" value="1"/>
       </ownedEnd>
@@ -2818,14 +2818,14 @@ Note that because all we need is the person's name and contact information (addr
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_snMb0LYsEeGWl-7OlqBMDw" name="organization_pointOfContact" memberEnd="_snQtQLYsEeGWl-7OlqBMDw _snWM0LYsEeGWl-7OlqBMDw">
-      <ownedEnd xmi:id="_snWM0LYsEeGWl-7OlqBMDw" name="" visibility="private" type="_420A62FD03B6418AA15801A9" association="_snMb0LYsEeGWl-7OlqBMDw"/>
+      <ownedEnd xmi:id="_snWM0LYsEeGWl-7OlqBMDw" name="" visibility="public" type="_420A62FD03B6418AA15801A9" association="_snMb0LYsEeGWl-7OlqBMDw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_WdaiIEC6EeO2aaQpQxRerg" name="planNetworkAffliliation_healthPlan">
       <memberEnd href="#_WdbwQEC6EeO2aaQpQxRerg?FHIM/Provider/PlanNetworkAffliliation/healthPlan?"/>
       <memberEnd href="EnrollEligCOB.efx#_Wdc-YEC6EeO2aaQpQxRerg?FHIM/EnrollEligCOB/HealthPlan/planNetworkAffliliation?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_37ROUEcjEeOPSKtS95Q8Uw" name="practicum_organizationalProvider" memberEnd="_37URoEcjEeOPSKtS95Q8Uw _37XU8EcjEeOPSKtS95Q8Uw">
-      <ownedEnd xmi:id="_37XU8EcjEeOPSKtS95Q8Uw" name="" visibility="private" type="_cNfC4BsxEd--ZY2-pbJ-Pw" association="_37ROUEcjEeOPSKtS95Q8Uw"/>
+      <ownedEnd xmi:id="_37XU8EcjEeOPSKtS95Q8Uw" name="" visibility="public" type="_cNfC4BsxEd--ZY2-pbJ-Pw" association="_37ROUEcjEeOPSKtS95Q8Uw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_G3o9QHo4EeOKnMBxUzvJfA" name="ElectronicServiceInformation">
       <ownedComment xmi:id="_X1fWkHyKEeOHq5zPTCjDoQ" annotatedElement="_G3o9QHo4EeOKnMBxUzvJfA">
@@ -2885,7 +2885,7 @@ Electronic Service Information = &quot;All information reasonably necessary to d
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_J02VQHo4EeOKnMBxUzvJfA" name="healthcareProvider_electronicServiceInformation" memberEnd="_J04xgHo4EeOKnMBxUzvJfA _J07NwHo4EeOKnMBxUzvJfA">
-      <ownedEnd xmi:id="_J07NwHo4EeOKnMBxUzvJfA" name="" visibility="private" type="_aW26cBsbEd--ZY2-pbJ-Pw" association="_J02VQHo4EeOKnMBxUzvJfA"/>
+      <ownedEnd xmi:id="_J07NwHo4EeOKnMBxUzvJfA" name="" visibility="public" type="_aW26cBsbEd--ZY2-pbJ-Pw" association="_J02VQHo4EeOKnMBxUzvJfA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_-s3dkHyPEeOHq5zPTCjDoQ" name="ProviderDirectoryContentProfile">
       <ownedComment xmi:id="_JAUqYHyQEeOHq5zPTCjDoQ" annotatedElement="_-s3dkHyPEeOHq5zPTCjDoQ">
@@ -2911,7 +2911,7 @@ Electronic Service Information = &quot;All information reasonably necessary to d
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_wfF60HyQEeOHq5zPTCjDoQ" name="electronicServiceInformation_providerDirectoryContentProfile" memberEnd="_wfIXEHyQEeOHq5zPTCjDoQ _wfKMQHyQEeOHq5zPTCjDoQ">
-      <ownedEnd xmi:id="_wfKMQHyQEeOHq5zPTCjDoQ" name="" visibility="private" type="_G3o9QHo4EeOKnMBxUzvJfA" association="_wfF60HyQEeOHq5zPTCjDoQ"/>
+      <ownedEnd xmi:id="_wfKMQHyQEeOHq5zPTCjDoQ" name="" visibility="public" type="_G3o9QHo4EeOKnMBxUzvJfA" association="_wfF60HyQEeOHq5zPTCjDoQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_MBjKQHyREeOHq5zPTCjDoQ" name="ProviderDirectorySecurityProfile">
       <ownedComment xmi:id="_MBjKQXyREeOHq5zPTCjDoQ" annotatedElement="_MBjKQHyREeOHq5zPTCjDoQ">
@@ -2937,19 +2937,19 @@ Electronic Service Information = &quot;All information reasonably necessary to d
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Uw9KYHyREeOHq5zPTCjDoQ" name="electronicServiceInformation_providerDirectorySecurityProfile" memberEnd="_Uw9xcHyREeOHq5zPTCjDoQ _Uw_moHyREeOHq5zPTCjDoQ">
-      <ownedEnd xmi:id="_Uw_moHyREeOHq5zPTCjDoQ" name="" visibility="private" type="_G3o9QHo4EeOKnMBxUzvJfA" association="_Uw9KYHyREeOHq5zPTCjDoQ"/>
+      <ownedEnd xmi:id="_Uw_moHyREeOHq5zPTCjDoQ" name="" visibility="public" type="_G3o9QHo4EeOKnMBxUzvJfA" association="_Uw9KYHyREeOHq5zPTCjDoQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_WEuk4KSdEeOi7v-AgUwKMQ" name="providerAffiliation_organizationalProvider" memberEnd="_WEvzAKSdEeOi7v-AgUwKMQ _WEy2UKSdEeOi7v-AgUwKMQ">
-      <ownedEnd xmi:id="_WEy2UKSdEeOi7v-AgUwKMQ" name="" visibility="private" type="_KCfh0B2REd-4VI-lpu-JjQ" association="_WEuk4KSdEeOi7v-AgUwKMQ"/>
+      <ownedEnd xmi:id="_WEy2UKSdEeOi7v-AgUwKMQ" name="" visibility="public" type="_KCfh0B2REd-4VI-lpu-JjQ" association="_WEuk4KSdEeOi7v-AgUwKMQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_NtDacPnIEeSJ3abZ9RQzyQ" name="organization_serviceDeliveryLocation" memberEnd="_NtEokPnIEeSJ3abZ9RQzyQ _NtGdwPnIEeSJ3abZ9RQzyQ">
-      <ownedEnd xmi:id="_NtGdwPnIEeSJ3abZ9RQzyQ" name="" visibility="private" type="_420A62FD03B6418AA15801A9" association="_NtDacPnIEeSJ3abZ9RQzyQ"/>
+      <ownedEnd xmi:id="_NtGdwPnIEeSJ3abZ9RQzyQ" name="" visibility="public" type="_420A62FD03B6418AA15801A9" association="_NtDacPnIEeSJ3abZ9RQzyQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Ru8QoPnKEeSJ3abZ9RQzyQ" name="practiceAffiliation_serviceDeliveryLocation" memberEnd="_Ru9ewPnKEeSJ3abZ9RQzyQ _Ru_T8PnKEeSJ3abZ9RQzyQ">
-      <ownedEnd xmi:id="_Ru_T8PnKEeSJ3abZ9RQzyQ" name="" visibility="private" type="_OJ2OMB2QEd-4VI-lpu-JjQ" association="_Ru8QoPnKEeSJ3abZ9RQzyQ"/>
+      <ownedEnd xmi:id="_Ru_T8PnKEeSJ3abZ9RQzyQ" name="" visibility="public" type="_OJ2OMB2QEd-4VI-lpu-JjQ" association="_Ru8QoPnKEeSJ3abZ9RQzyQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_tCWkEJeiEeWqb554qzI9zg" name="networkAffiliation_network" memberEnd="_tCXyMJeiEeWqb554qzI9zg _tCZAUJeiEeWqb554qzI9zg">
-      <ownedEnd xmi:id="_tCZAUJeiEeWqb554qzI9zg" name="" visibility="private" type="_YQIpgCu5Ed-mUrYY2zR9Jw" association="_tCWkEJeiEeWqb554qzI9zg"/>
+      <ownedEnd xmi:id="_tCZAUJeiEeWqb554qzI9zg" name="" visibility="public" type="_YQIpgCu5Ed-mUrYY2zR9Jw" association="_tCWkEJeiEeWqb554qzI9zg"/>
     </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_-8qe8e6sEd-crcWiXVDZrQ" base_Comment="_-8qe8O6sEd-crcWiXVDZrQ"/>
@@ -3135,7 +3135,7 @@ Electronic Service Information = &quot;All information reasonably necessary to d
   <FHIM:Mapping xmi:id="_ZYU_8LoREeWqFd182BzgAw" base_Property="__zk2oO6dEd-crcWiXVDZrQ">
     <index xmi:id="_ZYU_8boREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-28"/>
   </FHIM:Mapping>
- 
+
   <FHIM:Mapping xmi:id="_fs-04LoREeWqFd182BzgAw" base_Classifier="_aW26cBsbEd--ZY2-pbJ-Pw">
     <index xmi:id="_fs-04boREeWqFd182BzgAw" standardOrProject="MU2" value="Provider name and contact information"/>
     <index xmi:id="_fs-04roREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.1.1"/>

@@ -1345,7 +1345,7 @@ Grade 5: Death related to AE.</body>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_L_PXoDO9EeCBme_1raFDzg" name="intoleranceConditionList_intoleranceConditionEntry" memberEnd="_L_PXoTO9EeCBme_1raFDzg _L_Sa8jO9EeCBme_1raFDzg">
-      <ownedEnd xmi:id="_L_Sa8jO9EeCBme_1raFDzg" name="" visibility="private" type="_Mm8tUDO8EeCBme_1raFDzg" association="_L_PXoDO9EeCBme_1raFDzg">
+      <ownedEnd xmi:id="_L_Sa8jO9EeCBme_1raFDzg" name="" visibility="public" type="_Mm8tUDO8EeCBme_1raFDzg" association="_L_PXoDO9EeCBme_1raFDzg">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L_VeQTO9EeCBme_1raFDzg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L_VeQDO9EeCBme_1raFDzg" value="1"/>
       </ownedEnd>
@@ -1427,7 +1427,7 @@ Note that FHIR uses a code for this concept, but we modeled this as a string, be
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_66KZ0GYAEeCWgYu_gBZhWw" name="IntoleranceCondition_reaction" memberEnd="_66MPAGYAEeCWgYu_gBZhWw _66PSUGYAEeCWgYu_gBZhWw">
-      <ownedEnd xmi:id="_66PSUGYAEeCWgYu_gBZhWw" name="" visibility="private" type="_420A62FD03B6418BB10D01EB" association="_66KZ0GYAEeCWgYu_gBZhWw">
+      <ownedEnd xmi:id="_66PSUGYAEeCWgYu_gBZhWw" name="" visibility="public" type="_420A62FD03B6418BB10D01EB" association="_66KZ0GYAEeCWgYu_gBZhWw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_66QgcGYAEeCWgYu_gBZhWw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_66P5YGYAEeCWgYu_gBZhWw" value="1"/>
       </ownedEnd>
@@ -1441,7 +1441,7 @@ Note that FHIR uses a code for this concept, but we modeled this as a string, be
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_SkvdQPDLEeO_Te8vAbT_YQ" name="intoleranceCondition_sensitivityTest" memberEnd="_SkwrYPDLEeO_Te8vAbT_YQ _SkygkPDLEeO_Te8vAbT_YQ">
-      <ownedEnd xmi:id="_SkygkPDLEeO_Te8vAbT_YQ" name="" visibility="private" type="_420A62FD03B6418BB10D01EB" association="_SkvdQPDLEeO_Te8vAbT_YQ"/>
+      <ownedEnd xmi:id="_SkygkPDLEeO_Te8vAbT_YQ" name="" visibility="public" type="_420A62FD03B6418BB10D01EB" association="_SkvdQPDLEeO_Te8vAbT_YQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_4zAJwNoHEeSdPcnORr-kJQ" client="_420A62FD03B6418BB10D01EB">
       <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_LZ6FYNoGEeSdPcnORr-kJQ"/>

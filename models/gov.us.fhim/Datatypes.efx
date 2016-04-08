@@ -852,10 +852,6 @@ Note that this property may be replaced by some other concept or group of concep
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VxP9cfwIEd-3ndaGus2qMA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VxP9cPwIEd-3ndaGus2qMA"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_DyBtYHQqEeWqG8oCdHVVOQ" type="_GmKqYGAfEd6a0qoC8Dh7hA">
-          <language></language>
-          <body>(Country)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B641886F6203D7" name="country" visibility="public" type="_GmKqYGAfEd6a0qoC8Dh7hA">
         <eAnnotations xmi:id="_O1RTe-LiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -868,6 +864,10 @@ Note that this property may be replaced by some other concept or group of concep
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eyyDkOLjEdutr_MT9HkPyQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eyoSz-LjEdutr_MT9HkPyQ"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_1z7PAP2KEeW9OZr1ADZXqg" type="_GmKqYGAfEd6a0qoC8Dh7hA">
+          <language></language>
+          <body>(Country)</body>
+        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B641886F6203D2" name="postalCode" visibility="public">
         <eAnnotations xmi:id="_O1RTduLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -1484,7 +1484,7 @@ Note that this property will be replaced by some other concept or group of conce
         </ownedComment>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_hTVDUKRDEeGrsN1DjD6wSA" name="CD" visibility="private">
+    <packagedElement xmi:type="uml:Class" xmi:id="_hTVDUKRDEeGrsN1DjD6wSA" name="CD">
       <eAnnotations xmi:id="_WpAjkLyKEeGK2djLWlLFew" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <details xmi:id="_WpAjkbyKEeGK2djLWlLFew" key="CD"/>
       </eAnnotations>
@@ -1591,7 +1591,7 @@ Note that this property will be replaced by some other concept or group of conce
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_q3LcUGO1EeWL1ov4GOhBTA" name="code_codeSystem" memberEnd="_q3PtwGO1EeWL1ov4GOhBTA _q3SKAGO1EeWL1ov4GOhBTA">
-      <ownedEnd xmi:id="_q3SKAGO1EeWL1ov4GOhBTA" name="" visibility="private" type="_GmKqYGAfEd6a0qoC8Dh7hA" association="_q3LcUGO1EeWL1ov4GOhBTA">
+      <ownedEnd xmi:id="_q3SKAGO1EeWL1ov4GOhBTA" name="" visibility="public" type="_GmKqYGAfEd6a0qoC8Dh7hA" association="_q3LcUGO1EeWL1ov4GOhBTA">
         <upperValue xmi:type="uml:OpaqueExpression" xmi:id="_q3VNUGO1EeWL1ov4GOhBTA">
           <language></language>
           <body>(none)</body>
@@ -1820,4 +1820,16 @@ Note that this property will be replaced by some other concept or group of conce
   <FHIM:Mapping xmi:id="_ZPB6ALoREeWqFd182BzgAw" base_Property="_420A62FD03B641886F6203D1">
     <index xmi:id="_ZPChELoREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Address.state"/>
   </FHIM:Mapping>
+  <term:ValueSetConstraint xmi:id="_4WDNgP2KEeW9OZr1ADZXqg" base_Property="_ABqyEBAoEd-2E9qx-lgHBg">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_W1eOQKRMEeGZ6ueex_Me0w"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_6qLMQP2KEeW9OZr1ADZXqg" base_Property="_gaSH0kzZEdyZ7YHHi9KCRg">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_X8KJgaRMEeGZ6ueex_Me0w"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_8Fhv8P2KEeW9OZr1ADZXqg" base_Property="_gab40kzZEdyZ7YHHi9KCRg">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_X8KJgaRMEeGZ6ueex_Me0w"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_CL8UkP2LEeW9OZr1ADZXqg" base_Property="__w_l4PAcEeS1qetF27ECmQ">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_Eh55sPApEeS1qetF27ECmQ"/>
+  </term:ValueSetConstraint>
 </xmi:XMI>

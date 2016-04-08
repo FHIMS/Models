@@ -1308,7 +1308,7 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_PZmBoOeUEd6qdqXtvR-ZHQ" name="bloodBankRecord_patient" memberEnd="_PZmBoeeUEd6qdqXtvR-ZHQ _PZvyoOeUEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_PZvyoOeUEd6qdqXtvR-ZHQ" name="" visibility="private" type="_JUXv0OeUEd6qdqXtvR-ZHQ" association="_PZmBoOeUEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_PZvyoOeUEd6qdqXtvR-ZHQ" name="" visibility="public" type="_JUXv0OeUEd6qdqXtvR-ZHQ" association="_PZmBoOeUEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_YTkTAOeUEd6qdqXtvR-ZHQ" name="BloodComponentRequest">
       <ownedAttribute xmi:id="_lAkxIeeUEd6qdqXtvR-ZHQ" name="dateNeeded" visibility="public">
@@ -1345,7 +1345,7 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_rHlLoOeUEd6qdqXtvR-ZHQ" name="bloodComponentRequest_requester" memberEnd="_rHlLoeeUEd6qdqXtvR-ZHQ _rHlLpOeUEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_rHlLpOeUEd6qdqXtvR-ZHQ" name="" visibility="private" type="_YTkTAOeUEd6qdqXtvR-ZHQ" association="_rHlLoOeUEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_rHlLpOeUEd6qdqXtvR-ZHQ" name="" visibility="public" type="_YTkTAOeUEd6qdqXtvR-ZHQ" association="_rHlLoOeUEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_2o4roOeUEd6qdqXtvR-ZHQ" name="BloodComponent">
       <ownedAttribute xmi:id="_8AgQkOeUEd6qdqXtvR-ZHQ" name="id" visibility="public">
@@ -1353,11 +1353,11 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_-9KO8OeUEd6qdqXtvR-ZHQ" name="bloodComponentRequest_bloodComponent" memberEnd="_-9KO8eeUEd6qdqXtvR-ZHQ _-9TY4OeUEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_-9TY4OeUEd6qdqXtvR-ZHQ" name="" visibility="private" type="_YTkTAOeUEd6qdqXtvR-ZHQ" association="_-9KO8OeUEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_-9TY4OeUEd6qdqXtvR-ZHQ" name="" visibility="public" type="_YTkTAOeUEd6qdqXtvR-ZHQ" association="_-9KO8OeUEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_SQT6oOeVEd6qdqXtvR-ZHQ" name="transfusionEvent_bloodComponent" memberEnd="_SQT6oeeVEd6qdqXtvR-ZHQ _SQT6pOeVEd6qdqXtvR-ZHQ">
       <eAnnotations xmi:id="_r6MasOecEd6qdqXtvR-ZHQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
-      <ownedEnd xmi:id="_SQT6pOeVEd6qdqXtvR-ZHQ" name="" visibility="private" type="_420A62FD03B64458753B035E" association="_SQT6oOeVEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_SQT6pOeVEd6qdqXtvR-ZHQ" name="" visibility="public" type="_420A62FD03B64458753B035E" association="_SQT6oOeVEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_0UO2gOeWEd6qdqXtvR-ZHQ" name="Antibody">
       <eAnnotations xmi:id="_0UO2geeWEd6qdqXtvR-ZHQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -1477,7 +1477,7 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_0UYngOeWEd6qdqXtvR-ZHQ" name="antibodyIdentification_antibody" memberEnd="_0UO2hueWEd6qdqXtvR-ZHQ _0UYngeeWEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_0UYngeeWEd6qdqXtvR-ZHQ" name="" visibility="private" type="_0UO2hOeWEd6qdqXtvR-ZHQ" association="_0UYngOeWEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_0UYngeeWEd6qdqXtvR-ZHQ" name="" visibility="public" type="_0UO2hOeWEd6qdqXtvR-ZHQ" association="_0UYngOeWEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_0UYnhOeWEd6qdqXtvR-ZHQ" name="bloodBankTest_rbcAntigensAbsent" memberEnd="_0UO2ueeWEd6qdqXtvR-ZHQ _0UYnheeWEd6qdqXtvR-ZHQ">
       <ownedEnd xmi:id="_0UYnheeWEd6qdqXtvR-ZHQ" name="" visibility="public" type="_0UO2ieeWEd6qdqXtvR-ZHQ" isUnique="false" association="_0UYnhOeWEd6qdqXtvR-ZHQ"/>
@@ -1492,49 +1492,49 @@
       <ownedEnd xmi:id="_0UiYgeeWEd6qdqXtvR-ZHQ" name="" visibility="public" type="_0UO2ieeWEd6qdqXtvR-ZHQ" isUnique="false" association="_0UiYgOeWEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_SUGjkOeXEd6qdqXtvR-ZHQ" name="bloodBankTest_ward" memberEnd="_SUGjkeeXEd6qdqXtvR-ZHQ _SUPtgueXEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_SUPtgueXEd6qdqXtvR-ZHQ" name="" visibility="private" type="_0UO2ieeWEd6qdqXtvR-ZHQ" association="_SUGjkOeXEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_SUPtgueXEd6qdqXtvR-ZHQ" name="" visibility="public" type="_0UO2ieeWEd6qdqXtvR-ZHQ" association="_SUGjkOeXEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_eO46kOeXEd6qdqXtvR-ZHQ" name="bloodBankTest_dataEnterer" memberEnd="_eO46keeXEd6qdqXtvR-ZHQ _eO46lOeXEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_eO46lOeXEd6qdqXtvR-ZHQ" name="" visibility="private" type="_0UO2ieeWEd6qdqXtvR-ZHQ" association="_eO46kOeXEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_eO46lOeXEd6qdqXtvR-ZHQ" name="" visibility="public" type="_0UO2ieeWEd6qdqXtvR-ZHQ" association="_eO46kOeXEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_2vil4OeXEd6qdqXtvR-ZHQ" name="bloodBankTest_phlebotomist" memberEnd="_2vil4eeXEd6qdqXtvR-ZHQ _2vil5OeXEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_2vil5OeXEd6qdqXtvR-ZHQ" name="" visibility="private" type="_0UO2ieeWEd6qdqXtvR-ZHQ" association="_2vil4OeXEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_2vil5OeXEd6qdqXtvR-ZHQ" name="" visibility="public" type="_0UO2ieeWEd6qdqXtvR-ZHQ" association="_2vil4OeXEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_83I2QOeXEd6qdqXtvR-ZHQ" name="bloodBankTest_requestor" memberEnd="_83I2QeeXEd6qdqXtvR-ZHQ _83I2ROeXEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_83I2ROeXEd6qdqXtvR-ZHQ" name="" visibility="private" type="_0UO2ieeWEd6qdqXtvR-ZHQ" association="_83I2QOeXEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_83I2ROeXEd6qdqXtvR-ZHQ" name="" visibility="public" type="_0UO2ieeWEd6qdqXtvR-ZHQ" association="_83I2QOeXEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_PdvlAOeYEd6qdqXtvR-ZHQ" name="bloodBankTest_aboTypingTechnician" memberEnd="_Pd4u8OeYEd6qdqXtvR-ZHQ _Pd4u8-eYEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_Pd4u8-eYEd6qdqXtvR-ZHQ" name="" visibility="private" type="_0UO2ieeWEd6qdqXtvR-ZHQ" association="_PdvlAOeYEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_Pd4u8-eYEd6qdqXtvR-ZHQ" name="" visibility="public" type="_0UO2ieeWEd6qdqXtvR-ZHQ" association="_PdvlAOeYEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Zl8kEOeYEd6qdqXtvR-ZHQ" name="bloodBankTest_rhTypingTechnician" memberEnd="_ZmFuAOeYEd6qdqXtvR-ZHQ _ZmFuA-eYEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_ZmFuA-eYEd6qdqXtvR-ZHQ" name="" visibility="private" type="_0UO2ieeWEd6qdqXtvR-ZHQ" association="_Zl8kEOeYEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_ZmFuA-eYEd6qdqXtvR-ZHQ" name="" visibility="public" type="_0UO2ieeWEd6qdqXtvR-ZHQ" association="_Zl8kEOeYEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_WXLQEOeaEd6qdqXtvR-ZHQ" name="bloodBankRecord_rbcAntigensPresent" memberEnd="_WXLQEeeaEd6qdqXtvR-ZHQ _WXLQFOeaEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_WXLQFOeaEd6qdqXtvR-ZHQ" name="" visibility="private" type="_JUXv0OeUEd6qdqXtvR-ZHQ" association="_WXLQEOeaEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_WXLQFOeaEd6qdqXtvR-ZHQ" name="" visibility="public" type="_JUXv0OeUEd6qdqXtvR-ZHQ" association="_WXLQEOeaEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_a-EisOeaEd6qdqXtvR-ZHQ" name="bloodBankRecord_rbcAntigensAbsent" memberEnd="_a-OTsOeaEd6qdqXtvR-ZHQ _a-OTs-eaEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_a-OTs-eaEd6qdqXtvR-ZHQ" name="" visibility="private" type="_JUXv0OeUEd6qdqXtvR-ZHQ" association="_a-EisOeaEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_a-OTs-eaEd6qdqXtvR-ZHQ" name="" visibility="public" type="_JUXv0OeUEd6qdqXtvR-ZHQ" association="_a-EisOeaEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ik5KIOeaEd6qdqXtvR-ZHQ" name="bloodBankRecord_antibodiesIdentified" memberEnd="_ik5KIeeaEd6qdqXtvR-ZHQ _ik5KJOeaEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_ik5KJOeaEd6qdqXtvR-ZHQ" name="" visibility="private" type="_JUXv0OeUEd6qdqXtvR-ZHQ" association="_ik5KIOeaEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_ik5KJOeaEd6qdqXtvR-ZHQ" name="" visibility="public" type="_JUXv0OeUEd6qdqXtvR-ZHQ" association="_ik5KIOeaEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_enTdwOebEd6qdqXtvR-ZHQ" name="bloodBankRecord_transfusionReaction" memberEnd="_enTdweebEd6qdqXtvR-ZHQ _enTdxOebEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_enTdxOebEd6qdqXtvR-ZHQ" name="" visibility="private" type="_JUXv0OeUEd6qdqXtvR-ZHQ" association="_enTdwOebEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_enTdxOebEd6qdqXtvR-ZHQ" name="" visibility="public" type="_JUXv0OeUEd6qdqXtvR-ZHQ" association="_enTdwOebEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_rvI2sOebEd6qdqXtvR-ZHQ" name="transfusionReaction_dataEnterer" memberEnd="_rvI2seebEd6qdqXtvR-ZHQ _rvI2tOebEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_rvI2tOebEd6qdqXtvR-ZHQ" name="" visibility="private" type="_420A62FD03B6445A3FC20208" association="_rvI2sOebEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_rvI2tOebEd6qdqXtvR-ZHQ" name="" visibility="public" type="_420A62FD03B6445A3FC20208" association="_rvI2sOebEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_H4ZAYOecEd6qdqXtvR-ZHQ" name="bloodBankRecord_bloodComponentRequest" memberEnd="_H4ZAYeecEd6qdqXtvR-ZHQ _H4iKUOecEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_H4iKUOecEd6qdqXtvR-ZHQ" name="" visibility="private" type="_JUXv0OeUEd6qdqXtvR-ZHQ" association="_H4ZAYOecEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_H4iKUOecEd6qdqXtvR-ZHQ" name="" visibility="public" type="_JUXv0OeUEd6qdqXtvR-ZHQ" association="_H4ZAYOecEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_SX-ksOecEd6qdqXtvR-ZHQ" name="bloodComponentRequest_facilityTreatingSpecialty" memberEnd="_SX-kseecEd6qdqXtvR-ZHQ _SYIVsOecEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_SYIVsOecEd6qdqXtvR-ZHQ" name="" visibility="private" type="_YTkTAOeUEd6qdqXtvR-ZHQ" association="_SX-ksOecEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_SYIVsOecEd6qdqXtvR-ZHQ" name="" visibility="public" type="_YTkTAOeUEd6qdqXtvR-ZHQ" association="_SX-ksOecEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_dU0QQOedEd6qdqXtvR-ZHQ" name="bloodBankRecord_transfusionEvent" memberEnd="_dU0QQeedEd6qdqXtvR-ZHQ _dU0QROedEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_dU0QROedEd6qdqXtvR-ZHQ" name="" visibility="private" type="_JUXv0OeUEd6qdqXtvR-ZHQ" association="_dU0QQOedEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_dU0QROedEd6qdqXtvR-ZHQ" name="" visibility="public" type="_JUXv0OeUEd6qdqXtvR-ZHQ" association="_dU0QQOedEd6qdqXtvR-ZHQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_vWnBwOedEd6qdqXtvR-ZHQ" name="bloodBankTest_specimen" memberEnd="_vWwywOedEd6qdqXtvR-ZHQ _vWwyw-edEd6qdqXtvR-ZHQ">
-      <ownedEnd xmi:id="_vWwyw-edEd6qdqXtvR-ZHQ" name="" visibility="private" type="_0UO2ieeWEd6qdqXtvR-ZHQ" association="_vWnBwOedEd6qdqXtvR-ZHQ"/>
+      <ownedEnd xmi:id="_vWwyw-edEd6qdqXtvR-ZHQ" name="" visibility="public" type="_0UO2ieeWEd6qdqXtvR-ZHQ" association="_vWnBwOedEd6qdqXtvR-ZHQ"/>
     </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_PL644-LiEduGJrQyRGTO1A" base_Comment="_PL644uLiEduGJrQyRGTO1A"/>

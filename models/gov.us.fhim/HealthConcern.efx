@@ -1974,10 +1974,10 @@ Note that this property may be removed or altered based on the outcome of the Se
       <ownedEnd xmi:id="_420A62FD03B6426EB2840058" name="" visibility="public" type="_55AJkPc4Ed-hU-zq4VwY5Q" isUnique="false" association="_420A62FD03B6426EB2830219"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_YV4J0HiUEd-xd69YcOIcPA" name="healthConcern_responsibleProvider" memberEnd="_YV4J0XiUEd-xd69YcOIcPA _YWB60HiUEd-xd69YcOIcPA">
-      <ownedEnd xmi:id="_YWB60HiUEd-xd69YcOIcPA" name="" visibility="private" type="_420A62FD03B6421F8AD00244" association="_YV4J0HiUEd-xd69YcOIcPA"/>
+      <ownedEnd xmi:id="_YWB60HiUEd-xd69YcOIcPA" name="" visibility="public" type="_420A62FD03B6421F8AD00244" association="_YV4J0HiUEd-xd69YcOIcPA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Qc0UIHiaEd-xd69YcOIcPA" name="healthConcern_diagnosisList" memberEnd="_Qc0UIXiaEd-xd69YcOIcPA _Qc0UJHiaEd-xd69YcOIcPA">
-      <ownedEnd xmi:id="_Qc0UJHiaEd-xd69YcOIcPA" name="" visibility="private" type="_420A62FD03B6421F8AD00244" association="_Qc0UIHiaEd-xd69YcOIcPA"/>
+      <ownedEnd xmi:id="_Qc0UJHiaEd-xd69YcOIcPA" name="" visibility="public" type="_420A62FD03B6421F8AD00244" association="_Qc0UIHiaEd-xd69YcOIcPA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_55AJkPc4Ed-hU-zq4VwY5Q" name="HealthConcernList">
       <eAnnotations xmi:id="_FwLRIJ1yEeO_7b9hT5majA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -2029,13 +2029,13 @@ Note that this property may be removed or altered based on the outcome of the Se
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Ru5HQAe5EeCPOdVNW49Akw" name="healthConcernList_healthConcernEntry" memberEnd="_Ru8KkAe5EeCPOdVNW49Akw _Ru_N4Ae5EeCPOdVNW49Akw">
-      <ownedEnd xmi:id="_Ru_N4Ae5EeCPOdVNW49Akw" name="" visibility="private" type="_55AJkPc4Ed-hU-zq4VwY5Q" association="_Ru5HQAe5EeCPOdVNW49Akw">
+      <ownedEnd xmi:id="_Ru_N4Ae5EeCPOdVNW49Akw" name="" visibility="public" type="_55AJkPc4Ed-hU-zq4VwY5Q" association="_Ru5HQAe5EeCPOdVNW49Akw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ru_N4ge5EeCPOdVNW49Akw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ru_N4Qe5EeCPOdVNW49Akw" value="1"/>
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ShuSYAe5EeCPOdVNW49Akw" name="healthConcernEntry_healthConcern" memberEnd="_ShuSYQe5EeCPOdVNW49Akw _ShxVsge5EeCPOdVNW49Akw">
-      <ownedEnd xmi:id="_ShxVsge5EeCPOdVNW49Akw" name="" visibility="private" type="_GvZT0Ae5EeCPOdVNW49Akw" association="_ShuSYAe5EeCPOdVNW49Akw">
+      <ownedEnd xmi:id="_ShxVsge5EeCPOdVNW49Akw" name="" visibility="public" type="_GvZT0Ae5EeCPOdVNW49Akw" association="_ShuSYAe5EeCPOdVNW49Akw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sh0ZAAe5EeCPOdVNW49Akw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ShxVswe5EeCPOdVNW49Akw" value="1"/>
       </ownedEnd>
@@ -2052,7 +2052,7 @@ Note that this property may be removed or altered based on the outcome of the Se
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_xIXFEA0KEeCQj9C1UPZeDw" name="healthConcern_problemManagementClassification" memberEnd="_xIXFEQ0KEeCQj9C1UPZeDw _xIXFFA0KEeCQj9C1UPZeDw">
-      <ownedEnd xmi:id="_xIXFFA0KEeCQj9C1UPZeDw" name="" visibility="private" type="_420A62FD03B6421F8AD00244" association="_xIXFEA0KEeCQj9C1UPZeDw">
+      <ownedEnd xmi:id="_xIXFFA0KEeCQj9C1UPZeDw" name="" visibility="public" type="_420A62FD03B6421F8AD00244" association="_xIXFEA0KEeCQj9C1UPZeDw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xIXFFg0KEeCQj9C1UPZeDw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIXFFQ0KEeCQj9C1UPZeDw" value="1"/>
       </ownedEnd>
@@ -2061,7 +2061,7 @@ Note that this property may be removed or altered based on the outcome of the Se
       <ownedComment xmi:id="_eXKaoOCKEeS8tqKBj1EYvQ" annotatedElement="_3RKLIA0REeCQj9C1UPZeDw">
         <body>Identifies the organization/location responsible for treating the Health Concern.  Used primarily in inpatient situations.</body>
       </ownedComment>
-      <ownedEnd xmi:id="_3RT8IA0REeCQj9C1UPZeDw" name="" visibility="private" type="_420A62FD03B6421F8AD00244" association="_3RKLIA0REeCQj9C1UPZeDw">
+      <ownedEnd xmi:id="_3RT8IA0REeCQj9C1UPZeDw" name="" visibility="public" type="_420A62FD03B6421F8AD00244" association="_3RKLIA0REeCQj9C1UPZeDw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3RT8Ig0REeCQj9C1UPZeDw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3RT8IQ0REeCQj9C1UPZeDw" value="1"/>
       </ownedEnd>
@@ -2154,10 +2154,10 @@ Note that this property may be removed or altered based on the outcome of the Se
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_SsFmMPHsEeGWjrqT5CRABg" name="familyHistoryConcern_relative" memberEnd="_SsKesPHsEeGWjrqT5CRABg _SsPXMPHsEeGWjrqT5CRABg">
-      <ownedEnd xmi:id="_SsPXMPHsEeGWjrqT5CRABg" name="" visibility="private" type="_YQmCgPHqEeGWjrqT5CRABg" association="_SsFmMPHsEeGWjrqT5CRABg"/>
+      <ownedEnd xmi:id="_SsPXMPHsEeGWjrqT5CRABg" name="" visibility="public" type="_YQmCgPHqEeGWjrqT5CRABg" association="_SsFmMPHsEeGWjrqT5CRABg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_VfVJ4PHsEeGWjrqT5CRABg" name="relative_asPerson" memberEnd="_VfY0QPHsEeGWjrqT5CRABg _VfeT0PHsEeGWjrqT5CRABg">
-      <ownedEnd xmi:id="_VfeT0PHsEeGWjrqT5CRABg" name="" visibility="private" type="_MKlBAPHsEeGWjrqT5CRABg" association="_VfVJ4PHsEeGWjrqT5CRABg"/>
+      <ownedEnd xmi:id="_VfeT0PHsEeGWjrqT5CRABg" name="" visibility="public" type="_MKlBAPHsEeGWjrqT5CRABg" association="_VfVJ4PHsEeGWjrqT5CRABg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_nwG14APwEeKAxseXcMhbEg" name="SubstanceUse">
       <generalization xmi:id="_uZEG4APwEeKAxseXcMhbEg" general="_RPmE8PHqEeGWjrqT5CRABg"/>
@@ -2174,10 +2174,10 @@ Note that this property may be removed or altered based on the outcome of the Se
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_KojTEF6tEeOE8tMbJPicWQ" name="healthConcern_externalCause" memberEnd="_KooLkF6tEeOE8tMbJPicWQ _KotEEF6tEeOE8tMbJPicWQ">
-      <ownedEnd xmi:id="_KotEEF6tEeOE8tMbJPicWQ" name="" visibility="private" type="_420A62FD03B6421F8AD00244" association="_KojTEF6tEeOE8tMbJPicWQ"/>
+      <ownedEnd xmi:id="_KotEEF6tEeOE8tMbJPicWQ" name="" visibility="public" type="_420A62FD03B6421F8AD00244" association="_KojTEF6tEeOE8tMbJPicWQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_juQA4A3gEeSr7IwJ9lGnGA" memberEnd="_juQn8A3gEeSr7IwJ9lGnGA _juSdIA3gEeSr7IwJ9lGnGA">
-      <ownedEnd xmi:id="_juSdIA3gEeSr7IwJ9lGnGA" name="" visibility="private" type="_420A62FD03B6421F8AD00244" association="_juQA4A3gEeSr7IwJ9lGnGA"/>
+      <ownedEnd xmi:id="_juSdIA3gEeSr7IwJ9lGnGA" name="" visibility="public" type="_420A62FD03B6421F8AD00244" association="_juQA4A3gEeSr7IwJ9lGnGA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_iAwQAN-kEeSzEeYgFgxEPA" client="_MKlBAPHsEeGWjrqT5CRABg">
       <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_XyDLQKRMEeGZ6ueex_Me0w"/>
@@ -2186,7 +2186,7 @@ Note that this property may be removed or altered based on the outcome of the Se
       <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_0q6CAN-kEeSzEeYgFgxEPA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_0V4AUsLFEeGVnuEDZNmvgw" name="observationStatusChangeEvent_visit" memberEnd="_0VIZgsLFEeGVnuEDZNmvgw _0V4AU8LFEeGVnuEDZNmvgw">
-      <ownedEnd xmi:id="_0V4AU8LFEeGVnuEDZNmvgw" name="" visibility="private" type="_0VIZcMLFEeGVnuEDZNmvgw" association="_0V4AUsLFEeGVnuEDZNmvgw">
+      <ownedEnd xmi:id="_0V4AU8LFEeGVnuEDZNmvgw" name="" visibility="public" type="_0VIZcMLFEeGVnuEDZNmvgw" association="_0V4AUsLFEeGVnuEDZNmvgw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0V4AVMLFEeGVnuEDZNmvgw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0V4AVcLFEeGVnuEDZNmvgw" value="1"/>
       </ownedEnd>
@@ -2195,7 +2195,7 @@ Note that this property may be removed or altered based on the outcome of the Se
       <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_XyxkAKRMEeGZ6ueex_Me0w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_yYDEIOCMEeS8tqKBj1EYvQ" memberEnd="_yYESQOCMEeS8tqKBj1EYvQ _yYGHcOCMEeS8tqKBj1EYvQ">
-      <ownedEnd xmi:id="_yYGHcOCMEeS8tqKBj1EYvQ" name="" visibility="private" type="_420A62FD03B6421F8AD00244" association="_yYDEIOCMEeS8tqKBj1EYvQ"/>
+      <ownedEnd xmi:id="_yYGHcOCMEeS8tqKBj1EYvQ" name="" visibility="public" type="_420A62FD03B6421F8AD00244" association="_yYDEIOCMEeS8tqKBj1EYvQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_fGJgMOCNEeS8tqKBj1EYvQ" client="_RPmE8PHqEeGWjrqT5CRABg">
       <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_X7pMIKRMEeGZ6ueex_Me0w"/>
