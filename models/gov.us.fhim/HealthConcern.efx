@@ -1578,6 +1578,46 @@
           </children>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_V_UuweU9EeWlUtxA-8RVeQ" points="[-56, 52, 100, -76]$[-72, 93, 84, -35]"/>
         </edges>
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_1jpjkCN3EeatluYc84nSZw" element="_1ishUCN3EeatluYc84nSZw" source="_i7Ts0Jp4EeOswd2lHBTpDQ" target="_dhJKO5p4EeOswd2lHBTpDQ" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_1jpjkiN3EeatluYc84nSZw" visible="false" type="NameLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_1jpjlCN3EeatluYc84nSZw" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_1jpjlSN3EeatluYc84nSZw" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1jpjkyN3EeatluYc84nSZw" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_1jzUkCN3EeatluYc84nSZw" visible="false" type="ToMultiplicityLabel" element="_1i_cQCN3EeatluYc84nSZw">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_1jzUkiN3EeatluYc84nSZw" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_1jzUkSN3EeatluYc84nSZw" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_1jzUkyN3EeatluYc84nSZw" type="ToRoleLabel" element="_1i_cQCN3EeatluYc84nSZw">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_1jzUlSN3EeatluYc84nSZw" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_1jzUlCN3EeatluYc84nSZw" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_1jzUliN3EeatluYc84nSZw" type="FromMultiplicityLabel" element="_1i2SUCN3EeatluYc84nSZw">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_1jzUmCN3EeatluYc84nSZw" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_1jzUlyN3EeatluYc84nSZw" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_1jzUmSN3EeatluYc84nSZw" type="FromRoleLabel" element="_1i2SUCN3EeatluYc84nSZw">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_1jzUmyN3EeatluYc84nSZw" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_1jzUmiN3EeatluYc84nSZw" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_1jzUnCN3EeatluYc84nSZw" visible="false" type="ToQualifierLabel" element="_1i_cQCN3EeatluYc84nSZw">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_1jzUniN3EeatluYc84nSZw" type="QualifierCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_1jzUnSN3EeatluYc84nSZw" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_1jzUnyN3EeatluYc84nSZw" visible="false" type="FromQualifierLabel" element="_1i2SUCN3EeatluYc84nSZw">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_1jzUoSN3EeatluYc84nSZw" type="QualifierCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_1jzUoCN3EeatluYc84nSZw" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_1jzUoiN3EeatluYc84nSZw" visible="false" type="ToConstraintLabel" element="_1i_cQCN3EeatluYc84nSZw">
+            <children xmi:type="notation:ListCompartment" xmi:id="_1jzUpCN3EeatluYc84nSZw" type="ToConstraintCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_1jzUoyN3EeatluYc84nSZw" y="1058"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_1jzUpSN3EeatluYc84nSZw" visible="false" type="FromConstraintLabel" element="_1i2SUCN3EeatluYc84nSZw">
+            <children xmi:type="notation:ListCompartment" xmi:id="_1jzUpyN3EeatluYc84nSZw" type="FromConstraintCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_1jzUpiN3EeatluYc84nSZw" y="1058"/>
+          </children>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1jpjkSN3EeatluYc84nSZw" points="[23, -188, -43, 128]$[17, -308, -49, 8]"/>
+        </edges>
       </contents>
     </eAnnotations>
     <eAnnotations xmi:id="_NlQdGeLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -1965,6 +2005,11 @@ Note that this property may be removed or altered based on the outcome of the Se
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yYFgYOCMEeS8tqKBj1EYvQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yYE5UOCMEeS8tqKBj1EYvQ"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_1i2SUCN3EeatluYc84nSZw" name="patient" visibility="public" association="_1ishUCN3EeatluYc84nSZw">
+        <type xmi:type="uml:Class" href="Person.efx#_420A62FD03B6418A4E500034?FHIM/Person/Patient?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1i2SUiN3EeatluYc84nSZw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1i2SUSN3EeatluYc84nSZw" value="1"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_420A62FD03B6426EB2830219" name="healthConcernList_patient" memberEnd="_420A62FD03B6426EB284004E _420A62FD03B6426EB2840058">
       <eAnnotations xmi:id="_PsJLIHwvEdy0iblkc0Q98A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -2220,6 +2265,9 @@ Note that this property may be removed or altered based on the outcome of the Se
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_V_REYOU9EeWlUtxA-8RVeQ" client="_W61_oLO_EeS3iYN4R_wsuw">
       <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_L-mioOU7EeWlUtxA-8RVeQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_1ishUCN3EeatluYc84nSZw" name="healthConcern_patient" memberEnd="_1i2SUCN3EeatluYc84nSZw _1i_cQCN3EeatluYc84nSZw">
+      <ownedEnd xmi:id="_1i_cQCN3EeatluYc84nSZw" name="" visibility="private" type="_420A62FD03B6421F8AD00244" association="_1ishUCN3EeatluYc84nSZw"/>
     </packagedElement>
   </uml:Package>
   <term:ValueSetConstraint xmi:id="_pvua8AgnEeKpi5AGmkKVpg" base_Property="_Zr0aUHiaEd-xd69YcOIcPA">
