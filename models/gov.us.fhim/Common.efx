@@ -6189,11 +6189,21 @@ b2) Order2. relatedClinicalInformation. clinicalInformation points to Order1.&#x
       </ownedComment>
       <ownedAttribute xmi:id="_FeolALkxEeSvIbhHaIFeOA" name="relatedInformationCategory" visibility="public">
         <ownedComment xmi:id="_FeolAbkxEeSvIbhHaIFeOA" annotatedElement="_FeolALkxEeSvIbhHaIFeOA">
-          <body>This property indicates how the &quot;owning&quot; and &quot;target&quot; Clinical Information records are related to each other.  Possible values include: Replaces, Replaced By, Parent, Child, has Component, is Component of, has Member, is Member of, Derived from, ?, Sequel to, ?, Qualified by, Qualifies, Interfered by, Interfers with, etc.&#xD;
+          <body>This property indicates how the &quot;owning&quot; and &quot;target&quot; Clinical Information records are related to each other.  Possible values include: Replaces, Replaced By, Parent, Child, has Component, is Component of, has Member, is Member of, Causes, Is caused by, Derived from, ?, Sequel to, ?, Qualified by, Qualifies, Interfered by, Interferes with, etc.&#xD;
 &#xD;
 &quot;A code specifying the kind of relationship that exists with the target observation.&quot; - HL7 FHIR, Observation.related.type.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GpFzgSm4EeaNs6xvp1xk4g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GpFzgCm4EeaNs6xvp1xk4g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_AY8rICm4EeaNs6xvp1xk4g" name="dateRange" visibility="public">
+        <ownedComment xmi:id="_PsrT4Cm4EeaNs6xvp1xk4g" annotatedElement="_AY8rICm4EeaNs6xvp1xk4g">
+          <body>This optional property contains the time period during which the relationship between the two Clinical Information instances is or was in existence.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FWKMASm4EeaNs6xvp1xk4g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FWKMACm4EeaNs6xvp1xk4g"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3kpEcLkyEeSvIbhHaIFeOA" name="clinicalInformation" visibility="public" type="_Wu4MgKMyEeSjK-UNpoDZuQ" association="_3kn2ULkyEeSvIbhHaIFeOA">
         <ownedComment xmi:id="_4WVVMLk0EeSvIbhHaIFeOA" annotatedElement="_3kpEcLkyEeSvIbhHaIFeOA">
@@ -6877,4 +6887,5 @@ For Observations, this is a pointer to any device(s) that generated the Clinical
   <RIM:Role xmi:id="_6k7jcBPREeaEMK-9YQqLHg" base_Class="_6zfrEP2wEeWjDqDBPhzhtA"/>
   <RIM:Participation xmi:id="_brDyoBPZEeaECq32HH3IBA" base_Class="_VztkwBPZEeaECq32HH3IBA"/>
   <Default:Documentation xmi:id="_iTZYkBPZEeaECq32HH3IBA" base_Comment="_iTPnkBPZEeaECq32HH3IBA"/>
+  <Default:Documentation xmi:id="_Ps3hICm4EeaNs6xvp1xk4g" base_Comment="_PsrT4Cm4EeaNs6xvp1xk4g"/>
 </xmi:XMI>
