@@ -2867,6 +2867,10 @@ Infusion: &quot;Introduction of a solution into the body through a vein for ther
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lOGZozfZEeKnE98EkGeXFQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_JTPfQIAkEeGE1-mzJa42fw" name="bodySite" visibility="public">
+        <ownedComment xmi:id="_fB_h8FNCEeaHsPdvgbW7pw" annotatedElement="_JTPfQIAkEeGE1-mzJa42fw">
+          <body>&quot;A coded specification of the anatomic site where the medication first entered the body. For example, &quot;left arm&quot;.&quot; - HL7 FHIR, MedicationAdministration.dosage.site[x]&#xD;
+&quot;Body site where vaccine was administered.&quot;  - HL7 FHIR, Immunization.site</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_jpVcAKEPEeGnfe88WF3uxw" name="doseForm" visibility="public">
@@ -2891,23 +2895,27 @@ Infusion: &quot;Introduction of a solution into the body through a vein for ther
       </ownedAttribute>
       <ownedAttribute xmi:id="_ahZZILyEEeGK2djLWlLFew" name="dateTimeEnd" visibility="public">
         <ownedComment xmi:id="_ahZZIbyEEeGK2djLWlLFew" annotatedElement="_ahZZILyEEeGK2djLWlLFew">
-          <body>&quot;If null, the date/time of RXA-3-Date/Time Start of Administration is assumed.&quot; - HL7 Version 2.8, RXA-4&#xD;
-&#xD;
-The date and time that the medication administration was completed or will be completed.  Used only for administrations that span a length of time, such as an IV.  For single dose administrations, such as giving a tablet or an injection, this property is not used.</body>
+          <body>The date (and optionally, time) that the medication administration was completed or will be completed.  Used only for administrations that span a length of time, such as an IV. For single dose administrations, such as giving a tablet or an injection, this property is not used.&#xD;
+&quot;If null, the date/time of RXA-3-Date/Time Start of Administration is assumed.&quot; - HL7 Version 2.8, RXA-4&#xD;
+&quot;A specific date/time or interval of time during which the administration took place (or did not take place, when the 'notGiven' attribute is true). For many administrations, such as swallowing a tablet the use of dateTime is more appropriate.&quot;  - HL7 FHIR, MedicationAdministration.effectiveTime[x]&#xD;
+&quot;Date vaccine administered or was to be administered.&quot; - HL7 FHIR, Immunization.date</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6425C0805022C" name="dateTimeStart" visibility="public">
-        <ownedComment xmi:id="_NYSYHeLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6425C0805022C">
-          <body>&quot;If the order is for a continuous administration (such as an IV), and the rate is changed at a certain time after the start, an RAS message can be issued to record the change.  For such an RAS message, this field records the time the rate was changed to the new value recorded in the RXA-12-Administered Per (time unit) of the same message.&quot; - HL7 Version 2.8, RXA-3&#xD;
-&#xD;
-The date and time that the medication administration was started or will be started.  For single dose administrations, such as giving a tablet or an injection, this is the date and time that the administration did or will occur.</body>
+        <ownedComment xmi:id="_TLF7gFM5EeaHsPdvgbW7pw" annotatedElement="_420A62FD03B6425C0805022C">
+          <body>The date (and optionally, time) that the medication administration was started or will be started. For single dose administrations, such as giving a tablet or an injection, this is the date and time that the administration did or will occur.&#xD;
+&quot;If the order is for a continuous administration (such as an IV), and the rate is changed at a certain time after the start, an RAS message can be issued to record the change.  For such an RAS message, this field records the time the rate was changed to the new value recorded in the RXA-12-Administered Per (time unit) of the same message.&quot; - HL7 Version 2.8, RXA-3&#xD;
+&quot;A specific date/time or interval of time during which the administration took place (or did not take place, when the 'notGiven' attribute is true). For many administrations, such as swallowing a tablet the use of dateTime is more appropriate.&quot;  - HL7 FHIR, MedicationAdministration.effectiveTime[x]&#xD;
+&quot;Date vaccine administered or was to be administered.&quot; - HL7 FHIR, Immunization.date</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_6e5-8ANOEeKTM4I4vlc5xg" name="id" visibility="public">
         <ownedComment xmi:id="_AOpwAANPEeKTM4I4vlc5xg" annotatedElement="_6e5-8ANOEeKTM4I4vlc5xg">
-          <body>Uniquely identifies the Medication Administration Event.</body>
+          <body>Uniquely identifies the Medication Administration Event.&#xD;
+&quot;External identifier - FHIR will generate its own internal identifiers (probably URLs) which do not need to be explicitly managed by the resource. The identifier here is one that would be used by another non-FHIR system - for example an automated medication pump would provide a record each time it operated; an administration while the patient was off the ward might be made with a different system and entered after the event. Particularly important if these records have to be updated.&quot;  - HL7 FHIR, MedicationAdministration.identifier&#xD;
+&quot;A unique identifier assigned to this immunization record.&quot; - HL7 FHIR, Immunization.identifier</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
       </ownedAttribute>
@@ -2922,15 +2930,18 @@ The date and time that the medication administration was started or will be star
       </ownedAttribute>
       <ownedAttribute xmi:id="_Q4A4QIAkEeGE1-mzJa42fw" name="route" visibility="public">
         <ownedComment xmi:id="_9P4pYL2gEeG_PZtvUC92nw" annotatedElement="_Q4A4QIAkEeGE1-mzJa42fw">
-          <body>&quot;This field is the route of administration.&quot; - HL7 Version 2.8, RXR-1</body>
+          <body>&quot;This field is the route of administration.&quot; - HL7 Version 2.8, RXR-1&#xD;
+&quot;A code specifying the route or physiological path of administration of a therapeutic agent into or onto the patient. For example, topical, intravenous, etc.&quot; - HL7 FHIR, MedicationAdministration.dosage.route&#xD;
+&quot;The path by which the vaccine product is taken into the body.&quot;  - HL7 FHIR, Immunization.route</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B641B4D758015F" name="status" visibility="public">
         <ownedComment xmi:id="_NYl6GOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B641B4D758015F">
-          <body>&quot;Status of treatment administration event.  Refer to HL7 Table 0322 - Completion Status in Chapter 2C for valid values.&quot; - HL7 Version 2.8, RXA-20&#xD;
-&#xD;
-The current state of the Substance Administration.  Possible values include: Infusing, Given, Held, Completed, etc.</body>
+          <body>The current state of the Substance Administration.  Possible values include: Infusing, Given, Held, Completed, etc.&#xD;
+&quot;Status of treatment administration event.  Refer to HL7 Table 0322 - Completion Status in Chapter 2C for valid values.&quot; - HL7 Version 2.8, RXA-20&#xD;
+&quot;Will generally be set to show that the administration has been completed. For some long running administrations such as infusions it is possible for an administration to be started but not completed or it may be paused while some other process is under way.&quot;  - HL7 FHIR, MedicationAdministration.status&#xD;
+&quot;Indicates the current status of the vaccination event.&quot; - HL7 FHIR, Immunization.status</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
       </ownedAttribute>
@@ -2942,7 +2953,10 @@ The current state of the Substance Administration.  Possible values include: Inf
       </ownedAttribute>
       <ownedAttribute xmi:id="_Sq-ykKEREeGnfe88WF3uxw" name="administeredDrug" visibility="public" association="_Sq89YKEREeGnfe88WF3uxw">
         <ownedComment xmi:id="_off2QLyFEeGK2djLWlLFew" annotatedElement="_Sq-ykKEREeGnfe88WF3uxw">
-          <body>&quot;Contains the identifier of the medical substance/treatment administered....  If the substance administered is a vaccine, CVX codes may be used to code this field....&quot; - HL7 Version 2.8, RXA-5</body>
+          <body>Pointer to the medication or substance that was or will be administered.&#xD;
+&quot;Contains the identifier of the medical substance/treatment administered....  If the substance administered is a vaccine, CVX codes may be used to code this field....&quot; - HL7 Version 2.8, RXA-5&#xD;
+&quot;Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.&quot;  - HL7 FHIR, MedicationAdministration.medication[x]&#xD;
+&quot;Vaccine that was administered or was to be administered.&quot; - HL7 FHIR, Immunization.vaccineCode</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Common.efx#_OaEXAKEREeGnfe88WF3uxw?FHIM/Common/CommonProduct/AdministeredDrug?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sq_ZoaEREeGnfe88WF3uxw" value="*"/>
@@ -2950,7 +2964,10 @@ The current state of the Substance Administration.  Possible values include: Inf
       </ownedAttribute>
       <ownedAttribute xmi:id="_tSuqEKENEeGnfe88WF3uxw" name="administeringProvider" visibility="public" association="_tSqYoKENEeGnfe88WF3uxw">
         <ownedComment xmi:id="_fy-G0LyMEeGK2djLWlLFew" annotatedElement="_tSuqEKENEeGnfe88WF3uxw">
-          <body>&quot;Contains the provider ID of the person administering the pharmaceutical/treatment.&quot; - HL7 Version 2.8, RXA-10</body>
+          <body>Pointer to the person who gave or administered the medication to the patient.&#xD;
+&quot;Contains the provider ID of the person administering the pharmaceutical/treatment.&quot; - HL7 Version 2.8, RXA-10&#xD;
+&quot;The individual who was responsible for giving the medication to the patient.&quot; - HL7 FHIR, MedicationAdministration.performer&#xD;
+&quot;Clinician who administered the vaccine.&quot;  - HL7 FHIR, Immunization.performer</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Common.efx#_7NSfgH_lEd-Ure_vzgD_TA?FHIM/Common/PrimaryPerformer?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tSwfQaENEeGnfe88WF3uxw" value="1"/>
@@ -2958,7 +2975,9 @@ The current state of the Substance Administration.  Possible values include: Inf
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B64304F50E0274" name="comments" visibility="public" isUnique="false" association="_420A62FD03B64304F50D0309">
         <ownedComment xmi:id="_NgfR3-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64304F50E0274">
-          <body>&quot;Contains notes from the provider administering the medication/treatment.&quot; - HL7 Version 2.8, RXA-9</body>
+          <body>&quot;Contains notes from the provider administering the medication/treatment.&quot; - HL7 Version 2.8, RXA-9&#xD;
+&quot;Extra information about the medication administration that is not conveyed by the other attributes.&quot; - HL7 FHIR, MedicationAdministration.note&#xD;
+&quot;Extra information about the immunization that is not conveyed by the other attributes.&quot;  - HL7 FHIR, Immunization.note</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Common.efx#_420A62FD03B642C044DB02ED?FHIM/Common/CommentEvent?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NgobwuLiEduGJrQyRGTO1A" value="*"/>
@@ -3008,9 +3027,8 @@ The current state of the Substance Administration.  Possible values include: Inf
       </ownedAttribute>
       <ownedAttribute xmi:id="_qU_CILyOEeGK2djLWlLFew" name="patientLocation" visibility="public" association="_qU6wsLyOEeGK2djLWlLFew">
         <ownedComment xmi:id="_v56DQLyOEeGK2djLWlLFew" annotatedElement="_qU_CILyOEeGK2djLWlLFew">
-          <body>&quot;Contains the inpatient or outpatient location at which the drug or treatment was administered (if applicable).&quot; - HL7 Version 2.8, RXA-11&#xD;
-&#xD;
-Location (room, bed and ward) of the patient at the time of the medication administration.  Generally only used for inpatient situations.</body>
+          <body>Pointer to the Location (room, bed and ward) of the patient at the time of the medication administration.  Generally only used for inpatient situations.&#xD;
+&quot;Contains the inpatient or outpatient location at which the drug or treatment was administered (if applicable).&quot; - HL7 Version 2.8, RXA-11</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qVA3ULyOEeGK2djLWlLFew" value="1"/>
@@ -3018,11 +3036,22 @@ Location (room, bed and ward) of the patient at the time of the medication admin
       </ownedAttribute>
       <ownedAttribute xmi:id="_Bo6tkLyNEeGK2djLWlLFew" name="serviceDeliveryLocation" visibility="public" association="_Bo3qQLyNEeGK2djLWlLFew">
         <ownedComment xmi:id="_Hj43MLyNEeGK2djLWlLFew" annotatedElement="_Bo6tkLyNEeGK2djLWlLFew">
-          <body>&quot;Specifies the location where the drug or treatment was administered.&quot; - HL7 Version 2.8, RXA-27</body>
+          <body>Pointer to the location at which the medication administration event occurred.&#xD;
+&quot;Specifies the location where the drug or treatment was administered.&quot; - HL7 Version 2.8, RXA-27&#xD;
+&quot;The service delivery location where the vaccine administration occurred.&quot;  - HL7 FHIR, Immunization.location</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Bo8iwLyNEeGK2djLWlLFew" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bo77sLyNEeGK2djLWlLFew"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_BFhS4VNdEeaHsPdvgbW7pw" name="reaction" visibility="public" association="_BFhS4FNdEeaHsPdvgbW7pw">
+        <ownedComment xmi:id="_2dTrIFNpEeaHsPdvgbW7pw" annotatedElement="_BFhS4VNdEeaHsPdvgbW7pw">
+          <body>Pointer to a record of an adverse physiological response attributed to the exposure of the Patient to the given substance&#xD;
+&quot;Categorical data indicating that an adverse event is associated in time to an immunization.&quot; - HL7 FHIR, Immunization.reaction</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Allergies.efx#_KXfzkEUdEeCUY8hq_icSiw?FHIM/Allergies/ReactionObservation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BFhS41NdEeaHsPdvgbW7pw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BFhS4lNdEeaHsPdvgbW7pw"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_yQ2jIDh4EeC17O99ZX8o-w" name="MedicationAdministrationPromise">
@@ -4422,6 +4451,9 @@ Labor and Delivery; Routine; Newborn (Birth in healthcare facility); Urgent; Ele
         </lowerValue>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_BFhS4FNdEeaHsPdvgbW7pw" name="MedicationAdministrationEvent_reaction" memberEnd="_BFhS4VNdEeaHsPdvgbW7pw _BFhS5FNdEeaHsPdvgbW7pw">
+      <ownedEnd xmi:id="_BFhS5FNdEeaHsPdvgbW7pw" name="" visibility="private" type="_420A62FD03B641A349EF0070" association="_BFhS4FNdEeaHsPdvgbW7pw"/>
+    </packagedElement>
   </uml:Package>
   <term:ValueSetConstraint xmi:id="_evyCgPKlEeG3H88UD2nPJw" base_Property="_Q4A4QIAkEeGE1-mzJa42fw">
     <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_CzV0QGZWEeOjX716b-3f7A"/>
@@ -4574,7 +4606,6 @@ Labor and Delivery; Routine; Newborn (Birth in healthcare facility); Urgent; Ele
   <Default:Documentation xmi:id="_Ni33fOLiEduGJrQyRGTO1A" base_Comment="_Ni33e-LiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_NM-GsKwSEeG4dfTp_XT2yg" base_Comment="_RsJMcSf-EeC-JKXSDMHR6A"/>
   <Default:Documentation xmi:id="_nxyoYGfmEeGK0elVFnH6lw" base_Comment="_nxlNAGfmEeGK0elVFnH6lw"/>
-  <Default:Documentation xmi:id="_NYcJEOLiEduGJrQyRGTO1A" base_Comment="_NYSYHeLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_NYl6GeLiEduGJrQyRGTO1A" base_Comment="_NYl6GOLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_NYSYG-LiEduGJrQyRGTO1A" base_Comment="_NYSYGuLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_O1EkIPhJEeGaiclsGcUBSg" base_Comment="_O07aMPhJEeGaiclsGcUBSg"/>
@@ -4989,4 +5020,7 @@ Labor and Delivery; Routine; Newborn (Birth in healthcare facility); Urgent; Ele
   <Default:Documentation xmi:id="_KOF_UfIVEeWI5dLNhw9XrQ" base_Comment="_KOF_UPIVEeWI5dLNhw9XrQ"/>
   <Default:Documentation xmi:id="_a3fagPIVEeWI5dLNhw9XrQ" base_Comment="_a3VpgPIVEeWI5dLNhw9XrQ"/>
   <Default:Documentation xmi:id="_qI354fIVEeWI5dLNhw9XrQ" base_Comment="_qI354PIVEeWI5dLNhw9XrQ"/>
+  <Default:Documentation xmi:id="_TLdH4FM5EeaHsPdvgbW7pw" base_Comment="_TLF7gFM5EeaHsPdvgbW7pw"/>
+  <Default:Documentation xmi:id="_fCDMUFNCEeaHsPdvgbW7pw" base_Comment="_fB_h8FNCEeaHsPdvgbW7pw"/>
+  <Default:Documentation xmi:id="_2df4YFNpEeaHsPdvgbW7pw" base_Comment="_2dTrIFNpEeaHsPdvgbW7pw"/>
 </xmi:XMI>
