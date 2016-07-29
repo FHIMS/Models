@@ -2464,7 +2464,7 @@ Note that the HL7 DAM has three subtypes of Resource Allocation: Asset Allocatio
       </ownedComment>
       <ownedAttribute xmi:id="_JrudgN1BEeSZfdq7h5ueSA" name="dailyAmount" visibility="public">
         <ownedComment xmi:id="_VCjL0N1BEeSZfdq7h5ueSA" annotatedElement="_JrudgN1BEeSZfdq7h5ueSA">
-          <body>&quot;Identifies the quantity expected to be consumed in a given day.&quot; - HL7 FHIR CarePlan.activity.detail.dailyAmount</body>
+          <body>&quot;Identifies the quantity expected to be consumed in a given day.&quot; - HL7 FHIR, CarePlan.activity.detail.dailyAmount</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
       </ownedAttribute>
@@ -2485,7 +2485,7 @@ Note that the HL7 DAM has three subtypes of Resource Allocation: Asset Allocatio
       <ownedAttribute xmi:id="_f-gwENfQEeSTuOyAKngSWg" name="quantity" visibility="public">
         <ownedComment xmi:id="_0iMPgNfQEeSTuOyAKngSWg" annotatedElement="_f-gwENfQEeSTuOyAKngSWg">
           <body>&quot;Specifies the quantity of material or consumable.&quot; - HL7 Care Plan Domain Analysis Model&#xD;
-&quot;Identifies the quantity expected to be supplied, administered or consumed by the subject.&quot; - HL7 FHIR CarePlan.activity.detail.quantity</body>
+&quot;Identifies the quantity expected to be supplied, administered or consumed by the subject.&quot; - HL7 FHIR, CarePlan.activity.detail.quantity</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1i3pYdfQEeSTuOyAKngSWg" value="1"/>
@@ -2600,7 +2600,7 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
       </ownedAttribute>
       <ownedAttribute xmi:id="_FErQwO_qEeOM48qnBkZzmw" name="isProhibited" visibility="public">
         <ownedComment xmi:id="_Lyw5YO_qEeOM48qnBkZzmw" annotatedElement="_FErQwO_qEeOM48qnBkZzmw">
-          <body>&quot;If true, indicates that the described activity is one that must NOT be engaged in when following the plan.&quot; - HL7 FHIR CarePlan.activity.detail.prohibited</body>
+          <body>&quot;If true, indicates that the described activity is one that must NOT be engaged in when following the plan.&quot; - HL7 FHIR, CarePlan.activity.detail.prohibited</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MTox0e_qEeOM48qnBkZzmw" value="1"/>
@@ -2621,7 +2621,7 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
       </ownedAttribute>
       <ownedAttribute xmi:id="_iJDl8O_qEeOM48qnBkZzmw" name="notes" visibility="public">
         <ownedComment xmi:id="_iJDl8e_qEeOM48qnBkZzmw" annotatedElement="_iJDl8O_qEeOM48qnBkZzmw">
-          <body>&quot;This provides a textual description of constraints on the intended activity occurrence, including relation to other activities. It may also include objectives, pre-conditions and end-conditions. Finally, it may convey specifics about the activity such as body site, method, route, etc.&quot; - HL7 FHIR CarePlan.activity.detail.note</body>
+          <body>&quot;This provides a textual description of constraints on the intended activity occurrence, including relation to other activities. It may also include objectives, pre-conditions and end-conditions. Finally, it may convey specifics about the activity such as body site, method, route, etc.&quot; - HL7 FHIR, CarePlan.activity.detail.note</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iJDl8u_qEeOM48qnBkZzmw" value="1"/>
@@ -2661,7 +2661,7 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
       </ownedAttribute>
       <ownedAttribute xmi:id="_nTVVUAY_EeGz0dkadElrkQ" name="status" visibility="public">
         <ownedComment xmi:id="_2IBrQO_pEeOM48qnBkZzmw" annotatedElement="_nTVVUAY_EeGz0dkadElrkQ">
-          <body>&quot;Identifies what progress is being made for the specific activity.&quot; - HL7 FHIR CarePlan.activity.detail.status</body>
+          <body>&quot;Identifies what progress is being made for the specific activity.&quot; - HL7 FHIR, CarePlan.activity.detail.status</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_05n-ce_pEeOM48qnBkZzmw" value="1"/>
@@ -2713,7 +2713,7 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
       </ownedAttribute>
       <ownedAttribute xmi:id="_DOFXENSuEeSyzs7OQneM_g" name="resourceAllocation" visibility="public" type="_XoccULksEeSvIbhHaIFeOA" association="_DODh4NSuEeSyzs7OQneM_g">
         <ownedComment xmi:id="_559N4N1AEeSZfdq7h5ueSA" annotatedElement="_DOFXENSuEeSyzs7OQneM_g">
-          <body>&quot;Identifies the food, drug or other product to be consumed or supplied in the activity.&quot; - HL7 FHIR CarePlan.activity.detail.product</body>
+          <body>&quot;Identifies the food, drug or other product to be consumed or supplied in the activity.&quot; - HL7 FHIR, CarePlan.activity.detail.product</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DOHMQNSuEeSyzs7OQneM_g" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DOGlMNSuEeSyzs7OQneM_g"/>
