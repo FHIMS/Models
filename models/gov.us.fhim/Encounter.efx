@@ -3263,6 +3263,7 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
       <ownedAttribute xmi:id="_F_BsQFPCEeO95rHo5Ki4qQ" name="priority" visibility="public">
         <ownedComment xmi:id="_F_CTUFPCEeO95rHo5Ki4qQ" annotatedElement="_F_BsQFPCEeO95rHo5Ki4qQ">
           <body>&quot;Contains the priority of the visit.&quot; - HL7 Version 2.8, PV2-25.  Possible values include (from HL7 Table 217): Emergency; Urgent; Elective.&#xD;
+&quot;Indicates the urgency of the encounter.&quot; - HL7 FHIR, Encounter.priority&#xD;
 </body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
@@ -4125,7 +4126,8 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
       </ownedAttribute>
       <ownedAttribute xmi:id="_5R44wBIhEeK0rPN86AJEog" name="encounterType" visibility="public">
         <ownedComment xmi:id="_hyi6gEcIEeKYw8d4t3T9cw" annotatedElement="_5R44wBIhEeK0rPN86AJEog">
-          <body>Categorizes the encounter.  Possible values include Phone Call, Outpatient, etc.</body>
+          <body>Categorizes the encounter.  Possible values include Phone Call, Outpatient, etc.&#xD;
+&quot;inpatient | outpatient | ambulatory | emergency +.&quot; - HL7 FHIR, Encounter.class</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
       </ownedAttribute>
@@ -4134,7 +4136,8 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
           <body>This property uniquely identifies the Encounter.  This property can be used, among other purposes, to associate the current Encounter with other Encounters, or with events that occurred during the Encounter.&#xD;
 &#xD;
 &quot;Contains the unique number assigned to each patient visit.&quot; - HL7 Version 2.8, PV1-19&#xD;
-&quot;Contains the identifier of a Service Episode in or for which the visit occurs.&quot; - HL7 Version 2.8, PV1-54</body>
+&quot;Contains the identifier of a Service Episode in or for which the visit occurs.&quot; - HL7 Version 2.8, PV1-54&#xD;
+&quot;Identifier(s) by which this encounter is known.&quot; - HL7 FHIR, Encounter.identifier</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
       </ownedAttribute>
@@ -4146,7 +4149,8 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
       </ownedAttribute>
       <ownedAttribute xmi:id="_i1KgApQbEd-GUpkbaCODYA" name="status" visibility="public">
         <ownedComment xmi:id="_i1KgA5QbEd-GUpkbaCODYA" annotatedElement="_i1KgApQbEd-GUpkbaCODYA">
-          <body>A value specifying the state of this patient encounter (based on the RIM Act class state machine), for example, active, aborted, completed </body>
+          <body>A value specifying the state of this patient encounter (based on the RIM Act class state machine), for example, active, aborted, completed &#xD;
+&quot;planned | arrived | in-progress | onleave | finished | cancelled | entered-in-error.&quot; - HL7 FHIR, Encounter.status</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
       </ownedAttribute>
@@ -4157,7 +4161,8 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B643CC8C8002F5" name="patient" visibility="public" isUnique="false" association="_420A62FD03B643CC8C7E0310">
         <ownedComment xmi:id="_MO01puLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B643CC8C8002F5">
-          <body>The patient who is the subject of the Episode of Care.  </body>
+          <body>The Person or Animal (playing the Role of Patient) who is the subject of the Encounter.&#xD;
+&quot;The patient present at the encounter.&quot; - HL7 FHIR, Encounter.patient</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Person.efx#_420A62FD03B6418A4E500034?FHIM/Person/Patient?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MO01qeLiEduGJrQyRGTO1A" value="1"/>
