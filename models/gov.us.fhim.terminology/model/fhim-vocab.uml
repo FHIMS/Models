@@ -2656,10 +2656,6 @@ These are documented in CDC local codes table, CDCPHINVS (Value set OID 2.16.840
         <ownedLiteral xmi:id="_NTDTwPT3EeWvwZaMZtWyqQ" name="00 (Not Specified)"/>
         <ownedLiteral xmi:id="_O61J4PT3EeWvwZaMZtWyqQ" name="4A (Prescribed with acknowledgements)"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_1Uf30PUVEeWp_Mwb77TLSQ" name="InfusionVelocity">
-        <ownedLiteral xmi:id="_AW3ZEPUWEeWp_Mwb77TLSQ" name="261754007 (Continuous infusion)"/>
-        <ownedLiteral xmi:id="_Gf9eQPUWEeWp_Mwb77TLSQ" name="397801003 (Single bolus)"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZLX0gPUWEeWp_Mwb77TLSQ" name="DispensingStatus">
         <ownedLiteral xmi:id="_pZK40PUWEeWp_Mwb77TLSQ" name="P (Partial Fill)"/>
         <ownedLiteral xmi:id="_qE59cPUWEeWp_Mwb77TLSQ" name="C (Completion of Partial Fill)"/>
@@ -6140,9 +6136,6 @@ The following is an example coded concept:</body>
   <term:CodeSystemVersion xmi:id="_hKnvkPUBEeWvwZaMZtWyqQ" identifier="2.16.840.1.113883.4.642.1.65" fullName="Care Plan Activity Status Code System" url="http://hl7.org/fhir/valueset-care-plan-activity-status.html" base_Enumeration="_hKnIgPUBEeWvwZaMZtWyqQ"/>
   <term:CodeSystemVersion xmi:id="_D8FRcPUEEeWvwZaMZtWyqQ" identifier="2.16.840.1.113883.4.642.1.411" fullName="Goal Category Code System" source="HL7 FHIR" url="http://hl7.org/fhir/valueset-goal-category.html" base_Enumeration="_D8EqYPUEEeWvwZaMZtWyqQ"/>
   <term:CodeSystemVersion xmi:id="_VN3JAPUJEeWp_Mwb77TLSQ" identifier="tbd" fullName="NCPDP valuesets" url="tbd" base_Enumeration="_VN0FsPUJEeWp_Mwb77TLSQ"/>
-  <term:ValueSetVersion xmi:id="_1Uge4PUVEeWp_Mwb77TLSQ" identifier="tbd" fullName="Infusion Velocity" source="SNOMED-CT" url="tbd" definition="Qualitative rate of infusion" codeSystem="_WwluQaRMEeGZ6ueex_Me0w" base_Enumeration="_1Uf30PUVEeWp_Mwb77TLSQ"/>
-  <term:ValueSetCode xmi:id="_AW3ZEfUWEeWp_Mwb77TLSQ" conceptName="Continuous infusion" base_EnumerationLiteral="_AW3ZEPUWEeWp_Mwb77TLSQ"/>
-  <term:ValueSetCode xmi:id="_Gf-FUPUWEeWp_Mwb77TLSQ" conceptName="Single bolus" base_EnumerationLiteral="_Gf9eQPUWEeWp_Mwb77TLSQ"/>
   <term:ValueSetVersion xmi:id="_ZLX0gfUWEeWp_Mwb77TLSQ" identifier="tbd" fullName="Dispensing Status" source="NCPDP" url="http://fhim.onc.us.gov/terms/temporary/NcpdppartialFillStatusValueSet" definition="Portion of prescription dispensed" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_ZLX0gPUWEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_pZLf4PUWEeWp_Mwb77TLSQ" conceptName="Partial Fill" base_EnumerationLiteral="_pZK40PUWEeWp_Mwb77TLSQ"/>
   <term:ValueSetCode xmi:id="_qE6kgPUWEeWp_Mwb77TLSQ" conceptName="Completion of Partial Fill" base_EnumerationLiteral="_qE59cPUWEeWp_Mwb77TLSQ"/>
