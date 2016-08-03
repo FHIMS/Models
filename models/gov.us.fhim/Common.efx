@@ -5736,7 +5736,9 @@ This property indicates whether the ingredient represented by this class is acti
       <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B645919F1600B4" name="Substance">
         <eAnnotations xmi:id="_L7Ah1uLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <ownedComment xmi:id="_4JOPAMDFEd2bZLhrQFm3Sw" annotatedElement="_420A62FD03B645919F1600B4">
-          <body>&quot;The Substance entity is used to describe any material that functions as an ingredient of the Medicine.&quot; - HL7 Version 3.</body>
+          <body>Substance: &quot;The tangible matter of which a thing consists; a specific type of matter, esp. a homogeneous material with a definite composition.&quot; - Collins English Dictionary&#xD;
+This class represents a substance, either manufactured or found naturally, which might be referenced by clinical records. This class may represent ingredients in a medication, a substance to which the patient was exposed or which the patient consumes, or an analyte, among many other potential uses.&#xD;
+&quot;The Substance entity is used to describe any material that functions as an ingredient of the Medicine.&quot; - HL7 Version 3.</body>
         </ownedComment>
         <ownedAttribute xmi:id="_TkY4kM_7Ed-YeMSrwW6svA" name="ingredientIdentifier" visibility="public">
           <ownedComment xmi:id="_Rgq-AAF3EeC0SO5AWIN0Qg" annotatedElement="_TkY4kM_7Ed-YeMSrwW6svA">
@@ -6584,7 +6586,6 @@ For Observations, this is a pointer to any device(s) that generated the Clinical
   <RIM:ManagedParticipation xmi:id="_vR5m0FZVEeCNYNwvTI8hbQ" base_Class="_oZ07wFZVEeCNYNwvTI8hbQ"/>
   <RIM:ManufacturedMaterial xmi:id="_c05GsFz7Ed6WkeJA5pW9UA" base_Class="_420A62FD03B645919EF10138"/>
   <RIM:ManufacturedMaterial xmi:id="_fiEtAAMIEeC6TLUcQZx_GQ" base_Class="_oDnb8AF2EeC0SO5AWIN0Qg"/>
-  <RIM:ManufacturedMaterial xmi:id="_gXFbEFz7Ed6WkeJA5pW9UA" base_Class="_420A62FD03B645919F1600B4"/>
   <RIM:ManufacturedMaterial xmi:id="_IRT6QHpmEd-44ra0dfiJCw" base_Class="_420A62FD03B6425C11CB017B"/>
   <RIM:ManufacturedMaterial xmi:id="_lUzMcFYPEd6WMdl70LfmUg" base_Class="_420A62FD03B643D7C2360379"/>
   <RIM:ManufacturedMaterial xmi:id="_PeQjIFPxEeC3dvg3Ss2k0Q" base_Class="_2iS00FPwEeC3dvg3Ss2k0Q"/>
@@ -6888,4 +6889,5 @@ For Observations, this is a pointer to any device(s) that generated the Clinical
   <RIM:Participation xmi:id="_brDyoBPZEeaECq32HH3IBA" base_Class="_VztkwBPZEeaECq32HH3IBA"/>
   <Default:Documentation xmi:id="_iTZYkBPZEeaECq32HH3IBA" base_Comment="_iTPnkBPZEeaECq32HH3IBA"/>
   <Default:Documentation xmi:id="_Ps3hICm4EeaNs6xvp1xk4g" base_Comment="_PsrT4Cm4EeaNs6xvp1xk4g"/>
+  <RIM:Material xmi:id="_nMS0UFmtEeaS-p0gLOVqFQ" base_Class="_420A62FD03B645919F1600B4"/>
 </xmi:XMI>
