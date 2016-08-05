@@ -2737,6 +2737,7 @@
       <eAnnotations xmi:id="_NYSYF-LiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedComment xmi:id="_NYJOKOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B641928F4302E4">
         <body>This class contains information about the provision of a medication to a patient or care provider under the authority of the owning Pharmacy Promise.  This class includes medications placed in a medication cart for a caregiver (usually a nurse) to administer to the patient during scheduled rounds, as well as other inpatient settings, outpatient, retail and even mail-order settings.&#xD;
+It is noted that in the typical Pharmacy workflow, the prescription will be “filled”, for example the pharmacist places 30 tablets into a bottle, then “dispensed” when the patient picks up the medication or the medication leaves the pharmacy’s control. The FHIM combines these notions under a single Pharmacy Dispense as it is presumed that information exchanges for interoperability between systems generally only occur after the dispense, therefore the notion of a fill does not need to be tracked separately.&#xD;
 &quot;Indicates that a medication product is to be or has been dispensed for a named person/patient. This includes a description of the medication product (supply) provided and the instructions for administering the medication. The medication dispense is the result of a pharmacy system responding to a medication order.&quot; - HL7 FHIR, MedicationDispense</body>
       </ownedComment>
       <ownedAttribute xmi:id="_1MBPsNOQEeGputPQx0HXoA" name="actualStrength" visibility="public">
@@ -2949,7 +2950,7 @@ This field is included for compatibility to HL7 v2. We do not have any specific 
       </ownedAttribute>
       <ownedAttribute xmi:id="_nBRPMXpgEd-44ra0dfiJCw" name="pharmacist" visibility="public" association="_nBRPMHpgEd-44ra0dfiJCw">
         <ownedComment xmi:id="_rjZWkHpgEd-44ra0dfiJCw" annotatedElement="_nBRPMXpgEd-44ra0dfiJCw">
-          <body>The pharmacist responsible for filling the medication for this outpatient order.</body>
+          <body>Pointer to the Person (in the Role of Pharmacist) who is responsible for fulfillment of the medication order and providing oversight.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B6418A6B760063?FHIM/Provider/IndividualProvider?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nBRPM3pgEd-44ra0dfiJCw" value="1"/>
@@ -3298,6 +3299,8 @@ This field is included for compatibility to HL7 v2. We do not have any specific 
           <body>Indicates whether the prescriber has authorized additional fills of this order as needed.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1cPjYFtDEeaxDokgI-Y3eA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1cO8UFtDEeaxDokgI-Y3eA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6427039C90006" name="dispensingInstructions" visibility="public">
         <ownedComment xmi:id="_NIMtpOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6427039C90006">
@@ -3391,6 +3394,8 @@ Indicates the form of the material making up a single dose (as opposed to how th
           <body>&quot;Conditional composite for the facility to relay to the long term care pharmacy the timeframe when medication is needed for delivery.  When a facility transmits either a new medication order (NEWRX) or request for the re-supply of a medication (RESUPP) to a pharmacy, it would optionally indicate the time by which the medication is needed. The facility could also provide a textual reason why the medication is needed by the time specified. The long term care pharmacy would then use this information to determine whether a special delivery is required, or whether the order could go out with the next scheduled delivery.&quot; - NCPDP Script (Field I006)</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8sCK4FtDEeaxDokgI-Y3eA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8sBj0FtDEeaxDokgI-Y3eA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_31ccMMuREeGZENvAz6pEGw" name="needsHumanReview" visibility="public">
         <ownedComment xmi:id="_-KaaMMuREeGZENvAz6pEGw" annotatedElement="_31ccMMuREeGZENvAz6pEGw">
@@ -3422,7 +3427,7 @@ Indicates the form of the material making up a single dose (as opposed to how th
       </ownedAttribute>
       <ownedAttribute xmi:id="_Yz7RYL2aEeG_PZtvUC92nw" name="pharmacyOrderCategory" visibility="public">
         <ownedComment xmi:id="_5RK_0L2aEeG_PZtvUC92nw" annotatedElement="_Yz7RYL2aEeG_PZtvUC92nw">
-          <body>&quot;Defines the general category of pharmacy order which may be used to determine the processing path the order will take....  This field may also be used for grouping of related orders for processing and/or reports.  For example, Medication Administration Records often group large volume solutions, medications and small volume solutions differently based upon site-specific workflow.&quot; - HL7 Version 2.8, RXA-26, RXD-32, and RXO-27.  Valid values (from HL7 Table 0480) include: Medication; IV Large Volume Solutions; Other solution as medication orders.</body>
+          <body>&quot;Defines the general category of pharmacy order which may be used to determine the processing path the order will take.... This field may also be used for grouping of related orders for processing and/or reports.  For example, Medication Administration Records often group large volume solutions, medications and small volume solutions differently based upon site-specific workflow.&quot; - HL7 Version 2.8, RXA-26, RXD-32, and RXO-27.  Valid values (from HL7 Table 0480) include: Medication; IV Large Volume Solutions; Other solution as medication orders.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d1E3EL2aEeG_PZtvUC92nw" value="1"/>
@@ -3944,13 +3949,13 @@ Note that neither NCPDP SCRIPT nor NCPDP Telecom contain this information direct
       <generalization xmi:id="_vLY_0JtZEeClAtaO_zSM7g" general="_ItpdgAMJEeC6TLUcQZx_GQ"/>
       <ownedAttribute xmi:id="_VM0CIBd8EeC9Abp3tFVARg" name="acknowledgementReason" visibility="public">
         <ownedComment xmi:id="_EqbB0NUaEeGzd-o9XtejuA" annotatedElement="_VM0CIBd8EeC9Abp3tFVARg">
-          <body>&quot;Additional textual information regarding intervention and/or acknowledgment associated with a DUE conflict.&quot; - NCPDP Script (Field 7998, Data Dictionary 201104)</body>
+          <body>&quot;Additional textual information regarding intervention and/or acknowledgment associated with a DUE conflict.&quot; For example, &quot;Tolerated course of medication in October 2007&quot; - NCPDP Script (Field 7998, Data Dictionary 201104)</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_MFfRQBd8EeC9Abp3tFVARg" name="clinicalSignifanceCode" visibility="public">
         <ownedComment xmi:id="_3y-OQNUZEeGzd-o9XtejuA" annotatedElement="_MFfRQBd8EeC9Abp3tFVARg">
-          <body>&quot;Code identifying the significance or severity level of a clinical event as contained in the originating database.Code identifying the significance or severity level of a clinical event as contained in the originating database.&quot; - NCPDP Script (Field 7997, Data Dictionary 201104)</body>
+          <body>&quot;Code identifying the significance or severity level of a clinical event as contained in the originating database.&quot; - NCPDP Script (Field 7997, Data Dictionary 201104)</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_mFz2kPVWEeWPJ7Hu05SWlg">
@@ -3967,7 +3972,7 @@ Note that neither NCPDP SCRIPT nor NCPDP Telecom contain this information direct
       <generalization xmi:id="_v64jEJtZEeClAtaO_zSM7g" general="_ItpdgAMJEeC6TLUcQZx_GQ"/>
       <ownedAttribute xmi:id="__VSbkJtZEeClAtaO_zSM7g" name="levelOfEffort" visibility="public">
         <ownedComment xmi:id="_jLvhANUYEeGzd-o9XtejuA" annotatedElement="__VSbkJtZEeClAtaO_zSM7g">
-          <body>&quot;Code indicating the level of effort as determined by the complexity of decision-making or resources utilized by a pharmacist to perform a professional service.&quot; - NCPDP Telecommunication (Field 474-8E, Data Dictionary 201104).</body>
+          <body>&quot;Code indicating the level of effort as determined by the complexity of decision-making or resources utilized by a pharmacist to perform a professional service.&quot; - NCPDP Telecommunication (Field 474-8E, Data Dictionary 201104). NCPDP leaves the definitions of these levels to the discretion of the trading partners. NCPDP suggests several possible schemes, one of which is: 1=Straightforward, 2=Low Complexity, 3=Moderate Complexity, 4=High Complexity, Comprehensive.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_uEOeoPVWEeWPJ7Hu05SWlg">
