@@ -2557,9 +2557,12 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6421B8C940052" name="dateTimeBegin" visibility="public">
         <ownedComment xmi:id="_NHAa3uLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6421B8C940052">
-          <body>&quot;This field may be specified by the requester, in which case it indicates the earliest date/time at which the services should be started.  In many cases, however, the start date/time will be implied or will be defined by other fields in the service request record (e.g., urgency   STAT).  In such a case, this field will be empty. The filling service will often record a value in this field after receipt of the service request, however, and compute an end time on the basis of the start date/time for the filling service's internal use.&quot; - HL7 Version 2.8, TQ1-7</body>
+          <body>This optional property is used by some types of orders which are requesting a repeating or continuous action to convey the first date (and optionally, time) upon which the action should occur. For example a clinician may order a drug to be administered in an inpatient stay. This drug might be administered every 4 hours beginning on a certain date/time. For one-time orders, such as an imaging request or most lab orders, this property is not used.&#xD;
+&quot;This field may be specified by the requester, in which case it indicates the earliest date/time at which the services should be started.  In many cases, however, the start date/time will be implied or will be defined by other fields in the service request record (e.g., urgency   STAT).  In such a case, this field will be empty. The filling service will often record a value in this field after receipt of the service request, however, and compute an end time on the basis of the start date/time for the filling service's internal use.&quot; - HL7 Version 2.8, TQ1-7</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_urnEUVpXEeaTlpPFsokSJQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_urnEUFpXEeaTlpPFsokSJQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6423B035A0205" name="dateTimeCompleted" visibility="public">
         <eAnnotations xmi:id="_NHAa0OLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -2572,9 +2575,12 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B642408DBC031C" name="dateTimeEnd" visibility="public">
         <ownedComment xmi:id="_NHJkxeLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642408DBC031C">
-          <body>&quot;When filled in by the requester of the service, this field should contain the latest date/time that the service should be performed.  If it has not been performed by the specified time, it should not be performed at all.  The requester may not always fill in this value, yet the filling service may fill it in on the basis of the instruction it receives and the actual start time. Regardless of the value of the end date/time, the service should be stopped at the earliest of the date/times specified by either the duration or the end date/time.&quot; - HL7 Version 2.8, TQ1-8</body>
+          <body>This optional property is used by some types of orders which are requesting a repeating or continuous action to convey the last date (and optionally, time) upon which the action should occur. For example a clinician may order a drug to be administered in an inpatient stay. This drug might be administered every 4 hours for three days. In this example, this property would contain the date/time three days after the begin date/time. For one-time orders, such as an imaging request or most lab orders, this property is not used.&#xD;
+&quot;When filled in by the requester of the service, this field should contain the latest date/time that the service should be performed.  If it has not been performed by the specified time, it should not be performed at all.  The requester may not always fill in this value, yet the filling service may fill it in on the basis of the instruction it receives and the actual start time. Regardless of the value of the end date/time, the service should be stopped at the earliest of the date/times specified by either the duration or the end date/time.&quot; - HL7 Version 2.8, TQ1-8</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v0O5QVpXEeaTlpPFsokSJQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v0O5QFpXEeaTlpPFsokSJQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B64589570A015A" name="dateTimeOrdered" visibility="public">
         <eAnnotations xmi:id="_MCwvnOLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
