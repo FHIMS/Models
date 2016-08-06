@@ -918,7 +918,7 @@
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_SY13gXCHEeKknILXOCcS7w" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_SY2ekHCHEeKknILXOCcS7w" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_SY2ekXCHEeKknILXOCcS7w" visible="false" type="StructureCompartment"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SY0CUXCHEeKknILXOCcS7w" x="10778" y="22190"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SY0CUXCHEeKknILXOCcS7w" x="11095" y="22190"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_BCDVYHCIEeKknILXOCcS7w" element="_-m9zAHCHEeKknILXOCcS7w" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_BCD8cHCIEeKknILXOCcS7w" type="ImageCompartment">
@@ -1225,12 +1225,18 @@
             <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           </defaultValue>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_UysDgmKAEeKl3I3Lt5ZAXg" name="possibleResponse" visibility="public" type="_smwBwHB6EeKknILXOCcS7w">
+        <ownedAttribute xmi:id="_UysDgmKAEeKl3I3Lt5ZAXg" name="possibleResponse" visibility="public">
           <ownedComment xmi:id="_UysDg2KAEeKl3I3Lt5ZAXg" annotatedElement="_UysDgmKAEeKl3I3Lt5ZAXg">
             <body>This property represents the possible responses to a question on an Assessment Instrument.  For the Morse Fall Scale History Of Falling question, the response must be a member of the HistoryOfFallingType enumeration.</body>
           </ownedComment>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UysDhGKAEeKl3I3Lt5ZAXg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UysDhWKAEeKl3I3Lt5ZAXg"/>
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_TtaAQFv-Eea3D8Ng2ubtNw">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+            <language></language>
+            <body>(HistoryOfFallingType)</body>
+          </defaultValue>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_uIf1MGKAEeKl3I3Lt5ZAXg" name="SecondaryDiagnosis" clientDependency="_hB8NoGKLEeKl3I3Lt5ZAXg">
@@ -1247,12 +1253,18 @@
             <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           </defaultValue>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_uIf1NGKAEeKl3I3Lt5ZAXg" name="possibleResponse" visibility="public" type="_Lq2hEHB9EeKknILXOCcS7w">
+        <ownedAttribute xmi:id="_uIf1NGKAEeKl3I3Lt5ZAXg" name="possibleResponse" visibility="public">
           <ownedComment xmi:id="_uIf1NWKAEeKl3I3Lt5ZAXg" annotatedElement="_uIf1NGKAEeKl3I3Lt5ZAXg">
             <body>This property represents the possible responses to a question on an Assessment Instrument.  For the Morse Fall Scale Secondary Diagnosis question, the response must be a member of the SecondaryDiagnosisType enumeration.</body>
           </ownedComment>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uIf1NmKAEeKl3I3Lt5ZAXg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIf1N2KAEeKl3I3Lt5ZAXg"/>
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_mLS34Fv-Eea3D8Ng2ubtNw">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+            <language></language>
+            <body>(SecondaryDiagnosisType)</body>
+          </defaultValue>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_3sAEYGKDEeKl3I3Lt5ZAXg" name="AmbulatoryAid" clientDependency="_qdW_MGKLEeKl3I3Lt5ZAXg">
@@ -1269,12 +1281,18 @@
             <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           </defaultValue>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_3sAEZGKDEeKl3I3Lt5ZAXg" name="possibleResponse" visibility="public" type="_-m9zAHCHEeKknILXOCcS7w">
+        <ownedAttribute xmi:id="_3sAEZGKDEeKl3I3Lt5ZAXg" name="possibleResponse" visibility="public">
           <ownedComment xmi:id="_3sAEZWKDEeKl3I3Lt5ZAXg" annotatedElement="_3sAEZGKDEeKl3I3Lt5ZAXg">
             <body>This property represents the possible responses to a question on an Assessment Instrument.  For the Morse Fall Scale Ambulatory Aid question, the response must be a member of the AmbulatoryAidType enumeration.</body>
           </ownedComment>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3sAEZmKDEeKl3I3Lt5ZAXg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3sAEZ2KDEeKl3I3Lt5ZAXg"/>
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_iWfwkFv-Eea3D8Ng2ubtNw">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+            <language></language>
+            <body>(AmbulatoryAidType)</body>
+          </defaultValue>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_JXICUGKEEeKl3I3Lt5ZAXg" name="morseFallScale_assessmentInstrumentQuestion" memberEnd="_JXICUWKEEeKl3I3Lt5ZAXg _JXRMQGKEEeKl3I3Lt5ZAXg">
@@ -1300,12 +1318,18 @@
             <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           </defaultValue>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_JemCpWKMEeKl3I3Lt5ZAXg" name="possibleResponse" visibility="public" type="_QD2WEHCHEeKknILXOCcS7w">
+        <ownedAttribute xmi:id="_JemCpWKMEeKl3I3Lt5ZAXg" name="possibleResponse" visibility="public">
           <ownedComment xmi:id="_JemCpmKMEeKl3I3Lt5ZAXg" annotatedElement="_JemCpWKMEeKl3I3Lt5ZAXg">
             <body>This property represents the possible responses to a question on an Assessment Instrument.  For the Morse Fall Scale IV or IV Access question, the response must be a member of the IvOrIvAccessType enumeration.</body>
           </ownedComment>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JemCp2KMEeKl3I3Lt5ZAXg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JemCqGKMEeKl3I3Lt5ZAXg"/>
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_dRXCwFv-Eea3D8Ng2ubtNw">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+            <language></language>
+            <body>(IvOrIvAccessType)</body>
+          </defaultValue>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_QRKioGKMEeKl3I3Lt5ZAXg" name="Gait" clientDependency="_k_Va0GKMEeKl3I3Lt5ZAXg">
@@ -1322,12 +1346,18 @@
             <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           </defaultValue>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_QRKipWKMEeKl3I3Lt5ZAXg" name="possibleResponse" visibility="public" type="_3rTzAHCIEeKknILXOCcS7w">
+        <ownedAttribute xmi:id="_QRKipWKMEeKl3I3Lt5ZAXg" name="possibleResponse" visibility="public">
           <ownedComment xmi:id="_QRKipmKMEeKl3I3Lt5ZAXg" annotatedElement="_QRKipWKMEeKl3I3Lt5ZAXg">
             <body>This property represents the possible responses to a question on an Assessment Instrument.  For the Morse Fall Scale Gait question, the response must be a member of the GaitType enumeration.</body>
           </ownedComment>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QRKip2KMEeKl3I3Lt5ZAXg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QRKiqGKMEeKl3I3Lt5ZAXg"/>
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_aMC3oFv-Eea3D8Ng2ubtNw">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+            <language></language>
+            <body>(GaitType)</body>
+          </defaultValue>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Usage" xmi:id="_dSlxkGKMEeKl3I3Lt5ZAXg" supplier="_QD2WEHCHEeKknILXOCcS7w" client="_JemCoGKMEeKl3I3Lt5ZAXg"/>
@@ -1346,12 +1376,18 @@
             <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           </defaultValue>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_5W5w5WKMEeKl3I3Lt5ZAXg" name="possibleResponse" visibility="public" type="_fWFfIHCJEeKknILXOCcS7w">
+        <ownedAttribute xmi:id="_5W5w5WKMEeKl3I3Lt5ZAXg" name="possibleResponse" visibility="public">
           <ownedComment xmi:id="_5W5w5mKMEeKl3I3Lt5ZAXg" annotatedElement="_5W5w5WKMEeKl3I3Lt5ZAXg">
             <body>This property represents the possible responses to a question on an Assessment Instrument.  For the Morse Fall Scale Mental Status question, the response must be a member of the MentalStatusType enumeration.</body>
           </ownedComment>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5W5w52KMEeKl3I3Lt5ZAXg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5W5w6GKMEeKl3I3Lt5ZAXg"/>
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_X0d8QFv-Eea3D8Ng2ubtNw">
+            <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+            <language></language>
+            <body>(MentalStatusType)</body>
+          </defaultValue>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Usage" xmi:id="_nvsNIGKNEeKl3I3Lt5ZAXg" supplier="_fWFfIHCJEeKknILXOCcS7w" client="_5W5w4GKMEeKl3I3Lt5ZAXg"/>
