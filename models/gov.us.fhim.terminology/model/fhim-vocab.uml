@@ -1344,6 +1344,23 @@ These are documented in CDC local codes table, CDCPHINVS (Value set OID 2.16.840
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_dPtEEPT_EeWvwZaMZtWyqQ" name="DICOM"/>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_VN0FsPUJEeWp_Mwb77TLSQ" name="NCPDP"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_-zISwF8_EeadZ8QwYgX1hQ" name="ParticipationType">
+        <ownedLiteral xmi:id="_FTpZcF9AEeadZ8QwYgX1hQ" name="Admitter"/>
+        <ownedLiteral xmi:id="_Lrba4F9AEeadZ8QwYgX1hQ" name="Attender"/>
+        <ownedLiteral xmi:id="_NQcQ4F9AEeadZ8QwYgX1hQ" name="AuthorOriginator"/>
+        <ownedLiteral xmi:id="_OPlZsF9AEeadZ8QwYgX1hQ" name="DataEntryPerson"/>
+        <ownedLiteral xmi:id="_luCoMF9AEeadZ8QwYgX1hQ" name="Instructor_"/>
+        <ownedLiteral xmi:id="_UWteEF9CEeadZ8QwYgX1hQ" name="LegalAuthenticator"/>
+        <ownedLiteral xmi:id="_r1hj0F9AEeadZ8QwYgX1hQ" name="PrimaryCareProvider_"/>
+        <ownedLiteral xmi:id="_OrT6IF9FEeadZ8QwYgX1hQ" name="PrimaryPerformer"/>
+        <ownedLiteral xmi:id="_0doCEF9AEeadZ8QwYgX1hQ" name="Referrer"/>
+        <ownedLiteral xmi:id="_y-CpMF9BEeadZ8QwYgX1hQ" name="ResponsibleParty"/>
+        <ownedLiteral xmi:id="_sv3k0F9DEeadZ8QwYgX1hQ" name="SecondaryPerformer"/>
+        <ownedLiteral xmi:id="_-DhI0F9BEeadZ8QwYgX1hQ" name="Supervisor_"/>
+        <ownedLiteral xmi:id="_Dd3RoF9CEeadZ8QwYgX1hQ" name="Transcriber_"/>
+        <ownedLiteral xmi:id="_P6l4EF9CEeadZ8QwYgX1hQ" name="Verifier"/>
+        <ownedLiteral xmi:id="_RVSUcF9CEeadZ8QwYgX1hQ" name="Witness"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_ilRJYPaiEeGpCd694FcdqQ" name="CommonProductVocab">
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_XViOYKRMEeGZ6ueex_Me0w" name="NDC-FDA Drug Registration and Listing System"/>
@@ -6259,4 +6276,20 @@ The following is an example coded concept:</body>
   <term:ValueSetVersion xmi:id="_jf2aUfXtEeW1BuvtDtBQzQ" identifier="tbd" url="http://fhim.onc.us.gov/terms/temporary/NcpdpproductSelectionCodeValueSet" definition="Rule by which product was selected to fufill request.  This is a grouping valueset which is an amalgam of HL7 v2 Table 167 and NCPDP Dispense As Written / Product Selection Codes" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_jf2aUPXtEeW1BuvtDtBQzQ"/>
   <term:ValueSetVersion xmi:id="_FypfsfXvEeW1BuvtDtBQzQ" identifier="tbd" url="http://fhim.onc.us.gov/terms/temporary/NcpdprouteValueSet" definition="Route by which medication is to be administered. This is a grouping value-set which is an amalgam of HL7 v2 Table 162 and the FDA Route of administration codes" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_FypfsPXvEeW1BuvtDtBQzQ"/>
   <term:ValueSetVersion xmi:id="_kKu4cfXvEeW1BuvtDtBQzQ" identifier="tbd" url="http://fhim.onc.us.gov/terms/temporary/NcpdpresidenceTypeValueSet" definition="This is a grouping value-set that is an almalgam of NCPDP Telecom codes and HL7 v2 and V3 Living Arrangement codes" codeSystem="_VN3JAPUJEeWp_Mwb77TLSQ" base_Enumeration="_kKu4cPXvEeW1BuvtDtBQzQ"/>
+  <term:ValueSetVersion xmi:id="_-zMkMF8_EeadZ8QwYgX1hQ" base_Enumeration="_-zISwF8_EeadZ8QwYgX1hQ"/>
+  <term:ValueSetCode xmi:id="_FTqAgF9AEeadZ8QwYgX1hQ" base_EnumerationLiteral="_FTpZcF9AEeadZ8QwYgX1hQ"/>
+  <term:ValueSetCode xmi:id="_LrcB8F9AEeadZ8QwYgX1hQ" base_EnumerationLiteral="_Lrba4F9AEeadZ8QwYgX1hQ"/>
+  <term:ValueSetCode xmi:id="_NQcQ4V9AEeadZ8QwYgX1hQ" base_EnumerationLiteral="_NQcQ4F9AEeadZ8QwYgX1hQ"/>
+  <term:ValueSetCode xmi:id="_OPmAwF9AEeadZ8QwYgX1hQ" base_EnumerationLiteral="_OPlZsF9AEeadZ8QwYgX1hQ"/>
+  <term:ValueSetCode xmi:id="_luCoMV9AEeadZ8QwYgX1hQ" base_EnumerationLiteral="_luCoMF9AEeadZ8QwYgX1hQ"/>
+  <term:ValueSetCode xmi:id="_r1iK4F9AEeadZ8QwYgX1hQ" base_EnumerationLiteral="_r1hj0F9AEeadZ8QwYgX1hQ"/>
+  <term:ValueSetCode xmi:id="_0dopIF9AEeadZ8QwYgX1hQ" base_EnumerationLiteral="_0doCEF9AEeadZ8QwYgX1hQ"/>
+  <term:ValueSetCode xmi:id="_y-DQQF9BEeadZ8QwYgX1hQ" base_EnumerationLiteral="_y-CpMF9BEeadZ8QwYgX1hQ"/>
+  <term:ValueSetCode xmi:id="_-Dhv4F9BEeadZ8QwYgX1hQ" base_EnumerationLiteral="_-DhI0F9BEeadZ8QwYgX1hQ"/>
+  <term:ValueSetCode xmi:id="_Dd34sF9CEeadZ8QwYgX1hQ" base_EnumerationLiteral="_Dd3RoF9CEeadZ8QwYgX1hQ"/>
+  <term:ValueSetCode xmi:id="_P6mfIF9CEeadZ8QwYgX1hQ" base_EnumerationLiteral="_P6l4EF9CEeadZ8QwYgX1hQ"/>
+  <term:ValueSetCode xmi:id="_RVS7gF9CEeadZ8QwYgX1hQ" base_EnumerationLiteral="_RVSUcF9CEeadZ8QwYgX1hQ"/>
+  <term:ValueSetCode xmi:id="_UWteEV9CEeadZ8QwYgX1hQ" base_EnumerationLiteral="_UWteEF9CEeadZ8QwYgX1hQ"/>
+  <term:ValueSetCode xmi:id="_sv4L4F9DEeadZ8QwYgX1hQ" base_EnumerationLiteral="_sv3k0F9DEeadZ8QwYgX1hQ"/>
+  <term:ValueSetCode xmi:id="_OrUhMF9FEeadZ8QwYgX1hQ" base_EnumerationLiteral="_OrT6IF9FEeadZ8QwYgX1hQ"/>
 </xmi:XMI>
