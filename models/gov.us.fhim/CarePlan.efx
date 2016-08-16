@@ -76,7 +76,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_oKajwAY-EeGz0dkadElrkQ" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_oKajwgY-EeGz0dkadElrkQ" visible="false" type="StructureCompartment"/>
           <element xmi:type="uml:Class" href="HealthConcern.efx#_420A62FD03B6421F8AD00244?FHIM/HealthConcern/HealthConcern?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oKYHggY-EeGz0dkadElrkQ" x="6974" y="9510"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oKYHggY-EeGz0dkadElrkQ" x="4755" y="9510"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_mwHeEAZAEeGz0dkadElrkQ" element="_mwEawAZAEeGz0dkadElrkQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" lineColor="3342489" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_mwHeEwZAEeGz0dkadElrkQ" type="ImageCompartment">
@@ -218,7 +218,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_YRgaYMRDEeSThJ7NwJgY1w" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_YRgaYcRDEeSThJ7NwJgY1w" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_YRgaYsRDEeSThJ7NwJgY1w" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YRelMcRDEeSThJ7NwJgY1w" x="317" y="12363"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YRelMcRDEeSThJ7NwJgY1w" x="-1585" y="12680"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_cLHJMMRDEeSThJ7NwJgY1w" element="_cLDe0MRDEeSThJ7NwJgY1w" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="16777088" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_cLHwQMRDEeSThJ7NwJgY1w" type="ImageCompartment">
@@ -305,7 +305,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_daKugHm3EeW-j_oLISFbOQ" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_daKugXm3EeW-j_oLISFbOQ" visible="false" type="StructureCompartment"/>
           <element xmi:type="uml:Class" href="HealthConcern.efx#_W61_oLO_EeS3iYN4R_wsuw?FHIM/HealthConcern/HealthRisk?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_daJgYXm3EeW-j_oLISFbOQ" x="7291" y="12997"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_daJgYXm3EeW-j_oLISFbOQ" x="5072" y="12997"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_X5ZIYOU1EeWlUtxA-8RVeQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="Text" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_X5en8OU1EeWlUtxA-8RVeQ" type="ImageCompartment">
@@ -480,7 +480,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_TixgGRPdEeaECq32HH3IBA" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TixgGhPdEeaECq32HH3IBA" visible="false" type="StructureCompartment"/>
           <element xmi:type="uml:Class" href="Common.efx#_VztkwBPZEeaECq32HH3IBA?FHIM/Common/ResponsibleParty?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TixgERPdEeaECq32HH3IBA" x="12363" y="14265"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TixgERPdEeaECq32HH3IBA" x="9193" y="13948"/>
         </children>
         <element xsi:nil="true"/>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_SlywQAY0EeGz0dkadElrkQ" element="_SlspoAY0EeGz0dkadElrkQ" source="_zXPXoAY1EeGz0dkadElrkQ" target="_MuIZUAY0EeGz0dkadElrkQ" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -1997,6 +1997,8 @@ Note that a goal might be constructed of sub-goals, which might each be associat
 &quot;Indicates when the goal is intended to be reached.&quot; - HL7 FHIR, Goal.targetDate.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0GWn0WPxEeaxw9SMkJS39A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0GWn0GPxEeaxw9SMkJS39A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_AYCX8O_pEeOM48qnBkZzmw" name="healthConcern" visibility="public" association="_AX_7sO_pEeOM48qnBkZzmw">
         <ownedComment xmi:id="_CQH68O_pEeOM48qnBkZzmw" annotatedElement="_AYCX8O_pEeOM48qnBkZzmw">
@@ -2067,6 +2069,8 @@ Note that a goal might be constructed of sub-goals, which might each be associat
 &quot;Indicates when the plan did (or is intended to) come into effect and end.&quot; - HL7 FHIR, CarePlan.period.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Jil4WPwEeaxw9SMkJS39A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Jil4GPwEeaxw9SMkJS39A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_x3mBcAZDEeGz0dkadElrkQ" name="dateCreated" visibility="public">
         <ownedComment xmi:id="_C2HiwNe-EeSTuOyAKngSWg" annotatedElement="_x3mBcAZDEeGz0dkadElrkQ">
@@ -2205,7 +2209,7 @@ Note that a goal might be constructed of sub-goals, which might each be associat
       </ownedAttribute>
       <ownedAttribute xmi:id="_SlH_wN-1EeSQwMSQTXiDlA" name="healthConcern" visibility="public" association="_SlEVYN-1EeSQwMSQTXiDlA">
         <ownedComment xmi:id="_RjIQ0O9wEeWkMe7GVfjMFQ" annotatedElement="_SlH_wN-1EeSQwMSQTXiDlA">
-          <body>Pointer to the Patietn's condition or &quot;problem&quot; upon which the Care Plan is focused.</body>
+          <body>Pointer to the Patient's condition or &quot;problem&quot; upon which the Care Plan is focused.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="HealthConcern.efx#_420A62FD03B6421F8AD00244?FHIM/HealthConcern/HealthConcern?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SlMRMN-1EeSQwMSQTXiDlA" value="*"/>
@@ -2592,12 +2596,16 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
 &quot;The period, timing or frequency upon which the described activity is to occur.&quot; - HL7 FHIR, CarePlan.activity.detail.scheduled[x] (Note that FHIR allows multiple timeframes).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VSi8YWPxEeaxw9SMkJS39A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VSi8YGPxEeaxw9SMkJS39A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_VlRg0NfPEeSTuOyAKngSWg" name="frequency" visibility="public">
         <ownedComment xmi:id="_VlRg0dfPEeSTuOyAKngSWg" annotatedElement="_VlRg0NfPEeSTuOyAKngSWg">
           <body>&quot;Specification of repeating frequency of an activity.&quot; - HL7 Care Plan Domain Analysis Model</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F63021C?FHIM/Datatypes/RateQuantity?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WD4SsWPxEeaxw9SMkJS39A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WD4SsGPxEeaxw9SMkJS39A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_FErQwO_qEeOM48qnBkZzmw" name="isProhibited" visibility="public">
         <ownedComment xmi:id="_Lyw5YO_qEeOM48qnBkZzmw" annotatedElement="_FErQwO_qEeOM48qnBkZzmw">
@@ -2605,7 +2613,7 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MTox0e_qEeOM48qnBkZzmw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MTox0O_qEeOM48qnBkZzmw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MTox0O_qEeOM48qnBkZzmw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ZajFENpHEeSOxtrN8-7DcQ" name="kind" visibility="public">
         <ownedComment xmi:id="_ZajFEdpHEeSOxtrN8-7DcQ" annotatedElement="_ZajFENpHEeSOxtrN8-7DcQ">
@@ -2646,12 +2654,16 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
           <body>&quot;Any required preconditions which must be before the activity can be carried out.&quot; - HL7 Care Plan Domain Analysis Model</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_htEjYWPxEeaxw9SMkJS39A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_htEjYGPxEeaxw9SMkJS39A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3G3oMNfPEeSTuOyAKngSWg" name="postCondition" visibility="public">
         <ownedComment xmi:id="_3G3oMdfPEeSTuOyAKngSWg" annotatedElement="_3G3oMNfPEeSTuOyAKngSWg">
           <body>&quot;Any conditions expected to be true after the activity is carried out.&quot; - HL7 Care Plan Domain Analysis Model</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_if5HcWPxEeaxw9SMkJS39A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_if5HcGPxEeaxw9SMkJS39A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_TxzQAM8nEeSxpbhu-p7faA" name="startDate" visibility="public">
         <ownedComment xmi:id="_TxzQAc8nEeSxpbhu-p7faA" annotatedElement="_TxzQAM8nEeSxpbhu-p7faA">
@@ -2659,6 +2671,8 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
 &quot;The period, timing or frequency upon which the described activity is to occur.&quot; - HL7 FHIR, CarePlan.activity.detail.scheduled[x] (Note that FHIR allows multiple timeframes).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jMAmkWPxEeaxw9SMkJS39A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jMAmkGPxEeaxw9SMkJS39A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nTVVUAY_EeGz0dkadElrkQ" name="status" visibility="public">
         <ownedComment xmi:id="_2IBrQO_pEeOM48qnBkZzmw" annotatedElement="_nTVVUAY_EeGz0dkadElrkQ">
