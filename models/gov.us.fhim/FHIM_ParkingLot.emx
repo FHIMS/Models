@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.5-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
   <uml:Model xmi:id="_ZLwkop1cEeKGRqm0H7Eu1A" name="FHIM_ParkingLot">
     <eAnnotations xmi:id="_DXkXgdJvEeSWN8ZsMae6GQ" source="com.ibm.xtools.uml.msl.fragments">
       <references xmi:type="uml:Package" href="StructuredDataCapture.efx#_oollsL4vEeKOk7Rt2VRC6g?FHIM_ParkingLot/StructuredDataCapture?"/>
@@ -108,6 +108,47 @@
     <packageImport xmi:id="_ZLwkpZ1cEeKGRqm0H7Eu1A">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qw_REJtZEeClAtaO_zSM7g" name="ScriptDue">
+      <ownedComment xmi:id="_s2Il4NUcEeGzd-o9XtejuA" annotatedElement="_qw_REJtZEeClAtaO_zSM7g">
+        <body>This class represents two properties that the DUE composite in the NCPDP SCRIPT standard has that the NCPDP Telecommunication standard does not.  In practice, this class' two properties, along with the one property that the Telecommunication standard uniquely contains would likely be moved to the DUE superclass, and we could have modeled it that way, but we've chosen to separate the subclasses in order to visually depict the differences between the two standards.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yrve8FlfEeCyw5g2lQh-Ug" name="TelcomPatient">
+      <ownedComment xmi:id="_4WoP0CVREeO_iaEYDPvTaA" annotatedElement="_yrve8FlfEeCyw5g2lQh-Ug">
+        <body>This class contains patient information that is unique to the NCPDP Telecommunication standard.  This class is modeled as a separate sub-type of Patient in order to illustrate the differences between different standards.</body>
+      </ownedComment>
+      <generalization xmi:id="_hrmvIJdiEeCiab3ndHzX4g">
+        <general xmi:type="uml:Class" href="Person.efx#_l0XegO_4Ed6OG-vjYTopTQ?FHIM/Person/HumanPatient?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_0-LboFlfEeCyw5g2lQh-Ug" name="isPregnant" visibility="public">
+        <ownedComment xmi:id="_9WM9oCVQEeO_iaEYDPvTaA" annotatedElement="_0-LboFlfEeCyw5g2lQh-Ug">
+          <body>&quot;Code indicating the patient as pregnant or non-pregnant.&quot; - NCPDP Telecommunication (Field 335-2C, Data Dictionary 201104).</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_6sfCQFlfEeCyw5g2lQh-Ug" name="isSmoker" visibility="public">
+        <ownedComment xmi:id="_1Uz6ECVQEeO_iaEYDPvTaA" annotatedElement="_6sfCQFlfEeCyw5g2lQh-Ug">
+          <body>&quot;Code indicating the patient as a smoker or non-smoker.&quot; - NCPDP Telecommunication (Field 334-1C, Data Dictionary 201104).</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oOfAcFlgEeCyw5g2lQh-Ug" name="residenceType" visibility="public">
+        <ownedComment xmi:id="_t4KlwFlgEeCyw5g2lQh-Ug" annotatedElement="_oOfAcFlgEeCyw5g2lQh-Ug">
+          <body>&quot;Code identifying the patient’s place of residence.&quot; - NCPDP Telecommunication (Field 384-4X, Data Dictionary 201104).  Possible values include: Home; Skilled Nursing Facility; Nursing Facility; Assisted Living Facility; Custodial Care Facility; Group Home; Inpatient Psychiatric Facility; Psychiatric Facility – Partial Hospitalization; Intermediate Care Facility/Mentally Retarded; Residential Substance Abuse Treatment Facility; Hospice; Psychiatric Residential Treatment Facility; Comprehensive Inpatient Rehabilitation Facility; Homeless Shelter; Correctional Institution.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_6tCnwPXvEeW1BuvtDtBQzQ">
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <language></language>
+          <body>(PatientResidence)</body>
+        </defaultValue>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_t0ZXsJtZEeClAtaO_zSM7g" name="TelecomDue">
+      <ownedComment xmi:id="_BBhhINUdEeGzd-o9XtejuA" annotatedElement="_t0ZXsJtZEeClAtaO_zSM7g">
+        <body>This class represents the one property that the NCPDP Telecommunications DUE segment defines that the NCPDP SCRIPT standard does not.  In practice, this class' one property, along with the two properties that the SCRIPT standard uniquely contains would likely be moved to the DUE superclass, and we could have modeled it that way, but we've chosen to separate the subclasses in order to visually depict the differences between the two standards.</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B64550AAFD0313" name="ImageGroup">
       <eAnnotations xmi:id="_MycgFeLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedComment xmi:id="_MySvEOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64550AAFD0313">
@@ -3913,4 +3954,16 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <Default:Documentation xmi:id="_MycgFOLiEduGJrQyRGTO1A" base_Comment="_MycgE-LiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MySvEeLiEduGJrQyRGTO1A" base_Comment="_MySvEOLiEduGJrQyRGTO1A"/>
   <RIM:ActRelationship xmi:id="_RLK1MIBsEd-cvdR-JEsOjQ" base_Class="_420A62FD03B64550AAFD0313"/>
+  <Default:Documentation xmi:id="_BBpc8NUdEeGzd-o9XtejuA" base_Comment="_BBhhINUdEeGzd-o9XtejuA"/>
+  <Default:Documentation xmi:id="_s2Rv0NUcEeGzd-o9XtejuA" base_Comment="_s2Il4NUcEeGzd-o9XtejuA"/>
+  <Default:Documentation xmi:id="_t4TvsFlgEeCyw5g2lQh-Ug" base_Comment="_t4KlwFlgEeCyw5g2lQh-Ug"/>
+  <RIM:Act xmi:id="_EZYowcdmEeCVr54V6VtSNQ" base_Class="_t0ZXsJtZEeClAtaO_zSM7g"/>
+  <RIM:Act xmi:id="_EZYowMdmEeCVr54V6VtSNQ" base_Class="_qw_REJtZEeClAtaO_zSM7g"/>
+  <RIM:Patient xmi:id="_qcR4QG9aEeC7Xu_kGrVjuQ" base_Class="_yrve8FlfEeCyw5g2lQh-Ug"/>
+  <Default:Documentation xmi:id="_1U6AsCVQEeO_iaEYDPvTaA" base_Comment="_1Uz6ECVQEeO_iaEYDPvTaA"/>
+  <Default:Documentation xmi:id="_9WWHkCVQEeO_iaEYDPvTaA" base_Comment="_9WM9oCVQEeO_iaEYDPvTaA"/>
+  <Default:Documentation xmi:id="_4WxZwCVREeO_iaEYDPvTaA" base_Comment="_4WoP0CVREeO_iaEYDPvTaA"/>
+  <term:ValueSetConstraint xmi:id="_YN8g4PXwEeWUqry1B7qRsQ" base_Property="_oOfAcFlgEeCyw5g2lQh-Ug">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_kKu4cfXvEeW1BuvtDtBQzQ"/>
+  </term:ValueSetConstraint>
 </xmi:XMI>
