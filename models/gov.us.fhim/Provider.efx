@@ -2057,9 +2057,13 @@ In the future, should this class remain in the model, properties would be added 
           <body>The date range during which the license is valid.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tqgFIYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tqgFIIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_hTV2MDd8Ed-pnM5ImLCS1g" name="status" visibility="public">
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uwI3gYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uwI3gIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_e7qPcR2ZEd-4VI-lpu-JjQ" name="healthPlan" visibility="public" association="_e7qPcB2ZEd-4VI-lpu-JjQ">
         <type xmi:type="uml:Class" href="EnrollEligCOB.efx#_420A62FD03B64546640100C0?FHIM/EnrollEligCOB/HealthPlan?"/>
@@ -2078,9 +2082,13 @@ In the future, should this class remain in the model, properties would be added 
       <generalization xmi:id="_NWQYoB2REd-4VI-lpu-JjQ" general="_KCfh0B2REd-4VI-lpu-JjQ"/>
       <ownedAttribute xmi:id="_erYjUB2PEd-4VI-lpu-JjQ" name="isFullUnrestrictedPrivilege" visibility="public">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AschgIy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Asb6cIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_erYjUR2PEd-4VI-lpu-JjQ" name="isTemporaryPrivilege" visibility="public">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BeHPAIy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BeGn8Iy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_SYe5oCu5Ed-mUrYY2zR9Jw" name="Network">
@@ -2130,6 +2138,8 @@ Note that the FHIM makes a simplifying assumption that all Providers are associa
           <body>&quot;Contains miscellaneous additional information related to the staff member's membership in the professional organization.&quot; - HL7 Version 2.8, AFF-5.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lmCfcYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lmCfcIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oaLHYB2QEd-4VI-lpu-JjQ" name="effectiveDateRange" visibility="public">
         <ownedComment xmi:id="_oaLHYR2QEd-4VI-lpu-JjQ" annotatedElement="_oaLHYB2QEd-4VI-lpu-JjQ">
@@ -2137,9 +2147,13 @@ Note that the FHIM makes a simplifying assumption that all Providers are associa
 &quot;The period during which the person is authorized to act as a practitioner in these role(s) for the organization.&quot; - HL7 FHIR, Practitioner.practitionerRole.period.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mXejcIy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mXUycIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_haeC8B2TEd-4VI-lpu-JjQ" name="status" visibility="public">
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlzXwYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlzXwIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_gy7VsEvqEeCrON7ycdFLuQ" name="position" visibility="public" type="_ivvdIEvpEeCrON7ycdFLuQ" association="_gy4SYEvqEeCrON7ycdFLuQ">
         <ownedComment xmi:id="_XlOh0EcoEeOPSKtS95Q8Uw" annotatedElement="_gy7VsEvqEeCrON7ycdFLuQ">
@@ -2182,12 +2196,16 @@ Note that the FHIM makes a simplifying assumption that all Providers are associa
           <body>Uniquely identifies the location.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MkUucIy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MkLkgIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_cQ5toB1-Ed-4VI-lpu-JjQ" name="name" visibility="public">
         <ownedComment xmi:id="_Xr1F8PGjEd-ZlYn0p4HjQw" annotatedElement="_cQ5toB1-Ed-4VI-lpu-JjQ">
           <body>A moniker for the location.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NOfFwYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NOfFwIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6418AA15801A9" name="Organization">
@@ -2294,18 +2312,24 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
           <body>&quot;Code identifying the place where a drug or service is dispensed or administered.&quot; - NCPDP Telecommunication (Field 3Ø7-C7, Data Dictionary 201104).  Use CMS's Place of Service Codes for Professional Claims.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0IcqAIs3EeaDlJMTsPFiaQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0IcC8Is3EeaDlJMTsPFiaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_lV6l0B2IEd-4VI-lpu-JjQ" name="id" visibility="public">
         <ownedComment xmi:id="_lWEW0B2IEd-4VI-lpu-JjQ" annotatedElement="_lV6l0B2IEd-4VI-lpu-JjQ">
           <body>A unique string or token used to identify the Organization - Location combination.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_b8YIs3EeaDlJMTsPFiaQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_bVUIs3EeaDlJMTsPFiaQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_lWEW0R2IEd-4VI-lpu-JjQ" name="name" visibility="public">
         <ownedComment xmi:id="_PsRO8BHPEeCBuOUrBnIXmQ" annotatedElement="_lWEW0R2IEd-4VI-lpu-JjQ">
           <body>The name of the Organization-Location.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_14r4kIs3EeaDlJMTsPFiaQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_14rRgIs3EeaDlJMTsPFiaQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_zaTccLYuEeGWl-7OlqBMDw" name="telecom" visibility="public">
         <ownedComment xmi:id="_zaTccbYuEeGWl-7OlqBMDw" annotatedElement="_zaTccLYuEeGWl-7OlqBMDw">
@@ -2339,12 +2363,16 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
           <body>An unique string or token used to identify the jurisdiction</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GxyIEYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GxyIEIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_49GJYHS_Ed-Bj4191_mrEA" name="name" visibility="public">
         <ownedComment xmi:id="_-_MOsHS_Ed-Bj4191_mrEA" annotatedElement="_49GJYHS_Ed-Bj4191_mrEA">
           <body>The name of the jurisdiction  </body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZ3bwIy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZ20sIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_-PDq0BsxEd--ZY2-pbJ-Pw" name="EducationalInstitution">
@@ -2356,6 +2384,8 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
           <body>Identifies the educational institution.    This would ordinarily be an string or an Id, but because there are a finite number of medical schools, they are normally represented as codes.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zDRWEYy1EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zDRWEIy1EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_N-8rIBsyEd--ZY2-pbJ-Pw" name="address" visibility="public">
         <ownedComment xmi:id="_N-8rIRsyEd--ZY2-pbJ-Pw" annotatedElement="_N-8rIBsyEd--ZY2-pbJ-Pw">
@@ -2367,6 +2397,8 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
       </ownedAttribute>
       <ownedAttribute xmi:id="_y1jzcNgWEeG3E4mt6RKX5Q" name="name" visibility="public">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zfLb0Is9EeaDlJMTsPFiaQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zfK0wIs9EeaDlJMTsPFiaQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_o6KUYBsyEd--ZY2-pbJ-Pw" name="workEmail" visibility="public">
         <ownedComment xmi:id="_o6KUYRsyEd--ZY2-pbJ-Pw" annotatedElement="_o6KUYBsyEd--ZY2-pbJ-Pw">
@@ -2395,6 +2427,8 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
           <body>Indicates the degree or certificate earned by the provider.  Examples include Bachelor of Science, Doctorate in Medicine.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5PyisYy1EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5PyisIy1EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sQORQRsyEd--ZY2-pbJ-Pw" name="educationalInstitution" visibility="public" type="_-PDq0BsxEd--ZY2-pbJ-Pw" association="_sQORQBsyEd--ZY2-pbJ-Pw">
         <ownedComment xmi:id="_slm9MDBAEd-1aYBV65Lrnw" annotatedElement="_sQORQRsyEd--ZY2-pbJ-Pw">
@@ -2465,12 +2499,16 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
           <body>Contains a categorization for the practitioner.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8yoXUYy1EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8yoXUIy1EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_5Z1BEBJTEeKEjrc2hUE4_Q" name="providerRole" visibility="public">
         <ownedComment xmi:id="_w2qI0PnFEeSJ3abZ9RQzyQ" annotatedElement="_5Z1BEBJTEeKEjrc2hUE4_Q">
           <body>&quot;The list of Roles/Organizations that the Practitioner is associated with.&quot; - HL7 FHIR, Practitioner.practitionerRole.  Note that FHIR does not identify any values for this concept.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_97CJ0Yy1EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_97CJ0Iy1EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_OjeAgHo4EeOKnMBxUzvJfA" name="publicDigitalCertificate" visibility="public">
         <ownedComment xmi:id="_DEftsHynEeOHq5zPTCjDoQ" annotatedElement="_OjeAgHo4EeOKnMBxUzvJfA">
@@ -2553,18 +2591,24 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
           <body>Contains the name and title of the Practitioner as they wish it to be displayed with the notation that they signed the document electronically.  For example, a practitioner who routinely uses a nickname for most correspondence would likely want their legal name on the signature block.  In addition, this property would contain the title that they would use when electronically signing a document.  For example, a practitioner may hold multiple titles, but would choose one to be used for signing.  Examples of titles are Chief of Surgery, Dietician, Clinical Pharmacist, etc.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_3lzSEFVyEdyaooytdRFnxQ?FHIM/Datatypes/PersonName?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FsFrUYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FsFrUIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_rGlWkPv4Ed-3ndaGus2qMA" name="mobilePhone" visibility="public">
         <ownedComment xmi:id="_rGlWkfv4Ed-3ndaGus2qMA" annotatedElement="_rGlWkPv4Ed-3ndaGus2qMA">
           <body>A telecommunication device that moves and stays with its owner. Suitable for urgent matters, the mobile phone is not the first choice for routine business.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_fImbAAEYEd-ZUM5xZsXWyw?FHIM/Datatypes/ContactPoint?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D29VsYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D29VsIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_rGl9oPv4Ed-3ndaGus2qMA" name="pager" visibility="public">
         <ownedComment xmi:id="_rGl9ofv4Ed-3ndaGus2qMA" annotatedElement="_rGl9oPv4Ed-3ndaGus2qMA">
           <body>A paging device suitable to solicit a callback or to leave a very short message.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_fImbAAEYEd-ZUM5xZsXWyw?FHIM/Datatypes/ContactPoint?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EmLMIYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EmLMIIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6456374E203E2" name="asPrescribingProvider" visibility="public" type="_420A62FD03B64563749D0053" isUnique="false" association="_420A62FD03B6456374E20104">
         <ownedComment xmi:id="_5jouUMb2Ed2P6e45_ze_yA" annotatedElement="_420A62FD03B6456374E203E2">
@@ -2578,6 +2622,8 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
           <body>Pointer to information about the Person who is playing the Role of Practitioner.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Person.efx#_420A62FD03B6425125E800E0?FHIM/Person/Person?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CU3Q0Yy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CU3Q0Iy2EeaPWbBiMJSPyg" value="1"/>
         <association href="Person.efx#_420A62FD03B6456353DE0213?FHIM/Person/person_asProvider?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_HkfkoV0nEd-Rnfg4Du2i5g" name="providerAffiliation" visibility="public" type="_KCfh0B2REd-4VI-lpu-JjQ" association="_HkfkoF0nEd-Rnfg4Du2i5g">
@@ -2606,18 +2652,24 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
           <body>An interval of time specifying the period during which the license is in valid, if such time limit is applicable and known.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KASEYYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KASEYIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_7jCl8BswEd--ZY2-pbJ-Pw" name="licenseCategory" visibility="public">
         <ownedComment xmi:id="_fPcmoDA7Ed-1aYBV65Lrnw" annotatedElement="_7jCl8BswEd--ZY2-pbJ-Pw">
           <body>A classification of the provider's license.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KqzBAYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KqzBAIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6456373F20383" name="licenseId" visibility="public">
         <ownedComment xmi:id="_7xIiABqQEd-j8JC21F3W2A" annotatedElement="_420A62FD03B6456373F20383">
           <body>Identifies a certification of a practitioner to perform certain activities that fall under the jurisdiction of the issuer of the license.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LMy60Yy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LMy60Iy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_L7BaEUvnEeCrON7ycdFLuQ" name="licensingJurisdiction" visibility="public" type="_NefmUHS_Ed-Bj4191_mrEA" association="_L7BaEEvnEeCrON7ycdFLuQ">
         <ownedComment xmi:id="_RgHaUEvnEeCrON7ycdFLuQ" annotatedElement="_L7BaEUvnEeCrON7ycdFLuQ">
@@ -2672,6 +2724,8 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
           <body>Categorizes the type of practical experience the Individual Healthcare Provider has undergone.  Example values include Internship/Residency, Fellowship, etc.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fPM5MIy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fPDIMIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_37URoEcjEeOPSKtS95Q8Uw" name="organization" visibility="public" type="_420A62FD03B6418AA15801A9" association="_37ROUEcjEeOPSKtS95Q8Uw">
         <ownedComment xmi:id="_Q58mgEcxEeOPSKtS95Q8Uw" annotatedElement="_37URoEcjEeOPSKtS95Q8Uw">
@@ -2692,18 +2746,24 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
 &quot;Identifies the provider's controlled substance number, if required, by site.&quot; - HL7 Version 2.8, RXO-14.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gFGmcYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gFGmcIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_tu56MEQNEd-Hn5Pu2BVNlA" name="effectiveDateRange" visibility="public">
         <ownedComment xmi:id="_tu56MUQNEd-Hn5Pu2BVNlA" annotatedElement="_tu56MEQNEd-Hn5Pu2BVNlA">
           <body>An interval of time specifying the period during which the practitioner is authorized to prescribe medications under the associated DEA Id, if such time limit is applicable and known.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hEVO0Yy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hEVO0Iy2EeaPWbBiMJSPyg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_LLKj4EQOEd-Hn5Pu2BVNlA" name="licenseCategory" visibility="public">
         <ownedComment xmi:id="_LLKj4UQOEd-Hn5Pu2BVNlA" annotatedElement="_LLKj4EQOEd-Hn5Pu2BVNlA">
           <body>A classification of the provider's license.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hrQE4Yy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hrQE4Iy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6456374DC0190" name="licensingJurisdiction" visibility="public" type="_NefmUHS_Ed-Bj4191_mrEA" isUnique="false" association="_420A62FD03B6456374DB027A">
         <ownedComment xmi:id="_8s6CMBqaEd-j8JC21F3W2A" annotatedElement="_420A62FD03B6456374DC0190">
@@ -2722,6 +2782,8 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
           <body>Contains the dates (start and end) during which the provider's education took place.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s9a8sYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s9a8sIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6456372E7010F" name="Specialty">
@@ -2734,6 +2796,8 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
           <body>A code identifying the branch of medical science in which the provider has chosen to specialize.  This code should be from the National Uniform Claims Committee (NUCC) codeset.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0ULu4Yy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0ULu4Iy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_sQORQBsyEd--ZY2-pbJ-Pw" name="providerEducation_educationalInstitution" memberEnd="_sQORQRsyEd--ZY2-pbJ-Pw _sQORRBsyEd--ZY2-pbJ-Pw">
@@ -2800,12 +2864,16 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
           <body>An interval of time specifying the period during which the Medicare enrollment is in effect, if such time limit is applicable and known.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S1vCIYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S1vCIIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_5maigJaeEeCWW4VssVugdQ" name="medicareId" visibility="public">
         <ownedComment xmi:id="_5maigZaeEeCWW4VssVugdQ" annotatedElement="_5maigJaeEeCWW4VssVugdQ">
           <body>An identifier, assigned by the Centers for Medicare and Medicaid Services (CMS), to identify the Provider.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TVPBkYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TVPBkIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_hZzDMJONEeCRFv3DJq7yhQ" name="MedicaidProvider">
@@ -2817,12 +2885,16 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
           <body>An interval of time specifying the period during which the Medicaid enrollment is in effect, if such time limit is applicable and known.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OWOw8Yy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OWOw8Iy2EeaPWbBiMJSPyg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_EgDJUJOQEeCRFv3DJq7yhQ" name="medicaidId" visibility="public">
         <ownedComment xmi:id="_yPjCoJaeEeCWW4VssVugdQ" annotatedElement="_EgDJUJOQEeCRFv3DJq7yhQ">
           <body>An identifier, assigned by the State Medicaid office, to identify the Provider.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O93_wYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O93_wIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_qTwGcZONEeCRFv3DJq7yhQ" name="state" visibility="public" type="_ozMSoJONEeCRFv3DJq7yhQ" association="_qTwGcJONEeCRFv3DJq7yhQ">
         <ownedComment xmi:id="_RzYX8CrtEeOKCrmlnw-Z_w" annotatedElement="_qTwGcZONEeCRFv3DJq7yhQ">
@@ -2853,6 +2925,8 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
           <body>Identifies a State or Territory of the United States.  This would ordinarily be an Id, but because there are a finite number of States, States are normally represented as Codes.  The codes defined by the US Postal Service's Publication 28 should be used.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1GXZwYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1GXZwIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_qTwGcJONEeCRFv3DJq7yhQ" name="medicaidProvider_state" memberEnd="_qTwGcZONEeCRFv3DJq7yhQ _qTwGdJONEeCRFv3DJq7yhQ">
@@ -2906,6 +2980,8 @@ Note that because all we need is the person's name and contact information (addr
           <body>The date range during which this person is a contact party for the organization.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b7bbUYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b7bbUIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_7TKL77YqEeGWl-7OlqBMDw" name="name" visibility="public">
         <eAnnotations xmi:id="_7TKL8LYqEeGWl-7OlqBMDw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -2946,36 +3022,48 @@ Electronic Service Information = &quot;All information reasonably necessary to d
           <body>&quot;The address of the Electronic Service&quot; - ONC S&amp;I Clinical Element Data Dictionary (CEDD), March 2012.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0lQtQIy1EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0lQGMIy1EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nSLuEHyKEeOHq5zPTCjDoQ" name="id" visibility="public">
         <ownedComment xmi:id="_s0FQYHyKEeOHq5zPTCjDoQ" annotatedElement="_nSLuEHyKEeOHq5zPTCjDoQ">
           <body>&quot;An identifier assigned by the provider directory whose purpose is to uniquely identify a unique ESI for an individual, organization, individual-organization relationship.&quot; - ONC S&amp;I Clinical Element Data Dictionary (CEDD), March 2012.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1QuFEYy1EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1QuFEIy1EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_9Z-roHyKEeOHq5zPTCjDoQ" name="integrationProfile" visibility="public">
         <ownedComment xmi:id="_Kqp3gHyLEeOHq5zPTCjDoQ" annotatedElement="_9Z-roHyKEeOHq5zPTCjDoQ">
           <body>&quot;Identifies the integration profile which describes the transport and valid contents&quot; - ONC S&amp;I Clinical Element Data Dictionary (CEDD), March 2012.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1ylcAYy1EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1ylcAIy1EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_A5050HyPEeOHq5zPTCjDoQ" name="integrationProfileOptions" visibility="public">
         <ownedComment xmi:id="_K1qQ0HyPEeOHq5zPTCjDoQ" annotatedElement="_A5050HyPEeOHq5zPTCjDoQ">
           <body>&quot;Options defined for the specific Integration Profile&quot; - ONC S&amp;I Clinical Element Data Dictionary (CEDD), March 2012.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Wah0Yy1EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Wah0Iy1EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="__m4yoHyLEeOHq5zPTCjDoQ" name="integrationProfileVersion" visibility="public">
         <ownedComment xmi:id="_Sy5CkHyOEeOHq5zPTCjDoQ" annotatedElement="__m4yoHyLEeOHq5zPTCjDoQ">
           <body>&quot;The version(s) of the integration profile supported&quot; - ONC S&amp;I Clinical Element Data Dictionary (CEDD), March 2012.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_23-90Yy1EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_23-90Iy1EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Z3vv8HyPEeOHq5zPTCjDoQ" name="preferredMethod" visibility="public">
         <ownedComment xmi:id="_Z3vv8XyPEeOHq5zPTCjDoQ" annotatedElement="_Z3vv8HyPEeOHq5zPTCjDoQ">
           <body>&quot;Integer between 0 and 99 indicating the preferred order of the service, where 0 is the most preferred service and 99 is the least preferred&quot; - ONC S&amp;I Clinical Element Data Dictionary (CEDD), March 2012.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3ZP30Yy1EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3ZP30Iy1EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_wfIXEHyQEeOHq5zPTCjDoQ" name="providerDirectoryContentProfile" visibility="public" type="_-s3dkHyPEeOHq5zPTCjDoQ" association="_wfF60HyQEeOHq5zPTCjDoQ">
         <ownedComment xmi:id="_C9f6YHySEeOHq5zPTCjDoQ" annotatedElement="_wfIXEHyQEeOHq5zPTCjDoQ">
@@ -3004,18 +3092,24 @@ Electronic Service Information = &quot;All information reasonably necessary to d
           <body>&quot;A coded value that identifies, if appropriate, the content profile supported by the service.&quot; - ONC S&amp;I Clinical Element Data Dictionary (CEDD), March 2012.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o5z9UYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o5z9UIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_eOmmAHyQEeOHq5zPTCjDoQ" name="contentProfileConstraints" visibility="public">
         <ownedComment xmi:id="_eOmmAXyQEeOHq5zPTCjDoQ" annotatedElement="_eOmmAHyQEeOHq5zPTCjDoQ">
           <body>&quot;A coded value that identifies, if appropriate, additional constraints on this ContentProfile&quot; - ONC S&amp;I Clinical Element Data Dictionary (CEDD), March 2012.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_piWkAYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_piWkAIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_eLBGgHyQEeOHq5zPTCjDoQ" name="contentProfileVersion" visibility="public">
         <ownedComment xmi:id="_eLBGgXyQEeOHq5zPTCjDoQ" annotatedElement="_eLBGgHyQEeOHq5zPTCjDoQ">
           <body>&quot;The version(s) of the content profile supported&quot; - ONC S&amp;I Clinical Element Data Dictionary (CEDD), March 2012.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qGMQ4Yy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qGMQ4Iy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_wfF60HyQEeOHq5zPTCjDoQ" name="electronicServiceInformation_providerDirectoryContentProfile" memberEnd="_wfIXEHyQEeOHq5zPTCjDoQ _wfKMQHyQEeOHq5zPTCjDoQ">
@@ -3030,18 +3124,24 @@ Electronic Service Information = &quot;All information reasonably necessary to d
           <body>&quot;A coded value that identifies, if appropriate, the security profile supported by the service.&quot; - ONC S&amp;I Clinical Element Data Dictionary (CEDD), March 2012.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rBrBsYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rBrBsIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_MBjKRHyREeOHq5zPTCjDoQ" name="securityProfileConstraints" visibility="public">
         <ownedComment xmi:id="_MBjKRXyREeOHq5zPTCjDoQ" annotatedElement="_MBjKRHyREeOHq5zPTCjDoQ">
           <body>&quot;A coded value that identifies, if appropriate, constraints supported by this SecurityProfile&quot; - ONC S&amp;I Clinical Element Data Dictionary (CEDD), March 2012.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rp5fUYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rp5fUIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_MBjKRnyREeOHq5zPTCjDoQ" name="securityProfileVersion" visibility="public">
         <ownedComment xmi:id="_MBjKR3yREeOHq5zPTCjDoQ" annotatedElement="_MBjKRnyREeOHq5zPTCjDoQ">
           <body>&quot;Version(s) of the security profile supported&quot; - ONC S&amp;I Clinical Element Data Dictionary (CEDD), March 2012.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sMIpsYy2EeaPWbBiMJSPyg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sMIpsIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Uw9KYHyREeOHq5zPTCjDoQ" name="electronicServiceInformation_providerDirectorySecurityProfile" memberEnd="_Uw9xcHyREeOHq5zPTCjDoQ _Uw_moHyREeOHq5zPTCjDoQ">
