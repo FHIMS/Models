@@ -33,7 +33,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_TDF_IWi_EeG3pKm-C5y0hA" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TDGmMGi_EeG3pKm-C5y0hA" visible="false" type="StructureCompartment"/>
           <element xmi:type="uml:Class" href="Encounter.efx#_420A62FD03B64213F5B40316?FHIM/Encounter/EncounterEvent?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TDDi4Wi_EeG3pKm-C5y0hA" x="-1585" y="9510"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TDDi4Wi_EeG3pKm-C5y0hA" x="-1585" y="9827"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_goFOIGi_EeG3pKm-C5y0hA" element="_420A62FD03B6437B871C002E" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_goGcQGi_EeG3pKm-C5y0hA" type="ImageCompartment">
@@ -88,7 +88,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_XTeXMTfsEeKnE98EkGeXFQ" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_XTe-QDfsEeKnE98EkGeXFQ" visible="false" type="StructureCompartment"/>
           <element xmi:type="uml:Class" href="Common.efx#_7NSfgH_lEd-Ure_vzgD_TA?FHIM/Common/PrimaryPerformer?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XTWbYTfsEeKnE98EkGeXFQ" x="18386" y="9193"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XTWbYTfsEeKnE98EkGeXFQ" x="18386" y="9827"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_Jn_UAM5OEeSoLYfuQMb72Q" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_JoAiIM5OEeSoLYfuQMb72Q" type="ImageCompartment">
@@ -325,11 +325,27 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SlUX0XbOEea0e6yP60BtjQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SlUX0HbOEea0e6yP60BtjQ"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_JuWJgKEzEeaPGoZdqoy2Qw" name="dateTimeStart" visibility="public">
+        <ownedComment xmi:id="_JuWJgaEzEeaPGoZdqoy2Qw" annotatedElement="_JuWJgKEzEeaPGoZdqoy2Qw">
+          <body>The date (and optionally, time) on which the education occurred. This property is used both in situations where a single date/time is documented (which is typical for short-duration activities), or in situations where a start date/time and end date/time should be captured (which is typical for longer-duration activities, such as an hour-long counselling session).</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JuWJgqEzEeaPGoZdqoy2Qw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JuWJg6EzEeaPGoZdqoy2Qw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_tqJCcKEzEeaPGoZdqoy2Qw" name="dateTimeEnd" visibility="public">
+        <ownedComment xmi:id="_tqJCcaEzEeaPGoZdqoy2Qw" annotatedElement="_tqJCcKEzEeaPGoZdqoy2Qw">
+          <body>The date and time upon which a long-term education session completed. This optional property is only used in situations where both a start date/time and end date/time should be captured (which is typical for longer-duration activities, such as an hour-long counselling session).</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tqJCcqEzEeaPGoZdqoy2Qw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tqJCc6EzEeaPGoZdqoy2Qw"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_DXOrMDfsEeKnE98EkGeXFQ" name="duration" visibility="public">
         <ownedComment xmi:id="_N0IH4DfsEeKnE98EkGeXFQ" annotatedElement="_DXOrMDfsEeKnE98EkGeXFQ">
-          <body>The period of time in which the education ocurred. Note that this property is a TimeInterval, which contains both a begin and end date/time.</body>
+          <body>The amount of time over which a long-term education session was provided. This optional property is only used for longer-duration activities, such as an hour-long counselling session. Note that this property differs from the Professional Time property in that this property indicates the amount of time by which the patient benefitted from the education provided, which in group-education sessions may be calculated differently from the Professional Time property. For example, if a social worker provides a one-hour counselling session to 10 people, the social worker’s one hour may be allocated as six minutes of Professional Time to each patient for billing or workload tracking purposes, but each patient received one hour of benefit. In other words, in this example, this duration property would contain one hour while the Professional Time property would contain six minutes.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64239FAA800D9?FHIM/Datatypes/TimeQuantity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TlNukXbOEea0e6yP60BtjQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TlNukHbOEea0e6yP60BtjQ"/>
       </ownedAttribute>
@@ -428,4 +444,6 @@
   <Default:Documentation xmi:id="_BDjmsHbNEea0e6yP60BtjQ" base_Comment="_BDiYkXbNEea0e6yP60BtjQ"/>
   <Default:Documentation xmi:id="_8vDPIHbNEea0e6yP60BtjQ" base_Comment="_8vCBAXbNEea0e6yP60BtjQ"/>
   <Default:Documentation xmi:id="_x35p8HbOEea0e6yP60BtjQ" base_Comment="_x35C4XbOEea0e6yP60BtjQ"/>
+  <Default:Documentation xmi:id="_JuhIoKEzEeaPGoZdqoy2Qw" base_Comment="_JuWJgaEzEeaPGoZdqoy2Qw"/>
+  <Default:Documentation xmi:id="_tqJpgKEzEeaPGoZdqoy2Qw" base_Comment="_tqJCcaEzEeaPGoZdqoy2Qw"/>
 </xmi:XMI>
