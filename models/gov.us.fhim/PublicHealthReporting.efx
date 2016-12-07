@@ -207,7 +207,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_VR-4ERJyEeKyCcEaGXRWOg" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_VSAGMBJyEeKyCcEaGXRWOg" visible="false" type="StructureCompartment"/>
           <element xmi:type="uml:Class" href="Pharmacy.efx#_b9CpcEj4EeCSVeZMaVcw1Q?FHIM/Pharmacy/MedicationList?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VRvAcRJyEeKyCcEaGXRWOg" x="8242" y="19337"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VRvAcRJyEeKyCcEaGXRWOg" x="9193" y="19020"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_jCvqsEhTEeKFm6BiMe_FyA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_jCvqskhTEeKFm6BiMe_FyA" type="ImageCompartment">
@@ -736,6 +736,8 @@ In fact, a provider organization might act as an information source and might no
         <ownedComment xmi:id="_o0PdUKCSEeO-_tuxzOR0Jg" annotatedElement="_L-nXkLGAEeGkU9GcFSzOCA">
           <body>A categorization of the kind of report.</body>
         </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-rKFcbyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-rKFcLyoEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kdEf8LF_EeGkU9GcFSzOCA" name="reportDateTime" visibility="public">
         <eAnnotations xmi:id="_74idEBGAEeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -745,6 +747,8 @@ In fact, a provider organization might act as an information source and might no
 The date that the Med Watch report was created.  Medwatch 3500 form question B.4; Medwatch 3500A form question B.4; Medwatch 3500B form question D.2; VAERS-1 form question 6.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AVNzgbypEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AVNzgLypEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_EAviELGAEeGkU9GcFSzOCA" name="reportId" visibility="public">
         <ownedComment xmi:id="_c5KycKCSEeO-_tuxzOR0Jg" annotatedElement="_EAviELGAEeGkU9GcFSzOCA">
@@ -753,24 +757,32 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
 &quot;An identifier for the ICSR that is unique&quot; - ICH E2B(R3), C.1.1</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BG-AkbypEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BG-AkLypEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_YnpbsBIXEeK0rPN86AJEog" name="reportingSystem" visibility="public">
         <ownedComment xmi:id="_I5TeEBSJEeKpJeaG5gXc6Q" annotatedElement="_YnpbsBIXEeK0rPN86AJEog">
           <body>The system used to generate the report.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DPPUobypEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DPPUoLypEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_l0f3gBIXEeK0rPN86AJEog" name="sendingSystem" visibility="public">
         <ownedComment xmi:id="_LRtf4BSJEeKpJeaG5gXc6Q" annotatedElement="_l0f3gBIXEeK0rPN86AJEog">
           <body>Information about the sending system.  May be the same as the 'reporting system' but does not have to be (e.g., HIE)</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EuPpQbypEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EuPpQLypEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_H1atkLGAEeGkU9GcFSzOCA" name="status" visibility="public">
         <ownedComment xmi:id="_KAnl8LxbEeOKUOXGtjETEg" annotatedElement="_H1atkLGAEeGkU9GcFSzOCA">
           <body>&quot;Indicate[s] that a previously transmitted ICSR is either considered completely void (nullified)..., or amended&quot; - ICH E2B(R3), C.1.11.1.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FjZvobypEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FjZvoLypEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_aibvsLPYEeGd84AyH8JgAw" name="careGiver" visibility="public" association="_aiW3MLPYEeGd84AyH8JgAw">
         <ownedComment xmi:id="_dnUdALPYEeGd84AyH8JgAw" annotatedElement="_aibvsLPYEeGd84AyH8JgAw">
@@ -1849,9 +1861,13 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
       <packagedElement xmi:type="uml:Class" xmi:id="_2dI3MJ94EeGVHtLvLEEdog" name="NewbornHearingScreenReport">
         <ownedAttribute xmi:id="_-CCacKW3EeGMwKRzZx7F0w" name="method" visibility="public">
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XtuLAbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XtuLALypEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="__3gVQKA7EeGlSr96AT8gww" name="reasonNotPerformed" visibility="public">
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZBwlwbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZBwlwLypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_qB9MwKW2EeGMwKRzZx7F0w" name="reasonNotReferred" visibility="public">
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
@@ -1860,9 +1876,13 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
         </ownedAttribute>
         <ownedAttribute xmi:id="_I_uBkJ95EeGVHtLvLEEdog" name="reportDate" visibility="public">
           <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aVFO0bypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aVFO0LypEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_pl_F4KA5EeGlSr96AT8gww" name="screenProcedureDate" visibility="public">
           <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bOe8AbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bOe8ALypEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_ApBm8J96EeGVHtLvLEEdog" name="birthCertificate" visibility="public" association="_Ao65QJ96EeGVHtLvLEEdog">
           <type xmi:type="uml:Class" href="Person.efx#_BvzTEH2fEeGy1_tR17zNdw?FHIM/Person/BirthCertificate/BirthCertificate?"/>
@@ -1901,9 +1921,13 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
       <packagedElement xmi:type="uml:Class" xmi:id="_cZLacKBGEeGlSr96AT8gww" name="HearingLossRiskFactor">
         <ownedAttribute xmi:id="_tJMf8KW1EeGMwKRzZx7F0w" name="description" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ROA8obypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ROA8oLypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_oz-zMKW1EeGMwKRzZx7F0w" name="riskFactor" visibility="public">
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SItDQbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SItDQLypEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_tbsxsME_EeGAMqxxrstEdQ" name="receivingProvider" visibility="public" association="_tbRT4ME_EeGAMqxxrstEdQ">
           <type xmi:type="uml:Class" href="Provider.efx#_aW26cBsbEd--ZY2-pbJ-Pw?FHIM/Provider/HealthcareProvider?"/>
@@ -1917,12 +1941,18 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
       <packagedElement xmi:type="uml:Class" xmi:id="_4RzMEKW1EeGMwKRzZx7F0w" name="ReferralRequest">
         <ownedAttribute xmi:id="_1nlzIKW2EeGMwKRzZx7F0w" name="category" visibility="public">
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gPnTkbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gPnTkLypEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_9Unk0NAqEeGSWKtsWhX3ww" name="dateReferred" visibility="public">
           <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gs5FcbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gs5FcLypEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_lGGYsME_EeGAMqxxrstEdQ" name="reasonForReferral" visibility="public">
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hqQFkbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hqQFkLypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_vEMzMNAqEeGSWKtsWhX3ww" name="referringProvider" visibility="public" association="_vD9ioNAqEeGSWKtsWhX3ww">
           <type xmi:type="uml:Class" href="Provider.efx#_aW26cBsbEd--ZY2-pbJ-Pw?FHIM/Provider/HealthcareProvider?"/>
@@ -1954,6 +1984,8 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
       <packagedElement xmi:type="uml:Class" xmi:id="_G-jTgNArEeGSWKtsWhX3ww" name="ReferralPromise">
         <ownedAttribute xmi:id="_Jmp-MNArEeGSWKtsWhX3ww" name="dateAcknowledged" visibility="public">
           <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eiitwbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eiitwLypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_dy4xgNAsEeGSWKtsWhX3ww" name="consultingProvider" visibility="public" association="_dy28UNAsEeGSWKtsWhX3ww">
           <ownedComment xmi:id="_kAY1kNAsEeGSWKtsWhX3ww" annotatedElement="_dy4xgNAsEeGSWKtsWhX3ww">
@@ -2025,24 +2057,38 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
       <packagedElement xmi:type="uml:Class" xmi:id="_ZSSg4NA8EeGSWKtsWhX3ww" name="NewbornHearingProcedure">
         <ownedAttribute xmi:id="_bjGSUKW9EeGMwKRzZx7F0w" name="leftEarResult" visibility="public">
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TRLuQbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TRLuQLypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_bjFrQKW9EeGMwKRzZx7F0w" name="leftEarResultDescription" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TpF38bypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TpF38LypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_ol-aIKW6EeGMwKRzZx7F0w" name="procedureDescription" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UBX1EbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UBX1ELypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_cx_9IKW3EeGMwKRzZx7F0w" name="rightEarResult" visibility="public">
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ub84QbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ub84QLypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_vEn_8KW3EeGMwKRzZx7F0w" name="rightEarResultDescription" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UzAGUbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UzAGULypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_ZQHgIKA4EeGlSr96AT8gww" name="screenProcedureLeftEar" visibility="public">
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VLDZ8bypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VLDZ8LypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_vvUXYLvfEeGQGoDxtoz2mA" name="screenProcedureRightEar" visibility="public">
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vpr2sbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vpr2sLypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="__CMbwNA8EeGSWKtsWhX3ww" name="diagnosis" visibility="public" association="__CIKUNA8EeGSWKtsWhX3ww">
           <type xmi:type="uml:Class" href="Common.efx#_420A62FD03B6424070DB0209?FHIM/Common/Diagnosis?"/>
@@ -3324,15 +3370,23 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
     <packagedElement xmi:type="uml:Class" xmi:id="_ZrskUNgcEeG3E4mt6RKX5Q" name="VitalRecordsOrganization">
       <ownedAttribute xmi:id="_MVzSgNgiEeG3E4mt6RKX5Q" name="beginDate" visibility="public">
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JCN_4bypEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JCN_4LypEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_MVz5kNgiEeG3E4mt6RKX5Q" name="endDate" visibility="public">
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JgB9QbypEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JgB9QLypEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_jg_1gNgcEeG3E4mt6RKX5Q" name="id" visibility="public">
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J-zj8bypEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J-zj8LypEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ltBBINgcEeG3E4mt6RKX5Q" name="name" visibility="public">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K4IYobypEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K4IYoLypEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_hqDiANgcEeG3E4mt6RKX5Q" name="jurisdiction" visibility="public" association="_hqBFwNgcEeG3E4mt6RKX5Q">
         <type xmi:type="uml:Class" href="Provider.efx#_NefmUHS_Ed-Bj4191_mrEA?FHIM/Provider/Jurisdiction?"/>
@@ -3346,9 +3400,13 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
     <packagedElement xmi:type="uml:Class" xmi:id="_jraY8NggEeG3E4mt6RKX5Q" name="VitalRecordsOrganizationClient">
       <ownedAttribute xmi:id="_HYBw9dgiEeG3E4mt6RKX5Q" name="beginDate" visibility="public">
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MFZdAbypEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MFZdALypEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_HYC_ENgiEeG3E4mt6RKX5Q" name="endDate" visibility="public">
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MjzQQbypEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MjzQQLypEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_HYBw8NgiEeG3E4mt6RKX5Q" name="id" visibility="public">
         <eAnnotations xmi:id="_HYBw8dgiEeG3E4mt6RKX5Q" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -3673,7 +3731,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_sJIJMOiUEeGL3Lq_FbcbqA" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_sJIJMeiUEeGL3Lq_FbcbqA" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_sJIwQOiUEeGL3Lq_FbcbqA" visible="false" type="StructureCompartment"/>
-            <element xmi:type="uml:Class" href="Common.efx#_oDnb8AF2EeC0SO5AWIN0Qg?FHIM/Common/CommonProduct/MedicinalProduct?"/>
+            <element xmi:type="uml:Class" href="CommonProduct.efx#_oDnb8AF2EeC0SO5AWIN0Qg?FHIM/CommonProduct/MedicinalProduct?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sI3DceiUEeGL3Lq_FbcbqA" x="32968" y="30749"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_tGPRsOiUEeGL3Lq_FbcbqA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519679" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -3687,7 +3745,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_tGSVAOiUEeGL3Lq_FbcbqA" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_tGSVAeiUEeGL3Lq_FbcbqA" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_tGS8EOiUEeGL3Lq_FbcbqA" visible="false" type="StructureCompartment"/>
-            <element xmi:type="uml:Class" href="Common.efx#_jToVcM_3Ed-YeMSrwW6svA?FHIM/Common/CommonProduct/DrugIngredient?"/>
+            <element xmi:type="uml:Class" href="CommonProduct.efx#_jToVcM_3Ed-YeMSrwW6svA?FHIM/CommonProduct/DrugIngredient?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tGPRseiUEeGL3Lq_FbcbqA" x="44063" y="30115"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_vQfiwOiUEeGL3Lq_FbcbqA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519553" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -3701,7 +3759,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_vQjNIeiUEeGL3Lq_FbcbqA" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_vQj0MOiUEeGL3Lq_FbcbqA" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_vQj0MeiUEeGL3Lq_FbcbqA" visible="false" type="StructureCompartment"/>
-            <element xmi:type="uml:Class" href="Common.efx#_420A62FD03B645919F1600B4?FHIM/Common/CommonProduct/Substance?"/>
+            <element xmi:type="uml:Class" href="CommonProduct.efx#_420A62FD03B645919F1600B4?FHIM/CommonProduct/Substance?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vQfiweiUEeGL3Lq_FbcbqA" x="52305" y="31383"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_NyBrEOiYEeGL3Lq_FbcbqA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519553" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -3715,7 +3773,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_NyEHUeiYEeGL3Lq_FbcbqA" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_NyEuYOiYEeGL3Lq_FbcbqA" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_NyEuYeiYEeGL3Lq_FbcbqA" visible="false" type="StructureCompartment"/>
-            <element xmi:type="uml:Class" href="Common.efx#_420A62FD03B64592E9E3037C?FHIM/Common/CommonProduct/MedicinalProductInstance?"/>
+            <element xmi:type="uml:Class" href="CommonProduct.efx#_420A62FD03B64592E9E3037C?FHIM/CommonProduct/MedicinalProductInstance?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NyBrEeiYEeGL3Lq_FbcbqA" x="33602" y="45965"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_SaPzYOiYEeGL3Lq_FbcbqA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519553" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -3729,7 +3787,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_SaSPoOiYEeGL3Lq_FbcbqA" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_SaSPoeiYEeGL3Lq_FbcbqA" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_SaS2sOiYEeGL3Lq_FbcbqA" visible="false" type="StructureCompartment"/>
-            <element xmi:type="uml:Class" href="Common.efx#_NlR-MM_tEd-YeMSrwW6svA?FHIM/Common/CommonProduct/PackagedMedicinalProduct?"/>
+            <element xmi:type="uml:Class" href="CommonProduct.efx#_NlR-MM_tEd-YeMSrwW6svA?FHIM/CommonProduct/PackagedMedicinalProduct?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SaPzYeiYEeGL3Lq_FbcbqA" x="33602" y="38040"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_Zlf5IOiYEeGL3Lq_FbcbqA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519553" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -3743,7 +3801,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_ZliVYeiYEeGL3Lq_FbcbqA" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_Zli8cOiYEeGL3Lq_FbcbqA" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_Zli8ceiYEeGL3Lq_FbcbqA" visible="false" type="StructureCompartment"/>
-            <element xmi:type="uml:Class" href="Common.efx#_2iS00FPwEeC3dvg3Ss2k0Q?FHIM/Common/CommonProduct/ManufacturingLot?"/>
+            <element xmi:type="uml:Class" href="CommonProduct.efx#_2iS00FPwEeC3dvg3Ss2k0Q?FHIM/CommonProduct/ManufacturingLot?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Zlf5IeiYEeGL3Lq_FbcbqA" x="43429" y="45648"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_rmd1IOihEeGL3Lq_FbcbqA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519553" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -3757,7 +3815,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_rmgRYOihEeGL3Lq_FbcbqA" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_rmgRYeihEeGL3Lq_FbcbqA" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_rmg4cOihEeGL3Lq_FbcbqA" visible="false" type="StructureCompartment"/>
-            <element xmi:type="uml:Class" href="Common.efx#_ddsuwM_1Ed-YeMSrwW6svA?FHIM/Common/CommonProduct/Product?"/>
+            <element xmi:type="uml:Class" href="CommonProduct.efx#_ddsuwM_1Ed-YeMSrwW6svA?FHIM/CommonProduct/Product?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rmd1IeihEeGL3Lq_FbcbqA" x="33919" y="23775"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_3Dmb0EhREeKFm6BiMe_FyA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519679" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -3799,7 +3857,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_1A8VNltIEeaxDokgI-Y3eA" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_1A8VN1tIEeaxDokgI-Y3eA" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_1A8VOFtIEeaxDokgI-Y3eA" visible="false" type="StructureCompartment"/>
-            <element xmi:type="uml:Class" href="Common.efx#_420A62FD03B6419905DB00FB?FHIM/Common/CommonProduct/Manufacturer?"/>
+            <element xmi:type="uml:Class" href="CommonProduct.efx#_420A62FD03B6419905DB00FB?FHIM/CommonProduct/Manufacturer?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1A7uIVtIEeaxDokgI-Y3eA" x="44063" y="24726"/>
           </children>
           <element xsi:nil="true"/>
@@ -4359,12 +4417,12 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_7BLrIOY6EeGuIoEQ4Mvu0w" visible="false" type="ToMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_7BLrIuY6EeGuIoEQ4Mvu0w" type="ToMultiplicity"/>
-              <element xmi:type="uml:Property" href="Encounter.efx#_pgbd8Gi2EeG3pKm-C5y0hA?FHIM/Encounter/%3CAssociation%3E/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="Encounter.efx#_pgbd8Gi2EeG3pKm-C5y0hA?FHIM/Encounter/abstractDurableEncounter_discharge/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_7BLrIeY6EeGuIoEQ4Mvu0w" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_7BMSMOY6EeGuIoEQ4Mvu0w" type="ToRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_7BMSMuY6EeGuIoEQ4Mvu0w" type="ToRole"/>
-              <element xmi:type="uml:Property" href="Encounter.efx#_pgbd8Gi2EeG3pKm-C5y0hA?FHIM/Encounter/%3CAssociation%3E/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="Encounter.efx#_pgbd8Gi2EeG3pKm-C5y0hA?FHIM/Encounter/abstractDurableEncounter_discharge/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_7BMSMeY6EeGuIoEQ4Mvu0w" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_7BM5QOY6EeGuIoEQ4Mvu0w" type="FromMultiplicityLabel">
@@ -4379,7 +4437,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_7BNgUOY6EeGuIoEQ4Mvu0w" visible="false" type="ToQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_7BNgUuY6EeGuIoEQ4Mvu0w" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Encounter.efx#_pgbd8Gi2EeG3pKm-C5y0hA?FHIM/Encounter/%3CAssociation%3E/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="Encounter.efx#_pgbd8Gi2EeG3pKm-C5y0hA?FHIM/Encounter/abstractDurableEncounter_discharge/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_7BNgUeY6EeGuIoEQ4Mvu0w" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_7BNgU-Y6EeGuIoEQ4Mvu0w" visible="false" type="FromQualifierLabel">
@@ -4389,7 +4447,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_7BNgVuY6EeGuIoEQ4Mvu0w" visible="false" type="ToConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_7BOHYOY6EeGuIoEQ4Mvu0w" type="ToConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Encounter.efx#_pgbd8Gi2EeG3pKm-C5y0hA?FHIM/Encounter/%3CAssociation%3E/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="Encounter.efx#_pgbd8Gi2EeG3pKm-C5y0hA?FHIM/Encounter/abstractDurableEncounter_discharge/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_7BNgV-Y6EeGuIoEQ4Mvu0w" y="1058"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_7BOHYeY6EeGuIoEQ4Mvu0w" visible="false" type="FromConstraintLabel">
@@ -4397,7 +4455,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
               <element xmi:type="uml:Property" href="Encounter.efx#_pgXzkGi2EeG3pKm-C5y0hA?FHIM/Encounter/AbstractDurableEncounter/discharge?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_7BOHYuY6EeGuIoEQ4Mvu0w" y="1058"/>
             </children>
-            <element xmi:type="uml:Association" href="Encounter.efx#_pgTiIGi2EeG3pKm-C5y0hA?FHIM/Encounter/%3CAssociation%3E?"/>
+            <element xmi:type="uml:Association" href="Encounter.efx#_pgTiIGi2EeG3pKm-C5y0hA?FHIM/Encounter/abstractDurableEncounter_discharge?"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7BJ18eY6EeGuIoEQ4Mvu0w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
           </edges>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_VaacIOZQEeGuIoEQ4Mvu0w" source="_8jr_wOV2EeGA8s9JtidNVQ" target="_VaU8kOZQEeGuIoEQ4Mvu0w" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -4555,12 +4613,12 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4SnQecLEeGjtvsfy1ZDDQ" type="ToMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_Y4SnQ-cLEeGjtvsfy1ZDDQ" type="ToMultiplicity"/>
-              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD396600ED?FHIM/Encounter/%3CAssociation%3E/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD396600ED?FHIM/Encounter/dischargeEvent_dischargeFromLocation/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4SnQucLEeGjtvsfy1ZDDQ" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4TOUOcLEeGjtvsfy1ZDDQ" type="ToRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_Y4TOUucLEeGjtvsfy1ZDDQ" type="ToRole"/>
-              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD396600ED?FHIM/Encounter/%3CAssociation%3E/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD396600ED?FHIM/Encounter/dischargeEvent_dischargeFromLocation/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4TOUecLEeGjtvsfy1ZDDQ" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4TOU-cLEeGjtvsfy1ZDDQ" type="FromMultiplicityLabel">
@@ -4575,7 +4633,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4T1ZOcLEeGjtvsfy1ZDDQ" visible="false" type="ToQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_Y4UccOcLEeGjtvsfy1ZDDQ" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD396600ED?FHIM/Encounter/%3CAssociation%3E/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD396600ED?FHIM/Encounter/dischargeEvent_dischargeFromLocation/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4T1ZecLEeGjtvsfy1ZDDQ" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4UccecLEeGjtvsfy1ZDDQ" visible="false" type="FromQualifierLabel">
@@ -4585,7 +4643,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4UcdOcLEeGjtvsfy1ZDDQ" visible="false" type="ToConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_Y4VDgOcLEeGjtvsfy1ZDDQ" type="ToConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD396600ED?FHIM/Encounter/%3CAssociation%3E/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD396600ED?FHIM/Encounter/dischargeEvent_dischargeFromLocation/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4UcdecLEeGjtvsfy1ZDDQ" y="1058"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4VDgecLEeGjtvsfy1ZDDQ" visible="false" type="FromConstraintLabel">
@@ -4593,7 +4651,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
               <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD396600D9?FHIM/Encounter/DischargeEvent/dischargeFromLocation?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4VDgucLEeGjtvsfy1ZDDQ" y="1058"/>
             </children>
-            <element xmi:type="uml:Association" href="Encounter.efx#_420A62FD03B642CD395F025F?FHIM/Encounter/%3CAssociation%3E?"/>
+            <element xmi:type="uml:Association" href="Encounter.efx#_420A62FD03B642CD395F025F?FHIM/Encounter/dischargeEvent_dischargeFromLocation?"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Y4QyEecLEeGjtvsfy1ZDDQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
           </edges>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_Y4Yt4ecLEeGjtvsfy1ZDDQ" source="_7BE9cOY6EeGuIoEQ4Mvu0w" target="_Y3_sUOcLEeGjtvsfy1ZDDQ" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -4604,12 +4662,12 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4ZU8ucLEeGjtvsfy1ZDDQ" type="ToMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_Y4ZU9OcLEeGjtvsfy1ZDDQ" type="ToMultiplicity"/>
-              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD39B90269?FHIM/Encounter/%3CAssociation%3E/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD39B90269?FHIM/Encounter/dischargeEvent_dischargeToLocation/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4ZU8-cLEeGjtvsfy1ZDDQ" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4ZU9ecLEeGjtvsfy1ZDDQ" type="ToRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_Y4Z8AOcLEeGjtvsfy1ZDDQ" type="ToRole"/>
-              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD39B90269?FHIM/Encounter/%3CAssociation%3E/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD39B90269?FHIM/Encounter/dischargeEvent_dischargeToLocation/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4ZU9ucLEeGjtvsfy1ZDDQ" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4Z8AecLEeGjtvsfy1ZDDQ" type="FromMultiplicityLabel">
@@ -4624,7 +4682,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4Z8B-cLEeGjtvsfy1ZDDQ" visible="false" type="ToQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_Y4ajEOcLEeGjtvsfy1ZDDQ" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD39B90269?FHIM/Encounter/%3CAssociation%3E/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD39B90269?FHIM/Encounter/dischargeEvent_dischargeToLocation/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4Z8COcLEeGjtvsfy1ZDDQ" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4ajEecLEeGjtvsfy1ZDDQ" visible="false" type="FromQualifierLabel">
@@ -4634,7 +4692,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4ajFOcLEeGjtvsfy1ZDDQ" visible="false" type="ToConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_Y4ajFucLEeGjtvsfy1ZDDQ" type="ToConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD39B90269?FHIM/Encounter/%3CAssociation%3E/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD39B90269?FHIM/Encounter/dischargeEvent_dischargeToLocation/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4ajFecLEeGjtvsfy1ZDDQ" y="1058"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4ajF-cLEeGjtvsfy1ZDDQ" visible="false" type="FromConstraintLabel">
@@ -4642,7 +4700,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
               <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B642CD39B90255?FHIM/Encounter/DischargeEvent/dischargeToLocation?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4ajGOcLEeGjtvsfy1ZDDQ" y="1058"/>
             </children>
-            <element xmi:type="uml:Association" href="Encounter.efx#_420A62FD03B642CD39B80339?FHIM/Encounter/%3CAssociation%3E?"/>
+            <element xmi:type="uml:Association" href="Encounter.efx#_420A62FD03B642CD39B80339?FHIM/Encounter/dischargeEvent_dischargeToLocation?"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Y4Yt4ucLEeGjtvsfy1ZDDQ" points="[-2803, -258, 13350, -5963]$[-11707, -258, 4446, -5963]$[-14806, 3898, 1347, -1807]"/>
           </edges>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_Y4bKIecLEeGjtvsfy1ZDDQ" source="_Y3_sUOcLEeGjtvsfy1ZDDQ" target="_CjbcAOV0EeGA8s9JtidNVQ" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -4702,12 +4760,12 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4e0gOcLEeGjtvsfy1ZDDQ" type="ToMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_Y4fbkOcLEeGjtvsfy1ZDDQ" type="ToMultiplicity"/>
-              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B64318C0C2012B?FHIM/Encounter/%3CAssociation%3E/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B64318C0C2012B?FHIM/Encounter/encounterEvent_serviceDeliveryLocation/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4e0gecLEeGjtvsfy1ZDDQ" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4fbkecLEeGjtvsfy1ZDDQ" type="ToRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_Y4fbk-cLEeGjtvsfy1ZDDQ" type="ToRole"/>
-              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B64318C0C2012B?FHIM/Encounter/%3CAssociation%3E/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B64318C0C2012B?FHIM/Encounter/encounterEvent_serviceDeliveryLocation/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4fbkucLEeGjtvsfy1ZDDQ" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4fblOcLEeGjtvsfy1ZDDQ" type="FromMultiplicityLabel">
@@ -4722,7 +4780,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4gCo-cLEeGjtvsfy1ZDDQ" visible="false" type="ToQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_Y4gCpecLEeGjtvsfy1ZDDQ" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B64318C0C2012B?FHIM/Encounter/%3CAssociation%3E/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B64318C0C2012B?FHIM/Encounter/encounterEvent_serviceDeliveryLocation/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4gCpOcLEeGjtvsfy1ZDDQ" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4gCpucLEeGjtvsfy1ZDDQ" visible="false" type="FromQualifierLabel">
@@ -4732,7 +4790,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4gpsecLEeGjtvsfy1ZDDQ" visible="false" type="ToConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_Y4gps-cLEeGjtvsfy1ZDDQ" type="ToConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B64318C0C2012B?FHIM/Encounter/%3CAssociation%3E/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B64318C0C2012B?FHIM/Encounter/encounterEvent_serviceDeliveryLocation/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4gpsucLEeGjtvsfy1ZDDQ" y="1058"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Y4gptOcLEeGjtvsfy1ZDDQ" visible="false" type="FromConstraintLabel">
@@ -4740,7 +4798,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
               <element xmi:type="uml:Property" href="Encounter.efx#_420A62FD03B64318C0C200EF?FHIM/Encounter/EncounterEvent/serviceDeliveryLocation?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Y4gptecLEeGjtvsfy1ZDDQ" y="1058"/>
             </children>
-            <element xmi:type="uml:Association" href="Encounter.efx#_420A62FD03B64318C0C1001B?FHIM/Encounter/%3CAssociation%3E?"/>
+            <element xmi:type="uml:Association" href="Encounter.efx#_420A62FD03B64318C0C1001B?FHIM/Encounter/encounterEvent_serviceDeliveryLocation?"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Y4dmZOcLEeGjtvsfy1ZDDQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
           </edges>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_Y4liMOcLEeGjtvsfy1ZDDQ" source="_8jr_wOV2EeGA8s9JtidNVQ" target="_Y3_sUOcLEeGjtvsfy1ZDDQ" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -4840,45 +4898,45 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_tGaQ0OiUEeGL3Lq_FbcbqA" type="ToMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_tGd7MOiUEeGL3Lq_FbcbqA" type="ToMultiplicity"/>
-              <element xmi:type="uml:Property" href="Common.efx#_fQ5a8NrbEd-fKY5dgJoxiA?FHIM/Common/CommonProduct/DrugIngredient/medicinalProduct?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_fQ5a8NrbEd-fKY5dgJoxiA?FHIM/CommonProduct/DrugIngredient/medicinalProduct?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_tGaQ0eiUEeGL3Lq_FbcbqA" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_tGeiQOiUEeGL3Lq_FbcbqA" type="ToRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_tGeiQuiUEeGL3Lq_FbcbqA" type="ToRole"/>
-              <element xmi:type="uml:Property" href="Common.efx#_fQ5a8NrbEd-fKY5dgJoxiA?FHIM/Common/CommonProduct/DrugIngredient/medicinalProduct?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_fQ5a8NrbEd-fKY5dgJoxiA?FHIM/CommonProduct/DrugIngredient/medicinalProduct?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_tGeiQeiUEeGL3Lq_FbcbqA" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_tGeiQ-iUEeGL3Lq_FbcbqA" type="FromMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_tGeiReiUEeGL3Lq_FbcbqA" type="FromMultiplicity"/>
-              <element xmi:type="uml:Property" href="Common.efx#_fQ2XoNrbEd-fKY5dgJoxiA?FHIM/Common/CommonProduct/MedicinalProduct/ingredient?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_fQ2XoNrbEd-fKY5dgJoxiA?FHIM/CommonProduct/MedicinalProduct/ingredient?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_tGeiROiUEeGL3Lq_FbcbqA" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_tGfJUOiUEeGL3Lq_FbcbqA" type="FromRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_tGfJUuiUEeGL3Lq_FbcbqA" type="FromRole"/>
-              <element xmi:type="uml:Property" href="Common.efx#_fQ2XoNrbEd-fKY5dgJoxiA?FHIM/Common/CommonProduct/MedicinalProduct/ingredient?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_fQ2XoNrbEd-fKY5dgJoxiA?FHIM/CommonProduct/MedicinalProduct/ingredient?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_tGfJUeiUEeGL3Lq_FbcbqA" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_tGfJU-iUEeGL3Lq_FbcbqA" visible="false" type="ToQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_tGfwYOiUEeGL3Lq_FbcbqA" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_fQ5a8NrbEd-fKY5dgJoxiA?FHIM/Common/CommonProduct/DrugIngredient/medicinalProduct?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_fQ5a8NrbEd-fKY5dgJoxiA?FHIM/CommonProduct/DrugIngredient/medicinalProduct?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_tGfJVOiUEeGL3Lq_FbcbqA" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_tGfwYeiUEeGL3Lq_FbcbqA" visible="false" type="FromQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_tGgXcOiUEeGL3Lq_FbcbqA" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_fQ2XoNrbEd-fKY5dgJoxiA?FHIM/Common/CommonProduct/MedicinalProduct/ingredient?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_fQ2XoNrbEd-fKY5dgJoxiA?FHIM/CommonProduct/MedicinalProduct/ingredient?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_tGfwYuiUEeGL3Lq_FbcbqA" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_tGgXceiUEeGL3Lq_FbcbqA" visible="false" type="ToConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_tGgXc-iUEeGL3Lq_FbcbqA" type="ToConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_fQ5a8NrbEd-fKY5dgJoxiA?FHIM/Common/CommonProduct/DrugIngredient/medicinalProduct?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_fQ5a8NrbEd-fKY5dgJoxiA?FHIM/CommonProduct/DrugIngredient/medicinalProduct?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_tGgXcuiUEeGL3Lq_FbcbqA" y="1058"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_tGg-gOiUEeGL3Lq_FbcbqA" visible="false" type="FromConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_tGg-guiUEeGL3Lq_FbcbqA" type="FromConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_fQ2XoNrbEd-fKY5dgJoxiA?FHIM/Common/CommonProduct/MedicinalProduct/ingredient?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_fQ2XoNrbEd-fKY5dgJoxiA?FHIM/CommonProduct/MedicinalProduct/ingredient?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_tGg-geiUEeGL3Lq_FbcbqA" y="1058"/>
             </children>
-            <element xmi:type="uml:Association" href="Common.efx#_fQz7YNrbEd-fKY5dgJoxiA?FHIM/Common/CommonProduct/medicinalproduct_ingredient?"/>
+            <element xmi:type="uml:Association" href="CommonProduct.efx#_fQz7YNrbEd-fKY5dgJoxiA?FHIM/CommonProduct/medicinalproduct_ingredient?"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tGXNgeiUEeGL3Lq_FbcbqA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
           </edges>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_vQlpYOiUEeGL3Lq_FbcbqA" source="_tGPRsOiUEeGL3Lq_FbcbqA" target="_vQfiwOiUEeGL3Lq_FbcbqA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -4889,45 +4947,45 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_vQnekOiUEeGL3Lq_FbcbqA" visible="false" type="ToMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_vQnekuiUEeGL3Lq_FbcbqA" type="ToMultiplicity"/>
-              <element xmi:type="uml:Property" href="Common.efx#_0-rzkDlCEeCOabXzDmEF2w?FHIM/Common/CommonProduct/drugIngredient_ingredient/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_0-rzkDlCEeCOabXzDmEF2w?FHIM/CommonProduct/drugIngredient_ingredient/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_vQnekeiUEeGL3Lq_FbcbqA" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_vQoFoOiUEeGL3Lq_FbcbqA" type="ToRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_vQoFouiUEeGL3Lq_FbcbqA" type="ToRole"/>
-              <element xmi:type="uml:Property" href="Common.efx#_0-rzkDlCEeCOabXzDmEF2w?FHIM/Common/CommonProduct/drugIngredient_ingredient/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_0-rzkDlCEeCOabXzDmEF2w?FHIM/CommonProduct/drugIngredient_ingredient/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_vQoFoeiUEeGL3Lq_FbcbqA" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_vQossOiUEeGL3Lq_FbcbqA" type="FromMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_vQossuiUEeGL3Lq_FbcbqA" type="FromMultiplicity"/>
-              <element xmi:type="uml:Property" href="Common.efx#_0-pXUDlCEeCOabXzDmEF2w?FHIM/Common/CommonProduct/DrugIngredient/ingredientSubstance?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_0-pXUDlCEeCOabXzDmEF2w?FHIM/CommonProduct/DrugIngredient/ingredientSubstance?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_vQosseiUEeGL3Lq_FbcbqA" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_vQpTwOiUEeGL3Lq_FbcbqA" type="FromRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_vQpTwuiUEeGL3Lq_FbcbqA" type="FromRole"/>
-              <element xmi:type="uml:Property" href="Common.efx#_0-pXUDlCEeCOabXzDmEF2w?FHIM/Common/CommonProduct/DrugIngredient/ingredientSubstance?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_0-pXUDlCEeCOabXzDmEF2w?FHIM/CommonProduct/DrugIngredient/ingredientSubstance?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_vQpTweiUEeGL3Lq_FbcbqA" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_vQpTw-iUEeGL3Lq_FbcbqA" visible="false" type="ToQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_vQpTxeiUEeGL3Lq_FbcbqA" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_0-rzkDlCEeCOabXzDmEF2w?FHIM/Common/CommonProduct/drugIngredient_ingredient/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_0-rzkDlCEeCOabXzDmEF2w?FHIM/CommonProduct/drugIngredient_ingredient/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_vQpTxOiUEeGL3Lq_FbcbqA" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_vQpTxuiUEeGL3Lq_FbcbqA" visible="false" type="FromQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_vQp60OiUEeGL3Lq_FbcbqA" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_0-pXUDlCEeCOabXzDmEF2w?FHIM/Common/CommonProduct/DrugIngredient/ingredientSubstance?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_0-pXUDlCEeCOabXzDmEF2w?FHIM/CommonProduct/DrugIngredient/ingredientSubstance?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_vQpTx-iUEeGL3Lq_FbcbqA" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_vQp60eiUEeGL3Lq_FbcbqA" visible="false" type="ToConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_vQp60-iUEeGL3Lq_FbcbqA" type="ToConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_0-rzkDlCEeCOabXzDmEF2w?FHIM/Common/CommonProduct/drugIngredient_ingredient/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_0-rzkDlCEeCOabXzDmEF2w?FHIM/CommonProduct/drugIngredient_ingredient/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_vQp60uiUEeGL3Lq_FbcbqA" y="1058"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_vQp61OiUEeGL3Lq_FbcbqA" visible="false" type="FromConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_vQp61uiUEeGL3Lq_FbcbqA" type="FromConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_0-pXUDlCEeCOabXzDmEF2w?FHIM/Common/CommonProduct/DrugIngredient/ingredientSubstance?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_0-pXUDlCEeCOabXzDmEF2w?FHIM/CommonProduct/DrugIngredient/ingredientSubstance?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_vQp61eiUEeGL3Lq_FbcbqA" y="1058"/>
             </children>
-            <element xmi:type="uml:Association" href="Common.efx#_0-mUADlCEeCOabXzDmEF2w?FHIM/Common/CommonProduct/drugIngredient_ingredient?"/>
+            <element xmi:type="uml:Association" href="CommonProduct.efx#_0-mUADlCEeCOabXzDmEF2w?FHIM/CommonProduct/drugIngredient_ingredient?"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vQlpYeiUEeGL3Lq_FbcbqA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
           </edges>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_SaVS8OiYEeGL3Lq_FbcbqA" source="_SaPzYOiYEeGL3Lq_FbcbqA" target="_NyBrEOiYEeGL3Lq_FbcbqA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -4938,45 +4996,45 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_SaWhEeiYEeGL3Lq_FbcbqA" type="ToMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_SaXIIOiYEeGL3Lq_FbcbqA" type="ToMultiplicity"/>
-              <element xmi:type="uml:Property" href="Common.efx#_8_X7Y1AeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/MedicinalProductInstance/packagedMedicinalProduct?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_8_X7Y1AeEeCNoo8JCSlflA?FHIM/CommonProduct/MedicinalProductInstance/packagedMedicinalProduct?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_SaWhEuiYEeGL3Lq_FbcbqA" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_SaXIIeiYEeGL3Lq_FbcbqA" type="ToRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_SaXII-iYEeGL3Lq_FbcbqA" type="ToRole"/>
-              <element xmi:type="uml:Property" href="Common.efx#_8_X7Y1AeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/MedicinalProductInstance/packagedMedicinalProduct?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_8_X7Y1AeEeCNoo8JCSlflA?FHIM/CommonProduct/MedicinalProductInstance/packagedMedicinalProduct?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_SaXIIuiYEeGL3Lq_FbcbqA" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_SaXIJOiYEeGL3Lq_FbcbqA" type="FromMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_SaXIJuiYEeGL3Lq_FbcbqA" type="FromMultiplicity"/>
-              <element xmi:type="uml:Property" href="Common.efx#_8_X7YFAeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/PackagedMedicinalProduct/productInstance?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_8_X7YFAeEeCNoo8JCSlflA?FHIM/CommonProduct/PackagedMedicinalProduct/productInstance?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_SaXIJeiYEeGL3Lq_FbcbqA" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_SaXvMOiYEeGL3Lq_FbcbqA" type="FromRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_SaXvMuiYEeGL3Lq_FbcbqA" type="FromRole"/>
-              <element xmi:type="uml:Property" href="Common.efx#_8_X7YFAeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/PackagedMedicinalProduct/productInstance?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_8_X7YFAeEeCNoo8JCSlflA?FHIM/CommonProduct/PackagedMedicinalProduct/productInstance?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_SaXvMeiYEeGL3Lq_FbcbqA" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_SaYWQOiYEeGL3Lq_FbcbqA" visible="false" type="ToQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_SaYWQuiYEeGL3Lq_FbcbqA" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_8_X7Y1AeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/MedicinalProductInstance/packagedMedicinalProduct?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_8_X7Y1AeEeCNoo8JCSlflA?FHIM/CommonProduct/MedicinalProductInstance/packagedMedicinalProduct?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_SaYWQeiYEeGL3Lq_FbcbqA" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_SaYWQ-iYEeGL3Lq_FbcbqA" visible="false" type="FromQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_SaYWReiYEeGL3Lq_FbcbqA" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_8_X7YFAeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/PackagedMedicinalProduct/productInstance?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_8_X7YFAeEeCNoo8JCSlflA?FHIM/CommonProduct/PackagedMedicinalProduct/productInstance?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_SaYWROiYEeGL3Lq_FbcbqA" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_SaYWRuiYEeGL3Lq_FbcbqA" visible="false" type="ToConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_SaY9UOiYEeGL3Lq_FbcbqA" type="ToConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_8_X7Y1AeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/MedicinalProductInstance/packagedMedicinalProduct?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_8_X7Y1AeEeCNoo8JCSlflA?FHIM/CommonProduct/MedicinalProductInstance/packagedMedicinalProduct?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_SaYWR-iYEeGL3Lq_FbcbqA" y="1058"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_SaY9UeiYEeGL3Lq_FbcbqA" visible="false" type="FromConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_SaY9U-iYEeGL3Lq_FbcbqA" type="FromConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_8_X7YFAeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/PackagedMedicinalProduct/productInstance?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_8_X7YFAeEeCNoo8JCSlflA?FHIM/CommonProduct/PackagedMedicinalProduct/productInstance?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_SaY9UuiYEeGL3Lq_FbcbqA" y="1058"/>
             </children>
-            <element xmi:type="uml:Association" href="Common.efx#_8_OKYFAeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/packagedMedicinalProduct_productInstance?"/>
+            <element xmi:type="uml:Association" href="CommonProduct.efx#_8_OKYFAeEeCNoo8JCSlflA?FHIM/CommonProduct/packagedMedicinalProduct_productInstance?"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SaVS8eiYEeGL3Lq_FbcbqA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
           </edges>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_SabZluiYEeGL3Lq_FbcbqA" source="_sI3DcOiUEeGL3Lq_FbcbqA" target="_SaPzYOiYEeGL3Lq_FbcbqA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -4987,45 +5045,45 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_SacApOiYEeGL3Lq_FbcbqA" type="ToMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_SacApuiYEeGL3Lq_FbcbqA" type="ToMultiplicity"/>
-              <element xmi:type="uml:Property" href="Common.efx#_1SfINFAeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/PackagedMedicinalProduct/medicinalProduct?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_1SfINFAeEeCNoo8JCSlflA?FHIM/CommonProduct/PackagedMedicinalProduct/medicinalProduct?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_SacApeiYEeGL3Lq_FbcbqA" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_SacnsOiYEeGL3Lq_FbcbqA" type="ToRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_SacnsuiYEeGL3Lq_FbcbqA" type="ToRole"/>
-              <element xmi:type="uml:Property" href="Common.efx#_1SfINFAeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/PackagedMedicinalProduct/medicinalProduct?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_1SfINFAeEeCNoo8JCSlflA?FHIM/CommonProduct/PackagedMedicinalProduct/medicinalProduct?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_SacnseiYEeGL3Lq_FbcbqA" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Sacns-iYEeGL3Lq_FbcbqA" type="FromMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_SacnteiYEeGL3Lq_FbcbqA" type="FromMultiplicity"/>
-              <element xmi:type="uml:Property" href="Common.efx#_1SfIMVAeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/MedicinalProduct/packagedMedicinalProduct?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_1SfIMVAeEeCNoo8JCSlflA?FHIM/CommonProduct/MedicinalProduct/packagedMedicinalProduct?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_SacntOiYEeGL3Lq_FbcbqA" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_SacntuiYEeGL3Lq_FbcbqA" type="FromRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_SadOwOiYEeGL3Lq_FbcbqA" type="FromRole"/>
-              <element xmi:type="uml:Property" href="Common.efx#_1SfIMVAeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/MedicinalProduct/packagedMedicinalProduct?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_1SfIMVAeEeCNoo8JCSlflA?FHIM/CommonProduct/MedicinalProduct/packagedMedicinalProduct?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Sacnt-iYEeGL3Lq_FbcbqA" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_SadOweiYEeGL3Lq_FbcbqA" visible="false" type="ToQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_SadOw-iYEeGL3Lq_FbcbqA" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_1SfINFAeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/PackagedMedicinalProduct/medicinalProduct?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_1SfINFAeEeCNoo8JCSlflA?FHIM/CommonProduct/PackagedMedicinalProduct/medicinalProduct?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_SadOwuiYEeGL3Lq_FbcbqA" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_SadOxOiYEeGL3Lq_FbcbqA" visible="false" type="FromQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_SadOxuiYEeGL3Lq_FbcbqA" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_1SfIMVAeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/MedicinalProduct/packagedMedicinalProduct?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_1SfIMVAeEeCNoo8JCSlflA?FHIM/CommonProduct/MedicinalProduct/packagedMedicinalProduct?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_SadOxeiYEeGL3Lq_FbcbqA" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_SadOx-iYEeGL3Lq_FbcbqA" visible="false" type="ToConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_Sad10OiYEeGL3Lq_FbcbqA" type="ToConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_1SfINFAeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/PackagedMedicinalProduct/medicinalProduct?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_1SfINFAeEeCNoo8JCSlflA?FHIM/CommonProduct/PackagedMedicinalProduct/medicinalProduct?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_SadOyOiYEeGL3Lq_FbcbqA" y="1058"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Sad10eiYEeGL3Lq_FbcbqA" visible="false" type="FromConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_Sad10-iYEeGL3Lq_FbcbqA" type="FromConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_1SfIMVAeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/MedicinalProduct/packagedMedicinalProduct?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_1SfIMVAeEeCNoo8JCSlflA?FHIM/CommonProduct/MedicinalProduct/packagedMedicinalProduct?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Sad10uiYEeGL3Lq_FbcbqA" y="1058"/>
             </children>
-            <element xmi:type="uml:Association" href="Common.efx#_1SfIMFAeEeCNoo8JCSlflA?FHIM/Common/CommonProduct/medicinalProduct_packagedMedicinalProduct?"/>
+            <element xmi:type="uml:Association" href="CommonProduct.efx#_1SfIMFAeEeCNoo8JCSlflA?FHIM/CommonProduct/medicinalProduct_packagedMedicinalProduct?"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SabZl-iYEeGL3Lq_FbcbqA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
           </edges>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_ZlkxoOiYEeGL3Lq_FbcbqA" source="_NyBrEOiYEeGL3Lq_FbcbqA" target="_Zlf5IOiYEeGL3Lq_FbcbqA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -5036,45 +5094,45 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Zll_weiYEeGL3Lq_FbcbqA" type="ToMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_Zll_w-iYEeGL3Lq_FbcbqA" type="ToMultiplicity"/>
-              <element xmi:type="uml:Property" href="Common.efx#_0UYQUqc1EeCkJ6Eur_P0ag?FHIM/Common/CommonProduct/medicinalProductInstance_manufacturingLot/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_0UYQUqc1EeCkJ6Eur_P0ag?FHIM/CommonProduct/medicinalProductInstance_manufacturingLot/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Zll_wuiYEeGL3Lq_FbcbqA" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Zlmm0OiYEeGL3Lq_FbcbqA" type="ToRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_Zlmm0uiYEeGL3Lq_FbcbqA" type="ToRole"/>
-              <element xmi:type="uml:Property" href="Common.efx#_0UYQUqc1EeCkJ6Eur_P0ag?FHIM/Common/CommonProduct/medicinalProductInstance_manufacturingLot/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_0UYQUqc1EeCkJ6Eur_P0ag?FHIM/CommonProduct/medicinalProductInstance_manufacturingLot/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Zlmm0eiYEeGL3Lq_FbcbqA" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_ZlnN4OiYEeGL3Lq_FbcbqA" type="FromMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_ZlnN4uiYEeGL3Lq_FbcbqA" type="FromMultiplicity"/>
-              <element xmi:type="uml:Property" href="Common.efx#_0UVNAac1EeCkJ6Eur_P0ag?FHIM/Common/CommonProduct/MedicinalProductInstance/manufacturingLot?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_0UVNAac1EeCkJ6Eur_P0ag?FHIM/CommonProduct/MedicinalProductInstance/manufacturingLot?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_ZlnN4eiYEeGL3Lq_FbcbqA" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_Zln08OiYEeGL3Lq_FbcbqA" type="FromRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_Zln08uiYEeGL3Lq_FbcbqA" type="FromRole"/>
-              <element xmi:type="uml:Property" href="Common.efx#_0UVNAac1EeCkJ6Eur_P0ag?FHIM/Common/CommonProduct/MedicinalProductInstance/manufacturingLot?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_0UVNAac1EeCkJ6Eur_P0ag?FHIM/CommonProduct/MedicinalProductInstance/manufacturingLot?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_Zln08eiYEeGL3Lq_FbcbqA" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_ZlocAOiYEeGL3Lq_FbcbqA" visible="false" type="ToQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_ZlocAuiYEeGL3Lq_FbcbqA" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_0UYQUqc1EeCkJ6Eur_P0ag?FHIM/Common/CommonProduct/medicinalProductInstance_manufacturingLot/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_0UYQUqc1EeCkJ6Eur_P0ag?FHIM/CommonProduct/medicinalProductInstance_manufacturingLot/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_ZlocAeiYEeGL3Lq_FbcbqA" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_ZlocA-iYEeGL3Lq_FbcbqA" visible="false" type="FromQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_ZlpDEOiYEeGL3Lq_FbcbqA" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_0UVNAac1EeCkJ6Eur_P0ag?FHIM/Common/CommonProduct/MedicinalProductInstance/manufacturingLot?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_0UVNAac1EeCkJ6Eur_P0ag?FHIM/CommonProduct/MedicinalProductInstance/manufacturingLot?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_ZlocBOiYEeGL3Lq_FbcbqA" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_ZlpDEeiYEeGL3Lq_FbcbqA" visible="false" type="ToConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_ZlpqIOiYEeGL3Lq_FbcbqA" type="ToConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_0UYQUqc1EeCkJ6Eur_P0ag?FHIM/Common/CommonProduct/medicinalProductInstance_manufacturingLot/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_0UYQUqc1EeCkJ6Eur_P0ag?FHIM/CommonProduct/medicinalProductInstance_manufacturingLot/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_ZlpDEuiYEeGL3Lq_FbcbqA" y="1058"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_ZlpqIeiYEeGL3Lq_FbcbqA" visible="false" type="FromConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_ZlpqI-iYEeGL3Lq_FbcbqA" type="FromConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_0UVNAac1EeCkJ6Eur_P0ag?FHIM/Common/CommonProduct/MedicinalProductInstance/manufacturingLot?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_0UVNAac1EeCkJ6Eur_P0ag?FHIM/CommonProduct/MedicinalProductInstance/manufacturingLot?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_ZlpqIuiYEeGL3Lq_FbcbqA" y="1058"/>
             </children>
-            <element xmi:type="uml:Association" href="Common.efx#_0UVNAKc1EeCkJ6Eur_P0ag?FHIM/Common/CommonProduct/medicinalProductInstance_manufacturingLot?"/>
+            <element xmi:type="uml:Association" href="CommonProduct.efx#_0UVNAKc1EeCkJ6Eur_P0ag?FHIM/CommonProduct/medicinalProductInstance_manufacturingLot?"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZlkxoeiYEeGL3Lq_FbcbqA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
           </edges>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_rmjUsOihEeGL3Lq_FbcbqA" source="_sI3DcOiUEeGL3Lq_FbcbqA" target="_rmd1IOihEeGL3Lq_FbcbqA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -5083,7 +5141,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_rmki0OihEeGL3Lq_FbcbqA" type="Name"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rmj7weihEeGL3Lq_FbcbqA" y="-186"/>
             </children>
-            <element xmi:type="uml:Generalization" href="Common.efx#_rTtYgDlBEeCOabXzDmEF2w?FHIM/Common/CommonProduct/MedicinalProduct/%3CGeneralization%3E?"/>
+            <element xmi:type="uml:Generalization" href="CommonProduct.efx#_rTtYgDlBEeCOabXzDmEF2w?FHIM/CommonProduct/MedicinalProduct/%3CGeneralization%3E?"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rmjUseihEeGL3Lq_FbcbqA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
           </edges>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_3EWCzEhREeKFm6BiMe_FyA" element="_K-m9ALGJEeGkU9GcFSzOCA" source="_N164MOVZEeGXKJmgI97urQ" target="_3Dmb0EhREeKFm6BiMe_FyA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -5272,45 +5330,45 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_1A9jVltIEeaxDokgI-Y3eA" visible="false" type="ToMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_1A9jWFtIEeaxDokgI-Y3eA" type="ToMultiplicity"/>
-              <element xmi:type="uml:Property" href="Common.efx#_YZ4aUKCrEeO-_tuxzOR0Jg?FHIM/Common/CommonProduct/manufacturer_organization/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_YZ4aUKCrEeO-_tuxzOR0Jg?FHIM/CommonProduct/manufacturer_organization/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_1A9jV1tIEeaxDokgI-Y3eA" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_1A-KYFtIEeaxDokgI-Y3eA" type="ToRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_1A-KYltIEeaxDokgI-Y3eA" type="ToRole"/>
-              <element xmi:type="uml:Property" href="Common.efx#_YZ4aUKCrEeO-_tuxzOR0Jg?FHIM/Common/CommonProduct/manufacturer_organization/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_YZ4aUKCrEeO-_tuxzOR0Jg?FHIM/CommonProduct/manufacturer_organization/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_1A-KYVtIEeaxDokgI-Y3eA" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_1A-KY1tIEeaxDokgI-Y3eA" type="FromMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_1A-KZVtIEeaxDokgI-Y3eA" type="FromMultiplicity"/>
-              <element xmi:type="uml:Property" href="Common.efx#_YZ3MMKCrEeO-_tuxzOR0Jg?FHIM/Common/CommonProduct/Manufacturer/organization?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_YZ3MMKCrEeO-_tuxzOR0Jg?FHIM/CommonProduct/Manufacturer/organization?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_1A-KZFtIEeaxDokgI-Y3eA" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_1A-KZltIEeaxDokgI-Y3eA" type="FromRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_1A-KaFtIEeaxDokgI-Y3eA" type="FromRole"/>
-              <element xmi:type="uml:Property" href="Common.efx#_YZ3MMKCrEeO-_tuxzOR0Jg?FHIM/Common/CommonProduct/Manufacturer/organization?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_YZ3MMKCrEeO-_tuxzOR0Jg?FHIM/CommonProduct/Manufacturer/organization?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_1A-KZ1tIEeaxDokgI-Y3eA" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_1A-KaVtIEeaxDokgI-Y3eA" visible="false" type="ToQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_1A-xcFtIEeaxDokgI-Y3eA" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_YZ4aUKCrEeO-_tuxzOR0Jg?FHIM/Common/CommonProduct/manufacturer_organization/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_YZ4aUKCrEeO-_tuxzOR0Jg?FHIM/CommonProduct/manufacturer_organization/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_1A-KaltIEeaxDokgI-Y3eA" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_1A-xcVtIEeaxDokgI-Y3eA" visible="false" type="FromQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_1A-xc1tIEeaxDokgI-Y3eA" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_YZ3MMKCrEeO-_tuxzOR0Jg?FHIM/Common/CommonProduct/Manufacturer/organization?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_YZ3MMKCrEeO-_tuxzOR0Jg?FHIM/CommonProduct/Manufacturer/organization?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_1A-xcltIEeaxDokgI-Y3eA" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_1A-xdFtIEeaxDokgI-Y3eA" visible="false" type="ToConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_1A-xdltIEeaxDokgI-Y3eA" type="ToConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_YZ4aUKCrEeO-_tuxzOR0Jg?FHIM/Common/CommonProduct/manufacturer_organization/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_YZ4aUKCrEeO-_tuxzOR0Jg?FHIM/CommonProduct/manufacturer_organization/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_1A-xdVtIEeaxDokgI-Y3eA" y="1058"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_1A-xd1tIEeaxDokgI-Y3eA" visible="false" type="FromConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_1A-xeVtIEeaxDokgI-Y3eA" type="FromConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_YZ3MMKCrEeO-_tuxzOR0Jg?FHIM/Common/CommonProduct/Manufacturer/organization?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_YZ3MMKCrEeO-_tuxzOR0Jg?FHIM/CommonProduct/Manufacturer/organization?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_1A-xeFtIEeaxDokgI-Y3eA" y="1058"/>
             </children>
-            <element xmi:type="uml:Association" href="Common.efx#_YZ1-EKCrEeO-_tuxzOR0Jg?FHIM/Common/CommonProduct/manufacturer_organization?"/>
+            <element xmi:type="uml:Association" href="CommonProduct.efx#_YZ1-EKCrEeO-_tuxzOR0Jg?FHIM/CommonProduct/manufacturer_organization?"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1A9jUVtIEeaxDokgI-Y3eA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
           </edges>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_1A_YgFtIEeaxDokgI-Y3eA" source="_rmd1IOihEeGL3Lq_FbcbqA" target="_1A7uIFtIEeaxDokgI-Y3eA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -5321,45 +5379,45 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_1A_YhltIEeaxDokgI-Y3eA" visible="false" type="ToMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_1A__kFtIEeaxDokgI-Y3eA" type="ToMultiplicity"/>
-              <element xmi:type="uml:Property" href="Common.efx#_QQ5xlHpnEd-44ra0dfiJCw?FHIM/Common/CommonProduct/packagedMedicinalProduct_manufacturer/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_QQ5xlHpnEd-44ra0dfiJCw?FHIM/CommonProduct/packagedMedicinalProduct_manufacturer/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_1A_Yh1tIEeaxDokgI-Y3eA" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_1A__kVtIEeaxDokgI-Y3eA" type="ToRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_1A__k1tIEeaxDokgI-Y3eA" type="ToRole"/>
-              <element xmi:type="uml:Property" href="Common.efx#_QQ5xlHpnEd-44ra0dfiJCw?FHIM/Common/CommonProduct/packagedMedicinalProduct_manufacturer/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_QQ5xlHpnEd-44ra0dfiJCw?FHIM/CommonProduct/packagedMedicinalProduct_manufacturer/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_1A__kltIEeaxDokgI-Y3eA" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_1A__lFtIEeaxDokgI-Y3eA" type="FromMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_1A__lltIEeaxDokgI-Y3eA" type="FromMultiplicity"/>
-              <element xmi:type="uml:Property" href="Common.efx#_QQ5xkXpnEd-44ra0dfiJCw?FHIM/Common/CommonProduct/Product/manufacturer?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_QQ5xkXpnEd-44ra0dfiJCw?FHIM/CommonProduct/Product/manufacturer?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_1A__lVtIEeaxDokgI-Y3eA" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_1A__l1tIEeaxDokgI-Y3eA" type="FromRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_1BAmoFtIEeaxDokgI-Y3eA" type="FromRole"/>
-              <element xmi:type="uml:Property" href="Common.efx#_QQ5xkXpnEd-44ra0dfiJCw?FHIM/Common/CommonProduct/Product/manufacturer?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_QQ5xkXpnEd-44ra0dfiJCw?FHIM/CommonProduct/Product/manufacturer?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_1A__mFtIEeaxDokgI-Y3eA" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_1BAmoVtIEeaxDokgI-Y3eA" visible="false" type="ToQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_1BAmo1tIEeaxDokgI-Y3eA" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_QQ5xlHpnEd-44ra0dfiJCw?FHIM/Common/CommonProduct/packagedMedicinalProduct_manufacturer/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_QQ5xlHpnEd-44ra0dfiJCw?FHIM/CommonProduct/packagedMedicinalProduct_manufacturer/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_1BAmoltIEeaxDokgI-Y3eA" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_1BBNsFtIEeaxDokgI-Y3eA" visible="false" type="FromQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_1BBNsltIEeaxDokgI-Y3eA" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_QQ5xkXpnEd-44ra0dfiJCw?FHIM/Common/CommonProduct/Product/manufacturer?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_QQ5xkXpnEd-44ra0dfiJCw?FHIM/CommonProduct/Product/manufacturer?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_1BBNsVtIEeaxDokgI-Y3eA" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_1BBNs1tIEeaxDokgI-Y3eA" visible="false" type="ToConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_1BBNtVtIEeaxDokgI-Y3eA" type="ToConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_QQ5xlHpnEd-44ra0dfiJCw?FHIM/Common/CommonProduct/packagedMedicinalProduct_manufacturer/%3CProperty%3E?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_QQ5xlHpnEd-44ra0dfiJCw?FHIM/CommonProduct/packagedMedicinalProduct_manufacturer/%3CProperty%3E?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_1BBNtFtIEeaxDokgI-Y3eA" y="1058"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_1BBNtltIEeaxDokgI-Y3eA" visible="false" type="FromConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_1BBNuFtIEeaxDokgI-Y3eA" type="FromConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Common.efx#_QQ5xkXpnEd-44ra0dfiJCw?FHIM/Common/CommonProduct/Product/manufacturer?"/>
+              <element xmi:type="uml:Property" href="CommonProduct.efx#_QQ5xkXpnEd-44ra0dfiJCw?FHIM/CommonProduct/Product/manufacturer?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_1BBNt1tIEeaxDokgI-Y3eA" y="1058"/>
             </children>
-            <element xmi:type="uml:Association" href="Common.efx#_QQ5xkHpnEd-44ra0dfiJCw?FHIM/Common/CommonProduct/packagedMedicinalProduct_manufacturer?"/>
+            <element xmi:type="uml:Association" href="CommonProduct.efx#_QQ5xkHpnEd-44ra0dfiJCw?FHIM/CommonProduct/packagedMedicinalProduct_manufacturer?"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1A_YgVtIEeaxDokgI-Y3eA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
           </edges>
         </contents>
@@ -5923,6 +5981,8 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             <body>The activity at the time of the exposure or injury.  For Injury:  ICD-9-CM E-001 through E030 codes, ICD-10-CM Y-93 through Y-99 codes.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mEI28LypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mD_F8LypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_dYg8MBFzEeKu1LfuaJwFHw" name="agent" visibility="public">
           <eAnnotations xmi:id="_kMUD4BF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -5930,6 +5990,8 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             <body>The name of the agent to which the patient was exposed or by which the patient was injured.  For Injury:  ICD-9-CM E-codes, ICD-10-CM V through Y-codes.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mkEUMbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mkEUMLypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_lgx5QBFyEeKu1LfuaJwFHw" name="category" visibility="public">
           <eAnnotations xmi:id="_kMV5EBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -5937,14 +5999,20 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             <body>Indicates the type of exposure (e.g., chemical, biological, physical, other).</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nGd2obypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nGd2oLypEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Ilvl8BF1EeKu1LfuaJwFHw" name="circumstances" visibility="public">
           <eAnnotations xmi:id="_kMXuQBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlq7IbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlq7ILypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="__NU6gBFzEeKu1LfuaJwFHw" name="exposureDuration" visibility="public">
           <eAnnotations xmi:id="_kMb_sBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ojdZEbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ojdZELypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_X_QRIBF2EeKu1LfuaJwFHw" name="injuryContext" visibility="public">
           <eAnnotations xmi:id="_kMcmwBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -5952,6 +6020,8 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             <body>Indicates whether the activity was due to work, both civilian and military, volunteering, or leisure.  ICD-9-CM E-000 code, ICD-10-CM Y-99 code.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pBjDQbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pBjDQLypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_u_wqQBF0EeKu1LfuaJwFHw" name="location" visibility="public">
           <eAnnotations xmi:id="_kMdN0BF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -5959,10 +6029,14 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             <body>Indicates the place where the exposure / injury occurred (e.g., workplace, farm, etc).  For Injury:  ICD-9-CM E-849 codes , ICD-10-CM Y-92 codes.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pfuNAbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pfuNALypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_WXR68AioEeKmtKel3KkMBA" name="yearsInOccupation" visibility="public">
           <eAnnotations xmi:id="_kMeb8BF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qMi2wbypEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qMi2wLypEea_DaXmJ278Kw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_j8UNQAioEeKmtKel3KkMBA" name="employmentAtTimeOfExposure" visibility="public" association="_j8Qi4AioEeKmtKel3KkMBA">
           <eAnnotations xmi:id="_kMaKgBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>

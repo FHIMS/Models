@@ -507,7 +507,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_KG5wUBFtEeKu1LfuaJwFHw" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_KG5wURFtEeKu1LfuaJwFHw" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_KG6XYBFtEeKu1LfuaJwFHw" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Common.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/Common/CommonProduct/DeviceInstance?"/>
+          <element xmi:type="uml:Class" href="CommonProduct.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/CommonProduct/DeviceInstance?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KG2F8RFtEeKu1LfuaJwFHw" x="-4438" y="7608"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_VydAkHiUEeODk9Eid2o3dQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="12303359" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -2719,7 +2719,7 @@
         <ownedComment xmi:id="_NYcJFeLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B641DEB346013F">
           <body>Specifies when the substance is to be administered and how frequently.  Note that this is a complex data type that may indicate specific times or intervals (e.g., 10:00 AM, MWF, etc).</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_durdUZC2EeaeVcv6mxF7oQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_durdUJC2EeaeVcv6mxF7oQ"/>
       </ownedAttribute>
@@ -2889,7 +2889,7 @@ Infusion: &quot;Introduction of a solution into the body through a vein for ther
 &quot;Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.&quot;  - HL7 FHIR, MedicationAdministration.medication[x]&#xD;
 &quot;Vaccine that was administered or was to be administered.&quot; - HL7 FHIR, Immunization.vaccineCode</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#_OaEXAKEREeGnfe88WF3uxw?FHIM/Common/CommonProduct/AdministeredDrug?"/>
+        <type xmi:type="uml:Class" href="CommonProduct.efx#_OaEXAKEREeGnfe88WF3uxw?FHIM/CommonProduct/AdministeredDrug?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sq_ZoaEREeGnfe88WF3uxw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Sq_ZoKEREeGnfe88WF3uxw"/>
       </ownedAttribute>
@@ -2946,7 +2946,7 @@ Infusion: &quot;Introduction of a solution into the body through a vein for ther
         <ownedComment xmi:id="_Ni33e-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6459411D20283">
           <body>The item that was ordered to be administered to the patient.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#_420A62FD03B6426545CB0072?FHIM/Common/CommonProduct/OrderablePharmacyItem?"/>
+        <type xmi:type="uml:Class" href="CommonProduct.efx#_420A62FD03B6426545CB0072?FHIM/CommonProduct/OrderablePharmacyItem?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wIDBUJC2EeaeVcv6mxF7oQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wICaQJC2EeaeVcv6mxF7oQ" value="1"/>
       </ownedAttribute>
@@ -3048,7 +3048,7 @@ Contains any special instructions needed for this order.  This would include the
         <ownedComment xmi:id="_jpZh8L2hEeG_PZtvUC92nw" annotatedElement="_fk81EL2hEeG_PZtvUC92nw">
           <body>&quot;Contains the mechanical device used to aid in the administration of the drug or other treatment.  Common examples are IV-sets of different types.&quot; - HL7 Version 2.8, RXR-3</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#_420A62FD03B6425C004E004C?FHIM/Common/CommonProduct/Device?"/>
+        <type xmi:type="uml:Class" href="CommonProduct.efx#_420A62FD03B6425C004E004C?FHIM/CommonProduct/Device?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fk-qQL2hEeG_PZtvUC92nw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fk-DML2hEeG_PZtvUC92nw"/>
       </ownedAttribute>
@@ -3494,7 +3494,7 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
         <ownedComment xmi:id="_MZuFUZQpEd-GUpkbaCODYA" annotatedElement="_MZuFUJQpEd-GUpkbaCODYA">
           <body>&quot;The time interval starting with the administrative onset of the encounter (e.g. admission, registration, patient arrival) and ending with the patient's departure (e.g. discharge).&quot; - HL7 V3  This is the start and end date/times of the Service Episode.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UOPzcZC3EeaeVcv6mxF7oQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UOPzcJC3EeaeVcv6mxF7oQ"/>
       </ownedAttribute>
@@ -4068,7 +4068,7 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
         <ownedComment xmi:id="_SZ3dIZQZEd-GUpkbaCODYA" annotatedElement="_SZ3dIJQZEd-GUpkbaCODYA">
           <body>&quot;The time interval starting with the administrative onset of the encounter (e.g. admission, registration, patient arrival) and ending with the patient's departure (e.g. discharge). Note_1: for active encounters the end of the effectiveTime range is the anticipated end date-time. Note_2: all messages, except the &quot;nullify&quot; message, require at least a starting time.&quot;  (HL7).   This is the start and end date/times of the Encounter.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r1Gs0JCzEeaeVcv6mxF7oQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r1GFwJCzEeaeVcv6mxF7oQ" value="1"/>
       </ownedAttribute>
@@ -4380,7 +4380,7 @@ Labor and Delivery; Routine; Newborn (Birth in healthcare facility); Urgent; Ele
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GJI58JC3EeaeVcv6mxF7oQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_PoYb4BFtEeKu1LfuaJwFHw" name="deviceInstance" visibility="public" association="_PoTjYBFtEeKu1LfuaJwFHw">
-        <type xmi:type="uml:Class" href="Common.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/Common/CommonProduct/DeviceInstance?"/>
+        <type xmi:type="uml:Class" href="CommonProduct.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/CommonProduct/DeviceInstance?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PoZqARFtEeKu1LfuaJwFHw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PoZqABFtEeKu1LfuaJwFHw" value="1"/>
       </ownedAttribute>

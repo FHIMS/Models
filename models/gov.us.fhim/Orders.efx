@@ -235,7 +235,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_ub8rKurSEeCgerddwRbJUw" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_ub8rLOrSEeCgerddwRbJUw" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_ub8rLurSEeCgerddwRbJUw" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Common.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/Common/CommonProduct/DeviceInstance?"/>
+          <element xmi:type="uml:Class" href="CommonProduct.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/CommonProduct/DeviceInstance?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ub8rIurSEeCgerddwRbJUw" x="17752" y="-26945"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_QE2UYOrTEeCgerddwRbJUw" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="12303359" lineColor="3342489" showParent="Name" showStereotype="Text">
@@ -504,7 +504,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_hdGq4bx6EeSLwM7JIxbinw" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_hdGq4rx6EeSLwM7JIxbinw" visible="false" type="StructureCompartment"/>
           <element xmi:type="uml:Class" href="Common.efx#_terqkLxzEeSLwM7JIxbinw?FHIM/Common/Provenance?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hdE1sbx6EeSLwM7JIxbinw" x="25360" y="-27262"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hdE1sbx6EeSLwM7JIxbinw" x="25994" y="-27262"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_lOYnwMg5EeSfy4Nv5qDtdw" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_lOZ14Mg5EeSfy4Nv5qDtdw" type="ImageCompartment">
@@ -2494,6 +2494,8 @@
           <body>Indicates how the &quot;subject&quot; is related to the &quot;related subject&quot;.  Examples include Parent, Child, Replaces, Replaced By, etc.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fJKeUbyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fJKeULyoEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_61ai4MTBEd-6Z_53K--WsA" name="Subject">
@@ -2564,12 +2566,16 @@
 &quot;Contains the telephone number for reporting a status or a result&quot; - HL7 Version 2.8, OBR-17.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_fImbAAEYEd-ZUM5xZsXWyw?FHIM/Datatypes/ContactPoint?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pR3pIbynEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pR3pILynEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Oya20OO6EeCbbuWBGGTBrA" name="confidentialityCode" visibility="public">
         <ownedComment xmi:id="_OhGOEAcsEeGfLeiV6Brugg" annotatedElement="_Oya20OO6EeCbbuWBGGTBrA">
           <body>&quot;This field contains information about the level of security and/or sensitivity surrounding the order (e.g., highly sensitive, not sensitive, sensitive, etc.).&quot; - HL7 Version 2.8, ORC-28</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qU-r8bynEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qU-r8LynEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_mBZaMActEeGfLeiV6Brugg" name="dangerCode" visibility="public">
         <ownedComment xmi:id="_vcO88ActEeGfLeiV6Brugg" annotatedElement="_mBZaMActEeGfLeiV6Brugg">
@@ -2621,6 +2627,8 @@
           <body>&quot;This field is used to document why the procedure found in OBR-44 - Procedure Code is a duplicate of one ordered/charged previously for the same patient within the same date of service and has been determined to be medically necessary.&quot; - HL7 Version 2.8, OBR-48.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tyyPkbynEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tyyPkLynEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_E6tyYAcbEeGfLeiV6Brugg" name="isEscortRequired" visibility="public">
         <ownedComment xmi:id="_5QnZYAczEeGfLeiV6Brugg" annotatedElement="_E6tyYAcbEeGfLeiV6Brugg">
@@ -2635,6 +2643,8 @@
           <body>&quot;This field indicates whether the order is to be executed in an inpatient setting or an outpatient setting.&quot; - HL7 Version 2.8, ORC-29</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vjA3EbynEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vjA3ELynEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B64589570A015B" name="placerOrderId" visibility="public">
         <ownedComment xmi:id="_MC55gOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64589570A015B">
@@ -2659,12 +2669,16 @@
           <body>&quot;Contains supplemental service information sent from the placer system to the filler system for the universal procedure code reported in OBR-4 Universal Service ID.  This field will be used to provide ordering information detail that is not available in other specific fields in the OBR segment.&quot; - HL7 Version 2.8, OBR-46.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xcAZAbynEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xcAZALynEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_FKoUUAc0EeGfLeiV6Brugg" name="plannedPatientTransportComment" visibility="public">
         <ownedComment xmi:id="_KIac8Ac0EeGfLeiV6Brugg" annotatedElement="_FKoUUAc0EeGfLeiV6Brugg">
           <body>Contains &quot;comments on special requirements for the transport of the patient to the diagnostic service department.&quot; - HL7 Version 2.8, OBR-43</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yUHswbynEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yUHswLynEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_4aBxgO3KEeCFZuasLkncZQ" name="reasonForStudy" visibility="public">
         <ownedComment xmi:id="_l7FUgO3LEeCFZuasLkncZQ" annotatedElement="_4aBxgO3KEeCFZuasLkncZQ">
@@ -2687,6 +2701,8 @@
           <body>General textual comments about this Order.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0PoXMLynEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0PnwILynEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_xo5mAPjNEeCmc6EQPl3F9g" name="resultHandling" visibility="public">
         <ownedComment xmi:id="_E5XxIPjOEeCmc6EQPl3F9g" annotatedElement="_xo5mAPjNEeCmc6EQPl3F9g">
@@ -2743,6 +2759,8 @@ A code specifying the status of the Order.  Valid status codes should reflect th
           <body>Indicates &quot;whether transport arrangements are known to have been made.&quot; - HL7 Version 2.8, OBR-41</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3vUKIbynEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3vUKILynEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ep2kgZkGEeCFEfqQZ7sMZg" name="diagnosisList" visibility="public" association="_ep2kgJkGEeCFEfqQZ7sMZg">
         <ownedComment xmi:id="_5A9_oBUwEeGk2cucW4LtoA" annotatedElement="_ep2kgZkGEeCFEfqQZ7sMZg">
@@ -2866,42 +2884,56 @@ A code specifying the status of the Order.  Valid status codes should reflect th
           <body>Indicates the action that was ordered (e.g., New, Hold, Discontinue, etc)</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rt_SobyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rt_SoLyoEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_EXhTEP82EeCDQancQavJ_w" name="comment" visibility="public">
         <ownedComment xmi:id="_4xvBQBCEEeGYNskcagX10g" annotatedElement="_EXhTEP82EeCDQancQavJ_w">
           <body>Contains any remarks about the Order Action</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TJY5obyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TJY5oLyoEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B642407F67011A" name="effectiveDate" visibility="public">
         <ownedComment xmi:id="_NHTVx-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642407F67011A">
           <body>&quot;Contains the date/time that the changes to the request took effect or are supposed to take effect....&quot; - HL7 Version 2.8, ORC-15</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UrMqobyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UrMqoLyoEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6420BCF1700FB" name="orderActionDate" visibility="public">
         <ownedComment xmi:id="_NHdGweLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6420BCF1700FB">
           <body>&quot;Contains the date and time of the event that initiated the current transaction as reflected in ORC-1 Order Control Code.&quot; - HL7 Version 2.8, ORC-9</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WWJJgbyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WWJJgLyoEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6420BCFE600DA" name="reasonForAction" visibility="public">
         <ownedComment xmi:id="_NHdGx-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6420BCFE600DA">
           <body>&quot;This field contains a coded explanation of the reason for the order event described by the order control code &quot; - HL7 Version 2.8, ORC-16</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XmglMbyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XmglMLyoEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_KmSxcOO2EeCbbuWBGGTBrA" name="reasonForActionNarrative" visibility="public">
         <ownedComment xmi:id="_bOJ24AcpEeGfLeiV6Brugg" annotatedElement="_KmSxcOO2EeCbbuWBGGTBrA">
           <body>&quot;This field contains the explanation (in text form) of the reason for the order event described by the order control code&quot; - HL7 Version 2.8, ORC-16</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YVFicbyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YVFicLyoEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6420BD2220295" name="releaseStatus" visibility="public">
         <ownedComment xmi:id="_NHdGyuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6420BD2220295">
           <body>This field tracks the status of the order action. This is different from the order status. Valid values are Unreleased, Pre-release, Rejected, or Discontinued due to Edit.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ang4EbyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ang4ELyoEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_h0XBARUuEeGk2cucW4LtoA" name="chartReview" visibility="public" type="_d4VQUBUuEeGk2cucW4LtoA" association="_h0XBABUuEeGk2cucW4LtoA">
         <ownedComment xmi:id="_dJUjUBUwEeGk2cucW4LtoA" annotatedElement="_h0XBARUuEeGk2cucW4LtoA">
@@ -2960,18 +2992,24 @@ A code specifying the status of the Order.  Valid status codes should reflect th
           <body>This is the clinical danger level associated with this detected issue. Those having a High danger level will require a justification for override and release. Valid values are High, Moderate, or Low.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WH5HkbynEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WH5HkLynEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6420BD61E0238" name="detectedIssue" visibility="public">
         <ownedComment xmi:id="_NHmQveLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6420BD61E0238">
           <body>Indicates the issue that was detected (also called an &quot;order check&quot;).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W1B6YLynEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W04wcLynEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6420BD8510255" name="text" visibility="public">
         <ownedComment xmi:id="_NHwBsuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6420BD8510255">
           <body>Contains the actual text of the detected issue.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZshE4bynEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZshE4LynEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_BvIpoP84EeCDQancQavJ_w" name="detectedIssueOverride" visibility="public" type="_420A62FD03B6420BD7420292" association="_BvG0cP84EeCDQancQavJ_w">
         <ownedComment xmi:id="_Sio2sBCJEeGYNskcagX10g" annotatedElement="_BvIpoP84EeCDQancQavJ_w">
@@ -2998,6 +3036,8 @@ A code specifying the status of the Order.  Valid status codes should reflect th
           <body>Contains a justification for overriding the Detected Issue and releasing the Order Action.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mhsnkbynEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mhsnkLynEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Xn2TwYYJEd-2psOxABAOvw" name="overrideAuthor" visibility="public" association="_Xn2TwIYJEd-2psOxABAOvw">
         <ownedComment xmi:id="_cOBW4BCJEeGYNskcagX10g" annotatedElement="_Xn2TwYYJEd-2psOxABAOvw">
@@ -3018,13 +3058,17 @@ A code specifying the status of the Order.  Valid status codes should reflect th
         <ownedComment xmi:id="_NIpZk-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64239ED0800B5">
           <body>An administration schedule for how often the requested observation should be performed.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Gz2gUbyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Gz2gULyoEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6426689BE0213" name="orderedObservation" visibility="public">
         <ownedComment xmi:id="_NIyjj-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6426689BE0213">
           <body>Identifies a kind of observation that can be, is, or has been requested as part of an order.  In other words, this is the service ordered.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HsG-AbyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HsG-ALyoEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B642309DCD0072" name="OrderPatientEvent">
@@ -3037,6 +3081,8 @@ A code specifying the status of the Order.  Valid status codes should reflect th
           <body>Identifies the patient-related event that automatically triggers an order action.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dezOQbyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dezOQLyoEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_IXQCwS1mEeCa156qmneW2Q" name="author" visibility="public" association="_IXQCwC1mEeCa156qmneW2Q">
         <ownedComment xmi:id="_aHUc0BUuEeGk2cucW4LtoA" annotatedElement="_IXQCwS1mEeCa156qmneW2Q">
@@ -3120,6 +3166,8 @@ A code specifying the status of the Order.  Valid status codes should reflect th
           <body>The date/time that the Order Action was released for further action by other providers.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gkwSkbyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gkwSkLyoEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_VXLNgKy1EeCBdbmGd0l2eA" name="orderAction_releaseAct" memberEnd="_VXOQ0Ky1EeCBdbmGd0l2eA _VXRUIKy1EeCBdbmGd0l2eA">
@@ -3177,12 +3225,16 @@ A code specifying the status of the Order.  Valid status codes should reflect th
           <body>The date/time on which the ordered service was accepted by the filler.  In other words, the creation date of the Promise record.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8nVpAbynEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8nVpALynEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8Pvl0OO5EeCbbuWBGGTBrA" name="expectedAvailabilityDate" visibility="public">
         <ownedComment xmi:id="_FL4AkAcrEeGfLeiV6Brugg" annotatedElement="_8Pvl0OO5EeCbbuWBGGTBrA">
           <body>&quot;Specifies the date/time the filler expects the services to be available.  For example when a prescription is ready for pickup or when a supply will be sent or picked up, or for when a laboratory result is expected to be available.&quot; - HL7 Version 2.8, ORC-27</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9lO0obynEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9lO0oLynEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8ZrjMApAEeGJyqUYQ0j7Rw" name="fillerOrderId" visibility="public">
         <ownedComment xmi:id="_ZHE7wApBEeGJyqUYQ0j7Rw" annotatedElement="_8ZrjMApAEeGJyqUYQ0j7Rw">
@@ -3191,12 +3243,16 @@ A code specifying the status of the Order.  Valid status codes should reflect th
 &quot;This field is equivalent in uniqueness to the pharmacy/treatment supplier filler order number.  At some sites, this may be the pharmacy/treatment supplier (internal) sequential form.  At other sites, this may be an external number.&quot; - HL7 Version 2.8, RXD-7.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-bP2obynEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-bP2oLynEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_7IAaMPjMEeCmc6EQPl3F9g" name="fillerSupplementalInfo" visibility="public">
         <ownedComment xmi:id="_u5QeoAmREeGe4v7RnpTDUQ" annotatedElement="_7IAaMPjMEeCmc6EQPl3F9g">
           <body>&quot;Contains supplemental service information sent from the filler system to the placer system for the procedure code reported in OBR-4 Universal Service ID.  This field will be used to report ordering information detail that is not available in other specific fields in the OBR segment.  Typically it will reflect the same information as was sent to the filler system in OBR-46-Placer supplemental service information unless the order was modified, in which case the filler system will report what was actually performed using this field....&quot; - HL7 Version 2.8, OBR-47.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CF7YobyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CF7YoLyoEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_VHctsLTlEd2sMvQnSCqOzA" name="priority" visibility="public">
         <ownedComment xmi:id="_Xn1yMMDrEd2cYoIY7XWEQw" annotatedElement="_VHctsLTlEd2sMvQnSCqOzA">
@@ -3227,6 +3283,8 @@ A code specifying the status of the Order.  Valid status codes should reflect th
           <body>&quot;Specifies the date/time when the results were reported or status changed.  This conditional field is required whenever [Report Status] is valued.  This field is used to indicate the date and time that the results are composed into a report and released, or that [Healthcare Order status] is entered or changed.&quot; - HL7 Version 2.8, OBR-22.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EkP1MbyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EkP1MLyoEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_s5PJgOOaEd-8X4J7aT-aiQ" name="statusModifier" visibility="public">
         <ownedComment xmi:id="_6fLA0LslEeGZTLDYkoM_Sw" annotatedElement="_s5PJgOOaEd-8X4J7aT-aiQ">
@@ -3325,12 +3383,16 @@ A code specifying the status of the Order.  Valid status codes should reflect th
           <body>A unique identifier for the Standing Order.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i6_xMbyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i6_xMLyoEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ETzksBRTEeGQfutgOfQGQw" name="text" visibility="public">
         <ownedComment xmi:id="_QMGssBU1EeGk2cucW4LtoA" annotatedElement="_ETzksBRTEeGQfutgOfQGQw">
           <body>Contains a textual representation of the Standing Order.  Note that this will be fleshed out in a future iteration.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ncTZMbyoEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ncTZMLyoEea_DaXmJ278Kw"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_w9KgIBRSEeGQfutgOfQGQw" name="healthcareOrder_standingOrder" memberEnd="_w9NjcBRSEeGQfutgOfQGQw _w9TDABRSEeGQfutgOfQGQw">

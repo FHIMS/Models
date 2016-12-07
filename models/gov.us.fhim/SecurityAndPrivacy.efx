@@ -7000,7 +7000,7 @@ See also the HighLevelOverview1 and HighLevelOverview2 diagrams</body>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_dA_t8JcTEeKrZbQHxGBj5A" name="existenceDateRange" visibility="public">
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_i554oHS3Ed-Bj4191_mrEA" name="id" visibility="public">
         <ownedComment xmi:id="_XDsHwIVOEd-6PJo369YzhQ" annotatedElement="_i554oHS3Ed-Bj4191_mrEA">
@@ -7464,7 +7464,7 @@ Access may be granted only to initiators on specific end-systems, workstations o
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Y4AHUHG9EeSUPN3DMaTGrQ" name="accessDeviceInstance" visibility="public" association="_Y3-SIHG9EeSUPN3DMaTGrQ">
-        <type xmi:type="uml:Class" href="Common.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/Common/CommonProduct/DeviceInstance?"/>
+        <type xmi:type="uml:Class" href="CommonProduct.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/CommonProduct/DeviceInstance?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y4B8gHG9EeSUPN3DMaTGrQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y4BVcHG9EeSUPN3DMaTGrQ"/>
       </ownedAttribute>
@@ -7485,7 +7485,7 @@ The Policy(Abstract) class is the abstract class from which all concrete policy 
         <ownedComment xmi:id="_4QGN0G9LEd-NmaNtnOnl0g" annotatedElement="_pzL4UG9LEd-NmaNtnOnl0g">
           <body>This attribute specifies the period of time (e.g., start date, end date) during which the privacy policy described by ePolicy is in effect.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_lpgGIG9LEd-NmaNtnOnl0g" name="id" visibility="public">
         <ownedComment xmi:id="_iRcqAHskEd-46pruQ3sQtQ" annotatedElement="_lpgGIG9LEd-NmaNtnOnl0g">
@@ -7610,7 +7610,7 @@ This is the base class for a variety of policy types. It extends the abstract Po
         <ownedComment xmi:id="_J2VPQG9NEd-NmaNtnOnl0g" annotatedElement="_mDT30G9MEd-NmaNtnOnl0g">
           <body>An access may be allowed only during specific time periods of the day (e.g., 9 am to 5 pm).</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kl2l4W9NEd-NmaNtnOnl0g" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kl2l4G9NEd-NmaNtnOnl0g"/>
       </ownedAttribute>
@@ -8354,7 +8354,7 @@ Renamed from &quot;Group&quot;</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Or8ogiIoEeSHneyaaKlHnw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Or9PkCIoEeSHneyaaKlHnw" name="effectiveDateRange" visibility="public">
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Or9PkSIoEeSHneyaaKlHnw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Or9PkiIoEeSHneyaaKlHnw"/>
       </ownedAttribute>

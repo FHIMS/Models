@@ -104,7 +104,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_Mb1RE4RpEeOnHN_ty8qFhw" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_Mb1RFIRpEeOnHN_ty8qFhw" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_Mb14IIRpEeOnHN_ty8qFhw" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Common.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/Common/CommonProduct/DeviceInstance?"/>
+          <element xmi:type="uml:Class" href="CommonProduct.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/CommonProduct/DeviceInstance?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mb0C8YRpEeOnHN_ty8qFhw" x="31700" y="7291"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_T8-HQIRpEeOnHN_ty8qFhw" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" fillColor="8519679" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -812,6 +812,8 @@ This package contains sub-packages for each of the seven vital signs.  These sub
           <body>This property defines what was observed that “qualifies” the primary, or “owning” Observation.  This property defines what was observed by citing a value from a nationally recognized coding system.  In this case, the value will hard-coded to SNOMED 9851009, which is patient position.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4mOSEbypEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4mOSELypEea_DaXmJ278Kw" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_fPxfsIdzEeOZ2vW3WfDP5Q" value="cs=SCT, c=9851009">
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         </defaultValue>
@@ -832,20 +834,6 @@ This package contains sub-packages for each of the seven vital signs.  These sub
           <body>(PatientMeasurementBodyPosition)</body>
         </defaultValue>
       </ownedAttribute>
-      <ownedBehavior xmi:type="uml:Interaction" xmi:id="__2T7UOd3EeSlqtEJq7r6DQ" name="Interaction1">
-        <eAnnotations xmi:id="__2hWsOd3EeSlqtEJq7r6DQ" source="uml2.diagrams">
-          <contents xmi:type="umlnotation:UMLDiagram" xmi:id="__2hWsed3EeSlqtEJq7r6DQ" type="Timing" element="__2T7UOd3EeSlqtEJq7r6DQ" name="TimingDiagram1" measurementUnit="Himetric">
-            <children xmi:type="umlnotation:UMLShape" xmi:id="__2hWsud3EeSlqtEJq7r6DQ" type="TimingDiagramFrame" element="__2T7UOd3EeSlqtEJq7r6DQ" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" showListSignature="true" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
-              <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="__2hWs-d3EeSlqtEJq7r6DQ" type="TimingDiagramCompartment"/>
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="__2hWtOd3EeSlqtEJq7r6DQ" type="Name"/>
-              <children xmi:type="umlnotation:UMLTimingRuler" xmi:id="__2hWted3EeSlqtEJq7r6DQ" type="TimingDiagramRuler" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" showListSignature="true" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__2hWtud3EeSlqtEJq7r6DQ"/>
-              </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="__2hWt-d3EeSlqtEJq7r6DQ" x="793" y="793"/>
-            </children>
-          </contents>
-        </eAnnotations>
-      </ownedBehavior>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_dbS3O4eDEeOZ2vW3WfDP5Q" name="PatientStateExertionQualifier" clientDependency="_r7hDwMN7EeSFjdDJNF9NPA _vzIsUOQ6EeSuxrYeYCfuhA">
       <ownedComment xmi:id="_shgrQN0uEeSZfdq7h5ueSA" annotatedElement="_dbS3O4eDEeOZ2vW3WfDP5Q">
@@ -862,6 +850,8 @@ This package contains sub-packages for each of the seven vital signs.  These sub
           <body>This property defines what was observed that “qualifies” the primary, or “owning” Observation.  This property defines what was observed by citing a value from a nationally recognized coding system.  In this case, the value to be hard-coded for Patient Exertion has yet to be determined.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7YK1QbypEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7YK1QLypEea_DaXmJ278Kw" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_dbS3QYeDEeOZ2vW3WfDP5Q" value="cs=TBD, c=TBD">
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         </defaultValue>
@@ -1858,7 +1848,7 @@ This package represents the measurement (or “clinical observation”) of the p
 &#xD;
 Blood pressure measurements can be affected by the device used, the patient’s body position, whether the patient was awake or asleep, etc.  This package contains four qualifier classes to carry this information.</body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Class" xmi:id="_JZJUsJdYEeOCbc0pwOBboA" name="AbstractBloodPressureObservation" clientDependency="_JpfBUJdZEeOCbc0pwOBboA _3-lYkMEAEeSD-sVrqweICQ _t__rsMEEEeSD-sVrqweICQ _V2grkMNnEeSFjdDJNF9NPA" isAbstract="true">
+      <packagedElement xmi:type="uml:Class" xmi:id="_JZJUsJdYEeOCbc0pwOBboA" name="AbstractBloodPressureObservation" clientDependency="_3-lYkMEAEeSD-sVrqweICQ _V2grkMNnEeSFjdDJNF9NPA" isAbstract="true">
         <ownedComment xmi:id="_2ALHoN06EeSZfdq7h5ueSA" annotatedElement="_JZJUsJdYEeOCbc0pwOBboA">
           <body>&quot;Blood pressure (BP) is the pressure exerted by circulating blood upon the walls of blood vessels and is one of the principal vital signs. When used without further specification, &quot;blood pressure&quot; usually refers to the arterial pressure of the systemic circulation, usually measured at a person's upper arm. A person’s blood pressure is usually expressed in terms of the systolic (maximum) pressure over diastolic (minimum) pressure and is measured in millimeters of mercury (mm Hg). … Blood pressure varies depending on situation, activity, and disease states, and is regulated by the nervous and endocrine systems. … Chronic hypertension is a risk factor for many diseases, including kidney failure, heart attack, and stroke.&quot; – Wikipedia.&#xD;
 &#xD;
@@ -1914,6 +1904,8 @@ This property contains the code that specifies the anatomical site or system tha
             <body>Identifies the qualifying information (usually an observation) that may affect the interpretation of the owning Clinical Observation.  For example, if the owning Clinical Observation is a blood pressure, this class may contain information about the patient's state (i.e., whether sitting and resting, prone, after exercise, etc.).  In this example, the category indicates the kind of observation that qualifies the owning Clinical Observation (e.g., &quot;patient state&quot;, &quot;cuff size&quot;), while the value contains the corresponding data for the observation (e.g., &quot;after exercise&quot;, &quot;large adult cuff&quot;).</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XMMV0byqEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XMMV0LyqEea_DaXmJ278Kw" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_JZLw9pdYEeOCbc0pwOBboA" value="cs=TBD, c=TBD">
             <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           </defaultValue>
@@ -1965,9 +1957,6 @@ This class represents the measurement (or “clinical observation”) of the pat
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7a_QYJdaEeOCbc0pwOBboA" value="1"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_JpfBUJdZEeOCbc0pwOBboA" client="_JZJUsJdYEeOCbc0pwOBboA">
-        <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_LuKo8MD-EeSD-sVrqweICQ"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_nWp00JdZEeOCbc0pwOBboA" name="BloodPressureCuffSizeQualifier" clientDependency="_00dgwMESEeSx2-rVmArpvQ">
         <ownedComment xmi:id="_t3w5QN0-EeSZfdq7h5ueSA" annotatedElement="_nWp00JdZEeOCbc0pwOBboA">
           <body>The most common method of measuring blood pressure involves the use of an inflatable (Riva-Rocci) cuff to constrict the blood flow during measurement.  These cuffs are designed to operate on a specific range of body-part (e.g., arm, thigh) circumferences.  Occasionally a cuff is used that is not of the ideal size for the given patient (i.e., the patient may be an infant or an obese adult), usually because the appropriate sized cuff is not available.  The use of a non-ideal sized cuff may result in an inaccurate reading, and therefore must be noted.  This class represents an observation of the cuff size that was used to obtain the Blood Pressure measurement.</body>
@@ -1983,6 +1972,8 @@ This class represents the measurement (or “clinical observation”) of the pat
             <body>This property defines what was observed that “qualifies” the primary, or “owning” Observation.  This property defines what was observed by citing a value from a nationally recognized coding system.  In this case, the value will hard-coded to a LOINC or SNOMED code that represents the concept of Cuff Size.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S16SEbyqEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S16SELyqEea_DaXmJ278Kw" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_nWp01pdZEeOCbc0pwOBboA" value="cs=TBD, c=TBD">
             <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           </defaultValue>
@@ -2032,6 +2023,8 @@ This class represents the measurement (or “clinical observation”) of the pat
             <body>This property contains the result, or value of the clinical Observation.  In the generic clinical Observation class, the data type for this property can be anything.  Blood Pressure is generally expressed in terms of millimeters of mercury (mmHg).  Therefore, this property has been re-defined to constrain the data type to be a Physical Quantity.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bwLeYbyqEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bwLeYLyqEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_adk0IJdaEeOCbc0pwOBboA" name="DiastolicBloodPressureObservation">
@@ -2063,6 +2056,8 @@ This class represents the measurement (or “clinical observation”) of the pat
             <body>This property contains the result, or value of the clinical Observation.  In the generic clinical Observation class, the data type for this property can be anything.  Blood Pressure is generally expressed in terms of millimeters of mercury (mmHg).  Therefore, this property has been re-defined to constrain the data type to be a Physical Quantity.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aGHJQbyqEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aGHJQLyqEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_6xSzIJdaEeOCbc0pwOBboA" memberEnd="_6xWdgJdaEeOCbc0pwOBboA _6xY5wJdaEeOCbc0pwOBboA">
@@ -2086,6 +2081,8 @@ This class represents the measurement (or “clinical observation”) of the pat
             <body>This property defines what was observed that “qualifies” the primary, or “owning” Observation.  This property defines what was observed by citing a value from a nationally recognized coding system.  In this case, the value will hard-coded to a LOINC or SNOMED code that represents the concept of Sleep Status.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ys7IwbyqEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ys7IwLyqEea_DaXmJ278Kw" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_9-m1RIewEeS2mpjRRlxFgQ" value="cs=TBD, c=TBD">
             <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           </defaultValue>
@@ -2113,9 +2110,6 @@ This class represents the measurement (or “clinical observation”) of the pat
       <packagedElement xmi:type="uml:Dependency" xmi:id="_3-lYkMEAEeSD-sVrqweICQ" client="_JZJUsJdYEeOCbc0pwOBboA">
         <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_LuKo8MD-EeSD-sVrqweICQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_t__rsMEEEeSD-sVrqweICQ" client="_JZJUsJdYEeOCbc0pwOBboA">
-        <supplier xmi:type="uml:EnumerationLiteral" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_T3gVUMEDEeSD-sVrqweICQ"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_00dgwMESEeSx2-rVmArpvQ" client="_nWp00JdZEeOCbc0pwOBboA">
         <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_OCbtcMEFEeSD-sVrqweICQ"/>
       </packagedElement>
@@ -2139,6 +2133,8 @@ This class records an observation of the phase at which the diastolic pressure w
             <body>This property defines what was observed that “qualifies” the primary, or “owning” Observation.  This property defines what was observed by citing a value from a nationally recognized coding system.  In this case, the value will hard-coded to a LOINC or SNOMED code that represents the concept of Diastolic End Point.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UID2cbyqEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UID2cLyqEea_DaXmJ278Kw" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_DQ5wdsNpEeSFjdDJNF9NPA" value="cs=TBD, c=TBD">
             <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           </defaultValue>
@@ -2841,7 +2837,7 @@ This class records an observation of the phase at which the diastolic pressure w
 &#xD;
 This package represents the measurement (or “clinical observation”) of the patient’s heart rate.  It contains an Observation sub-type that constrains the type of observation to that of heart rate, and redefines the body Site and method properties to reference specific value sets for heart rate observation.  It also contains a redefined observation qualifier class that indicates how the patient’s body was positioned during the heart rate measurement.</body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Class" xmi:id="_EVpMQH-3EeOzENpLs8HIcg" name="HeartRateObservation" clientDependency="_escQgIdwEeOZ2vW3WfDP5Q _ccSkYMN1EeSFjdDJNF9NPA _51drkMN6EeSFjdDJNF9NPA">
+      <packagedElement xmi:type="uml:Class" xmi:id="_EVpMQH-3EeOzENpLs8HIcg" name="HeartRateObservation" clientDependency="_ccSkYMN1EeSFjdDJNF9NPA _51drkMN6EeSFjdDJNF9NPA">
         <ownedComment xmi:id="_esezYNylEeS8W_uFU6RjUw" annotatedElement="_EVpMQH-3EeOzENpLs8HIcg">
           <body>Heart rate is the speed of the heartbeat measured by the number of poundings of the heart per unit of time — typically beats per minute (bpm).  The heart rate is commonly measured by observing the patient’s pulse, which is the physical expansion of the artery. The pulse commonly taken is from the radial artery at the wrist. Sometimes the pulse cannot be taken at the wrist and is taken at the elbow (brachial artery), at the neck against the carotid artery (carotid pulse), behind the knee (popliteal artery), or in the foot dorsalis pedis or posterior tibial arteries.  In addition, the heart rate may be measured directly electrocardiography (adapted from Wikipedia).&#xD;
 &#xD;
@@ -2904,10 +2900,9 @@ This class represents the measurement (or “clinical observation”) of the pat
             <body>This property contains the result, or value of the clinical Observation.  In the generic clinical Observation class, the data type for this property can be anything.  Heart rate is expressed in terms of beats per minute.  Therefore, this property has been re-defined to constrain the data type to be a Rate Quantity (where the numerator is the number of beats (unit of measure heartbeat), and the denominator is one minute).</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F63021C?FHIM/Datatypes/RateQuantity?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mEeYsbyqEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mEeYsLyqEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_escQgIdwEeOZ2vW3WfDP5Q" client="_EVpMQH-3EeOzENpLs8HIcg">
-        <supplier xmi:type="uml:EnumerationLiteral" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_mHctAMNzEeSFjdDJNF9NPA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_51drkMN6EeSFjdDJNF9NPA" client="_EVpMQH-3EeOzENpLs8HIcg">
         <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_A8YIEMN0EeSFjdDJNF9NPA"/>
@@ -3537,6 +3532,8 @@ This class represents the measurement (or “clinical observation”) of the pat
             <body>This property contains the result, or value of the clinical Observation.  In the generic clinical Observation class, the data type for this property can be anything.  Height is expressed in terms of centimeters or inches.  Therefore, this property has been re-defined to constrain the data type to be a Physical Quantity.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p2pp0byqEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p2pp0LyqEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_jPpAEYd5EeOZ2vW3WfDP5Q" name="HeightQualifier" clientDependency="_BurWcMNuEeSFjdDJNF9NPA">
@@ -3554,6 +3551,8 @@ This class represents the measurement (or “clinical observation”) of the pat
             <body>This property defines what was observed that “qualifies” the primary, or “owning” Observation.  This property defines what was observed by citing a value from a nationally recognized coding system.  In this case, the value to be hard-coded for the height determination has yet to be determined.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sDWx8byqEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sDWx8LyqEea_DaXmJ278Kw" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_jPpAF4d5EeOZ2vW3WfDP5Q" value="cs=TBD, c=TBD">
             <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           </defaultValue>
@@ -4264,6 +4263,8 @@ This class represents the measurement (or “clinical observation”) of the pat
             <body>This property contains the result, or value of the clinical Observation.  In the generic clinical Observation class, the data type for this property can be anything.  Blood oxygen saturation is expressed as a percentage of the total hemoglobin that is oxygen-saturated.  Therefore, this property has been re-defined to constrain the data type to be a Physical Quantity (where the unit of measure is per cent).</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zwF0IbyqEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zwF0ILyqEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7n58uYd_EeOZ2vW3WfDP5Q" name="SupplementalOxygenQualifier">
@@ -4281,6 +4282,8 @@ This class represents the measurement (or “clinical observation”) of the pat
             <body>This property defines what was observed that “qualifies” the primary, or “owning” Observation.  This property defines what was observed by citing value from a nationally recognized coding system.  In this case, the value will come from LOINC and will indicate that the qualifying observation is amount of supplementary oxygen that the patient is receiving.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1HCY8LyqEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1G4n8LyqEea_DaXmJ278Kw" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_7n58v4d_EeOZ2vW3WfDP5Q" value="cs=LOINC, c=TBD">
             <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           </defaultValue>
@@ -4312,6 +4315,8 @@ This class represents the measurement (or “clinical observation”) of the pat
             <body>This property defines what was observed that “qualifies” the primary, or “owning” Observation.  This property defines what was observed by citing value from a nationally recognized coding system.  In this case, the value will come from LOINC and will indicate that the qualifying observation is that of the device that was used to administer supplemental oxygen to the patient at the time that the oxygen saturation observation or the respiration rate observation was made.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uJxr4byqEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uJxr4LyqEea_DaXmJ278Kw" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_5eaABsOGEeSFjdDJNF9NPA" value="cs=LOINC, c=TBD">
             <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           </defaultValue>
@@ -5004,6 +5009,8 @@ This class represents the measurement (or “clinical observation”) of the pat
             <body>This property contains the result, or value of the clinical Observation.  In the generic clinical Observation class, the data type for this property can be anything.  Respiration Rate is generally expressed in terms of breaths per minute.  Therefore, this property has been re-defined to constrain the data type to be a Rate Quantity.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F63021C?FHIM/Datatypes/RateQuantity?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3b4JYbyqEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3b4JYLyqEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
       </packagedElement>
     </packagedElement>
@@ -5626,6 +5633,8 @@ This property contains the code that specifies the anatomical site or system tha
             <body>This property contains the result, or value of the clinical Observation.  In the generic clinical Observation class, the data type for this property can be anything.  Temperature is generally expressed in terms of degrees Celsius or degrees Fahrenheit.  Therefore, this property has been re-defined to constrain the data type to be a Physical Quantity.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5oNeEbyqEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5oNeELyqEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_6SWeA4eKEeOZ2vW3WfDP5Q" client="_6SWd3oeKEeOZ2vW3WfDP5Q">
@@ -6291,6 +6300,8 @@ This class represents the measurement (or “clinical observation”) of the pat
             <body>This property contains the result, or value of the clinical Observation.  In the generic clinical Observation class, the data type for this property can be anything.  Weight is generally expressed in terms of kilograms or pounds.  Therefore, this property has been re-defined to constrain the data type to be a Physical Quantity.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8xlp0byqEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8xlp0LyqEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_MNSj-4eMEeOZ2vW3WfDP5Q" name="WeightDeterminationMethod" clientDependency="_xDOLIMOAEeSFjdDJNF9NPA">
@@ -6308,6 +6319,8 @@ This class represents the measurement (or “clinical observation”) of the pat
             <body>This property defines what was observed that “qualifies” the primary, or “owning” Observation.  This property defines what was observed by citing a value from a nationally recognized coding system.  In this case, the value to be hard-coded for the Weight determination has yet to be determined.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7KLnIbyqEea_DaXmJ278Kw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7KLnILyqEea_DaXmJ278Kw" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_MNSkAYeMEeOZ2vW3WfDP5Q" value="cs=TBD, c=TBD">
             <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           </defaultValue>
@@ -6483,7 +6496,6 @@ This class represents the measurement (or “clinical observation”) of the pat
   <term:ValueSetConstraint xmi:id="_6sl6YOd1EeSKGaa1qzZLJg" base_Property="_DQ5wd8NpEeSFjdDJNF9NPA">
     <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_ZCyk4MNoEeSFjdDJNF9NPA"/>
   </term:ValueSetConstraint>
-  <Default:TimingInteraction xmi:id="__5t0oOd3EeSlqtEJq7r6DQ" base_Interaction="__2T7UOd3EeSlqtEJq7r6DQ"/>
   <term:ValueSetConstraint xmi:id="_alKNcOeBEeSlqtEJq7r6DQ" base_Property="_xX6RIIdwEeOZ2vW3WfDP5Q">
     <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_IeU1wLxREeSyBtXdDFDzRA"/>
   </term:ValueSetConstraint>

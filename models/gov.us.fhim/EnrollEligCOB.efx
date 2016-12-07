@@ -3341,6 +3341,8 @@
           <body>&quot;Code clarifying the Prior Authorization Number Submitted or benefit/plan exemption.&quot; - NCPDP Telecommunication (Field 461-EU, Data Dictionary 201104).  Possible values include: Prior Authorization; Medical Certification; Early Periodic Screening Diagnosis Treatment; Exemption from Copay and/or Coinsurance; Exemption from RX; Family Planning Indicator; Temporary Assistance for Needy Families; Payer Defined Exemption; Emergency Preparedness; Not Specified.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YeDx4bygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YeDx4LygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Nhq78E8FEeSJI4YBId-MmA" name="dateProcessed" visibility="public">
         <ownedComment xmi:id="_lBs3wE8FEeSJI4YBId-MmA" annotatedElement="_Nhq78E8FEeSJI4YBId-MmA">
@@ -3356,7 +3358,7 @@
           <body>The time period during which medication which would ordinarily not be covered by the payer may be dispensed under the understanding that the payer will pay for the medication as per the pre-authorization.&#xD;
 &quot;Date the prior authorization became effective&quot; and &quot;Date the prior authorization ends&quot; - NCPDP Telecommunication (Fields 498-PS and 498-PT, Data Dictionary 201104).</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TabCkE8GEeSJI4YBId-MmA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TaabgE8GEeSJI4YBId-MmA"/>
       </ownedAttribute>
@@ -3369,6 +3371,8 @@
 &quot;Contains the number assigned by the certification agency.&quot; - HL7 Version 2.8, IN3-2.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZgkXwbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZgkXwLygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oxGv4Bd2EeC9Abp3tFVARg" name="maximumQuantity" visibility="public">
         <ownedComment xmi:id="_-jeTwE8DEeSJI4YBId-MmA" annotatedElement="_oxGv4Bd2EeC9Abp3tFVARg">
@@ -3417,7 +3421,7 @@
         <ownedComment xmi:id="_Y9eH4EqGEeSqlerh7YvyAA" annotatedElement="_VEDnoCf3EeC-JKXSDMHR6A">
           <body>Pointer to the medicinal product that is the subject of the pre-authorization request.  Note that this property may seem redundant as the Pharmacy Order contains an ordered item and points to the Prior Authorization class that owns this property.  It is not redundant, however, as the pre-authorization may have occurred before the order occurs, and may be for a (slightly) different orderable medication, for example, the prior authorization may have been for a brand name drug, but a generic version is ordered.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#_420A62FD03B6426545CB0072?FHIM/Common/CommonProduct/OrderablePharmacyItem?"/>
+        <type xmi:type="uml:Class" href="CommonProduct.efx#_420A62FD03B6426545CB0072?FHIM/CommonProduct/OrderablePharmacyItem?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VEEOsSf3EeC-JKXSDMHR6A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VEEOsCf3EeC-JKXSDMHR6A"/>
       </ownedAttribute>
@@ -3432,6 +3436,8 @@
           <body>(this property needs to be revisited - it may need to be deleted).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F6203C7?FHIM/Datatypes/UsMailingAddress?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0sKb0byfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0sKb0LyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6454662290146" name="groupId" visibility="public">
         <ownedComment xmi:id="_Pkz6AuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6454662290146">
@@ -3440,12 +3446,16 @@
 &quot;ID assigned to the cardholder group or employer group.&quot; - NCPDP Telecommunication (Field 301-C1, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1I9FgbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1I9FgLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_rPBx4Cu4Ed-mUrYY2zR9Jw" name="groupName" visibility="public">
         <ownedComment xmi:id="__PDfkAMfEeKTM4I4vlc5xg" annotatedElement="_rPBx4Cu4Ed-mUrYY2zR9Jw">
           <body>&quot;Contains the group name of the insured’s insurance.&quot; - HL7 Version 2.8, IN1-9.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1xPNgbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1xPNgLyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_SeF68EvmEeCrON7ycdFLuQ" name="healthPlan" visibility="public" type="_420A62FD03B64546640100C0" association="_SdqdIEvmEeCrON7ycdFLuQ">
         <ownedComment xmi:id="_xnPBoCU7EeO_iaEYDPvTaA" annotatedElement="_SeF68EvmEeCrON7ycdFLuQ">
@@ -3489,12 +3499,16 @@
 &quot;Carrier code assigned in Worker’s Compensation Program.&quot; - NCPDP Telecommunication (Field 327-CR, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QH4KEbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QH4KELygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6454663A3028F" name="name" visibility="public">
         <ownedComment xmi:id="_Pk9D9eLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6454663A3028F">
           <body>&quot;Contains the name of the insurance company.&quot; - HL7 Version 2.8, IN1-4.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q-_YQbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q-_YQLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_roNVAEwdEeCc9OmUU3L5_A" name="phone" visibility="public">
         <ownedComment xmi:id="_roNVAUwdEeCc9OmUU3L5_A" annotatedElement="_roNVAEwdEeCc9OmUU3L5_A">
@@ -3548,13 +3562,17 @@ Note that Private Insurance Plan, Public Health Plan, Military Health Program, a
           <body>Represents the amount of money for which patient is responsible for the provision of a medical product, procedure, or service, expressed as a periodic (usually annual) monetary limit.  For example, a plan may cover all doctor's visits after the first $200.  In this example, this property would contain $200.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_69AHwbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_69AHwLyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B64546642F0075" name="effectivePeriod" visibility="public">
         <ownedComment xmi:id="_Pk9D_eLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64546642F0075">
           <body>&quot;Contains the date that the insurance goes into effect.&quot; - HL7 Version 2.8, IN1-12.&#xD;
 &quot;Indicates the last date of service that the insurance will cover or be responsible for.&quot; - HL7 Version 2.8, IN1-13.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Z6GMbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7Z6GMLyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_s_HSUFSIEeCZIfOFML-ypw" name="homePlan" visibility="public">
         <ownedComment xmi:id="_Nfn6QCU7EeO_iaEYDPvTaA" annotatedElement="_s_HSUFSIEeCZIfOFML-ypw">
@@ -3571,30 +3589,40 @@ Note that Private Insurance Plan, Public Health Plan, Military Health Program, a
 &quot;Assigned by the processor to identify a set of parameters, benefit, or coverage criteria used to adjudicate a claim.&quot; - NCPDP Telecommunication (Field 524-FO, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9IThsLyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9IJwsLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B64546648F00D9" name="insuranceType" visibility="public">
         <ownedComment xmi:id="_PlG09eLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64546648F00D9">
           <body>Such as HMO, PPO, Medicare, etc.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_98sMAbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_98sMALyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6454664AA010A" name="planName" visibility="public">
         <ownedComment xmi:id="_PlG0-OLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6454664AA010A">
           <body>The name of the Plan as assigned by the Payer.  Should this be 'description' instead of 'name'? </body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__EuLEbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__EuLELyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_5vK-8CFSEeO3ioY7BiCZOQ" name="requiresNoticeOfAdmission" visibility="public">
         <ownedComment xmi:id="_SviFECFTEeO3ioY7BiCZOQ" annotatedElement="_5vK-8CFSEeO3ioY7BiCZOQ">
           <body>&quot;Indicates whether the insurance company requires a written notice of admission from the healthcare provider.&quot; - HL7 Version 2.8, IN1-23.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AbrW8bygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AbrW8LygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_i1y-ACFTEeO3ioY7BiCZOQ" name="sendsReportOfEligibility" visibility="public">
         <ownedComment xmi:id="_i1y-ASFTEeO3ioY7BiCZOQ" annotatedElement="_i1y-ACFTEeO3ioY7BiCZOQ">
           <body>&quot;Indicates whether this insurance carrier sends a report that indicates that the patient is eligible for benefits and whether it identifies those benefits.&quot; - HL7 Version 2.8, IN1-25.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BPpxkbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BPpxkLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_q7bw8R2VEd-4VI-lpu-JjQ" name="coveredBenefit" visibility="public" type="_rRgvoB2KEd-4VI-lpu-JjQ" aggregation="shared" association="_q7bw8B2VEd-4VI-lpu-JjQ">
         <ownedComment xmi:id="_wpA9gCVJEeO_iaEYDPvTaA" annotatedElement="_q7bw8R2VEd-4VI-lpu-JjQ">
@@ -3670,6 +3698,8 @@ Member: &quot;Anyone covered under a health insurance plan, an enrollee or eligi
 &quot;Insurance ID assigned to the cardholder or identification number used by the plan.&quot; - NCPDP Telecommunication (Field 302-C2, Data Dictionary 201104).  Note that the some payers issue cards to dependents, some do not; therefore the cardholder might be the patient, the subscriber, or both.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qPiPcbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qPiPcLygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Wcxc8Rs7Ed--ZY2-pbJ-Pw" name="asPerson" visibility="public" association="_Wcxc8Bs7Ed--ZY2-pbJ-Pw">
         <ownedComment xmi:id="__K1mkAMiEeKTM4I4vlc5xg" annotatedElement="_Wcxc8Rs7Ed--ZY2-pbJ-Pw">
@@ -3706,13 +3736,17 @@ Member: &quot;Anyone covered under a health insurance plan, an enrollee or eligi
           <body>&quot;Contains the date that the insurance goes into effect.&quot; - HL7 Version 2.8, IN1-12.&#xD;
 &quot;Indicates the last date of service that the insurance will cover or be responsible for.&quot; - HL7 Version 2.8, IN1-13.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nrjPwbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nrjPwLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_992mIPaAEeCbn6MPgQ_rxg" name="coverageType" visibility="public">
         <ownedComment xmi:id="_rncC8AMjEeKTM4I4vlc5xg" annotatedElement="_992mIPaAEeCbn6MPgQ_rxg">
           <body>&quot;Contains the coding structure that identifies the various plan types, for example, Medicare, Medicaid, Blue Cross, HMO, etc.&quot; - HL7 Version 2.8, IN1-15.  Note that HL7 links this field to User Defined Table 0086, which contains no suggested values.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_okPLQbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_okPLQLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_AON0QBs0Ed--ZY2-pbJ-Pw" name="FinancialArrangement">
@@ -3724,6 +3758,8 @@ Member: &quot;Anyone covered under a health insurance plan, an enrollee or eligi
           <body>Identifies the legal agreement between a Health Plan and a (group of) provider(s) in which the method and value of payments are defined.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vaHTYbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vaHTYLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Qz5o0Su2Ed-mUrYY2zR9Jw" name="healthPlan" visibility="public" type="_420A62FD03B64546640100C0" association="_Qz5o0Cu2Ed-mUrYY2zR9Jw">
         <ownedComment xmi:id="_00vEECE4EeO3ioY7BiCZOQ" annotatedElement="_Qz5o0Su2Ed-mUrYY2zR9Jw">
@@ -3736,7 +3772,9 @@ Member: &quot;Anyone covered under a health insurance plan, an enrollee or eligi
         <ownedComment xmi:id="_TE7sISE5EeO3ioY7BiCZOQ" annotatedElement="_TE7sICE5EeO3ioY7BiCZOQ">
           <body>The time period for which the Financial Arrangement is valid.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wButAbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wButALyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_EafncBs0Ed--ZY2-pbJ-Pw" name="CapitationArrangement">
@@ -3778,6 +3816,8 @@ Member: &quot;Anyone covered under a health insurance plan, an enrollee or eligi
 &quot;Date of the Associated Prescription/Service Reference Number.&quot; - NCPDP Telecommunication (Field 457-EP, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7aXEEbydEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7aXEELydEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_h9egYCatEeOyp-Ce3y08Wg" name="associatedTransactionId" visibility="public">
         <ownedComment xmi:id="_h9egYSatEeOyp-Ce3y08Wg" annotatedElement="_h9egYCatEeOyp-Ce3y08Wg">
@@ -3785,18 +3825,24 @@ Member: &quot;Anyone covered under a health insurance plan, an enrollee or eligi
 &quot;Related Prescription/Service Reference Number to which the service is associated.&quot; - NCPDP Telecommunication (Field 456-EN, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8P6zEbydEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8P6zELydEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="__qfu4CFHEeO3ioY7BiCZOQ" name="canBenefitsBeCoordinated" visibility="public">
         <ownedComment xmi:id="__qfu4SFHEeO3ioY7BiCZOQ" annotatedElement="__qfu4CFHEeO3ioY7BiCZOQ">
           <body>&quot;Indicates whether this insurance works in conjunction with other insurance plans, or if it provides independent coverage and payment of benefits regardless of other insurance that might be available to the patient.&quot; - HL7 Version 2.8, IN1-21.  Note that HL7 Version 2 models this as a code with possible values (Table 173) of: Coordination, Independent.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-U5ikbydEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-U5ikLydEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_fkIX0CVXEeO_iaEYDPvTaA" name="productServiceId" visibility="public">
         <ownedComment xmi:id="_r1teMCVXEeO_iaEYDPvTaA" annotatedElement="_fkIX0CVXEeO_iaEYDPvTaA">
           <body>&quot;ID of the product dispensed or service provided.&quot; - NCPDP Telecommunication (Field 407-D7, Data Dictionary 201104).  Note that the NCPDP Telecommunication structure uses a separate qualifier field (436-E1 ) to indicate what kind of data is in this field.  Possible values include: NDC, UPC, HRI, and 37 other codes.  This is not modeled as a separate property in the FHIM, rather this can be handled by the Code data type.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DqP2obyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DqP2oLyeEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_HL2p0FlcEeCyw5g2lQh-Ug" name="doesPatientAssignBenefits" visibility="public">
         <ownedComment xmi:id="_AJQj8CFHEeO3ioY7BiCZOQ" annotatedElement="_HL2p0FlcEeCyw5g2lQh-Ug">
@@ -3804,12 +3850,16 @@ Member: &quot;Anyone covered under a health insurance plan, an enrollee or eligi
 &quot;Code to indicate a patient’s choice on assignment of benefits.&quot; - NCPDP Telecommunication (Field 391-MT, Data Dictionary 201104).  Note that while this is a code in the NCPDP Telecommunication structure, the valid values are Yes and No.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__rMnILydEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__rMAELydEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_1zp_gGuREeCZQ_Ui4wPHHw" name="doesProviderAcceptAssignment" visibility="public">
         <ownedComment xmi:id="_EOF0wCVMEeO_iaEYDPvTaA" annotatedElement="_1zp_gGuREeCZQ_Ui4wPHHw">
           <body>&quot;Code indicating whether the provider accepts assignment.&quot; - NCPDP Telecommunication (Field 361-2D, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AOe6YbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AOe6YLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ms7lwFSMEeCZIfOFML-ypw" name="eligibilityClarificationCode" visibility="public">
         <ownedComment xmi:id="_MVD5sCU9EeO_iaEYDPvTaA" annotatedElement="_ms7lwFSMEeCZIfOFML-ypw">
@@ -3825,12 +3875,16 @@ Member: &quot;Anyone covered under a health insurance plan, an enrollee or eligi
 &quot;Claim number assigned by the Medicaid Agency.&quot; - NCPDP Telecommunication (Field 114-N4, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BXqwAbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BXqwALyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_0fbQYGYTEeC_U5wVHbS9Yw" name="otherCoverageCode" visibility="public">
         <ownedComment xmi:id="_Bi0qkCa7EeOyp-Ce3y08Wg" annotatedElement="_0fbQYGYTEeC_U5wVHbS9Yw">
           <body>&quot;Code indicating whether or not the patient has other insurance coverage.&quot; - NCPDP Telecommunication (Field 420-DK, Data Dictionary 201104).  Possible values include: Not Specified by patient; No other coverage; Other coverage exists-payment collected; Other Coverage Billed – claim not covered; Other coverage exists-payment not collected; Claim is billing for patient financial responsibility only.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CCG0IbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CCG0ILyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kmNa4C4VEd-PMuDpZFGUxw" name="serviceDate" visibility="public">
         <ownedComment xmi:id="_KIOfYCrHEeO8Bco4fXbdUg" annotatedElement="_kmNa4C4VEd-PMuDpZFGUxw">
@@ -3839,6 +3893,8 @@ Member: &quot;Anyone covered under a health insurance plan, an enrollee or eligi
 &quot;The time at which the service is performed as local time that will correspond with the actual date of service.&quot; - NCPDP Telecommunication (Field 678-Y6, Data Dictionary 201104).  Used primarily for controlled substance reporting.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EF9iQbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EF9iQLyeEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8HAiQGYSEeC_U5wVHbS9Yw" name="submissionClarificationCode" visibility="public">
         <ownedComment xmi:id="_xZaMcCa5EeOyp-Ce3y08Wg" annotatedElement="_8HAiQGYSEeC_U5wVHbS9Yw">
@@ -3853,6 +3909,8 @@ Member: &quot;Anyone covered under a health insurance plan, an enrollee or eligi
           <body>&quot;Reference number assigned by the provider for the dispensed drug/product and/or service provided.&quot; - NCPDP Telecommunication (Field 402-D2, Data Dictionary 201104).  Note that the NCPDP Telecommunication structure uses a separate qualifier field (455-EM) to indicate what kind of data is in this field.  Possible values include: Rx Billing; Service Billing.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F5gjgbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F5gjgLyeEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_NLxdQF7gEeCcBvMgXNMeOQ" name="billableProcedure" visibility="public" association="_NLuZ8F7gEeCcBvMgXNMeOQ">
         <ownedComment xmi:id="_bccbYCX0EeOkPsd2JhLMLw" annotatedElement="_NLxdQF7gEeCcBvMgXNMeOQ">
@@ -3922,18 +3980,24 @@ Member: &quot;Anyone covered under a health insurance plan, an enrollee or eligi
           <body>Identifies a healthcare-related procedure or service, to include medications and durable equipment, that is anticipated to be funded, in full or in part, by a given Healthcare Policy.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WyhSkLyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WygrgLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_v2TxUEwWEeCc9OmUU3L5_A" name="coinsuranceAmount" visibility="public">
         <ownedComment xmi:id="_Ds_tECYAEeOkPsd2JhLMLw" annotatedElement="_v2TxUEwWEeCc9OmUU3L5_A">
           <body>Represents the amount of money for which patient is responsible for the provision of a medical product, procedure, or service, expressed as a percentage of its cost.  For example, if a plan pays 80% of the cost of non-formulary drugs, the patient is responsible for 20%, and this property would contain 0.20.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Real?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XVh5AbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XVh5ALyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_0IRVwEwWEeCc9OmUU3L5_A" name="copaymentAmount" visibility="public">
         <ownedComment xmi:id="_zkx24CYAEeOkPsd2JhLMLw" annotatedElement="_0IRVwEwWEeCc9OmUU3L5_A">
           <body>Represents the amount of money for which patient is responsible for the provision of a medical product, procedure, or service, expressed as a flat monetary amount.  For example, if a plan pays all but $25 of the cost of on-formulary prescription drugs, the patient is responsible for the remaining $25.  In this example, this property would contain $25.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X7iwIbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X7iwILyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_q7bw8B2VEd-4VI-lpu-JjQ" memberEnd="_q7bw8R2VEd-4VI-lpu-JjQ _q7bw9B2VEd-4VI-lpu-JjQ">
@@ -3956,12 +4020,16 @@ Claims for reimbursement will cite the Insurance Policy number, and sometimes a 
           <body>A unique identifier that the payer or information source uses to identify the Policy Holder as belonging to a specific Plan.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4fMokbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4fMokLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_0aqDMEyiEd-ir98gTBezYA" name="policyTerm" visibility="public">
         <ownedComment xmi:id="_WT3cYCr0EeOKCrmlnw-Z_w" annotatedElement="_0aqDMEyiEd-ir98gTBezYA">
           <body>The time period during which the Healthcare Policy is / will be in effect.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5Dav8byfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5Dav8LyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_tsC3YR2VEd-4VI-lpu-JjQ" name="healthPlan" visibility="public" type="_420A62FD03B64546640100C0" association="_tsC3YB2VEd-4VI-lpu-JjQ">
         <ownedComment xmi:id="_D5-20CYZEeOkPsd2JhLMLw" annotatedElement="_tsC3YR2VEd-4VI-lpu-JjQ">
@@ -4010,6 +4078,8 @@ Claims for reimbursement will cite the Insurance Policy number, and sometimes a 
 &quot;Identifies the claim number assigned by Worker’s Compensation Program.&quot; - NCPDP Telecommunication (Field 435-DZ, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IALqMbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IALqMLygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_MxXqYFSGEeCZIfOFML-ypw" name="diagnosisList" visibility="public" association="_MxUnEFSGEeCZIfOFML-ypw">
         <ownedComment xmi:id="_aeoi4CbyEeOyp-Ce3y08Wg" annotatedElement="_MxXqYFSGEeCZIfOFML-ypw">
@@ -4023,7 +4093,9 @@ Claims for reimbursement will cite the Insurance Policy number, and sometimes a 
         <ownedComment xmi:id="_Mggr8Cr0EeOKCrmlnw-Z_w" annotatedElement="_gWtSQFSGEeCZIfOFML-ypw">
           <body>Represents the time period during which the Patient's case was actively being managed.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I51PAbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I51PALygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_lF4XIVSGEeCZIfOFML-ypw" name="priorAuthorization" visibility="public" type="_07EAwBd1EeC9Abp3tFVARg" association="_lF4XIFSGEeCZIfOFML-ypw">
         <ownedComment xmi:id="_nLrewAMiEeKTM4I4vlc5xg" annotatedElement="_lF4XIVSGEeCZIfOFML-ypw">
@@ -4037,6 +4109,8 @@ Claims for reimbursement will cite the Insurance Policy number, and sometimes a 
           <body>&quot;Indicates that the patient resides in a facility that qualifies for the CMS Part D benefit.&quot; - NCPDP Telecommunication (Field 997-G2, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JndxEbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JndxELygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_zutlEJBYEeCMBO4kb261_A" name="clinicalInformation" visibility="public" association="_zuqhwJBYEeCMBO4kb261_A">
         <ownedComment xmi:id="_SmfHoCcCEeOyp-Ce3y08Wg" annotatedElement="_zutlEJBYEeCMBO4kb261_A">
@@ -4057,12 +4131,16 @@ Claims for reimbursement will cite the Insurance Policy number, and sometimes a 
           <body>The amount of money that may be paid for the performance of a set of services related to the given diagnosis group.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gQlIcLyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gQkhYLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_SrOvgCE1EeO3ioY7BiCZOQ" name="code" visibility="public">
         <ownedComment xmi:id="_SrOvgSE1EeO3ioY7BiCZOQ" annotatedElement="_SrOvgCE1EeO3ioY7BiCZOQ">
           <body>Categorizes the medical services that may be performed in order to establish a reimbursement rate for those services.  Note that this could be a DRG, and APG, or one of their derivatives.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hAe7YbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hAe7YLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_EuwrMEygEd-ir98gTBezYA" name="DrugFormulary">
@@ -4086,6 +4164,8 @@ Claims for reimbursement will cite the Insurance Policy number, and sometimes a 
           <body>The amount of money that may be paid for the performance of a set of services related to the given diagnosis group.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s9_PMbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s9_PMLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_D53Cg0yrEd-ir98gTBezYA" name="billableAct" visibility="public" type="_Kk8-kBs0Ed--ZY2-pbJ-Pw">
         <ownedComment xmi:id="_wTEhoCE2EeO3ioY7BiCZOQ" annotatedElement="_D53Cg0yrEd-ir98gTBezYA">
@@ -4102,21 +4182,29 @@ Claims for reimbursement will cite the Insurance Policy number, and sometimes a 
       <generalization xmi:id="_gafm0F7eEeCcBvMgXNMeOQ" general="_Kk8-kBs0Ed--ZY2-pbJ-Pw"/>
       <ownedAttribute xmi:id="_4zIakGnfEeCyXraDASYTcQ" name="benefitLimitationOverrideCategory" visibility="public">
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kMyfUbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kMyfULyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="__bOwAGuMEeCZQ_Ui4wPHHw" name="benefitLimitationOverrideId" visibility="public">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k4ypsbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k4ypsLyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Dkb90GncEeCyXraDASYTcQ" name="billingUnitOfMeasure" visibility="public">
         <ownedComment xmi:id="_FXkcoCa9EeOyp-Ce3y08Wg" annotatedElement="_Dkb90GncEeCyXraDASYTcQ">
           <body>&quot;NCPDP standard product billing codes.&quot; - NCPDP Telecommunication (Field 600-28, Data Dictionary 201104).  Possible values include: Each; Grams; Milliliters.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lY3Q4byfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lY3Q4LyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oYQm0GuQEeCZQ_Ui4wPHHw" name="claimDelayReason" visibility="public">
         <ownedComment xmi:id="_yVVxkCarEeOyp-Ce3y08Wg" annotatedElement="_oYQm0GuQEeCZQ_Ui4wPHHw">
           <body>&quot;Code to specify the reason that submission of the transactions has been delayed.&quot; - NCPDP Telecommunication (Field 357-NV, Data Dictionary 201104).  Possible values include: Proof of eligibility unknown or unavailable; Litigation; Authorization delays; Delay in certifying provider; Delay in supplying billing forms; Delay in delivery of custom-made appliances; Third party processing delay; Delay in eligibility determination; Original claims rejected or denied due to a reason unrelated to the billing limitation rules; Administration delay in the prior approval process; Received late with no exceptions; Substantial damage by fire, etc to provider records; Theft, sabotage/other willful acts by employee; Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l4RJsbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l4RJsLyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_lCPYIGuOEeCZQ_Ui4wPHHw" name="intermediaryAuthorizationCategory" visibility="public">
         <ownedComment xmi:id="_-Fv44GuOEeCZQ_Ui4wPHHw" annotatedElement="_lCPYIGuOEeCZQ_Ui4wPHHw">
@@ -4124,6 +4212,8 @@ Claims for reimbursement will cite the Insurance Policy number, and sometimes a 
 &quot;Value indicating that authorization occurred for intermediary processing.&quot; - NCPDP Telecommunication (Field 463-EW, Data Dictionary 201104).  Possible values include: Intermediary Authorization; Other Override; Not Specified.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mTqFMbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mTqFMLyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_tK7WgGuOEeCZQ_Ui4wPHHw" name="intermediaryAuthorizationId" visibility="public">
         <ownedComment xmi:id="_vjSbgCa9EeOyp-Ce3y08Wg" annotatedElement="_tK7WgGuOEeCZQ_Ui4wPHHw">
@@ -4131,6 +4221,8 @@ Claims for reimbursement will cite the Insurance Policy number, and sometimes a 
 &quot;Value indicating intermediary authorization occurred.&quot; - NCPDP Telecommunication (Field 464-EX, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mtuyEbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mtuyELyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_40leAGndEeCyXraDASYTcQ" name="levelOfService" visibility="public">
         <ownedComment xmi:id="_kPSXsCa9EeOyp-Ce3y08Wg" annotatedElement="_40leAGndEeCyXraDASYTcQ">
@@ -4142,6 +4234,8 @@ Claims for reimbursement will cite the Insurance Policy number, and sometimes a 
       </ownedAttribute>
       <ownedAttribute xmi:id="_28o5cGuUEeCZQ_Ui4wPHHw" name="pharmacyType" visibility="public">
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n4PdYbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n4PdYLyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kcs4AF7eEeCcBvMgXNMeOQ" name="medicationDispense" visibility="public" association="_kcp0sF7eEeCcBvMgXNMeOQ">
         <type xmi:type="uml:Class" href="Pharmacy.efx#_420A62FD03B641928F4302E4?FHIM/Pharmacy/PharmacyDispense?"/>
@@ -4181,6 +4275,8 @@ Claims for reimbursement will cite the Insurance Policy number, and sometimes a 
 Note also that this property is derived; the value of this code could potentially be discerned by Role Link classes.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dWEfIbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dWEfILyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_5xMTsFIsEd-y7__FceVOaw" name="PatientSubscriber">
@@ -4201,6 +4297,8 @@ Note also that this property is derived; the value of this code could potentiall
 Note also that this property is derived; the value of this code could potentially be discerned by Role Link classes.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LkSqIbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LkSqILygEea_DaXmJ278Kw" value="1"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_ZRnVICb9EeOyp-Ce3y08Wg">
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <language></language>
@@ -4225,18 +4323,24 @@ Note also that this property is derived; the value of this code could potentiall
 &quot;ID assigned to the patient.&quot; - NCPDP Telecommunication (Field 332-CY, Data Dictionary 201104).  Note that the NCPDP Telecommunication structure uses a separate field (331-CX) to describe what kind of patient id is found here (i.e., who issued the id).  This information is not modeled as a separate field in the FHIM as it is part of the ID data type.  Possible values for the id type include: Social Security Number; Facility ID Number; Driver's License Number; U.S. Military ID; Non-SSN-based patient identifier assigned by health plan; SSN-based patient identifier assigned by health plan; Medicaid ID; State Issued ID; Passport ID; Medicare HIC#; Employer Assigned ID; Payer/PBM Assigned ID; Alien Number (Government Permanent Residence Residence Number); Government Student VISA Number; Indian Tribal ID; Medical Record Identification Number; Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZWlx0byfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZWlx0LyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_HCvGAPaMEeCbn6MPgQ_rxg" name="patientResidenceType" visibility="public">
         <ownedComment xmi:id="_SXDQcCYxEeOkPsd2JhLMLw" annotatedElement="_HCvGAPaMEeCbn6MPgQ_rxg">
           <body>&quot;Code identifying the patient’s place of residence.&quot; - NCPDP Telecommunication (Field 384-4X, Data Dictionary 201104).  Possible values include: Home; Skilled Nursing Facility; Nursing Facility; Assisted Living Facility; Custodial Care Facility; Group Home; Inpatient Psychiatric Facility; Psychiatric Facility – Partial Hospitalization; Intermediate Care Facility/Mentally Retarded; Residential Substance Abuse Treatment Facility; Hospice; Psychiatric Residential Treatment Facility; Comprehensive Inpatient Rehabilitation Facility; Homeless Shelter; Correctional Institution; Not Specified.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ahBkobyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ahBkoLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_hnXksFSNEeCZIfOFML-ypw" name="personCode" visibility="public">
         <ownedComment xmi:id="_ow6aQFSNEeCZIfOFML-ypw" annotatedElement="_hnXksFSNEeCZIfOFML-ypw">
           <body>&quot;Code assigned to a specific person within a family.  Example: 001=Cardholder; 002=Spouse; 003-999=Dependents and Others (including second spouses, etc.).&quot; - NCPDP Telecommunication (Field 303-C3, Data Dictionary 201104).  Note that while the definition implies a Code datatype, NCPDP models this as a string.  In practice, this property acts like an identifier.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bpeacbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bpeacLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_bhYKcEwUEeCc9OmUU3L5_A" name="dependent" visibility="public" type="_pxWL0FIsEd-y7__FceVOaw" association="_bhPAgEwUEeCc9OmUU3L5_A">
         <ownedComment xmi:id="_eza7YCb-EeOyp-Ce3y08Wg" annotatedElement="_bhYKcEwUEeCc9OmUU3L5_A">
@@ -4327,6 +4431,8 @@ Note also that this property is derived; the value of this code could potentiall
           <body>&quot;The secondary, tertiary, etc. card issuer or bank ID number used for network routing.&quot; - NCPDP Telecommunication (Field 990-MG, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hh80QbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hh80QLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_rKRJMFSLEeCZIfOFML-ypw" name="planId" visibility="public">
         <ownedComment xmi:id="_cuqngCryEeOKCrmlnw-Z_w" annotatedElement="_rKRJMFSLEeCZIfOFML-ypw">
@@ -4334,6 +4440,8 @@ Note also that this property is derived; the value of this code could potentiall
 Note that this property may relate more to the Health Plan than to the Processor, in which case it would be a duplicate of HealthPlan.id.  In that case this property may need to be removed.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i0-iYbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i0-iYLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nPf8wFSLEeCZIfOFML-ypw" name="processorControlNumber" visibility="public">
         <ownedComment xmi:id="_8BYR8CrxEeOKCrmlnw-Z_w" annotatedElement="_nPf8wFSLEeCZIfOFML-ypw">
@@ -4341,6 +4449,8 @@ Note that this property may relate more to the Health Plan than to the Processor
 Note that this property may relate more to the transaction than to the Processor, in which case it will need to move to the Billing Event.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j2seEbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j2seELygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_zKcEwFSLEeCZIfOFML-ypw" name="payer" visibility="public" type="_420A62FD03B6454662F10302" association="_zKZBcFSLEeCZIfOFML-ypw">
         <ownedComment xmi:id="_K_rSsCrxEeOKCrmlnw-Z_w" annotatedElement="_zKcEwFSLEeCZIfOFML-ypw">
@@ -4366,12 +4476,16 @@ Note that this property may relate more to the transaction than to the Processor
           <body>&quot;Total amount to be paid by the claims processor (i.e. pharmacy receivable).  Represents a sum of Ingredient Cost Paid, Dispensing Fee Paid, Flat Sales Tax Amount Paid, Percentage Sales Tax Amount Paid, Incentive Amount Paid, Professional Service Fee Paid, and Other Amount Paid, less Patient Pay Amount and Other Payer Amount Recognized.&quot; - NCPDP Telecommunication (Field 509-F9, Data Dictionary 201104).  Note that this field may be calculated and has therefore been modeled as a derived field.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KHow0byeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KHow0LyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ypkCwG9aEeC7Xu_kGrVjuQ" name="amountSubmitted" visibility="public" isDerived="true">
         <ownedComment xmi:id="_znbmkCRxEeOGsKsAZqPe7g" annotatedElement="_ypkCwG9aEeC7Xu_kGrVjuQ">
           <body>&quot;Total price claimed from all sources. For prescription claim requests, field represents a sum of Ingredient Cost Submitted, Dispensing Fee Submitted, Flat Sales Tax Amount Submitted, Percentage Sales Tax Amount Submitted, Incentive Amount Submitted, and Other Amount Claimed. For service claim requests, field represents a sum of Professional Services Fee Submitted, Flat Sales Tax Amount Submitted, Percentage Sales Tax Amount Submitted, and Other Amount&quot; - NCPDP Telecommunication (Field 430-DU, Data Dictionary 201104).  Note that this field may be calculated and has therefore been modeled as a derived field.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MIEXgbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MIEXgLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nEJJMHpaEeCYy4DzyFpAzQ" name="billingResponse" visibility="public" type="_VlqyEHpYEeCYy4DzyFpAzQ" association="_nEGF4HpaEeCYy4DzyFpAzQ">
         <ownedComment xmi:id="_Q9IvoCYPEeOkPsd2JhLMLw" annotatedElement="_nEJJMHpaEeCYy4DzyFpAzQ">
@@ -4426,24 +4540,32 @@ Note: this may need to be 0..1, not 0..*.</body>
           <body>&quot;Number assigned by processor to identify the individual Medicaid Agency or representative.&quot; - NCPDP Telecommunication (Field 116-N6, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E-HnYbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E-HnYLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_uRB14FlZEeCyw5g2lQh-Ug" name="medicaidId" visibility="public">
         <ownedComment xmi:id="_FICC0FlaEeCyw5g2lQh-Ug" annotatedElement="_uRB14FlZEeCyw5g2lQh-Ug">
           <body>&quot;A unique member identification number assigned by the Medicaid Agency.&quot; - NCPDP Telecommunication (Field 115-N5, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FaxuMbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FaxuMLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_MH1NoCVLEeO_iaEYDPvTaA" name="medicaidState" visibility="public">
         <ownedComment xmi:id="_hNIMYCVLEeO_iaEYDPvTaA" annotatedElement="_MH1NoCVLEeO_iaEYDPvTaA">
           <body>&quot;Two character State Postal Code indicating the state where Medicaid coverage exists.&quot; - NCPDP Telecommunication (Field 360-2B, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F1CoUbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F1CoULygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_6RR7sFlZEeCyw5g2lQh-Ug" name="medigapId" visibility="public">
         <ownedComment xmi:id="_I-0qwCVKEeO_iaEYDPvTaA" annotatedElement="_6RR7sFlZEeCyw5g2lQh-Ug">
           <body>&quot;Patient’s ID assigned by the Medigap Insurer.&quot; - NCPDP Telecommunication (Field 359-2A, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Gz-VwbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Gz-VwLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_iWikYFlaEeCyw5g2lQh-Ug" memberEnd="_iWlnsFlaEeCyw5g2lQh-Ug _iWorAllaEeCyw5g2lQh-Ug">
@@ -4462,36 +4584,48 @@ Note: this may need to be 0..1, not 0..*.</body>
           <body>&quot;Date on which the injury occurred.&quot; - NCPDP Telecommunication (Field 434-DY, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sBnREbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sBnRELygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_NYCTsIVYEeCFWps2bBaH1A" name="employerAddress" visibility="public">
         <ownedComment xmi:id="_Acu2ICRTEeOGsKsAZqPe7g" annotatedElement="_NYCTsIVYEeCFWps2bBaH1A">
           <body>Mailing address of the employer (street address, city, state, and zipcode). - NCPDP Telecommunication (Fields 316-CG, 317-CH, 318-CI, and 319-CJ).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F6203C7?FHIM/Datatypes/UsMailingAddress?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tekXQbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tekXQLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_MG-fwCVQEeO_iaEYDPvTaA" name="employerId" visibility="public">
         <ownedComment xmi:id="_km6ZYCVQEeO_iaEYDPvTaA" annotatedElement="_MG-fwCVQEeO_iaEYDPvTaA">
           <body>&quot;ID assigned to employer.  Required if required by law as defined in the HIPAA final Privacy regulations....  Required if needed for Workers’ Compensation billing.&quot; - NCPDP Telecommunication (Field 333-CZ, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uHweMbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uHweMLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_hYZqsIVYEeCFWps2bBaH1A" name="employerName" visibility="public">
         <ownedComment xmi:id="_xTOLQCRQEeOGsKsAZqPe7g" annotatedElement="_hYZqsIVYEeCFWps2bBaH1A">
           <body>&quot;Complete name of employer.&quot; - NCPDP Telecommunication (Field 315-CF, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ujmssbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ujmssLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_mox_MIVYEeCFWps2bBaH1A" name="employerPhone" visibility="public">
         <ownedComment xmi:id="_ZJGCMCRTEeOGsKsAZqPe7g" annotatedElement="_mox_MIVYEeCFWps2bBaH1A">
           <body>&quot;Ten-digit phone number of employer.&quot; - NCPDP Telecommunication (Field 320-CK, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_fImbAAEYEd-ZUM5xZsXWyw?FHIM/Datatypes/ContactPoint?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vAIQobygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vAIQoLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_p9vI0IVYEeCFWps2bBaH1A" name="employerPointOfContact" visibility="public">
         <ownedComment xmi:id="_iA8MoCRTEeOGsKsAZqPe7g" annotatedElement="_p9vI0IVYEeCFWps2bBaH1A">
           <body>&quot;Employer primary contact.&quot; - NCPDP Telecommunication (Field 321-CL, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_3lzSEFVyEdyaooytdRFnxQ?FHIM/Datatypes/PersonName?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_veDiwbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_veDiwLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_P4vc8CYbEeOkPsd2JhLMLw" name="healthcarePolicy" visibility="public" type="_nwgwQB2ZEd-4VI-lpu-JjQ" association="_P4u14CYbEeOkPsd2JhLMLw">
         <ownedComment xmi:id="_PCzDsCYsEeOkPsd2JhLMLw" annotatedElement="_P4vc8CYbEeOkPsd2JhLMLw">
@@ -4541,6 +4675,8 @@ Note: this may need to be 0..1, not 0..*.</body>
 &quot;Code identifying the type of Other Payer ID&quot; - NCPDP Telecommunication (Field 338-5C, Data Dictionary 201104).  Possible values are 1-9.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z9z9gbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z9z9gLyeEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_f9koQG9bEeC7Xu_kGrVjuQ" name="billingEvent" visibility="public" type="_x68SEFVXEeCN_KTl5VCkdg" association="_f9hk8G9bEeC7Xu_kGrVjuQ">
         <ownedComment xmi:id="_SIjFwCYCEeOkPsd2JhLMLw" annotatedElement="_f9koQG9bEeC7Xu_kGrVjuQ">
@@ -4571,60 +4707,80 @@ Note: this may need to be 0..1, not 0..*.</body>
           <body>&quot;Amount in dollars met by the patient/family in a deductible plan.&quot; - NCPDP Telecommunication (Field 512-FC, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OwyGMbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OwyGMLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_04F0kCUeEeO_iaEYDPvTaA" name="amountAppliedToDeductible" visibility="public">
         <ownedComment xmi:id="_98d_ICUeEeO_iaEYDPvTaA" annotatedElement="_04F0kCUeEeO_iaEYDPvTaA">
           <body>&quot;Amount to be collected from a patient that is included in Patient Pay Amount that is applied to a periodic deductible.&quot; - NCPDP Telecommunication (Field 517-FH, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QYecwbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QYecwLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_lV_X4CSKEeOTgcVYMe3cWA" name="amountAttributableToSalesTax" visibility="public">
         <ownedComment xmi:id="_quiJ4CSKEeOTgcVYMe3cWA" annotatedElement="_lV_X4CSKEeOTgcVYMe3cWA">
           <body>&quot;Amount to be collected from the patient that is included in Patient Pay Amount that is due to sales tax paid.&quot; - NCPDP Telecommunication (Field 523-FN, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RAL9AbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RAL9ALyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_x69-UCUtEeO_iaEYDPvTaA" name="amountAttributedToBrandSelection" visibility="public">
         <ownedComment xmi:id="_xPZKYCUwEeO_iaEYDPvTaA" annotatedElement="_x69-UCUtEeO_iaEYDPvTaA">
           <body>&quot;Amount to be collected from the patient that is included in Patient Pay Amount that is due to the patient’s selection of a Brand product.&quot; - NCPDP Telecommunication (Field 134-UK, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R6heUbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R6heULyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_pPMkMCUxEeO_iaEYDPvTaA" name="amountAttributedToBrandNonFormularySelection" visibility="public">
         <ownedComment xmi:id="_ABq2cCUyEeO_iaEYDPvTaA" annotatedElement="_pPMkMCUxEeO_iaEYDPvTaA">
           <body>&quot;Amount to be collected from the patient that is included in Patient Pay Amount that is due to the patient’s selection of a Brand Non-Preferred Formulary product.&quot; - NCPDP Telecommunication (Field 136-UN, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RdMpIbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RdMpILyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_hGZboCUyEeO_iaEYDPvTaA" name="amountAttributedToCoverageGap" visibility="public">
         <ownedComment xmi:id="_rowAECUyEeO_iaEYDPvTaA" annotatedElement="_hGZboCUyEeO_iaEYDPvTaA">
           <body>&quot;Amount to be collected from the patient that is included in Patient Pay Amount that is due to the patient being in the coverage gap (for example Medicare Part D Coverage Gap (donut hole)). A coverage gap is defined as the period or amount during which the previous coverage ends and before an additional coverage begins.&quot; - NCPDP Telecommunication (Field 137-UP, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SWXs0byeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SWXs0LyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_x8pZUCUtEeO_iaEYDPvTaA" name="amountAttributedToNonFormularySelection" visibility="public">
         <ownedComment xmi:id="_2_mZACUxEeO_iaEYDPvTaA" annotatedElement="_x8pZUCUtEeO_iaEYDPvTaA">
           <body>&quot;Amount to be collected from the patient that is included in Patient Pay Amount that is due to the patient’s selection of a Non-Preferred Formulary product.&quot; - NCPDP Telecommunication (Field 135-UM, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S0YegbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S0YegLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_x5GWECUtEeO_iaEYDPvTaA" name="amountAttributedToProviderNetworkSelection" visibility="public">
         <ownedComment xmi:id="_-WX5oCUuEeO_iaEYDPvTaA" annotatedElement="_x5GWECUtEeO_iaEYDPvTaA">
           <body>&quot;Amount to be collected from the patient that is included in Patient Pay Amount that is due to the patient’s provider network selection.&quot; - NCPDP Telecommunication (Field 133-UJ, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TRgfYbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TRgfYLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_SoaCsCUfEeO_iaEYDPvTaA" name="amountExceedingBenefitMaximum" visibility="public">
         <ownedComment xmi:id="_fMnKICUfEeO_iaEYDPvTaA" annotatedElement="_SoaCsCUfEeO_iaEYDPvTaA">
           <body>&quot;Amount to be collected from the patient that is included in Patient Pay Amount that is due to the patient exceeding a periodic benefit maximum.&quot; - NCPDP Telecommunication (Field 520-FK, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TwdFMbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TwdFMLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-ymxYCUoEeO_iaEYDPvTaA" name="amountOfCoinsurance" visibility="public">
         <ownedComment xmi:id="_GI5pgCUpEeO_iaEYDPvTaA" annotatedElement="_-ymxYCUoEeO_iaEYDPvTaA">
           <body>&quot;Amount to be collected from the patient that is included in Patient Pay Amount that is due to a per prescription coinsurance.&quot; - NCPDP Telecommunication (Field 572-4U, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UJbl4byeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UJbl4LyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_JoT7MCUfEeO_iaEYDPvTaA" name="amountOfCopay" visibility="public">
         <ownedComment xmi:id="_NnSSMCUfEeO_iaEYDPvTaA" annotatedElement="_JoT7MCUfEeO_iaEYDPvTaA">
@@ -4632,48 +4788,64 @@ Note: this may need to be 0..1, not 0..*.</body>
 </body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UldakbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UldakLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_SuT2YCUfEeO_iaEYDPvTaA" name="amountOfProcessingFee" visibility="public">
         <ownedComment xmi:id="_0OcBUCUjEeO_iaEYDPvTaA" annotatedElement="_SuT2YCUfEeO_iaEYDPvTaA">
           <body>&quot;Amount to be collected from the patient that is included in Patient Pay Amount that is due to the processing fee imposed by the processor.&quot; - NCPDP Telecommunication (Field 571-NZ, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VJ9OwbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VJ9OwLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-5SFUCUhEeO_iaEYDPvTaA" name="basisOfCalculationCoInsurance" visibility="public">
         <ownedComment xmi:id="_fOjfUCUpEeO_iaEYDPvTaA" annotatedElement="_-5SFUCUhEeO_iaEYDPvTaA">
           <body>&quot;Code indicating how the Coinsurance reimbursement amount was calculated for Patient Pay Amount.&quot; - NCPDP Telecommunication (Field 573-4V, Data Dictionary 201104).  Possible values include: Quantity Dispensed; Quantity Intended To Be Dispensed; Usual and Customary/Prorated; Waived Due To Partial Fill; Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vig4sLyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VigRoLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_i53NECUhEeO_iaEYDPvTaA" name="basisOfCalculationCopay" visibility="public">
         <ownedComment xmi:id="_3rNVECUhEeO_iaEYDPvTaA" annotatedElement="_i53NECUhEeO_iaEYDPvTaA">
           <body>&quot;Code indicating how the Copay reimbursement amount was calculated for Patient Pay Amount.&quot; - NCPDP Telecommunication (Field 347-HJ, Data Dictionary 201104).  Possible values include: Quantity Dispensed; Quantity Intended To Be Dispensed; Usual and Customary/Prorated; Waived Due To Partial Fill; Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V9XosbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V9XosLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_SrbhgCUfEeO_iaEYDPvTaA" name="basisOfCalculationDispensingFee" visibility="public">
         <ownedComment xmi:id="_wX1gACUfEeO_iaEYDPvTaA" annotatedElement="_SrbhgCUfEeO_iaEYDPvTaA">
           <body>&quot;Code indicating how the reimbursement amount was calculated for Dispensing Fee Paid&quot; - NCPDP Telecommunication (Field 346-HH, Data Dictionary 201104).  Possible values include: Quantity Dispensed; Quantity Intended To Be Dispensed; Usual and Customary/Prorated; Waived Due To Partial Fill; Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wc42QbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wc42QLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-2IqsCUhEeO_iaEYDPvTaA" name="basisOfCalculationFlatSalesTax" visibility="public">
         <ownedComment xmi:id="_QT5iECUiEeO_iaEYDPvTaA" annotatedElement="_-2IqsCUhEeO_iaEYDPvTaA">
           <body>&quot;Code indicating how the reimbursement amount was calculated for Flat Sales Tax Amount Paid&quot; - NCPDP Telecommunication (Field 348-HK, Data Dictionary 201104).  Possible values include: Quantity Dispensed; Quantity Intended To Be Dispensed.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W9lvkbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W9lvkLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-3xCYCUhEeO_iaEYDPvTaA" name="basisOfCalculationPercentageSalesTax" visibility="public">
         <ownedComment xmi:id="_eTlTkCUjEeO_iaEYDPvTaA" annotatedElement="_-3xCYCUhEeO_iaEYDPvTaA">
           <body>&quot;Code indicating how the reimbursement amount was calculated for Percentage Sales Tax Amount Paid.&quot; - NCPDP Telecommunication (Field 349-HM, Data Dictionary 201104).  Possible values include: Quantity Dispensed; Quantity Intended To Be Dispensed.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XisnwbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XisnwLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_WRj1cHpdEeCYy4DzyFpAzQ" name="basisOfReimbursementDetermination" visibility="public">
         <ownedComment xmi:id="_3H_PUCSJEeOTgcVYMe3cWA" annotatedElement="_WRj1cHpdEeCYy4DzyFpAzQ">
           <body>&quot;Code identifying how the reimbursement amount was calculated for &quot;Ingredient Cost Paid.&quot; - NCPDP Telecommunication (Field 522-FM, Data Dictionary 201104).  Possible values include: Default; AWP (Average Wholesale Price); Local Wholesaler; Direct; EAC (Estimated Acquisition Cost); Acquisition; MAC (Maximum Allowable Cost); Usual &amp; Customary; 340B /Disproportionate Share Pricing/Public Health Service; ASP (Average Sales Price); AMP (Average Manufacturer Price); WAC (Wholesale Acquisition Cost); Special Patient Pricing; Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X8aIQbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X8aIQLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_JsVXMCUtEeO_iaEYDPvTaA" name="benefitStage" visibility="public" type="_Sb7_gJteEeClAtaO_zSM7g" association="_JsRs0CUtEeO_iaEYDPvTaA">
         <ownedComment xmi:id="_Mk5fwCUtEeO_iaEYDPvTaA" annotatedElement="_JsVXMCUtEeO_iaEYDPvTaA">
@@ -4687,54 +4859,72 @@ Note: this may need to be 0..1, not 0..*.</body>
           <body>&quot;Count of Benefit Stage Amount occurrences.&quot; - NCPDP Telecommunication (Field 392-MU, Data Dictionary 201104).  Note that this property is marked as derived, since this number can be calculated from the number of Benefit Stage class instances.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZdvYIbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZdvYILyeEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_D2ONcHpbEeCYy4DzyFpAzQ" name="dispensingFee" visibility="public">
         <ownedComment xmi:id="_uKNWoCR2EeOGsKsAZqPe7g" annotatedElement="_D2ONcHpbEeCYy4DzyFpAzQ">
           <body>&quot;Dispensing fee paid included in the Total Amount Paid&quot; - NCPDP Telecommunication (Field 507-F7, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aLAt0byeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aLAt0LyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_g77nYCSKEeOTgcVYMe3cWA" name="dispensingFeeAmount" visibility="public">
         <ownedComment xmi:id="_bkYvICUzEeO_iaEYDPvTaA" annotatedElement="_g77nYCSKEeOTgcVYMe3cWA">
           <body>&quot;Informational field used when Other Payer-Patient Responsibility Amount or Patient Pay Amount is used for reimbursement. Amount is equal to contracted or reimbursable dispensing fee for product being dispensed.&quot; - NCPDP Telecommunication (Field 149-U9, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_am1HIbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_am1HILyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-0ZhICUoEeO_iaEYDPvTaA" name="estimatedGenericSavings" visibility="public">
         <ownedComment xmi:id="_bRWtICUtEeO_iaEYDPvTaA" annotatedElement="_-0ZhICUoEeO_iaEYDPvTaA">
           <body>&quot;The amount, not included in the Total Amount Paid, that the patient would have saved if they had chosen the generic drug instead of the brand drug.&quot; - NCPDP Telecommunication (Field 577-G3, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bDf1AbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bDf1ALyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="__IZW8HpbEeCYy4DzyFpAzQ" name="flatSalesTaxAmount" visibility="public">
         <ownedComment xmi:id="_1St_gCR4EeOGsKsAZqPe7g" annotatedElement="__IZW8HpbEeCYy4DzyFpAzQ">
           <body>&quot;Flat sales tax paid which is included in the Total Amount Paid&quot; - NCPDP Telecommunication (Field 558-AW, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bwVF0byeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bwVF0LyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_x2iKQCUtEeO_iaEYDPvTaA" name="healthPlanFundedAssistanceAmount" visibility="public">
         <ownedComment xmi:id="_nHTK8CUuEeO_iaEYDPvTaA" annotatedElement="_x2iKQCUtEeO_iaEYDPvTaA">
           <body>&quot;The amount from the health plan-funded assistance account for the patient that was applied to reduce Patient Pay Amount. This amount is used in Healthcare Reimbursement Account (HRA) benefits only. This field is always a negative amount or zero. The Health Plan-funded Assistance Amount is part of the patient pay amount calculation and is used to report back to the provider and patient the portion of Patient Pay Amount that was reduced due to this plan-funded assistance. NOTE: There is no credit card transaction involved in this type of Patient Spending Assistance, as in a Flexible Spending Account (FSA).&quot; - NCPDP Telecommunication (Field 129-UD, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cWUu0byeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cWUu0LyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="__ES6EHpbEeCYy4DzyFpAzQ" name="incentiveAmount" visibility="public">
         <ownedComment xmi:id="_mpJ4oCR5EeOGsKsAZqPe7g" annotatedElement="__ES6EHpbEeCYy4DzyFpAzQ">
           <body>&quot;Amount represents the contractually agreed upon incentive fee paid for specific services rendered. Amount is included in the Total Amount Paid.&quot; - NCPDP Telecommunication (Field 521-FL, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c0htwbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c0htwLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_0wrKoHpaEeCYy4DzyFpAzQ" name="ingredientCost" visibility="public">
         <ownedComment xmi:id="_iHOs8CR2EeOGsKsAZqPe7g" annotatedElement="_0wrKoHpaEeCYy4DzyFpAzQ">
           <body>&quot;Drug ingredient cost paid included in the Total Amount Paid.&quot; - NCPDP Telecommunication (Field 506-F6, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dOQcYbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dOQcYLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_x-OtsCUtEeO_iaEYDPvTaA" name="ingredientCostAmount" visibility="public">
         <ownedComment xmi:id="_Ac0r8CUzEeO_iaEYDPvTaA" annotatedElement="_x-OtsCUtEeO_iaEYDPvTaA">
           <body>&quot;Informational field used when Other Payer-Patient Responsibility Amount or Patient Pay Amount  is used for reimbursement. Amount is equal to contracted or reimbursable amount for product being dispensed.&quot; - NCPDP Telecommunication (Field 148-U8, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_do_3obyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_do_3oLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_5WIWICRuEeOGsKsAZqPe7g" name="otherAmountPaidCount" visibility="public" isDerived="true">
         <eAnnotations xmi:id="_PGHQoCRvEeOGsKsAZqPe7g" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -4742,78 +4932,104 @@ Note: this may need to be 0..1, not 0..*.</body>
           <body>&quot;Count of the other amount paid occurrences.&quot; - NCPDP Telecommunication (Field 563-J2, Data Dictionary 201104).  Note that this property could potentially be calculated based on the number of instances of the Other Amount class.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fXzi0byeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fXzi0LyeEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Nzk0QCR7EeOGsKsAZqPe7g" name="otherPayerAmountRecognized" visibility="public">
         <ownedComment xmi:id="_Nzk0QSR7EeOGsKsAZqPe7g" annotatedElement="_Nzk0QCR7EeOGsKsAZqPe7g">
           <body>&quot;Total amount recognized by the processor of any payment from another source.&quot; - NCPDP Telecommunication (Field 566-J5, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gpemEbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gpemELyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="__Ch_gHpbEeCYy4DzyFpAzQ" name="patientPayAmount" visibility="public">
         <ownedComment xmi:id="_TcFHICR2EeOGsKsAZqPe7g" annotatedElement="__Ch_gHpbEeCYy4DzyFpAzQ">
           <body>&quot;Amount that is calculated by the processor and returned to the pharmacy as the TOTAL amount to be paid by the patient to the pharmacy; the patient’s total cost share, including copayments, amounts applied to deductible, over maximum amounts, penalties, etc.&quot; - NCPDP Telecommunication (Field 505-F5, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hFVbobyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hFVboLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_SwoKkCUfEeO_iaEYDPvTaA" name="patientSalesTaxAmount" visibility="public">
         <ownedComment xmi:id="_TMkwoCUoEeO_iaEYDPvTaA" annotatedElement="_SwoKkCUfEeO_iaEYDPvTaA">
           <body>&quot;Patient sales tax responsibility. This field is not a component of the Patient Pay Amount formula.&quot; - NCPDP Telecommunication (Field 575-EQ, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hb8k0byeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hb8k0LyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_lFeLIHpcEeCYy4DzyFpAzQ" name="percentageSalesTaxAmount" visibility="public">
         <ownedComment xmi:id="_9kDjkCR4EeOGsKsAZqPe7g" annotatedElement="_lFeLIHpcEeCYy4DzyFpAzQ">
           <body>&quot;Amount of percentage sales tax paid which is included in the Total Amount Paid&quot; - NCPDP Telecommunication (Field 559-AX, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h3BXQbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h3BXQLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_lIYVMHpcEeCYy4DzyFpAzQ" name="percentageSalesTaxBasis" visibility="public">
         <ownedComment xmi:id="_ZlktkCR5EeOGsKsAZqPe7g" annotatedElement="_lIYVMHpcEeCYy4DzyFpAzQ">
           <body>&quot;Code indicating the percentage sales tax paid basis.&quot; - NCPDP Telecommunication (Field 561-AZ, Data Dictionary 201104).  Possible values include: Ingredient Cost; Ingredient Cost plus Dispensing Fee; Not Specified.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iRK8obyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iRK8oLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_lG5ugHpcEeCYy4DzyFpAzQ" name="percentageSalesTaxRate" visibility="public">
         <ownedComment xmi:id="_FUG_gCR5EeOGsKsAZqPe7g" annotatedElement="_lG5ugHpcEeCYy4DzyFpAzQ">
           <body>&quot;Percentage sales tax rate used to calculate Percentage Sales Tax Amount Paid&quot; - NCPDP Telecommunication (Field 560-AY, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Real?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i10h0byeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i10h0LyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_SzYjoCUfEeO_iaEYDPvTaA" name="planSalesTaxAmount" visibility="public">
         <ownedComment xmi:id="_ie5EICUoEeO_iaEYDPvTaA" annotatedElement="_SzYjoCUfEeO_iaEYDPvTaA">
           <body>&quot;Plan sales tax responsibility. This field is not a component of the Patient Pay Amount formula.&quot; - NCPDP Telecommunication (Field 574-2Y, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jTU9MbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jTU9MLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_JL3ccHpbEeCYy4DzyFpAzQ" name="professionalServiceFee" visibility="public">
         <ownedComment xmi:id="_x1i4kCR5EeOGsKsAZqPe7g" annotatedElement="_JL3ccHpbEeCYy4DzyFpAzQ">
           <body>&quot;Amount representing the contractually agreed upon fee for professional services rendered.  This amount is included in the Total Amount Paid.&quot; - NCPDP Telecommunication (Field 562-J1, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jvxooLyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jvn3oLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_QNJOgCSNEeOTgcVYMe3cWA" name="remainingBenefitAmount" visibility="public">
         <ownedComment xmi:id="_SF2ckCSNEeOTgcVYMe3cWA" annotatedElement="_QNJOgCSNEeOTgcVYMe3cWA">
           <body>&quot;Amount remaining in a patient/family plan with a periodic maximum benefit.&quot; - NCPDP Telecommunication (Field 514-FE, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kJZpkbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kJZpkLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_2kLQQCSMEeOTgcVYMe3cWA" name="remainingDeductibleAmount" visibility="public">
         <ownedComment xmi:id="_F-ykICSNEeOTgcVYMe3cWA" annotatedElement="_2kLQQCSMEeOTgcVYMe3cWA">
           <body>&quot;Amount not met by the patient/family in the deductible plan.&quot; - NCPDP Telecommunication (Field 513-FD, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kjLbgbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kjLbgLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-2NfACUoEeO_iaEYDPvTaA" name="spendingAccountAmountRemaining" visibility="public">
         <ownedComment xmi:id="_pY7r0CUtEeO_iaEYDPvTaA" annotatedElement="_-2NfACUoEeO_iaEYDPvTaA">
           <body>&quot;The balance from the patient’s spending account after this transaction was applied.&quot; - NCPDP Telecommunication (Field 128-UC, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lBB1IbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lBB1ILyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_DnJZUCR3EeOGsKsAZqPe7g" name="taxExemptCategory" visibility="public">
         <ownedComment xmi:id="_HIOTYCR3EeOGsKsAZqPe7g" annotatedElement="_DnJZUCR3EeOGsKsAZqPe7g">
           <body>&quot;Code indicating the payer and/or the patient is exempt from taxes.&quot; - NCPDP Telecommunication (Field 557-AV, Data Dictionary 201104).  Possible values include: Payer/Plan is Tax Exempt; Patient is Tax Exempt; Payer/Plan and Patient are Tax Exempt.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mRL1cLyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mRCEcLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_fFeFoHpeEeCYy4DzyFpAzQ" name="otherAmount" visibility="public" type="_68JHAHpdEeCYy4DzyFpAzQ" association="_fFbCUHpeEeCYy4DzyFpAzQ">
         <ownedComment xmi:id="_Bgg0ICYQEeOkPsd2JhLMLw" annotatedElement="_fFeFoHpeEeCYy4DzyFpAzQ">
@@ -4838,36 +5054,48 @@ Note: this may need to be 0..1, not 0..*.</body>
           <body>&quot;Code indicating the method by which Ingredient Cost Submitted was calculated.&quot; - NCPDP Telecommunication (Field 423-DN, Data Dictionary 201104).  Possible values include: Default; AWP (Average Wholesale Price); Local Wholesaler; Direct; EAC (Estimated Acquisition Cost); Acquisition; MAC (Maximum Allowable Cost); Usual &amp; Customary; 340B /Disproportionate Share Pricing/Public Health Service; ASP (Average Sales Price); AMP (Average Manufacturer Price); WAC (Wholesale Acquisition Cost); Special Patient Pricing; Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3M36gbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3M36gLyeEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_wmQRQXpdEeCYy4DzyFpAzQ" name="dispensingFee" visibility="public">
         <ownedComment xmi:id="_snbrYCRtEeOGsKsAZqPe7g" annotatedElement="_wmQRQXpdEeCYy4DzyFpAzQ">
           <body>&quot;Dispensing fee submitted by the pharmacy. This amount is included in the Gross Amount Due&quot; - NCPDP Telecommunication (Field 412-DC, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4CmoobyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4CmooLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_wmQRQnpdEeCYy4DzyFpAzQ" name="flatSalesTaxAmount" visibility="public">
         <ownedComment xmi:id="_adXAQCRwEeOGsKsAZqPe7g" annotatedElement="_wmQRQnpdEeCYy4DzyFpAzQ">
           <body>&quot;Flat sales tax submitted for prescription. This amount is included in the Gross Amount Due.&quot; - NCPDP Telecommunication (Field 481-HA, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ec3IbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4ec3ILyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_wmQRQ3pdEeCYy4DzyFpAzQ" name="incentiveAmount" visibility="public">
         <ownedComment xmi:id="_j1vW0CRuEeOGsKsAZqPe7g" annotatedElement="_wmQRQ3pdEeCYy4DzyFpAzQ">
           <body>&quot;Amount represents a fee that is submitted by the pharmacy for contractually agreed upon services. This amount is included in the Gross Amount Due.&quot; - NCPDP Telecommunication (Field 438-E3, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_46lZgbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_46lZgLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_wmQRRHpdEeCYy4DzyFpAzQ" name="ingredientCost" visibility="public">
         <ownedComment xmi:id="_j-5IQCRtEeOGsKsAZqPe7g" annotatedElement="_wmQRRHpdEeCYy4DzyFpAzQ">
           <body>&quot;Submitted product component cost of the dispensed prescription. This amount is included in the Gross Amount Due&quot; - NCPDP Telecommunication (Field 409-D9, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5UMMUbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5UMMULyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_wmQRRXpdEeCYy4DzyFpAzQ" name="medicaidPaidAmount" visibility="public">
         <ownedComment xmi:id="_wJSPQCRyEeOGsKsAZqPe7g" annotatedElement="_wmQRRXpdEeCYy4DzyFpAzQ">
           <body>&quot;Amount paid by the Medicaid Agency.  Required if affects pricing in Medicaid Subrogation (contains the amount paid to the pharmacy). See Medicaid Subrogation Implementation Guide.&quot; - NCPDP Telecommunication (Field 113-N3, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5w1FAbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5w1FALyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_TxnnQJBhEeCMBO4kb261_A" name="narrative" visibility="public">
         <ownedComment xmi:id="_TKVXMCRzEeOGsKsAZqPe7g" annotatedElement="_TxnnQJBhEeCMBO4kb261_A">
@@ -4882,36 +5110,48 @@ Note: this may need to be 0..1, not 0..*.</body>
           <body>&quot;Amount the pharmacy received from the patient for the prescription dispensed.&quot; - NCPDP Telecommunication (Field 433-DX, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9s2OobyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9s2OoLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_wmQRR3pdEeCYy4DzyFpAzQ" name="percentageSalesTaxAmount" visibility="public">
         <ownedComment xmi:id="_mqpcgCRwEeOGsKsAZqPe7g" annotatedElement="_wmQRR3pdEeCYy4DzyFpAzQ">
           <body>&quot;Percentage sales tax submitted. This amount is included in the Gross Amount Due.&quot; - NCPDP Telecommunication (Field 482-GE, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-GihAbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-GihALyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_wmQRSHpdEeCYy4DzyFpAzQ" name="percentageSalesTaxBasis" visibility="public">
         <ownedComment xmi:id="_B0glwCRxEeOGsKsAZqPe7g" annotatedElement="_wmQRSHpdEeCYy4DzyFpAzQ">
           <body>&quot;Code indicating the basis for percentage sales tax.&quot; - NCPDP Telecommunication (Field 483-HE, Data Dictionary 201104).  Possible values include: Ingredient Cost; Ingredient Cost plus Dispensing Fee; Not Specified.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-gM-MbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-gM-MLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_wmQRSXpdEeCYy4DzyFpAzQ" name="percentageSalesTaxRate" visibility="public">
         <ownedComment xmi:id="_vsuhACRwEeOGsKsAZqPe7g" annotatedElement="_wmQRSXpdEeCYy4DzyFpAzQ">
           <body>&quot;Percentage sales tax rate used to calculate Percentage Sales Tax Amount Submitted&quot; - NCPDP Telecommunication (Field 483-HE, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Real?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__KiUobyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__KiUoLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_wmQRSnpdEeCYy4DzyFpAzQ" name="professionalServiceFee" visibility="public">
         <ownedComment xmi:id="_KZyg4CRuEeOGsKsAZqPe7g" annotatedElement="_wmQRSnpdEeCYy4DzyFpAzQ">
           <body>&quot;Amount submitted by the provider for professional services rendered.&quot; - NCPDP Telecommunication (Field 477-BE, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__m3EQbyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__m3EQLyeEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_wmQRS3pdEeCYy4DzyFpAzQ" name="usualAndCustomaryCharge" visibility="public">
         <ownedComment xmi:id="_NFvpcCRxEeOGsKsAZqPe7g" annotatedElement="_wmQRS3pdEeCYy4DzyFpAzQ">
           <body>&quot;Amount charged cash customers for the prescription exclusive of sales tax or other amounts claimed.&quot; - NCPDP Telecommunication (Field 426-DQ, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AKTIgbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AKTIgLyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ep9OUXpeEeCYy4DzyFpAzQ" name="otherAmount" visibility="public" type="_68JHAHpdEeCYy4DzyFpAzQ" association="_ep9OUHpeEeCYy4DzyFpAzQ">
         <ownedComment xmi:id="_34ETMCYPEeOkPsd2JhLMLw" annotatedElement="_ep9OUXpeEeCYy4DzyFpAzQ">
@@ -4926,6 +5166,8 @@ Note: this may need to be 0..1, not 0..*.</body>
           <body>&quot;Count of other amount claimed submitted occurrences.&quot; - NCPDP Telecommunication (Field 478-H7, Data Dictionary 201104).  Note that this property could potentially be calculated based on the number of instances of the Other Amount class.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7857ALyeEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_78wKALyeEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_sSox4HpbEeCYy4DzyFpAzQ" memberEnd="_sSr1MHpbEeCYy4DzyFpAzQ _sSu4gHpbEeCYy4DzyFpAzQ">
@@ -4944,6 +5186,8 @@ Note: this may need to be 0..1, not 0..*.</body>
 &quot;Amount paid for additional costs claimed in Other Amount Claimed Submitted.&quot; - NCPDP Telecommunication (Field 565-J4, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CoSYcbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CoSYcLygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ccPZkHpeEeCYy4DzyFpAzQ" name="code" visibility="public">
         <ownedComment xmi:id="_xku2YCRuEeOGsKsAZqPe7g" annotatedElement="_ccPZkHpeEeCYy4DzyFpAzQ">
@@ -4952,6 +5196,8 @@ Note: this may need to be 0..1, not 0..*.</body>
 Possible values include: Delivery Cost; Shipping Cost; Postage Cost; Administrative Cost; Incentive; Cognitive Service; Drug Benefit; Compound Preparation Cost Submitted; Sales Tax.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DIrIsbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DIrIsLygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ep9OUHpeEeCYy4DzyFpAzQ" memberEnd="_ep9OUXpeEeCYy4DzyFpAzQ _eqARonpeEeCYy4DzyFpAzQ">
@@ -4976,18 +5222,24 @@ Possible values include: Delivery Cost; Shipping Cost; Postage Cost; Administrat
           <body>&quot;Code indicating the type of coupon being used.&quot; - NCPDP Telecommunication (Field 485-KE, Data Dictionary 201104).  Possible values include: Price Discount; Free Product; Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VTHVUbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VTHVULyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_vg2dgHpfEeCYy4DzyFpAzQ" name="id" visibility="public">
         <ownedComment xmi:id="_bhUbECPVEeOWt_Gp5Q0GJA" annotatedElement="_vg2dgHpfEeCYy4DzyFpAzQ">
           <body>&quot;Unique serial number assigned to the prescription coupons.&quot; - NCPDP Telecommunication (Field 485-ME, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VqTGQbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VqTGQLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_r5NocHpfEeCYy4DzyFpAzQ" name="value" visibility="public">
         <ownedComment xmi:id="_nxMRQCPVEeOWt_Gp5Q0GJA" annotatedElement="_r5NocHpfEeCYy4DzyFpAzQ">
           <body>&quot;Value of the coupon.&quot; - NCPDP Telecommunication (Field 485-NE, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WHEh0byfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WHEh0LyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Dbl4MHphEeCYy4DzyFpAzQ" name="PriorAuthorizationRequest">
@@ -5001,37 +5253,49 @@ Possible values include: Delivery Cost; Shipping Cost; Postage Cost; Administrat
 &quot;Based on the type of insurance, some coverage plans require that an authorization number or code be obtained prior to all non-emergency admissions, and within 48 hours of an emergency admission.  Insurance billing would not be permitted without this number.  The date and source of authorization are the components of this field.&quot; - HL7 Version 2.8, IN1-14.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bxcOMbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bxcOMLygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_o1cqkHphEeCYy4DzyFpAzQ" name="effectiveDateRange" visibility="public">
         <ownedComment xmi:id="_wH3KcNUeEeGzd-o9XtejuA" annotatedElement="_o1cqkHphEeCYy4DzyFpAzQ">
           <body>&quot;Beginning date for a prior authorization request.&quot; - NCPDP Telecommunication (Field 498-PB, Data Dictionary 201104).&#xD;
 &quot;Ending date for a prior authorization request.&quot; - NCPDP Telecommunication (Field 498-PC, Data Dictionary 201104).</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dhPX4bygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dhPX4LygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ci4lYHpkEeCYy4DzyFpAzQ" name="previousAuthorizationId" visibility="public">
         <ownedComment xmi:id="_GO5ZwCF5EeOiKdy59Xpbgg" annotatedElement="_ci4lYHpkEeCYy4DzyFpAzQ">
           <body>&quot;Unique number identifying the prior authorization assigned by the processor.  Provided to the pharmacy by the processor to be used by the pharmacy for billing, and if applicable, reversal purposes.&quot; - NCPDP Telecommunication (Field 498-PY, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eDg-gbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eDg-gLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_C-Kf4HpiEeCYy4DzyFpAzQ" name="requestBasis" visibility="public">
         <ownedComment xmi:id="_5BiVsCF6EeOiKdy59Xpbgg" annotatedElement="_C-Kf4HpiEeCYy4DzyFpAzQ">
           <body>&quot;Code describing the reason for prior authorization request.&quot; - NCPDP Telecommunication (Field 498-PD, Data Dictionary 201104).  Possible values include: Medical Exception; Plan Requirement; Increase Plan Limitation.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_elXHUbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_elXHULygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_LMg20HphEeCYy4DzyFpAzQ" name="requestType" visibility="public">
         <ownedComment xmi:id="_RCfCsCF6EeOiKdy59Xpbgg" annotatedElement="_LMg20HphEeCYy4DzyFpAzQ">
           <body>&quot;Code identifying type of prior authorization request.  Used by processor to distinguish reason for prior authorization request.&quot; - NCPDP Telecommunication (Field 498-PA, Data Dictionary 201104).  Possible values include: Initial; Reauthorization; Deferred.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fD0k8bygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fD0k8LygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_b8jaoHpjEeCYy4DzyFpAzQ" name="supportingDocumentation" visibility="public">
         <ownedComment xmi:id="_mjwoQCF5EeOiKdy59Xpbgg" annotatedElement="_b8jaoHpjEeCYy4DzyFpAzQ">
           <body>&quot;Could be used, if applicable, to supply information not already included in NCPDP data fields that may be required to process a prior authorization transaction.&quot; - NCPDP Telecommunication (Field 498-PP, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f7P8MbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f7P8MLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_q8WQMXpiEeCYy4DzyFpAzQ" name="authorizedRepresentative" visibility="public" association="_q8WQMHpiEeCYy4DzyFpAzQ">
         <ownedComment xmi:id="_4O5iYCF7EeOiKdy59Xpbgg" annotatedElement="_q8WQMXpiEeCYy4DzyFpAzQ">
@@ -5057,12 +5321,16 @@ Possible values include: Delivery Cost; Shipping Cost; Postage Cost; Administrat
           <body>Mailing address of the entity to receive payment for claim (street address, city, state, and zipcode). - NCPDP Telecommunication (Fields 121-TV, 122-TW, 123-TX, and 124-TY).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F6203C7?FHIM/Datatypes/UsMailingAddress?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M4dnwbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M4dnwLygEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_VBsFUIVbEeCFWps2bBaH1A" name="billingType" visibility="public">
         <ownedComment xmi:id="_tXMOACRlEeOGsKsAZqPe7g" annotatedElement="_VBsFUIVbEeCFWps2bBaH1A">
           <body>&quot;A code that identifies the entity submitting the billing transaction.&quot; - NCPDP Telecommunication (Field 117-TR, Data Dictionary 201104).  Possible values include: Provider Submitted-Pay to Provider; Provider Submitted-Pay to Another Party; Agent Submitted-Pay to Agent; Agent Submitted-Pay to Another Party.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NVBA4bygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NVBA4LygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-bWnEIVZEeCFWps2bBaH1A" name="id" visibility="public">
         <ownedComment xmi:id="_B53LYCRnEeOGsKsAZqPe7g" annotatedElement="_-bWnEIVZEeCFWps2bBaH1A">
@@ -5070,12 +5338,16 @@ Possible values include: Delivery Cost; Shipping Cost; Postage Cost; Administrat
 Note that the NCPDP Telecommunication structure uses a separate &quot;qualifier&quot; field (118-TS) to identify what kind of id is being used here (i.e., who issued the id).  Possible values include: National Provider Identifier (NPI); Blue Cross; Blue Shield; Medicare; Medicaid; UPIN (Unique Physician/Practitioner Identification Number); NCPDP Provider Identification Number (deprecated); State License; CHAMPUS (Civilian Health and Medical Program of the Uniformed Services); Health Industry Number (HIN); Federal Tax ID; Drug Enforcement Administration (DEA) Number; State Issued; Plan Specific; HCID (HC IDea); Combat Methamphetamine Epidemic Act (CMEA) Certificate ID; Other.  The FHIM does not model this concept separately, as it is built-in to the the Id data type structure.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NsfFsbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NsfFsLygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-bZqYYVZEeCFWps2bBaH1A" name="name" visibility="public">
         <ownedComment xmi:id="_Hxgh8CRsEeOGsKsAZqPe7g" annotatedElement="_-bZqYYVZEeCFWps2bBaH1A">
           <body>&quot;Name of the entity to receive payment for claim.&quot; - NCPDP Telecommunication (Field 120-TU, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OhurobygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OhuroLygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_eOiPYIVbEeCFWps2bBaH1A" memberEnd="_eOiPYYVbEeCFWps2bBaH1A _eOlSsoVbEeCFWps2bBaH1A">
@@ -5105,30 +5377,40 @@ Note that the NCPDP Telecommunication structure uses a separate &quot;qualifier&
           <body>&quot;The beginning date of need.&quot; - NCPDP Telecommunication (Field 374-2V, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HIlJQbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HIlJQLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_xeS6AJXcEeCD7vwmJe8BlA" name="dateRevisedOrRecertified" visibility="public">
         <ownedComment xmi:id="_daj4cCX1EeOkPsd2JhLMLw" annotatedElement="_xeS6AJXcEeCD7vwmJe8BlA">
           <body>&quot;The effective date of the revision or re-certification provided by the certifying physician.&quot; - NCPDP Telecommunication (Field 375-2W, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HrNVMLyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HrDkMLyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_a6cdIJXdEeCD7vwmJe8BlA" name="dateSigned" visibility="public">
         <ownedComment xmi:id="_teWvYCX5EeOkPsd2JhLMLw" annotatedElement="_a6cdIJXdEeCD7vwmJe8BlA">
           <body>&quot;The date the form was completed and signed by the ordering physician.&quot; - NCPDP Telecommunication (Field 372-2T, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IMZWsbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IMZWsLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_jNqF8JXcEeCD7vwmJe8BlA" name="category" visibility="public">
         <ownedComment xmi:id="_WxegECX_EeOkPsd2JhLMLw" annotatedElement="_jNqF8JXcEeCD7vwmJe8BlA">
           <body>&quot;Unique identifier for the data being submitted.&quot; - NCPDP Telecommunication (Field 369-2Q, Data Dictionary 201104).  Possible values include: Hospital Beds; Support Surfaces; Motorized Wheel Chair; Manual Wheelchair; Continuous Positive Airway Pressure (CPAP); Lymphedema Pumps; Osteogenesis Stimulator; Transcutaneous Electrical Nerve Stimulator TENS); Seat Lift Mechanisms; Power Operated Vehicles (POV); Immunosuppressive Drugs; Infusion Pump; Parenteral Nutrition; Enteral Nutrition; Oxygen.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GAopwbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GAopwLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nXELUJXcEeCD7vwmJe8BlA" name="lengthOfNeed" visibility="public">
         <ownedComment xmi:id="_30DfQCX2EeOkPsd2JhLMLw" annotatedElement="_nXELUJXcEeCD7vwmJe8BlA">
           <body>&quot;Length of time the physician expects the patient to require use of the ordered item.&quot; - NCPDP Telecommunication (Field 370-2R, Data Dictionary 201104).  Note that the NCPDP Telecommunication structure uses a separate &quot;qualifier&quot; field (371-2S) to provide the units of measure for the time quantity represented in 370-2R.  Possible values include: Hours; Days; Weeks; Months; Years; Lifetime; Not Specified.  Note that each of these units, except for &quot;Lifetime&quot; are handled in the TimeQuantity datatype.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64239FAA800D9?FHIM/Datatypes/TimeQuantity?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Iw7AEbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Iw7AELyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_iyjo4JXdEeCD7vwmJe8BlA" name="narrative" visibility="public">
         <ownedComment xmi:id="_QpCpkCX8EeOkPsd2JhLMLw" annotatedElement="_iyjo4JXdEeCD7vwmJe8BlA">
@@ -5143,12 +5425,16 @@ Note that the NCPDP Telecommunication structure uses a separate &quot;qualifier&
           <body>&quot;Count of Question Number/Letter occurrences.&quot; - NCPDP Telecommunication (Field 377-2Z, Data Dictionary 201104).  Note that this is modeled as a derived property as it may potentially be calculated based on the number of Assessment Instrument Response instances.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KIkIcbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KIkIcLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_TX2D0JXcEeCD7vwmJe8BlA" name="requestStatus" visibility="public">
         <ownedComment xmi:id="_-o2CQCX1EeOkPsd2JhLMLw" annotatedElement="_TX2D0JXcEeCD7vwmJe8BlA">
           <body>&quot;Code identifying type of request.&quot; - NCPDP Telecommunication (Field 373-2U, Data Dictionary 201104).  Possible values include: Initial; Revision; Recertification; Not Specified.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KpH30LyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ko-t4LyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_DYLbACX9EeOkPsd2JhLMLw" name="assessmentResponse" visibility="public" association="_DYIXsCX9EeOkPsd2JhLMLw">
         <ownedComment xmi:id="_tCZZ4CX-EeOkPsd2JhLMLw" annotatedElement="_DYLbACX9EeOkPsd2JhLMLw">
@@ -5168,24 +5454,32 @@ Note that the NCPDP Telecommunication structure uses a separate &quot;qualifier&
           <body>&quot;Payment or denial date of the claim submitted to the other payer. Used for coordination of benefits.&quot; - NCPDP Telecommunication (Field 443-E8, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N6jzYbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N6jzYLyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_TMH7wJtdEeClAtaO_zSM7g" name="internalControlId" visibility="public">
         <ownedComment xmi:id="_7cBmUCYIEeOkPsd2JhLMLw" annotatedElement="_TMH7wJtdEeClAtaO_zSM7g">
           <body>&quot;Number assigned by the processor to identify an adjudicated claim when supplied in payer-to-payer coordination of benefits only.&quot; - NCPDP Telecommunication (Field 993-A7, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OlXD4byfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OlXD4LyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_DfGCMJtdEeClAtaO_zSM7g" name="otherPayerId" visibility="public">
         <ownedComment xmi:id="_WYH10CYIEeOkPsd2JhLMLw" annotatedElement="_DfGCMJtdEeClAtaO_zSM7g">
           <body>&quot;ID assigned to the payer.&quot; - NCPDP Telecommunication (Field 340-7C, Data Dictionary 201104).  Note that the NCPDP Telecommunication structure uses a separate &quot;qualifier&quot; field (339-6C) to identify what kind of id is being used here (i.e., who issued the id).  Possible values include: National Provider Identifier (NPI); Medicare; Medicaid; Health Industry Number (HIN); Bank Information Number (BIN); National Association of Insurance Commissioners (NAIC); Medicare Carrier Number; Other.  The FHIM does not model this concept separately, as it is built-in to the the Id data type structure.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PKoUIbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PKoUILyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ZljwQCYKEeOkPsd2JhLMLw" name="previousPaymentCount" visibility="public" isDerived="true">
         <ownedComment xmi:id="_0ULvACYKEeOkPsd2JhLMLw" annotatedElement="_ZljwQCYKEeOkPsd2JhLMLw">
           <body>&quot;Count of the payer amount paid occurrences.&quot; - NCPDP Telecommunication (Field 341-HB, Data Dictionary 201104).  Note that this property is marked as derived, since this number can be calculated from the number of Previous Payment class instances.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RFxyMbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RFxyMLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_YOudgZteEeClAtaO_zSM7g" name="benefitStage" visibility="public" type="_Sb7_gJteEeClAtaO_zSM7g" association="_YOudgJteEeClAtaO_zSM7g">
         <ownedComment xmi:id="_aGCxECF-EeOiKdy59Xpbgg" annotatedElement="_YOudgZteEeClAtaO_zSM7g">
@@ -5227,18 +5521,24 @@ Note that the NCPDP Telecommunication structure uses a separate &quot;qualifier&
           <body>&quot;Count of Other Payer Reject Code occurrences.&quot; - NCPDP Telecommunication (Field 471-5E, Data Dictionary 201104).  Note that this property is marked as derived, since this number can be calculated from the number of Previous Rejection class instances.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R2_zwbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R2_zwLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_hryQgCYKEeOkPsd2JhLMLw" name="previousPatientResponsibilityCount" visibility="public" isDerived="true">
         <ownedComment xmi:id="_AcBOECYMEeOkPsd2JhLMLw" annotatedElement="_hryQgCYKEeOkPsd2JhLMLw">
           <body>&quot;Count of Other Payer-Patient Responsibility Amount and Other Payer-Patient Responsibility Amount Qualifier occurrences.&quot; - NCPDP Telecommunication (Field 353-NR, Data Dictionary 201104).  Note that this property is marked as derived, since this number can be calculated from the number of Previous Patient Responsibility class instances.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QaBfcbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QaBfcLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_AU01wCF-EeOiKdy59Xpbgg" name="benefitStageCount" visibility="public" isDerived="true">
         <ownedComment xmi:id="_AU01wSF-EeOiKdy59Xpbgg" annotatedElement="_AU01wCF-EeOiKdy59Xpbgg">
           <body>&quot;Count of Benefit Stage Amount occurrences.&quot; - NCPDP Telecommunication (Field 392-MU, Data Dictionary 201104).  Note that this property is marked as derived, since this number can be calculated from the number of Benefit Stage class instances.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MOdd8byfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MOdd8LyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_7SRKsJtcEeClAtaO_zSM7g" memberEnd="_7SXRUJtcEeClAtaO_zSM7g _7SXRU5tcEeClAtaO_zSM7g">
@@ -5256,12 +5556,16 @@ Note that the NCPDP Telecommunication structure uses a separate &quot;qualifier&
           <body>&quot;Amount of any payment known by the pharmacy from other sources.&quot; - NCPDP Telecommunication (Field 431-DV, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vyu0EbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vyu0ELygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_hY7_wJtdEeClAtaO_zSM7g" name="paymentType" visibility="public">
         <ownedComment xmi:id="_HEOjECYKEeOkPsd2JhLMLw" annotatedElement="_hY7_wJtdEeClAtaO_zSM7g">
           <body>&quot;Code qualifying the Other Payer Amount Paid&quot; - NCPDP Telecommunication (Field 342-HC, Data Dictionary 201104).  Possible values include: Delivery Cost; Shipping Cost; Postage Cost; Administrative Cost; Incentive; Cognitive Service; Drug Benefit; Compound Preparation Cost Submitted; Sales Tax.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WRX34bygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WRX34LygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_dt87wJtdEeClAtaO_zSM7g" memberEnd="_dt87wZtdEeClAtaO_zSM7g _dt87xJtdEeClAtaO_zSM7g">
@@ -5279,6 +5583,8 @@ Note that the NCPDP Telecommunication structure uses a separate &quot;qualifier&
           <body>&quot;The error encountered by the previous Other Payer in Reject Code (511-FB).&quot; - NCPDP Telecommunication (Field 472-6E, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XNKxwbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XNKxwLygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_wBe9gJtdEeClAtaO_zSM7g" memberEnd="_wBe9gZtdEeClAtaO_zSM7g _wBe9hJtdEeClAtaO_zSM7g">
@@ -5296,12 +5602,16 @@ Note that the NCPDP Telecommunication structure uses a separate &quot;qualifier&
           <body>&quot;The patient’s cost share from a previous payer.&quot; - NCPDP Telecommunication (Field 352-NQ, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UJPtwbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UJPtwLygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3xZPgptdEeClAtaO_zSM7g" name="patientResponsibilityType" visibility="public">
         <ownedComment xmi:id="_3invACYMEeOkPsd2JhLMLw" annotatedElement="_3xZPgptdEeClAtaO_zSM7g">
           <body>&quot;Code qualifying the Other Payer-Patient Responsibility Amount.&quot; - NCPDP Telecommunication (Field 351-NP, Data Dictionary 201104).  Possible values include: Amount Applied to Periodic Deductible; Amount Attributed to Product Selection/Brand Drug; Amount Attributed to Sales Tax; Amount Exceeding Periodic Benefit Maximum; Amount of Copay; Patient Pay Amount; Amount of Coinsurance; Amount Attributed to Product Selection/Non-Preferred Formulary Selection; Amount Attributed to Health Plan Assistance Amount; Amount Attributed to Provider Network Selection; Amount Attributed to Product Selection/Brand Non-Preferred Formulary Selection; Amount Attributed to Coverage Gap; Amount Attributed to Processor Fee; Not Specified.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UphwUbygEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UphwULygEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_AnOnwJteEeClAtaO_zSM7g" memberEnd="_AnOnwZteEeClAtaO_zSM7g _AnUuYpteEeClAtaO_zSM7g">
@@ -5325,12 +5635,16 @@ Note that the NCPDP Telecommunication structure uses a separate &quot;qualifier&
           <body>&quot;The amount of claim allocated to the Medicare stage identified by the Benefit Stage Qualifier&quot; - NCPDP Telecommunication (Field 393-MW, Data Dictionary 201104).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630160?FHIM/Datatypes/MonetaryAmount?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YS2HwbydEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YS2HwLydEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Sb7_gpteEeClAtaO_zSM7g" name="benefitStageType" visibility="public">
         <ownedComment xmi:id="_v5BxsCF9EeOiKdy59Xpbgg" annotatedElement="_Sb7_gpteEeClAtaO_zSM7g">
           <body>&quot;Code qualifying the Benefit Stage Amount&quot; - NCPDP Telecommunication (Field 393-MV, Data Dictionary 201104).  Possible values include: Deductible; Initial Benefit; Coverage Gap (donut hole); Catastrophic Coverage; Not paid under Part D, paid under Part C benefit (for MA-PD plan); Not paid under Part D, paid as or under a supplemental benefit only; Part D drug not paid by Part D plan benefit, paid by the beneficiary under plan-sponsored negotiated pricing; Non-Part D drug not paid by Part D plan benefit, paid by the beneficiary under plan-sponsored negotiated pricing.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZJ6SobydEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZJ6SoLydEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_YOudgJteEeClAtaO_zSM7g" memberEnd="_YOudgZteEeClAtaO_zSM7g _YO0kIpteEeClAtaO_zSM7g">
@@ -5348,18 +5662,24 @@ Note that the NCPDP Telecommunication structure uses a separate &quot;qualifier&
           <body>Mailing address of the Person who is responsible for the payment of services / materials provided.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F6203C7?FHIM/Datatypes/UsMailingAddress?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yNTMsbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yNTMsLyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_24_IUPaYEeCbn6MPgQ_rxg" name="name" visibility="public">
         <ownedComment xmi:id="_fjCn8CoTEeOycdNGQCOAtw" annotatedElement="_24_IUPaYEeCbn6MPgQ_rxg">
           <body>Name of the Person who is responsible for the payment of services / materials provided.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_3lzSEFVyEdyaooytdRFnxQ?FHIM/Datatypes/PersonName?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ynNhgbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ynNhgLyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kGfyUPabEeCbn6MPgQ_rxg" name="telephone" visibility="public">
         <ownedComment xmi:id="_hzK3gCoTEeOycdNGQCOAtw" annotatedElement="_kGfyUPabEeCbn6MPgQ_rxg">
           <body>Telephone number of the Person who is responsible for the payment of services / materials provided.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_fImbAAEYEd-ZUM5xZsXWyw?FHIM/Datatypes/ContactPoint?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zFmtsbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zFmtsLyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_6Exu4PaYEeCbn6MPgQ_rxg" memberEnd="_6EzkEPaYEeCbn6MPgQ_rxg _6E2AUPaYEeCbn6MPgQ_rxg">
@@ -5384,12 +5704,16 @@ Note that the NCPDP Telecommunication structure uses a separate &quot;qualifier&
           <body>&quot;Holds the group employer ID for the insured’s insurance.&quot; - HL7 Version 2.8, IN1-10.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pmXzIbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pmXzILyfEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_xjob8AMgEeKTM4I4vlc5xg" name="employerGroupName" visibility="public">
         <ownedComment xmi:id="_uhENYAMhEeKTM4I4vlc5xg" annotatedElement="_xjob8AMgEeKTM4I4vlc5xg">
           <body>&quot;Contains the name of the employer that provides the employee’s insurance.&quot; - HL7 Version 2.8, IN1-11.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qXr7UbyfEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qXr7ULyfEea_DaXmJ278Kw"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_JsRs0CUtEeO_iaEYDPvTaA" memberEnd="_JsVXMCUtEeO_iaEYDPvTaA _JsXzcCUtEeO_iaEYDPvTaA">

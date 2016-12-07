@@ -108,6 +108,79 @@
     <packageImport xmi:id="_ZLwkpZ1cEeKGRqm0H7Eu1A">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SjvTYJQwEd-GUpkbaCODYA" name="RelatedExamination">
+      <ownedAttribute xmi:id="_Wj4vEJQwEd-GUpkbaCODYA" name="relatedExaminiationCategory" visibility="public">
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_lBPJcZQwEd-GUpkbaCODYA" name="examinationEvent" visibility="public" type="_420A62FD03B6426E871203C6" association="_lBPJcJQwEd-GUpkbaCODYA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lBPJc5QwEd-GUpkbaCODYA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lBPJcpQwEd-GUpkbaCODYA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6426E871203C6" name="ExaminationEvent">
+      <eAnnotations xmi:id="_McO_hOLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+      <ownedComment xmi:id="_Mb8El-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6426E871203C6">
+        <body>&quot;An investigation or inspection for the purpose of diagnosis&quot; (The American Heritage Stedman's Medical Dictionary) </body>
+      </ownedComment>
+      <generalization xmi:id="_420A62FD03B6426E874601E1">
+        <general xmi:type="uml:Class" href="Encounter.efx#_420A62FD03B642142C63002F?FHIM/Encounter/ClinicalService?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_420A62FD03B642D43ABE021E" name="date" visibility="public">
+        <ownedComment xmi:id="_Mb8Em-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642D43ABE021E">
+          <body>The date and time of the examination for the patient.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B642D6A3A20233" name="examType" visibility="public">
+        <ownedComment xmi:id="_McF1kuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642D6A3A20233">
+          <body>Contains the code that identifies the type of examination performed for the patient.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B642D6A2F20190" name="id" visibility="public">
+        <ownedComment xmi:id="_McF1leLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642D6A2F20190">
+          <body>Unique identifier for the is Examination occurrence.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B642F122C801B9" name="isNormal" visibility="public">
+        <ownedComment xmi:id="_Mdu0UuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642F122C801B9">
+          <body>Identifies  the results of the exam suggested values: A=Abnormal, N=Normal, etc  </body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B642D43E2A0029" name="results" visibility="public">
+        <ownedComment xmi:id="_McF1mOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642D43E2A0029">
+          <body>The consequence of a particular action, operation, or course; an outcome. </body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B642D43A5500BE" name="status" visibility="public">
+        <ownedComment xmi:id="_McO_guLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642D43A5500BE">
+          <body>The status of the examination for the patient.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_gLvaIJQwEd-GUpkbaCODYA" name="relatedExamination" visibility="public" type="_SjvTYJQwEd-GUpkbaCODYA" association="_gLlpIJQwEd-GUpkbaCODYA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gLvaIpQwEd-GUpkbaCODYA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gLvaIZQwEd-GUpkbaCODYA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B642CEE9A60249" name="DialysisEvent">
+      <eAnnotations xmi:id="_Mc_NdeLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+      <ownedComment xmi:id="_Mc1ceuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642CEE9A60249">
+        <body>dialysis type</body>
+      </ownedComment>
+      <generalization xmi:id="_420A62FD03B642CFD9DC036E">
+        <general xmi:type="uml:Class" href="Encounter.efx#_420A62FD03B642142C63002F?FHIM/Encounter/ClinicalService?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_420A62FD03B642CEE9E602EB" name="dialysisType" visibility="public">
+        <ownedComment xmi:id="_Mc_Nc-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642CEE9E602EB">
+          <body>Identifies the type of dialysis for this Encounter.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+      </ownedAttribute>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_qw_REJtZEeClAtaO_zSM7g" name="ScriptDue">
       <ownedComment xmi:id="_s2Il4NUcEeGzd-o9XtejuA" annotatedElement="_qw_REJtZEeClAtaO_zSM7g">
         <body>This class represents two properties that the DUE composite in the NCPDP SCRIPT standard has that the NCPDP Telecommunication standard does not.  In practice, this class' two properties, along with the one property that the Telecommunication standard uniquely contains would likely be moved to the DUE superclass, and we could have modeled it that way, but we've chosen to separate the subclasses in order to visually depict the differences between the two standards.</body>
@@ -3671,6 +3744,12 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
         <ownedEnd xmi:id="_ArRNgBI7EeaA87ocOQd-PQ" name="" visibility="private" type="_shregBI5EeaA87ocOQd-PQ" association="_ArOxQBI7EeaA87ocOQd-PQ"/>
       </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_gLlpIJQwEd-GUpkbaCODYA" memberEnd="_gLvaIJQwEd-GUpkbaCODYA _gLvaI5QwEd-GUpkbaCODYA">
+      <ownedEnd xmi:id="_gLvaI5QwEd-GUpkbaCODYA" name="" visibility="public" type="_420A62FD03B6426E871203C6" association="_gLlpIJQwEd-GUpkbaCODYA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_lBPJcJQwEd-GUpkbaCODYA" memberEnd="_lBPJcZQwEd-GUpkbaCODYA _lBPJdJQwEd-GUpkbaCODYA">
+      <ownedEnd xmi:id="_lBPJdJQwEd-GUpkbaCODYA" name="" visibility="public" type="_SjvTYJQwEd-GUpkbaCODYA" association="_lBPJcJQwEd-GUpkbaCODYA"/>
+    </packagedElement>
     <profileApplication xmi:id="_JnNDsFKQEd6S47BJxSzcxQ">
       <eAnnotations xmi:id="_JnNDsVKQEd6S47BJxSzcxQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA"/>
@@ -3966,4 +4045,16 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <term:ValueSetConstraint xmi:id="_YN8g4PXwEeWUqry1B7qRsQ" base_Property="_oOfAcFlgEeCyw5g2lQh-Ug">
     <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_kKu4cfXvEeW1BuvtDtBQzQ"/>
   </term:ValueSetConstraint>
+  <Default:Documentation xmi:id="_Mc_NcOLiEduGJrQyRGTO1A" base_Comment="_Mc1ceuLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_Mc_NdOLiEduGJrQyRGTO1A" base_Comment="_Mc_Nc-LiEduGJrQyRGTO1A"/>
+  <RIM:Procedure xmi:id="_-05KMJQvEd-GUpkbaCODYA" base_Class="_420A62FD03B642CEE9A60249"/>
+  <Default:Documentation xmi:id="_Mb8EmOLiEduGJrQyRGTO1A" base_Comment="_Mb8El-LiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_McF1k-LiEduGJrQyRGTO1A" base_Comment="_McF1kuLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_McF1kOLiEduGJrQyRGTO1A" base_Comment="_Mb8Em-LiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_McF1luLiEduGJrQyRGTO1A" base_Comment="_McF1leLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_McO_g-LiEduGJrQyRGTO1A" base_Comment="_McO_guLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_McO_gOLiEduGJrQyRGTO1A" base_Comment="_McF1mOLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_Mdu0U-LiEduGJrQyRGTO1A" base_Comment="_Mdu0UuLiEduGJrQyRGTO1A"/>
+  <RIM:Procedure xmi:id="_HR8PAJQwEd-GUpkbaCODYA" base_Class="_420A62FD03B6426E871203C6"/>
+  <RIM:ActRelationship xmi:id="_ar7igJQwEd-GUpkbaCODYA" base_Class="_SjvTYJQwEd-GUpkbaCODYA"/>
 </xmi:XMI>
