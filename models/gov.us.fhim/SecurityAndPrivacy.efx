@@ -8100,7 +8100,7 @@ An organization such as a clearing house (which is an organization that consolid
         <body>Functional Roles can be grouped according to their authorization to access IIHI and perform various operations on health care information. E.g., A health care provider in Organization A is authorized to access protected information (including IIHI) from Organization B (when Organization A &amp;amp;amp;amp; B have entered into a trusted relationship) if that provider is associated with the Functional Group whose permissions grant access per that FunctionalRole. In summary, the functional role defines the access control decision. A functional role is bound to a policy. </body>
       </ownedComment>
       <generalization xmi:id="_wMklYKJiEeSNCv3P4GXF3Q" general="_VIZkIGqREd-YrKaDhqmtYg"/>
-      <ownedAttribute xmi:id="_amKV9nr7Ed-JS-dJS9jZTw" name="name" visibility="public">
+      <ownedAttribute xmi:id="_amKV9nr7Ed-JS-dJS9jZTw" name="roleName" visibility="public">
         <ownedComment xmi:id="_amKV93r7Ed-JS-dJS9jZTw" annotatedElement="_amKV9nr7Ed-JS-dJS9jZTw">
           <body>This attribute is used to represent the user role name, if specified.      </body>
         </ownedComment>
@@ -8142,7 +8142,7 @@ An organization such as a clearing house (which is an organization that consolid
 Note that this role is called a &quot;Session Role&quot; in ANSI INCITES</body>
       </ownedComment>
       <generalization xmi:id="_xWfa0KJiEeSNCv3P4GXF3Q" general="_VIZkIGqREd-YrKaDhqmtYg"/>
-      <ownedAttribute xmi:id="_EkZzMB8nEeSrlMufRtJwjg" name="name" visibility="public">
+      <ownedAttribute xmi:id="_EkZzMB8nEeSrlMufRtJwjg" name="roleName" visibility="public">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EkZzMR8nEeSrlMufRtJwjg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EkZzMh8nEeSrlMufRtJwjg"/>
