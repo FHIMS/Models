@@ -3660,15 +3660,21 @@ Note that Private Insurance Plan, Public Health Plan, Military Health Program, a
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tsC3ZR2VEd-4VI-lpu-JjQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_e7qPdB2ZEd-4VI-lpu-JjQ" name="providerPlanParticipation" visibility="public">
+        <ownedComment xmi:id="_wVVtQNLfEeaB48kcgQEvbA" annotatedElement="_e7qPdB2ZEd-4VI-lpu-JjQ">
+          <body>Pointer to a collection of Healthcare Providers (both Individual and Organizational Providers) participating in a given Health Plan.</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Provider.efx#_coTswB2ZEd-4VI-lpu-JjQ?FHIM/Provider/ProviderPlanParticipation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e7qPdh2ZEd-4VI-lpu-JjQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e7qPdR2ZEd-4VI-lpu-JjQ"/>
         <association href="Provider.efx#_e7qPcB2ZEd-4VI-lpu-JjQ?FHIM/Provider/providerPlanParticipation_healthPlan?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Wdc-YEC6EeO2aaQpQxRerg" name="planNetworkAffliliation" visibility="public">
+        <ownedComment xmi:id="_nxau8NLgEeaB48kcgQEvbA" annotatedElement="_Wdc-YEC6EeO2aaQpQxRerg">
+          <body>Pointer to the Network with which the Health Plan has some contractual relationship.</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Provider.efx#_0f65ACu5Ed-mUrYY2zR9Jw?FHIM/Provider/PlanNetworkAffliliation?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WddlcUC6EeO2aaQpQxRerg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WddlcEC6EeO2aaQpQxRerg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WddlcUC6EeO2aaQpQxRerg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WddlcEC6EeO2aaQpQxRerg"/>
         <association href="Provider.efx#_WdaiIEC6EeO2aaQpQxRerg?FHIM/Provider/planNetworkAffliliation_healthPlan?"/>
       </ownedAttribute>
     </packagedElement>
@@ -6057,4 +6063,6 @@ Note that the NCPDP Telecommunication structure uses a separate &quot;qualifier&
   <Default:Documentation xmi:id="_W3cjEE8GEeSJI4YBId-MmA" base_Comment="_W3XqkE8GEeSJI4YBId-MmA"/>
   <Default:Documentation xmi:id="_d-EngE8GEeSJI4YBId-MmA" base_Comment="_d-DZYU8GEeSJI4YBId-MmA"/>
   <Default:Documentation xmi:id="_--OOsE8GEeSJI4YBId-MmA" base_Comment="_--NnoU8GEeSJI4YBId-MmA"/>
+  <Default:Documentation xmi:id="_wVfeQNLfEeaB48kcgQEvbA" base_Comment="_wVVtQNLfEeaB48kcgQEvbA"/>
+  <Default:Documentation xmi:id="_nxau8dLgEeaB48kcgQEvbA" base_Comment="_nxau8NLgEeaB48kcgQEvbA"/>
 </xmi:XMI>
