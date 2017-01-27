@@ -88,7 +88,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_kWhWBKCsEeO-_tuxzOR0Jg" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_kWh9EKCsEeO-_tuxzOR0Jg" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_kWh9EaCsEeO-_tuxzOR0Jg" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kWgu8aCsEeO-_tuxzOR0Jg" x="6023" y="50086"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kWgu8aCsEeO-_tuxzOR0Jg" x="6023" y="49769"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_Qr6CAKMcEeOzLfgeAZKSFA" element="_Qr4M0KMcEeOzLfgeAZKSFA" fontName="Segoe UI" showListStereotype="Text" showListVisibility="None" fillColor="16763850" transparency="0" lineColor="16744576" lineWidth="1" showStereotype="Text">
           <eAnnotations xmi:id="_Qr6pEKMcEeOzLfgeAZKSFA" source="com.ibm.xtools.uml.ui.diagram.internal.styles">
@@ -2549,15 +2549,10 @@ Eventually, this domain will be constrained such that specific reports such as t
       <ownedComment xmi:id="_r2l8cKtDEeGuzqo4y-0OoQ" annotatedElement="_Tf-W4KtDEeGuzqo4y-0OoQ">
         <body>Information for, and activity related to, the act of investigating and recording the results of the investigation. It is expected that additional classes such as observation are needed to capture all the data recorded for an investigation.  Note the Act class code INVSTG (Investigation) is defined as &quot;An official inquiry into the circumstances surrounding a particular unplanned event or potential event for the purposes of identifying possible causes and contributing factors for the event. This investigation could be conducted at a local institutional level or at the level of a local or national government.&quot; (adapted from HL7 V3 ICSR DAM)</body>
       </ownedComment>
-      <ownedAttribute xmi:id="_jJD3QLC3EeGGPqUAHxbNLQ" name="primaryPerformer" visibility="public" association="_jI2b4LC3EeGGPqUAHxbNLQ">
-        <type xmi:type="uml:Class" href="Common.efx#_7NSfgH_lEd-Ure_vzgD_TA?FHIM/Common/PrimaryPerformer?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jJIvwLC3EeGGPqUAHxbNLQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jJHhoLC3EeGGPqUAHxbNLQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_juXjwLC3EeGGPqUAHxbNLQ" name="author" visibility="public" association="_juSrQLC3EeGGPqUAHxbNLQ">
-        <type xmi:type="uml:Class" href="Common.efx#_hXa7cAq6Ed-426xscrxYmQ?FHIM/Common/Author?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_juaAALC3EeGGPqUAHxbNLQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_juZY8LC3EeGGPqUAHxbNLQ" value="1"/>
+      <ownedAttribute xmi:id="_eFbUkN6CEeaQL8YZ3sNKnw" name="primaryPerformer" visibility="public">
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ke70UN6CEeaQL8YZ3sNKnw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ke7NQN6CEeaQL8YZ3sNKnw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_YEW-QLC4EeGGPqUAHxbNLQ" name="id" visibility="public">
         <ownedComment xmi:id="_YEW-QbC4EeGGPqUAHxbNLQ" annotatedElement="_YEW-QLC4EeGGPqUAHxbNLQ">
@@ -2608,12 +2603,11 @@ Implementation Guide for Electronic Transmission of ICSRs, element C.1.2: Date o
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rbUy8rC4EeGGPqUAHxbNLQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rbUy87C4EeGGPqUAHxbNLQ" value="1"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_jI2b4LC3EeGGPqUAHxbNLQ" name="patientSafetyInvestigation_primaryPerformer" memberEnd="_jJD3QLC3EeGGPqUAHxbNLQ _jJOPULC3EeGGPqUAHxbNLQ">
-      <ownedEnd xmi:id="_jJOPULC3EeGGPqUAHxbNLQ" name="" visibility="public" type="_Tf-W4KtDEeGuzqo4y-0OoQ" association="_jI2b4LC3EeGGPqUAHxbNLQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_juSrQLC3EeGGPqUAHxbNLQ" name="patientSafetyInvestigation_author" memberEnd="_juXjwLC3EeGGPqUAHxbNLQ _judqYLC3EeGGPqUAHxbNLQ">
-      <ownedEnd xmi:id="_judqYLC3EeGGPqUAHxbNLQ" name="" visibility="public" type="_Tf-W4KtDEeGuzqo4y-0OoQ" association="_juSrQLC3EeGGPqUAHxbNLQ"/>
+      <ownedAttribute xmi:id="_pNXiAOGmEeaHnLXha23s2A" name="author" visibility="public">
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pNXiAeGmEeaHnLXha23s2A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pNXiAuGmEeaHnLXha23s2A"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_q294IKCUEeO-_tuxzOR0Jg" name="_parkinglot_ProductRelatedAdverseEventReport">
       <ownedComment xmi:id="_tKyZ0L5tEeOVVtQOY559MQ" annotatedElement="_q294IKCUEeO-_tuxzOR0Jg">
