@@ -2468,7 +2468,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_iiTTw2A1EeSij9t9NrJMGg" visible="false" type="AttributeCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_iiT60GA1EeSij9t9NrJMGg" visible="false" type="OperationCompartment"/>
           <element xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_v64hAEWzEeSj6rm-mQL9sw"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iiRekGA1EeSij9t9NrJMGg" x="5389" y="43112"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iiRekGA1EeSij9t9NrJMGg" x="-634" y="18703"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_iiUh4GA1EeSij9t9NrJMGg" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_iiVI8GA1EeSij9t9NrJMGg" type="ImageCompartment">
@@ -7096,15 +7096,15 @@ Note: There used to be a class called &quot;PublishedConsent&quot; the definitio
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aihWESlIEeSWGNB-ZzXnBA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aihWEClIEeSWGNB-ZzXnBA"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_-6GRkW6gEeS25q3D6U-JoQ" name="dataEnterer" visibility="public" association="_-6GRkG6gEeS25q3D6U-JoQ">
-        <type xmi:type="uml:Class" href="Common.efx#_HxX44Aq7Ed-426xscrxYmQ?FHIM/Common/DataEnterer?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-6QCkW6gEeS25q3D6U-JoQ" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-6QCkG6gEeS25q3D6U-JoQ"/>
+      <ownedAttribute xmi:id="_0miogN5rEeaSVd0Fmxi4nQ" name="witness" visibility="public">
+        <type xmi:type="uml:Class" href="Common.efx#_420A62FD03B6418CF92600E1?FHIM/Common/Participation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0miogd5rEeaSVd0Fmxi4nQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0miogt5rEeaSVd0Fmxi4nQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="__Xwd8W6gEeS25q3D6U-JoQ" name="witness" visibility="public" association="__Xwd8G6gEeS25q3D6U-JoQ">
-        <type xmi:type="uml:Class" href="Common.efx#_sPa3sP2JEd-vp-CAyKeWfQ?FHIM/Common/Witness?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__Xwd826gEeS25q3D6U-JoQ" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__Xwd8m6gEeS25q3D6U-JoQ"/>
+      <ownedAttribute xmi:id="_SAsoQN9PEeaqfsYBRmvQmQ" name="dataEnterer" visibility="public">
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SAsoQd9PEeaqfsYBRmvQmQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SAsoQt9PEeaqfsYBRmvQmQ" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_I3LUVF9zEd-WjrW-OJ9BNQ" name="consentDirective_replacesDirective" memberEnd="_I24ZfF9zEd-WjrW-OJ9BNQ _I3LUVV9zEd-WjrW-OJ9BNQ">
@@ -8725,12 +8725,6 @@ Renamed from &quot;Group&quot;</body>
       <ownedEnd xmi:id="_AKHkcG6gEeS25q3D6U-JoQ" name="" visibility="public" type="_5EwdkFYwEeS4Ftcws1EIJA" association="_AKA2wG6gEeS25q3D6U-JoQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_MKyhAG6gEeS25q3D6U-JoQ" name="isImplementedBy" supplier="_fPv5UG9MEd-NmaNtnOnl0g" client="_5dPvYF-SEd-WjrW-OJ9BNQ"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_-6GRkG6gEeS25q3D6U-JoQ" memberEnd="_-6GRkW6gEeS25q3D6U-JoQ _-6QCkm6gEeS25q3D6U-JoQ">
-      <ownedEnd xmi:id="_-6QCkm6gEeS25q3D6U-JoQ" name="" visibility="public" type="_I24ZYF9zEd-WjrW-OJ9BNQ" association="_-6GRkG6gEeS25q3D6U-JoQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="__Xwd8G6gEeS25q3D6U-JoQ" memberEnd="__Xwd8W6gEeS25q3D6U-JoQ __Xwd9G6gEeS25q3D6U-JoQ">
-      <ownedEnd xmi:id="__Xwd9G6gEeS25q3D6U-JoQ" name="" visibility="public" type="_I24ZYF9zEd-WjrW-OJ9BNQ" association="__Xwd8G6gEeS25q3D6U-JoQ"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_addOAG6jEeS25q3D6U-JoQ" name="PolicyForm"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_eIbC0G9yEeSFR7mkDZeU3Q" memberEnd="_eIetMG9yEeSFR7mkDZeU3Q _eIhJcG9yEeSFR7mkDZeU3Q">
       <ownedEnd xmi:id="_eIhJcG9yEeSFR7mkDZeU3Q" name="" visibility="public" type="_ffJUUCL2EeSh6JM0tyw3zg" association="_eIbC0G9yEeSFR7mkDZeU3Q">
