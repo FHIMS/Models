@@ -108,6 +108,119 @@
     <packageImport xmi:id="_ZLwkpZ1cEeKGRqm0H7Eu1A">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_terqkLxzEeSLwM7JIxbinw" name="Provenance" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9dxdILx2EeSLwM7JIxbinw" name="MedicalRecordsProvenance">
+      <ownedComment xmi:id="_y_zCYOQ4EeaH9t35G2snaA" annotatedElement="_9dxdILx2EeSLwM7JIxbinw">
+        <body>We need to be able to track when a record was exceprted from or derived from another record.  This things could be handled by the Medical Record Provenance</body>
+      </ownedComment>
+      <generalization xmi:id="_bFM_kLx4EeSLwM7JIxbinw" general="_terqkLxzEeSLwM7JIxbinw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0QKFgNfqEeSxkr3j6jZ3ag" name="ResearchProvenance">
+      <generalization xmi:id="_Ua0ukN1vEeSq65vB-N1vxw" general="_terqkLxzEeSLwM7JIxbinw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7HxPELx2EeSLwM7JIxbinw" name="SecurityProvenance">
+      <generalization xmi:id="_8vZUMLx2EeSLwM7JIxbinw" general="_terqkLxzEeSLwM7JIxbinw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1mTzkPjJEeCmc6EQPl3F9g" name="TranscriptionEvent">
+      <ownedComment xmi:id="_2PhOYEUuEeKmiJoj9rWMSg" annotatedElement="_1mTzkPjJEeCmc6EQPl3F9g">
+        <body>Transcribe: &quot;to make a written copy, especially a typewritten copy, of (dictated material, notes taken during a lecture, or other spoken material).&quot; - Dictionary.com.  This class captures information about who transcribed the provider's dictated notes, and when that transcription occurred.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_85iwoPjJEeCmc6EQPl3F9g" name="dateTime" visibility="public">
+        <ownedComment xmi:id="_N0psoEUvEeKmiJoj9rWMSg" annotatedElement="_85iwoPjJEeCmc6EQPl3F9g">
+          <body>The date and time upon which the person identified as the transcriptionist converted the provider's dictated notes into written form.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PqpesbykEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PqpesLykEea_DaXmJ278Kw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_fXJAkOQTEeak6NCuAd5Onw" name="transcriptionist" visibility="public">
+        <ownedComment xmi:id="_fXJAkeQTEeak6NCuAd5Onw" annotatedElement="_fXJAkOQTEeak6NCuAd5Onw">
+          <body>&quot;This field identifies the report transcriber.&quot; - HL7 Version 2.8, OBR-35</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fXJAkuQTEeak6NCuAd5Onw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fXJAk-QTEeak6NCuAd5Onw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bYKKMP2KEd-vp-CAyKeWfQ" name="Agent">
+      <ownedComment xmi:id="_Q8VbkBHCEeCBuOUrBnIXmQ" annotatedElement="_bYKKMP2KEd-vp-CAyKeWfQ">
+        <body>&quot;1. a person who acts on behalf of another person, group, business, government, etc; representative  2. a person or thing that acts or has the power to act&quot; - Collins</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_-Z7D0P2KEd-vp-CAyKeWfQ" name="person" visibility="public" association="_-Z4AgP2KEd-vp-CAyKeWfQ">
+        <ownedComment xmi:id="_cVByIBHCEeCBuOUrBnIXmQ" annotatedElement="_-Z7D0P2KEd-vp-CAyKeWfQ">
+          <body>Pointer to the Person playing the Role of Agent.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Person.efx#_420A62FD03B6425125E800E0?FHIM/Person/Person?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Z7D0v2KEd-vp-CAyKeWfQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Z7D0f2KEd-vp-CAyKeWfQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Er6bYMH0EeSi-640Aepa2Q" name="_InformationObjects">
+      <eAnnotations xmi:id="_o13IgPxKEeWBYvC3fS-LYg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_o13IgfxKEeWBYvC3fS-LYg" key="ParkingLot"/>
+      </eAnnotations>
+      <generalization xmi:id="_ApvaYPjyEeSbnPjyXcbpDg" general="_-RnscPjxEeSbnPjyXcbpDg"/>
+      <ownedAttribute xmi:id="_xaiJsPNpEeSMC5mPc_cPMQ" name="role" visibility="public">
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MVeeMbyaEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MVeeMLyaEea_DaXmJ278Kw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_2o_yoPNpEeSMC5mPc_cPMQ" name="type" visibility="public">
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M4cBUbyaEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M4cBULyaEea_DaXmJ278Kw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_4cyrgPNpEeSMC5mPc_cPMQ" name="reference" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L4QWsbyaEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L4QWsLyaEea_DaXmJ278Kw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_69ZAAPNpEeSMC5mPc_cPMQ" name="display" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LdJvEbyaEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LdJvELyaEea_DaXmJ278Kw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-RnscPjxEeSbnPjyXcbpDg" name="_ProvenanceEntity">
+      <eAnnotations xmi:id="_o1q7QvxKEeWBYvC3fS-LYg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_o1q7Q_xKEeWBYvC3fS-LYg" key="ParkingLot"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B643D7C2360379" name="ManufacturedMaterial">
+      <eAnnotations xmi:id="_MA0O0eLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+      <ownedComment xmi:id="_MArE5uLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B643D7C2360379">
+        <body>&quot;A subtype of Material representing an Entity or combination of Entities transformed for a particular purpose by a non-natural or manufacturing process.&quot; (HL7) </body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_420A62FD03B645E3197901FF" name="id" visibility="public">
+        <ownedComment xmi:id="_1ZKdoBHFEeCBuOUrBnIXmQ" annotatedElement="_420A62FD03B645E3197901FF">
+          <body>Uniquely identifies the manufactured material.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fqHXobyaEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fqHXoLyaEea_DaXmJ278Kw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B645E319790200" name="name" visibility="public">
+        <ownedComment xmi:id="_3gjA4BHFEeCBuOUrBnIXmQ" annotatedElement="_420A62FD03B645E319790200">
+          <body>The name of the manufactured material.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_goN-obyaEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_goN-oLyaEea_DaXmJ278Kw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NtYkIOEVEd6EKMSYA1gKjA" name="Material">
+      <ownedComment xmi:id="__zBzgAINEd-VSqNkiZ4fOA" annotatedElement="_NtYkIOEVEd6EKMSYA1gKjA">
+        <body>&quot;A subtype of Entity that is inanimate and locationally independent. Materials are entities that are neither Living  Subjects nor places. Manufactured or processed products are considered material, even if they originate as living matter.  Materials come in a wide variety of physical forms and can pass through different states (ie. Gas, liquid, solid) while  still retaining their physical composition and material characteristics.&quot; - HL7 V3.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_ByrVsBB1Ed-qbLlW6Q3SSQ" name="id" visibility="public">
+        <ownedComment xmi:id="_keQ2oPGjEd-ZlYn0p4HjQw" annotatedElement="_ByrVsBB1Ed-qbLlW6Q3SSQ">
+          <body>Uniquely identifies the material.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hss6cbyaEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hss6cLyaEea_DaXmJ278Kw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_SjvTYJQwEd-GUpkbaCODYA" name="RelatedExamination">
       <ownedAttribute xmi:id="_Wj4vEJQwEd-GUpkbaCODYA" name="relatedExaminiationCategory" visibility="public">
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
@@ -401,7 +514,7 @@ Adverse Event (AE): Any untoward medical occurrence in a patient or clinical inv
         <body>&quot;A source of reported information (e.g., a next of kin who answers questions about the patient's history). For history questions, the patient is logically an informant, yet the informant of history questions is implicitly the subject.&quot; - HL7 Version 3 (ParticipationType->informant)</body>
       </ownedComment>
       <generalization xmi:id="_-cZccNXhEeGG7JUIKyvuAg">
-        <general xmi:type="uml:Class" href="Common.efx#_420A62FD03B6418CF92600E1?FHIM/Common/PractitionerParticipationLite?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_420A62FD03B6418CF92600E1?FHIM/Common/Participation?"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B641B9FA54023F" name="_PrnEffectivenessObservation">
@@ -421,13 +534,13 @@ Adverse Event (AE): Any untoward medical occurrence in a patient or clinical inv
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_HNSu8XpaEd-44ra0dfiJCw" name="author" visibility="public" association="_HNSu8HpaEd-44ra0dfiJCw">
-        <ownedComment xmi:id="_KGz5wHpaEd-44ra0dfiJCw" annotatedElement="_HNSu8XpaEd-44ra0dfiJCw">
+      <ownedAttribute xmi:id="_2rokUOGuEeaHnLXha23s2A" name="author" visibility="public">
+        <ownedComment xmi:id="_2rokUeGuEeaHnLXha23s2A" annotatedElement="_2rokUOGuEeaHnLXha23s2A">
           <body>Captures participation information (who, when, comments) of the person who performed the procedure.    &quot;A party that originates the Act and therefore has responsibility for the information given in the Act and ownership of this Act.  ... The author (or authors) has ownership of the Acts that they originate. This means that a party other than this author (or those authors) cannot cancel, abort, complete or modify the state or content of this Act in any other way. A party other than the author may only amend, reverse, override, replace, or follow up in other ways on this Act, whereby the Act remains intact and is linked to another Act authored by that other party.&quot; (HL7)</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#_hXa7cAq6Ed-426xscrxYmQ?FHIM/Common/Author?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HNSu83paEd-44ra0dfiJCw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HNSu8npaEd-44ra0dfiJCw" value="1"/>
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2rokUuGuEeaHnLXha23s2A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2rokU-GuEeaHnLXha23s2A" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_eSQaMBs1Ed--ZY2-pbJ-Pw" name="ProviderNormalSchedule">
@@ -444,7 +557,7 @@ Adverse Event (AE): Any untoward medical occurrence in a patient or clinical inv
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64239FAA800D9?FHIM/Datatypes/TimeQuantity?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_5IVO8EwZEeCc9OmUU3L5_A" name="validTimeRange" visibility="public">
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_lxfhAB2oEd-4VI-lpu-JjQ" name="AncillaryService">
@@ -594,7 +707,7 @@ Adverse Event (AE): Any untoward medical occurrence in a patient or clinical inv
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6424309BD032B" name="linicStop">
+    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6424309BD032B" name="ClinicStop">
       <eAnnotations xmi:id="_L-SfRuLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedComment xmi:id="__vlw0BHDEeCBuOUrBnIXmQ" annotatedElement="_420A62FD03B6424309BD032B">
         <body>Identifies various nodes within a workflow process that is typically performed by a Medical Service.  Used to facilitate collection of workload and financial information.  This is equivalent to File 40.7 in Vista.</body>
@@ -688,15 +801,18 @@ Adverse Event (AE): Any untoward medical occurrence in a patient or clinical inv
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q3TQgyQtEdy5q9ASLdZxEA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q3TQgiQtEdy5q9ASLdZxEA" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_JiGJoPOeEeGMQvy2b7FvNg" name="dataEnterer" visibility="public" association="_JiDGUPOeEeGMQvy2b7FvNg">
-        <type xmi:type="uml:Class" href="Common.efx#_HxX44Aq7Ed-426xscrxYmQ?FHIM/Common/DataEnterer?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JiH-0POeEeGMQvy2b7FvNg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JiHXwPOeEeGMQvy2b7FvNg"/>
+      <ownedAttribute xmi:id="_3dzVMN9KEeaqfsYBRmvQmQ" name="primaryPerformer" visibility="public">
+        <ownedComment xmi:id="_3dzVMd9KEeaqfsYBRmvQmQ" annotatedElement="_3dzVMN9KEeaqfsYBRmvQmQ">
+          <body>Pointer to the clinician who provided the patient education.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3dzVMt9KEeaqfsYBRmvQmQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3dzVM99KEeaqfsYBRmvQmQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_N-zlgPOeEeGMQvy2b7FvNg" name="primaryPerformer" visibility="public" association="_N-v7IPOeEeGMQvy2b7FvNg">
-        <type xmi:type="uml:Class" href="Common.efx#_7NSfgH_lEd-Ure_vzgD_TA?FHIM/Common/PrimaryPerformer?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N-0zofOeEeGMQvy2b7FvNg" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N-0zoPOeEeGMQvy2b7FvNg"/>
+      <ownedAttribute xmi:id="_4T5vYN9NEeaqfsYBRmvQmQ" name="dataEnterer" visibility="public">
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4T5vYt9NEeaqfsYBRmvQmQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4T5vY99NEeaqfsYBRmvQmQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_olItUB2oEd-4VI-lpu-JjQ" name="Laboratory">
@@ -710,7 +826,7 @@ Adverse Event (AE): Any untoward medical occurrence in a patient or clinical inv
         <ownedComment xmi:id="_P6ILQZaWEeCWW4VssVugdQ" annotatedElement="_P6ILQJaWEeCWW4VssVugdQ">
           <body>An interval of time specifying the period during which the National Provider Id is in effect, if such time limit is applicable and known.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6418A7D7C00C2" name="nationalProviderId" visibility="public">
         <eAnnotations xmi:id="_NPpZcuLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -1641,13 +1757,13 @@ Note that the classes in this package are not full-fledged FHIM classes, and do 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3aJezUm8EeCuWJu-uLQQaQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3aJezkm8EeCuWJu-uLQQaQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_3aJez0m8EeCuWJu-uLQQaQ" name="author" visibility="public" association="_31G8cEm8EeCuWJu-uLQQaQ">
-        <ownedComment xmi:id="_3aJe0Em8EeCuWJu-uLQQaQ" annotatedElement="_3aJez0m8EeCuWJu-uLQQaQ">
+      <ownedAttribute xmi:id="_jLYKYOQXEeak6NCuAd5Onw" name="author" visibility="public">
+        <ownedComment xmi:id="_jLYKYeQXEeak6NCuAd5Onw" annotatedElement="_jLYKYOQXEeak6NCuAd5Onw">
           <body>Indicates the practitioner who created the obsoletion. In other words, the practitioner who obsoleted the action.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B6418A6B760063?FHIM/Provider/IndividualProvider?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3aJe0Um8EeCuWJu-uLQQaQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3aJe0km8EeCuWJu-uLQQaQ" value="1"/>
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jLYKYuQXEeak6NCuAd5Onw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jLYKY-QXEeak6NCuAd5Onw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Eq3G4Em9EeCuWJu-uLQQaQ" name="ReactivateAct">
@@ -1679,13 +1795,13 @@ Note that the classes in this package are not full-fledged FHIM classes, and do 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Eq3G7Um9EeCuWJu-uLQQaQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Eq3G7km9EeCuWJu-uLQQaQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_Eq3G70m9EeCuWJu-uLQQaQ" name="author" visibility="public" association="_Eq3G80m9EeCuWJu-uLQQaQ">
-        <ownedComment xmi:id="_Eq3G8Em9EeCuWJu-uLQQaQ" annotatedElement="_Eq3G70m9EeCuWJu-uLQQaQ">
+      <ownedAttribute xmi:id="_XzKU8OQXEeak6NCuAd5Onw" name="author" visibility="public">
+        <ownedComment xmi:id="_XzKU8eQXEeak6NCuAd5Onw" annotatedElement="_XzKU8OQXEeak6NCuAd5Onw">
           <body>Indicates the practitioner who created the reactivation. In other words, the practitioner who reactivated the action.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B6418A6B760063?FHIM/Provider/IndividualProvider?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Eq3G8Um9EeCuWJu-uLQQaQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Eq3G8km9EeCuWJu-uLQQaQ" value="1"/>
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XzKU8uQXEeak6NCuAd5Onw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XzKU8-QXEeak6NCuAd5Onw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_1KyeEIlHEd-pqcFAwb-XNw" name="SuspendAct">
@@ -1717,13 +1833,13 @@ Note that the classes in this package are not full-fledged FHIM classes, and do 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1KyeHYlHEd-pqcFAwb-XNw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1KyeHolHEd-pqcFAwb-XNw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_1KyeH4lHEd-pqcFAwb-XNw" name="author" visibility="public" association="_1K8PEIlHEd-pqcFAwb-XNw">
-        <ownedComment xmi:id="_g0_3MBHfEeCBuOUrBnIXmQ" annotatedElement="_1KyeH4lHEd-pqcFAwb-XNw">
+      <ownedAttribute xmi:id="_cHkJYOQXEeak6NCuAd5Onw" name="author" visibility="public">
+        <ownedComment xmi:id="_cHkJYeQXEeak6NCuAd5Onw" annotatedElement="_cHkJYOQXEeak6NCuAd5Onw">
           <body>Indicates the practitioner who created the suspension. In other words, the practitioner who suspended the action.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B6418A6B760063?FHIM/Provider/IndividualProvider?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1KyeIIlHEd-pqcFAwb-XNw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1KyeIYlHEd-pqcFAwb-XNw" value="1"/>
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cHkJYuQXEeak6NCuAd5Onw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cHkJY-QXEeak6NCuAd5Onw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_EmYPgEm9EeCuWJu-uLQQaQ" name="InactivateAct">
@@ -1755,13 +1871,13 @@ Note that the classes in this package are not full-fledged FHIM classes, and do 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EmYPjUm9EeCuWJu-uLQQaQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EmYPjkm9EeCuWJu-uLQQaQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_EmYPj0m9EeCuWJu-uLQQaQ" name="author" visibility="public" association="_EmbS0Em9EeCuWJu-uLQQaQ">
-        <ownedComment xmi:id="_EmYPkEm9EeCuWJu-uLQQaQ" annotatedElement="_EmYPj0m9EeCuWJu-uLQQaQ">
+      <ownedAttribute xmi:id="_M1oQYOQXEeak6NCuAd5Onw" name="author" visibility="public">
+        <ownedComment xmi:id="_P1yOsOQXEeak6NCuAd5Onw" annotatedElement="_M1oQYOQXEeak6NCuAd5Onw">
           <body>Indicates the practitioner who created the inactivation. In other words, the practitioner who inactivated the action.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B6418A6B760063?FHIM/Provider/IndividualProvider?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EmYPkUm9EeCuWJu-uLQQaQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EmYPkkm9EeCuWJu-uLQQaQ" value="1"/>
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M1oQYuQXEeak6NCuAd5Onw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M1oQY-QXEeak6NCuAd5Onw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6454F68ED028C" name="CancelAct">
@@ -1793,13 +1909,13 @@ Note that the classes in this package are not full-fledged FHIM classes, and do 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2SHVsQ4uEdyZc_FPZHi0YA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2SHVsA4uEdyZc_FPZHi0YA" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_plX4kHo9Ed-44ra0dfiJCw" name="author" visibility="public" association="_plOuoHo9Ed-44ra0dfiJCw">
-        <ownedComment xmi:id="_zXEU8BHDEeCBuOUrBnIXmQ" annotatedElement="_plX4kHo9Ed-44ra0dfiJCw">
+      <ownedAttribute xmi:id="_prvgEOQXEeak6NCuAd5Onw" name="author" visibility="public">
+        <ownedComment xmi:id="_prvgEeQXEeak6NCuAd5Onw" annotatedElement="_prvgEOQXEeak6NCuAd5Onw">
           <body>Indicates the practitioner who created the cancellation. In other words, the practitioner who canceled the action.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B6418A6B760063?FHIM/Provider/IndividualProvider?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_plX4kno9Ed-44ra0dfiJCw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_plX4kXo9Ed-44ra0dfiJCw" value="1"/>
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_prvgEuQXEeak6NCuAd5Onw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_prvgE-QXEeak6NCuAd5Onw" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6428B455F0341" name="_PractitionerLite">
@@ -1909,13 +2025,13 @@ Note that the classes in this package are not full-fledged FHIM classes, and do 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ettWXOLjEdutr_MT9HkPyQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ettWW-LjEdutr_MT9HkPyQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_amSJYQq7Ed-426xscrxYmQ" name="author" visibility="public" association="_amSJYAq7Ed-426xscrxYmQ">
-        <ownedComment xmi:id="_S_TP8PGkEd-ZlYn0p4HjQw" annotatedElement="_amSJYQq7Ed-426xscrxYmQ">
+      <ownedAttribute xmi:id="_iRL5YOGuEeaHnLXha23s2A" name="author" visibility="public">
+        <ownedComment xmi:id="_iRL5YeGuEeaHnLXha23s2A" annotatedElement="_iRL5YOGuEeaHnLXha23s2A">
           <body>&lt;deprecated></body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#_hXa7cAq6Ed-426xscrxYmQ?FHIM/Common/Author?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_amSJYwq7Ed-426xscrxYmQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_amSJYgq7Ed-426xscrxYmQ" value="1"/>
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iRL5YuGuEeaHnLXha23s2A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iRL5Y-GuEeaHnLXha23s2A" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_dtt5gEncEdyXcM5TklTDNg" name="HL72CodedElement">
@@ -2819,7 +2935,7 @@ Note that the classes in this package are not full-fledged FHIM classes, and do 
         <ownedComment xmi:id="_-ItMkJNqEeCyufOLCDZkFA" annotatedElement="_Wng6ho3pEeC71dGAKsmahg">
           <body>The time period during which the person is/was a citizen of the associated Tribe.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/TimeInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wng6h43pEeC71dGAKsmahg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wng6iI3pEeC71dGAKsmahg"/>
       </ownedAttribute>
@@ -2960,25 +3076,6 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
       </ownedComment>
       <ownedEnd xmi:id="_420A62FD03B645649B7E0358" name="" visibility="public" type="_420A62FD03B645649B26010B" isUnique="false" association="_420A62FD03B645649B7E0183"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_amSJYAq7Ed-426xscrxYmQ" name="observationReport_author" memberEnd="_amSJYQq7Ed-426xscrxYmQ _ambTUAq7Ed-426xscrxYmQ">
-      <ownedEnd xmi:id="_ambTUAq7Ed-426xscrxYmQ" name="" visibility="private" type="_420A62FD03B64231004F0278" association="_amSJYAq7Ed-426xscrxYmQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_plOuoHo9Ed-44ra0dfiJCw" name="cancelAct_author" memberEnd="_plX4kHo9Ed-44ra0dfiJCw _plX4k3o9Ed-44ra0dfiJCw">
-      <ownedEnd xmi:id="_plX4k3o9Ed-44ra0dfiJCw" name="" visibility="private" type="_420A62FD03B6454F68ED028C" association="_plOuoHo9Ed-44ra0dfiJCw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_EmbS0Em9EeCuWJu-uLQQaQ" name="inactivateAct_author" memberEnd="_EmYPj0m9EeCuWJu-uLQQaQ _EmbS0Um9EeCuWJu-uLQQaQ">
-      <ownedEnd xmi:id="_EmbS0Um9EeCuWJu-uLQQaQ" name="" visibility="private" type="_EmYPgEm9EeCuWJu-uLQQaQ" association="_EmbS0Em9EeCuWJu-uLQQaQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_1K8PEIlHEd-pqcFAwb-XNw" name="suspendAct_author" memberEnd="_1KyeH4lHEd-pqcFAwb-XNw _1K8PEYlHEd-pqcFAwb-XNw">
-      <eAnnotations xmi:id="_DzK3gDLgEeC936sxFTzdsQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
-      <ownedEnd xmi:id="_1K8PEYlHEd-pqcFAwb-XNw" name="" visibility="private" type="_1KyeEIlHEd-pqcFAwb-XNw" association="_1K8PEIlHEd-pqcFAwb-XNw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_Eq3G80m9EeCuWJu-uLQQaQ" name="reactivateAct_author" memberEnd="_Eq3G70m9EeCuWJu-uLQQaQ _Eq3G9Em9EeCuWJu-uLQQaQ">
-      <ownedEnd xmi:id="_Eq3G9Em9EeCuWJu-uLQQaQ" name="" visibility="private" type="_Eq3G4Em9EeCuWJu-uLQQaQ" association="_Eq3G80m9EeCuWJu-uLQQaQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_31G8cEm8EeCuWJu-uLQQaQ" name="obsoleteAct_author" memberEnd="_3aJez0m8EeCuWJu-uLQQaQ _31G8cUm8EeCuWJu-uLQQaQ">
-      <ownedEnd xmi:id="_31G8cUm8EeCuWJu-uLQQaQ" name="" visibility="private" type="_3aJewEm8EeCuWJu-uLQQaQ" association="_31G8cEm8EeCuWJu-uLQQaQ"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_a6fjoCQvEdy5q9ASLdZxEA" name="eventCapture_section" memberEnd="_a6fjoSQvEdy5q9ASLdZxEA _a6otkSQvEdy5q9ASLdZxEA">
       <eAnnotations xmi:id="_iNjdACs_EdyLCs37ijh6Kg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedEnd xmi:id="_a6otkSQvEdy5q9ASLdZxEA" name="" visibility="private" type="_420A62FD03B6438D2B8700C8" association="_a6fjoCQvEdy5q9ASLdZxEA">
@@ -3007,9 +3104,6 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nbKeoiaPEdyiJKb4ZqIfnw" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_N-v7IPOeEeGMQvy2b7FvNg" name="eventCapture_primaryPerformer" memberEnd="_N-zlgPOeEeGMQvy2b7FvNg _N-4eAPOeEeGMQvy2b7FvNg">
-      <ownedEnd xmi:id="_N-4eAPOeEeGMQvy2b7FvNg" name="" visibility="private" type="_420A62FD03B6438D2B8700C8" association="_N-v7IPOeEeGMQvy2b7FvNg"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_R5cNICaQEdyiJKb4ZqIfnw" name="eventCapture_orderingSection" memberEnd="_R5cNISaQEdyiJKb4ZqIfnw _R5cNJCaQEdyiJKb4ZqIfnw">
       <eAnnotations xmi:id="_iN2X8Cs_EdyLCs37ijh6Kg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedEnd xmi:id="_R5cNJCaQEdyiJKb4ZqIfnw" name="" visibility="private" type="_420A62FD03B6438D2B8700C8" association="_R5cNICaQEdyiJKb4ZqIfnw">
@@ -3027,12 +3121,6 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tVbLsSaREdyiJKb4ZqIfnw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tVbLsCaREdyiJKb4ZqIfnw" value="1"/>
       </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_JiDGUPOeEeGMQvy2b7FvNg" name="eventCapture_dataEnterer" memberEnd="_JiGJoPOeEeGMQvy2b7FvNg _JiLCIPOeEeGMQvy2b7FvNg">
-      <ownedEnd xmi:id="_JiLCIPOeEeGMQvy2b7FvNg" name="" visibility="private" type="_420A62FD03B6438D2B8700C8" association="_JiDGUPOeEeGMQvy2b7FvNg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_HNSu8HpaEd-44ra0dfiJCw" name="prnEffectivenessObservation_author" memberEnd="_HNSu8XpaEd-44ra0dfiJCw _HNSu9HpaEd-44ra0dfiJCw">
-      <ownedEnd xmi:id="_HNSu9HpaEd-44ra0dfiJCw" name="" visibility="private" type="_420A62FD03B641B9FA54023F" association="_HNSu8HpaEd-44ra0dfiJCw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_VJ4RoBI5EeaA87ocOQd-PQ" name="Dialysis">
       <eAnnotations xmi:id="_VKShUBI5EeaA87ocOQd-PQ" source="uml2.diagrams" references="_VKTIYBI5EeaA87ocOQd-PQ">
@@ -3750,6 +3838,12 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
     <packagedElement xmi:type="uml:Association" xmi:id="_lBPJcJQwEd-GUpkbaCODYA" memberEnd="_lBPJcZQwEd-GUpkbaCODYA _lBPJdJQwEd-GUpkbaCODYA">
       <ownedEnd xmi:id="_lBPJdJQwEd-GUpkbaCODYA" name="" visibility="public" type="_SjvTYJQwEd-GUpkbaCODYA" association="_lBPJcJQwEd-GUpkbaCODYA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-Z4AgP2KEd-vp-CAyKeWfQ" name="agent_person" memberEnd="_-Z7D0P2KEd-vp-CAyKeWfQ _-Z-HIP2KEd-vp-CAyKeWfQ">
+      <ownedEnd xmi:id="_-Z-HIP2KEd-vp-CAyKeWfQ" name="" visibility="public" type="_bYKKMP2KEd-vp-CAyKeWfQ" association="_-Z4AgP2KEd-vp-CAyKeWfQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Z-HIv2KEd-vp-CAyKeWfQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Z-HIf2KEd-vp-CAyKeWfQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
     <profileApplication xmi:id="_JnNDsFKQEd6S47BJxSzcxQ">
       <eAnnotations xmi:id="_JnNDsVKQEd6S47BJxSzcxQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA"/>
@@ -3916,7 +4010,6 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <Default:Documentation xmi:id="_MCAho-LiEduGJrQyRGTO1A" base_Comment="_MCAhouLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MCAhoOLiEduGJrQyRGTO1A" base_Comment="_MB3XweLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MCAhpuLiEduGJrQyRGTO1A" base_Comment="_MCAhpeLiEduGJrQyRGTO1A"/>
-  <Default:Documentation xmi:id="_S_bLwPGkEd-ZlYn0p4HjQw" base_Comment="_S_TP8PGkEd-ZlYn0p4HjQw"/>
   <Default:Documentation xmi:id="_D7aawBH1EeCBuOUrBnIXmQ" base_Comment="_D7QpwBH1EeCBuOUrBnIXmQ"/>
   <Default:Documentation xmi:id="_L-laMeLiEduGJrQyRGTO1A" base_Comment="_L-laMOLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_Se0qhA7IEdydErVppFlMSg" base_Comment="_Se0qgQ7IEdydErVppFlMSg"/>
@@ -3930,10 +4023,8 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <Default:Documentation xmi:id="_5pzeUBHDEeCBuOUrBnIXmQ" base_Comment="_5pptUBHDEeCBuOUrBnIXmQ"/>
   <Default:Documentation xmi:id="_9bwagAifEdyHjMW0PjGWdw" base_Comment="_9bmpgAifEdyHjMW0PjGWdw"/>
   <Default:Documentation xmi:id="_vn2RMBHDEeCBuOUrBnIXmQ" base_Comment="_vnsgMBHDEeCBuOUrBnIXmQ"/>
-  <Default:Documentation xmi:id="_zXOF8BHDEeCBuOUrBnIXmQ" base_Comment="_zXEU8BHDEeCBuOUrBnIXmQ"/>
   <RIM:ControlAct xmi:id="_bsF2B1wTEd6dhZ7uY2XV5Q" base_Class="_420A62FD03B6454F68ED028C"/>
   <Default:Documentation xmi:id="_EmbS00m9EeCuWJu-uLQQaQ" base_Comment="_EmYPgkm9EeCuWJu-uLQQaQ"/>
-  <Default:Documentation xmi:id="_EmbS10m9EeCuWJu-uLQQaQ" base_Comment="_EmYPkEm9EeCuWJu-uLQQaQ"/>
   <Default:Documentation xmi:id="_EmbS1Em9EeCuWJu-uLQQaQ" base_Comment="_EmYPhEm9EeCuWJu-uLQQaQ"/>
   <Default:Documentation xmi:id="_EmbS1km9EeCuWJu-uLQQaQ" base_Comment="_EmYPjEm9EeCuWJu-uLQQaQ"/>
   <Default:Documentation xmi:id="_EmbS1Um9EeCuWJu-uLQQaQ" base_Comment="_EmYPiEm9EeCuWJu-uLQQaQ"/>
@@ -3946,13 +4037,10 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <Default:Documentation xmi:id="_31G8dEm8EeCuWJu-uLQQaQ" base_Comment="_3aJexEm8EeCuWJu-uLQQaQ"/>
   <Default:Documentation xmi:id="_31G8dkm8EeCuWJu-uLQQaQ" base_Comment="_3aJezEm8EeCuWJu-uLQQaQ"/>
   <Default:Documentation xmi:id="_31G8dUm8EeCuWJu-uLQQaQ" base_Comment="_3aJeyEm8EeCuWJu-uLQQaQ"/>
-  <Default:Documentation xmi:id="_31J_wEm8EeCuWJu-uLQQaQ" base_Comment="_3aJe0Em8EeCuWJu-uLQQaQ"/>
   <Default:Documentation xmi:id="_Eq6KM0m9EeCuWJu-uLQQaQ" base_Comment="_Eq3G6Em9EeCuWJu-uLQQaQ"/>
   <Default:Documentation xmi:id="_Eq6KMkm9EeCuWJu-uLQQaQ" base_Comment="_Eq3G5Em9EeCuWJu-uLQQaQ"/>
   <Default:Documentation xmi:id="_Eq6KMUm9EeCuWJu-uLQQaQ" base_Comment="_Eq3G4km9EeCuWJu-uLQQaQ"/>
   <Default:Documentation xmi:id="_Eq6KNEm9EeCuWJu-uLQQaQ" base_Comment="_Eq3G7Em9EeCuWJu-uLQQaQ"/>
-  <Default:Documentation xmi:id="_Eq6KNUm9EeCuWJu-uLQQaQ" base_Comment="_Eq3G8Em9EeCuWJu-uLQQaQ"/>
-  <Default:Documentation xmi:id="_g1DhkBHfEeCBuOUrBnIXmQ" base_Comment="_g0_3MBHfEeCBuOUrBnIXmQ"/>
   <RIM:ControlAct xmi:id="_1K8PEolHEd-pqcFAwb-XNw" base_Class="_1KyeEIlHEd-pqcFAwb-XNw"/>
   <RIM:ControlAct xmi:id="_31G8ckm8EeCuWJu-uLQQaQ" base_Class="_3aJewEm8EeCuWJu-uLQQaQ"/>
   <RIM:ControlAct xmi:id="_Eq6KMEm9EeCuWJu-uLQQaQ" base_Class="_Eq3G4Em9EeCuWJu-uLQQaQ"/>
@@ -4013,7 +4101,6 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <RIM:Act xmi:id="_PMd0gEwaEeCc9OmUU3L5_A" base_Class="_eSQaMBs1Ed--ZY2-pbJ-Pw"/>
   <Default:Documentation xmi:id="_jBm0oEcfEeOPSKtS95Q8Uw" base_Comment="_i6-BIEcfEeOPSKtS95Q8Uw"/>
   <Default:Documentation xmi:id="_w8mMAEcjEeOPSKtS95Q8Uw" base_Comment="_w8dCEEcjEeOPSKtS95Q8Uw"/>
-  <Default:Documentation xmi:id="_KG9DsHpaEd-44ra0dfiJCw" base_Comment="_KGz5wHpaEd-44ra0dfiJCw"/>
   <Default:Documentation xmi:id="_NaORxeLiEduGJrQyRGTO1A" base_Comment="_NaORxOLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_NaORyOLiEduGJrQyRGTO1A" base_Comment="_NaORx-LiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_NaYCwOLiEduGJrQyRGTO1A" base_Comment="_NaORyuLiEduGJrQyRGTO1A"/>
@@ -4057,4 +4144,31 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <Default:Documentation xmi:id="_Mdu0U-LiEduGJrQyRGTO1A" base_Comment="_Mdu0UuLiEduGJrQyRGTO1A"/>
   <RIM:Procedure xmi:id="_HR8PAJQwEd-GUpkbaCODYA" base_Class="_420A62FD03B6426E871203C6"/>
   <RIM:ActRelationship xmi:id="_ar7igJQwEd-GUpkbaCODYA" base_Class="_SjvTYJQwEd-GUpkbaCODYA"/>
+  <Default:Documentation xmi:id="_3dzVNN9KEeaqfsYBRmvQmQ" base_Comment="_3dzVMd9KEeaqfsYBRmvQmQ"/>
+  <Default:Documentation xmi:id="_kebOsPGjEd-ZlYn0p4HjQw" base_Comment="_keQ2oPGjEd-ZlYn0p4HjQw"/>
+  <Default:Documentation xmi:id="_VX1qowLQEd-4q5si9Q3m-w" base_Comment="__zBzgAINEd-VSqNkiZ4fOA"/>
+  <RIM:Material xmi:id="_VX1qogLQEd-4q5si9Q3m-w" base_Class="_NtYkIOEVEd6EKMSYA1gKjA"/>
+  <Default:Documentation xmi:id="_1ZTnkBHFEeCBuOUrBnIXmQ" base_Comment="_1ZKdoBHFEeCBuOUrBnIXmQ"/>
+  <Default:Documentation xmi:id="_3gsK0BHFEeCBuOUrBnIXmQ" base_Comment="_3gjA4BHFEeCBuOUrBnIXmQ"/>
+  <Default:Documentation xmi:id="_MArE5-LiEduGJrQyRGTO1A" base_Comment="_MArE5uLiEduGJrQyRGTO1A"/>
+  <RIM:ManufacturedMaterial xmi:id="_lUzMcFYPEd6WMdl70LfmUg" base_Class="_420A62FD03B643D7C2360379"/>
+  <Default:Documentation xmi:id="_cVK8EBHCEeCBuOUrBnIXmQ" base_Comment="_cVByIBHCEeCBuOUrBnIXmQ"/>
+  <Default:Documentation xmi:id="_Q_5s8BHCEeCBuOUrBnIXmQ" base_Comment="_Q8VbkBHCEeCBuOUrBnIXmQ"/>
+  <RIM:Role xmi:id="_gqTZQP2KEd-vp-CAyKeWfQ" base_Class="_bYKKMP2KEd-vp-CAyKeWfQ"/>
+  <Default:Documentation xmi:id="_iRL5ZOGuEeaHnLXha23s2A" base_Comment="_iRL5YeGuEeaHnLXha23s2A"/>
+  <Default:Documentation xmi:id="_2rpLYOGuEeaHnLXha23s2A" base_Comment="_2rokUeGuEeaHnLXha23s2A"/>
+  <Default:Documentation xmi:id="_2QHEQEUuEeKmiJoj9rWMSg" base_Comment="_2PhOYEUuEeKmiJoj9rWMSg"/>
+  <Default:Documentation xmi:id="_N0y2kEUvEeKmiJoj9rWMSg" base_Comment="_N0psoEUvEeKmiJoj9rWMSg"/>
+  <RIM:Act xmi:id="_8HwuYPjJEeCmc6EQPl3F9g" base_Class="_1mTzkPjJEeCmc6EQPl3F9g"/>
+  <Default:Documentation xmi:id="_fXJnoOQTEeak6NCuAd5Onw" base_Comment="_fXJAkeQTEeak6NCuAd5Onw"/>
+  <Default:Documentation xmi:id="_P10q8OQXEeak6NCuAd5Onw" base_Comment="_P1yOsOQXEeak6NCuAd5Onw"/>
+  <Default:Documentation xmi:id="_XzKU9OQXEeak6NCuAd5Onw" base_Comment="_XzKU8eQXEeak6NCuAd5Onw"/>
+  <Default:Documentation xmi:id="_cHkwcOQXEeak6NCuAd5Onw" base_Comment="_cHkJYeQXEeak6NCuAd5Onw"/>
+  <Default:Documentation xmi:id="_jLYxcOQXEeak6NCuAd5Onw" base_Comment="_jLYKYeQXEeak6NCuAd5Onw"/>
+  <Default:Documentation xmi:id="_prwHIOQXEeak6NCuAd5Onw" base_Comment="_prvgEeQXEeak6NCuAd5Onw"/>
+  <RIM:Observation xmi:id="_VC3-0Lx6EeSLwM7JIxbinw" base_Class="_7HxPELx2EeSLwM7JIxbinw"/>
+  <RIM:Observation xmi:id="_VC3-0bx6EeSLwM7JIxbinw" base_Class="_9dxdILx2EeSLwM7JIxbinw"/>
+  <RIM:Observation xmi:id="__tBp0N1uEeSq65vB-N1vxw" base_Class="_0QKFgNfqEeSxkr3j6jZ3ag"/>
+  <Default:Documentation xmi:id="_y_8zYOQ4EeaH9t35G2snaA" base_Comment="_y_zCYOQ4EeaH9t35G2snaA"/>
+  <RIM:Observation xmi:id="_VC3XwLx6EeSLwM7JIxbinw" base_Class="_terqkLxzEeSLwM7JIxbinw"/>
 </xmi:XMI>
