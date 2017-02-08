@@ -1603,11 +1603,6 @@ Represents &quot;the section of the diagnostic service where the observation was
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fWrx8eQxEeaH9t35G2snaA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fWrx8uQxEeaH9t35G2snaA"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="__VzpALOzEeS3iYN4R_wsuw" name="provenance" visibility="public" association="__Vv-oLOzEeS3iYN4R_wsuw">
-        <type xmi:type="uml:Class" href="FHIM_ParkingLot.emx#_terqkLxzEeSLwM7JIxbinw?FHIM_ParkingLot/Provenance?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__V2FQLOzEeS3iYN4R_wsuw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__V1eMLOzEeS3iYN4R_wsuw"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_nbH1TVaeEd6rJ7jpZ7LBFg" name="recordStatus" visibility="public">
         <ownedComment xmi:id="_PkyNUBcAEeOL3Nw-k5HkNw" annotatedElement="_nbH1TVaeEd6rJ7jpZ7LBFg">
           <body>The state of the Clinical Information record, as defined in the state-transition model in the HL7 RIM.  Possible values include: Aborted, Active, Cancelled, Completed, Held, New, Nullified, Obsolete.  Note that this property represents the state of the clinical record, not the state of the thing being recorded (which is an especially important distinction when dealing with Observations).  When the state of the thing being obverved is needed (e.g., in remission), a separate property will be used.  Note also that VistA and RPMS have the concept of being &quot;Entered in Error&quot; which is equivalent to a status of Nullified.  For the Condition subtype of Observation, this property summarizes the current state of the Condition (or subtype such as Health Concern (aka Problem) or Intolerance Condition), as indicated by the last observation made on the Condition.&#xD;
@@ -2100,9 +2095,6 @@ Note that this class used to contain an optional property called commentCategory
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_e3hiIHipEeODk9Eid2o3dQ" name="provenance_informationReporter" memberEnd="_e3iwQHipEeODk9Eid2o3dQ _e3j-YHipEeODk9Eid2o3dQ">
       <ownedEnd xmi:id="_e3j-YHipEeODk9Eid2o3dQ" name="" visibility="public" type="_W_aIoBb8EeOL3Nw-k5HkNw" association="_e3hiIHipEeODk9Eid2o3dQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="__Vv-oLOzEeS3iYN4R_wsuw" name="clinicalInformation_provenance" memberEnd="__VzpALOzEeS3iYN4R_wsuw __V3TYLOzEeS3iYN4R_wsuw">
-      <ownedEnd xmi:id="__V3TYLOzEeS3iYN4R_wsuw" name="" visibility="public" type="_Wu4MgKMyEeSjK-UNpoDZuQ" association="__Vv-oLOzEeS3iYN4R_wsuw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_8qnKoLkwEeSvIbhHaIFeOA" name="RelatedClinicalInformation">
       <ownedComment xmi:id="_bCPQYLkxEeSvIbhHaIFeOA" annotatedElement="_8qnKoLkwEeSvIbhHaIFeOA">
