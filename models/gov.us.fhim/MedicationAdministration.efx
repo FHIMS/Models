@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<!--Rational Software Architect Designer 9.5-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:FHIM="http://gov.us.fhim/profile/1" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+  <uml:Package xmi:id="__EI_AAjMEeeH-JUbuHPVcg" name="MedicationAdministration">
+    <eAnnotations xmi:id="_wMc1MAjQEeeH-JUbuHPVcg" source="com.ibm.xtools.uml.msl.fragments"/>
+    <eAnnotations xmi:id="_wMaY8AjQEeeH-JUbuHPVcg" source="com.ibm.xtools.uml.msl.fragmentContainer">
+      <references xmi:type="uml:Package" href="FHIM.emx#420A62FD03B6?FHIM?"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="__EI_AQjMEeeH-JUbuHPVcg" source="uml2.diagrams" references="__EI_AgjMEeeH-JUbuHPVcg">
+      <contents xmi:type="umlnotation:UMLDiagram" xmi:id="__EI_AgjMEeeH-JUbuHPVcg" type="Class" name="_MedicationAdministration">
+        <children xmi:type="notation:Shape" xmi:id="_dj-lkQjNEeeH-JUbuHPVcg" type="Note" fontName="Arial" fontHeight="10" description="FHIM Medication Administration Domain" fillColor="16777088" lineColor="3342489">
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_dj-lkgjNEeeH-JUbuHPVcg" type="DiagramName">
+            <element xsi:nil="true"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_dj-lkwjNEeeH-JUbuHPVcg" type="Description">
+            <element xsi:nil="true"/>
+          </children>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dj-llAjNEeeH-JUbuHPVcg" x="-12046" y="-1902" width="6985" height="1931"/>
+        </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_lkuI4AjNEeeH-JUbuHPVcg" element="_yQ2jIDh4EeC17O99ZX8o-w" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_lk3S0AjNEeeH-JUbuHPVcg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_lk3S0QjNEeeH-JUbuHPVcg" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_lk3S0gjNEeeH-JUbuHPVcg" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_lk3S0wjNEeeH-JUbuHPVcg" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_lk3S1AjNEeeH-JUbuHPVcg" type="Parent"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_lk3S1QjNEeeH-JUbuHPVcg" type="AttributeCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_lk3S1gjNEeeH-JUbuHPVcg" visible="false" type="OperationCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_lk3S1wjNEeeH-JUbuHPVcg" visible="false" type="SignalCompartment"/>
+          <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_lk3S2AjNEeeH-JUbuHPVcg" visible="false" type="StructureCompartment"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lkuI4QjNEeeH-JUbuHPVcg" x="7608" y="7608"/>
+        </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_mZChwAjNEeeH-JUbuHPVcg" element="_2QCQ4KwREeG4dfTp_XT2yg" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_mZDI0AjNEeeH-JUbuHPVcg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_mZDI0QjNEeeH-JUbuHPVcg" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_mZDI0gjNEeeH-JUbuHPVcg" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_mZDI0wjNEeeH-JUbuHPVcg" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_mZDv4AjNEeeH-JUbuHPVcg" type="Parent"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_mZDv4QjNEeeH-JUbuHPVcg" type="AttributeCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_mZDv4gjNEeeH-JUbuHPVcg" visible="false" type="OperationCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_mZDv4wjNEeeH-JUbuHPVcg" visible="false" type="SignalCompartment"/>
+          <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_mZDv5AjNEeeH-JUbuHPVcg" visible="false" type="StructureCompartment"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mZChwQjNEeeH-JUbuHPVcg" x="-5072" y="6657"/>
+        </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_nuuiUAjNEeeH-JUbuHPVcg" element="_420A62FD03B641A349EF0070" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_nuuiUgjNEeeH-JUbuHPVcg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_nuuiUwjNEeeH-JUbuHPVcg" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_nuuiVAjNEeeH-JUbuHPVcg" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_nuuiVQjNEeeH-JUbuHPVcg" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_nuuiVgjNEeeH-JUbuHPVcg" type="Parent"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_nuuiVwjNEeeH-JUbuHPVcg" type="AttributeCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_nuuiWAjNEeeH-JUbuHPVcg" visible="false" type="OperationCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_nuuiWQjNEeeH-JUbuHPVcg" visible="false" type="SignalCompartment"/>
+          <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_nuuiWgjNEeeH-JUbuHPVcg" visible="false" type="StructureCompartment"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nuuiUQjNEeeH-JUbuHPVcg" x="5706" y="13948"/>
+        </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_pxOlkAjNEeeH-JUbuHPVcg" element="_ikNCoIAjEeGE1-mzJa42fw" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_pxOlkgjNEeeH-JUbuHPVcg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_pxOlkwjNEeeH-JUbuHPVcg" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_pxOllAjNEeeH-JUbuHPVcg" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_pxOllQjNEeeH-JUbuHPVcg" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_pxOllgjNEeeH-JUbuHPVcg" type="Parent"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_pxOllwjNEeeH-JUbuHPVcg" type="AttributeCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_pxOlmAjNEeeH-JUbuHPVcg" visible="false" type="OperationCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_pxOlmQjNEeeH-JUbuHPVcg" visible="false" type="SignalCompartment"/>
+          <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_pxOlmgjNEeeH-JUbuHPVcg" visible="false" type="StructureCompartment"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pxOlkQjNEeeH-JUbuHPVcg" x="7608" y="24185"/>
+        </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_77n5cAjNEeeH-JUbuHPVcg" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_77n5cgjNEeeH-JUbuHPVcg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_77n5cwjNEeeH-JUbuHPVcg" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_77oggAjNEeeH-JUbuHPVcg" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_77oggQjNEeeH-JUbuHPVcg" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_77ogggjNEeeH-JUbuHPVcg" type="Parent"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_77oggwjNEeeH-JUbuHPVcg" visible="false" type="AttributeCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_77oghAjNEeeH-JUbuHPVcg" visible="false" type="OperationCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_77oghQjNEeeH-JUbuHPVcg" visible="false" type="SignalCompartment"/>
+          <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_77oghgjNEeeH-JUbuHPVcg" visible="false" type="StructureCompartment"/>
+          <element xmi:type="uml:Class" href="Orders.efx#_420A62FD03B64589572B02E8?FHIM/Orders/HealthcareOrder?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_77n5cQjNEeeH-JUbuHPVcg" x="-2249" y="1640"/>
+        </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_8bcpAAjNEeeH-JUbuHPVcg" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bcpAgjNEeeH-JUbuHPVcg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_8bcpAwjNEeeH-JUbuHPVcg" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bcpBAjNEeeH-JUbuHPVcg" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bcpBQjNEeeH-JUbuHPVcg" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bcpBgjNEeeH-JUbuHPVcg" type="Parent"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_8bcpBwjNEeeH-JUbuHPVcg" visible="false" type="AttributeCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_8bcpCAjNEeeH-JUbuHPVcg" visible="false" type="OperationCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_8bcpCQjNEeeH-JUbuHPVcg" visible="false" type="SignalCompartment"/>
+          <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_8bcpCgjNEeeH-JUbuHPVcg" visible="false" type="StructureCompartment"/>
+          <element xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/HealthcarePromise?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8bcpAQjNEeeH-JUbuHPVcg" x="8876" y="1585"/>
+        </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_Hb--QAjOEeeH-JUbuHPVcg" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" fillColor="8519679" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_Hb--QgjOEeeH-JUbuHPVcg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_Hb--QwjOEeeH-JUbuHPVcg" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_Hb--RAjOEeeH-JUbuHPVcg" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_Hb--RQjOEeeH-JUbuHPVcg" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_Hb--RgjOEeeH-JUbuHPVcg" type="Parent"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_Hb--RwjOEeeH-JUbuHPVcg" type="AttributeCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_Hb--SAjOEeeH-JUbuHPVcg" visible="false" type="OperationCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_HcIvQAjOEeeH-JUbuHPVcg" visible="false" type="SignalCompartment"/>
+          <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_HcIvQQjOEeeH-JUbuHPVcg" visible="false" type="StructureCompartment"/>
+          <element xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hb--QQjOEeeH-JUbuHPVcg" x="-12363" y="6974"/>
+        </children>
+        <element xsi:nil="true"/>
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nu3sQAjNEeeH-JUbuHPVcg" element="_wmpQwL_sEeG9Y6ZcZJMJaA" source="_nuuiUAjNEeeH-JUbuHPVcg" target="_lkuI4AjNEeeH-JUbuHPVcg" fontName="Arial" fontHeight="10" routing="Rectilinear" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_nu3sQgjNEeeH-JUbuHPVcg" visible="false" type="NameLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nu3sRAjNEeeH-JUbuHPVcg" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nu3sRQjNEeeH-JUbuHPVcg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nu3sQwjNEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_nu3sRgjNEeeH-JUbuHPVcg" type="ToMultiplicityLabel" element="_wm9Z0L_sEeG9Y6ZcZJMJaA">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nu3sSAjNEeeH-JUbuHPVcg" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nu3sRwjNEeeH-JUbuHPVcg" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_nu3sSQjNEeeH-JUbuHPVcg" type="ToRoleLabel" element="_wm9Z0L_sEeG9Y6ZcZJMJaA">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nu3sSwjNEeeH-JUbuHPVcg" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nu3sSgjNEeeH-JUbuHPVcg" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_nu3sTAjNEeeH-JUbuHPVcg" type="FromMultiplicityLabel" element="_wmzBwL_sEeG9Y6ZcZJMJaA">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nu3sTgjNEeeH-JUbuHPVcg" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nu3sTQjNEeeH-JUbuHPVcg" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_nu3sTwjNEeeH-JUbuHPVcg" type="FromRoleLabel" element="_wmzBwL_sEeG9Y6ZcZJMJaA">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nu3sUQjNEeeH-JUbuHPVcg" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nu3sUAjNEeeH-JUbuHPVcg" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_nu3sUgjNEeeH-JUbuHPVcg" visible="false" type="ToQualifierLabel" element="_wm9Z0L_sEeG9Y6ZcZJMJaA">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_nu3sVAjNEeeH-JUbuHPVcg" type="QualifierCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nu3sUwjNEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_nu3sVQjNEeeH-JUbuHPVcg" visible="false" type="FromQualifierLabel" element="_wmzBwL_sEeG9Y6ZcZJMJaA">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_nu3sVwjNEeeH-JUbuHPVcg" type="QualifierCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nu3sVgjNEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_nu3sWAjNEeeH-JUbuHPVcg" visible="false" type="ToConstraintLabel" element="_wm9Z0L_sEeG9Y6ZcZJMJaA">
+            <children xmi:type="notation:ListCompartment" xmi:id="_nu3sWgjNEeeH-JUbuHPVcg" type="ToConstraintCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nu3sWQjNEeeH-JUbuHPVcg" y="1058"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_nu3sWwjNEeeH-JUbuHPVcg" visible="false" type="FromConstraintLabel" element="_wmzBwL_sEeG9Y6ZcZJMJaA">
+            <children xmi:type="notation:ListCompartment" xmi:id="_nu3sXQjNEeeH-JUbuHPVcg" type="FromConstraintCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nu3sXAjNEeeH-JUbuHPVcg" y="1058"/>
+          </children>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nu3sQQjNEeeH-JUbuHPVcg" points="[1492, -3917, 1309, 5655]$[1492, -8886, 1309, 686]"/>
+        </edges>
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nu3sXgjNEeeH-JUbuHPVcg" element="_-N1SgDh4EeC17O99ZX8o-w" source="_lkuI4AjNEeeH-JUbuHPVcg" target="_nuuiUAjNEeeH-JUbuHPVcg" fontName="Arial" fontHeight="10" routing="Rectilinear" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_nvBdQAjNEeeH-JUbuHPVcg" visible="false" type="NameLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nvBdQgjNEeeH-JUbuHPVcg" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nvBdQwjNEeeH-JUbuHPVcg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nvBdQQjNEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_nvBdRAjNEeeH-JUbuHPVcg" type="ToMultiplicityLabel" element="_-OLQwDh4EeC17O99ZX8o-w">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nvBdRgjNEeeH-JUbuHPVcg" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nvBdRQjNEeeH-JUbuHPVcg" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_nvCEUAjNEeeH-JUbuHPVcg" type="ToRoleLabel" element="_-OLQwDh4EeC17O99ZX8o-w">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nvCEUgjNEeeH-JUbuHPVcg" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nvCEUQjNEeeH-JUbuHPVcg" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_nvCEUwjNEeeH-JUbuHPVcg" type="FromMultiplicityLabel" element="_-OJbkDh4EeC17O99ZX8o-w">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nvCEVQjNEeeH-JUbuHPVcg" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nvCEVAjNEeeH-JUbuHPVcg" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_nvCEVgjNEeeH-JUbuHPVcg" type="FromRoleLabel" element="_-OJbkDh4EeC17O99ZX8o-w">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nvCEWAjNEeeH-JUbuHPVcg" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nvCEVwjNEeeH-JUbuHPVcg" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_nvCEWQjNEeeH-JUbuHPVcg" visible="false" type="ToQualifierLabel" element="_-OLQwDh4EeC17O99ZX8o-w">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_nvCrYAjNEeeH-JUbuHPVcg" type="QualifierCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nvCEWgjNEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_nvCrYQjNEeeH-JUbuHPVcg" visible="false" type="FromQualifierLabel" element="_-OJbkDh4EeC17O99ZX8o-w">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_nvCrYwjNEeeH-JUbuHPVcg" type="QualifierCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nvCrYgjNEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_nvCrZAjNEeeH-JUbuHPVcg" visible="false" type="ToConstraintLabel" element="_-OLQwDh4EeC17O99ZX8o-w">
+            <children xmi:type="notation:ListCompartment" xmi:id="_nvCrZgjNEeeH-JUbuHPVcg" type="ToConstraintCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nvCrZQjNEeeH-JUbuHPVcg" y="1058"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_nvCrZwjNEeeH-JUbuHPVcg" visible="false" type="FromConstraintLabel" element="_-OJbkDh4EeC17O99ZX8o-w">
+            <children xmi:type="notation:ListCompartment" xmi:id="_nvCraQjNEeeH-JUbuHPVcg" type="FromConstraintCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nvCraAjNEeeH-JUbuHPVcg" y="1058"/>
+          </children>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nu3sXwjNEeeH-JUbuHPVcg" points="[-1231, 686, -1048, -8886]$[-1231, 5655, -1048, -3917]"/>
+        </edges>
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_pxYWkAjNEeeH-JUbuHPVcg" element="_Cm4fwLyPEeGK2djLWlLFew" source="_pxOlkAjNEeeH-JUbuHPVcg" target="_nuuiUAjNEeeH-JUbuHPVcg" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_pxYWkgjNEeeH-JUbuHPVcg" type="NameLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_pxYWlAjNEeeH-JUbuHPVcg" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_pxYWlQjNEeeH-JUbuHPVcg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pxYWkwjNEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pxYWkQjNEeeH-JUbuHPVcg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_77pHkAjNEeeH-JUbuHPVcg" element="_F3DMkKwTEeG4dfTp_XT2yg" source="_mZChwAjNEeeH-JUbuHPVcg" target="_77n5cAjNEeeH-JUbuHPVcg" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_77puoAjNEeeH-JUbuHPVcg" type="NameLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_77puogjNEeeH-JUbuHPVcg" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_77puowjNEeeH-JUbuHPVcg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_77puoQjNEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_77pHkQjNEeeH-JUbuHPVcg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_8bcpCwjNEeeH-JUbuHPVcg" element="_e6uMwKwQEeG4dfTp_XT2yg" source="_lkuI4AjNEeeH-JUbuHPVcg" target="_8bcpAAjNEeeH-JUbuHPVcg" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bcpDQjNEeeH-JUbuHPVcg" type="NameLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bcpDwjNEeeH-JUbuHPVcg" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bcpEAjNEeeH-JUbuHPVcg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8bcpDgjNEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8bcpDAjNEeeH-JUbuHPVcg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_8bcpEQjNEeeH-JUbuHPVcg" source="_77n5cAjNEeeH-JUbuHPVcg" target="_8bcpAAjNEeeH-JUbuHPVcg" fontName="Arial" fontHeight="10" routing="Rectilinear" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bcpEwjNEeeH-JUbuHPVcg" visible="false" type="NameLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bcpFQjNEeeH-JUbuHPVcg" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bcpFgjNEeeH-JUbuHPVcg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8bcpFAjNEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bcpFwjNEeeH-JUbuHPVcg" visible="false" type="ToMultiplicityLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bcpGQjNEeeH-JUbuHPVcg" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_v4oAoMoSEeGas4Yp_oUthg?FHIM/Orders/healthcareOrder_healthcarePromise/%3CProperty%3E?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8bcpGAjNEeeH-JUbuHPVcg" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bcpGgjNEeeH-JUbuHPVcg" type="ToRoleLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bcpHAjNEeeH-JUbuHPVcg" type="ToRole"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_v4oAoMoSEeGas4Yp_oUthg?FHIM/Orders/healthcareOrder_healthcarePromise/%3CProperty%3E?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8bcpGwjNEeeH-JUbuHPVcg" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bcpHQjNEeeH-JUbuHPVcg" type="FromMultiplicityLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bcpHwjNEeeH-JUbuHPVcg" type="FromMultiplicity"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/HealthcareOrder/healthcarePromise?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8bcpHgjNEeeH-JUbuHPVcg" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bcpIAjNEeeH-JUbuHPVcg" type="FromRoleLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bcpIgjNEeeH-JUbuHPVcg" type="FromRole"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/HealthcareOrder/healthcarePromise?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8bcpIQjNEeeH-JUbuHPVcg" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bcpIwjNEeeH-JUbuHPVcg" visible="false" type="ToQualifierLabel">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_8bcpJQjNEeeH-JUbuHPVcg" type="QualifierCompartment"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_v4oAoMoSEeGas4Yp_oUthg?FHIM/Orders/healthcareOrder_healthcarePromise/%3CProperty%3E?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8bcpJAjNEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bcpJgjNEeeH-JUbuHPVcg" visible="false" type="FromQualifierLabel">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_8bcpKAjNEeeH-JUbuHPVcg" type="QualifierCompartment"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/HealthcareOrder/healthcarePromise?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8bcpJwjNEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bcpKQjNEeeH-JUbuHPVcg" visible="false" type="ToConstraintLabel">
+            <children xmi:type="notation:ListCompartment" xmi:id="_8bcpKwjNEeeH-JUbuHPVcg" type="ToConstraintCompartment"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_v4oAoMoSEeGas4Yp_oUthg?FHIM/Orders/healthcareOrder_healthcarePromise/%3CProperty%3E?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8bcpKgjNEeeH-JUbuHPVcg" y="1058"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bcpLAjNEeeH-JUbuHPVcg" visible="false" type="FromConstraintLabel">
+            <children xmi:type="notation:ListCompartment" xmi:id="_8bcpLgjNEeeH-JUbuHPVcg" type="FromConstraintCompartment"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/HealthcareOrder/healthcarePromise?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8bcpLQjNEeeH-JUbuHPVcg" y="1058"/>
+          </children>
+          <element xmi:type="uml:Association" href="Orders.efx#_v4ePoMoSEeGas4Yp_oUthg?FHIM/Orders/healthcareOrder_healthcarePromise?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8bcpEgjNEeeH-JUbuHPVcg" points="[1666, -169, -9658, -431]$[9460, -169, -1864, -431]"/>
+        </edges>
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_8bcpLwjNEeeH-JUbuHPVcg" source="_8bcpAAjNEeeH-JUbuHPVcg" target="_77n5cAjNEeeH-JUbuHPVcg" fontName="Arial" fontHeight="10" routing="Rectilinear" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bcpMQjNEeeH-JUbuHPVcg" visible="false" type="NameLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bcpMwjNEeeH-JUbuHPVcg" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bcpNAjNEeeH-JUbuHPVcg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8bcpMgjNEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bcpNQjNEeeH-JUbuHPVcg" type="ToMultiplicityLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bcpNwjNEeeH-JUbuHPVcg" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_CDV5016REeaNPrAIaCcL-A?FHIM/Orders/healthcarePromise_healthcareOrder/%3CProperty%3E?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8bcpNgjNEeeH-JUbuHPVcg" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bcpOAjNEeeH-JUbuHPVcg" type="ToRoleLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bcpOgjNEeeH-JUbuHPVcg" type="ToRole"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_CDV5016REeaNPrAIaCcL-A?FHIM/Orders/healthcarePromise_healthcareOrder/%3CProperty%3E?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8bcpOQjNEeeH-JUbuHPVcg" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bcpOwjNEeeH-JUbuHPVcg" type="FromMultiplicityLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bcpPQjNEeeH-JUbuHPVcg" type="FromMultiplicity"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/HealthcarePromise/healthcareOrder?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8bcpPAjNEeeH-JUbuHPVcg" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bcpPgjNEeeH-JUbuHPVcg" type="FromRoleLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_8bmaAAjNEeeH-JUbuHPVcg" type="FromRole"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/HealthcarePromise/healthcareOrder?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8bcpPwjNEeeH-JUbuHPVcg" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bmaAQjNEeeH-JUbuHPVcg" visible="false" type="ToQualifierLabel">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_8bmaAwjNEeeH-JUbuHPVcg" type="QualifierCompartment"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_CDV5016REeaNPrAIaCcL-A?FHIM/Orders/healthcarePromise_healthcareOrder/%3CProperty%3E?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8bmaAgjNEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bmaBAjNEeeH-JUbuHPVcg" visible="false" type="FromQualifierLabel">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_8bmaBgjNEeeH-JUbuHPVcg" type="QualifierCompartment"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/HealthcarePromise/healthcareOrder?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8bmaBQjNEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bmaBwjNEeeH-JUbuHPVcg" visible="false" type="ToConstraintLabel">
+            <children xmi:type="notation:ListCompartment" xmi:id="_8bmaCQjNEeeH-JUbuHPVcg" type="ToConstraintCompartment"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_CDV5016REeaNPrAIaCcL-A?FHIM/Orders/healthcarePromise_healthcareOrder/%3CProperty%3E?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8bmaCAjNEeeH-JUbuHPVcg" y="1058"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_8bmaCgjNEeeH-JUbuHPVcg" visible="false" type="FromConstraintLabel">
+            <children xmi:type="notation:ListCompartment" xmi:id="_8bmaDAjNEeeH-JUbuHPVcg" type="FromConstraintCompartment"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/HealthcarePromise/healthcareOrder?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8bmaCwjNEeeH-JUbuHPVcg" y="1058"/>
+          </children>
+          <element xmi:type="uml:Association" href="Orders.efx#_CDMv4F6REeaNPrAIaCcL-A?FHIM/Orders/healthcarePromise_healthcareOrder?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8bcpMAjNEeeH-JUbuHPVcg" points="[-1864, 204, 9460, 466]$[-9658, 204, 1666, 466]"/>
+        </edges>
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_HcIvQgjOEeeH-JUbuHPVcg" element="_Bo3qQLyNEeGK2djLWlLFew" source="_nuuiUAjNEeeH-JUbuHPVcg" target="_Hb--QAjOEeeH-JUbuHPVcg" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvRAjOEeeH-JUbuHPVcg" visible="false" type="NameLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvRgjOEeeH-JUbuHPVcg" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvRwjOEeeH-JUbuHPVcg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HcIvRQjOEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvSAjOEeeH-JUbuHPVcg" visible="false" type="ToMultiplicityLabel" element="_Bo-_ALyNEeGK2djLWlLFew">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvSgjOEeeH-JUbuHPVcg" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvSQjOEeeH-JUbuHPVcg" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvSwjOEeeH-JUbuHPVcg" type="ToRoleLabel" element="_Bo-_ALyNEeGK2djLWlLFew">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvTQjOEeeH-JUbuHPVcg" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvTAjOEeeH-JUbuHPVcg" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvTgjOEeeH-JUbuHPVcg" type="FromMultiplicityLabel" element="_Bo6tkLyNEeGK2djLWlLFew">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvUAjOEeeH-JUbuHPVcg" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvTwjOEeeH-JUbuHPVcg" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvUQjOEeeH-JUbuHPVcg" type="FromRoleLabel" element="_Bo6tkLyNEeGK2djLWlLFew">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvUwjOEeeH-JUbuHPVcg" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvUgjOEeeH-JUbuHPVcg" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvVAjOEeeH-JUbuHPVcg" visible="false" type="ToQualifierLabel" element="_Bo-_ALyNEeGK2djLWlLFew">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_HcIvVgjOEeeH-JUbuHPVcg" type="QualifierCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvVQjOEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvVwjOEeeH-JUbuHPVcg" visible="false" type="FromQualifierLabel" element="_Bo6tkLyNEeGK2djLWlLFew">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_HcIvWQjOEeeH-JUbuHPVcg" type="QualifierCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvWAjOEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvWgjOEeeH-JUbuHPVcg" visible="false" type="ToConstraintLabel" element="_Bo-_ALyNEeGK2djLWlLFew">
+            <children xmi:type="notation:ListCompartment" xmi:id="_HcIvXAjOEeeH-JUbuHPVcg" type="ToConstraintCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvWwjOEeeH-JUbuHPVcg" y="1058"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvXQjOEeeH-JUbuHPVcg" visible="false" type="FromConstraintLabel" element="_Bo6tkLyNEeGK2djLWlLFew">
+            <children xmi:type="notation:ListCompartment" xmi:id="_HcIvXwjOEeeH-JUbuHPVcg" type="FromConstraintCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvXgjOEeeH-JUbuHPVcg" y="1058"/>
+          </children>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HcIvQwjOEeeH-JUbuHPVcg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_HcIvYAjOEeeH-JUbuHPVcg" element="_qU6wsLyOEeGK2djLWlLFew" source="_nuuiUAjNEeeH-JUbuHPVcg" target="_Hb--QAjOEeeH-JUbuHPVcg" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvYgjOEeeH-JUbuHPVcg" visible="false" type="NameLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvZAjOEeeH-JUbuHPVcg" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvZQjOEeeH-JUbuHPVcg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HcIvYwjOEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvZgjOEeeH-JUbuHPVcg" visible="false" type="ToMultiplicityLabel" element="_qVEhsLyOEeGK2djLWlLFew">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvaAjOEeeH-JUbuHPVcg" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvZwjOEeeH-JUbuHPVcg" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvaQjOEeeH-JUbuHPVcg" type="ToRoleLabel" element="_qVEhsLyOEeGK2djLWlLFew">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvawjOEeeH-JUbuHPVcg" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvagjOEeeH-JUbuHPVcg" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvbAjOEeeH-JUbuHPVcg" type="FromMultiplicityLabel" element="_qU_CILyOEeGK2djLWlLFew">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvbgjOEeeH-JUbuHPVcg" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvbQjOEeeH-JUbuHPVcg" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvbwjOEeeH-JUbuHPVcg" type="FromRoleLabel" element="_qU_CILyOEeGK2djLWlLFew">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvcQjOEeeH-JUbuHPVcg" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvcAjOEeeH-JUbuHPVcg" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvcgjOEeeH-JUbuHPVcg" visible="false" type="ToQualifierLabel" element="_qVEhsLyOEeGK2djLWlLFew">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_HcIvdAjOEeeH-JUbuHPVcg" type="QualifierCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvcwjOEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvdQjOEeeH-JUbuHPVcg" visible="false" type="FromQualifierLabel" element="_qU_CILyOEeGK2djLWlLFew">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_HcIvdwjOEeeH-JUbuHPVcg" type="QualifierCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvdgjOEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIveAjOEeeH-JUbuHPVcg" visible="false" type="ToConstraintLabel" element="_qVEhsLyOEeGK2djLWlLFew">
+            <children xmi:type="notation:ListCompartment" xmi:id="_HcIvegjOEeeH-JUbuHPVcg" type="ToConstraintCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIveQjOEeeH-JUbuHPVcg" y="1058"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvewjOEeeH-JUbuHPVcg" visible="false" type="FromConstraintLabel" element="_qU_CILyOEeGK2djLWlLFew">
+            <children xmi:type="notation:ListCompartment" xmi:id="_HcIvfQjOEeeH-JUbuHPVcg" type="FromConstraintCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvfAjOEeeH-JUbuHPVcg" y="1058"/>
+          </children>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HcIvYQjOEeeH-JUbuHPVcg" points="[-4840, -628, 15623, 8258]$[-20463, -2652, 0, 6234]$[-20463, -6881, 0, 2005]"/>
+        </edges>
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_HcIvfgjOEeeH-JUbuHPVcg" source="_77n5cAjNEeeH-JUbuHPVcg" target="_Hb--QAjOEeeH-JUbuHPVcg" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvgAjOEeeH-JUbuHPVcg" visible="false" type="NameLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvggjOEeeH-JUbuHPVcg" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvgwjOEeeH-JUbuHPVcg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HcIvgQjOEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvhAjOEeeH-JUbuHPVcg" visible="false" type="ToMultiplicityLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvhgjOEeeH-JUbuHPVcg" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_fmX3M4lDEd-pqcFAwb-XNw?FHIM/Orders/healthcareOrder_patientLocation/%3CProperty%3E?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvhQjOEeeH-JUbuHPVcg" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvhwjOEeeH-JUbuHPVcg" type="ToRoleLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIviQjOEeeH-JUbuHPVcg" type="ToRole"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_fmX3M4lDEd-pqcFAwb-XNw?FHIM/Orders/healthcareOrder_patientLocation/%3CProperty%3E?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIviAjOEeeH-JUbuHPVcg" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvigjOEeeH-JUbuHPVcg" type="FromMultiplicityLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvjAjOEeeH-JUbuHPVcg" type="FromMultiplicity"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_fmX3MIlDEd-pqcFAwb-XNw?FHIM/Orders/HealthcareOrder/patientLocation?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIviwjOEeeH-JUbuHPVcg" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvjQjOEeeH-JUbuHPVcg" type="FromRoleLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HcIvjwjOEeeH-JUbuHPVcg" type="FromRole"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_fmX3MIlDEd-pqcFAwb-XNw?FHIM/Orders/HealthcareOrder/patientLocation?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvjgjOEeeH-JUbuHPVcg" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvkAjOEeeH-JUbuHPVcg" visible="false" type="ToQualifierLabel">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_HcIvkgjOEeeH-JUbuHPVcg" type="QualifierCompartment"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_fmX3M4lDEd-pqcFAwb-XNw?FHIM/Orders/healthcareOrder_patientLocation/%3CProperty%3E?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvkQjOEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvkwjOEeeH-JUbuHPVcg" visible="false" type="FromQualifierLabel">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_HcIvlQjOEeeH-JUbuHPVcg" type="QualifierCompartment"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_fmX3MIlDEd-pqcFAwb-XNw?FHIM/Orders/HealthcareOrder/patientLocation?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvlAjOEeeH-JUbuHPVcg" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvlgjOEeeH-JUbuHPVcg" visible="false" type="ToConstraintLabel">
+            <children xmi:type="notation:ListCompartment" xmi:id="_HcIvmAjOEeeH-JUbuHPVcg" type="ToConstraintCompartment"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_fmX3M4lDEd-pqcFAwb-XNw?FHIM/Orders/healthcareOrder_patientLocation/%3CProperty%3E?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvlwjOEeeH-JUbuHPVcg" y="1058"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HcIvmQjOEeeH-JUbuHPVcg" visible="false" type="FromConstraintLabel">
+            <children xmi:type="notation:ListCompartment" xmi:id="_HcIvmwjOEeeH-JUbuHPVcg" type="FromConstraintCompartment"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_fmX3MIlDEd-pqcFAwb-XNw?FHIM/Orders/HealthcareOrder/patientLocation?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HcIvmgjOEeeH-JUbuHPVcg" y="1058"/>
+          </children>
+          <element xmi:type="uml:Association" href="Orders.efx#_fmOGMIlDEd-pqcFAwb-XNw?FHIM/Orders/healthcareOrder_patientLocation?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HcIvfwjOEeeH-JUbuHPVcg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+        </edges>
+      </contents>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B641A349EF0070" name="MedicationAdministrationEvent">
+      <eAnnotations xmi:id="_NYl6GuLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+      <ownedComment xmi:id="_NYSYGuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B641A349EF0070">
+        <body>&quot;Information about the actual consumption of medication by a patient.  While this is generally only relevant for hospital/institutional systems which track individual administrations, it could also be used in ambulatory care e.g. home-health environments which capture administrations such as insulin injections and which use messaging to communicate the information back to a central source; recording immunizations.&quot; (HL7 Version 3).</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_aLWPoLyPEeGK2djLWlLFew" name="administeredStrength" visibility="public">
+        <ownedComment xmi:id="_GzXR0LyQEeGK2djLWlLFew" annotatedElement="_aLWPoLyPEeGK2djLWlLFew">
+          <body>&quot;Use when (the administeredDrug) does not specify the strength.  This is the numeric part of the strength&quot; - HL7 Version 2.8, RXA-13&#xD;
+&quot;Use when (the administeredDrug) does not specify the strength.  This is the unit of the strength.&quot; - HL7 Version 2.8, RXA-14</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kk8KgJC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kk7jcJC2EeaeVcv6mxF7oQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_7aG2IL01EeGHr5yhv0QPSw" name="administeredStrengthVolume" visibility="public">
+        <ownedComment xmi:id="_7aG2Ib01EeGHr5yhv0QPSw" annotatedElement="_7aG2IL01EeGHr5yhv0QPSw">
+          <body>&quot;Defines the volume measurement in which the drug strength concentration is contained. For example, Acetaminophen 120 MG/5ML Elixir means that 120 MG of the drug is in a solution with a volume of 5 ML, (this field contains 5)&quot; - HL7 Version 2.8, RXA-23&#xD;
+&quot;Indicates the volumetric unit associated&quot; (with the volume measurement in which the drug strength concentration is contained. For example, Acetaminophen 120 MG/5ML Elixir means that 120 MG of the drug is in a solution with a volume of 5 ML, this field contains ML) - HL7 Version 2.8, RXA-24</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_latU4JC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_last0JC2EeaeVcv6mxF7oQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_kR8Z0N6FEeaQL8YZ3sNKnw" name="administeringProvider" visibility="public">
+        <ownedComment xmi:id="_rCaoEN6FEeaQL8YZ3sNKnw" annotatedElement="_kR8Z0N6FEeaQL8YZ3sNKnw">
+          <body>Pointer to the person who gave or administered the medication to the patient.&#xD;
+&quot;Contains the provider ID of the person administering the pharmaceutical/treatment.&quot; - HL7 Version 2.8, RXA-10&#xD;
+&quot;The individual who was responsible for giving the medication to the patient.&quot; - HL7 FHIR, MedicationAdministration.performer&#xD;
+&quot;Clinician who administered the vaccine.&quot;  - HL7 FHIR, Immunization.performer</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n6BTwN6FEeaQL8YZ3sNKnw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n6AssN6FEeaQL8YZ3sNKnw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_lOGZoDfZEeKnE98EkGeXFQ" name="administrationMethod" visibility="public">
+        <ownedComment xmi:id="_lOGZoTfZEeKnE98EkGeXFQ" annotatedElement="_lOGZoDfZEeKnE98EkGeXFQ">
+          <body>&quot;Identifies the specific method requested for the administration of the drug or treatment to the patient.&quot; - HL7 Version 2.8, RXR-4</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lOGZojfZEeKnE98EkGeXFQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lOGZozfZEeKnE98EkGeXFQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JTPfQIAkEeGE1-mzJa42fw" name="bodySite" visibility="public">
+        <ownedComment xmi:id="_fB_h8FNCEeaHsPdvgbW7pw" annotatedElement="_JTPfQIAkEeGE1-mzJa42fw">
+          <body>&quot;A coded specification of the anatomic site where the medication first entered the body. For example, &quot;left arm&quot;.&quot; - HL7 FHIR, MedicationAdministration.dosage.site[x]&#xD;
+&quot;Body site where vaccine was administered.&quot;  - HL7 FHIR, Immunization.site</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nN5JwJC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nN4isJC2EeaeVcv6mxF7oQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_jpVcAKEPEeGnfe88WF3uxw" name="doseForm" visibility="public">
+        <ownedComment xmi:id="_qpmuoLyLEeGK2djLWlLFew" annotatedElement="_jpVcAKEPEeGnfe88WF3uxw">
+          <body>&quot;Indicates the manner in which the medication/treatment is aggregated for dispensing, e.g., tablets, capsules, suppositories.&quot; - HL7 Version 2.8, RXA-8</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qCle8JC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qCk34JC2EeaeVcv6mxF7oQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B645940F2C03A7" name="doseQuantityGiven" visibility="public">
+        <ownedComment xmi:id="_Ne2TEuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B645940F2C03A7">
+          <body>&quot;Contains the amount administered.&quot; - HL7 Version 2.8, RXA-6&#xD;
+&quot;This field is conditional because it is required if the administered amount code does not imply units.  This field must be in simple units that reflect the actual quantity of the substance administered.  It does not include compound units.&quot; - HL7 Version 2.8, RXA-7&#xD;
+&quot;The amount of the therapeutic agent or other substance given at one administration event.&quot; - HL7 Version 3</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qspvoJC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qspIkJC2EeaeVcv6mxF7oQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B645940F1C03A7" name="doseQuantityOrdered" visibility="public">
+        <ownedComment xmi:id="_Ne2TFeLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B645940F1C03A7">
+          <body>&quot;The amount of the therapeutic agent or other substance given at one administration event.&quot; (HL7 3.0)  </body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Real?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rVFBkZC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rVFBkJC2EeaeVcv6mxF7oQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ahZZILyEEeGK2djLWlLFew" name="dateTimeEnd" visibility="public">
+        <ownedComment xmi:id="_ahZZIbyEEeGK2djLWlLFew" annotatedElement="_ahZZILyEEeGK2djLWlLFew">
+          <body>The date (and optionally, time) that the medication administration was completed or will be completed.  Used only for administrations that span a length of time, such as an IV. For single dose administrations, such as giving a tablet or an injection, this property is not used.&#xD;
+&quot;If null, the date/time of RXA-3-Date/Time Start of Administration is assumed.&quot; - HL7 Version 2.8, RXA-4&#xD;
+&quot;A specific date/time or interval of time during which the administration took place (or did not take place, when the 'notGiven' attribute is true). For many administrations, such as swallowing a tablet the use of dateTime is more appropriate.&quot;  - HL7 FHIR, MedicationAdministration.effectiveTime[x]&#xD;
+&quot;Date vaccine administered or was to be administered.&quot; - HL7 FHIR, Immunization.date</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ogcWwJC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ogbvsJC2EeaeVcv6mxF7oQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B6425C0805022C" name="dateTimeStart" visibility="public">
+        <ownedComment xmi:id="_TLF7gFM5EeaHsPdvgbW7pw" annotatedElement="_420A62FD03B6425C0805022C">
+          <body>The date (and optionally, time) that the medication administration was started or will be started. For single dose administrations, such as giving a tablet or an injection, this is the date and time that the administration did or will occur.&#xD;
+&quot;If the order is for a continuous administration (such as an IV), and the rate is changed at a certain time after the start, an RAS message can be issued to record the change.  For such an RAS message, this field records the time the rate was changed to the new value recorded in the RXA-12-Administered Per (time unit) of the same message.&quot; - HL7 Version 2.8, RXA-3&#xD;
+&quot;A specific date/time or interval of time during which the administration took place (or did not take place, when the 'notGiven' attribute is true). For many administrations, such as swallowing a tablet the use of dateTime is more appropriate.&quot;  - HL7 FHIR, MedicationAdministration.effectiveTime[x]&#xD;
+&quot;Date vaccine administered or was to be administered.&quot; - HL7 FHIR, Immunization.date</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pTK0MJC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pTKNIJC2EeaeVcv6mxF7oQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_6e5-8ANOEeKTM4I4vlc5xg" name="id" visibility="public">
+        <ownedComment xmi:id="_AOpwAANPEeKTM4I4vlc5xg" annotatedElement="_6e5-8ANOEeKTM4I4vlc5xg">
+          <body>Uniquely identifies the Medication Administration Event.&#xD;
+&quot;External identifier - FHIR will generate its own internal identifiers (probably URLs) which do not need to be explicitly managed by the resource. The identifier here is one that would be used by another non-FHIR system - for example an automated medication pump would provide a record each time it operated; an administration while the patient was off the ward might be made with a different system and entered after the event. Particularly important if these records have to be updated.&quot;  - HL7 FHIR, MedicationAdministration.identifier&#xD;
+&quot;A unique identifier assigned to this immunization record.&quot; - HL7 FHIR, Immunization.identifier</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_syD88JC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_syDV4JC2EeaeVcv6mxF7oQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B6459404F30183" name="isPrnActivity" visibility="public">
+        <ownedComment xmi:id="_NYl6EuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6459404F30183">
+          <body>I'm guessing that this is a boolean.  Vista definition is: The PRN REASON FLAG field is to indicate whether the BCMA Med Log file entry is PRN activity and has an associated PRN REASON which has been set to require BCMA user attention or action.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t3FEQZC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t3FEQJC2EeaeVcv6mxF7oQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zcIOwMIeEeGx0M-CyAbegA" name="negatationIndicator" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vJ3h0JC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vJ26wJC2EeaeVcv6mxF7oQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q4A4QIAkEeGE1-mzJa42fw" name="route" visibility="public">
+        <ownedComment xmi:id="_9P4pYL2gEeG_PZtvUC92nw" annotatedElement="_Q4A4QIAkEeGE1-mzJa42fw">
+          <body>&quot;This field is the route of administration.&quot; - HL7 Version 2.8, RXR-1&#xD;
+&quot;A code specifying the route or physiological path of administration of a therapeutic agent into or onto the patient. For example, topical, intravenous, etc.&quot; - HL7 FHIR, MedicationAdministration.dosage.route&#xD;
+&quot;The path by which the vaccine product is taken into the body.&quot;  - HL7 FHIR, Immunization.route</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yl8nIJC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yl8AEJC2EeaeVcv6mxF7oQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B641B4D758015F" name="status" visibility="public">
+        <ownedComment xmi:id="_NYl6GOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B641B4D758015F">
+          <body>The current state of the Substance Administration.  Possible values include: Infusing, Given, Held, Completed, etc.&#xD;
+&quot;Status of treatment administration event.  Refer to HL7 Table 0322 - Completion Status in Chapter 2C for valid values.&quot; - HL7 Version 2.8, RXA-20&#xD;
+&quot;Will generally be set to show that the administration has been completed. For some long running administrations such as infusions it is possible for an administration to be started but not completed or it may be paused while some other process is under way.&quot;  - HL7 FHIR, MedicationAdministration.status&#xD;
+&quot;Indicates the current status of the vaccination event.&quot; - HL7 FHIR, Immunization.status</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0CDYwZC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0CDYwJC2EeaeVcv6mxF7oQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_b7FDcL01EeGHr5yhv0QPSw" name="systemEntryDateTime" visibility="public">
+        <ownedComment xmi:id="_kxY80L01EeGHr5yhv0QPSw" annotatedElement="_b7FDcL01EeGHr5yhv0QPSw">
+          <body>&quot;Date/time the administration information was entered into the source system.  This field is used to detect instances where treatment administration information is inadvertently entered multiple times by providing a unique identification field.  Under usual circumstances, this field would be provided automatically by the computer system rather than being entered by a person.&quot; - HL7 Version 2.8, RXA-22</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0tMngJC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0tMAcJC2EeaeVcv6mxF7oQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Sq-ykKEREeGnfe88WF3uxw" name="administeredDrug" visibility="public" association="_Sq89YKEREeGnfe88WF3uxw">
+        <ownedComment xmi:id="_off2QLyFEeGK2djLWlLFew" annotatedElement="_Sq-ykKEREeGnfe88WF3uxw">
+          <body>Pointer to the medication or substance that was or will be administered.&#xD;
+&quot;Contains the identifier of the medical substance/treatment administered....  If the substance administered is a vaccine, CVX codes may be used to code this field....&quot; - HL7 Version 2.8, RXA-5&#xD;
+&quot;Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.&quot;  - HL7 FHIR, MedicationAdministration.medication[x]&#xD;
+&quot;Vaccine that was administered or was to be administered.&quot; - HL7 FHIR, Immunization.vaccineCode</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="CommonProduct.efx#_OaEXAKEREeGnfe88WF3uxw?FHIM/CommonProduct/AdministeredDrug?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sq_ZoaEREeGnfe88WF3uxw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Sq_ZoKEREeGnfe88WF3uxw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B64304F50E0274" name="comments" visibility="public" isUnique="false" association="_420A62FD03B64304F50D0309">
+        <ownedComment xmi:id="_NgfR3-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64304F50E0274">
+          <body>&quot;Contains notes from the provider administering the medication/treatment.&quot; - HL7 Version 2.8, RXA-9&#xD;
+&quot;Extra information about the medication administration that is not conveyed by the other attributes.&quot; - HL7 FHIR, MedicationAdministration.note&#xD;
+&quot;Extra information about the immunization that is not conveyed by the other attributes.&quot;  - HL7 FHIR, Immunization.note</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#_420A62FD03B642C044DB02ED?FHIM/Common/CommentEvent?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NgobwuLiEduGJrQyRGTO1A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NgobweLiEduGJrQyRGTO1A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_iMDkkL_uEeG9Y6ZcZJMJaA" name="contraIndication" visibility="public" association="_iL5zkL_uEeG9Y6ZcZJMJaA">
+        <ownedComment xmi:id="_JXZoQAllEeKmMfGXbG9elQ" annotatedElement="_iMDkkL_uEeG9Y6ZcZJMJaA">
+          <body>&quot;A factor that renders the administration of a drug or the carrying out of a medical procedure inadvisable.&quot; -  Stedman's Medical Dictionary.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Immunization.efx#_qMSL4AlrEeKmMfGXbG9elQ?FHIM/Immunization/ContraIndication?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iMELob_uEeG9Y6ZcZJMJaA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iMELoL_uEeG9Y6ZcZJMJaA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Fj-UYL_vEeG9Y6ZcZJMJaA" name="exemption" visibility="public" association="_Fjz8UL_vEeG9Y6ZcZJMJaA">
+        <ownedComment xmi:id="_de8nACzgEeKLfdgQhBZO1Q" annotatedElement="_Fj-UYL_vEeG9Y6ZcZJMJaA">
+          <body>A record of an assertion by the patient, the patient guardian, or someone else in authority that the medication should not be administered.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Immunization.efx#_3V9HYKwiEeG4dfTp_XT2yg?FHIM/Immunization/Exemption?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fj-7cb_vEeG9Y6ZcZJMJaA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fj-7cL_vEeG9Y6ZcZJMJaA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_kwvOELycEeGK2djLWlLFew" name="indication" visibility="public" association="_kwrjsLycEeGK2djLWlLFew">
+        <ownedComment xmi:id="_tFAKULycEeGK2djLWlLFew" annotatedElement="_kwvOELycEeGK2djLWlLFew">
+          <body>&quot;Contains the identifier of the condition or problem for which the drug/treatment was prescribed.  May repeat if multiple indications are relevant.&quot; - HL7 Version 2.8, RXA-19</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#_r6v0YIsdEeGv9r5ZNThaOw?FHIM/Common/Indication?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kwwcMbycEeGK2djLWlLFew" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kwwcMLycEeGK2djLWlLFew"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wmzBwL_sEeG9Y6ZcZJMJaA" name="medicationAdministrationPromise" visibility="public" type="_yQ2jIDh4EeC17O99ZX8o-w" association="_wmpQwL_sEeG9Y6ZcZJMJaA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wm0P4L_sEeG9Y6ZcZJMJaA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wmzo0L_sEeG9Y6ZcZJMJaA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B6459411D20283" name="orderedItem" visibility="public" isUnique="false" association="_420A62FD03B6459411D1033E">
+        <ownedComment xmi:id="_Ni33e-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6459411D20283">
+          <body>The item that was ordered to be administered to the patient.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="CommonProduct.efx#_420A62FD03B6426545CB0072?FHIM/CommonProduct/OrderablePharmacyItem?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wIDBUJC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wICaQJC2EeaeVcv6mxF7oQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_PiHeEAllEeKmMfGXbG9elQ" name="patientCondition" visibility="public" association="_PiAJUAllEeKmMfGXbG9elQ">
+        <ownedComment xmi:id="_Gq5c4CzfEeKLfdgQhBZO1Q" annotatedElement="_PiHeEAllEeKmMfGXbG9elQ">
+          <body>Patient conditions are observations about the patient which impact forecasting next doses. These include allergies, previous adverse reactions and special risk factors.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="HealthConcern.efx#_420A62FD03B6421F8AD00244?FHIM/HealthConcern/HealthConcern?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PiJTQQllEeKmMfGXbG9elQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PiJTQAllEeKmMfGXbG9elQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_qU_CILyOEeGK2djLWlLFew" name="patientLocation" visibility="public" association="_qU6wsLyOEeGK2djLWlLFew">
+        <ownedComment xmi:id="_v56DQLyOEeGK2djLWlLFew" annotatedElement="_qU_CILyOEeGK2djLWlLFew">
+          <body>Pointer to the Location (room, bed and ward) of the patient at the time of the medication administration.  Generally only used for inpatient situations.&#xD;
+&quot;Contains the inpatient or outpatient location at which the drug or treatment was administered (if applicable).&quot; - HL7 Version 2.8, RXA-11</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qVA3ULyOEeGK2djLWlLFew" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qVAQQLyOEeGK2djLWlLFew"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Bo6tkLyNEeGK2djLWlLFew" name="serviceDeliveryLocation" visibility="public" association="_Bo3qQLyNEeGK2djLWlLFew">
+        <ownedComment xmi:id="_Hj43MLyNEeGK2djLWlLFew" annotatedElement="_Bo6tkLyNEeGK2djLWlLFew">
+          <body>Pointer to the location at which the medication administration event occurred.&#xD;
+&quot;Specifies the location where the drug or treatment was administered.&quot; - HL7 Version 2.8, RXA-27&#xD;
+&quot;The service delivery location where the vaccine administration occurred.&quot;  - HL7 FHIR, Immunization.location</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Bo8iwLyNEeGK2djLWlLFew" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bo77sLyNEeGK2djLWlLFew"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_BFhS4VNdEeaHsPdvgbW7pw" name="reaction" visibility="public" association="_BFhS4FNdEeaHsPdvgbW7pw">
+        <ownedComment xmi:id="_2dTrIFNpEeaHsPdvgbW7pw" annotatedElement="_BFhS4VNdEeaHsPdvgbW7pw">
+          <body>Pointer to a record of an adverse physiological response attributed to the exposure of the Patient to the given substance&#xD;
+&quot;Categorical data indicating that an adverse event is associated in time to an immunization.&quot; - HL7 FHIR, Immunization.reaction</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Allergies.efx#_KXfzkEUdEeCUY8hq_icSiw?FHIM/Allergies/ReactionObservation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BFhS41NdEeaHsPdvgbW7pw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BFhS4lNdEeaHsPdvgbW7pw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yQ2jIDh4EeC17O99ZX8o-w" name="MedicationAdministrationPromise">
+      <generalization xmi:id="_e6uMwKwQEeG4dfTp_XT2yg">
+        <general xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/HealthcarePromise?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_-OJbkDh4EeC17O99ZX8o-w" name="medicationAdministrationEvent" visibility="public" type="_420A62FD03B641A349EF0070" association="_-N1SgDh4EeC17O99ZX8o-w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-OKpsDh4EeC17O99ZX8o-w" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-OKCoDh4EeC17O99ZX8o-w"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2QCQ4KwREeG4dfTp_XT2yg" name="MedicationAdministrationRequest">
+      <generalization xmi:id="_F3DMkKwTEeG4dfTp_XT2yg">
+        <general xmi:type="uml:Class" href="Orders.efx#_420A62FD03B64589572B02E8?FHIM/Orders/HealthcareOrder?"/>
+      </generalization>
+      <ownedAttribute xmi:id="_RsJMcCf-EeC-JKXSDMHR6A" name="administrationInstructions" visibility="public">
+        <eAnnotations xmi:id="_UrqXsMBcEeGgbv4y8RZWzQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Urq-wMBcEeGgbv4y8RZWzQ" key="future"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_RsJMcSf-EeC-JKXSDMHR6A" annotatedElement="_RsJMcCf-EeC-JKXSDMHR6A">
+          <body>&quot;Identifies the ordering provider's instructions to the patient or to the provider administering the drug or treatment.&quot; - HL7 Version 2.8, RXO-7.&#xD;
+Contains any special instructions needed for this order.  This would include the physician's reason for ordering a PRN.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3mo50JC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3moSwJC2EeaeVcv6mxF7oQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_jVRhgL2gEeG_PZtvUC92nw" name="administrationMethod" visibility="public">
+        <ownedComment xmi:id="_jVRhgb2gEeG_PZtvUC92nw" annotatedElement="_jVRhgL2gEeG_PZtvUC92nw">
+          <body>&quot;Identifies the specific method requested for the administration of the drug or treatment to the patient.&quot; - HL7 Version 2.8, RXR-4</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jVRhgr2gEeG_PZtvUC92nw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jVRhg72gEeG_PZtvUC92nw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_nv_OwL2fEeG_PZtvUC92nw" name="administrationSite" visibility="public">
+        <ownedComment xmi:id="_-RiwIL2fEeG_PZtvUC92nw" annotatedElement="_nv_OwL2fEeG_PZtvUC92nw">
+          <body>&quot;Contains the site of the administration route.  When using a post-coordinated code table in this field, (the Adminstration Site Modifier) may be used to modify the meaning of this field.&quot; - HL7 Version 2.8, RXR-2</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tVYJ8b2fEeG_PZtvUC92nw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tVYJ8L2fEeG_PZtvUC92nw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_w2ECcL2fEeG_PZtvUC92nw" name="administrationSiteModifier" visibility="public">
+        <ownedComment xmi:id="_JgbqcL2gEeG_PZtvUC92nw" annotatedElement="_w2ECcL2fEeG_PZtvUC92nw">
+          <body>&quot;Contains a modifier which modifies the meaning of (the Adminstration Site code)&quot; - HL7 Version 2.8, RXR-6</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w2ECcb2fEeG_PZtvUC92nw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w2ECcr2fEeG_PZtvUC92nw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-eH-IL2gEeG_PZtvUC92nw" name="route" visibility="public">
+        <ownedComment xmi:id="_-eH-Ib2gEeG_PZtvUC92nw" annotatedElement="_-eH-IL2gEeG_PZtvUC92nw">
+          <body>&quot;This field is the route of administration.&quot; - HL7 Version 2.8, RXR-1</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5fQBQJC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5fPaMJC2EeaeVcv6mxF7oQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_fk81EL2hEeG_PZtvUC92nw" name="administrationDevice" visibility="public" association="_fk5KsL2hEeG_PZtvUC92nw">
+        <ownedComment xmi:id="_jpZh8L2hEeG_PZtvUC92nw" annotatedElement="_fk81EL2hEeG_PZtvUC92nw">
+          <body>&quot;Contains the mechanical device used to aid in the administration of the drug or other treatment.  Common examples are IV-sets of different types.&quot; - HL7 Version 2.8, RXR-3</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="CommonProduct.efx#_420A62FD03B6425C004E004C?FHIM/CommonProduct/Device?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fk-qQL2hEeG_PZtvUC92nw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fk-DML2hEeG_PZtvUC92nw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_1DWQUL2hEeG_PZtvUC92nw" name="routingInstruction" visibility="public">
+        <ownedComment xmi:id="_1DWQUb2hEeG_PZtvUC92nw" annotatedElement="_1DWQUL2hEeG_PZtvUC92nw">
+          <body>&quot;Provides instruction on administration routing, especially in cases where more than one route of administration is possible. A typical case would be designating which IV line should be used when more than one IV line is a possible route for injection.&quot; - HL7 Version 2.8, RXR-5</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1DWQUr2hEeG_PZtvUC92nw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1DWQU72hEeG_PZtvUC92nw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ikNCoIAjEeGE1-mzJa42fw" name="IVAdminstration">
+      <generalization xmi:id="_Cm4fwLyPEeGK2djLWlLFew" general="_420A62FD03B641A349EF0070"/>
+      <ownedAttribute xmi:id="_IHEEoDh9EeC17O99ZX8o-w" name="actualIvLimitation" visibility="public">
+        <ownedComment xmi:id="_IHEEoTh9EeC17O99ZX8o-w" annotatedElement="_IHEEoDh9EeC17O99ZX8o-w">
+          <body>This is the maximum length of time to administer, or the maximum volume to administer, for IV fluid orders. The value may be in ML or CC for  milliliters, L for liters, D for days, or H for hours.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bt5RUZC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bt5RUJC2EeaeVcv6mxF7oQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B641DEB346013F" name="frequency" visibility="public">
+        <ownedComment xmi:id="_NYcJFeLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B641DEB346013F">
+          <body>Specifies when the substance is to be administered and how frequently.  Note that this is a complex data type that may indicate specific times or intervals (e.g., 10:00 AM, MWF, etc).</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_durdUZC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_durdUJC2EeaeVcv6mxF7oQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B641B4D20B0067" name="infusionRate" visibility="public">
+        <ownedComment xmi:id="_NYcJGOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B641B4D20B0067">
+          <body>&quot;Contains the rate at which this medication/treatment was administered as calculated by using RXA-6-administered amount and RXA-7-administered units.  This field is conditional because it is required when a treatment is administered continuously at a prescribed rate, e.g., certain IV solutions.&quot; - HL7 Version 2.8, RXA-12&#xD;
+&#xD;
+Infusion: &quot;Introduction of a solution into the body through a vein for therapeutic purposes.&quot;  (American Heritage Stedman's Medical Dictionary).  This is the rate at which the solution is introduced into the body.  Expressed as volume/time (e.g., 500 ml/hr)  </body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F63021C?FHIM/Datatypes/RateQuantity?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eYvG8ZC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eYvG8JC2EeaeVcv6mxF7oQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B64592CC1D0395" name="syringeSize" visibility="public">
+        <ownedComment xmi:id="_NdqAReLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64592CC1D0395">
+          <body>Size of the syringe to be used to administer IV.    Do we need this???</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e-nbMJC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e-m0IJC2EeaeVcv6mxF7oQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fk5KsL2hEeG_PZtvUC92nw" name="medicationAdministrationEvent_administrationDevice" memberEnd="_fk81EL2hEeG_PZtvUC92nw _flBtkL2hEeG_PZtvUC92nw">
+      <ownedEnd xmi:id="_flBtkL2hEeG_PZtvUC92nw" name="" visibility="public" type="_2QCQ4KwREeG4dfTp_XT2yg" association="_fk5KsL2hEeG_PZtvUC92nw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-N1SgDh4EeC17O99ZX8o-w" name="medicationAdministrationPromise_medicationAdministrationEvent" memberEnd="_-OJbkDh4EeC17O99ZX8o-w _-OLQwDh4EeC17O99ZX8o-w">
+      <ownedEnd xmi:id="_-OLQwDh4EeC17O99ZX8o-w" name="" visibility="public" type="_yQ2jIDh4EeC17O99ZX8o-w" association="_-N1SgDh4EeC17O99ZX8o-w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-OL30Th4EeC17O99ZX8o-w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-OL30Dh4EeC17O99ZX8o-w" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Fjz8UL_vEeG9Y6ZcZJMJaA" name="medicationAdministrationEvent_exemption" memberEnd="_Fj-UYL_vEeG9Y6ZcZJMJaA _FkIFYL_vEeG9Y6ZcZJMJaA">
+      <ownedEnd xmi:id="_FkIFYL_vEeG9Y6ZcZJMJaA" name="" visibility="public" type="_420A62FD03B641A349EF0070" association="_Fjz8UL_vEeG9Y6ZcZJMJaA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wmpQwL_sEeG9Y6ZcZJMJaA" name="medicationAdministrationEvent_medicationAdministrationPromise" memberEnd="_wmzBwL_sEeG9Y6ZcZJMJaA _wm9Z0L_sEeG9Y6ZcZJMJaA">
+      <ownedEnd xmi:id="_wm9Z0L_sEeG9Y6ZcZJMJaA" name="" visibility="public" type="_420A62FD03B641A349EF0070" association="_wmpQwL_sEeG9Y6ZcZJMJaA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_420A62FD03B64304F50D0309" name="medicationAdministrationEvent_comments" memberEnd="_420A62FD03B64304F50E0274 _420A62FD03B64304F50E027E">
+      <ownedComment xmi:id="_NgfR3OLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64304F50D0309">
+        <body>Comments regarding the Medication order.</body>
+      </ownedComment>
+      <ownedEnd xmi:id="_420A62FD03B64304F50E027E" name="" visibility="public" type="_420A62FD03B641A349EF0070" isUnique="false" association="_420A62FD03B64304F50D0309"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_420A62FD03B6459411D1033E" name="medicationAdministrationEvent_orderedItem" memberEnd="_420A62FD03B6459411D20283 _420A62FD03B6459411D20285">
+      <ownedEnd xmi:id="_420A62FD03B6459411D20285" name="" visibility="public" type="_420A62FD03B641A349EF0070" isUnique="false" association="_420A62FD03B6459411D1033E"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Bo3qQLyNEeGK2djLWlLFew" name="medicationAdministrationEvent_serviceDeliveryLocation" memberEnd="_Bo6tkLyNEeGK2djLWlLFew _Bo-_ALyNEeGK2djLWlLFew">
+      <ownedEnd xmi:id="_Bo-_ALyNEeGK2djLWlLFew" name="" visibility="public" type="_420A62FD03B641A349EF0070" association="_Bo3qQLyNEeGK2djLWlLFew"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_PiAJUAllEeKmMfGXbG9elQ" name="medicationAdministrationEvent_patientCondition" memberEnd="_PiHeEAllEeKmMfGXbG9elQ _PiLIcAllEeKmMfGXbG9elQ">
+      <ownedEnd xmi:id="_PiLIcAllEeKmMfGXbG9elQ" name="" visibility="public" type="_420A62FD03B641A349EF0070" association="_PiAJUAllEeKmMfGXbG9elQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_BFhS4FNdEeaHsPdvgbW7pw" name="medicationAdministrationEvent_reaction" memberEnd="_BFhS4VNdEeaHsPdvgbW7pw _BFhS5FNdEeaHsPdvgbW7pw">
+      <ownedEnd xmi:id="_BFhS5FNdEeaHsPdvgbW7pw" name="" visibility="private" type="_420A62FD03B641A349EF0070" association="_BFhS4FNdEeaHsPdvgbW7pw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Sq89YKEREeGnfe88WF3uxw" name="medicationAdministrationEvent_administeredDrug" memberEnd="_Sq-ykKEREeGnfe88WF3uxw _SrBO0KEREeGnfe88WF3uxw">
+      <ownedEnd xmi:id="_SrBO0KEREeGnfe88WF3uxw" name="" visibility="public" type="_420A62FD03B641A349EF0070" association="_Sq89YKEREeGnfe88WF3uxw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_kwrjsLycEeGK2djLWlLFew" name="medicationAdministrationEvent_indication" memberEnd="_kwvOELycEeGK2djLWlLFew _kwzfgLycEeGK2djLWlLFew">
+      <ownedEnd xmi:id="_kwzfgLycEeGK2djLWlLFew" name="" visibility="public" type="_420A62FD03B641A349EF0070" association="_kwrjsLycEeGK2djLWlLFew"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_iL5zkL_uEeG9Y6ZcZJMJaA" name="medicationAdministrationEvent_contraIndication" memberEnd="_iMDkkL_uEeG9Y6ZcZJMJaA _iMNVkL_uEeG9Y6ZcZJMJaA">
+      <ownedEnd xmi:id="_iMNVkL_uEeG9Y6ZcZJMJaA" name="" visibility="public" type="_420A62FD03B641A349EF0070" association="_iL5zkL_uEeG9Y6ZcZJMJaA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qU6wsLyOEeGK2djLWlLFew" name="medicationAdministrationEvent_patientLocation" memberEnd="_qU_CILyOEeGK2djLWlLFew _qVEhsLyOEeGK2djLWlLFew">
+      <ownedEnd xmi:id="_qVEhsLyOEeGK2djLWlLFew" name="" visibility="public" type="_420A62FD03B641A349EF0070" association="_qU6wsLyOEeGK2djLWlLFew"/>
+    </packagedElement>
+  </uml:Package>
+  <Default:Documentation xmi:id="_AbMgg4AkEeGE1-mzJa42fw" base_Comment="_NdqAReLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_AbMggIAkEeGE1-mzJa42fw" base_Comment="_NYcJGOLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_AbMggoAkEeGE1-mzJa42fw" base_Comment="_IHEEoTh9EeC17O99ZX8o-w"/>
+  <Default:Documentation xmi:id="_bMYd0KEPEeGnfe88WF3uxw" base_Comment="_NYcJFeLiEduGJrQyRGTO1A"/>
+  <RIM:SubstanceAdministration xmi:id="_DdzlIIsVEeGv9r5ZNThaOw" base_Class="_ikNCoIAjEeGE1-mzJa42fw"/>
+  <FHIM:Mapping xmi:id="_ZQZzALoREeWqFd182BzgAw" base_Property="_420A62FD03B641B4D20B0067">
+    <index xmi:id="_ZQZzAboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-12"/>
+  </FHIM:Mapping>
+  <term:ValueSetConstraint xmi:id="_evyCgPKlEeG3H88UD2nPJw" base_Property="_Q4A4QIAkEeGE1-mzJa42fw">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_CzV0QGZWEeOjX716b-3f7A"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_h0X04PKlEeG3H88UD2nPJw" base_Property="_-eH-IL2gEeG_PZtvUC92nw">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_CzV0QGZWEeOjX716b-3f7A"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_5mKVYAlqEeKmMfGXbG9elQ" base_Property="_JTPfQIAkEeGE1-mzJa42fw">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_Tz5CYMCBEeGOjJTiA9qJ1w"/>
+  </term:ValueSetConstraint>
+  <Default:Documentation xmi:id="_-eH-Ir2gEeG_PZtvUC92nw" base_Comment="_-eH-Ib2gEeG_PZtvUC92nw"/>
+  <Default:Documentation xmi:id="_-RtIML2fEeG_PZtvUC92nw" base_Comment="_-RiwIL2fEeG_PZtvUC92nw"/>
+  <Default:Documentation xmi:id="_1DXecL2hEeG_PZtvUC92nw" base_Comment="_1DWQUb2hEeG_PZtvUC92nw"/>
+  <Default:Documentation xmi:id="_5uRgULyOEeGK2djLWlLFew" base_Comment="_NYl6EuLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_7aLuoL01EeGHr5yhv0QPSw" base_Comment="_7aG2Ib01EeGHr5yhv0QPSw"/>
+  <Default:Documentation xmi:id="_9QAlML2gEeG_PZtvUC92nw" base_Comment="_9P4pYL2gEeG_PZtvUC92nw"/>
+  <Default:Documentation xmi:id="_ahanQLyEEeGK2djLWlLFew" base_Comment="_ahZZIbyEEeGK2djLWlLFew"/>
+  <Default:Documentation xmi:id="_AOxr0ANPEeKTM4I4vlc5xg" base_Comment="_AOpwAANPEeKTM4I4vlc5xg"/>
+  <Default:Documentation xmi:id="_cfq1MKEQEeGnfe88WF3uxw" base_Comment="_Ne2TFeLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_cfqOIqEQEeGnfe88WF3uxw" base_Comment="_Ne2TEuLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_de_qUCzgEeKLfdgQhBZO1Q" base_Comment="_de8nACzgEeKLfdgQhBZO1Q"/>
+  <Default:Documentation xmi:id="_Gq8gMCzfEeKLfdgQhBZO1Q" base_Comment="_Gq5c4CzfEeKLfdgQhBZO1Q"/>
+  <Default:Documentation xmi:id="_GzgbwLyQEeGK2djLWlLFew" base_Comment="_GzXR0LyQEeGK2djLWlLFew"/>
+  <Default:Documentation xmi:id="_HkAzALyNEeGK2djLWlLFew" base_Comment="_Hj43MLyNEeGK2djLWlLFew"/>
+  <Default:Documentation xmi:id="_JgjmQL2gEeG_PZtvUC92nw" base_Comment="_JgbqcL2gEeG_PZtvUC92nw"/>
+  <Default:Documentation xmi:id="_jpiE0L2hEeG_PZtvUC92nw" base_Comment="_jpZh8L2hEeG_PZtvUC92nw"/>
+  <Default:Documentation xmi:id="_jVTWsL2gEeG_PZtvUC92nw" base_Comment="_jVRhgb2gEeG_PZtvUC92nw"/>
+  <Default:Documentation xmi:id="_JX3iUAllEeKmMfGXbG9elQ" base_Comment="_JXZoQAllEeKmMfGXbG9elQ"/>
+  <Default:Documentation xmi:id="_kxqpoL01EeGHr5yhv0QPSw" base_Comment="_kxY80L01EeGHr5yhv0QPSw"/>
+  <Default:Documentation xmi:id="_lOh3cDfZEeKnE98EkGeXFQ" base_Comment="_lOGZoTfZEeKnE98EkGeXFQ"/>
+  <Default:Documentation xmi:id="_NgfR3eLiEduGJrQyRGTO1A" base_Comment="_NgfR3OLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_NgobwOLiEduGJrQyRGTO1A" base_Comment="_NgfR3-LiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_Ni33fOLiEduGJrQyRGTO1A" base_Comment="_Ni33e-LiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_NM-GsKwSEeG4dfTp_XT2yg" base_Comment="_RsJMcSf-EeC-JKXSDMHR6A"/>
+  <Default:Documentation xmi:id="_NYl6GeLiEduGJrQyRGTO1A" base_Comment="_NYl6GOLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_NYSYG-LiEduGJrQyRGTO1A" base_Comment="_NYSYGuLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_ofoZILyFEeGK2djLWlLFew" base_Comment="_off2QLyFEeGK2djLWlLFew"/>
+  <Default:Documentation xmi:id="_qpv4kLyLEeGK2djLWlLFew" base_Comment="_qpmuoLyLEeGK2djLWlLFew"/>
+  <Default:Documentation xmi:id="_tFIGILycEeGK2djLWlLFew" base_Comment="_tFAKULycEeGK2djLWlLFew"/>
+  <Default:Documentation xmi:id="_v6B_ELyOEeGK2djLWlLFew" base_Comment="_v56DQLyOEeGK2djLWlLFew"/>
+  <RIM:SubstanceAdministration xmi:id="_8UP2EKwREeG4dfTp_XT2yg" base_Class="_2QCQ4KwREeG4dfTp_XT2yg"/>
+  <RIM:SubstanceAdministration xmi:id="_br8FAVwTEd6dhZ7uY2XV5Q" base_Class="_420A62FD03B641A349EF0070"/>
+  <RIM:SubstanceAdministration xmi:id="_d6-aoDkyEeCOabXzDmEF2w" base_Class="_yQ2jIDh4EeC17O99ZX8o-w"/>
+  <term:ValueSetConstraint xmi:id="_Fkp-UGQyEeODL8RnVGcWEw" base_Property="_420A62FD03B641B4D758015F">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_k0mooWQxEeO416PBOZe6TA"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_rj8FsGZmEeO838fXH_vUDQ" base_Property="_jpVcAKEPEeGnfe88WF3uxw">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_Xmc_QaRMEeGZ6ueex_Me0w"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_Kwav0GZnEeO838fXH_vUDQ" base_Property="_nv_OwL2fEeG_PZtvUC92nw">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_Tz5CYMCBEeGOjJTiA9qJ1w"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_xpTE8GZnEeO838fXH_vUDQ" base_Property="_jVRhgL2gEeG_PZtvUC92nw">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_JbLq8GZWEeOjX716b-3f7A"/>
+  </term:ValueSetConstraint>
+  <term:ValueSetConstraint xmi:id="_75wBEGZnEeO838fXH_vUDQ" base_Property="_lOGZoDfZEeKnE98EkGeXFQ">
+    <reference href="platform:/resource/gov.us.fhim.terminology/model/fhim-vocab.uml#_JbLq8GZWEeOjX716b-3f7A"/>
+  </term:ValueSetConstraint>
+  <FHIM:Mapping xmi:id="_ZQbBILoREeWqFd182BzgAw" base_Property="_Sq-ykKEREeGnfe88WF3uxw">
+    <index xmi:id="_ZQbBIboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-5"/>
+    <index xmi:id="_ftrYcLoREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.16"/>
+    <index xmi:id="_ftrYcboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="SubstanceAdministration.code"/>
+    <index xmi:id="_ftrYcroREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/medicationstatement-daf-dafmedicationstatement"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQcPQLoREeWqFd182BzgAw" base_Property="_aLWPoLyPEeGK2djLWlLFew">
+    <index xmi:id="_ZQcPQboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-13"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQddYLoREeWqFd182BzgAw" base_Property="_7aG2IL01EeGHr5yhv0QPSw">
+    <index xmi:id="_ZQddYboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-23"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQf5oLoREeWqFd182BzgAw" base_Property="_lOGZoDfZEeKnE98EkGeXFQ">
+    <index xmi:id="_ZQf5oboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXR-4"/>
+    <index xmi:id="_ftwQ8LoREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.16"/>
+    <index xmi:id="_ftwQ8boREeWqFd182BzgAw" standardOrProject="HL7CDA" value="SubstanceAdministration.administrationUnitCode"/>
+    <index xmi:id="_ftwQ8roREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/medicationstatement-daf-dafmedicationstatement"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQhHwLoREeWqFd182BzgAw" base_Property="_420A62FD03B64304F50E0274">
+    <index xmi:id="_ZQhHwboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-9"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQhu0LoREeWqFd182BzgAw" base_Property="_ahZZILyEEeGK2djLWlLFew">
+    <index xmi:id="_ZQhu0boREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-4"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQi88LoREeWqFd182BzgAw" base_Property="_420A62FD03B6425C0805022C">
+    <index xmi:id="_ZQi88boREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-3"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQkLELoREeWqFd182BzgAw" base_Property="_jpVcAKEPEeGnfe88WF3uxw">
+    <index xmi:id="_ZQkLEboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-8"/>
+    <index xmi:id="_ftr_gLoREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.16"/>
+    <index xmi:id="_ftr_gboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="SubstanceAdministration.administrationUnitCode"/>
+    <index xmi:id="_ftr_groREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="?"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQlZMLoREeWqFd182BzgAw" base_Property="_420A62FD03B645940F2C03A7">
+    <index xmi:id="_ZQlZMboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-6"/>
+    <index xmi:id="_ftw4ALoREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.16"/>
+    <index xmi:id="_ftw4AboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="SubstanceAdministration.doseQuantity"/>
+    <index xmi:id="_ftw4AroREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/medicationstatement-daf-dafmedicationstatement"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQmnULoREeWqFd182BzgAw" base_Property="_kwvOELycEeGK2djLWlLFew">
+    <index xmi:id="_ZQmnUboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-19"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQn1cLoREeWqFd182BzgAw" base_Property="_qU_CILyOEeGK2djLWlLFew">
+    <index xmi:id="_ZQn1cboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-11"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQpDkLoREeWqFd182BzgAw" base_Property="_Q4A4QIAkEeGE1-mzJa42fw">
+    <index xmi:id="_ZQpDkboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXR-1"/>
+    <index xmi:id="_ftvC0LoREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.16"/>
+    <index xmi:id="_ftvC0boREeWqFd182BzgAw" standardOrProject="HL7CDA" value="SubstanceAdministration.routeCode"/>
+    <index xmi:id="_ftvC0roREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/medicationstatement-daf-dafmedicationstatement"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQqRsLoREeWqFd182BzgAw" base_Property="_Bo6tkLyNEeGK2djLWlLFew">
+    <index xmi:id="_ZQqRsboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-27"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQrf0LoREeWqFd182BzgAw" base_Property="_420A62FD03B641B4D758015F">
+    <index xmi:id="_ZQrf0boREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-20"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQst8LoREeWqFd182BzgAw" base_Property="_b7FDcL01EeGHr5yhv0QPSw">
+    <index xmi:id="_ZQst8boREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-22"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQtVALoREeWqFd182BzgAw" base_Property="_fk81EL2hEeG_PZtvUC92nw">
+    <index xmi:id="_ZQt8ELoREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXR-3"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQujILoREeWqFd182BzgAw" base_Property="_RsJMcCf-EeC-JKXSDMHR6A">
+    <index xmi:id="_ZQujIboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXO-7"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQvxQLoREeWqFd182BzgAw" base_Property="_jVRhgL2gEeG_PZtvUC92nw">
+    <index xmi:id="_ZQvxQboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXR-4"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQw_YLoREeWqFd182BzgAw" base_Property="_nv_OwL2fEeG_PZtvUC92nw">
+    <index xmi:id="_ZQw_YboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXR-2"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQyNgLoREeWqFd182BzgAw" base_Property="_w2ECcL2fEeG_PZtvUC92nw">
+    <index xmi:id="_ZQyNgboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXR-6"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQzboLoREeWqFd182BzgAw" base_Property="_-eH-IL2gEeG_PZtvUC92nw">
+    <index xmi:id="_ZQzboboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXR-1"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ZQ0pwLoREeWqFd182BzgAw" base_Property="_1DWQUL2hEeG_PZtvUC92nw">
+    <index xmi:id="_ZQ0pwboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXR-5"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_fto8MLoREeWqFd182BzgAw" base_Classifier="_420A62FD03B641A349EF0070">
+    <index xmi:id="_fto8MboREeWqFd182BzgAw" standardOrProject="MU2" value="Medications administered during the visit"/>
+    <index xmi:id="_fto8MroREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.16"/>
+    <index xmi:id="_fto8M7oREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Medication Activity  (SubstanceAdministration)"/>
+    <index xmi:id="_fto8NLoREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/medicationstatement-daf-dafmedicationstatement"/>
+    <index xmi:id="_ftyGILoREeWqFd182BzgAw" value="Medications (entries required: 2.16.840.1.113883.10.20.22.2.1.1)"/>
+    <index xmi:id="_ftyGIboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Medication Activity (2.16.840.1.113883.10.20.22.4.16"/>
+    <index xmi:id="_ftyGIroREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/medicationstatement-daf-dafmedicationstatement"/>
+    <index xmi:id="_ftytMLoREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Medication Activity (2.16.840.1.113883.10.20.22.4.16"/>
+    <index xmi:id="_ftytMboREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/medicationstatement-daf-dafmedicationstatement"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ftpjQLoREeWqFd182BzgAw" base_Property="_6e5-8ANOEeKTM4I4vlc5xg">
+    <index xmi:id="_ftpjQboREeWqFd182BzgAw" standardOrProject="MU2" value="Medications"/>
+    <index xmi:id="_ftpjQroREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.16"/>
+    <index xmi:id="_ftpjQ7oREeWqFd182BzgAw" standardOrProject="HL7CDA" value="SubstanceAdministration.id"/>
+    <index xmi:id="_ftqKULoREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/medicationstatement-daf-dafmedicationstatement"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_fttNoLoREeWqFd182BzgAw" base_Property="_420A62FD03B6459404F30183">
+    <index xmi:id="_fttNoboREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/medicationstatement-daf-dafmedicationstatement"/>
+  </FHIM:Mapping>
+  <FHIM:Mapping xmi:id="_ftt0sLoREeWqFd182BzgAw" base_Property="_JTPfQIAkEeGE1-mzJa42fw">
+    <index xmi:id="_ftubwLoREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.16"/>
+    <index xmi:id="_ftubwboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="SubstanceAdministration.approachSite"/>
+    <index xmi:id="_ftubwroREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/medicationstatement-daf-dafmedicationstatement"/>
+  </FHIM:Mapping>
+  <Default:Documentation xmi:id="_TLdH4FM5EeaHsPdvgbW7pw" base_Comment="_TLF7gFM5EeaHsPdvgbW7pw"/>
+  <Default:Documentation xmi:id="_fCDMUFNCEeaHsPdvgbW7pw" base_Comment="_fB_h8FNCEeaHsPdvgbW7pw"/>
+  <Default:Documentation xmi:id="_2df4YFNpEeaHsPdvgbW7pw" base_Comment="_2dTrIFNpEeaHsPdvgbW7pw"/>
+  <Default:Documentation xmi:id="_rCcdQN6FEeaQL8YZ3sNKnw" base_Comment="_rCaoEN6FEeaQL8YZ3sNKnw"/>
+</xmi:XMI>

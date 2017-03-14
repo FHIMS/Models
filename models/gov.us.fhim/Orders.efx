@@ -275,7 +275,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_5IN-8KwREeG4dfTp_XT2yg" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_5IN-8awREeG4dfTp_XT2yg" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_5IOmAKwREeG4dfTp_XT2yg" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Encounter.efx#_2QCQ4KwREeG4dfTp_XT2yg?FHIM/Encounter/MedicationAdministrationRequest?"/>
+          <element xmi:type="uml:Class" href="MedicationAdministration.efx#_2QCQ4KwREeG4dfTp_XT2yg?FHIM/MedicationAdministration/MedicationAdministrationRequest?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5IK7oawREeG4dfTp_XT2yg" x="4121" y="-1585"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_SvbRQMX-EeGsb4KXw2Babg" element="_SsqRIMX-EeGsb4KXw2Babg" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -1068,7 +1068,7 @@
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_7tO5-0h2EeKFm6BiMe_FyA" type="Name"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7tO5-Uh2EeKFm6BiMe_FyA" y="-186"/>
           </children>
-          <element xmi:type="uml:Generalization" href="Encounter.efx#_F3DMkKwTEeG4dfTp_XT2yg?FHIM/Encounter/MedicationAdministrationRequest/%3CGeneralization%3E?"/>
+          <element xmi:type="uml:Generalization" href="MedicationAdministration.efx#_F3DMkKwTEeG4dfTp_XT2yg?FHIM/MedicationAdministration/MedicationAdministrationRequest/%3CGeneralization%3E?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7tO590h2EeKFm6BiMe_FyA" points="[0, -725, 3354, 8660]$[0, -2315, 3354, 7070]$[-3313, -2315, 41, 7070]$[-3313, -3780, 41, 5605]"/>
         </edges>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_7tO5_Eh2EeKFm6BiMe_FyA" element="_ep2kgJkGEeCFEfqQZ7sMZg" source="_7sy0sEh2EeKFm6BiMe_FyA" target="_QE2UYOrTEeCgerddwRbJUw" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -1514,12 +1514,12 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_uZjDpO42EeaUvKSLywOgEw" visible="false" type="ToMultiplicityLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_uZjDpu42EeaUvKSLywOgEw" type="ToMultiplicity"/>
-            <element xmi:type="uml:Property" href="Common.efx#_4xH90OSmEeaMP8OhjVeyrg?FHIM/Common/%3CAssociation%3E/%3CProperty%3E?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_4xH90OSmEeaMP8OhjVeyrg?FHIM/Common/clinicalInformation_subjectOfRecord/%3CProperty%3E?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_uZjDpe42EeaUvKSLywOgEw" y="396"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_uZjqsO42EeaUvKSLywOgEw" type="ToRoleLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_uZjqsu42EeaUvKSLywOgEw" type="ToRole"/>
-            <element xmi:type="uml:Property" href="Common.efx#_4xH90OSmEeaMP8OhjVeyrg?FHIM/Common/%3CAssociation%3E/%3CProperty%3E?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_4xH90OSmEeaMP8OhjVeyrg?FHIM/Common/clinicalInformation_subjectOfRecord/%3CProperty%3E?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_uZjqse42EeaUvKSLywOgEw" y="-397"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_uZjqs-42EeaUvKSLywOgEw" type="FromMultiplicityLabel">
@@ -1534,7 +1534,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_uZkRwO42EeaUvKSLywOgEw" type="ToQualifierLabel">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_uZkRwu42EeaUvKSLywOgEw" type="QualifierCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_4xH90OSmEeaMP8OhjVeyrg?FHIM/Common/%3CAssociation%3E/%3CProperty%3E?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_4xH90OSmEeaMP8OhjVeyrg?FHIM/Common/clinicalInformation_subjectOfRecord/%3CProperty%3E?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_uZkRwe42EeaUvKSLywOgEw" y="-186"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_uZkRw-42EeaUvKSLywOgEw" type="FromQualifierLabel">
@@ -1544,7 +1544,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_uZkRxu42EeaUvKSLywOgEw" type="ToConstraintLabel">
             <children xmi:type="notation:ListCompartment" xmi:id="_uZkRyO42EeaUvKSLywOgEw" type="ToConstraintCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_4xH90OSmEeaMP8OhjVeyrg?FHIM/Common/%3CAssociation%3E/%3CProperty%3E?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_4xH90OSmEeaMP8OhjVeyrg?FHIM/Common/clinicalInformation_subjectOfRecord/%3CProperty%3E?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_uZkRx-42EeaUvKSLywOgEw" y="1058"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_uZkRye42EeaUvKSLywOgEw" type="FromConstraintLabel">
@@ -1552,7 +1552,7 @@
             <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalInformation/subjectOfRecord?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_uZkRyu42EeaUvKSLywOgEw" y="1058"/>
           </children>
-          <element xmi:type="uml:Association" href="Common.efx#_4xDsYOSmEeaMP8OhjVeyrg?FHIM/Common/%3CAssociation%3E?"/>
+          <element xmi:type="uml:Association" href="Common.efx#_4xDsYOSmEeaMP8OhjVeyrg?FHIM/Common/clinicalInformation_subjectOfRecord?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uZicle42EeaUvKSLywOgEw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
         </edges>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_uZk40e42EeaUvKSLywOgEw" element="_qFv_UMg5EeSfy4Nv5qDtdw" source="_bMHg8OPGEeCbbuWBGGTBrA" target="_uZfZQO42EeaUvKSLywOgEw" fontName="Arial" fontHeight="10" routing="Tree" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -1579,12 +1579,12 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_uZmuBu42EeaUvKSLywOgEw" visible="false" type="ToMultiplicityLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_uZmuCO42EeaUvKSLywOgEw" type="ToMultiplicity"/>
-            <element xmi:type="uml:Property" href="Common.efx#_1pAdoOpJEeaWrIJdHo1TMw?FHIM/Common/%3CAssociation%3E/%3CProperty%3E?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_1pAdoOpJEeaWrIJdHo1TMw?FHIM/Common/clinicalInformation_subjectOfInformation/%3CProperty%3E?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_uZmuB-42EeaUvKSLywOgEw" y="396"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_uZmuCe42EeaUvKSLywOgEw" type="ToRoleLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_uZmuC-42EeaUvKSLywOgEw" type="ToRole"/>
-            <element xmi:type="uml:Property" href="Common.efx#_1pAdoOpJEeaWrIJdHo1TMw?FHIM/Common/%3CAssociation%3E/%3CProperty%3E?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_1pAdoOpJEeaWrIJdHo1TMw?FHIM/Common/clinicalInformation_subjectOfInformation/%3CProperty%3E?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_uZmuCu42EeaUvKSLywOgEw" y="-397"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_uZnVEO42EeaUvKSLywOgEw" type="FromMultiplicityLabel">
@@ -1599,7 +1599,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_uZnVFu42EeaUvKSLywOgEw" type="ToQualifierLabel">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_uZnVGO42EeaUvKSLywOgEw" type="QualifierCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_1pAdoOpJEeaWrIJdHo1TMw?FHIM/Common/%3CAssociation%3E/%3CProperty%3E?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_1pAdoOpJEeaWrIJdHo1TMw?FHIM/Common/clinicalInformation_subjectOfInformation/%3CProperty%3E?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_uZnVF-42EeaUvKSLywOgEw" y="-186"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_uZnVGe42EeaUvKSLywOgEw" type="FromQualifierLabel">
@@ -1609,7 +1609,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_uZn8Ie42EeaUvKSLywOgEw" type="ToConstraintLabel">
             <children xmi:type="notation:ListCompartment" xmi:id="_uZn8I-42EeaUvKSLywOgEw" type="ToConstraintCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_1pAdoOpJEeaWrIJdHo1TMw?FHIM/Common/%3CAssociation%3E/%3CProperty%3E?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_1pAdoOpJEeaWrIJdHo1TMw?FHIM/Common/clinicalInformation_subjectOfInformation/%3CProperty%3E?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_uZn8Iu42EeaUvKSLywOgEw" y="1058"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_uZn8JO42EeaUvKSLywOgEw" type="FromConstraintLabel">
@@ -1617,7 +1617,7 @@
             <element xmi:type="uml:Property" href="Common.efx#_1o-BYOpJEeaWrIJdHo1TMw?FHIM/Common/ClinicalInformation/subjectOfInformation?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_uZn8Je42EeaUvKSLywOgEw" y="1058"/>
           </children>
-          <element xmi:type="uml:Association" href="Common.efx#_1o5I4OpJEeaWrIJdHo1TMw?FHIM/Common/%3CAssociation%3E?"/>
+          <element xmi:type="uml:Association" href="Common.efx#_1o5I4OpJEeaWrIJdHo1TMw?FHIM/Common/clinicalInformation_subjectOfInformation?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uZmuAe42EeaUvKSLywOgEw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
         </edges>
       </contents>
