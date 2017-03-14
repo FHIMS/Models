@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.2.v201410272105 Build &lt;4.4.2.v20150217-1805></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">72</property>
+    <data-sources>
+        <oda-data-source extensionID="com.ibm.ccl.oda.uml" name="Data Source" id="7">
+            <property name="instancemodels">platform:/resource/gov.us.fhim/FHIM_Vocab.emx</property>
+            <property name="metamodels">http://www.eclipse.org/uml2/3.0.0/UML http://www.eclipse.org/gmf/runtime/1.0.2/notation http://www.ibm.com/xtools/1.5.3/Umlnotation</property>
+            <property name="profiles">pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="Data Set" id="8">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">name</text-property>
+                    <text-property name="heading">name</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">name</property>
+                    <property name="nativeName">name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>name</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>7</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>name</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>name</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/3.0.0/UML#//Class</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">Class</property>
+            <property name="columnQueries">name;@name;String</property>
+            <property name="rowType">uml:Class</property>
+            <property name="evaluateOnInstances">true</property>
+        </oda-data-set>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="Packages" id="10">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">name</text-property>
+                    <text-property name="heading">name</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">name1</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">name1</text-property>
+                    <text-property name="heading">name1</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">visibility</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">visibility</text-property>
+                    <text-property name="heading">visibility</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">qualifiedName</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">qualifiedName</text-property>
+                    <text-property name="heading">qualifiedName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">uri</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">uri</text-property>
+                    <text-property name="heading">uri</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">name1</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">visibility</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">name</property>
+                    <property name="nativeName">name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">name1</property>
+                    <property name="nativeName">name1</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">visibility</property>
+                    <property name="nativeName">visibility</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">qualifiedName</property>
+                    <property name="nativeName">qualifiedName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">uri</property>
+                    <property name="nativeName">uri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>name</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>7</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>name</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>name</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/3.0.0/UML#//Package</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">Package</property>
+            <property name="columnQueries">name;@name;String#-#name1;ownedType/@name;String#-#visibility;ownedType/@visibility;String#-#qualifiedName;ownedType/@qualifiedName;String#-#uri;getURI(./ownedType);String</property>
+            <property name="rowType">uml:Package</property>
+            <property name="evaluateOnInstances">true</property>
+        </oda-data-set>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="Packages1" id="9">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">uri</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">uri</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">name</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">qualifiedName</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">qualifiedName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">documentation</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">documentation</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">classCount</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">classCount</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">documentation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">classCount</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">uri</property>
+                    <property name="nativeName">uri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">name</property>
+                    <property name="nativeName">name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">qualifiedName</property>
+                    <property name="nativeName">qualifiedName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">documentation</property>
+                    <property name="nativeName">documentation</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">classCount</property>
+                    <property name="nativeName">classCount</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">6</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/2.1.0/UML#//Package</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">//Package</property>
+            <property name="columnQueries">uri;getURI(.);String#-#name;@name;String#-#qualifiedName;@qualifiedName;String#-#documentation;getElementsWithStereotype(ownedComment, 'Default::Documentation')[1]/@body;String#-#classCount;count(oclQuery(ownedMember, "self.oclIsKindOf(uml::Class)"));Integer</property>
+            <property name="rowType">uml.Package</property>
+        </oda-data-set>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="Enumerations" id="111">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">name</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">name</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">identifier</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">identifier</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">identifier</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">owneruri</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">owneruri</text-property>
+                    <text-property name="heading">owneruri</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">identifier</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">owneruri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">name</property>
+                    <property name="nativeName">name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">identifier</property>
+                    <property name="nativeName">identifier</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">owneruri</property>
+                    <property name="nativeName">owneruri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>name</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>7</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>name</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>name</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/3.0.0/UML#//Enumeration</value>
+                </ex-property>
+                <ex-property>
+                    <name>rowStereotypeURIs</name>
+                    <value>pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_e9b84BzwEd-WH9Qw4coEMg</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">instanceOf(//*, "uml:Enumeration")</property>
+            <property name="columnQueries">name;@name;String#-#identifier;getStereotypePropertyValue(., "Terminology::ValueSetVersion::identifier");String#-#owneruri;getURI(./owner);String</property>
+            <property name="rowType">uml:Enumeration</property>
+            <property name="rowStereotypes">Terminology::ValueSetVersion</property>
+            <property name="evaluateOnInstances">true</property>
+        </oda-data-set>
+        <joint-data-set name="Data Set1" id="112">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">Enumerations::name</property>
+                    <property name="alias">Enumerations::name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Enumerations::name</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Enumerations::identifier</property>
+                    <property name="alias">identifier</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Enumerations::identifier</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Packages1::classCount</property>
+                    <property name="alias">classCount</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">Packages1::classCount</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Packages1::qualifiedName</property>
+                    <property name="alias">qualifiedName</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Packages1::qualifiedName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Packages1::documentation</property>
+                    <property name="alias">documentation</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Packages1::documentation</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Enumerations::owneruri</property>
+                    <property name="alias">owneruri</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Enumerations::owneruri</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Packages1::uri</property>
+                    <property name="alias">uri</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Packages1::uri</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Packages1::name</property>
+                    <property name="alias">Packages1::name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Packages1::name</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Packages1::uri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Packages1::name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Packages1::qualifiedName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">Packages1::documentation</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">Packages1::classCount</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">Enumerations::name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">Enumerations::identifier</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">Enumerations::owneruri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <simple-property-list name="dataSets">
+                <value>Packages1</value>
+                <value>Enumerations</value>
+            </simple-property-list>
+            <list-property name="joinConditions">
+                <structure>
+                    <property name="joinType">left-out</property>
+                    <property name="joinOperator">eq</property>
+                    <property name="leftDataSet">Packages1</property>
+                    <property name="rightDataSet">Enumerations</property>
+                    <expression name="leftExpression">dataSetRow["uri"]</expression>
+                    <expression name="rightExpression">dataSetRow["owneruri"]</expression>
+                </structure>
+            </list-property>
+        </joint-data-set>
+    </data-sets>
+    <cubes>
+        <tabular-cube name="Data Cube" id="32">
+            <property name="dimensions">
+                <tabular-dimension name="Group" id="33">
+                    <property name="defaultHierarchy">NewTabularHierarchy</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy" id="34">
+                            <property name="levels">
+                                <tabular-level name="name" id="35">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">name</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+            </property>
+            <property name="dataSet">Packages</property>
+        </tabular-cube>
+    </cubes>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab-cell" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="113">
+            <property name="dataSet">Data Set1</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Packages1::name</property>
+                    <text-property name="displayName">Packages1::name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Packages1::name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Packages1::documentation</property>
+                    <text-property name="displayName">Packages1::documentation</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Packages1::documentation"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Packages1::classCount</property>
+                    <text-property name="displayName">Packages1::classCount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Packages1::classCount"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Enumerations::name</property>
+                    <text-property name="displayName">Enumerations::name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Enumerations::name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Enumerations::identifier</property>
+                    <text-property name="displayName">Enumerations::identifier</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Enumerations::identifier"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="147"/>
+            <column id="149"/>
+            <column id="151"/>
+            <column id="152"/>
+            <header>
+                <row id="114">
+                    <cell id="115">
+                        <label id="116">
+                            <text-property name="text">Packages1::name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="119">
+                        <label id="120">
+                            <text-property name="text">Packages1::documentation</text-property>
+                        </label>
+                    </cell>
+                    <cell id="123">
+                        <label id="124">
+                            <text-property name="text">Enumerations::name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="125">
+                        <label id="126">
+                            <text-property name="text">Enumerations::identifier</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <group id="153">
+                <property name="groupName">NewTableGroup1</property>
+                <expression name="keyExpr" type="javascript">row["Packages1::name"]</expression>
+                <structure name="toc">
+                    <expression name="expressionValue" type="javascript">row["Packages1::name"]</expression>
+                </structure>
+                <property name="hideDetail">false</property>
+                <property name="pageBreakAfter">always</property>
+                <property name="pageBreakBefore">always-excluding-first</property>
+                <header>
+                    <row id="154">
+                        <cell id="155">
+                            <data id="168">
+                                <property name="resultSetColumn">Packages1::name</property>
+                            </data>
+                        </cell>
+                        <cell id="157"/>
+                        <cell id="159"/>
+                        <cell id="160"/>
+                    </row>
+                </header>
+                <footer>
+                    <row id="161">
+                        <cell id="162"/>
+                        <cell id="164"/>
+                        <cell id="166"/>
+                        <cell id="167"/>
+                    </row>
+                </footer>
+            </group>
+            <detail>
+                <row id="127">
+                    <cell id="128">
+                        <data id="129">
+                            <property name="resultSetColumn">Packages1::name</property>
+                        </data>
+                    </cell>
+                    <cell id="132">
+                        <data id="133">
+                            <property name="resultSetColumn">Packages1::documentation</property>
+                        </data>
+                    </cell>
+                    <cell id="136">
+                        <data id="137">
+                            <property name="resultSetColumn">Enumerations::name</property>
+                        </data>
+                    </cell>
+                    <cell id="138">
+                        <data id="139">
+                            <property name="resultSetColumn">Enumerations::identifier</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="140">
+                    <cell id="141"/>
+                    <cell id="143"/>
+                    <cell id="145"/>
+                    <cell id="146"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>
