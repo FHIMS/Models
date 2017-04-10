@@ -1853,6 +1853,9 @@ Represents &quot;the section of the diagnostic service where the observation was
         <body>This abstract class provides properties and behaviors common to all medical records, or in terms of the HL7 QIDAM, to all &quot;statements of occurance&quot; as well as &quot;statements of non-occurance&quot;.  This class allows for common representations data provenance, including the Author, the Data Enterer, the Verifier, etc.</body>
       </ownedComment>
       <ownedAttribute xmi:id="_EMgfoOQxEeaH9t35G2snaA" name="authored" visibility="public" type="_1nqfgOQXEeak6NCuAd5Onw">
+        <ownedComment xmi:id="_aMbGoBTQEeeSDZ571EKARw" annotatedElement="_EMgfoOQxEeaH9t35G2snaA">
+          <body>&quot;The healthcare professional responsible for authorizing the initial prescription.&quot; - HL7 FHIR, MedicationRequest.requester.agent</body>
+        </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HhCygOQxEeaH9t35G2snaA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HhCLcOQxEeaH9t35G2snaA"/>
       </ownedAttribute>
@@ -1866,6 +1869,9 @@ Represents &quot;the section of the diagnostic service where the observation was
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ra07EuQxEeaH9t35G2snaA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_NgU0YOQxEeaH9t35G2snaA" name="dataEntered" visibility="public" type="_1nqfgOQXEeak6NCuAd5Onw">
+        <ownedComment xmi:id="_RmTlYBTQEeeSDZ571EKARw" annotatedElement="_NgU0YOQxEeaH9t35G2snaA">
+          <body>&quot;The person who entered the order on behalf of another individual for example in the case of a verbal or a telephone order.&quot; - HL7 FHIR, MedicationRequest.recorder</body>
+        </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NgU0YeQxEeaH9t35G2snaA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NgU0YuQxEeaH9t35G2snaA"/>
       </ownedAttribute>
@@ -3001,4 +3007,6 @@ b2) Order2. relatedClinicalInformation. clinicalInformation points to Order1.&#x
   <Default:Documentation xmi:id="_Klb-kgg2Eee_toNtDpbL8w" base_Comment="_N0IH4DfsEeKnE98EkGeXFQ"/>
   <Default:Documentation xmi:id="_-fE0QAg2Eee_toNtDpbL8w" base_Comment="_-e7qUAg2Eee_toNtDpbL8w"/>
   <Default:Documentation xmi:id="_Ck8BsAjMEeeH-JUbuHPVcg" base_Comment="_Cky3wAjMEeeH-JUbuHPVcg"/>
+  <Default:Documentation xmi:id="_RmdWYBTQEeeSDZ571EKARw" base_Comment="_RmTlYBTQEeeSDZ571EKARw"/>
+  <Default:Documentation xmi:id="_aMk3oBTQEeeSDZ571EKARw" base_Comment="_aMbGoBTQEeeSDZ571EKARw"/>
 </xmi:XMI>
