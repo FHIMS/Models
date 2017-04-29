@@ -108,6 +108,11 @@
     <packageImport xmi:id="_ZLwkpZ1cEeKGRqm0H7Eu1A">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lnGYUPHkEeGWjrqT5CRABg" name="CounselingRequest">
+      <ownedComment xmi:id="_9iW3kPHkEeGWjrqT5CRABg" annotatedElement="_lnGYUPHkEeGWjrqT5CRABg">
+        <body>A request to provide guidance in order to help a person resolve social or personal problems.  This class serves as a placeholder, anticipating the need for such a request, to be further elaborated in a future iteration.</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_terqkLxzEeSLwM7JIxbinw" name="Provenance" isAbstract="true"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_9dxdILx2EeSLwM7JIxbinw" name="MedicalRecordsProvenance">
       <ownedComment xmi:id="_y_zCYOQ4EeaH9t35G2snaA" annotatedElement="_9dxdILx2EeSLwM7JIxbinw">
@@ -4130,7 +4135,7 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <Default:Documentation xmi:id="_9WWHkCVQEeO_iaEYDPvTaA" base_Comment="_9WM9oCVQEeO_iaEYDPvTaA"/>
   <Default:Documentation xmi:id="_4WxZwCVREeO_iaEYDPvTaA" base_Comment="_4WoP0CVREeO_iaEYDPvTaA"/>
   <term:ValueSetConstraint xmi:id="_YN8g4PXwEeWUqry1B7qRsQ" base_Property="_oOfAcFlgEeCyw5g2lQh-Ug">
-    <reference href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_kKu4cfXvEeW1BuvtDtBQzQ"/>
+    <reference href="FHIM_Vocab.emx#_kKu4cfXvEeW1BuvtDtBQzQ"/>
   </term:ValueSetConstraint>
   <Default:Documentation xmi:id="_Mc_NcOLiEduGJrQyRGTO1A" base_Comment="_Mc1ceuLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_Mc_NdOLiEduGJrQyRGTO1A" base_Comment="_Mc_Nc-LiEduGJrQyRGTO1A"/>
@@ -4171,4 +4176,6 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <RIM:Observation xmi:id="__tBp0N1uEeSq65vB-N1vxw" base_Class="_0QKFgNfqEeSxkr3j6jZ3ag"/>
   <Default:Documentation xmi:id="_y_8zYOQ4EeaH9t35G2snaA" base_Comment="_y_zCYOQ4EeaH9t35G2snaA"/>
   <RIM:Observation xmi:id="_VC3XwLx6EeSLwM7JIxbinw" base_Class="_terqkLxzEeSLwM7JIxbinw"/>
+  <Default:Documentation xmi:id="_9iezYPHkEeGWjrqT5CRABg" base_Comment="_9iW3kPHkEeGWjrqT5CRABg"/>
+  <RIM:Act xmi:id="_pD9gwPHkEeGWjrqT5CRABg" base_Class="_lnGYUPHkEeGWjrqT5CRABg"/>
 </xmi:XMI>
