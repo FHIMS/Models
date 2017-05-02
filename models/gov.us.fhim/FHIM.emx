@@ -468,7 +468,7 @@
           <styles xmi:type="notation:TextStyle" xmi:id="_8F3pM1jKEeG6Pp3Py7p1bw"/>
           <styles xmi:type="notation:LineTypeStyle" xmi:id="_8F3pNFjKEeG6Pp3Py7p1bw"/>
           <element xsi:nil="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8F3pNVjKEeG6Pp3Py7p1bw" x="634" y="317"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8F3pNVjKEeG6Pp3Py7p1bw" x="317" y="-1585"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_vLm_wJ93EeGVHtLvLEEdog" fontName="Arial" fontHeight="8" showListVisibility="None" fillColor="15652322" lineColor="12464763" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_vLwwwJ93EeGVHtLvLEEdog" type="ImageCompartment">
@@ -548,6 +548,18 @@
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_I4t6owjREeeH-JUbuHPVcg" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="MedicationAdministration.efx#__EI_AAjMEeeH-JUbuHPVcg?FHIM/MedicationAdministration?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I4tTkQjREeeH-JUbuHPVcg" x="12046" y="7925" width="3569" height="1370"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ukzSoC93Eee8ZskGHfh21g" type="Note" fontName="Segoe UI" description="NOTE: The FHIM is being re-factored to harmonize with CIMI, which introduces a new Topic/Context pattern. At this time, both the previous and new styles exist in different packages. In those packages where the old style still exists (e.g., Lab), the links to the top-level Order classes have been removed, but the new style hasn't been fully implemented yet. It is anticipated that the majority of the FHIM will be converted to the new style by September 2017. For an example of the new style, see the Medication Administration package." fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_ukzSpC93Eee8ZskGHfh21g" type="DiagramName">
+            <element xsi:nil="true"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_ukzSpS93Eee8ZskGHfh21g" type="Description">
+            <element xsi:nil="true"/>
+          </children>
+          <styles xmi:type="notation:TextStyle" xmi:id="_ukzSoS93Eee8ZskGHfh21g"/>
+          <styles xmi:type="notation:LineTypeStyle" xmi:id="_ukzSoi93Eee8ZskGHfh21g"/>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ukzSoy93Eee8ZskGHfh21g" x="8559" y="-1585" width="15237" height="3491"/>
         </children>
         <element xsi:nil="true"/>
       </contents>
@@ -657,6 +669,34 @@ The FHIM is an integrated model, and each diagram shows only a portion of the mo
     <packagedElement xmi:type="uml:Package" href="WomensHealth.efx#_420A62FD03B6436137C60273?FHIM/WomensHealth?"/>
     <packagedElement xmi:type="uml:Package" href="Person.efx#_MMS2oEDFEeO2aaQpQxRerg?FHIM/Person?"/>
     <packagedElement xmi:type="uml:Package" href="MedicationAdministration.efx#__EI_AAjMEeeH-JUbuHPVcg?FHIM/MedicationAdministration?"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_r4kUyC9dEee8ZskGHfh21g" name="workstationLocation_organizationalProvider">
+      <ownedEnd xmi:id="_r4kUyS9dEee8ZskGHfh21g" name="" visibility="public" association="_r4kUyC9dEee8ZskGHfh21g">
+        <type xmi:type="uml:Class" href="SecurityAndPrivacy.efx#_nIw2QG9HEd-uDMQ5GLSKhg?FHIM/SecurityAndPrivacy/OlderClassesToBeDeleted/_gone_AccessPoint?"/>
+      </ownedEnd>
+      <memberEnd href="SecurityAndPrivacy.efx#_M-u0wXrsEd-JS-dJS9jZTw?FHIM/SecurityAndPrivacy/OlderClassesToBeDeleted/_gone_AccessPoint/organizationalProvider?"/>
+      <memberEnd href="#_r4kUyS9dEee8ZskGHfh21g?FHIM/workstationLocation_organizationalProvider/%3CProperty%3E?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_r4kUyi9dEee8ZskGHfh21g">
+      <ownedEnd xmi:id="_r4kUyy9dEee8ZskGHfh21g" name="" visibility="public" association="_r4kUyi9dEee8ZskGHfh21g">
+        <type xmi:type="uml:Class" href="SecurityAndPrivacy.efx#_nIw2QG9HEd-uDMQ5GLSKhg?FHIM/SecurityAndPrivacy/OlderClassesToBeDeleted/_gone_AccessPoint?"/>
+      </ownedEnd>
+      <memberEnd href="SecurityAndPrivacy.efx#_Br6T4CovEeS9gfEvdy2nFQ?FHIM/SecurityAndPrivacy/OlderClassesToBeDeleted/_gone_AccessPoint/serviceDeliveryLocation?"/>
+      <memberEnd href="#_r4kUyy9dEee8ZskGHfh21g?FHIM/%3CAssociation%3E/%3CProperty%3E?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_r4kUzC9dEee8ZskGHfh21g">
+      <ownedEnd xmi:id="_r4kUzS9dEee8ZskGHfh21g" name="" visibility="public" association="_r4kUzC9dEee8ZskGHfh21g">
+        <type xmi:type="uml:Class" href="SecurityAndPrivacy.efx#_nIw2QG9HEd-uDMQ5GLSKhg?FHIM/SecurityAndPrivacy/OlderClassesToBeDeleted/_gone_AccessPoint?"/>
+      </ownedEnd>
+      <memberEnd href="SecurityAndPrivacy.efx#_Y4AHUHG9EeSUPN3DMaTGrQ?FHIM/SecurityAndPrivacy/OlderClassesToBeDeleted/_gone_AccessPoint/accessDeviceInstance?"/>
+      <memberEnd href="#_r4kUzS9dEee8ZskGHfh21g?FHIM/%3CAssociation%3E/%3CProperty%3E?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_r4kU2i9dEee8ZskGHfh21g" name="userRole_organizationalProvider">
+      <ownedEnd xmi:id="_r4kU2y9dEee8ZskGHfh21g" name="" visibility="public" association="_r4kU2i9dEee8ZskGHfh21g">
+        <type xmi:type="uml:Class" href="SecurityAndPrivacy.efx#_xro5MHr6Ed-JS-dJS9jZTw?FHIM/SecurityAndPrivacy/OlderClassesToBeDeleted/_gone_UserRole?"/>
+      </ownedEnd>
+      <memberEnd href="SecurityAndPrivacy.efx#_OThfoXr7Ed-JS-dJS9jZTw?FHIM/SecurityAndPrivacy/OlderClassesToBeDeleted/_gone_UserRole/organizationalProvider?"/>
+      <memberEnd href="#_r4kU2y9dEee8ZskGHfh21g?FHIM/userRole_organizationalProvider/%3CProperty%3E?"/>
+    </packagedElement>
     <profileApplication xmi:id="_Lo1MoeLiEduGJrQyRGTO1A">
       <eAnnotations xmi:id="_Lo1MouLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
