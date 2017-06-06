@@ -495,7 +495,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_c3wa8gtNEeeG4Ld6dMI9eQ" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_c3wa8wtNEeeG4Ld6dMI9eQ" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_c3wa9AtNEeeG4Ld6dMI9eQ" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Common.efx#_epasEPRzEeaL1vtd_d-dUA?FHIM/Common/Act?"/>
+          <element xmi:type="uml:Class" href="Common.efx#_epasEPRzEeaL1vtd_d-dUA?FHIM/Common/ActTopic?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c3ulwQtNEeeG4Ld6dMI9eQ" x="9193" y="951"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_ccyKcA2jEeeMBqEaSj7yvw" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="12303359" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -2184,55 +2184,6 @@
           </children>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BoyNEQ8PEeeWNeKQZ8tkag" points="[24, -61, -67, 200]$[134, -288, 43, -27]"/>
         </edges>
-        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_SOxVoA8UEeeWNeKQZ8tkag" source="_SOvgcA8UEeeWNeKQZ8tkag" target="_30oksA8JEeeWNeKQZ8tkag" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
-          <children xmi:type="notation:DecorationNode" xmi:id="_SOx8sA8UEeeWNeKQZ8tkag" visible="false" type="NameLabel">
-            <children xmi:type="notation:BasicDecorationNode" xmi:id="_SOx8sg8UEeeWNeKQZ8tkag" type="Stereotype"/>
-            <children xmi:type="notation:BasicDecorationNode" xmi:id="_SOx8sw8UEeeWNeKQZ8tkag" type="Name"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SOx8sQ8UEeeWNeKQZ8tkag" y="-186"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_SOyjwA8UEeeWNeKQZ8tkag" visible="false" type="ToMultiplicityLabel">
-            <children xmi:type="notation:BasicDecorationNode" xmi:id="_SOyjwg8UEeeWNeKQZ8tkag" type="ToMultiplicity"/>
-            <element xmi:type="uml:Property" href="Common.efx#_8a_mwNS6EeSyzs7OQneM_g?FHIM/Common/careTeamMember_healthcareProvider/%3CProperty%3E?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_SOyjwQ8UEeeWNeKQZ8tkag" y="396"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_SOyjww8UEeeWNeKQZ8tkag" type="ToRoleLabel">
-            <children xmi:type="notation:BasicDecorationNode" xmi:id="_SOyjxQ8UEeeWNeKQZ8tkag" type="ToRole"/>
-            <element xmi:type="uml:Property" href="Common.efx#_8a_mwNS6EeSyzs7OQneM_g?FHIM/Common/careTeamMember_healthcareProvider/%3CProperty%3E?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_SOyjxA8UEeeWNeKQZ8tkag" y="-397"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_SOzK0A8UEeeWNeKQZ8tkag" type="FromMultiplicityLabel">
-            <children xmi:type="notation:BasicDecorationNode" xmi:id="_SOzK0g8UEeeWNeKQZ8tkag" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="Common.efx#_8a-YoNS6EeSyzs7OQneM_g?FHIM/Common/CareTeamMember/healthcareProvider?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_SOzK0Q8UEeeWNeKQZ8tkag" y="396"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_SOzK0w8UEeeWNeKQZ8tkag" type="FromRoleLabel">
-            <children xmi:type="notation:BasicDecorationNode" xmi:id="_SOzK1Q8UEeeWNeKQZ8tkag" type="FromRole"/>
-            <element xmi:type="uml:Property" href="Common.efx#_8a-YoNS6EeSyzs7OQneM_g?FHIM/Common/CareTeamMember/healthcareProvider?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_SOzK1A8UEeeWNeKQZ8tkag" y="-397"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_SOzx4A8UEeeWNeKQZ8tkag" visible="false" type="ToQualifierLabel">
-            <children xmi:type="notation:SemanticListCompartment" xmi:id="_SOzx4g8UEeeWNeKQZ8tkag" type="QualifierCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_8a_mwNS6EeSyzs7OQneM_g?FHIM/Common/careTeamMember_healthcareProvider/%3CProperty%3E?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_SOzx4Q8UEeeWNeKQZ8tkag" y="-186"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_SOzx4w8UEeeWNeKQZ8tkag" visible="false" type="FromQualifierLabel">
-            <children xmi:type="notation:SemanticListCompartment" xmi:id="_SOzx5Q8UEeeWNeKQZ8tkag" type="QualifierCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_8a-YoNS6EeSyzs7OQneM_g?FHIM/Common/CareTeamMember/healthcareProvider?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_SOzx5A8UEeeWNeKQZ8tkag" y="-186"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_SOzx5g8UEeeWNeKQZ8tkag" visible="false" type="ToConstraintLabel">
-            <children xmi:type="notation:ListCompartment" xmi:id="_SO0Y8A8UEeeWNeKQZ8tkag" type="ToConstraintCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_8a_mwNS6EeSyzs7OQneM_g?FHIM/Common/careTeamMember_healthcareProvider/%3CProperty%3E?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_SOzx5w8UEeeWNeKQZ8tkag" y="1058"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_SO0Y8Q8UEeeWNeKQZ8tkag" visible="false" type="FromConstraintLabel">
-            <children xmi:type="notation:ListCompartment" xmi:id="_SO0Y8w8UEeeWNeKQZ8tkag" type="FromConstraintCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_8a-YoNS6EeSyzs7OQneM_g?FHIM/Common/CareTeamMember/healthcareProvider?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_SO0Y8g8UEeeWNeKQZ8tkag" y="1058"/>
-          </children>
-          <element xmi:type="uml:Association" href="Common.efx#_8a9KgNS6EeSyzs7OQneM_g?FHIM/Common/careTeamMember_healthcareProvider?"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SOxVoQ8UEeeWNeKQZ8tkag" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-        </edges>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_SO1AAA8UEeeWNeKQZ8tkag" element="__XMcYIelEeOX_brmw15GsQ" source="_x4sXEAULEee0I6zDzuEapA" target="_SOvgcA8UEeeWNeKQZ8tkag" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_SO1AAg8UEeeWNeKQZ8tkag" visible="false" type="NameLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_SO1ABA8UEeeWNeKQZ8tkag" type="Stereotype"/>
@@ -2694,7 +2645,7 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
 &quot;A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s).&quot; - HL7 FHIR, Appointment</body>
       </ownedComment>
       <generalization xmi:id="_JKGY0A2jEeeMBqEaSj7yvw">
-        <general xmi:type="uml:Class" href="Common.efx#_epasEPRzEeaL1vtd_d-dUA?FHIM/Common/Act?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_epasEPRzEeaL1vtd_d-dUA?FHIM/Common/ActTopic?"/>
       </generalization>
       <ownedAttribute xmi:id="_420A62FD03B6426643090271" name="appointmentType" visibility="public">
         <ownedComment xmi:id="_MYg9KuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6426643090271">
@@ -2904,7 +2855,7 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
 &quot;...a Service Episode is the context in which the treatment or management of an arbitrary subset of a Patient s medical conditions occurs. The definition of the start time, stop time, and included events of a Service Episode is entirely arbitrary; it may include a single outpatient visit or a hospitalization, or extend over significant period of time, e.g., the duration of a pregnancy, or an oncology treatment regimen, or a cardiac episode from infarction through rehabilitation. A Service Episode may involve one or more Healthcare Organizations.&quot; - HL7 Version 2.8, PV1-53</body>
       </ownedComment>
       <generalization xmi:id="_F07MwA2jEeeMBqEaSj7yvw">
-        <general xmi:type="uml:Class" href="Common.efx#_epasEPRzEeaL1vtd_d-dUA?FHIM/Common/Act?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_epasEPRzEeaL1vtd_d-dUA?FHIM/Common/ActTopic?"/>
       </generalization>
       <ownedAttribute xmi:id="_RfMMIGiuEeG3pKm-C5y0hA" name="abstractEncounter" visibility="public" type="_qS7A8GitEeG3pKm-C5y0hA" aggregation="shared" association="_RfH6sGiuEeG3pKm-C5y0hA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RfNaQWiuEeG3pKm-C5y0hA" value="*"/>
@@ -3252,7 +3203,7 @@ This class represents the result of the enumeration, which may be stored as a si
         <body>The act of transferring a patient from one location or responsible organization to another.  Note that a transfer from organization to another will, by definition, trigger a new encounter.  Note that a transfer from one location to another may trigger a new encounter depending on whether the responsible organization has changed.  A movement from one bed within the same ward to another probably will not, but a movement from one ward to another probably would. </body>
       </ownedComment>
       <generalization xmi:id="_Hc0XoA2jEeeMBqEaSj7yvw">
-        <general xmi:type="uml:Class" href="Common.efx#_epasEPRzEeaL1vtd_d-dUA?FHIM/Common/Act?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_epasEPRzEeaL1vtd_d-dUA?FHIM/Common/ActTopic?"/>
       </generalization>
       <ownedAttribute xmi:id="_420A62FD03B6425467AC01C5" name="category" visibility="public">
         <ownedComment xmi:id="_Mb8EkuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6425467AC01C5">
@@ -3309,7 +3260,7 @@ This class represents the result of the enumeration, which may be stored as a si
         <body>The release of a patient from a course of care.</body>
       </ownedComment>
       <generalization xmi:id="_IYy3sA2jEeeMBqEaSj7yvw">
-        <general xmi:type="uml:Class" href="Common.efx#_epasEPRzEeaL1vtd_d-dUA?FHIM/Common/Act?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_epasEPRzEeaL1vtd_d-dUA?FHIM/Common/ActTopic?"/>
       </generalization>
       <ownedAttribute xmi:id="_9Uhg8NivEdyb35bKix456w" name="date" visibility="public">
         <ownedComment xmi:id="_zdw9sCqKEd6tfJk2wVTfYw" annotatedElement="_9Uhg8NivEdyb35bKix456w">
@@ -3514,7 +3465,7 @@ This class represents the result of the enumeration, which may be stored as a si
         <body>Contains properties common to multiple kinds of Encounters.  This class shouldn't be instantiated, rather one of the concrete subtypes would be.</body>
       </ownedComment>
       <generalization xmi:id="_FBkdMA2jEeeMBqEaSj7yvw">
-        <general xmi:type="uml:Class" href="Common.efx#_epasEPRzEeaL1vtd_d-dUA?FHIM/Common/Act?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_epasEPRzEeaL1vtd_d-dUA?FHIM/Common/ActTopic?"/>
       </generalization>
       <ownedAttribute xmi:id="_420A62FD03B6426D52220172" name="comments" visibility="public">
         <ownedComment xmi:id="_MZtP-uLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6426D52220172">
@@ -3865,7 +3816,7 @@ This class represents the period during which the Patient is admitted into a hos
 Admission: &quot;A full stay. The formal acceptance by a hospital or other inpatient health care facility of a patient who is to be provided with room, board, and continuous nursing service in an area of the hospital or facility where patients generally reside at least overnight.&quot; - Mosby's Dental Dictionary.</body>
       </ownedComment>
       <generalization xmi:id="_GhTKkA2jEeeMBqEaSj7yvw">
-        <general xmi:type="uml:Class" href="Common.efx#_epasEPRzEeaL1vtd_d-dUA?FHIM/Common/Act?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_epasEPRzEeaL1vtd_d-dUA?FHIM/Common/ActTopic?"/>
       </generalization>
       <ownedAttribute xmi:id="_kvGW8ExgEdyVYrcEhQ5TbQ" name="admissionDate" visibility="public">
         <ownedComment xmi:id="_TAidYCqKEd6tfJk2wVTfYw" annotatedElement="_kvGW8ExgEdyVYrcEhQ5TbQ">
