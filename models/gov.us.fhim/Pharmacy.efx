@@ -2454,14 +2454,6 @@ Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requ
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_evgGGeLjEdutr_MT9HkPyQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_evgGGOLjEdutr_MT9HkPyQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B64592C60B0338" name="discontinueDate" visibility="public">
-        <ownedComment xmi:id="_NZLv9OLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64592C60B0338">
-          <body>This is the date the order was discontinued.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tzkZQbzUEeasQoRN2Ou_5g" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tzkZQLzUEeasQoRN2Ou_5g"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B641990EA80281" name="expirationDate" visibility="public">
         <eAnnotations xmi:id="_NZob5uLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <ownedComment xmi:id="_NZob5OLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B641990EA80281">
@@ -2523,20 +2515,6 @@ Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requ
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Tq7mgfUxEdyqkvQ4FycnSQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Tq7mgPUxEdyqkvQ4FycnSQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B64592C90801F1" name="orderModality" visibility="public">
-        <ownedComment xmi:id="_NZVg8uLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64592C90801F1">
-          <body>This is the method the provider used to communicate to the user to enter (or take any other action) on the order.  Examples include: Written, Telephoned, Verbal, Electronically Entered, Policy, Service Correction, Duplicate, etc.&#xD;
-&quot;Code indicating the origin of the prescription.&quot; - NCPDP Telecommunication (Field 419-DJ, Data Dictionary 201104).  Possible values include: Written; Telephone; Electronic; Facsimile; Pharmacy; Not Known.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wny0YLzUEeasQoRN2Ou_5g" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wnpqcLzUEeasQoRN2Ou_5g"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_vgS38PXuEeW1BuvtDtBQzQ">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(OrderModality)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B641A342230296" name="requestedAdministrationTime" visibility="public" isOrdered="true" isUnique="false">
         <eAnnotations xmi:id="_NZB--uLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -2675,7 +2653,7 @@ Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requ
         <body>Contains information about a medication which the patient reports to be using. This includes over-the-counter, vitamins, herbal products, and non-prescribed medications. This information is used by the orderer and/or the pharmacy to perform drug-drug interaction checks and to ascertain whether the patient is utilizing the appropriate mix of medications for their condition(s).</body>
       </ownedComment>
       <generalization xmi:id="_i8rloIy4EeaPWbBiMJSPyg">
-        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
       <ownedAttribute xmi:id="_420A62FD03B64592C5ED0136" name="dateRange" visibility="public">
         <ownedComment xmi:id="_NY41DeLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64592C5ED0136">
@@ -3790,7 +3768,6 @@ This property carries both the low (aka minimum), and high (aka maximum) amounts
   <Default:Documentation xmi:id="_8r6yEMrEEeG4_uv2Hb_AVQ" base_Comment="_8rxoIMrEEeG4_uv2Hb_AVQ"/>
   <Default:Documentation xmi:id="_8uupRJXYEeCD7vwmJe8BlA" base_Comment="_8uupQZXYEeCD7vwmJe8BlA"/>
   <Default:Documentation xmi:id="_9QO-YCf8EeC-JKXSDMHR6A" base_Comment="_NZB--OLiEduGJrQyRGTO1A"/>
-  <Default:Documentation xmi:id="_9QO-Yif8EeC-JKXSDMHR6A" base_Comment="_NZLv9OLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_9QO-YSf8EeC-JKXSDMHR6A" base_Comment="_NZB-_eLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_atC-F4nCEd-_v4Q8joL6LQ" base_Comment="_NIV3leLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_atC-GInCEd-_v4Q8joL6LQ" base_Comment="_NIMtquLiEduGJrQyRGTO1A"/>
@@ -3844,7 +3821,6 @@ This property carries both the low (aka minimum), and high (aka maximum) amounts
   <Default:Documentation xmi:id="_NYSYEOLiEduGJrQyRGTO1A" base_Comment="_NYJOK-LiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_NYvEAOLiEduGJrQyRGTO1A" base_Comment="_NYl6HeLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_NZB-8OLiEduGJrQyRGTO1A" base_Comment="_NY41EOLiEduGJrQyRGTO1A"/>
-  <Default:Documentation xmi:id="_NZVg8-LiEduGJrQyRGTO1A" base_Comment="_NZVg8uLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_NZyM4OLiEduGJrQyRGTO1A" base_Comment="_NZob8eLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_PHPIMNQYEeG6j-OawvA6JA" base_Comment="_PHBs0NQYEeG6j-OawvA6JA"/>
   <Default:Documentation xmi:id="_PiobwCT1EeGLU77N-kQBww" base_Comment="_PilYcCT1EeGLU77N-kQBww"/>
@@ -3953,9 +3929,6 @@ This property carries both the low (aka minimum), and high (aka maximum) amounts
   </term:ValueSetConstraint>
   <term:ValueSetConstraint xmi:id="_Po3zYPXuEeW1BuvtDtBQzQ" base_Property="_Tln68Ca2EeOyp-Ce3y08Wg">
     <reference href="FHIM_Vocab.emx#_jf2aUfXtEeW1BuvtDtBQzQ?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_vtXDkPXuEeW1BuvtDtBQzQ" base_Property="_420A62FD03B64592C90801F1">
-    <reference href="FHIM_Vocab.emx#_ksG9sPUfEeWp_Mwb77TLSQ?%3CValueSetVersion%3E?"/>
   </term:ValueSetConstraint>
   <Default:Documentation xmi:id="_WpuzgFXUEea8trdE1wM1gQ" base_Comment="_WphYIFXUEea8trdE1wM1gQ"/>
   <Default:Documentation xmi:id="_rWIkIHE-EeaIzczSuyGEmQ" base_Comment="_NdDjVeLiEduGJrQyRGTO1A"/>
