@@ -358,7 +358,14 @@
                     <property name="columnName">owneruri</property>
                     <property name="analysis">dimension</property>
                     <text-property name="displayName">owneruri</text-property>
+                    <property name="onColumnLayout">false</property>
                     <text-property name="heading">owneruri</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">definition</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">definition</text-property>
+                    <text-property name="heading">definition</text-property>
                 </structure>
             </list-property>
             <list-property name="parameters"/>
@@ -377,6 +384,11 @@
                     <structure>
                         <property name="position">3</property>
                         <property name="name">owneruri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">definition</property>
                         <property name="dataType">string</property>
                     </structure>
                 </list-property>
@@ -401,6 +413,13 @@
                     <property name="position">3</property>
                     <property name="name">owneruri</property>
                     <property name="nativeName">owneruri</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">definition</property>
+                    <property name="nativeName">definition</property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">7</property>
                 </structure>
@@ -449,7 +468,7 @@
                 </ex-property>
             </list-property>
             <property name="rowQuery">instanceOf(//*, "uml:Enumeration")</property>
-            <property name="columnQueries">name;@name;String#-#identifier;getStereotypePropertyValue(., "Terminology::ValueSetVersion::identifier");String#-#owneruri;getURI(./owner);String</property>
+            <property name="columnQueries">name;@name;String#-#identifier;getStereotypePropertyValue(., "Terminology::ValueSetVersion::identifier");String#-#owneruri;getURI(./owner);String#-#definition;getStereotypePropertyValue(., "Terminology::ValueSetVersion::definition");String</property>
             <property name="rowType">uml:Enumeration</property>
             <property name="rowStereotypes">Terminology::ValueSetVersion</property>
             <property name="evaluateOnInstances">true</property>
@@ -545,6 +564,11 @@
                     <structure>
                         <property name="position">8</property>
                         <property name="name">Enumerations::owneruri</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">Enumerations::definition</property>
                         <property name="dataType">string</property>
                     </structure>
                 </list-property>
@@ -663,11 +687,18 @@
                     <expression name="expression" type="javascript">dataSetRow["Enumerations::identifier"]</expression>
                     <property name="dataType">string</property>
                 </structure>
+                <structure>
+                    <property name="name">Enumerations::definition</property>
+                    <text-property name="displayName">Enumerations::definition</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Enumerations::definition"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
             </list-property>
             <column id="147"/>
             <column id="149"/>
             <column id="151"/>
             <column id="152"/>
+            <column id="174"/>
             <header>
                 <row id="114">
                     <cell id="115">
@@ -688,6 +719,11 @@
                     <cell id="125">
                         <label id="126">
                             <text-property name="text">Enumerations::identifier</text-property>
+                        </label>
+                    </cell>
+                    <cell id="169">
+                        <label id="176">
+                            <text-property name="text">Enumerations::definition</text-property>
                         </label>
                     </cell>
                 </row>
@@ -711,6 +747,7 @@
                         <cell id="157"/>
                         <cell id="159"/>
                         <cell id="160"/>
+                        <cell id="170"/>
                     </row>
                 </header>
                 <footer>
@@ -719,6 +756,7 @@
                         <cell id="164"/>
                         <cell id="166"/>
                         <cell id="167"/>
+                        <cell id="172"/>
                     </row>
                 </footer>
             </group>
@@ -744,6 +782,11 @@
                             <property name="resultSetColumn">Enumerations::identifier</property>
                         </data>
                     </cell>
+                    <cell id="171">
+                        <data id="177">
+                            <property name="resultSetColumn">Enumerations::definition</property>
+                        </data>
+                    </cell>
                 </row>
             </detail>
             <footer>
@@ -752,6 +795,7 @@
                     <cell id="143"/>
                     <cell id="145"/>
                     <cell id="146"/>
+                    <cell id="173"/>
                 </row>
             </footer>
         </table>
