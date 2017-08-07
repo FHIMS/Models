@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.5-->
+<!--Rational Software Architect Designer 9.6-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:FHIM="http://gov.us.fhim/profile/1" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_DVq1IAY0EeGz0dkadElrkQ" name="CarePlan">
     <eAnnotations xmi:id="_NhDbYEDLEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_Ng8GoEDLEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -1967,7 +1967,7 @@ As a consequence of this, all classes potentially have recursive relationships t
 Note that a goal might be constructed of sub-goals, which might each be associated with a single outcome.  For example, a goal to loose 5 pounds per week over 6 weeks might spawn 6 child goals to loose 5 pounds in week 1, week 2, etc.  Each child goal would be associated with one actual outcome (i.e., lost 4 pounds in week 1; lost 6 pounds in week 2, etc).  Then the &quot;parent&quot; goal outcome could be the total (e.g., lost 28 pounds in 6 weeks).</body>
       </ownedComment>
       <generalization xmi:id="_1wb9kNfLEeSTuOyAKngSWg">
-        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
       <ownedAttribute xmi:id="_1267kAY0EeGz0dkadElrkQ" name="category" visibility="public">
         <ownedComment xmi:id="_wbq1INfHEeSTuOyAKngSWg" annotatedElement="_1267kAY0EeGz0dkadElrkQ">
@@ -2188,7 +2188,7 @@ Note that a goal might be constructed of sub-goals, which might each be associat
 &quot;Describes the intention of how one or more practitioners intend to deliver care for a particular patient for a period of time, possibly limited to care for a specific condition or set of conditions.&quot; - HL7 FHIR, CarePlan resource.</body>
       </ownedComment>
       <generalization xmi:id="_utVrEMQ_EeSThJ7NwJgY1w">
-        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
       <ownedAttribute xmi:id="_x3mBcAZDEeGz0dkadElrkQ" name="dateCreated" visibility="public">
         <ownedComment xmi:id="_C2HiwNe-EeSTuOyAKngSWg" annotatedElement="_x3mBcAZDEeGz0dkadElrkQ">
@@ -2375,7 +2375,7 @@ Note that a goal might be constructed of sub-goals, which might each be associat
         <ownedComment xmi:id="_TzEKENpFEeSOxtrN8-7DcQ" annotatedElement="_DSq54NpFEeSOxtrN8-7DcQ">
           <body>&quot;Identifies portions of the patient's record that specifically influenced the formation of the plan. These might include co-morbidities, recent procedures, limitations, recent assessments, etc.&quot; - HL7 FHIR, CarePlan.support</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <type xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DSsIAdpFEeSOxtrN8-7DcQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DSsIANpFEeSOxtrN8-7DcQ"/>
       </ownedAttribute>
@@ -2457,7 +2457,7 @@ Note that the efficacy of the Activity towards achieving the Goal is not always 
 &quot;Goal reviews reference multiple action outcomes reviews which support overall assessment of a HealthGoal.&quot; - HL7 Care Plan Domain Analysis Model</body>
       </ownedComment>
       <generalization xmi:id="_MNsbgNfREeSTuOyAKngSWg">
-        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
       <ownedAttribute xmi:id="_arkS8NfUEeSTuOyAKngSWg" name="comments" visibility="public">
         <ownedComment xmi:id="_arkS8dfUEeSTuOyAKngSWg" annotatedElement="_arkS8NfUEeSTuOyAKngSWg">
@@ -2542,7 +2542,7 @@ Note that the efficacy of the Activity towards achieving the Goal is not always 
 &quot;A barrier impacts specific interventions or other plan activities and may necessitate their modification. Barriers are situations outside the health care system which nonetheless reduce or block quality of care and also increase cost. Barrier may also impact on goals achievement if modifications to interventions cannot effectively overcome identified barriers.&quot; - HL7 Care Plan Domain Analysis Model.</body>
       </ownedComment>
       <generalization xmi:id="_sHOz8MmvEeSWo8c3GHgn0Q">
-        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
       <ownedAttribute xmi:id="_i6vhIMmtEeSWo8c3GHgn0Q" name="category" visibility="public">
         <ownedComment xmi:id="_i6vhIcmtEeSWo8c3GHgn0Q" annotatedElement="_i6vhIMmtEeSWo8c3GHgn0Q">
@@ -2735,7 +2735,7 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
 &quot;Identifies a planned action to occur as part of the plan. For example, a medication to be used, lab tests to perform, self-monitoring, education, etc.&quot; - HL7 FHIR, CarePlan.activity</body>
       </ownedComment>
       <generalization xmi:id="_H46moN1CEeSZfdq7h5ueSA">
-        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
       <ownedAttribute xmi:id="_q3sNgM8nEeSxpbhu-p7faA" name="applicability" visibility="public">
         <ownedComment xmi:id="_q3sNgc8nEeSxpbhu-p7faA" annotatedElement="_q3sNgM8nEeSxpbhu-p7faA">
@@ -3276,11 +3276,6 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
     </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_CYXaMAZGEeGz0dkadElrkQ" base_Comment="_CYO3UAZGEeGz0dkadElrkQ"/>
-  <RIM:Act xmi:id="_PlogAAY2EeGz0dkadElrkQ" base_Class="_zXMUUAY1EeGz0dkadElrkQ"/>
-  <RIM:Act xmi:id="_PlogAQY2EeGz0dkadElrkQ" base_Class="_j-V7AAY1EeGz0dkadElrkQ"/>
-  <RIM:ControlAct xmi:id="_EE1toAZHEeGz0dkadElrkQ" base_Class="_xLawkAZGEeGz0dkadElrkQ"/>
-  <RIM:Observation xmi:id="_0_PFoAY0EeGz0dkadElrkQ" base_Class="_rZMYcAY0EeGz0dkadElrkQ"/>
-  <RIM:Observation xmi:id="_sutjcAZAEeGz0dkadElrkQ" base_Class="_mwEawAZAEeGz0dkadElrkQ"/>
   <Default:Documentation xmi:id="_dEPcwH7iEeOYQJZKXKAJnw" base_Comment="_dEG54H7iEeOYQJZKXKAJnw"/>
   <Default:Documentation xmi:id="_48YFIMl8EeOVt_7QhK83EQ" base_Comment="_48D8EMl8EeOVt_7QhK83EQ"/>
   <Default:Documentation xmi:id="_GfNccO_nEeOM48qnBkZzmw" base_Comment="_Ge-L4O_nEeOM48qnBkZzmw"/>
@@ -3300,25 +3295,21 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
   <Default:Documentation xmi:id="_bXE7YMmtEeSWo8c3GHgn0Q" base_Comment="_bXDGMcmtEeSWo8c3GHgn0Q"/>
   <Default:Documentation xmi:id="_i6wvQMmtEeSWo8c3GHgn0Q" base_Comment="_i6vhIcmtEeSWo8c3GHgn0Q"/>
   <Default:Documentation xmi:id="_Ox54sMmvEeSWo8c3GHgn0Q" base_Comment="_Ox4qkcmvEeSWo8c3GHgn0Q"/>
-  <RIM:Observation xmi:id="_qKBEoM8mEeSxpbhu-p7faA" base_Class="_A8TPQLPAEeS3iYN4R_wsuw"/>
   <Default:Documentation xmi:id="_Tx0eIM8nEeSxpbhu-p7faA" base_Comment="_Txyo8c8nEeSxpbhu-p7faA"/>
   <Default:Documentation xmi:id="_Tx0eIc8nEeSxpbhu-p7faA" base_Comment="_TxzQAc8nEeSxpbhu-p7faA"/>
   <Default:Documentation xmi:id="_q3s0kM8nEeSxpbhu-p7faA" base_Comment="_q3sNgc8nEeSxpbhu-p7faA"/>
   <Default:Documentation xmi:id="_4frGIM8nEeSxpbhu-p7faA" base_Comment="_4fp4Ac8nEeSxpbhu-p7faA"/>
-  <RIM:Act xmi:id="_I24lIM8oEeSxpbhu-p7faA" base_Class="_HRcwALk9EeSvIbhHaIFeOA"/>
   <Default:Documentation xmi:id="_dVO4oM8oEeSxpbhu-p7faA" base_Comment="_dVNqgc8oEeSxpbhu-p7faA"/>
   <Default:Documentation xmi:id="_rLy_0M8oEeSxpbhu-p7faA" base_Comment="_rLyYwc8oEeSxpbhu-p7faA"/>
   <Default:Documentation xmi:id="_xVN1IM8oEeSxpbhu-p7faA" base_Comment="_xVMnAc8oEeSxpbhu-p7faA"/>
   <Default:Documentation xmi:id="_zZbIkM8oEeSxpbhu-p7faA" base_Comment="_zZZ6cc8oEeSxpbhu-p7faA"/>
   <Default:Documentation xmi:id="_ILQfIM8xEeSxpbhu-p7faA" base_Comment="_ILJxcM8xEeSxpbhu-p7faA"/>
   <Default:Documentation xmi:id="_R6uOEM8xEeSxpbhu-p7faA" base_Comment="_R6jO8M8xEeSxpbhu-p7faA"/>
-  <RIM:Act xmi:id="_xsgooNSrEeSyzs7OQneM_g" base_Class="_jhwMoLksEeSvIbhHaIFeOA"/>
   <Default:Documentation xmi:id="_RsP7sNSsEeSyzs7OQneM_g" base_Comment="_RsGxwNSsEeSyzs7OQneM_g"/>
   <Default:Documentation xmi:id="_cpTfINSsEeSyzs7OQneM_g" base_Comment="_cpK8QNSsEeSyzs7OQneM_g"/>
   <Default:Documentation xmi:id="_14knINSwEeSyzs7OQneM_g" base_Comment="_14crUNSwEeSyzs7OQneM_g"/>
   <Default:Documentation xmi:id="_-Zll8NSwEeSyzs7OQneM_g" base_Comment="_-ZjwwdSwEeSyzs7OQneM_g"/>
   <Default:Documentation xmi:id="_xAfBYNSxEeSyzs7OQneM_g" base_Comment="_xAeaUdSxEeSyzs7OQneM_g"/>
-  <RIM:Act xmi:id="_Uq_DENS_EeSyzs7OQneM_g" base_Class="_XoccULksEeSvIbhHaIFeOA"/>
   <Default:Documentation xmi:id="_6TcC8NewEeSTuOyAKngSWg" base_Comment="_6TV8UNewEeSTuOyAKngSWg"/>
   <Default:Documentation xmi:id="_C2L0MNe-EeSTuOyAKngSWg" base_Comment="_C2HiwNe-EeSTuOyAKngSWg"/>
   <Default:Documentation xmi:id="_rRDggNe-EeSTuOyAKngSWg" base_Comment="_rQ_PENe-EeSTuOyAKngSWg"/>
@@ -3330,9 +3321,7 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
   <Default:Documentation xmi:id="_wAWgMtfJEeSTuOyAKngSWg" base_Comment="_wAWgMdfJEeSTuOyAKngSWg"/>
   <Default:Documentation xmi:id="_Tq4NgNfLEeSTuOyAKngSWg" base_Comment="_TqucgNfLEeSTuOyAKngSWg"/>
   <Default:Documentation xmi:id="_f4Z6UdfLEeSTuOyAKngSWg" base_Comment="_f4Z6UNfLEeSTuOyAKngSWg"/>
-  <RIM:Observation xmi:id="_PdBQgNfMEeSTuOyAKngSWg" base_Class="_YRZFoMRDEeSThJ7NwJgY1w"/>
   <Default:Documentation xmi:id="_WdDvUtfNEeSTuOyAKngSWg" base_Comment="_WdDvUdfNEeSTuOyAKngSWg"/>
-  <RIM:Observation xmi:id="_a2bt4NfOEeSTuOyAKngSWg" base_Class="_t21S4LPCEeS3iYN4R_wsuw"/>
   <Default:Documentation xmi:id="_N6pXcNfPEeSTuOyAKngSWg" base_Comment="_N6gNgNfPEeSTuOyAKngSWg"/>
   <Default:Documentation xmi:id="_VlRg0tfPEeSTuOyAKngSWg" base_Comment="_VlRg0dfPEeSTuOyAKngSWg"/>
   <Default:Documentation xmi:id="_3A6KItfPEeSTuOyAKngSWg" base_Comment="_3A6KIdfPEeSTuOyAKngSWg"/>
@@ -3364,7 +3353,6 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
   <Default:Documentation xmi:id="_usYF8NoxEeSOxtrN8-7DcQ" base_Comment="_usQKINoxEeSOxtrN8-7DcQ"/>
   <Default:Documentation xmi:id="_b77-YNo0EeSOxtrN8-7DcQ" base_Comment="_Lyw5YO_qEeOM48qnBkZzmw"/>
   <Default:Documentation xmi:id="_b78lcdo0EeSOxtrN8-7DcQ" base_Comment="_2IBrQO_pEeOM48qnBkZzmw"/>
-  <RIM:Act xmi:id="_olVLANo4EeSOxtrN8-7DcQ" base_Class="_MGvssNfWEeSTuOyAKngSWg"/>
   <Default:Documentation xmi:id="_LCJIANo6EeSOxtrN8-7DcQ" base_Comment="_LB-v8No6EeSOxtrN8-7DcQ"/>
   <Default:Documentation xmi:id="_TzN7ENpFEeSOxtrN8-7DcQ" base_Comment="_TzEKENpFEeSOxtrN8-7DcQ"/>
   <Default:Documentation xmi:id="_7fvToNpFEeSOxtrN8-7DcQ" base_Comment="_7fuskdpFEeSOxtrN8-7DcQ"/>
@@ -3374,55 +3362,8 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
   <Default:Documentation xmi:id="_VCoEUN1BEeSZfdq7h5ueSA" base_Comment="_VCjL0N1BEeSZfdq7h5ueSA"/>
   <Default:Documentation xmi:id="_Ku94AHdkEeWxwI-cgx2UYQ" base_Comment="_Ku0uEHdkEeWxwI-cgx2UYQ"/>
   <Default:Documentation xmi:id="_VOZEQHdkEeWxwI-cgx2UYQ" base_Comment="_VOGJUHdkEeWxwI-cgx2UYQ"/>
-  <FHIM:Mapping xmi:id="_ZMMocLoREeWqFd182BzgAw" base_Property="_ZajFENpHEeSOxtrN8-7DcQ">
-    <index xmi:id="_ZMMocboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.activity.detail.code"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMQS0LoREeWqFd182BzgAw" base_Property="_JchssNpIEeSOxtrN8-7DcQ">
-    <index xmi:id="_ZMQS0boREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.activity.detail.goal"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMRg8LoREeWqFd182BzgAw" base_Property="_TVheIXdkEeWxwI-cgx2UYQ">
-    <index xmi:id="_ZMRg8boREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.activity.detail.reason[x]"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMTWILoREeWqFd182BzgAw" base_Property="_DOFXENSuEeSyzs7OQneM_g">
-    <index xmi:id="_ZMTWIboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.activity.detail.product"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMVLULoREeWqFd182BzgAw" base_Property="_rHfC4NoxEeSOxtrN8-7DcQ">
-    <index xmi:id="_ZMVLUboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.activity"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMWZcLoREeWqFd182BzgAw" base_Property="_eDCaMAY1EeGz0dkadElrkQ">
-    <index xmi:id="_ZMWZcboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.participant"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMYOoLoREeWqFd182BzgAw" base_Property="_HODKAAY2EeGz0dkadElrkQ">
-    <index xmi:id="_ZMYOoboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.goal"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMaq4LoREeWqFd182BzgAw" base_Property="_Slt3wAY0EeGz0dkadElrkQ">
-    <index xmi:id="_ZMaq4boREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.patient"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMb5ALoREeWqFd182BzgAw" base_Property="_DSq54NpFEeSOxtrN8-7DcQ">
-    <index xmi:id="_ZMb5AboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="CarePlan.support"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ftIl4LoREeWqFd182BzgAw" base_Classifier="_rZMYcAY0EeGz0dkadElrkQ">
-    <index xmi:id="_ftIl4boREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.3"/>
-    <index xmi:id="_ftIl4roREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Plan of Care Activity Act"/>
-    <index xmi:id="_ftIl47oREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="None"/>
-    <index xmi:id="_ftJ0ALoREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.44"/>
-    <index xmi:id="_ftJ0AboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Plan of Care Activity Observation"/>
-    <index xmi:id="_ftJ0AroREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="None"/>
-    <index xmi:id="_ftLCILoREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.41"/>
-    <index xmi:id="_ftLCIboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Plan of Care Activity Procedure"/>
-    <index xmi:id="_ftLCIroREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="None"/>
-    <index xmi:id="_ftLpMLoREeWqFd182BzgAw" standardOrProject="MU2" value="Diagnostic Test(s) pending"/>
-    <index xmi:id="_ftLpMboREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.42"/>
-    <index xmi:id="_ftLpMroREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Plan of Care Activity Substance Administration"/>
-    <index xmi:id="_ftLpM7oREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="None"/>
-    <index xmi:id="_ftM3ULoREeWqFd182BzgAw" standardOrProject="MU2" value="Future appointments"/>
-    <index xmi:id="_ftM3UboREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.43"/>
-    <index xmi:id="_ftM3UroREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Plan of Care Activity Supply "/>
-    <index xmi:id="_ftM3U7oREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="None"/>
-  </FHIM:Mapping>
   <Default:Documentation xmi:id="_lY-48OYEEeWMCcMdatPOjA" base_Comment="_lY9q0eYEEeWMCcMdatPOjA"/>
   <Default:Documentation xmi:id="_0CiaAOfKEeWKHuD1aKU_UQ" base_Comment="_0Chy8efKEeWKHuD1aKU_UQ"/>
-  <RIM:Observation xmi:id="_5wDEAOt7EeW_d52hJF-Rwg" base_Class="_8nBtoOt6EeW_d52hJF-Rwg"/>
   <Default:Documentation xmi:id="__IrVkOt7EeW_d52hJF-Rwg" base_Comment="__IlO8Ot7EeW_d52hJF-Rwg"/>
   <Default:Documentation xmi:id="_FPwmcO0aEeWjUp19yClo5Q" base_Comment="_FPqf0O0aEeWjUp19yClo5Q"/>
   <Default:Documentation xmi:id="_llC0IO65EeWGc6zSCrskfQ" base_Comment="_lkrAsO65EeWGc6zSCrskfQ"/>
@@ -3444,25 +3385,6 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
   <Default:Documentation xmi:id="_IQhjYO94EeWkMe7GVfjMFQ" base_Comment="_IQYZcO94EeWkMe7GVfjMFQ"/>
   <Default:Documentation xmi:id="_T_2NEO9_EeWkMe7GVfjMFQ" base_Comment="_T_wGcO9_EeWkMe7GVfjMFQ"/>
   <Default:Documentation xmi:id="_NsotIO-AEeWkMe7GVfjMFQ" base_Comment="_Nscf4O-AEeWkMe7GVfjMFQ"/>
-  <term:ValueSetConstraint xmi:id="_IP1WoPWpEeWELv5y3V4qMA" base_Property="_ZajFENpHEeSOxtrN8-7DcQ">
-    <reference href="FHIM_Vocab.emx#_qRfuwOX-EeWMCcMdatPOjA?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_Moq_IPWpEeWELv5y3V4qMA" base_Property="_nTVVUAY_EeGz0dkadElrkQ">
-    <reference href="FHIM_Vocab.emx#_UErZMOX8EeWMCcMdatPOjA?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_VzOqMPWpEeWELv5y3V4qMA" base_Property="_NdGSENo7EeSOxtrN8-7DcQ">
-    <reference href="FHIM_Vocab.emx#_9TFl4OU5EeWlUtxA-8RVeQ?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_pmTMEPWpEeWELv5y3V4qMA" base_Property="_lY9q0OYEEeWMCcMdatPOjA">
-    <reference href="FHIM_Vocab.emx#_U1dgMet-EeW_d52hJF-Rwg?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_rIwdUPWpEeWELv5y3V4qMA" base_Property="_1267kAY0EeGz0dkadElrkQ">
-    <reference href="FHIM_Vocab.emx#_HIsBgO0bEeWjUp19yClo5Q?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_t0m_kPWpEeWELv5y3V4qMA" base_Property="_R1KOcAY9EeGz0dkadElrkQ">
-    <reference href="FHIM_Vocab.emx#_f45RUOYAEeWMCcMdatPOjA?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <RIM:Act xmi:id="_iPhkMJe6EeaSqP4Tgr4Cgg" base_Class="_ZjkgsJe6EeaSqP4Tgr4Cgg"/>
   <Default:Documentation xmi:id="_rkVaoJe-EeaSqP4Tgr4Cgg" base_Comment="_rkJNYJe-EeaSqP4Tgr4Cgg"/>
   <Default:Documentation xmi:id="_IjEu8JfMEeaSqP4Tgr4Cgg" base_Comment="_Ii8zIJfMEeaSqP4Tgr4Cgg"/>
   <Default:Documentation xmi:id="_2tcjQN5uEeaSVd0Fmxi4nQ" base_Comment="_2tQ9EN5uEeaSVd0Fmxi4nQ"/>
@@ -3473,7 +3395,6 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
   <Default:Documentation xmi:id="_YyB08TvPEeeAVuPecg5-Hg" base_Comment="_YyB08DvPEeeAVuPecg5-Hg"/>
   <Default:Documentation xmi:id="_gZ8okTvPEeeAVuPecg5-Hg" base_Comment="_gZ8okDvPEeeAVuPecg5-Hg"/>
   <Default:Documentation xmi:id="_lJObITvPEeeAVuPecg5-Hg" base_Comment="_lJObIDvPEeeAVuPecg5-Hg"/>
-  <RIM:Organization xmi:id="_zcdQMDvPEeeAVuPecg5-Hg" base_Class="_r8xoADvOEeeAVuPecg5-Hg"/>
   <Default:Documentation xmi:id="_WXDx4TvQEeeAVuPecg5-Hg" base_Comment="_WXDx4DvQEeeAVuPecg5-Hg"/>
   <Default:Documentation xmi:id="_lcLW5DvQEeeAVuPecg5-Hg" base_Comment="_lcLW4TvQEeeAVuPecg5-Hg"/>
   <Default:Documentation xmi:id="_-r0kQTvSEeeAVuPecg5-Hg" base_Comment="_-r0kQDvSEeeAVuPecg5-Hg"/>

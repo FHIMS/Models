@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.5-->
+<!--Rational Software Architect Designer 9.6-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:FHIM="http://gov.us.fhim/profile/1" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_420A62FD03B6420A57D1024D" name="HealthConcern">
     <eAnnotations xmi:id="_CVhsMEDNEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_CGNd0EDNEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -257,7 +257,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_WRubMMg5EeSfy4Nv5qDtdw" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_WRubMcg5EeSfy4Nv5qDtdw" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_WRvCQMg5EeSfy4Nv5qDtdw" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+          <element xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WRo7ocg5EeSfy4Nv5qDtdw" x="18703" y="-2035"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_pPm1oN-fEeSLwbHBnRFGvw" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -271,7 +271,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_pPoq0N-fEeSLwbHBnRFGvw" visible="false" type="EnumerationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_pPoq0d-fEeSLwbHBnRFGvw" visible="false" type="AttributeCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_pPoq0t-fEeSLwbHBnRFGvw" visible="false" type="OperationCompartment"/>
-          <element xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_XyDLQKRMEeGZ6ueex_Me0w"/>
+          <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_XyDLQKRMEeGZ6ueex_Me0w?FHIM_Vocab/PersonVocab/PersonalRelationshipRoleType?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pPm1od-fEeSLwbHBnRFGvw" x="16167" y="23141"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_9byhcN-nEeSQwMSQTXiDlA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -285,7 +285,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_9b4BAN-nEeSQwMSQTXiDlA" type="EnumerationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_9b4oEN-nEeSQwMSQTXiDlA" visible="false" type="AttributeCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_9b5PIN-nEeSQwMSQTXiDlA" visible="false" type="OperationCompartment"/>
-          <element xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_0q6CAN-kEeSzEeYgFgxEPA"/>
+          <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_0q6CAN-kEeSzEeYgFgxEPA?FHIM_Vocab/ProblemListVocab/ConcernContext?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9byhcd-nEeSQwMSQTXiDlA" x="38991" y="8876"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_LnFigN-oEeSQwMSQTXiDlA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -299,7 +299,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_LnHXs9-oEeSQwMSQTXiDlA" type="EnumerationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_LnH-wN-oEeSQwMSQTXiDlA" visible="false" type="AttributeCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_LnH-wd-oEeSQwMSQTXiDlA" visible="false" type="OperationCompartment"/>
-          <element xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_qL-NsN-TEeSF_8LAIPpUEQ"/>
+          <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_qL-NsN-TEeSF_8LAIPpUEQ?FHIM_Vocab/ProblemListVocab/ProblemStatus?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LnFigd-oEeSQwMSQTXiDlA" x="-1902" y="13631"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_RLUnIN-oEeSQwMSQTXiDlA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -313,7 +313,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_RLXqcN-oEeSQwMSQTXiDlA" type="EnumerationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_RLXqcd-oEeSQwMSQTXiDlA" visible="false" type="AttributeCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_RLXqct-oEeSQwMSQTXiDlA" visible="false" type="OperationCompartment"/>
-          <element xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_XzA0kKRMEeGZ6ueex_Me0w"/>
+          <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_XzA0kKRMEeGZ6ueex_Me0w?FHIM_Vocab/ProblemListVocab/Problem?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RLUnId-oEeSQwMSQTXiDlA" x="-1902" y="17435"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_9peisN-oEeSQwMSQTXiDlA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -327,7 +327,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_9pfw0d-oEeSQwMSQTXiDlA" type="EnumerationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_9pfw0t-oEeSQwMSQTXiDlA" visible="false" type="AttributeCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_9pfw09-oEeSQwMSQTXiDlA" visible="false" type="OperationCompartment"/>
-          <element xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_XyxkAKRMEeGZ6ueex_Me0w"/>
+          <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_XyxkAKRMEeGZ6ueex_Me0w?FHIM_Vocab/ProblemListVocab/ProblemType?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9peisd-oEeSQwMSQTXiDlA" x="-3170" y="4755"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_VsYiEN-pEeSQwMSQTXiDlA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -341,7 +341,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_VsZwM9-pEeSQwMSQTXiDlA" type="EnumerationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_VsZwNN-pEeSQwMSQTXiDlA" visible="false" type="AttributeCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_VsaXQN-pEeSQwMSQTXiDlA" visible="false" type="OperationCompartment"/>
-          <element xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_X7pMIKRMEeGZ6ueex_Me0w"/>
+          <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_X7pMIKRMEeGZ6ueex_Me0w?FHIM_Vocab/ProblemListVocab/SocialHistoryType?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VsYiEd-pEeSQwMSQTXiDlA" x="33919" y="18386"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_uCT9gOCNEeS8tqKBj1EYvQ" element="_uCQ6MOCNEeS8tqKBj1EYvQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -368,7 +368,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_L6YfQud6EeSlqtEJq7r6DQ" type="EnumerationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_L6ZGUOd6EeSlqtEJq7r6DQ" visible="false" type="AttributeCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_L6ZGUed6EeSlqtEJq7r6DQ" visible="false" type="OperationCompartment"/>
-          <element xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_074LUN-mEeSzEeYgFgxEPA"/>
+          <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_074LUN-mEeSzEeYgFgxEPA?FHIM_Vocab/ProblemListVocab/ConditionCourse?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L6Vb8ed6EeSlqtEJq7r6DQ" x="-3170" y="9510"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_nr7TkOd6EeSlqtEJq7r6DQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -382,7 +382,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_nr_lAud6EeSlqtEJq7r6DQ" type="EnumerationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_nsAzIOd6EeSlqtEJq7r6DQ" visible="false" type="AttributeCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_nsBaMOd6EeSlqtEJq7r6DQ" visible="false" type="OperationCompartment"/>
-          <element xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_XyiTcKRMEeGZ6ueex_Me0w"/>
+          <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_XyiTcKRMEeGZ6ueex_Me0w?FHIM_Vocab/ProblemListVocab/ProblemSeverity?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nr7Tked6EeSlqtEJq7r6DQ" x="-2853" y="19971"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_M9OQYHm2EeW-j_oLISFbOQ" element="_W61_oLO_EeS3iYN4R_wsuw" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -409,7 +409,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_U2v9IeU9EeWlUtxA-8RVeQ" type="EnumerationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_U2v9IuU9EeWlUtxA-8RVeQ" visible="false" type="AttributeCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_U2v9I-U9EeWlUtxA-8RVeQ" visible="false" type="OperationCompartment"/>
-          <element xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_L-mioOU7EeWlUtxA-8RVeQ"/>
+          <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_L-mioOU7EeWlUtxA-8RVeQ?FHIM_Vocab/ProblemListVocab/risk-probability?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U2uvAeU9EeWlUtxA-8RVeQ" x="11729" y="19654"/>
         </children>
         <element xsi:nil="true"/>
@@ -1230,7 +1230,7 @@
         <body>This class contains a history of updates to the Health Concern record, and relates the Health Concern record to various encounters over time.</body>
       </ownedComment>
       <generalization xmi:id="_qdxAEOCKEeS8tqKBj1EYvQ">
-        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
       <ownedAttribute xmi:id="_Ge1XgMLLEeGVnuEDZNmvgw" name="comment" visibility="public">
         <ownedComment xmi:id="_Ng3osJpxEeOswd2lHBTpDQ" annotatedElement="_Ge1XgMLLEeGVnuEDZNmvgw">
@@ -1297,7 +1297,7 @@
         <body>&quot;This class is used to track a patient's health concern observed by various providers at various points in time and locations. The name and nature of the concern is derived from the first health concern observation made, which could be an indication of a negative assertion for an health concern, if necessary (e.g. not a diabetic).&quot; - HL7 v3.  A &quot;health concern&quot; can be anything that a clinician wishes to track about the patient, including items which the patient might not consider to be a &quot;problem&quot;, such as the fact that the patient smokes.</body>
       </ownedComment>
       <generalization xmi:id="_hnvQAOCJEeS8tqKBj1EYvQ">
-        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
       <ownedAttribute xmi:id="_hrMwQPyzEd-ACpYDrl8Uqw" name="ageAtOnset" visibility="public">
         <ownedComment xmi:id="_mGY7UAMYEeC6TLUcQZx_GQ" annotatedElement="_hrMwQPyzEd-ACpYDrl8Uqw">
@@ -1781,10 +1781,10 @@ Note that this property may be removed or altered based on the outcome of the Se
       <ownedEnd xmi:id="_juSdIA3gEeSr7IwJ9lGnGA" name="" visibility="public" type="_420A62FD03B6421F8AD00244" association="_juQA4A3gEeSr7IwJ9lGnGA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_iAwQAN-kEeSzEeYgFgxEPA" client="_MKlBAPHsEeGWjrqT5CRABg">
-      <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_XyDLQKRMEeGZ6ueex_Me0w"/>
+      <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_XyDLQKRMEeGZ6ueex_Me0w?FHIM_Vocab/PersonVocab/PersonalRelationshipRoleType?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_-fqZQN-nEeSQwMSQTXiDlA" client="_420A62FD03B6421F8AD00244">
-      <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_0q6CAN-kEeSzEeYgFgxEPA"/>
+      <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_0q6CAN-kEeSzEeYgFgxEPA?FHIM_Vocab/ProblemListVocab/ConcernContext?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_0V4AUsLFEeGVnuEDZNmvgw" name="observationStatusChangeEvent_visit" memberEnd="_0VIZgsLFEeGVnuEDZNmvgw _0V4AU8LFEeGVnuEDZNmvgw">
       <ownedEnd xmi:id="_0V4AU8LFEeGVnuEDZNmvgw" name="" visibility="public" type="_0VIZcMLFEeGVnuEDZNmvgw" association="_0V4AUsLFEeGVnuEDZNmvgw">
@@ -1793,19 +1793,19 @@ Note that this property may be removed or altered based on the outcome of the Se
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_fCUbAOCLEeS8tqKBj1EYvQ" client="_420A62FD03B6421F8AD00244">
-      <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_XyxkAKRMEeGZ6ueex_Me0w"/>
+      <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_XyxkAKRMEeGZ6ueex_Me0w?FHIM_Vocab/ProblemListVocab/ProblemType?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_yYDEIOCMEeS8tqKBj1EYvQ" memberEnd="_yYESQOCMEeS8tqKBj1EYvQ _yYGHcOCMEeS8tqKBj1EYvQ">
       <ownedEnd xmi:id="_yYGHcOCMEeS8tqKBj1EYvQ" name="" visibility="public" type="_420A62FD03B6421F8AD00244" association="_yYDEIOCMEeS8tqKBj1EYvQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_fGJgMOCNEeS8tqKBj1EYvQ" client="_RPmE8PHqEeGWjrqT5CRABg">
-      <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_X7pMIKRMEeGZ6ueex_Me0w"/>
+      <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_X7pMIKRMEeGZ6ueex_Me0w?FHIM_Vocab/ProblemListVocab/SocialHistoryType?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_m0xYwOCNEeS8tqKBj1EYvQ" client="_420A62FD03B6421F8AD00244">
-      <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_qL-NsN-TEeSF_8LAIPpUEQ"/>
+      <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_qL-NsN-TEeSF_8LAIPpUEQ?FHIM_Vocab/ProblemListVocab/ProblemStatus?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_nWflwOCNEeS8tqKBj1EYvQ" client="_420A62FD03B6421F8AD00244">
-      <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_XzA0kKRMEeGZ6ueex_Me0w"/>
+      <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_XzA0kKRMEeGZ6ueex_Me0w?FHIM_Vocab/ProblemListVocab/Problem?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_uCQ6MOCNEeS8tqKBj1EYvQ" name="EmploymentConcen">
       <ownedComment xmi:id="_pZ5ygOCOEeS8tqKBj1EYvQ" annotatedElement="_uCQ6MOCNEeS8tqKBj1EYvQ">
@@ -1814,21 +1814,18 @@ Note that this property may be removed or altered based on the outcome of the Se
       <generalization xmi:id="_leJ5MOCPEeS8tqKBj1EYvQ" general="_420A62FD03B6421F8AD00244"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_RRV84Od6EeSlqtEJq7r6DQ" client="_420A62FD03B6421F8AD00244">
-      <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_074LUN-mEeSzEeYgFgxEPA"/>
+      <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_074LUN-mEeSzEeYgFgxEPA?FHIM_Vocab/ProblemListVocab/ConditionCourse?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_p5LOQOd6EeSlqtEJq7r6DQ" client="_420A62FD03B6421F8AD00244">
-      <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_XyiTcKRMEeGZ6ueex_Me0w"/>
+      <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_XyiTcKRMEeGZ6ueex_Me0w?FHIM_Vocab/ProblemListVocab/ProblemSeverity?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_V_REYOU9EeWlUtxA-8RVeQ" client="_W61_oLO_EeS3iYN4R_wsuw">
-      <supplier xmi:type="uml:Enumeration" href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_L-mioOU7EeWlUtxA-8RVeQ"/>
+      <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_L-mioOU7EeWlUtxA-8RVeQ?FHIM_Vocab/ProblemListVocab/risk-probability?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_1ishUCN3EeatluYc84nSZw" name="healthConcern_patient" memberEnd="_1i2SUCN3EeatluYc84nSZw _1i_cQCN3EeatluYc84nSZw">
       <ownedEnd xmi:id="_1i_cQCN3EeatluYc84nSZw" name="" visibility="private" type="_420A62FD03B6421F8AD00244" association="_1ishUCN3EeatluYc84nSZw"/>
     </packagedElement>
   </uml:Package>
-  <term:ValueSetConstraint xmi:id="_pvua8AgnEeKpi5AGmkKVpg" base_Property="_Zr0aUHiaEd-xd69YcOIcPA">
-    <reference href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_XzBboKRMEeGZ6ueex_Me0w"/>
-  </term:ValueSetConstraint>
   <Default:Documentation xmi:id="_4kJWYrZ2EeGWl-7OlqBMDw" base_Comment="_4kJWYbZ2EeGWl-7OlqBMDw"/>
   <Default:Documentation xmi:id="_bhVTIPHtEeGWjrqT5CRABg" base_Comment="_bhUsEfHtEeGWjrqT5CRABg"/>
   <Default:Documentation xmi:id="_c--UYge5EeCPOdVNW49Akw" base_Comment="_kUJV0XiYEd-xd69YcOIcPA"/>
@@ -1862,20 +1859,8 @@ Note that this property may be removed or altered based on the outcome of the Se
   <Default:Documentation xmi:id="_YxukMPHrEeGWjrqT5CRABg" base_Comment="_YxmBUPHrEeGWjrqT5CRABg"/>
   <Default:Documentation xmi:id="_zLr1MLZ8EeGWl-7OlqBMDw" base_Comment="_zLjSULZ8EeGWl-7OlqBMDw"/>
   <Default:Documentation xmi:id="_zPvoUA0KEeCQj9C1UPZeDw" base_Comment="_zPl3UQ0KEeCQj9C1UPZeDw"/>
-  <RIM:Act xmi:id="_gQxiUAgpEeKpi5AGmkKVpg" base_Class="_PrVaEAgpEeKpi5AGmkKVpg"/>
-  <RIM:Act xmi:id="_vvamQA04EeCCpZ3TKdXLzg" base_Class="_sEx2cA0KEeCQj9C1UPZeDw"/>
-  <RIM:ActRelationship xmi:id="_LDDhYAe5EeCPOdVNW49Akw" base_Class="_GvZT0Ae5EeCPOdVNW49Akw"/>
-  <RIM:Observation xmi:id="_8JU5APHtEeGWjrqT5CRABg" base_Class="_YQmCgPHqEeGWjrqT5CRABg"/>
-  <RIM:Observation xmi:id="_9puUwPHtEeGWjrqT5CRABg" base_Class="_RPmE8PHqEeGWjrqT5CRABg"/>
-  <RIM:Observation xmi:id="_bs-m0FwTEd6dhZ7uY2XV5Q" base_Class="_420A62FD03B6421F8AD00244"/>
-  <RIM:Observation xmi:id="_G9eQ0APxEeKAxseXcMhbEg" base_Class="_nwG14APwEeKAxseXcMhbEg"/>
-  <RIM:Observation xmi:id="__TXWkAMXEeC6TLUcQZx_GQ" base_Class="_55AJkPc4Ed-hU-zq4VwY5Q"/>
-  <RIM:Role xmi:id="_QpW5cPHsEeGWjrqT5CRABg" base_Class="_MKlBAPHsEeGWjrqT5CRABg"/>
   <Default:Documentation xmi:id="_xT6g8J10EeO_7b9hT5majA" base_Comment="_xTx-EJ10EeO_7b9hT5majA"/>
   <Default:Documentation xmi:id="_qff8sBgcEeSfB8OsSP5QtQ" base_Comment="_qfShUBgcEeSfB8OsSP5QtQ"/>
-  <term:ValueSetConstraint xmi:id="_hSGdcN-oEeSQwMSQTXiDlA" base_Property="_OgOOYBgcEeSfB8OsSP5QtQ">
-    <reference href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_0udsUN-kEeSzEeYgFgxEPA"/>
-  </term:ValueSetConstraint>
   <Default:Documentation xmi:id="_WQCRoN-9EeSQwMSQTXiDlA" base_Comment="_TJmP8ZpqEeOswd2lHBTpDQ"/>
   <Default:Documentation xmi:id="_WQCRod-9EeSQwMSQTXiDlA" base_Comment="_mGY7UAMYEeC6TLUcQZx_GQ"/>
   <Default:Documentation xmi:id="_WQCRot-9EeSQwMSQTXiDlA" base_Comment="_-RwsQeZUEeGuIoEQ4Mvu0w"/>
@@ -1889,123 +1874,17 @@ Note that this property may be removed or altered based on the outcome of the Se
   <Default:Documentation xmi:id="_0V5OcMLFEeGVnuEDZNmvgw" base_Comment="_0VIZdcLFEeGVnuEDZNmvgw"/>
   <Default:Documentation xmi:id="_0V5OdMLFEeGVnuEDZNmvgw" base_Comment="_0VIZg8LFEeGVnuEDZNmvgw"/>
   <Default:Documentation xmi:id="_OLFRgMLLEeGVnuEDZNmvgw" base_Comment="_OLEqccLLEeGVnuEDZNmvgw"/>
-  <RIM:Observation xmi:id="_0V4nYcLFEeGVnuEDZNmvgw" base_Class="_0VIZcMLFEeGVnuEDZNmvgw"/>
   <Default:Documentation xmi:id="_WuSdAByaEeOR-a0_xUg6BQ" base_Comment="_WuRO4RyaEeOR-a0_xUg6BQ"/>
   <Default:Documentation xmi:id="_NhBZsJpxEeOswd2lHBTpDQ" base_Comment="_Ng3osJpxEeOswd2lHBTpDQ"/>
   <Default:Documentation xmi:id="_eXYdEOCKEeS8tqKBj1EYvQ" base_Comment="_eXKaoOCKEeS8tqKBj1EYvQ"/>
   <Default:Documentation xmi:id="_7NhQAOCMEeS8tqKBj1EYvQ" base_Comment="_7NW38OCMEeS8tqKBj1EYvQ"/>
   <Default:Documentation xmi:id="_1m030OCNEeS8tqKBj1EYvQ" base_Comment="_1mzpseCNEeS8tqKBj1EYvQ"/>
-  <RIM:Observation xmi:id="_X4ApEOCOEeS8tqKBj1EYvQ" base_Class="_uCQ6MOCNEeS8tqKBj1EYvQ"/>
   <Default:Documentation xmi:id="_pZ_SEOCOEeS8tqKBj1EYvQ" base_Comment="_pZ5ygOCOEeS8tqKBj1EYvQ"/>
   <Default:Documentation xmi:id="_jWxV8OCPEeS8tqKBj1EYvQ" base_Comment="_jWtEgOCPEeS8tqKBj1EYvQ"/>
-  <term:ValueSetConstraint xmi:id="_t4q_IOd5EeSlqtEJq7r6DQ" base_Property="_-RwsQOZUEeGuIoEQ4Mvu0w">
-    <reference href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_XyxkAaRMEeGZ6ueex_Me0w"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="__CF-MOd5EeSlqtEJq7r6DQ" base_Property="_IZhS8N-rEeSQwMSQTXiDlA">
-    <reference href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_074yYN-mEeSzEeYgFgxEPA"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_YUAHUOd6EeSlqtEJq7r6DQ" base_Property="_L3L90JpgEeOswd2lHBTpDQ">
-    <reference href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_qMAC4N-TEeSF_8LAIPpUEQ"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_rKIf0Od6EeSlqtEJq7r6DQ" base_Property="_TJmP8JpqEeOswd2lHBTpDQ">
-    <reference href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_Xyi6gKRMEeGZ6ueex_Me0w"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_EDKSEOd_EeSlqtEJq7r6DQ" base_Property="_WuRO4ByaEeOR-a0_xUg6BQ">
-    <reference href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_qMAC4N-TEeSF_8LAIPpUEQ"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_GHfhUOd_EeSlqtEJq7r6DQ" base_Property="_0VIZdMLFEeGVnuEDZNmvgw">
-    <reference href="platform:/resource/gov.us.fhim/FHIM_Vocab.emx#_qMAC4N-TEeSF_8LAIPpUEQ"/>
-  </term:ValueSetConstraint>
   <Default:Documentation xmi:id="_RW4vcMQ0EeSThJ7NwJgY1w" base_Comment="_RWyo0MQ0EeSThJ7NwJgY1w"/>
   <Default:Documentation xmi:id="_YPbUkMQ0EeSThJ7NwJgY1w" base_Comment="_YPOgQMQ0EeSThJ7NwJgY1w"/>
   <Default:Documentation xmi:id="_qmkD8MQ0EeSThJ7NwJgY1w" base_Comment="_qmi10cQ0EeSThJ7NwJgY1w"/>
   <Default:Documentation xmi:id="_26G5MMQ0EeSThJ7NwJgY1w" base_Comment="_26GSIcQ0EeSThJ7NwJgY1w"/>
   <Default:Documentation xmi:id="__VUyAMQ0EeSThJ7NwJgY1w" base_Comment="__VUK8cQ0EeSThJ7NwJgY1w"/>
-  <RIM:Observation xmi:id="_G-BBsMQ1EeSThJ7NwJgY1w" base_Class="_W61_oLO_EeS3iYN4R_wsuw"/>
-  <FHIM:Mapping xmi:id="_ZT5y8LoREeWqFd182BzgAw" base_Property="_0VIZcsLFEeGVnuEDZNmvgw">
-    <index xmi:id="_ZT5y8boREeWqFd182BzgAw" standardOrProject="HL7v2" value="IAM-20"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZT6aALoREeWqFd182BzgAw" base_Property="_0VIZdMLFEeGVnuEDZNmvgw">
-    <index xmi:id="_ZT7BELoREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-14"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZT7oILoREeWqFd182BzgAw" base_Property="_0VIZgsLFEeGVnuEDZNmvgw">
-    <index xmi:id="_ZT7oIboREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-5"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZT82QLoREeWqFd182BzgAw" base_Property="_-RwsQOZUEeGuIoEQ4Mvu0w">
-    <index xmi:id="_ZT82QboREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-10"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZT-EYLoREeWqFd182BzgAw" base_Property="_ASPk4JppEeOswd2lHBTpDQ">
-    <index xmi:id="_ZT-EYboREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-19"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZT_SgLoREeWqFd182BzgAw" base_Property="_420A62FD03B6421FAEE100EC">
-    <index xmi:id="_ZT_SgboREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-12"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZT_5kLoREeWqFd182BzgAw" base_Property="_L3L90JpgEeOswd2lHBTpDQ">
-    <index xmi:id="_ZUAgoLoREeWqFd182BzgAw" standardOrProject="HL7v2" value="IAM-17"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZUBHsLoREeWqFd182BzgAw" base_Property="_fJKhEHyhEeOHq5zPTCjDoQ">
-    <index xmi:id="_ZUBHsboREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-9"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZUCV0LoREeWqFd182BzgAw" base_Property="_V368wAWSEdy1j7oicBJA7Q">
-    <index xmi:id="_ZUCV0boREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-15"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZUDj8LoREeWqFd182BzgAw" base_Property="_hybbsEUXEeCUY8hq_icSiw">
-    <index xmi:id="_ZUDj8boREeWqFd182BzgAw" standardOrProject="HL7v2" value="IAM-11"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZUEyELoREeWqFd182BzgAw" base_Property="__0thkMIJEeGx0M-CyAbegA">
-    <index xmi:id="_ZUEyEboREeWqFd182BzgAw" standardOrProject="HL7v2" value="IAM-12"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZUGAMLoREeWqFd182BzgAw" base_Property="_IsFqULZ3EeGWl-7OlqBMDw">
-    <index xmi:id="_ZUGAMboREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-24"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZUGnQLoREeWqFd182BzgAw" base_Property="_Zr0aUHiaEd-xd69YcOIcPA">
-    <index xmi:id="_ZUHOULoREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-3"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZUH1YLoREeWqFd182BzgAw" base_Property="_ZRVawLZ2EeGWl-7OlqBMDw">
-    <index xmi:id="_ZUH1YboREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-21"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZUJDgLoREeWqFd182BzgAw" base_Property="_4kJWYLZ2EeGWl-7OlqBMDw">
-    <index xmi:id="_ZUJDgboREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-23"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZUKRoLoREeWqFd182BzgAw" base_Property="_B93UQLZ2EeGWl-7OlqBMDw">
-    <index xmi:id="_ZUKRoboREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-20"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZULfwLoREeWqFd182BzgAw" base_Property="_kUe_ILZ2EeGWl-7OlqBMDw">
-    <index xmi:id="_ZULfwboREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-22"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZUMt4LoREeWqFd182BzgAw" base_Property="_T-pjsLZ3EeGWl-7OlqBMDw">
-    <index xmi:id="_ZUMt4boREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-25"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZUNU8LoREeWqFd182BzgAw" base_Property="_TJmP8JpqEeOswd2lHBTpDQ">
-    <index xmi:id="_ZUN8ALoREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-26"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZUOjELoREeWqFd182BzgAw" base_Property="_kUJV0HiYEd-xd69YcOIcPA">
-    <index xmi:id="_ZUOjEboREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-6"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZUQYQLoREeWqFd182BzgAw" base_Property="_QCM1IA0NEeCQj9C1UPZeDw">
-    <index xmi:id="_ZUQYQboREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-18"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZURmYLoREeWqFd182BzgAw" base_Property="_zPl3UA0KEeCQj9C1UPZeDw">
-    <index xmi:id="_ZURmYboREeWqFd182BzgAw" standardOrProject="HL7v2" value="PRB-11"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ftVaMLoREeWqFd182BzgAw" base_Classifier="_420A62FD03B6421F8AD00244">
-    <index xmi:id="_ftVaMboREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.34"/>
-    <index xmi:id="_ftVaMroREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Problem Observation�(identifier: 2.16.840.1.113883.10.20.22.4.4)"/>
-    <index xmi:id="_ftVaM7oREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="None"/>
-    <index xmi:id="_ftWBQLoREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.4"/>
-    <index xmi:id="_ftWBQboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Problem Observation�(identifier: 2.16.840.1.113883.10.20.22.4.4)"/>
-    <index xmi:id="_ftWBQroREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="None"/>
-    <index xmi:id="_ftXPYLoREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.4"/>
-    <index xmi:id="_ftXPYboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Problem Observation�(identifier: 2.16.840.1.113883.10.20.22.4.4)"/>
-    <index xmi:id="_ftXPYroREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="None"/>
-    <index xmi:id="_ftiOgLoREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.4"/>
-    <index xmi:id="_ftiOgboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Problem Concern Act (2.16.840.1.113883.10.20.22.4.3)"/>
-    <index xmi:id="_ftiOgroREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/condition-daf-dafcondition"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_fti1kLoREeWqFd182BzgAw" base_Property="_lygBwBF6EeKu1LfuaJwFHw">
-    <index xmi:id="_fti1kboREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.4"/>
-    <index xmi:id="_fti1kroREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Act.effectiveTime/low"/>
-    <index xmi:id="_fti1k7oREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/condition-daf-dafcondition"/>
-  </FHIM:Mapping>
   <Default:Documentation xmi:id="_mmJ6Id5vEeaSVd0Fmxi4nQ" base_Comment="_mmJ6IN5vEeaSVd0Fmxi4nQ"/>
 </xmi:XMI>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.5-->
+<!--Rational Software Architect Designer 9.6-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_420A62FD03B6420A5A37025A" name="Imaging">
     <eAnnotations xmi:id="_UCoAEEDNEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_UCjHkEDNEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -327,7 +327,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_KoDspnmyEeW-j_oLISFbOQ" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_KoDsp3myEeW-j_oLISFbOQ" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_KoETsHmyEeW-j_oLISFbOQ" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/PromisedContext?"/>
+          <element xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/PromiseContext?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KoDFkXmyEeW-j_oLISFbOQ" x="14265" y="-34236"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_Od4y8PCIEeWoT_0zIvvImQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="Text" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -1717,7 +1717,7 @@ Note that this class represents information about the act of performing the medi
         <body>The Imaging Order from the perspective of the performing organization. This information is commonly called the Accession. Note that nearly all of the properties needed for the Imaging Promise are inherited from the generic Healthcare Promise class which is its parent, so this class adds only those few properties unique to imaging promises such as the anticipated dose and a pointer to the actual performance of the imaging study.</body>
       </ownedComment>
       <generalization xmi:id="_OcdLUHmyEeW-j_oLISFbOQ">
-        <general xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/PromisedContext?"/>
+        <general xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/PromiseContext?"/>
       </generalization>
       <ownedAttribute xmi:id="_sj8xEGO-EeWL1ov4GOhBTA" name="anticipatedDose" visibility="public">
         <ownedComment xmi:id="_mLsD8PFXEeWEJ4Z3YTwiDQ" annotatedElement="_sj8xEGO-EeWL1ov4GOhBTA">
@@ -1844,7 +1844,7 @@ Note that this class represents information about the act of performing the medi
         <body>Represents the radiology/nuclear medicine report as known by the originating system.</body>
       </ownedComment>
       <generalization xmi:id="_0x1EMMU0EeW7a6OfPDMv9g">
-        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
       <ownedAttribute xmi:id="_420A62FD03B64586FBE90276" name="additionalClinicalHistory" visibility="public">
         <ownedComment xmi:id="_QCwaReLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64586FBE90276">
@@ -1928,7 +1928,7 @@ Note that this class represents information about the act of performing the medi
         <body>This class contains those attributes and associations common to both Radiology / Nuclear Medicine imaging examinations and the scanning of paper documents into an image storage and retrieval system. Historically, both diagnostic imaging and the scanning and retrieval of paper documents have been included in the &quot;imaging&quot; domain as they both share certain characteristics in terms of the equipment used to store and retrieve the images.  Yet a distinction is often made with respect to the amount and type of metadata associated with the images. For example, &quot;Diagnostic Images&quot; are those stored and retrieved in Picture Archive and Communications Systems (PACS) which require certain codified information regarding the modality of the image, body site, etc., and are organized into Studies, Series, Images, and subsets (regions) of images. In contrast, scanned documents do not require any of these metadata.  As patient-generated images become more commonplace, we foresee a need to store these images (for example, a patient uses a smart phone to take a picture of a wound and emails it to a clinician) as well. We would foresee such images stored in the &quot;Medical Imaging Event&quot; hierarchy, even if a relatively-empty Study and Series construct would be required to contain such images.  However, scanned documents simply need a pointer to the resulting image(s), and we therefore find it useful to continue with a logical separation of the two kinds of images.</body>
       </ownedComment>
       <generalization xmi:id="_FODqgIzBEeaPWbBiMJSPyg">
-        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
       <ownedAttribute xmi:id="_5ECDQOGnEeaHnLXha23s2A" name="author" visibility="public">
         <ownedComment xmi:id="_-2RHoOGnEeaHnLXha23s2A" annotatedElement="_5ECDQOGnEeaHnLXha23s2A">
@@ -2045,7 +2045,7 @@ When the image is a scanned document, this field might be used to identify the k
         <body>&quot;Representation of the content produced in a DICOM imaging study. A study comprises a set of series, each of which includes a set of Service-Object Pair Instances (SOP Instances - images or other data) acquired or produced in a common context. A series is of only one modality (e.g. X-ray, CT, MR, ultrasound), but a study may have multiple series of different modalities.&quot; - HL7 FHIR, ImagingStudy.</body>
       </ownedComment>
       <generalization xmi:id="_ma2LkPsVEeSc9M34gwVpgg">
-        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
       <ownedAttribute xmi:id="_xYzjYPsUEeSc9M34gwVpgg" name="availability" visibility="public">
         <ownedComment xmi:id="_6r3lsF4mEeWQiN9lTU6tCQ" annotatedElement="_xYzjYPsUEeSc9M34gwVpgg">
@@ -2344,7 +2344,7 @@ Note that in FHIR, the data type for this property is an oid. We may wish to mak
 &quot;A text description of the DICOM SOP instances selected in the ImagingManifest; or the reason for, or significance of, the selection.&quot; - HL7 FHIR, ImagingManifest</body>
       </ownedComment>
       <generalization xmi:id="_Q0tKwPsvEeSc9M34gwVpgg">
-        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
       <ownedAttribute xmi:id="_czXVIPsvEeSc9M34gwVpgg" name="description" visibility="public">
         <ownedComment xmi:id="_zkWX0H9AEeW8SPVtPHwMkQ" annotatedElement="_czXVIPsvEeSc9M34gwVpgg">
@@ -2581,10 +2581,6 @@ Note that as a sub-type of Imaging Event, Specimen Imaging Event includes all of
   <Default:Documentation xmi:id="_MzVQ5uLiEduGJrQyRGTO1A" base_Comment="_MzVQ5eLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MzVQ6uLiEduGJrQyRGTO1A" base_Comment="_MzVQ6eLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_RwP6YoB7Ed-cvdR-JEsOjQ" base_Comment="_RwP6YYB7Ed-cvdR-JEsOjQ"/>
-  <RIM:Act xmi:id="_Jql0c1LIEd6-4-oWZUjasQ" base_Class="_420A62FD03B6456AF07F0009"/>
-  <RIM:Act xmi:id="_Jql0d1LIEd6-4-oWZUjasQ"/>
-  <RIM:Act xmi:id="_Jql0eFLIEd6-4-oWZUjasQ" base_Class="_420A62FD03B64550AAFD02CE"/>
-  <RIM:ActRelationship xmi:id="_xJTDUH_rEd-Ure_vzgD_TA"/>
   <Default:Documentation xmi:id="_0h4_QGjBEeG3pKm-C5y0hA" base_Comment="_0huAIGjBEeG3pKm-C5y0hA"/>
   <Default:Documentation xmi:id="_QBa9i-LiEduGJrQyRGTO1A" base_Comment="_QBa9iuLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_QBkHc-LiEduGJrQyRGTO1A" base_Comment="_QBkHcuLiEduGJrQyRGTO1A"/>
@@ -2611,11 +2607,6 @@ Note that as a sub-type of Imaging Event, Specimen Imaging Event includes all of
   <Default:Documentation xmi:id="_QIt4UOLiEduGJrQyRGTO1A" base_Comment="_QIkudOLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_QIt4XuLiEduGJrQyRGTO1A" base_Comment="_QIt4XeLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_xSOZ0cq8Ed2LsfgHXbEskQ" base_Comment="_xSOZ0Mq8Ed2LsfgHXbEskQ"/>
-  <RIM:Act xmi:id="_fiQrVlLIEd6-4-oWZUjasQ" base_Class="_420A62FD03B64586EE2E00B9"/>
-  <RIM:Act xmi:id="_fiQrXlLIEd6-4-oWZUjasQ" base_Class="_420A62FD03B6458687500084"/>
-  <RIM:Act xmi:id="_fiQrYVLIEd6-4-oWZUjasQ" base_Class="_420A62FD03B64586F4B502F6"/>
-  <RIM:Act xmi:id="_fiQrZlLIEd6-4-oWZUjasQ" base_Class="_420A62FD03B6459176EB0167"/>
-  <RIM:Act xmi:id="_fiQrZVLIEd6-4-oWZUjasQ" base_Class="_420A62FD03B64586FBA701A8"/>
   <Default:Documentation xmi:id="_hWDY8FjAEeWPFcZL8Pri7w" base_Comment="_xw0zkYB-Ed-cvdR-JEsOjQ"/>
   <Default:Documentation xmi:id="_fjqCQF4mEeWQiN9lTU6tCQ" base_Comment="_fjRnwF4mEeWQiN9lTU6tCQ"/>
   <Default:Documentation xmi:id="_yk7TwF4mEeWQiN9lTU6tCQ" base_Comment="_yksqQF4mEeWQiN9lTU6tCQ"/>
@@ -2647,17 +2638,10 @@ Note that as a sub-type of Imaging Event, Specimen Imaging Event includes all of
   <Default:Documentation xmi:id="_0I6nUF4sEeWQiN9lTU6tCQ" base_Comment="_0I1u0F4sEeWQiN9lTU6tCQ"/>
   <Default:Documentation xmi:id="_spJXMF45EeWQiN9lTU6tCQ" base_Comment="_msmtoYB9Ed-cvdR-JEsOjQ"/>
   <Default:Documentation xmi:id="_spJ-QF45EeWQiN9lTU6tCQ" base_Comment="_S3TXIYB9Ed-cvdR-JEsOjQ"/>
-  <RIM:Observation xmi:id="_Xwh0cHQwEeWWjugVWsWYlQ" base_Class="_7ui78F4sEeWQiN9lTU6tCQ"/>
   <Default:Documentation xmi:id="_BSg5kHmyEeW-j_oLISFbOQ" base_Comment="_nSkPsICkEd-cvdR-JEsOjQ"/>
-  <RIM:Observation xmi:id="_uzJl0HmyEeW-j_oLISFbOQ" base_Class="_eEZDMPAuEeS1qetF27ECmQ"/>
-  <RIM:Observation xmi:id="_uzKM4HmyEeW-j_oLISFbOQ" base_Class="_fV6VcPAuEeS1qetF27ECmQ"/>
-  <RIM:Entity xmi:id="_-HgEMHmzEeW-j_oLISFbOQ" base_Class="_oErcYPAuEeS1qetF27ECmQ"/>
-  <RIM:Entity xmi:id="_-HgrQHmzEeW-j_oLISFbOQ" base_Class="_pe27YPAuEeS1qetF27ECmQ"/>
   <Default:Documentation xmi:id="_vJ2icH9AEeW8SPVtPHwMkQ" base_Comment="_vJxp8H9AEeW8SPVtPHwMkQ"/>
   <Default:Documentation xmi:id="_zkb3YH9AEeW8SPVtPHwMkQ" base_Comment="_zkWX0H9AEeW8SPVtPHwMkQ"/>
   <Default:Documentation xmi:id="_5gu2sH9AEeW8SPVtPHwMkQ" base_Comment="_5gowEH9AEeW8SPVtPHwMkQ"/>
-  <RIM:Act xmi:id="_8PNPIH9AEeW8SPVtPHwMkQ" base_Class="_19LbkPsWEeSc9M34gwVpgg"/>
-  <RIM:Act xmi:id="_TB4VsH9BEeW8SPVtPHwMkQ" base_Class="_Yv8YIF45EeWQiN9lTU6tCQ"/>
   <Default:Documentation xmi:id="_g_h6MMU7EeW7a6OfPDMv9g" base_Comment="_g_VF4MU7EeW7a6OfPDMv9g"/>
   <Default:Documentation xmi:id="_HCxwcPCBEeWoT_0zIvvImQ" base_Comment="_HCLTgPCBEeWoT_0zIvvImQ"/>
   <Default:Documentation xmi:id="_Xrjt4PEAEeWFncL105bIbg" base_Comment="_XrZ84PEAEeWFncL105bIbg"/>
@@ -2679,28 +2663,6 @@ Note that as a sub-type of Imaging Event, Specimen Imaging Event includes all of
   <Default:Documentation xmi:id="_6kVYAPIbEeWI5dLNhw9XrQ" base_Comment="_6kUw8PIbEeWI5dLNhw9XrQ"/>
   <Default:Documentation xmi:id="_X4l8QPIcEeWI5dLNhw9XrQ" base_Comment="_X4cyUPIcEeWI5dLNhw9XrQ"/>
   <Default:Documentation xmi:id="_MXwg4PIdEeWI5dLNhw9XrQ" base_Comment="_MXs2gPIdEeWI5dLNhw9XrQ"/>
-  <term:ValueSetConstraint xmi:id="_DNJqcPWqEeWELv5y3V4qMA" base_Property="_420A62FD03B64586FBE90259">
-    <reference href="FHIM_Vocab.emx#_ebJrcfCJEeWoT_0zIvvImQ?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_HZWlIPWqEeWELv5y3V4qMA" base_Property="_ZcJhsPsvEeSc9M34gwVpgg">
-    <reference href="FHIM_Vocab.emx#_hsPeMfCIEeWoT_0zIvvImQ?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_MVIioPWqEeWELv5y3V4qMA" base_Property="_420A62FD03B64586EEDA00F3">
-    <reference href="FHIM_Vocab.emx#_ebJrcfCJEeWoT_0zIvvImQ?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_RhGRMPWqEeWELv5y3V4qMA" base_Property="_70pasPsVEeSc9M34gwVpgg">
-    <reference href="FHIM_Vocab.emx#_Wwx7gaRMEeGZ6ueex_Me0w?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_TAK3QPWqEeWELv5y3V4qMA" base_Property="_9isQ4PsVEeSc9M34gwVpgg">
-    <reference href="FHIM_Vocab.emx#_uXEAcfCHEeWoT_0zIvvImQ?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_Vl7YkPWqEeWELv5y3V4qMA" base_Property="_zFJT8PsVEeSc9M34gwVpgg">
-    <reference href="FHIM_Vocab.emx#_v5NlIfCGEeWoT_0zIvvImQ?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_ajDZ4PWqEeWELv5y3V4qMA" base_Property="_sAPjQPsUEeSc9M34gwVpgg">
-    <reference href="FHIM_Vocab.emx#_v5NlIfCGEeWoT_0zIvvImQ?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <RIM:Act xmi:id="_77OeALy0Eea_DaXmJ278Kw" base_Class="_FLnFYIy_EeaPWbBiMJSPyg"/>
   <Default:Documentation xmi:id="_izZogLy1Eea_DaXmJ278Kw" base_Comment="_izP3gLy1Eea_DaXmJ278Kw"/>
   <Default:Documentation xmi:id="_P1ohgLy2Eea_DaXmJ278Kw" base_Comment="_P1ewgLy2Eea_DaXmJ278Kw"/>
   <Default:Documentation xmi:id="_fbMrsLy3Eea_DaXmJ278Kw" base_Comment="_fbC6sLy3Eea_DaXmJ278Kw"/>

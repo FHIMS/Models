@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.5-->
+<!--Rational Software Architect Designer 9.6-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="__tLSgMtKEdyaEqBbyq3Okw" name="SpinalCord">
     <eAnnotations xmi:id="_aKay0EDPEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_aKYWkEDPEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -325,7 +325,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_DrmASN5lEeaSVd0Fmxi4nQ" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_DrmASd5lEeaSVd0Fmxi4nQ" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_DrmASt5lEeaSVd0Fmxi4nQ" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+          <element xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DrmAQd5lEeaSVd0Fmxi4nQ" x="28213" y="28530"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_WF7HEOTHEeaMP8OhjVeyrg" element="_WFkhwOTHEeaMP8OhjVeyrg" fontName="Segoe UI" showListStereotype="Text" showListVisibility="None" fillColor="16763850" transparency="0" lineColor="16744576" lineWidth="1" showStereotype="Text">
@@ -1372,7 +1372,7 @@
       </ownedComment>
       <generalization xmi:id="_hQJ6YBlKEd6eoOkMkMnuyg" general="_Nl2dEMtMEdyaEqBbyq3Okw"/>
       <generalization xmi:id="_EYmQMN5lEeaSVd0Fmxi4nQ">
-        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
       <ownedAttribute xmi:id="_Lc2B0LDNEd2trbCPdTt3cw" name="affectivePainRatingIndex" visibility="public">
         <ownedComment xmi:id="_xxhKoLTTEd2D87slLCU3Jw" annotatedElement="_Lc2B0LDNEd2trbCPdTt3cw">
@@ -2660,22 +2660,5 @@
   <Default:Documentation xmi:id="__CX78AmyEd6I04ySc2CGmQ" base_Comment="__CFBAAmyEd6I04ySc2CGmQ"/>
   <Default:Documentation xmi:id="__H1HAAqfEd6qw9bIVZ5Htg" base_Comment="__HiMEAqfEd6qw9bIVZ5Htg"/>
   <Default:Documentation xmi:id="__KoAYAmvEd6I04ySc2CGmQ" base_Comment="__KVFcAmvEd6I04ySc2CGmQ"/>
-  <RIM:Act xmi:id="_b_dd8lwTEd6dhZ7uY2XV5Q" base_Class="_DfFWoM6oEdyXMP2BMfWZfQ"/>
-  <RIM:Act xmi:id="_b_dd9lwTEd6dhZ7uY2XV5Q" base_Class="_bJGq0NDrEdyG7OHWfYGHvg"/>
-  <RIM:Act xmi:id="_b_mn4FwTEd6dhZ7uY2XV5Q" base_Class="_fnjEsNDuEdyG7OHWfYGHvg"/>
-  <RIM:Act xmi:id="_b_mn51wTEd6dhZ7uY2XV5Q" base_Class="_ea_0EOrvEdyMaYi-M8wTQQ"/>
-  <RIM:Act xmi:id="_b_mn5FwTEd6dhZ7uY2XV5Q" base_Class="_KsSfUNv9Edyfi6kBZ4pnVQ"/>
-  <RIM:Act xmi:id="_b_Ts8FwTEd6dhZ7uY2XV5Q" base_Class="_Nl2dEMtMEdyaEqBbyq3Okw"/>
-  <RIM:Act xmi:id="_b_Ts8VwTEd6dhZ7uY2XV5Q" base_Class="_3VQWkMtQEdyqc6mXtT1d5g"/>
-  <RIM:Act xmi:id="_b_wY4FwTEd6dhZ7uY2XV5Q" base_Class="_eOzqsOx6EdywLMnZ819tBQ"/>
-  <RIM:Observation xmi:id="_b_dd81wTEd6dhZ7uY2XV5Q" base_Class="_iAW1sM6qEdyXMP2BMfWZfQ"/>
-  <RIM:Observation xmi:id="_b_dd9FwTEd6dhZ7uY2XV5Q" base_Class="_6YU8cNAmEdyHyuMbpKEXlg"/>
-  <RIM:Observation xmi:id="_b_dd9VwTEd6dhZ7uY2XV5Q" base_Class="_WHV2kNDqEdyG7OHWfYGHvg"/>
-  <RIM:Observation xmi:id="_b_mn41wTEd6dhZ7uY2XV5Q" base_Class="_9BkScNZvEdyksYmSx-_jaA"/>
-  <RIM:Observation xmi:id="_b_mn5lwTEd6dhZ7uY2XV5Q" base_Class="_wvfUoOVIEdyzF5SPyilcgg"/>
-  <RIM:Observation xmi:id="_b_mn5VwTEd6dhZ7uY2XV5Q" base_Class="_362usNv-Edyfi6kBZ4pnVQ"/>
-  <RIM:Observation xmi:id="_b_mn6FwTEd6dhZ7uY2XV5Q" base_Class="_5PaRwOrvEdyMaYi-M8wTQQ"/>
-  <RIM:Observation xmi:id="_b_Ts8lwTEd6dhZ7uY2XV5Q" base_Class="_3Lz0wMtSEdyqc6mXtT1d5g"/>
-  <RIM:Observation xmi:id="_f1m_UFzzEd6WkeJA5pW9UA" base_Class="_N4HHENQmEdy3opOEf2-BLQ"/>
   <Default:Documentation xmi:id="_U7c4AOTHEeaMP8OhjVeyrg" base_Comment="_U7abwOTHEeaMP8OhjVeyrg"/>
 </xmi:XMI>

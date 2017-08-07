@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.5-->
+<!--Rational Software Architect Designer 9.6-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:FHIM="http://gov.us.fhim/profile/1" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_SH75INNUEeGRnPi2MLPE0g" name="CommonProduct">
     <eAnnotations xmi:id="_gVKzELf1EeaN8pnTZH8VBg" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_gVGhoLf1EeaN8pnTZH8VBg" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -4239,15 +4239,6 @@ A UDI is a unique numeric or alphanumeric code that consists of two parts: a) a 
       </ownedEnd>
     </packagedElement>
   </uml:Package>
-  <term:ValueSetConstraint xmi:id="_xsez0POnEeGMQvy2b7FvNg" base_Property="_qIKSYIAaEeGE1-mzJa42fw">
-    <reference href="FHIM_Vocab.emx#_Xdq2saRMEeGZ6ueex_Me0w?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_QK-e4PbPEeGoRqAZLJ6Mwg" base_Property="_6zyTkEwHEdyVYrcEhQ5TbQ">
-    <reference href="FHIM_Vocab.emx#_W5S-UKRMEeGZ6ueex_Me0w?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:CodeSystemConstraint xmi:id="_WqfMEPbnEeGoRqAZLJ6Mwg" base_Property="_TkY4kM_7Ed-YeMSrwW6svA">
-    <reference href="FHIM_Vocab.emx#_W5Os4KRMEeGZ6ueex_Me0w?%3CCodeSystemVersion%3E?"/>
-  </term:CodeSystemConstraint>
   <Default:Documentation xmi:id="_-rxcsCw6EeKmqZ4YenSzAg" base_Comment="_-rqH8Cw6EeKmqZ4YenSzAg"/>
   <Default:Documentation xmi:id="_06LP4Pa9EeGoRqAZLJ6Mwg" base_Comment="_06Be4Pa9EeGoRqAZLJ6Mwg"/>
   <Default:Documentation xmi:id="_0rXPECw3EeKmqZ4YenSzAg" base_Comment="_0rPTQCw3EeKmqZ4YenSzAg"/>
@@ -4339,68 +4330,15 @@ A UDI is a unique numeric or alphanumeric code that consists of two parts: a) a 
   <Default:Documentation xmi:id="_Zg3aMTNqEeKkw_YjK6aRcw" base_Comment="_BovR8PGSEd-ZlYn0p4HjQw"/>
   <Default:Documentation xmi:id="_zKdlwPa9EeGoRqAZLJ6Mwg" base_Comment="_zKT0wPa9EeGoRqAZLJ6Mwg"/>
   <Default:Documentation xmi:id="_zrFL4Cw5EeKmqZ4YenSzAg" base_Comment="_zq93ICw5EeKmqZ4YenSzAg"/>
-  <RIM:Act xmi:id="_BHU88Md4EeCVr54V6VtSNQ" base_Class="_Lc8A0GRaEeCsvJrE4KlOMA"/>
-  <RIM:Act xmi:id="_cnlk4AFzEeC0SO5AWIN0Qg" base_Class="_Nhp3UPQcEd-ZkqyOlLYO5g"/>
-  <RIM:Container xmi:id="_Wv7JEFCzEeCsN-3dTKIrUA" base_Class="_NlR-MM_tEd-YeMSrwW6svA"/>
-  <RIM:Device xmi:id="_a2_JwFYPEd6WMdl70LfmUg" base_Class="_420A62FD03B6425C004E004C"/>
-  <RIM:Device xmi:id="_sf5K4Kc2EeCkJ6Eur_P0ag" base_Class="_MsausFCxEeCsN-3dTKIrUA"/>
-  <RIM:ManufacturedMaterial xmi:id="_c05GsFz7Ed6WkeJA5pW9UA" base_Class="_420A62FD03B645919EF10138"/>
-  <RIM:ManufacturedMaterial xmi:id="_fiEtAAMIEeC6TLUcQZx_GQ" base_Class="_oDnb8AF2EeC0SO5AWIN0Qg"/>
-  <RIM:ManufacturedMaterial xmi:id="_IRT6QHpmEd-44ra0dfiJCw" base_Class="_420A62FD03B6425C11CB017B"/>
-  <RIM:ManufacturedMaterial xmi:id="_PeQjIFPxEeC3dvg3Ss2k0Q" base_Class="_2iS00FPwEeC3dvg3Ss2k0Q"/>
-  <RIM:ManufacturedMaterial xmi:id="_Pf9_YO6QEd-crcWiXVDZrQ" base_Class="_ddsuwM_1Ed-YeMSrwW6svA"/>
-  <RIM:ManufacturedMaterial xmi:id="_uBxfYO6REd-crcWiXVDZrQ" base_Class="_9SrG0M_2Ed-YeMSrwW6svA"/>
-  <RIM:ManufacturedMaterial xmi:id="_Y5tK4Fz4Ed6WkeJA5pW9UA" base_Class="_420A62FD03B64592E9E3037C"/>
-  <RIM:Material xmi:id="_NuogMPQYEd-ZkqyOlLYO5g" base_Class="_ql3uEPQUEd-ZkqyOlLYO5g"/>
-  <RIM:Role xmi:id="_bnBIyFwTEd6dhZ7uY2XV5Q" base_Class="_420A62FD03B6426545CB0072"/>
-  <RIM:Role xmi:id="_cVxuUIAfEeGE1-mzJa42fw" base_Class="_XteGcIAfEeGE1-mzJa42fw"/>
-  <RIM:Role xmi:id="_dxvVQGRXEeCsvJrE4KlOMA" base_Class="_aN6pMGRXEeCsvJrE4KlOMA"/>
-  <RIM:Role xmi:id="_iy-xEF7yEeCcBvMgXNMeOQ" base_Class="_-zRd8F7wEeCcBvMgXNMeOQ"/>
-  <RIM:Role xmi:id="_iy_YIF7yEeCcBvMgXNMeOQ" base_Class="_0j3qsF7wEeCcBvMgXNMeOQ"/>
-  <RIM:Role xmi:id="_kvaBgF7yEeCcBvMgXNMeOQ" base_Class="_Af_ecF7xEeCcBvMgXNMeOQ"/>
-  <RIM:Role xmi:id="_RwgHUKEREeGnfe88WF3uxw" base_Class="_OaEXAKEREeGnfe88WF3uxw"/>
-  <RIM:Role xmi:id="_tmEKAO0AEd-KQpEfY1umCw" base_Class="_jToVcM_3Ed-YeMSrwW6svA"/>
-  <RIM:Role xmi:id="_WS9IdVYQEd6WMdl70LfmUg" base_Class="_420A62FD03B6419905DB00FB"/>
   <Default:Documentation xmi:id="_arb8kIeZEeOX_brmw15GsQ" base_Comment="_arPvUIeZEeOX_brmw15GsQ"/>
   <Default:Documentation xmi:id="_cMPoAIeZEeOX_brmw15GsQ" base_Comment="_cMOZ4YeZEeOX_brmw15GsQ"/>
   <Default:Documentation xmi:id="_ga974KCrEeO-_tuxzOR0Jg" base_Comment="_ga0K4KCrEeO-_tuxzOR0Jg"/>
   <Default:Documentation xmi:id="_p_Ad8KCrEeO-_tuxzOR0Jg" base_Comment="_p-wmUKCrEeO-_tuxzOR0Jg"/>
   <Default:Documentation xmi:id="_3I63UKMYEeOzLfgeAZKSFA" base_Comment="_kp2MY8_1Ed-YeMSrwW6svA"/>
   <Default:Documentation xmi:id="_G4J64KMaEeOzLfgeAZKSFA" base_Comment="_G39toKMaEeOzLfgeAZKSFA"/>
-  <RIM:Role xmi:id="_u7X6MMyxEeO7XY1kXX1jtw" base_Class="_rxvPwMyxEeO7XY1kXX1jtw"/>
   <Default:Documentation xmi:id="_62qAcMyxEeO7XY1kXX1jtw" base_Comment="_62lvAMyxEeO7XY1kXX1jtw"/>
   <Default:Documentation xmi:id="_BN1k8MyyEeO7XY1kXX1jtw" base_Comment="_BN094cyyEeO7XY1kXX1jtw"/>
   <Default:Documentation xmi:id="_KX0BMMyyEeO7XY1kXX1jtw" base_Comment="_KXml0MyyEeO7XY1kXX1jtw"/>
-  <FHIM:Mapping xmi:id="_ZNS0oLoREeWqFd182BzgAw" base_Property="_wM_fAL2ZEeG_PZtvUC92nw">
-    <index xmi:id="_ZNS0oboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-25"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZNUp0LoREeWqFd182BzgAw" base_Property="_F4VpwL2dEeG_PZtvUC92nw">
-    <index xmi:id="_ZNUp0boREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-29"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZNYUMLoREeWqFd182BzgAw" base_Property="_Od6R8NUWEeGzd-o9XtejuA">
-    <index xmi:id="_ZNY7QLoREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXD-35"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZNbXgLoREeWqFd182BzgAw" base_Property="_K8QB8F7xEeCcBvMgXNMeOQ">
-    <index xmi:id="_ZNbXgboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXO-25"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZNdMsLoREeWqFd182BzgAw" base_Property="_420A62FD03B641DEA2E70318">
-    <index xmi:id="_ZNdMsboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-17"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZNfB4LoREeWqFd182BzgAw" base_Property="_420A62FD03B6419906560120">
-    <index xmi:id="_ZNfB4boREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-16"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZNg3ELoREeWqFd182BzgAw" base_Property="_420A62FD03B6419902EB03B6">
-    <index xmi:id="_ZNg3EboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXA-15"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZNisQLoREeWqFd182BzgAw" base_Property="_QQ5xkXpnEd-44ra0dfiJCw">
-    <index xmi:id="_ZNjTULoREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXD-20"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZNkhcLoREeWqFd182BzgAw" base_Property="_rHleIM_wEd-YeMSrwW6svA">
-    <index xmi:id="_ZNkhcboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXD-22"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZNmWoLoREeWqFd182BzgAw" base_Property="_fQ4_0F7xEeCcBvMgXNMeOQ">
-    <index xmi:id="_ZNmWoboREeWqFd182BzgAw" standardOrProject="HL7v2" value="RXO-25"/>
-  </FHIM:Mapping>
   <Default:Documentation xmi:id="_cVgS8AGzEead0-Tdy4-iQA" base_Comment="_cVLi0AGzEead0-Tdy4-iQA"/>
   <Default:Documentation xmi:id="_eRc1sAHIEeadSdoDuZEYwQ" base_Comment="_eRM-EAHIEeadSdoDuZEYwQ"/>
   <Default:Documentation xmi:id="_j-qasAHJEeadSdoDuZEYwQ" base_Comment="_j-nXYQHJEeadSdoDuZEYwQ"/>
@@ -4414,7 +4352,6 @@ A UDI is a unique numeric or alphanumeric code that consists of two parts: a) a 
   <Default:Documentation xmi:id="_2OoAQgJnEeaG4J0T8FMiWg" base_Comment="_2OoAQQJnEeaG4J0T8FMiWg"/>
   <Default:Documentation xmi:id="_F2fF8AJoEeaG4J0T8FMiWg" base_Comment="_F2ee4QJoEeaG4J0T8FMiWg"/>
   <Default:Documentation xmi:id="_YihHRAJoEeaG4J0T8FMiWg" base_Comment="_YihHQQJoEeaG4J0T8FMiWg"/>
-  <RIM:Device xmi:id="_56lpwAJpEeaG4J0T8FMiWg" base_Class="_kIEVcAJlEeaG4J0T8FMiWg"/>
   <Default:Documentation xmi:id="_Oak8AAJqEeaG4J0T8FMiWg" base_Comment="_OabyEAJqEeaG4J0T8FMiWg"/>
   <Default:Documentation xmi:id="_Q0YsAAJqEeaG4J0T8FMiWg" base_Comment="_Q0O7AAJqEeaG4J0T8FMiWg"/>
   <Default:Documentation xmi:id="_JLKbZgJrEeaG4J0T8FMiWg" base_Comment="_JLKbYQJrEeaG4J0T8FMiWg"/>
@@ -4422,11 +4359,6 @@ A UDI is a unique numeric or alphanumeric code that consists of two parts: a) a 
   <Default:Documentation xmi:id="_17yKgAJsEeaG4J0T8FMiWg" base_Comment="_17xjcAJsEeaG4J0T8FMiWg"/>
   <Default:Documentation xmi:id="_q_D2EAKfEeaJDZZ7cuA0cA" base_Comment="_q-6FEAKfEeaJDZZ7cuA0cA"/>
   <Default:Documentation xmi:id="_rvXRoAKfEeaJDZZ7cuA0cA" base_Comment="_rvNgoAKfEeaJDZZ7cuA0cA"/>
-  <RIM:Entity xmi:id="_ERm4YAKgEeaJDZZ7cuA0cA" base_Class="_KkOVgAJqEeaG4J0T8FMiWg"/>
-  <RIM:Role xmi:id="_6k7jcBPREeaEMK-9YQqLHg" base_Class="_6zfrEP2wEeWjDqDBPhzhtA"/>
-  <RIM:Material xmi:id="_nMS0UFmtEeaS-p0gLOVqFQ" base_Class="_420A62FD03B645919F1600B4"/>
-  <RIM:ManufacturedMaterial xmi:id="_G2uo4Fp2Eea8uN_zi5afyA" base_Class="__6daUFp1Eea8uN_zi5afyA"/>
-  <RIM:ManufacturedMaterial xmi:id="_xCNXMFp2Eea8uN_zi5afyA" base_Class="_tpDDAFp2Eea8uN_zi5afyA"/>
   <Default:Documentation xmi:id="_2K9yAFp8Eea8uN_zi5afyA" base_Comment="_2K0BAFp8Eea8uN_zi5afyA"/>
   <Default:Documentation xmi:id="_AIwUwFsVEeaxDokgI-Y3eA" base_Comment="_AIdZ0FsVEeaxDokgI-Y3eA"/>
   <Default:Documentation xmi:id="_TeXekFsVEeaxDokgI-Y3eA" base_Comment="_TeOUoFsVEeaxDokgI-Y3eA"/>
@@ -4465,7 +4397,6 @@ A UDI is a unique numeric or alphanumeric code that consists of two parts: a) a 
   <Default:Documentation xmi:id="_4ues4F84EeadZ8QwYgX1hQ" base_Comment="_L-4VIeLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MczRoF85EeadZ8QwYgX1hQ" base_Comment="_Mcw1Yl85EeadZ8QwYgX1hQ"/>
   <Default:Documentation xmi:id="_Ua234F86EeadZ8QwYgX1hQ" base_Comment="_i61h8P2yEeWjDqDBPhzhtA"/>
-  <RIM:ManufacturedMaterial xmi:id="_j3gm0Ph_EeamspOPLo07ww" base_Class="_e3kiEPh_EeamspOPLo07ww"/>
   <Default:Documentation xmi:id="_bGcRcPiNEeax5t-ywfrhxA" base_Comment="_bGIvcPiNEeax5t-ywfrhxA"/>
   <Default:Documentation xmi:id="_Goc4YPiPEeax5t-ywfrhxA" base_Comment="_GoXY0PiPEeax5t-ywfrhxA"/>
   <Default:Documentation xmi:id="_1xn_gPneEeaPd4r0BT6ZOg" base_Comment="_1xbyQPneEeaPd4r0BT6ZOg"/>
@@ -4486,7 +4417,6 @@ A UDI is a unique numeric or alphanumeric code that consists of two parts: a) a 
   <Default:Documentation xmi:id="_B49PxBMwEeeN9OBqDrrLrg" base_Comment="_B49PwRMwEeeN9OBqDrrLrg"/>
   <Default:Documentation xmi:id="_CBuKNBMwEeeN9OBqDrrLrg" base_Comment="_CBuKMRMwEeeN9OBqDrrLrg"/>
   <Default:Documentation xmi:id="_CGi_1BMwEeeN9OBqDrrLrg" base_Comment="_CGi_0RMwEeeN9OBqDrrLrg"/>
-  <RIM:Device xmi:id="_zIQugBWTEeeKharB8T6q_A" base_Class="_R4OqgBMdEeeJEtdzPYvf5Q"/>
   <Default:Documentation xmi:id="_vUacoBZHEeer2PfFeUXvjw" base_Comment="_vUSg0BZHEeer2PfFeUXvjw"/>
   <Default:Documentation xmi:id="_9BzZEB3vEeeIxccvDlLgJA" base_Comment="_9BnL0B3vEeeIxccvDlLgJA"/>
   <Default:Documentation xmi:id="_m0YX0R3zEeeIxccvDlLgJA" base_Comment="_m0YX0B3zEeeIxccvDlLgJA"/>
@@ -4497,7 +4427,6 @@ A UDI is a unique numeric or alphanumeric code that consists of two parts: a) a 
   <Default:Documentation xmi:id="_4A1AQB30EeeIxccvDlLgJA" base_Comment="_4Ar2UB30EeeIxccvDlLgJA"/>
   <Default:Documentation xmi:id="_EbWANB31EeeIxccvDlLgJA" base_Comment="_EbWAMR31EeeIxccvDlLgJA"/>
   <Default:Documentation xmi:id="_qzGBYB35EeeIxccvDlLgJA" base_Comment="_I-D3cKMaEeOzLfgeAZKSFA"/>
-  <RIM:Device xmi:id="_-hICgB4KEeeIxccvDlLgJA" base_Class="_hLdkUB3vEeeIxccvDlLgJA"/>
   <Default:Documentation xmi:id="_zUNosB4LEeeIxccvDlLgJA" base_Comment="_zUD3sB4LEeeIxccvDlLgJA"/>
   <Default:Documentation xmi:id="_koBEkR4MEeeIxccvDlLgJA" base_Comment="_koBEkB4MEeeIxccvDlLgJA"/>
   <Default:Documentation xmi:id="_6-uydB4NEeeIxccvDlLgJA" base_Comment="_6-uycR4NEeeIxccvDlLgJA"/>

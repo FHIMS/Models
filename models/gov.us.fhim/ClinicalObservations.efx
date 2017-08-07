@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.5-->
+<!--Rational Software Architect Designer 9.6-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:FHIM="http://gov.us.fhim/profile/1" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_nbBsIFaeEd6rJ7jpZ7LBFg" name="ClinicalObservation">
     <eAnnotations xmi:id="_laZ2IEDLEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_laU9oEDLEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -99,7 +99,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_qpTR08dIEeSNEod3mqifkA" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_qpTR1MdIEeSNEod3mqifkA" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_qpT44MdIEeSNEod3mqifkA" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+          <element xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qpSDscdIEeSNEod3mqifkA" x="7608" y="-7608"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_kr-bkM5KEeSoLYfuQMb72Q" element="_nbH1LVaeEd6rJ7jpZ7LBFg" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -487,12 +487,12 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_eysbrB7rEeeR140udo0pbA" type="FromMultiplicityLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_eysbrh7rEeeR140udo0pbA" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="Common.efx#_OeQTIAXZEeebQs_lQM5n6g?FHIM/Common/ClinicalInformation/comment?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_OeQTIAXZEeebQs_lQM5n6g?FHIM/Common/ClinicalStatement/comment?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_eysbrR7rEeeR140udo0pbA" y="396"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_eysbrx7rEeeR140udo0pbA" type="FromRoleLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_eysbsR7rEeeR140udo0pbA" type="FromRole"/>
-            <element xmi:type="uml:Property" href="Common.efx#_OeQTIAXZEeebQs_lQM5n6g?FHIM/Common/ClinicalInformation/comment?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_OeQTIAXZEeebQs_lQM5n6g?FHIM/Common/ClinicalStatement/comment?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_eysbsB7rEeeR140udo0pbA" y="-397"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_eysbsh7rEeeR140udo0pbA" visible="false" type="ToQualifierLabel">
@@ -502,7 +502,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_eysbtR7rEeeR140udo0pbA" visible="false" type="FromQualifierLabel">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_eysbtx7rEeeR140udo0pbA" type="QualifierCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_OeQTIAXZEeebQs_lQM5n6g?FHIM/Common/ClinicalInformation/comment?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_OeQTIAXZEeebQs_lQM5n6g?FHIM/Common/ClinicalStatement/comment?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_eysbth7rEeeR140udo0pbA" y="-186"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_eysbuB7rEeeR140udo0pbA" visible="false" type="ToConstraintLabel">
@@ -512,7 +512,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_ey1lkR7rEeeR140udo0pbA" visible="false" type="FromConstraintLabel">
             <children xmi:type="notation:ListCompartment" xmi:id="_ey1lkx7rEeeR140udo0pbA" type="FromConstraintCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_OeQTIAXZEeebQs_lQM5n6g?FHIM/Common/ClinicalInformation/comment?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_OeQTIAXZEeebQs_lQM5n6g?FHIM/Common/ClinicalStatement/comment?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_ey1lkh7rEeeR140udo0pbA" y="1058"/>
           </children>
           <element xmi:type="uml:Association" href="Common.efx#_OePsEAXZEeebQs_lQM5n6g?FHIM/Common/clinicalInformation_comment?"/>
@@ -897,7 +897,7 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
 &quot;Measurements and simple assertions made about a patient, device or other subject.&quot; - HL7 FHIR, Observation resource.</body>
       </ownedComment>
       <generalization xmi:id="_Vt3yQMQ-EeSThJ7NwJgY1w">
-        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
       <ownedAttribute xmi:id="_nbH1L1aeEd6rJ7jpZ7LBFg" name="bodySite" visibility="public">
         <ownedComment xmi:id="_aR5vkH-0EeOzENpLs8HIcg" annotatedElement="_nbH1L1aeEd6rJ7jpZ7LBFg">
@@ -1185,9 +1185,6 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
   <Default:Documentation xmi:id="_nbgNSFaeEd6rJ7jpZ7LBFg" base_Comment="_nbH1B1aeEd6rJ7jpZ7LBFg"/>
   <Default:Documentation xmi:id="_YboOUF-WEd67Z-0RDQoqiA" base_Comment="_YbedUF-WEd67Z-0RDQoqiA"/>
   <Default:Documentation xmi:id="_YLjNUH_gEd-Ure_vzgD_TA" base_Comment="_YLZcUH_gEd-Ure_vzgD_TA"/>
-  <RIM:Observation xmi:id="_5XhfcH_fEd-Ure_vzgD_TA" base_Class="_nbH1LVaeEd6rJ7jpZ7LBFg"/>
-  <RIM:Observation xmi:id="_SRzLsH_gEd-Ure_vzgD_TA" base_Class="_nbH1BlaeEd6rJ7jpZ7LBFg"/>
-  <RIM:Observation xmi:id="_79Ne4BcBEeOL3Nw-k5HkNw" base_Class="_wBabQBcBEeOL3Nw-k5HkNw"/>
   <Default:Documentation xmi:id="_zmyxEBcCEeOL3Nw-k5HkNw" base_Comment="_zmpAEBcCEeOL3Nw-k5HkNw"/>
   <Default:Documentation xmi:id="_nHEEgBcDEeOL3Nw-k5HkNw" base_Comment="_nG6TgBcDEeOL3Nw-k5HkNw"/>
   <Default:Documentation xmi:id="_ycHpgBcJEeOL3Nw-k5HkNw" base_Comment="_yb94gBcJEeOL3Nw-k5HkNw"/>
@@ -1200,55 +1197,11 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
   <Default:Documentation xmi:id="_h8aFUJpcEeOswd2lHBTpDQ" base_Comment="_h8NRAJpcEeOswd2lHBTpDQ"/>
   <Default:Documentation xmi:id="_4FOUsPDOEeO_Te8vAbT_YQ" base_Comment="_4FD8oPDOEeO_Te8vAbT_YQ"/>
   <Default:Documentation xmi:id="_EpPFQHywEeSWGIFkX6Zyfg" base_Comment="_EpMB8XywEeSWGIFkX6Zyfg"/>
-  <term:ValueSetConstraint xmi:id="_Krc44BJfEeKBDeGP59RrVA" base_Property="_420A62FD03B64263C9AE023E">
-    <reference href="FHIM_Vocab.emx#_B4lLsGhEEeOywMcrK34nEA?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
   <Default:Documentation xmi:id="_HukFMrskEeGZTLDYkoM_Sw" base_Comment="_M6oyw-LiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_jT9T4LskEeGZTLDYkoM_Sw" base_Comment="_jT1YELskEeGZTLDYkoM_Sw"/>
   <Default:Documentation xmi:id="_Rzl4UEU4EeKmiJoj9rWMSg" base_Comment="_RzejkEU4EeKmiJoj9rWMSg"/>
-  <RIM:Act xmi:id="_T_QWMO3NEeCFZuasLkncZQ" base_Class="_eWYXgO3MEeCFZuasLkncZQ"/>
   <Default:Documentation xmi:id="_E5ZIcMQ-EeSThJ7NwJgY1w" base_Comment="_KverIHyhEeOHq5zPTCjDoQ"/>
   <Default:Documentation xmi:id="_GoU48N14EeSq65vB-N1vxw" base_Comment="_GoQAcN14EeSq65vB-N1vxw"/>
-  <term:ValueSetConstraint xmi:id="_s_epIOeAEeSlqtEJq7r6DQ" base_Property="_yzWXYBcBEeOL3Nw-k5HkNw">
-    <reference href="FHIM_Vocab.emx#_3XEWQMQZEeSaFayJQBK5xQ?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <FHIM:Mapping xmi:id="_ZMfjYLoREeWqFd182BzgAw" base_Property="_420A62FD03B64263C9AE023E">
-    <index xmi:id="_ZMfjYboREeWqFd182BzgAw" standardOrProject="HL7v2" value="OBX-8"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMjNwLoREeWqFd182BzgAw" base_Property="_nbH1L1aeEd6rJ7jpZ7LBFg">
-    <index xmi:id="_ZMjNwboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.bodySite"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMmRELoREeWqFd182BzgAw" base_Property="_EpMB8HywEeSWGIFkX6Zyfg">
-    <index xmi:id="_ZMmREboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.dataAbsentReason"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMoGQLoREeWqFd182BzgAw" base_Property="_nbH1NVaeEd6rJ7jpZ7LBFg">
-    <index xmi:id="_ZMoGQboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.applies"/>
-    <index xmi:id="_ZMpUYLoREeWqFd182BzgAw" standardOrProject="HL7v2" value="OBX-14"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMrJkLoREeWqFd182BzgAw" base_Property="_PKp3ABybEeOR-a0_xUg6BQ">
-    <index xmi:id="_ZMrJkboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.encounter"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMs-wLoREeWqFd182BzgAw" base_Property="_l45L8BcpEeOL3Nw-k5HkNw">
-    <index xmi:id="_ZMs-wboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.interpretation"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMuM4LoREeWqFd182BzgAw" base_Property="_nbH1QlaeEd6rJ7jpZ7LBFg">
-    <index xmi:id="_ZMuM4boREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.method"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMwCELoREeWqFd182BzgAw" base_Property="_qRz1UBcbEeOL3Nw-k5HkNw">
-    <index xmi:id="_ZMwCEboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.code"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMyeULoREeWqFd182BzgAw" base_Property="_LYGwEPDOEeO_Te8vAbT_YQ">
-    <index xmi:id="_ZMyeUboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.referenceRange"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZM0TgLoREeWqFd182BzgAw" base_Property="_nbH1TFaeEd6rJ7jpZ7LBFg">
-    <index xmi:id="_ZM0TgboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.reliability"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZM2vwLoREeWqFd182BzgAw" base_Property="_VCEnMPOOEeGMQvy2b7FvNg">
-    <index xmi:id="_ZM2vwboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.value"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZM-rkLoREeWqFd182BzgAw" base_Property="_6IeGAN13EeSq65vB-N1vxw">
-    <index xmi:id="_ZM-rkboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Observation.referenceRange.text"/>
-  </FHIM:Mapping>
   <Default:Documentation xmi:id="_PAM14ePoEea407qNHok1lQ" base_Comment="_PAM14OPoEea407qNHok1lQ"/>
   <Default:Documentation xmi:id="_USBU1OPoEea407qNHok1lQ" base_Comment="_USBU0ePoEea407qNHok1lQ"/>
   <Default:Documentation xmi:id="_Me5sQB7MEeeR140udo0pbA" base_Comment="_MeuGEB7MEeeR140udo0pbA"/>
@@ -1262,7 +1215,6 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
   <Default:Documentation xmi:id="_VzaOoR76EeeR140udo0pbA" base_Comment="_VzaOoB76EeeR140udo0pbA"/>
   <Default:Documentation xmi:id="_dAh8oR76EeeR140udo0pbA" base_Comment="_dAh8oB76EeeR140udo0pbA"/>
   <Default:Documentation xmi:id="_Vs0DsB-EEeeZ3N7_V_4PrA" base_Comment="_VsmBQB-EEeeZ3N7_V_4PrA"/>
-  <RIM:Observation xmi:id="_lj_JAB-KEeeZ3N7_V_4PrA" base_Class="_3XW7MGH_EeCHAoM78Lf2xA"/>
   <Default:Documentation xmi:id="_xY_oJB-KEeeZ3N7_V_4PrA" base_Comment="_xY_oIR-KEeeZ3N7_V_4PrA"/>
   <Default:Documentation xmi:id="_DKSfgR-LEeeZ3N7_V_4PrA" base_Comment="_DKSfgB-LEeeZ3N7_V_4PrA"/>
   <Default:Documentation xmi:id="_5c8ePR-PEee94IovPwpKfw" base_Comment="_5c8eMR-PEee94IovPwpKfw"/>
@@ -1271,5 +1223,4 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
   <Default:Documentation xmi:id="_xf1WUB-SEee94IovPwpKfw" base_Comment="_xfzhIB-SEee94IovPwpKfw"/>
   <Default:Documentation xmi:id="_c_m-EB-TEee94IovPwpKfw" base_Comment="_c_jTsB-TEee94IovPwpKfw"/>
   <Default:Documentation xmi:id="_5ElrwB-TEee94IovPwpKfw" base_Comment="_5EhaUB-TEee94IovPwpKfw"/>
-  <RIM:Observation xmi:id="_9c4hsB-TEee94IovPwpKfw" base_Class="_zXI9kB-PEee94IovPwpKfw"/>
 </xmi:XMI>

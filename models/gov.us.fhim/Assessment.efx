@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.5-->
+<!--Rational Software Architect Designer 9.6-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:FHIM="http://gov.us.fhim/profile/1" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_420A62FD03B642A6E9450017" name="Assessment">
     <eAnnotations xmi:id="_tCRb4EDKEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_tA6xAEDKEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -134,7 +134,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_QS6SI-40EeaUvKSLywOgEw" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_QS6SJO40EeaUvKSLywOgEw" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_QS6SJe40EeaUvKSLywOgEw" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+          <element xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QS5EAe40EeaUvKSLywOgEw" x="10778" y="-11412"/>
         </children>
         <element xsi:nil="true"/>
@@ -367,12 +367,12 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_QS9Vce40EeaUvKSLywOgEw" type="FromMultiplicityLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_QS9Vc-40EeaUvKSLywOgEw" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalInformation/subjectOfRecord?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalStatement/subjectOfRecord?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_QS9Vcu40EeaUvKSLywOgEw" y="396"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_QS9VdO40EeaUvKSLywOgEw" type="FromRoleLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_QS98gO40EeaUvKSLywOgEw" type="FromRole"/>
-            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalInformation/subjectOfRecord?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalStatement/subjectOfRecord?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_QS9Vde40EeaUvKSLywOgEw" y="-397"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_QS98ge40EeaUvKSLywOgEw" visible="false" type="ToQualifierLabel">
@@ -382,7 +382,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_QS98hO40EeaUvKSLywOgEw" visible="false" type="FromQualifierLabel">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_QS-jkO40EeaUvKSLywOgEw" type="QualifierCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalInformation/subjectOfRecord?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalStatement/subjectOfRecord?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_QS98he40EeaUvKSLywOgEw" y="-186"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_QS-jke40EeaUvKSLywOgEw" visible="false" type="ToConstraintLabel">
@@ -392,7 +392,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_QS-jlO40EeaUvKSLywOgEw" visible="false" type="FromConstraintLabel">
             <children xmi:type="notation:ListCompartment" xmi:id="_QS-jlu40EeaUvKSLywOgEw" type="FromConstraintCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalInformation/subjectOfRecord?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalStatement/subjectOfRecord?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_QS-jle40EeaUvKSLywOgEw" y="1058"/>
           </children>
           <element xmi:type="uml:Association" href="Common.efx#_4xDsYOSmEeaMP8OhjVeyrg?FHIM/Common/clinicalInformation_subjectOfRecord?"/>
@@ -435,7 +435,7 @@
         <body>This class describes the performance of an assessment of a particular aspect of a patient’s condition.  Such assessments employ a test or instrument, often a questionnaire, that quantify otherwise subjective observations.  These instruments employ scoring sysystems which have been systemetized and validated.  Standardized assessment tools create scores and (sometimes) sub-scores which are then used to determine the optimal placement and treatment plans for the patient and to track patient progress over time.  Standardized assessment tools facilitate the collection of accurate information in a reliable and consistent manner, provide clinicians and treatment agencies with increased accountability, identify patient progress over time, and provide a basis to adjust treatment plans.</body>
       </ownedComment>
       <generalization xmi:id="_eqGScN6DEeaQL8YZ3sNKnw">
-        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
       <ownedAttribute xmi:id="_gTUboGJgEeKl3I3Lt5ZAXg" name="applicability" visibility="public" type="_UmgNAI8GEd-XNpj2tjovxA">
         <ownedComment xmi:id="_gTUboWJgEeKl3I3Lt5ZAXg" annotatedElement="_gTUboGJgEeKl3I3Lt5ZAXg">
@@ -1517,24 +1517,6 @@
   <Default:Documentation xmi:id="_UysDhmKAEeKl3I3Lt5ZAXg" base_Comment="_UysDgWKAEeKl3I3Lt5ZAXg"/>
   <Default:Documentation xmi:id="_wCmXYHCXEeKknILXOCcS7w" base_Comment="_wCfCoHCXEeKknILXOCcS7w"/>
   <Default:Documentation xmi:id="_z5OzEHCJEeKknILXOCcS7w" base_Comment="_z5HeUHCJEeKknILXOCcS7w"/>
-  <RIM:Observation xmi:id="_-dSUwHCWEeKknILXOCcS7w" base_Class="_DqIjMHCOEeKknILXOCcS7w"/>
-  <RIM:Observation xmi:id="_0e_YEHB0EeKknILXOCcS7w" base_Class="_w2fAUHB0EeKknILXOCcS7w"/>
-  <RIM:Observation xmi:id="_bjvyUVwTEd6dhZ7uY2XV5Q" base_Class="_420A62FD03B642DFB7AB0068"/>
-  <RIM:Observation xmi:id="_di2FUH_kEd-Ure_vzgD_TA" base_Class="_420A62FD03B642DFB6BC006E"/>
-  <RIM:Observation xmi:id="_FSKFIGKREeKl3I3Lt5ZAXg" base_Class="_ef5sgGJ8EeKl3I3Lt5ZAXg"/>
-  <RIM:Observation xmi:id="_xeAFg2KNEeKl3I3Lt5ZAXg" base_Class="_JemCoGKMEeKl3I3Lt5ZAXg"/>
-  <RIM:Observation xmi:id="_xeAFgGKNEeKl3I3Lt5ZAXg" base_Class="_KrrXQGKAEeKl3I3Lt5ZAXg"/>
-  <RIM:Observation xmi:id="_xeAFgmKNEeKl3I3Lt5ZAXg" base_Class="_3sAEYGKDEeKl3I3Lt5ZAXg"/>
-  <RIM:Observation xmi:id="_xeAFgWKNEeKl3I3Lt5ZAXg" base_Class="_uIf1MGKAEeKl3I3Lt5ZAXg"/>
-  <RIM:Observation xmi:id="_xeAFhGKNEeKl3I3Lt5ZAXg" base_Class="_QRKioGKMEeKl3I3Lt5ZAXg"/>
-  <RIM:Observation xmi:id="_xeAFhWKNEeKl3I3Lt5ZAXg" base_Class="_5W5w4GKMEeKl3I3Lt5ZAXg"/>
-  <RIM:Observation xmi:id="_zE9cQGKNEeKl3I3Lt5ZAXg" base_Class="_xDSn0GJ_EeKl3I3Lt5ZAXg"/>
-  <RIM:Observation xmi:id="_zE9cQWKNEeKl3I3Lt5ZAXg" base_Class="_sXbMYF6fEeKGzfqSipVsxQ"/>
-  <FHIM:Mapping xmi:id="_ftNeYLoREeWqFd182BzgAw" base_Classifier="_420A62FD03B642DFB6BC006E">
-    <index xmi:id="_ftNeYboREeWqFd182BzgAw" value="Assessment Section (2.16.840.1.113883.10.20.22.2.8)"/>
-    <index xmi:id="_ftNeYroREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Section/text"/>
-    <index xmi:id="_ftNeY7oREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="None"/>
-  </FHIM:Mapping>
   <Default:Documentation xmi:id="_m2Jh8OeuEeWKHuD1aKU_UQ" base_Comment="_m1sO8OeuEeWKHuD1aKU_UQ"/>
   <Default:Documentation xmi:id="_MbUMceevEeWKHuD1aKU_UQ" base_Comment="_MbUMcOevEeWKHuD1aKU_UQ"/>
   <Default:Documentation xmi:id="_oLknVOevEeWKHuD1aKU_UQ" base_Comment="_oLknUeevEeWKHuD1aKU_UQ"/>

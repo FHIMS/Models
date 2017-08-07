@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.5-->
+<!--Rational Software Architect Designer 9.6-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:FHIM="http://gov.us.fhim/profile/1" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_420A62FD03B6418AB45103D1" name="Allergies">
     <eAnnotations xmi:id="_ibki8EDKEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_iasZMEDKEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -324,7 +324,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_y-fyUO4yEeaUvKSLywOgEw" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_y-fyUe4yEeaUvKSLywOgEw" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_y-hAcO4yEeaUvKSLywOgEw" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+          <element xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y-XPce4yEeaUvKSLywOgEw" x="22824" y="-6974"/>
         </children>
         <element xsi:nil="true"/>
@@ -702,12 +702,12 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_y_tTQ-4yEeaUvKSLywOgEw" type="FromMultiplicityLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_y_t6UO4yEeaUvKSLywOgEw" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalInformation/subjectOfRecord?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalStatement/subjectOfRecord?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_y_tTRO4yEeaUvKSLywOgEw" y="396"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_y_t6Ue4yEeaUvKSLywOgEw" type="FromRoleLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_y_t6U-4yEeaUvKSLywOgEw" type="FromRole"/>
-            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalInformation/subjectOfRecord?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalStatement/subjectOfRecord?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_y_t6Uu4yEeaUvKSLywOgEw" y="-397"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_y_uhYO4yEeaUvKSLywOgEw" type="ToQualifierLabel">
@@ -717,7 +717,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_y_uhY-4yEeaUvKSLywOgEw" type="FromQualifierLabel">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_y_vIcO4yEeaUvKSLywOgEw" type="QualifierCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalInformation/subjectOfRecord?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalStatement/subjectOfRecord?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_y_uhZO4yEeaUvKSLywOgEw" y="-186"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_y_w9oO4yEeaUvKSLywOgEw" type="ToConstraintLabel">
@@ -727,7 +727,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_y_xkse4yEeaUvKSLywOgEw" type="FromConstraintLabel">
             <children xmi:type="notation:ListCompartment" xmi:id="_y_xks-4yEeaUvKSLywOgEw" type="FromConstraintCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalInformation/subjectOfRecord?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalStatement/subjectOfRecord?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_y_xksu4yEeaUvKSLywOgEw" y="1058"/>
           </children>
           <element xmi:type="uml:Association" href="Common.efx#_4xDsYOSmEeaMP8OhjVeyrg?FHIM/Common/clinicalInformation_subjectOfRecord?"/>
@@ -1051,110 +1051,19 @@ Note that FHIR uses a code for this concept, but we modeled this as a string, be
   <Default:Documentation xmi:id="_qMV78GuCEeCZQ_Ui4wPHHw" base_Comment="_qMUt0WuCEeCZQ_Ui4wPHHw"/>
   <Default:Documentation xmi:id="_TpehUGYDEeCWgYu_gBZhWw" base_Comment="_Tpa28GYDEeCWgYu_gBZhWw"/>
   <Default:Documentation xmi:id="_WLzeMMHwEeGx0M-CyAbegA" base_Comment="_WLk0sMHwEeGx0M-CyAbegA"/>
-  <RIM:Observation xmi:id="_GQ4QgGAXEd6WVbzqQgD2OA" base_Class="_420A62FD03B6418BB10D01EB"/>
-  <RIM:Observation xmi:id="_MUAb1jO_EeCBme_1raFDzg" base_Class="_Mm8tUDO8EeCBme_1raFDzg"/>
-  <RIM:Observation xmi:id="_Z-kPEUUdEeCUY8hq_icSiw" base_Class="_KXfzkEUdEeCUY8hq_icSiw"/>
   <Default:Documentation xmi:id="_zyHUoOsuEeKoPIE7gccV1g" base_Comment="_zyE4YesuEeKoPIE7gccV1g"/>
   <Default:Documentation xmi:id="_rPRioHxyEeOBSYmVzO0iCQ" base_Comment="_rK71MHxyEeOBSYmVzO0iCQ"/>
   <Default:Documentation xmi:id="_UXSnkJppEeOswd2lHBTpDQ" base_Comment="_UXJdoJppEeOswd2lHBTpDQ"/>
   <Default:Documentation xmi:id="_l0NxcJppEeOswd2lHBTpDQ" base_Comment="_l0EngJppEeOswd2lHBTpDQ"/>
   <Default:Documentation xmi:id="_C1XsQPDJEeO_Te8vAbT_YQ" base_Comment="_C1KQ4PDJEeO_Te8vAbT_YQ"/>
-  <RIM:Observation xmi:id="_Y9EjMPDJEeO_Te8vAbT_YQ" base_Class="_PHEucPDJEeO_Te8vAbT_YQ"/>
   <Default:Documentation xmi:id="_bmEwUPDKEeO_Te8vAbT_YQ" base_Comment="_bl7mYPDKEeO_Te8vAbT_YQ"/>
   <Default:Documentation xmi:id="_IGjAEPDLEeO_Te8vAbT_YQ" base_Comment="_IGadMPDLEeO_Te8vAbT_YQ"/>
   <Default:Documentation xmi:id="_TdzMMPDLEeO_Te8vAbT_YQ" base_Comment="_Tdu6wPDLEeO_Te8vAbT_YQ"/>
-  <term:ValueSetConstraint xmi:id="_A90CgN7_EeSx5bpydj26Wg" base_Property="_TVkSYN7-EeSx5bpydj26Wg">
-    <reference href="FHIM_Vocab.emx#__Ip3EOQ1EeSuxrYeYCfuhA?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_qXiyQN-YEeSLwbHBnRFGvw" base_Property="_420A62FD03B6418BD7C9014C">
-    <reference href="FHIM_Vocab.emx#_zwHgoN-XEeSLwbHBnRFGvw?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_txaREN-YEeSLwbHBnRFGvw" base_Property="_t_VCcGX9EeCWgYu_gBZhWw">
-    <reference href="FHIM_Vocab.emx#_Lc2EoNoGEeSdPcnORr-kJQ?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_z8lZ4N-YEeSLwbHBnRFGvw" base_Property="_zyE4YOsuEeKoPIE7gccV1g">
-    <reference href="FHIM_Vocab.emx#_vNSKEOQ2EeSuxrYeYCfuhA?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
   <Default:Documentation xmi:id="_A_suEN-dEeSLwbHBnRFGvw" base_Comment="_A_hH4N-dEeSLwbHBnRFGvw"/>
   <Default:Documentation xmi:id="_e961UN-dEeSLwbHBnRFGvw" base_Comment="_e93yAd-dEeSLwbHBnRFGvw"/>
   <Default:Documentation xmi:id="_4NcY0N-dEeSLwbHBnRFGvw" base_Comment="_4NQyoN-dEeSLwbHBnRFGvw"/>
   <Default:Documentation xmi:id="_BdtDQN-eEeSLwbHBnRFGvw" base_Comment="_Bdr1Id-eEeSLwbHBnRFGvw"/>
   <Default:Documentation xmi:id="_X6INAN-eEeSLwbHBnRFGvw" base_Comment="_X6BfUN-eEeSLwbHBnRFGvw"/>
   <Default:Documentation xmi:id="_325EkN-eEeSLwbHBnRFGvw" base_Comment="_32sQQN-eEeSLwbHBnRFGvw"/>
-  <term:ValueSetConstraint xmi:id="_iZQGwOd_EeSlqtEJq7r6DQ" base_Property="_e93yAN-dEeSLwbHBnRFGvw">
-    <reference href="FHIM_Vocab.emx#__emNoOdxEeSKGaa1qzZLJg?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_mXsSQOd_EeSlqtEJq7r6DQ" base_Property="_P-0AcNYuEd62cosTNS-_lw">
-    <reference href="FHIM_Vocab.emx#_RTwGwOdxEeSKGaa1qzZLJg?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_aOPXsOeAEeSlqtEJq7r6DQ" base_Property="_CeA3sGX_EeCWgYu_gBZhWw">
-    <reference href="FHIM_Vocab.emx#_gGBdsedwEeSKGaa1qzZLJg?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <term:ValueSetConstraint xmi:id="_exb2EOeAEeSlqtEJq7r6DQ" base_Property="_qMUt0GuCEeCZQ_Ui4wPHHw">
-    <reference href="FHIM_Vocab.emx#_Oy2iMOdvEeSKGaa1qzZLJg?%3CValueSetVersion%3E?"/>
-  </term:ValueSetConstraint>
-  <FHIM:Mapping xmi:id="_ZLk9YLoREeWqFd182BzgAw" base_Property="_vcbScMIzEeGx0M-CyAbegA">
-    <index xmi:id="_ZLmLgLoREeWqFd182BzgAw" standardOrProject="HL7v2" value="IAM-16"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZLonwLoREeWqFd182BzgAw" base_Property="_zyE4YOsuEeKoPIE7gccV1g">
-    <index xmi:id="_ZLpO0LoREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="AllergyIntolerance.criticality"/>
-    <index xmi:id="_ZLrrELoREeWqFd182BzgAw" standardOrProject="HL7v2" value="AL1-4"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZLuHULoREeWqFd182BzgAw" base_Property="_qMUt0GuCEeCZQ_Ui4wPHHw">
-    <index xmi:id="_ZLuHUboREeWqFd182BzgAw" standardOrProject="HL7v2" value="AL1-2 "/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZLwjkLoREeWqFd182BzgAw" base_Property="_zs_h4N-cEeSLwbHBnRFGvw">
-    <index xmi:id="_ZLwjkboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="AllergyIntolerance.lastOccurence"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZLy_0LoREeWqFd182BzgAw" base_Property="_420A62FD03B6418BD7C9014C">
-    <index xmi:id="_ZLy_0boREeWqFd182BzgAw" standardOrProject="HL7v2" value="IAM-9 "/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZL1cELoREeWqFd182BzgAw" base_Property="_t_VCcGX9EeCWgYu_gBZhWw">
-    <index xmi:id="_ZL1cEboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="AllergyIntolerance.substance"/>
-    <index xmi:id="_ZL5GcLoREeWqFd182BzgAw" standardOrProject="HL7v2" value="AL1-3 "/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZL7isLoREeWqFd182BzgAw" base_Property="_CeA3sGX_EeCWgYu_gBZhWw">
-    <index xmi:id="_ZL7isboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="AllergyIntolerance.category"/>
-    <index xmi:id="_ftgZULoREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.7"/>
-    <index xmi:id="_ftgZUboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Observation.value.code"/>
-    <index xmi:id="_ftgZUroREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/allergyintolerance-daf-dafallergyintolerance"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZL9X4LoREeWqFd182BzgAw" base_Property="_66MPAGYAEeCWgYu_gBZhWw">
-    <index xmi:id="_ZL9X4boREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Allergy resource"/>
-    <index xmi:id="_fthAYLoREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.9"/>
-    <index xmi:id="_fthAYboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Reaction Observation (identifier: 2.16.840.1.113883.10.20.22.4.9"/>
-    <index xmi:id="_fthAYroREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/allergyintolerance-daf-dafallergyintolerance"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZL_NELoREeWqFd182BzgAw" base_Property="_SkwrYPDLEeO_Te8vAbT_YQ">
-    <index xmi:id="_ZL_NEboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="Allergy resource"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMBCQLoREeWqFd182BzgAw" base_Property="_e93yAN-dEeSLwbHBnRFGvw">
-    <index xmi:id="_ZMBCQboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="AllergyIntolerance.event.certainty"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMC3cLoREeWqFd182BzgAw" base_Property="_N96bgN-eEeSLwbHBnRFGvw">
-    <index xmi:id="_ZMC3cboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="AllergyIntolerance.event.description"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMEsoLoREeWqFd182BzgAw" base_Property="_zbR04N-eEeSLwbHBnRFGvw">
-    <index xmi:id="_ZMEsoboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="AllergyIntolerance.event.duration"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMGh0LoREeWqFd182BzgAw" base_Property="_Bdr1IN-eEeSLwbHBnRFGvw">
-    <index xmi:id="_ZMGh0boREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="AllergyIntolerance.event.exposureRoute"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMHv8LoREeWqFd182BzgAw" base_Property="_P-0AcNYuEd62cosTNS-_lw">
-    <index xmi:id="_ZMIXALoREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="AllergyIntolerance.event.manifestation"/>
-    <index xmi:id="_ZMJlILoREeWqFd182BzgAw" standardOrProject="HL7v2" value="AL1-5 "/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ZMLaULoREeWqFd182BzgAw" base_Property="_TVkSYN7-EeSx5bpydj26Wg">
-    <index xmi:id="_ZMLaUboREeWqFd182BzgAw" standardOrProject="HL7FHIR" value="AllergyIntolerance.event.severity"/>
-  </FHIM:Mapping>
-  <FHIM:Mapping xmi:id="_ftd9ELoREeWqFd182BzgAw" base_Classifier="_420A62FD03B6418BB10D01EB">
-    <index xmi:id="_ftekILoREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.30"/>
-    <index xmi:id="_ftekIboREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Allergy Problem Act (2.16.840.1.113883.10.20.22.4.30)"/>
-    <index xmi:id="_ftekIroREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/allergyintolerance-daf-dafallergyintolerance"/>
-    <index xmi:id="_ftfLMLoREeWqFd182BzgAw" standardOrProject="MU2" value="Medication allergies"/>
-    <index xmi:id="_ftfLMboREeWqFd182BzgAw" value="2.16.840.1.113883.10.20.22.4.7"/>
-    <index xmi:id="_ftfLMroREeWqFd182BzgAw" standardOrProject="HL7CDA" value="Allergy Observation (2.16.840.1.113883.10.20.22.4.7)"/>
-    <index xmi:id="_ftfLM7oREeWqFd182BzgAw" standardOrProject="ONCSIDAF" value="http://hl7.org/fhir/StructureDefinition/allergyintolerance-daf-dafallergyintolerance"/>
-  </FHIM:Mapping>
   <Default:Documentation xmi:id="_mvB2wLyYEea_DaXmJ278Kw" base_Comment="_mu0bYLyYEea_DaXmJ278Kw"/>
 </xmi:XMI>

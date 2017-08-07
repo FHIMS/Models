@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.5-->
+<!--Rational Software Architect Designer 9.6-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_420A62FD03B64294DBF90337" name="Consultation">
     <eAnnotations xmi:id="_dBa8gEDMEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_c3_6wEDMEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -126,7 +126,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_fVw8wcz7EeGLer7-nLPRGA" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_fVxj0Mz7EeGLer7-nLPRGA" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_fVxj0cz7EeGLer7-nLPRGA" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/HealthcarePromise?"/>
+          <element xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/PromiseContext?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fVTCscz7EeGLer7-nLPRGA" x="25677" y="7608"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_t-LfQPhLEeGTrozbqWjuyg" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -168,7 +168,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_nFMTiF6fEeaNPrAIaCcL-A" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_nFMTiV6fEeaNPrAIaCcL-A" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_nFMTil6fEeaNPrAIaCcL-A" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Orders.efx#_420A62FD03B64589572B02E8?FHIM/Orders/HealthcareOrder?"/>
+          <element xmi:type="uml:Class" href="Orders.efx#_420A62FD03B64589572B02E8?FHIM/Orders/OrderContext?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nFMTgV6fEeaNPrAIaCcL-A" x="10461" y="7608"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_YftnwOStEeaMP8OhjVeyrg" element="_YfgMYOStEeaMP8OhjVeyrg" fontName="Segoe UI" showListStereotype="Text" showListVisibility="None" fillColor="16763850" transparency="0" lineColor="16744576" lineWidth="1" showStereotype="Text">
@@ -628,12 +628,12 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFMTnV6fEeaNPrAIaCcL-A" type="FromMultiplicityLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_nFMTn16fEeaNPrAIaCcL-A" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/HealthcareOrder/healthcarePromise?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/OrderContext/healthcarePromise?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nFMTnl6fEeaNPrAIaCcL-A" y="396"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFMToF6fEeaNPrAIaCcL-A" type="FromRoleLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_nFMTol6fEeaNPrAIaCcL-A" type="FromRole"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/HealthcareOrder/healthcarePromise?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/OrderContext/healthcarePromise?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nFMToV6fEeaNPrAIaCcL-A" y="-397"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFMTo16fEeaNPrAIaCcL-A" visible="false" type="ToQualifierLabel">
@@ -643,7 +643,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFMTpl6fEeaNPrAIaCcL-A" visible="false" type="FromQualifierLabel">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_nFMTqF6fEeaNPrAIaCcL-A" type="QualifierCompartment"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/HealthcareOrder/healthcarePromise?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/OrderContext/healthcarePromise?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nFMTp16fEeaNPrAIaCcL-A" y="-186"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFMTqV6fEeaNPrAIaCcL-A" visible="false" type="ToConstraintLabel">
@@ -653,7 +653,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFVdcV6fEeaNPrAIaCcL-A" visible="false" type="FromConstraintLabel">
             <children xmi:type="notation:ListCompartment" xmi:id="_nFVdc16fEeaNPrAIaCcL-A" type="FromConstraintCompartment"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/HealthcareOrder/healthcarePromise?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/OrderContext/healthcarePromise?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nFVdcl6fEeaNPrAIaCcL-A" y="1058"/>
           </children>
           <element xmi:type="uml:Association" href="Orders.efx#_v4ePoMoSEeGas4Yp_oUthg?FHIM/Orders/healthcareOrder_healthcarePromise?"/>
@@ -677,12 +677,12 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFVdgF6fEeaNPrAIaCcL-A" type="FromMultiplicityLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_nFVdgl6fEeaNPrAIaCcL-A" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/HealthcarePromise/healthcareOrder?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/PromiseContext/healthcareOrder?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nFVdgV6fEeaNPrAIaCcL-A" y="396"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFVdg16fEeaNPrAIaCcL-A" type="FromRoleLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_nFVdhV6fEeaNPrAIaCcL-A" type="FromRole"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/HealthcarePromise/healthcareOrder?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/PromiseContext/healthcareOrder?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nFVdhF6fEeaNPrAIaCcL-A" y="-397"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFVdhl6fEeaNPrAIaCcL-A" visible="false" type="ToQualifierLabel">
@@ -692,7 +692,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFVdiV6fEeaNPrAIaCcL-A" visible="false" type="FromQualifierLabel">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_nFVdi16fEeaNPrAIaCcL-A" type="QualifierCompartment"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/HealthcarePromise/healthcareOrder?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/PromiseContext/healthcareOrder?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nFVdil6fEeaNPrAIaCcL-A" y="-186"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFVdjF6fEeaNPrAIaCcL-A" visible="false" type="ToConstraintLabel">
@@ -702,7 +702,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFVdj16fEeaNPrAIaCcL-A" visible="false" type="FromConstraintLabel">
             <children xmi:type="notation:ListCompartment" xmi:id="_nFVdkV6fEeaNPrAIaCcL-A" type="FromConstraintCompartment"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/HealthcarePromise/healthcareOrder?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/PromiseContext/healthcareOrder?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nFVdkF6fEeaNPrAIaCcL-A" y="1058"/>
           </children>
           <element xmi:type="uml:Association" href="Orders.efx#_CDMv4F6REeaNPrAIaCcL-A?FHIM/Orders/healthcarePromise_healthcareOrder?"/>
@@ -726,12 +726,12 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFVdvF6fEeaNPrAIaCcL-A" type="FromMultiplicityLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_nFVdvl6fEeaNPrAIaCcL-A" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_fmX3MIlDEd-pqcFAwb-XNw?FHIM/Orders/HealthcareOrder/patientLocation?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_fmX3MIlDEd-pqcFAwb-XNw?FHIM/Orders/OrderContext/patientLocation?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nFVdvV6fEeaNPrAIaCcL-A" y="396"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFVdv16fEeaNPrAIaCcL-A" type="FromRoleLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_nFVdwV6fEeaNPrAIaCcL-A" type="FromRole"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_fmX3MIlDEd-pqcFAwb-XNw?FHIM/Orders/HealthcareOrder/patientLocation?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_fmX3MIlDEd-pqcFAwb-XNw?FHIM/Orders/OrderContext/patientLocation?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nFVdwF6fEeaNPrAIaCcL-A" y="-397"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFVdwl6fEeaNPrAIaCcL-A" visible="false" type="ToQualifierLabel">
@@ -741,7 +741,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFVdxV6fEeaNPrAIaCcL-A" visible="false" type="FromQualifierLabel">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_nFVdx16fEeaNPrAIaCcL-A" type="QualifierCompartment"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_fmX3MIlDEd-pqcFAwb-XNw?FHIM/Orders/HealthcareOrder/patientLocation?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_fmX3MIlDEd-pqcFAwb-XNw?FHIM/Orders/OrderContext/patientLocation?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nFVdxl6fEeaNPrAIaCcL-A" y="-186"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFVdyF6fEeaNPrAIaCcL-A" visible="false" type="ToConstraintLabel">
@@ -751,7 +751,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nFVdy16fEeaNPrAIaCcL-A" visible="false" type="FromConstraintLabel">
             <children xmi:type="notation:ListCompartment" xmi:id="_nFVdzV6fEeaNPrAIaCcL-A" type="FromConstraintCompartment"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_fmX3MIlDEd-pqcFAwb-XNw?FHIM/Orders/HealthcareOrder/patientLocation?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_fmX3MIlDEd-pqcFAwb-XNw?FHIM/Orders/OrderContext/patientLocation?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nFVdzF6fEeaNPrAIaCcL-A" y="1058"/>
           </children>
           <element xmi:type="uml:Association" href="Orders.efx#_fmOGMIlDEd-pqcFAwb-XNw?FHIM/Orders/healthcareOrder_patientLocation?"/>
@@ -772,7 +772,7 @@
         <body>The act of accepting the role of fulfiller. It is the act of accepting  a consult or procedure request. The receiving service will perform update tracking activities.</body>
       </ownedComment>
       <generalization xmi:id="_1hjCcMz7EeGLer7-nLPRGA">
-        <general xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/HealthcarePromise?"/>
+        <general xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/PromiseContext?"/>
       </generalization>
       <ownedAttribute xmi:id="_420A62FD03B642B0A9910248" name="category" visibility="public">
         <ownedComment xmi:id="_MHOY0uLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642B0A9910248">
@@ -920,7 +920,7 @@
         <body>A record of a consultation or procedure request.  A ConsultRequest is a type of Act.  The definition of Act is:  &quot;A record of something that is being done, has been done, can be done, or is intended or requested to be done.&quot; (HL7 3.0)</body>
       </ownedComment>
       <generalization xmi:id="_wPKY8IlEEd-pqcFAwb-XNw">
-        <general xmi:type="uml:Class" href="Orders.efx#_420A62FD03B64589572B02E8?FHIM/Orders/HealthcareOrder?"/>
+        <general xmi:type="uml:Class" href="Orders.efx#_420A62FD03B64589572B02E8?FHIM/Orders/OrderContext?"/>
       </generalization>
       <ownedAttribute xmi:id="_420A62FD03B642DD0AEE015A" name="requestReason" visibility="public">
         <ownedComment xmi:id="_MHrEw-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642DD0AEE015A">
@@ -1006,10 +1006,6 @@
   <Default:Documentation xmi:id="_MIRhuuLiEduGJrQyRGTO1A" base_Comment="_MIRhueLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MIuNoOLiEduGJrQyRGTO1A" base_Comment="_MIkcsOLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_Rc230qc1EeCkJ6Eur_P0ag" base_Comment="_NJGFkeLiEduGJrQyRGTO1A"/>
-  <RIM:Act xmi:id="_rBcg41LHEd6-4-oWZUjasQ" base_Class="_420A62FD03B642B3094903E0"/>
-  <RIM:Act xmi:id="_rBcg4FLHEd6-4-oWZUjasQ" base_Class="_420A62FD03B642B0A9910240"/>
-  <RIM:Act xmi:id="_rBcg4VLHEd6-4-oWZUjasQ" base_Class="_420A62FD03B642B1F78C0027"/>
-  <RIM:Observation xmi:id="_uo9SwFLKEd6-4-oWZUjasQ" base_Class="_420A62FD03B642DBE529011A"/>
   <Default:Documentation xmi:id="_-YbKgeGmEeaHnLXha23s2A" base_Comment="_-YbKgOGmEeaHnLXha23s2A"/>
   <Default:Documentation xmi:id="_XGB4AOStEeaMP8OhjVeyrg" base_Comment="_XF_bwOStEeaMP8OhjVeyrg"/>
 </xmi:XMI>

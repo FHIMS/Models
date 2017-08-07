@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.5-->
+<!--Rational Software Architect Designer 9.6-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_420A62FD03B6436137790312" name="PatientEducation">
     <eAnnotations xmi:id="_bKSJ0EDOEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_bKPGgEDOEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -74,7 +74,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_GjQdA_R2EeaL1vtd_d-dUA" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_GjREEPR2EeaL1vtd_d-dUA" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_GjREEfR2EeaL1vtd_d-dUA" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+          <element xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GjPO4fR2EeaL1vtd_d-dUA" x="13314" y="5072"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_kzoOwPR3EeaL1vtd_d-dUA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="16116705" transparency="0" lineColor="14263149" lineWidth="1" roundedBendpointsRadius="10" showParent="Name" showStereotype="Text">
@@ -88,7 +88,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_kzpc4fR3EeaL1vtd_d-dUA" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_kzpc4vR3EeaL1vtd_d-dUA" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_kzpc4_R3EeaL1vtd_d-dUA" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Common.efx#_Wv-bwN2XEeaby7vXKhx5Xg?FHIM/Common/PerformedContext?"/>
+          <element xmi:type="uml:Class" href="Common.efx#_Wv-bwN2XEeaby7vXKhx5Xg?FHIM/Common/PerformanceContext?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kzoOwfR3EeaL1vtd_d-dUA" x="21873"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_ar26cAg0Eee_toNtDpbL8w" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -163,12 +163,12 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_GjcDMPR2EeaL1vtd_d-dUA" type="FromMultiplicityLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_GjcqQPR2EeaL1vtd_d-dUA" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalInformation/subjectOfRecord?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalStatement/subjectOfRecord?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_GjcDMfR2EeaL1vtd_d-dUA" y="396"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_GjdRUPR2EeaL1vtd_d-dUA" type="FromRoleLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_GjefcPR2EeaL1vtd_d-dUA" type="FromRole"/>
-            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalInformation/subjectOfRecord?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalStatement/subjectOfRecord?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_GjdRUfR2EeaL1vtd_d-dUA" y="-397"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_GjftkPR2EeaL1vtd_d-dUA" visible="false" type="ToQualifierLabel">
@@ -178,7 +178,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_GjgUofR2EeaL1vtd_d-dUA" visible="false" type="FromQualifierLabel">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_GjgUo_R2EeaL1vtd_d-dUA" type="QualifierCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalInformation/subjectOfRecord?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalStatement/subjectOfRecord?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_GjgUovR2EeaL1vtd_d-dUA" y="-186"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_Gjg7sPR2EeaL1vtd_d-dUA" visible="false" type="ToConstraintLabel">
@@ -188,7 +188,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_GjhiwPR2EeaL1vtd_d-dUA" visible="false" type="FromConstraintLabel">
             <children xmi:type="notation:ListCompartment" xmi:id="_GjhiwvR2EeaL1vtd_d-dUA" type="FromConstraintCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalInformation/subjectOfRecord?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_4xFhkOSmEeaMP8OhjVeyrg?FHIM/Common/ClinicalStatement/subjectOfRecord?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_GjhiwfR2EeaL1vtd_d-dUA" y="1058"/>
           </children>
           <element xmi:type="uml:Association" href="Common.efx#_4xDsYOSmEeaMP8OhjVeyrg?FHIM/Common/clinicalInformation_subjectOfRecord?"/>
@@ -212,12 +212,12 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_asAriAg0Eee_toNtDpbL8w" type="FromMultiplicityLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_asArigg0Eee_toNtDpbL8w" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="Common.efx#_OeQTIAXZEeebQs_lQM5n6g?FHIM/Common/ClinicalInformation/comment?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_OeQTIAXZEeebQs_lQM5n6g?FHIM/Common/ClinicalStatement/comment?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_asAriQg0Eee_toNtDpbL8w" y="396"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_asAriwg0Eee_toNtDpbL8w" type="FromRoleLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_asArjQg0Eee_toNtDpbL8w" type="FromRole"/>
-            <element xmi:type="uml:Property" href="Common.efx#_OeQTIAXZEeebQs_lQM5n6g?FHIM/Common/ClinicalInformation/comment?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_OeQTIAXZEeebQs_lQM5n6g?FHIM/Common/ClinicalStatement/comment?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_asArjAg0Eee_toNtDpbL8w" y="-397"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_asArjgg0Eee_toNtDpbL8w" visible="false" type="ToQualifierLabel">
@@ -227,7 +227,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_asArkQg0Eee_toNtDpbL8w" visible="false" type="FromQualifierLabel">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_asArkwg0Eee_toNtDpbL8w" type="QualifierCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_OeQTIAXZEeebQs_lQM5n6g?FHIM/Common/ClinicalInformation/comment?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_OeQTIAXZEeebQs_lQM5n6g?FHIM/Common/ClinicalStatement/comment?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_asArkgg0Eee_toNtDpbL8w" y="-186"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_asArlAg0Eee_toNtDpbL8w" visible="false" type="ToConstraintLabel">
@@ -237,7 +237,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_asArlwg0Eee_toNtDpbL8w" visible="false" type="FromConstraintLabel">
             <children xmi:type="notation:ListCompartment" xmi:id="_asArmQg0Eee_toNtDpbL8w" type="FromConstraintCompartment"/>
-            <element xmi:type="uml:Property" href="Common.efx#_OeQTIAXZEeebQs_lQM5n6g?FHIM/Common/ClinicalInformation/comment?"/>
+            <element xmi:type="uml:Property" href="Common.efx#_OeQTIAXZEeebQs_lQM5n6g?FHIM/Common/ClinicalStatement/comment?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_asArmAg0Eee_toNtDpbL8w" y="1058"/>
           </children>
           <element xmi:type="uml:Association" href="Common.efx#_OePsEAXZEeebQs_lQM5n6g?FHIM/Common/clinicalInformation_comment?"/>
@@ -464,7 +464,7 @@
         <body>This class represents a Patient Education Event that has occurred. The Clinical Statement Topic/Context pattern separates those properties that are common to actions whether recommended, planned, or performed from their context (i.e., recommended, planned, or performed). The clinical statement then combines these information for a given Topic/Context. Thus this class combines the PatientEducaiton Topic with the Performed Context to describe an instance where a PatientEducation was performed. This class captures information about counselling or education provided to (or an attempt to provide to) the Patient or to the Patient's representative and provides a means to note how well the Patient understood the information provided. Patient Education may be in the form of written instructions – either pre-defined materials, or personalized instructions – as well as multimedia-based instructions, oral counseling, or some combination of these. In the case of pre-defined written mulitmedia materials, the educationalMaterial property of the PatientEducationTopic may be used to identify the kind of material provided rather than reproducing the text of that material in the PatientEducationPerformed class. When personalized written instructions are provided, the text of such instructions can be placed in the textProvided property of the PatientEducationPerformed class. The textProvided property may also be used to store a summary of an oral conversation with the Patient.</body>
       </ownedComment>
       <generalization xmi:id="_1czAcPR3EeaL1vtd_d-dUA">
-        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalInformation?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
       <ownedAttribute xmi:id="_GubgUPR4EeaL1vtd_d-dUA" name="performance" visibility="public" type="__JpFIAXOEeebQs_lQM5n6g" association="_GuWAwPR4EeaL1vtd_d-dUA">
         <ownedComment xmi:id="_6OecoAUTEee0I6zDzuEapA" annotatedElement="_GubgUPR4EeaL1vtd_d-dUA">
@@ -498,7 +498,7 @@
         <body>This class represents the provision of counselling or education to the Patient or to the Patient's representative which is in additional to the properties inherited from the generic Performance Context class of which this class is a sub type. This class represents the Context portion of the Topic/Context pattern, and as such is intended to convey any information captured during the performance of patient education that is not captured in the Patient Education Topic class (which contains those properties that are independent of the context in which they are used).</body>
       </ownedComment>
       <generalization xmi:id="_A9kg4AXPEeebQs_lQM5n6g">
-        <general xmi:type="uml:Class" href="Common.efx#_Wv-bwN2XEeaby7vXKhx5Xg?FHIM/Common/PerformedContext?"/>
+        <general xmi:type="uml:Class" href="Common.efx#_Wv-bwN2XEeaby7vXKhx5Xg?FHIM/Common/PerformanceContext?"/>
       </generalization>
       <ownedAttribute xmi:id="_FN1kQM5LEeSoLYfuQMb72Q" name="communicationSummary" visibility="public">
         <ownedComment xmi:id="_O-HykM5LEeSoLYfuQMb72Q" annotatedElement="_FN1kQM5LEeSoLYfuQMb72Q">
@@ -559,7 +559,6 @@
   <Default:Documentation xmi:id="_P_geEHbMEea0e6yP60BtjQ" base_Comment="_P_ZJUHbMEea0e6yP60BtjQ"/>
   <Default:Documentation xmi:id="_BDjmsHbNEea0e6yP60BtjQ" base_Comment="_BDiYkXbNEea0e6yP60BtjQ"/>
   <Default:Documentation xmi:id="_8vDPIHbNEea0e6yP60BtjQ" base_Comment="_8vCBAXbNEea0e6yP60BtjQ"/>
-  <RIM:Act xmi:id="_TD0QcAUSEee0I6zDzuEapA" base_Class="_T0DvQPR3EeaL1vtd_d-dUA"/>
   <Default:Documentation xmi:id="_llBFUAUTEee0I6zDzuEapA" base_Comment="_lk-pEAUTEee0I6zDzuEapA"/>
   <Default:Documentation xmi:id="_6OoNoAUTEee0I6zDzuEapA" base_Comment="_6OecoAUTEee0I6zDzuEapA"/>
   <Default:Documentation xmi:id="_BKWCkAUUEee0I6zDzuEapA" base_Comment="_BKSYMAUUEee0I6zDzuEapA"/>
