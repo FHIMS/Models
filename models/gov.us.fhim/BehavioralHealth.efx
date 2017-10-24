@@ -4612,7 +4612,7 @@
                   <children xmi:type="notation:SemanticListCompartment" xmi:id="_H63iIXCaEeKknILXOCcS7w" visible="false" type="OperationCompartment"/>
                   <children xmi:type="notation:SemanticListCompartment" xmi:id="_H63iInCaEeKknILXOCcS7w" visible="false" type="SignalCompartment"/>
                   <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_H64JMHCaEeKknILXOCcS7w" visible="false" type="StructureCompartment"/>
-                  <element xmi:type="uml:Class" href="Assessment.efx#_420A62FD03B642DFB7AB0068?FHIM/Assessment/AssessmentInstrumentQuestion?"/>
+                  <element xmi:type="uml:Class" href="Assessment.efx#_420A62FD03B642DFB7AB0068?FHIM/Assessment/Question?"/>
                   <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H61s8XCaEeKknILXOCcS7w" x="2536" y="634"/>
                 </children>
                 <children xmi:type="umlnotation:UMLShape" xmi:id="_VGVd4HCaEeKknILXOCcS7w" element="_UmWiu48GEd-XNpj2tjovxA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -4751,55 +4751,6 @@
                     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ylg6gXCaEeKknILXOCcS7w" y="-186"/>
                   </children>
                   <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YlgTcnCaEeKknILXOCcS7w" points="[0, -752, -331, 3488]$[0, -2291, -331, 1949]$[360, -2291, 29, 1949]$[360, -3290, 29, 950]"/>
-                </edges>
-                <edges xmi:type="umlnotation:UMLConnector" xmi:id="_wj0GsHCaEeKknILXOCcS7w" source="_wjwcUHCaEeKknILXOCcS7w" target="_H61s8HCaEeKknILXOCcS7w" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
-                  <children xmi:type="notation:DecorationNode" xmi:id="_wj0twHCaEeKknILXOCcS7w" visible="false" type="NameLabel">
-                    <children xmi:type="notation:BasicDecorationNode" xmi:id="_wj1U0HCaEeKknILXOCcS7w" type="Stereotype"/>
-                    <children xmi:type="notation:BasicDecorationNode" xmi:id="_wj1U0XCaEeKknILXOCcS7w" type="Name"/>
-                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wj0twXCaEeKknILXOCcS7w" y="-186"/>
-                  </children>
-                  <children xmi:type="notation:DecorationNode" xmi:id="_wj1U0nCaEeKknILXOCcS7w" visible="false" type="ToMultiplicityLabel">
-                    <children xmi:type="notation:BasicDecorationNode" xmi:id="_wj174HCaEeKknILXOCcS7w" type="ToMultiplicity"/>
-                    <element xmi:type="uml:Property" href="Assessment.efx#_GYLd0HCOEeKknILXOCcS7w?FHIM/Assessment/assessmentResponse_assessmentInstrumentQuestion/%3CProperty%3E?"/>
-                    <layoutConstraint xmi:type="notation:Location" xmi:id="_wj1U03CaEeKknILXOCcS7w" y="396"/>
-                  </children>
-                  <children xmi:type="notation:DecorationNode" xmi:id="_wj174XCaEeKknILXOCcS7w" type="ToRoleLabel">
-                    <children xmi:type="notation:BasicDecorationNode" xmi:id="_wj2i8HCaEeKknILXOCcS7w" type="ToRole"/>
-                    <element xmi:type="uml:Property" href="Assessment.efx#_GYLd0HCOEeKknILXOCcS7w?FHIM/Assessment/assessmentResponse_assessmentInstrumentQuestion/%3CProperty%3E?"/>
-                    <layoutConstraint xmi:type="notation:Location" xmi:id="_wj174nCaEeKknILXOCcS7w" y="-397"/>
-                  </children>
-                  <children xmi:type="notation:DecorationNode" xmi:id="_wj2i8XCaEeKknILXOCcS7w" type="FromMultiplicityLabel">
-                    <children xmi:type="notation:BasicDecorationNode" xmi:id="_wj3KAHCaEeKknILXOCcS7w" type="FromMultiplicity"/>
-                    <element xmi:type="uml:Property" href="Assessment.efx#_GYHMYHCOEeKknILXOCcS7w?FHIM/Assessment/AssessmentResponse/assessmentInstrumentQuestion?"/>
-                    <layoutConstraint xmi:type="notation:Location" xmi:id="_wj2i8nCaEeKknILXOCcS7w" y="396"/>
-                  </children>
-                  <children xmi:type="notation:DecorationNode" xmi:id="_wj3KAXCaEeKknILXOCcS7w" type="FromRoleLabel">
-                    <children xmi:type="notation:BasicDecorationNode" xmi:id="_wj3KA3CaEeKknILXOCcS7w" type="FromRole"/>
-                    <element xmi:type="uml:Property" href="Assessment.efx#_GYHMYHCOEeKknILXOCcS7w?FHIM/Assessment/AssessmentResponse/assessmentInstrumentQuestion?"/>
-                    <layoutConstraint xmi:type="notation:Location" xmi:id="_wj3KAnCaEeKknILXOCcS7w" x="-1516" y="-530"/>
-                  </children>
-                  <children xmi:type="notation:DecorationNode" xmi:id="_wj3xEHCaEeKknILXOCcS7w" visible="false" type="ToQualifierLabel">
-                    <children xmi:type="notation:SemanticListCompartment" xmi:id="_wj3xEnCaEeKknILXOCcS7w" type="QualifierCompartment"/>
-                    <element xmi:type="uml:Property" href="Assessment.efx#_GYLd0HCOEeKknILXOCcS7w?FHIM/Assessment/assessmentResponse_assessmentInstrumentQuestion/%3CProperty%3E?"/>
-                    <layoutConstraint xmi:type="notation:Location" xmi:id="_wj3xEXCaEeKknILXOCcS7w" y="-186"/>
-                  </children>
-                  <children xmi:type="notation:DecorationNode" xmi:id="_wj4YIHCaEeKknILXOCcS7w" visible="false" type="FromQualifierLabel">
-                    <children xmi:type="notation:SemanticListCompartment" xmi:id="_wj4YInCaEeKknILXOCcS7w" type="QualifierCompartment"/>
-                    <element xmi:type="uml:Property" href="Assessment.efx#_GYHMYHCOEeKknILXOCcS7w?FHIM/Assessment/AssessmentResponse/assessmentInstrumentQuestion?"/>
-                    <layoutConstraint xmi:type="notation:Location" xmi:id="_wj4YIXCaEeKknILXOCcS7w" y="-186"/>
-                  </children>
-                  <children xmi:type="notation:DecorationNode" xmi:id="_wj4YI3CaEeKknILXOCcS7w" visible="false" type="ToConstraintLabel">
-                    <children xmi:type="notation:ListCompartment" xmi:id="_wj4_MHCaEeKknILXOCcS7w" type="ToConstraintCompartment"/>
-                    <element xmi:type="uml:Property" href="Assessment.efx#_GYLd0HCOEeKknILXOCcS7w?FHIM/Assessment/assessmentResponse_assessmentInstrumentQuestion/%3CProperty%3E?"/>
-                    <layoutConstraint xmi:type="notation:Location" xmi:id="_wj4YJHCaEeKknILXOCcS7w" y="1058"/>
-                  </children>
-                  <children xmi:type="notation:DecorationNode" xmi:id="_wj4_MXCaEeKknILXOCcS7w" visible="false" type="FromConstraintLabel">
-                    <children xmi:type="notation:ListCompartment" xmi:id="_wj5mQHCaEeKknILXOCcS7w" type="FromConstraintCompartment"/>
-                    <element xmi:type="uml:Property" href="Assessment.efx#_GYHMYHCOEeKknILXOCcS7w?FHIM/Assessment/AssessmentResponse/assessmentInstrumentQuestion?"/>
-                    <layoutConstraint xmi:type="notation:Location" xmi:id="_wj4_MnCaEeKknILXOCcS7w" y="1058"/>
-                  </children>
-                  <element xmi:type="uml:Association" href="Assessment.efx#_GYCT4HCOEeKknILXOCcS7w?FHIM/Assessment/assessmentResponse_assessmentInstrumentQuestion?"/>
-                  <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wj0GsXCaEeKknILXOCcS7w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
                 </edges>
                 <edges xmi:type="umlnotation:UMLConnector" xmi:id="_EH0R0HCbEeKknILXOCcS7w" element="_EHxOgHCbEeKknILXOCcS7w" source="_aChEAHCaEeKknILXOCcS7w" target="_wjwcUHCaEeKknILXOCcS7w" fontName="Arial" fontHeight="10" routing="Tree" lineColor="3342489" lineWidth="1" showStereotype="Text">
                   <children xmi:type="notation:DecorationNode" xmi:id="_EH044HCbEeKknILXOCcS7w" type="NameLabel">
