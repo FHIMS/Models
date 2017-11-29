@@ -886,6 +886,19 @@
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_uPcXWtOyEeeihrw9sUIZpA" visible="false" type="StructureCompartment"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uPcXUdOyEeeihrw9sUIZpA" x="32651" y="1585"/>
         </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_GXAIsNUdEeeaHvV-nCCy9A" element="_GWWocNUdEeeaHvV-nCCy9A" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_GXEaINUdEeeaHvV-nCCy9A" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_GXEaIdUdEeeaHvV-nCCy9A" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_GXFBMNUdEeeaHvV-nCCy9A" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_GXFoQNUdEeeaHvV-nCCy9A" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_GXFoQdUdEeeaHvV-nCCy9A" type="Parent"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_GXFoQtUdEeeaHvV-nCCy9A" type="AttributeCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_GXGPUNUdEeeaHvV-nCCy9A" visible="false" type="OperationCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_GXG2YNUdEeeaHvV-nCCy9A" visible="false" type="SignalCompartment"/>
+          <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_GXHdcNUdEeeaHvV-nCCy9A" visible="false" type="StructureCompartment"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GXAIsdUdEeeaHvV-nCCy9A" x="31141" y="4841"/>
+        </children>
         <element xsi:nil="true"/>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_bMlEVwoXEeC_TY76TuIe4Q" element="_kLK5sN39Ed6yatlejfcw_g" source="_bLW8UgoXEeC_TY76TuIe4Q" target="_bLT5AAoXEeC_TY76TuIe4Q" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_bMlrYAoXEeC_TY76TuIe4Q" visible="false" type="NameLabel">
@@ -4204,6 +4217,148 @@ Note that FHIR has a subject property that points to the resource that the Flag 
     <packagedElement xmi:type="uml:Association" xmi:id="_wYcrMNOyEeeihrw9sUIZpA" name="researchStudy_objective" memberEnd="_wYcrMdOyEeeihrw9sUIZpA _wYjY4NOyEeeihrw9sUIZpA">
       <ownedEnd xmi:id="_wYjY4NOyEeeihrw9sUIZpA" name="" visibility="private" type="_ji-V8NOkEeeihrw9sUIZpA" association="_wYcrMNOyEeeihrw9sUIZpA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GWWocNUdEeeaHvV-nCCy9A" name="Media">
+      <ownedComment xmi:id="_8d7f4NUeEeeaHvV-nCCy9A" annotatedElement="_GWWocNUdEeeaHvV-nCCy9A">
+        <body>&quot;A photo, video, or audio recording acquired or used in healthcare. The actual content may be inline or provided by direct reference.&quot; - HL7 FHIR, Media</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_Y2EIMNUhEeeaHvV-nCCy9A" name="bodySite" visibility="public">
+        <ownedComment xmi:id="_qf2pYNUhEeeaHvV-nCCy9A" annotatedElement="_Y2EIMNUhEeeaHvV-nCCy9A">
+          <body>&quot;Indicates the site on the subject's body where the media was collected (i.e. the target site).&quot; - Media.bodySite</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y2EIMdUhEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y2EIMtUhEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Cb-ysNUfEeeaHvV-nCCy9A" name="category" visibility="public">
+        <ownedComment xmi:id="_2yVZkNUfEeeaHvV-nCCy9A" annotatedElement="_Cb-ysNUfEeeaHvV-nCCy9A">
+          <body>&quot;Whether the media is a photo (still image), an audio recording, or a video recording.&quot; - HL7 FHIR, Media.type</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cb-ysdUfEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cb-ystUfEeeaHvV-nCCy9A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ZDVvMNUhEeeaHvV-nCCy9A" name="content" visibility="public">
+        <ownedComment xmi:id="_i6gMINUiEeeaHvV-nCCy9A" annotatedElement="_ZDVvMNUhEeeaHvV-nCCy9A">
+          <body>&quot;The actual content of the media - inline or by direct reference to the media source file.&quot; - Media.content</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64586C73900D7?FHIM/Datatypes/Image?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZDVvMdUhEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZDVvMtUhEeeaHvV-nCCy9A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CxJxcNUfEeeaHvV-nCCy9A" name="context" visibility="public">
+        <ownedComment xmi:id="_3XxMcNUgEeeaHvV-nCCy9A" annotatedElement="_CxJxcNUfEeeaHvV-nCCy9A">
+          <body>&quot;The encounter or episode of care that establishes the context for this media.&quot; - Media.context</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Encounter.efx#_qS7A8GitEeG3pKm-C5y0hA?FHIM/Encounter/AbstractEncounter?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CxJxcdUfEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CxJxctUfEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Y9GkUNUhEeeaHvV-nCCy9A" name="device" visibility="public">
+        <ownedComment xmi:id="_uzELANUhEeeaHvV-nCCy9A" annotatedElement="_Y9GkUNUhEeeaHvV-nCCy9A">
+          <body>&quot;The device used to collect the media.&quot; - Media.device&#xD;
+Note that FHIR can point to either a Device or a DeviceMetric. FHIM points to DeviceInstance.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="CommonProduct.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/CommonProduct/DeviceInstance?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y9GkUdUhEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y9GkUtUhEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FazM4NUiEeeaHvV-nCCy9A" name="duration" visibility="public">
+        <ownedComment xmi:id="_beUHYNUiEeeaHvV-nCCy9A" annotatedElement="_FazM4NUiEeeaHvV-nCCy9A">
+          <body>&quot;The duration of the recording in seconds - for audio and video.&quot; - Media.duration</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FazM4dUiEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FazM4tUiEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FUQgANUiEeeaHvV-nCCy9A" name="frames" visibility="public">
+        <ownedComment xmi:id="_Wb-18NUiEeeaHvV-nCCy9A" annotatedElement="_FUQgANUiEeeaHvV-nCCy9A">
+          <body>&quot;The number of frames in a photo. This is used with a multi-page fax, or an imaging acquisition context that takes multiple slices in a single image, or an animated gif. If there is more than one frame, this SHALL have a value in order to alert interface software that a multi-frame capable rendering widget is required.&quot; - Media.frames</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FUQgAdUiEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FUQgAtUiEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="__IGfwNUhEeeaHvV-nCCy9A" name="height" visibility="public">
+        <ownedComment xmi:id="_IDqskNUiEeeaHvV-nCCy9A" annotatedElement="__IGfwNUhEeeaHvV-nCCy9A">
+          <body>&quot;Height of the image in pixels (photo/video).&quot; - Media.height</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__IGfwdUhEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__IGfwtUhEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_96PF0NUeEeeaHvV-nCCy9A" name="identifier" visibility="public">
+        <ownedComment xmi:id="_NDIXkNUfEeeaHvV-nCCy9A" annotatedElement="_96PF0NUeEeeaHvV-nCCy9A">
+          <body>&quot;Identifiers associated with the image - these may include identifiers for the image itself, identifiers for the context of its collection (e.g. series ids) and context ids such as accession numbers or other workflow identifiers.&quot; - HL7 FHIR, Media.identifier</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A5oPIdUfEeeaHvV-nCCy9A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A5oPINUfEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yIZSoNUiEeeaHvV-nCCy9A" name="note" visibility="public">
+        <ownedComment xmi:id="_3ESk4NUiEeeaHvV-nCCy9A" annotatedElement="_yIZSoNUiEeeaHvV-nCCy9A">
+          <body>&quot;Comments made about the media by the performer, subject or other participants.&quot; - Media.note</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642C044DB02ED?FHIM/Datatypes/Annotation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yIZSotUiEeeaHvV-nCCy9A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yIZSo9UiEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_C6ON4NUfEeeaHvV-nCCy9A" name="occurrence" visibility="public">
+        <ownedComment xmi:id="_NsImYNUhEeeaHvV-nCCy9A" annotatedElement="_C6ON4NUfEeeaHvV-nCCy9A">
+          <body>&quot;The date and time(s) at which the media was collected.&quot; - Media.occurrence[x]&#xD;
+Note that FHIR can be a dateTime or a Period. The FHIM is modeled as a TimeInterval in order to handle both cases.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_VO5nkLHGEeaLhL0dBWV_ew?FHIM/Datatypes/TimeInterval?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C6ON4dUfEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C6ON4tUfEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_DDVGkNUfEeeaHvV-nCCy9A" name="operator" visibility="public" type="_420A62FD03B6418CF92600E1">
+        <ownedComment xmi:id="_U5FVQNUhEeeaHvV-nCCy9A" annotatedElement="_DDVGkNUfEeeaHvV-nCCy9A">
+          <body>&quot;The person who administered the collection of the image.&quot; - Media.operator</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DDVGkdUfEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DDVGktUfEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_DSgLANUfEeeaHvV-nCCy9A" name="reason" visibility="public">
+        <ownedComment xmi:id="_e7CiYNUhEeeaHvV-nCCy9A" annotatedElement="_DSgLANUfEeeaHvV-nCCy9A">
+          <body>&quot;Describes why the event occurred in coded or textual form.&quot; - Media.reasonCode</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DSgLAdUfEeeaHvV-nCCy9A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DSgLAtUfEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_8N0x4NUfEeeaHvV-nCCy9A" name="subCategory" visibility="public">
+        <ownedComment xmi:id="_8N0x4dUfEeeaHvV-nCCy9A" annotatedElement="_8N0x4NUfEeeaHvV-nCCy9A">
+          <body>&quot;Details of the type of the media - usually, how it was acquired (what type of device). If images sourced from a DICOM system, are wrapped in a Media resource, then this is the modality.&quot; - HL7 FHIR, Media.subtype</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8N0x4tUfEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8N0x49UfEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CnZYgNUfEeeaHvV-nCCy9A" name="subject" visibility="public" type="_61ai4MTBEd-6Z_53K--WsA">
+        <ownedComment xmi:id="_Z1A5MNUgEeeaHvV-nCCy9A" annotatedElement="_CnZYgNUfEeeaHvV-nCCy9A">
+          <body>&quot;Who/What this Media is a record of.&quot; - HL7 FHIR, Media.subject&#xD;
+Note that in FHIR, the subject can be a Patient, Practitioner, Group, Device, or Specimen. In the FHIM, we point to Subject, which points to an Entity, so this can be handled</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CnZYgdUfEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CnZYgtUfEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JM20INUgEeeaHvV-nCCy9A" name="view" visibility="public">
+        <ownedComment xmi:id="_JM20IdUgEeeaHvV-nCCy9A" annotatedElement="_JM20INUgEeeaHvV-nCCy9A">
+          <body>&quot;The name of the imaging view e.g. Lateral or Antero-posterior (AP).&quot; - HL7 FHIR, Media.view</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JM20ItUgEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JM20I9UgEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FMj8kNUiEeeaHvV-nCCy9A" name="width" visibility="public">
+        <ownedComment xmi:id="_Myw48NUiEeeaHvV-nCCy9A" annotatedElement="_FMj8kNUiEeeaHvV-nCCy9A">
+          <body>&quot;Width of the image in pixels (photo/video).&quot; - Media.width</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FMj8kdUiEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FMj8ktUiEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_4y_8gEWWEeKmiJoj9rWMSg" base_Comment="_4y5O0EWWEeKmiJoj9rWMSg"/>
   <Default:Documentation xmi:id="_5zc1oBHbEeCBuOUrBnIXmQ" base_Comment="_5zTEoBHbEeCBuOUrBnIXmQ"/>
@@ -4419,4 +4574,22 @@ Note that FHIR has a subject property that points to the resource that the Flag 
   <Default:Documentation xmi:id="_TwRw8dOyEeeihrw9sUIZpA" base_Comment="_TwRw69OyEeeihrw9sUIZpA"/>
   <Default:Documentation xmi:id="_vtaKINOyEeeihrw9sUIZpA" base_Comment="_vtZjENOyEeeihrw9sUIZpA"/>
   <Default:Documentation xmi:id="_yRdbQdOyEeeihrw9sUIZpA" base_Comment="_yRdbQNOyEeeihrw9sUIZpA"/>
+  <Default:Documentation xmi:id="_8d7f4dUeEeeaHvV-nCCy9A" base_Comment="_8d7f4NUeEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_NDIXkdUfEeeaHvV-nCCy9A" base_Comment="_NDIXkNUfEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_2yVZkdUfEeeaHvV-nCCy9A" base_Comment="_2yVZkNUfEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_8N0x5NUfEeeaHvV-nCCy9A" base_Comment="_8N0x4dUfEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_JM20JNUgEeeaHvV-nCCy9A" base_Comment="_JM20IdUgEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_Z1KqMNUgEeeaHvV-nCCy9A" base_Comment="_Z1A5MNUgEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_3XxMcdUgEeeaHvV-nCCy9A" base_Comment="_3XxMcNUgEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_NsImYdUhEeeaHvV-nCCy9A" base_Comment="_NsImYNUhEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_U5FVQdUhEeeaHvV-nCCy9A" base_Comment="_U5FVQNUhEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_e7CiYdUhEeeaHvV-nCCy9A" base_Comment="_e7CiYNUhEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_qf2pYdUhEeeaHvV-nCCy9A" base_Comment="_qf2pYNUhEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_uzN8ANUhEeeaHvV-nCCy9A" base_Comment="_uzELANUhEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_IDqskdUiEeeaHvV-nCCy9A" base_Comment="_IDqskNUiEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_Myw48dUiEeeaHvV-nCCy9A" base_Comment="_Myw48NUiEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_Wb-18dUiEeeaHvV-nCCy9A" base_Comment="_Wb-18NUiEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_beUHYdUiEeeaHvV-nCCy9A" base_Comment="_beUHYNUiEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_i6haQNUiEeeaHvV-nCCy9A" base_Comment="_i6gMINUiEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_3EYEcNUiEeeaHvV-nCCy9A" base_Comment="_3ESk4NUiEeeaHvV-nCCy9A"/>
 </xmi:XMI>
