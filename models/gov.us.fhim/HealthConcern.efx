@@ -192,7 +192,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_7dn0gJ13EeO_7b9hT5majA" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_7dn0gZ13EeO_7b9hT5majA" visible="false" type="StructureCompartment"/>
           <element xmi:type="uml:Class" href="Person.efx#_420A62FD03B6425125E800E0?FHIM/Person/Person?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7dl_UZ13EeO_7b9hT5majA" x="6657" y="26628"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7dl_UZ13EeO_7b9hT5majA" x="6974" y="29798"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_P4mq8J14EeO_7b9hT5majA" element="_8Vkx4LZ8EeGWl-7OlqBMDw" fontName="Segoe UI" showListStereotype="Text" showListVisibility="None" fillColor="16763850" transparency="0" lineColor="16744576" lineWidth="1" showStereotype="Text">
           <eAnnotations xmi:id="_P4mq8Z14EeO_7b9hT5majA" source="com.ibm.xtools.uml.ui.diagram.internal.styles">
@@ -203,7 +203,7 @@
           </children>
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_P4mq9Z14EeO_7b9hT5majA" type="Stereotype"/>
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_P4mq9p14EeO_7b9hT5majA" type="CommentBody"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P4mq9514EeO_7b9hT5majA" x="12046" y="25360" width="4445" height="2513"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P4mq9514EeO_7b9hT5majA" x="17435" y="26628" width="4445" height="2513"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_ijTPgJ14EeO_7b9hT5majA" element="_nwG14APwEeKAxseXcMhbEg" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_ijT2kJ14EeO_7b9hT5majA" type="ImageCompartment">
@@ -272,7 +272,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_pPoq0d-fEeSLwbHBnRFGvw" visible="false" type="AttributeCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_pPoq0t-fEeSLwbHBnRFGvw" visible="false" type="OperationCompartment"/>
           <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_XyDLQKRMEeGZ6ueex_Me0w?FHIM_Vocab/PersonVocab/PersonalRelationshipRoleType?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pPm1od-fEeSLwbHBnRFGvw" x="16167" y="23141"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pPm1od-fEeSLwbHBnRFGvw" x="16484" y="24092"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_9byhcN-nEeSQwMSQTXiDlA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_9b2L0N-nEeSQwMSQTXiDlA" type="ImageCompartment">
@@ -1556,7 +1556,7 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_lygBwBF6EeKu1LfuaJwFHw" name="dateDiagnosed" visibility="public">
         <ownedComment xmi:id="_iuP7sBF8EeKu1LfuaJwFHw" annotatedElement="_lygBwBF6EeKu1LfuaJwFHw">
-          <body>Date and time the health problem was diagnosed.  Added for Public Health Reporting Initiative, 10/5/2012.</body>
+          <body>Date and time the health problem was diagnosed. Added for Public Health Reporting Initiative, 10/5/2012.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KEDnYbtBEeeo-pbyiB8NZw" value="1"/>
@@ -1573,10 +1573,14 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_hybbsEUXEeCUY8hq_icSiw" name="dateOfOnset" visibility="public">
         <ownedComment xmi:id="_hybbsUUXEeCUY8hq_icSiw" annotatedElement="_hybbsEUXEeCUY8hq_icSiw">
-          <body>Date when this particular Condition first manifested itself or was confirmed via testing if it had not yet manifested itself.  Note that this date may be inprecise (e.g., &quot;sometime in 2006&quot;).&#xD;
+          <body>Date when this particular Condition first manifested itself or was confirmed via testing if it had not yet manifested itself. Note that this date may be inprecise (e.g., &quot;sometime in 2006&quot;).&#xD;
 &quot;Contains the actual date of the first reaction.&quot; - HL7 Version 2.8, IAM-11&#xD;
 &quot;Contains the date/time when the problem began.&quot; - HL7 Version 2.8, PRB-16.&#xD;
 &quot;Estimated or actual date or date-time the condition began, in the opinion of the clinician.&quot; - HL7 FHIR, Condition.onset[x]&#xD;
+Note that FHIR can be a dateTime, Age, Period, Range, or a string. FHIM currently only supports a dateTime.&#xD;
+&quot;Either the age of onset, range of approximate age or descriptive string can be recorded. For conditions with multiple occurrences, this describes the first known occurrence.&quot; - HL7 FHIR, FamilyMemberHistory.condition.onset[x]&#xD;
+Note that in FHIR the datatype can be a Age, Range, Period, or string. FHIM currently models this as a date.&#xD;
+&quot;Estimated or actual date, date-time, or age when allergy or intolerance was identified.&quot; - HL7 FHIR, AllergyIntolerance.onset[x]&#xD;
 Note that FHIR can be a dateTime, Age, Period, Range, or a string. FHIM currently only supports a dateTime.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
@@ -1635,12 +1639,13 @@ Note that while the datatype for this concept should likely be a code, it is cur
       </ownedAttribute>
       <ownedAttribute xmi:id="_Zr0aUHiaEd-xd69YcOIcPA" name="healthConcern" visibility="public">
         <ownedComment xmi:id="_hvLOAAMZEeC6TLUcQZx_GQ" annotatedElement="_Zr0aUHiaEd-xd69YcOIcPA">
-          <body>Identifies the Health Concern or Problem being described.  This property is a code, which should come from an approved subset of SNOMED-CT, e.g., the &quot;VA-KP Problem List Subset.&quot;&#xD;
+          <body>Identifies the Health Concern or Problem being described. This property is a code, which should come from an approved subset of SNOMED-CT, e.g., the &quot;VA-KP Problem List Subset.&quot;&#xD;
 Note that there is a separate class for Family History Concerns, which is a generalization of the Health Concern class. Therefore, this property should never contain a concept that has &quot;Family History Of&quot; built into it (i.e., a pre-coordinated concept), such as &quot;Family History of Diabetes&quot;. When such infomation needs to be conveyed, this property should contain &quot;Diabetes,&quot; and the FamiliyHistoryConcern subclass will indicate that the Diabetes was observed in a family member and will identify the relationship of that family member (e.g., Father, Mother) to the patient. Thus, in effect, we are creating a structure that explicity post-coordinates the concept of Family History Of with the concept of the disease that the family member had.&#xD;
 &#xD;
 &quot;Identifies the problem. This is the identifier from an institution's master list of problems.&quot; - HL7 Version 2.8, PRB-3&#xD;
 &quot;Category for the risk.&quot; - HL7 Care Plan Domain Analysis Model.&#xD;
-&quot;Identification of the condition, problem or diagnosis.&quot; - HL7 FHIR, Condition.code</body>
+&quot;Identification of the condition, problem or diagnosis.&quot; - HL7 FHIR, Condition.code&#xD;
+&quot;The actual condition specified. Could be a coded condition (like MI or Diabetes) or a less specific string like 'cancer' depending on how much is known about the condition and the capabilities of the creating system.&quot; - HL7 FHIR, FamilyMemberHistory.condition.code</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K6A_AbtBEeeo-pbyiB8NZw" value="1"/>
@@ -1652,6 +1657,11 @@ Note that there is a separate class for Family History Concerns, which is a gene
         </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_OiGQQLtSEeeo-pbyiB8NZw" name="note" visibility="public">
+        <ownedComment xmi:id="_xkzBENVIEeeaHvV-nCCy9A" annotatedElement="_OiGQQLtSEeeo-pbyiB8NZw">
+          <body>&quot;Additional information about the Condition. This is a general notes/comments entry for description of the Condition, its diagnosis and prognosis.&quot; - HL7 FHIR, Condition.note&#xD;
+&quot;This property allows a non condition-specific note to the made about the related person. Ideally, the note would be in the condition property, but this is not always possible.&quot; - HL7 FHIR, FamilyMemberHistory.note&#xD;
+&quot;Additional narrative about the propensity for the Adverse Reaction, not captured in other fields.&quot; - HL7 FHIR, AllergyIntolerance.note</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642C044DB02ED?FHIM/Datatypes/Annotation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e93fIbtSEeeo-pbyiB8NZw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e93fILtSEeeo-pbyiB8NZw"/>
@@ -1660,6 +1670,14 @@ Note that there is a separate class for Family History Concerns, which is a gene
         <type xmi:type="uml:Class" href="ClinicalObservations.efx#_nbH1LVaeEd6rJ7jpZ7LBFg?FHIM/ClinicalObservation/Observation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_juR2EQ3gEeSr7IwJ9lGnGA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_juR2EA3gEeSr7IwJ9lGnGA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_7vLYINVNEeeaHvV-nCCy9A" name="outcome" visibility="public">
+        <ownedComment xmi:id="_H5bHcNVOEeeaHvV-nCCy9A" annotatedElement="_7vLYINVNEeeaHvV-nCCy9A">
+          <body>&quot;Indicates what happened as a result of this condition. If the condition resulted in death, deceased date is captured on the relation.&quot; - HL7 FHIR, FamilyMemberHistory.condition.outcome</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BWzH8dVOEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BWzH8NVOEeeaHvV-nCCy9A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ZRVawLZ2EeGWl-7OlqBMDw" name="patientsProblemAwareness" visibility="public">
         <ownedComment xmi:id="_eV_ncLZ2EeGWl-7OlqBMDw" annotatedElement="_ZRVawLZ2EeGWl-7OlqBMDw">
@@ -1900,6 +1918,11 @@ Note that this property may be removed or altered based on the outcome of the Se
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CVyIERJXEeKEjrc2hUE4_Q" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CVyIEBJXEeKEjrc2hUE4_Q"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_-EpDABJWEeKEjrc2hUE4_Q" name="duration" visibility="public">
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BWYgkBJXEeKEjrc2hUE4_Q" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BWX5gBJXEeKEjrc2hUE4_Q"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_eCQpsPHrEeGWjrqT5CRABg" name="geneticMarkerDescription" visibility="public">
         <ownedComment xmi:id="_eCQpsfHrEeGWjrqT5CRABg" annotatedElement="_eCQpsPHrEeGWjrqT5CRABg">
           <body>Description of risk-related genetic markers identified in this individual.  For example, Patient has had individual genome analysis that revealed BRACA 1.</body>
@@ -1907,11 +1930,6 @@ Note that this property may be removed or altered based on the outcome of the Se
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C0_zoBJXEeKEjrc2hUE4_Q" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C0_MkBJXEeKEjrc2hUE4_Q"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_-EpDABJWEeKEjrc2hUE4_Q" name="duration" visibility="public">
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BWYgkBJXEeKEjrc2hUE4_Q" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BWX5gBJXEeKEjrc2hUE4_Q"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_knp-cPHtEeGWjrqT5CRABg" name="medicalHistory" visibility="public">
         <ownedComment xmi:id="_toS4gPHtEeGWjrqT5CRABg" annotatedElement="_knp-cPHtEeGWjrqT5CRABg">
@@ -1942,7 +1960,8 @@ Note that this property may be removed or altered based on the outcome of the Se
       </ownedAttribute>
       <ownedAttribute xmi:id="_f-AIMPHsEeGWjrqT5CRABg" name="relationshipCategory" visibility="public">
         <ownedComment xmi:id="_f-AIM_HsEeGWjrqT5CRABg" annotatedElement="_f-AIMPHsEeGWjrqT5CRABg">
-          <body>Indicates how the person is related to the person identified in the owning Person class.  Examples include Spouse, Child, Parent, Legal Guardian, etc.</body>
+          <body>Indicates how the person is related to the person identified in the owning Person class.  Examples include Spouse, Child, Parent, Legal Guardian, etc.&#xD;
+&quot;The type of relationship this person has to the patient (father, mother, brother etc.).&quot; - HL7 FHIR, FamilyMemberHistory.relationship</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f-AINPHsEeGWjrqT5CRABg" value="1"/>
@@ -1952,6 +1971,62 @@ Note that this property may be removed or altered based on the outcome of the Se
           <language></language>
           <body>(PersonalRelationshipRoleType)</body>
         </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_tuS_sNU_EeeaHvV-nCCy9A" name="name" visibility="public">
+        <ownedComment xmi:id="_40NuwNVAEeeaHvV-nCCy9A" annotatedElement="_tuS_sNU_EeeaHvV-nCCy9A">
+          <body>A free-text designation of the person to whom the patient is related. This property could potentially be derived if this class points to the related person's record. However, there may be cases where the related person does not have a record in the same system, or when the patient doesn't know the information needed to populate such a record. For example, the patient may only know that their mother's aunt had some condition, and not even know that person's name.&#xD;
+&quot;This will either be a name or a description; e.g. Aunt Susan, my cousin with the red hair.&quot; - HL7 FHIR, FamilyMemberHistory.name</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xdDJYdU_EeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xdDJYNU_EeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Zh9XUNVBEeeaHvV-nCCy9A" name="gender" visibility="public">
+        <ownedComment xmi:id="_Zh9XUdVBEeeaHvV-nCCy9A" annotatedElement="_Zh9XUNVBEeeaHvV-nCCy9A">
+          <body>Indicates the sex of the person to whom the patient is related. This property could potentially be derived if this class points to the related person's record. However, there may be cases where the related person does not have a record in the same system, or when the patient doesn't know the information needed to populate such a record.&#xD;
+&quot;Administrative Gender - the gender that the relative is considered to have for administration and record keeping purposes.&quot; - HL7 FHIR, FamilyMemberHistory.gender</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zh9XUtVBEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zh9XU9VBEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_31K3INVBEeeaHvV-nCCy9A" name="birthdate" visibility="public">
+        <ownedComment xmi:id="_31K3IdVBEeeaHvV-nCCy9A" annotatedElement="_31K3INVBEeeaHvV-nCCy9A">
+          <body>Indicates the date of birth of the person to whom the patient is related. This property could potentially be derived if this class points to the related person's record. However, there may be cases where the related person does not have a record in the same system, or when the patient doesn't know the information needed to populate such a record.&#xD;
+&quot;The actual or approximate date of birth of the relative.&quot; - HL7 FHIR, FamilyMemberHistory.born[x]&#xD;
+FHIR allows this property to be a Period, date, or string. FHIM currently models this as a string. If the related person's birth date is known, then it is assumed that enough information must exist to instantiate a Person record, and the birthdate of that record would be used instead.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_31K3ItVBEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_31K3I9VBEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RfdEANVCEeeaHvV-nCCy9A" name="age" visibility="public">
+        <ownedComment xmi:id="_RfdEAdVCEeeaHvV-nCCy9A" annotatedElement="_RfdEANVCEeeaHvV-nCCy9A">
+          <body>Indicates the age of of the person to whom the patient is related at the time the condition occurred. This property could potentially be derived if the birthdate of the related person is known.&#xD;
+&quot;The age of the relative at the time the family member history is recorded.&quot; - HL7 FHIR, FamilyMemberHistory.age[x]&#xD;
+FHIR allows this property to be a Age, range, or string. FHIM currently models this as a string.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RfdEAtVCEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RfdEA9VCEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_eGCxENVCEeeaHvV-nCCy9A" name="isAgeEstimated" visibility="public">
+        <ownedComment xmi:id="_eGCxEdVCEeeaHvV-nCCy9A" annotatedElement="_eGCxENVCEeeaHvV-nCCy9A">
+          <body>&quot;If true, indicates that the age value specified is an estimated value.&quot; - HL7 FHIR, FamilyMemberHistory.estimatedAge</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eGCxEtVCEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eGCxE9VCEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_tcU-kNVCEeeaHvV-nCCy9A" name="isDeceased" visibility="public">
+        <ownedComment xmi:id="_tcU-kdVCEeeaHvV-nCCy9A" annotatedElement="_tcU-kNVCEeeaHvV-nCCy9A">
+          <body>Indicates whether the the person to whom the patient is related is dead. This property could potentially be derived if this class points to the related person's record. However, there may be cases where the related person does not have a record in the same system, or when the patient doesn't know enoutgh information needed to populate such a record.&#xD;
+&quot;Deceased flag or the actual or approximate age of the relative at the time of death for the family member history record.&quot; - HL7 FHIR, FamilyMemberHistory.deceased[x]&#xD;
+FHIR allows this property to be a boolean, Age, Range, date, or string. FHIM currently models this as a boolean.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tcU-ktVCEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tcU-k9VCEeeaHvV-nCCy9A"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_SsFmMPHsEeGWjrqT5CRABg" name="familyHistoryConcern_relative" memberEnd="_SsKesPHsEeGWjrqT5CRABg _SsPXMPHsEeGWjrqT5CRABg">
@@ -2145,4 +2220,12 @@ Note that this property may be removed or altered based on the outcome of the Se
   <Default:Documentation xmi:id="_dD8RcbtEEeeo-pbyiB8NZw" base_Comment="_dD8RcLtEEeeo-pbyiB8NZw"/>
   <Default:Documentation xmi:id="_pH6ZobtEEeeo-pbyiB8NZw" base_Comment="_pH6ZoLtEEeeo-pbyiB8NZw"/>
   <Default:Documentation xmi:id="_q-FRFLtEEeeo-pbyiB8NZw" base_Comment="_q-FREbtEEeeo-pbyiB8NZw"/>
+  <Default:Documentation xmi:id="_40O84NVAEeeaHvV-nCCy9A" base_Comment="_40NuwNVAEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_Zh9XVNVBEeeaHvV-nCCy9A" base_Comment="_Zh9XUdVBEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_31K3JNVBEeeaHvV-nCCy9A" base_Comment="_31K3IdVBEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_RfdEBNVCEeeaHvV-nCCy9A" base_Comment="_RfdEAdVCEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_eGCxFNVCEeeaHvV-nCCy9A" base_Comment="_eGCxEdVCEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_tcU-lNVCEeeaHvV-nCCy9A" base_Comment="_tcU-kdVCEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_xkzBEdVIEeeaHvV-nCCy9A" base_Comment="_xkzBENVIEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_H5bHcdVOEeeaHvV-nCCy9A" base_Comment="_H5bHcNVOEeeaHvV-nCCy9A"/>
 </xmi:XMI>
