@@ -328,7 +328,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_KoDsp3myEeW-j_oLISFbOQ" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_KoETsHmyEeW-j_oLISFbOQ" visible="false" type="StructureCompartment"/>
           <element xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/PromiseContext?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KoDFkXmyEeW-j_oLISFbOQ" x="14265" y="-34236"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KoDFkXmyEeW-j_oLISFbOQ" x="14582" y="-33919"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_Od4y8PCIEeWoT_0zIvvImQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="Text" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_Od4y8vCIEeWoT_0zIvvImQ" type="ImageCompartment">
@@ -435,7 +435,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_FLxdcIy_EeaPWbBiMJSPyg" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_FLxdcYy_EeaPWbBiMJSPyg" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_FLxdcoy_EeaPWbBiMJSPyg" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FLvBMYy_EeaPWbBiMJSPyg" x="6023" y="3487"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FLvBMYy_EeaPWbBiMJSPyg" x="6023" y="3804"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_97kakLyzEea_DaXmJ278Kw" element="_97apkLyzEea_DaXmJ278Kw" fontName="Segoe UI" showListStereotype="Text" showListVisibility="None" fillColor="16763850" transparency="0" lineColor="16744576" lineWidth="1" showStereotype="Text">
           <eAnnotations xmi:id="_97kakryzEea_DaXmJ278Kw" source="com.ibm.xtools.uml.ui.diagram.internal.styles">
@@ -2072,6 +2072,15 @@ When the image is a scanned document, this field might be used to identify the k
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MoLyQLyvEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MoLLMLyvEea_DaXmJ278Kw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_2asI4PsUEeSc9M34gwVpgg" name="endpoint" visibility="public">
+        <ownedComment xmi:id="_Y8J34F4oEeWQiN9lTU6tCQ" annotatedElement="_2asI4PsUEeSc9M34gwVpgg">
+          <body>&quot;The network service providing access (e.g., query, view, or retrieval) for the study. See implementation notes for information about using DICOM endpoints. A study-level endpoint applies to each series in the study, unless overridden by a series-level endpoint with the same Endpoint.type.&quot; - HL7 FHIR, ImagingStudy.endpoint&#xD;
+&quot;The network service providing access (e.g., query, view, or retrieval) for the study. See implementation notes for information about using DICOM endpoints. A study-level endpoint applies to each series in the study, unless overridden by a series-level endpoint with the same Endpoint.type.&quot; - HL7 FHIR, ImagingManifest.study.endpoint</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Provider.efx#_G3o9QHo4EeOKnMBxUzvJfA?FHIM/Provider/ElectronicServiceEndpoint?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ou8qcLyvEea_DaXmJ278Kw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ou8DYLyvEea_DaXmJ278Kw"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_hz3OkOP7Eea407qNHok1lQ" name="interpreter" visibility="public">
         <ownedComment xmi:id="_pBHfcOP7Eea407qNHok1lQ" annotatedElement="_hz3OkOP7Eea407qNHok1lQ">
           <body>A Provider who is specially trained to arrive at a diagnosis by exercising clinical judgement based on numerical or visual evidence. This is the person who developed a diagnosis based on the content of the Imaging Study.&#xD;
@@ -2113,20 +2122,29 @@ Note that we have marked this property as derived because this information may b
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CzA1UfCKEeWoT_0zIvvImQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CzA1UPCKEeWoT_0zIvvImQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_2asI4PsUEeSc9M34gwVpgg" name="endpoint" visibility="public">
-        <ownedComment xmi:id="_Y8J34F4oEeWQiN9lTU6tCQ" annotatedElement="_2asI4PsUEeSc9M34gwVpgg">
-          <body>&quot;The network service providing access (e.g., query, view, or retrieval) for the study. See implementation notes for information about using DICOM endpoints. A study-level endpoint applies to each series in the study, unless overridden by a series-level endpoint with the same Endpoint.type.&quot; - HL7 FHIR, ImagingStudy.endpoint</body>
+      <ownedAttribute xmi:id="_i-MxoNUoEeeaHvV-nCCy9A" name="reason" visibility="public">
+        <ownedComment xmi:id="_qremYNUoEeeaHvV-nCCy9A" annotatedElement="_i-MxoNUoEeeaHvV-nCCy9A">
+          <body>&quot;Description of clinical condition indicating why the ImagingStudy was requested.&quot; - HL7 FHIR, ImagingStudy.reason</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_G3o9QHo4EeOKnMBxUzvJfA?FHIM/Provider/ElectronicServiceEndpoint?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ou8qcLyvEea_DaXmJ278Kw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ou8DYLyvEea_DaXmJ278Kw"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lxQvIdUoEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lxQvINUoEeeaHvV-nCCy9A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Ftk5kPsUEeSc9M34gwVpgg" name="series" visibility="public" type="_fV6VcPAuEeS1qetF27ECmQ" aggregation="composite" association="_FtkSgPsUEeSc9M34gwVpgg">
         <ownedComment xmi:id="_qCfw8F4sEeWQiN9lTU6tCQ" annotatedElement="_Ftk5kPsUEeSc9M34gwVpgg">
-          <body>&quot;Each study has one or more series of images or other content.&quot; - HL7 FHIR, ImagingStudy.series</body>
+          <body>&quot;Each study has one or more series of images or other content.&quot; - HL7 FHIR, ImagingStudy.series&#xD;
+&quot;Series identity and locating information of the DICOM SOP instances in the selection.&quot; - HL7 FHIR, ImagingManifest.study.series</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FtmHsfsUEeSc9M34gwVpgg" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FtmHsPsUEeSc9M34gwVpgg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_tU3x4NUlEeeaHvV-nCCy9A" name="uid" visibility="public">
+        <ownedComment xmi:id="_1X-ssNUlEeeaHvV-nCCy9A" annotatedElement="_tU3x4NUlEeeaHvV-nCCy9A">
+          <body>&quot;Study instance UID of the SOP instances in the selection.&quot; - HL7 FHIR, ImagingManifest.study.uid</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tU3x4dUlEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tU3x4tUlEeeaHvV-nCCy9A"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_fV6VcPAuEeS1qetF27ECmQ" name="Series" clientDependency="_Sf86MPCIEeWoT_0zIvvImQ _5VO8oPKUEeWK49aD-a6xLg">
@@ -2171,6 +2189,32 @@ Note that we have marked this property as derived because this information may b
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3XdmoLyuEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3Xc_kLyuEea_DaXmJ278Kw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_edyIMPsyEeSc9M34gwVpgg" name="deviceInstance" visibility="public" association="_edwTAPsyEeSc9M34gwVpgg">
+        <ownedComment xmi:id="_MXs2gPIdEeWI5dLNhw9XrQ" annotatedElement="_edyIMPsyEeSc9M34gwVpgg">
+          <body>Pointer to the individual Device that was used to produce the image.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="CommonProduct.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/CommonProduct/DeviceInstance?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ed0kcPsyEeSc9M34gwVpgg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_edz9YPsyEeSc9M34gwVpgg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_6708UPsVEeSc9M34gwVpgg" name="endpoint" visibility="public">
+        <ownedComment xmi:id="_6T500F4qEeWQiN9lTU6tCQ" annotatedElement="_6708UPsVEeSc9M34gwVpgg">
+          <body>&quot;The network service providing access (e.g., query, view, or retrieval) for this series. See implementation notes for information about using DICOM endpoints. A series-level endpoint, if present, has precedence over a study-level endpoint with the same Endpoint.type.&quot; - HL7 FHIR, ImagingStudy.series.endpoint&#xD;
+&quot;The network service providing access (e.g., query, view, or retrieval) for this series. See implementation notes for information about using DICOM endpoints. A series-level endpoint, if present, has precedence over a study-level endpoint with the same Endpoint.type.&quot; - HL7 FHIR, ImagingManifest.study.series.endpoint</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Provider.efx#_G3o9QHo4EeOKnMBxUzvJfA?FHIM/Provider/ElectronicServiceEndpoint?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_86a44LyuEea_DaXmJ278Kw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_86aR0LyuEea_DaXmJ278Kw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_GM89MPsUEeSc9M34gwVpgg" name="imageInstance" visibility="public" type="_oErcYPAuEeS1qetF27ECmQ" aggregation="composite" association="_GM8WIPsUEeSc9M34gwVpgg">
+        <ownedComment xmi:id="_0I1u0F4sEeWQiN9lTU6tCQ" annotatedElement="_GM89MPsUEeSc9M34gwVpgg">
+          <body>Pointer to the medical image (along with metadata to help identify, locate, and classify the image).&#xD;
+&quot;A single SOP instance within the series, e.g. an image, or presentation state.&quot; - HL7 FHIR, ImagingStudy.series.instance&#xD;
+&quot;Identity and locating information of the selected DICOM SOP instances.&quot; - HL7 FHIR, ImagingManifest.study.series.instance</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GM-LUPsUEeSc9M34gwVpgg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GM9kQPsUEeSc9M34gwVpgg"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_9isQ4PsVEeSc9M34gwVpgg" name="laterality" visibility="public">
         <ownedComment xmi:id="_niVMMF4qEeWQiN9lTU6tCQ" annotatedElement="_9isQ4PsVEeSc9M34gwVpgg">
           <body>&quot;The laterality of the (possibly paired) anatomic structures examined. E.g., the left knee, both lungs, or unpaired abdomen. If present, shall be consistent with any laterality information indicated in ImagingStudy.series.bodySite.&quot; - HL7 FHIR, ImagingStudy.series.laterality</body>
@@ -2214,29 +2258,13 @@ Note that we have marked this property as derived because this information may b
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7-rCULyuEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7-qbQLyuEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_6708UPsVEeSc9M34gwVpgg" name="endpoint" visibility="public">
-        <ownedComment xmi:id="_6T500F4qEeWQiN9lTU6tCQ" annotatedElement="_6708UPsVEeSc9M34gwVpgg">
-          <body>&quot;The network service providing access (e.g., query, view, or retrieval) for this series. See implementation notes for information about using DICOM endpoints. A series-level endpoint, if present, has precedence over a study-level endpoint with the same Endpoint.type.&quot; - HL7 FHIR, ImagingStudy.series.endpoint</body>
+      <ownedAttribute xmi:id="_vjr9YNUmEeeaHvV-nCCy9A" name="uid" visibility="public">
+        <ownedComment xmi:id="_vjr9YdUmEeeaHvV-nCCy9A" annotatedElement="_vjr9YNUmEeeaHvV-nCCy9A">
+          <body>&quot;Series instance UID of the SOP instances in the selection.&quot; - HL7 FHIR, ImagingManifest.study.series.uid</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_G3o9QHo4EeOKnMBxUzvJfA?FHIM/Provider/ElectronicServiceEndpoint?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_86a44LyuEea_DaXmJ278Kw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_86aR0LyuEea_DaXmJ278Kw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_edyIMPsyEeSc9M34gwVpgg" name="deviceInstance" visibility="public" association="_edwTAPsyEeSc9M34gwVpgg">
-        <ownedComment xmi:id="_MXs2gPIdEeWI5dLNhw9XrQ" annotatedElement="_edyIMPsyEeSc9M34gwVpgg">
-          <body>Pointer to the individual Device that was used to produce the image.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="CommonProduct.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/CommonProduct/DeviceInstance?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ed0kcPsyEeSc9M34gwVpgg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_edz9YPsyEeSc9M34gwVpgg" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_GM89MPsUEeSc9M34gwVpgg" name="imageInstance" visibility="public" type="_oErcYPAuEeS1qetF27ECmQ" aggregation="composite" association="_GM8WIPsUEeSc9M34gwVpgg">
-        <ownedComment xmi:id="_0I1u0F4sEeWQiN9lTU6tCQ" annotatedElement="_GM89MPsUEeSc9M34gwVpgg">
-          <body>Pointer to the medical image (along with metadata to help identify, locate, and classify the image).&#xD;
-&quot;A single SOP instance within the series, e.g. an image, or presentation state.&quot; - HL7 FHIR, ImagingStudy.series.instance</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GM-LUPsUEeSc9M34gwVpgg" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GM9kQPsUEeSc9M34gwVpgg"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vjr9YtUmEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vjr9Y9UmEeeaHvV-nCCy9A"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_oErcYPAuEeS1qetF27ECmQ" name="ImageInstance">
@@ -2279,6 +2307,7 @@ Note that we have marked this property as derived because this information may b
       <ownedAttribute xmi:id="_Q420UPsWEeSc9M34gwVpgg" name="sopClass" visibility="public">
         <ownedComment xmi:id="_twsWcF4rEeWQiN9lTU6tCQ" annotatedElement="_Q420UPsWEeSc9M34gwVpgg">
           <body>&quot;DICOM instance type.&quot; - HL7 FHIR, ImagingStudy.series.instance.sopClass&#xD;
+&quot;SOP class UID of the selected instance.&quot; - HL7 FHIR, ImagingManifest.study.series.instance.sopClass&#xD;
 Note that in FHIR, the data type for this property is an oid. We may wish to make it a code.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -2301,6 +2330,14 @@ Note that in FHIR, the data type for this property is an oid. We may wish to mak
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fENzUGOvEeWL1ov4GOhBTA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fEECUGOvEeWL1ov4GOhBTA"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_N6nfkNUnEeeaHvV-nCCy9A" name="uid" visibility="public">
+        <ownedComment xmi:id="_N6nfkdUnEeeaHvV-nCCy9A" annotatedElement="_N6nfkNUnEeeaHvV-nCCy9A">
+          <body>&quot;SOP Instance UID of the selected instance.&quot; - HL7 FHIR, ImagingManifest.study.series.instance.uid</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N6nfktUnEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N6nfk9UnEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_pe27YPAuEeS1qetF27ECmQ" name="Frame">
       <ownedComment xmi:id="_ehSXkF4sEeWQiN9lTU6tCQ" annotatedElement="_pe27YPAuEeS1qetF27ECmQ">
@@ -2308,7 +2345,7 @@ Note that in FHIR, the data type for this property is an oid. We may wish to mak
       </ownedComment>
       <ownedAttribute xmi:id="_hJNdYPsWEeSc9M34gwVpgg" name="frameNumber" visibility="public">
         <ownedComment xmi:id="_MubZ8F4sEeWQiN9lTU6tCQ" annotatedElement="_hJNdYPsWEeSc9M34gwVpgg">
-          <body>&quot;The frame numbers in the frame set.&quot; - HL7 FHIR, ImagingObjectSelection.study.series.instance.frames.frameNumbers</body>
+          <body>&quot;The specific frame reference within a multi-frame object.&quot; - HL7 FHIR, ImagingManifest.study.series.instance.frameNumber</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-ctngbytEea_DaXmJ278Kw" value="1"/>
@@ -2354,6 +2391,14 @@ Note that in FHIR, the data type for this property is an oid. We may wish to mak
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6ia9MX9AEeW8SPVtPHwMkQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6ia9MH9AEeW8SPVtPHwMkQ"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_Q0VwoNUlEeeaHvV-nCCy9A" name="identifier" visibility="public">
+        <ownedComment xmi:id="_V9KroNUlEeeaHvV-nCCy9A" annotatedElement="_Q0VwoNUlEeeaHvV-nCCy9A">
+          <body>&quot;Unique identifier of the DICOM Key Object Selection (KOS) that this resource represents.&quot; - HL7 FHIR, ImagingManifest.identifier</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q0VwodUlEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q0VwotUlEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_ZcJhsPsvEeSc9M34gwVpgg" name="kosTitle" visibility="public">
         <ownedComment xmi:id="_vJxp8H9AEeW8SPVtPHwMkQ" annotatedElement="_ZcJhsPsvEeSc9M34gwVpgg">
           <body>&quot;The reason for, or significance of, the selection of objects referenced in the resource.&quot; - HL7 FHIR, ImagingObjectSelection.title</body>
@@ -2378,7 +2423,8 @@ Note that in FHIR, the data type for this property is an oid. We may wish to mak
       </ownedAttribute>
       <ownedAttribute xmi:id="_SeDH0V4vEeWQiN9lTU6tCQ" name="study" visibility="public" type="_eEZDMPAuEeS1qetF27ECmQ" aggregation="composite" association="_SeDH0F4vEeWQiN9lTU6tCQ">
         <ownedComment xmi:id="_udsTMPFTEeWEJ4Z3YTwiDQ" annotatedElement="_SeDH0V4vEeWQiN9lTU6tCQ">
-          <body>&quot;Study identity and locating information of the DICOM SOP instances in the selection.&quot; - HL7 FHIR, ImagingManifest.study</body>
+          <body>&quot;Study identity and locating information of the DICOM SOP instances in the selection.&quot; - HL7 FHIR, ImagingManifest.study&#xD;
+&quot;Reference to the Imaging Study in FHIR form.&quot; - HL7 FHIR, ImagingManifest.study.imagingStudy</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SeDH014vEeWQiN9lTU6tCQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SeDH0l4vEeWQiN9lTU6tCQ"/>
@@ -2672,4 +2718,9 @@ Note that as a sub-type of Imaging Event, Specimen Imaging Event includes all of
   <Default:Documentation xmi:id="_3q3qICkzEeesReY_kMDKgw" base_Comment="_3qvuUCkzEeesReY_kMDKgw"/>
   <Default:Documentation xmi:id="_F-ANmCweEees082q__D7oQ" base_Comment="_F-ANkSweEees082q__D7oQ"/>
   <Default:Documentation xmi:id="_F-ANmSweEees082q__D7oQ" base_Comment="_F-ANlSweEees082q__D7oQ"/>
+  <Default:Documentation xmi:id="_V9KrodUlEeeaHvV-nCCy9A" base_Comment="_V9KroNUlEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_1X-ssdUlEeeaHvV-nCCy9A" base_Comment="_1X-ssNUlEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_vjr9ZNUmEeeaHvV-nCCy9A" base_Comment="_vjr9YdUmEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_N6nflNUnEeeaHvV-nCCy9A" base_Comment="_N6nfkdUnEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_qremYdUoEeeaHvV-nCCy9A" base_Comment="_qremYNUoEeeaHvV-nCCy9A"/>
 </xmi:XMI>
