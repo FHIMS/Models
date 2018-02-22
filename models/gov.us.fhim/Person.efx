@@ -5319,6 +5319,9 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
         <body>This class represents information about a person in the role of an employee of some organization.</body>
       </ownedComment>
       <ownedAttribute xmi:id="_Ldad8Jo6EeeTspZjMaHiqg" name="daysWorkedPerWeek" visibility="public">
+        <ownedComment xmi:id="_6jtGEA3NEeie6_BiWHdsTA" annotatedElement="_Ldad8Jo6EeeTspZjMaHiqg">
+          <body>The typical number of days worked in a week by a person at one job.</body>
+        </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ldad8po6EeeTspZjMaHiqg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ldad85o6EeeTspZjMaHiqg"/>
@@ -5349,22 +5352,17 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6431D9F120316" name="employmentStatus" visibility="public">
         <ownedComment xmi:id="_jkgtUBqNEd-j8JC21F3W2A" annotatedElement="_420A62FD03B6431D9F120316">
-          <body>Indicates the state of the Employee instance, as defined in the Role state-transition model in the HL7 RIM.  Possible values include: Pending, Canceled, Active, Suspended, Terminated, and Nullified.&#xD;
+          <body>A person's current economic relationship to a job. Employment status refers to whether a person is currently working for compensation, is unemployed (i.e., searching for work for compensation), or is not in the labor force (e.g. disabled, homemaker, chooses not to work, etc.). Employment status is not the same as classification of work. (OID: PHIN VADS 2.16.840.1.114222.4.11.7129)&#xD;
 &quot;The next of kin/associated party's job status.&quot; - HL7 Version 2.8, NK1-34. Possible values include (from HL7 Table 311): Permanent; Temporary; Other; Unknown.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_evDaN-LjEdutr_MT9HkPyQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_evDaNuLjEdutr_MT9HkPyQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_EXqYsJo5EeeTspZjMaHiqg" name="employmentType" visibility="public">
-        <ownedComment xmi:id="_2JddALtHEeeo-pbyiB8NZw" annotatedElement="_EXqYsJo5EeeTspZjMaHiqg">
-          <body>see PhinVads: 2.16.840.1.114222.4.11.7597 </body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EXqYspo5EeeTspZjMaHiqg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EXqYs5o5EeeTspZjMaHiqg"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_3EGbcJo5EeeTspZjMaHiqg" name="hoursWorkedPerDay" visibility="public">
+        <ownedComment xmi:id="__NkNIA3NEeie6_BiWHdsTA" annotatedElement="_3EGbcJo5EeeTspZjMaHiqg">
+          <body>The number of hours worked in a day or shift at one job by a person. For those working a split shift (divided into two parts that are separated by an interval longer than a normal rest period), it is the total of both periods of time in a shift.</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Real?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3EGbcpo5EeeTspZjMaHiqg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3EGbc5o5EeeTspZjMaHiqg"/>
@@ -5375,8 +5373,11 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rDSNkpo8EeeTspZjMaHiqg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rDSNk5o8EeeTspZjMaHiqg"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_YSbokJo6EeeTspZjMaHiqg" name="jobDuties" visibility="public">
+      <ownedAttribute xmi:id="_YSbokJo6EeeTspZjMaHiqg" name="jobDuty" visibility="public">
         <eAnnotations xmi:id="_YSbokZo6EeeTspZjMaHiqg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <ownedComment xmi:id="_EPYhMA3OEeie6_BiWHdsTA" annotatedElement="_YSbokJo6EeeTspZjMaHiqg">
+          <body>The regular actions performed at a single job.</body>
+        </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YSbok5o6EeeTspZjMaHiqg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YSbolJo6EeeTspZjMaHiqg"/>
@@ -5400,8 +5401,11 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oFBQsewVEd6PwKowkorMOw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oFBQsuwVEd6PwKowkorMOw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_N2p7UJo8EeeTspZjMaHiqg" name="occupationalExposure" visibility="public">
+      <ownedAttribute xmi:id="_N2p7UJo8EeeTspZjMaHiqg" name="occupationalHazard" visibility="public">
         <eAnnotations xmi:id="_N2p7UZo8EeeTspZjMaHiqg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <ownedComment xmi:id="_WPa_MA3OEeie6_BiWHdsTA" annotatedElement="_N2p7UJo8EeeTspZjMaHiqg">
+          <body>A hazard that is specific to a person's work or work environment for a single job and with which the person might come in contact. A hazard is a source of potential harm to an individual's physical or mental health (e.g., biological, chemical, physical, psychological, radiological).</body>
+        </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N2p7Upo8EeeTspZjMaHiqg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N2p7U5o8EeeTspZjMaHiqg"/>
@@ -5421,6 +5425,14 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B6418A8DCD02C2?FHIM/Datatypes/Address?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nzsTMcJPEeK_EPjbFxtubQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nzsTMMJPEeK_EPjbFxtubQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EXqYsJo5EeeTspZjMaHiqg" name="workClassification" visibility="public">
+        <ownedComment xmi:id="_2JddALtHEeeo-pbyiB8NZw" annotatedElement="_EXqYsJo5EeeTspZjMaHiqg">
+          <body>The classification of a person's job (one job) as defined by compensation and sector (e.g. paid, unpaid, self-employed, government, etc.). This is different from employment status: a person who is a volunteer (work classification) may have chosen not to be in the labor force (employment status). See PhinVads: 2.16.840.1.114222.4.11.7597</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EXqYspo5EeeTspZjMaHiqg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EXqYs5o5EeeTspZjMaHiqg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_aP2xsBAyEd-2E9qx-lgHBg" name="workPhone" visibility="public">
         <ownedComment xmi:id="_1ZWA4BqNEd-j8JC21F3W2A" annotatedElement="_aP2xsBAyEd-2E9qx-lgHBg">
@@ -5622,6 +5634,9 @@ Note that breed is no longer a stand-alone concept, as this information is inclu
         <body>This class records observations regarding the usual occupation of a person, and what industries the person has worked in.  This information is needed primarily for occupation safety and workplace-related illness tracking purposes, but it is often asked for other non-healthcare related reasons, such as insurance.</body>
       </ownedComment>
       <ownedAttribute xmi:id="_7WdIoLTsEee8ToGyn6JwPw" name="combatZoneWorkObservation" visibility="public" type="_f2n5IJpCEeeTspZjMaHiqg" association="_7WTXoLTsEee8ToGyn6JwPw">
+        <ownedComment xmi:id="_yiRqkAw-Eei1jIj8YfdPPg" annotatedElement="_7WdIoLTsEee8ToGyn6JwPw">
+          <body>Pointer to the period of time a person's work is or was in a combat zone. In addition to military personnel, civilians also may work or have worked in a combat zone.</body>
+        </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7WdIorTsEee8ToGyn6JwPw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7WdIobTsEee8ToGyn6JwPw"/>
       </ownedAttribute>
@@ -5652,6 +5667,9 @@ Phin Vads 2.16.840.1.114222.4.11.7186</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pdHz4EGrEeOEEpWN37sQ2g"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_lxAggLtKEeeo-pbyiB8NZw" name="employmentStatus" visibility="public" type="_ZLbgELtKEeeo-pbyiB8NZw" association="_lw_SYLtKEeeo-pbyiB8NZw">
+        <ownedComment xmi:id="_9BEHMAxKEei1jIj8YfdPPg" annotatedElement="_lxAggLtKEeeo-pbyiB8NZw">
+          <body>Pointer to a person's economic relationship to a job.</body>
+        </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lxBHkbtKEeeo-pbyiB8NZw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lxBHkLtKEeeo-pbyiB8NZw"/>
       </ownedAttribute>
@@ -5660,10 +5678,16 @@ Phin Vads 2.16.840.1.114222.4.11.7186</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DYcxYLtJEeeo-pbyiB8NZw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_xcyKcZo1EeeTspZjMaHiqg" name="pastOrPresentJobObservation" visibility="public" type="_DiyjAJo1EeeTspZjMaHiqg" association="_xcyKcJo1EeeTspZjMaHiqg">
+        <ownedComment xmi:id="_DSkMYAxJEei1jIj8YfdPPg" annotatedElement="_xcyKcZo1EeeTspZjMaHiqg">
+          <body>Pointer to individual work positions that a person has held over time.</body>
+        </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xcyKc5o1EeeTspZjMaHiqg" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xcyKcpo1EeeTspZjMaHiqg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_BpV2ILtHEeeo-pbyiB8NZw" name="retirement" visibility="public" type="_AoO-cLtHEeeo-pbyiB8NZw" association="_BpUA8LtHEeeo-pbyiB8NZw">
+        <ownedComment xmi:id="_Tvw_oAw-Eei1jIj8YfdPPg" annotatedElement="_BpV2ILtHEeeo-pbyiB8NZw">
+          <body>Pointer to a person's self-identified retirement date. A person may retire multiple times.</body>
+        </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BpXEQLtHEeeo-pbyiB8NZw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BpWdMLtHEeeo-pbyiB8NZw"/>
       </ownedAttribute>
@@ -5679,9 +5703,7 @@ Phin Vads 2.16.840.1.114222.4.11.7187</body>
       <ownedAttribute xmi:id="__IYcAOV0EeGA8s9JtidNVQ" name="usualOccupation" visibility="public">
         <ownedComment xmi:id="__IYcAuV0EeGA8s9JtidNVQ" annotatedElement="__IYcAOV0EeGA8s9JtidNVQ">
           <body>The kind of work in which the Person has been engaged the most amount of time.&#xD;
-&#xD;
 &quot;A value that qualifies the classification of 'kind-of-work' based upon a recognized industry or jurisdictional standard.&quot; - HL7 Version 3 RIM.&#xD;
-&#xD;
 Note that the definition of this property needs to be refined.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
@@ -5689,6 +5711,9 @@ Note that the definition of this property needs to be refined.</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__IYcBOV0EeGA8s9JtidNVQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_8zk5sLtJEeeo-pbyiB8NZw" name="usualOccupationStartYear" visibility="public">
+        <ownedComment xmi:id="_G3M2YBfyEeiwcpUehaEhrA" annotatedElement="_8zk5sLtJEeeo-pbyiB8NZw">
+          <body>The year when a person first started working in their usual occupation.</body>
+        </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YKZ_kbtYEeeo-pbyiB8NZw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YKZ_kLtYEeeo-pbyiB8NZw"/>
@@ -6850,12 +6875,22 @@ An Attending Physician is the physician legally responsible for the patient's ov
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_DiyjAJo1EeeTspZjMaHiqg" name="PastOrPresentJobObservation">
+      <ownedComment xmi:id="__EBvYAxIEei1jIj8YfdPPg" annotatedElement="_DiyjAJo1EeeTspZjMaHiqg">
+        <body>The type of work done by a person during a current or past job. A job is defined by the sum of all the data related to the occupation. A change in occupation, supervisory level, industry, employer, or employer location is considered a new job.&#xD;
+A record of individual work positions that a person has held over time. It is noted that if every position that a person has held over their lifetime were known, one could calcualte the overal Occupational History from these. However in practice, usually only some of the positions are documented, often only those considered most relevant. Thus the Occupational History record is typically maintained separately from the Past or Present Job observations, and they will not always agree completely. Nevertheless, the Past or Present Job observations are important to gain insight into particular positions that correlate to health issues, and a collection of these observations will be maintained.</body>
+      </ownedComment>
       <ownedAttribute xmi:id="_9kDMUJo3EeeTspZjMaHiqg" name="dateRetired" visibility="public">
+        <ownedComment xmi:id="_SmFZwAxJEei1jIj8YfdPPg" annotatedElement="_9kDMUJo3EeeTspZjMaHiqg">
+          <body>The date upon which a person considers themselves to have retired from the job.</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GGV9gZo4EeeTspZjMaHiqg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GGV9gJo4EeeTspZjMaHiqg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_I1fywJo1EeeTspZjMaHiqg" name="identifier" visibility="public">
+        <ownedComment xmi:id="_YexrcAxJEei1jIj8YfdPPg" annotatedElement="_I1fywJo1EeeTspZjMaHiqg">
+          <body>A unique identifier for the past-or-present job observation record.</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E0q6QZo4EeeTspZjMaHiqg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E0q6QJo4EeeTspZjMaHiqg"/>
@@ -6871,13 +6906,22 @@ An Attending Physician is the physician legally responsible for the patient's ov
     <packagedElement xmi:type="uml:Association" xmi:id="_yTAAwJo1EeeTspZjMaHiqg" name="pastOrPresentJobObservation_pastOrPresentPosition" memberEnd="_yTJxwJo1EeeTspZjMaHiqg _yTJxw5o1EeeTspZjMaHiqg">
       <ownedEnd xmi:id="_yTJxw5o1EeeTspZjMaHiqg" name="" visibility="private" type="_DiyjAJo1EeeTspZjMaHiqg" association="_yTAAwJo1EeeTspZjMaHiqg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_f2n5IJpCEeeTspZjMaHiqg" name="CombatZoneWorkObservation">
+    <packagedElement xmi:type="uml:Class" xmi:id="_f2n5IJpCEeeTspZjMaHiqg" name="CombatZonePeriodObservation">
+      <ownedComment xmi:id="_ukoJQAw-Eei1jIj8YfdPPg" annotatedElement="_f2n5IJpCEeeTspZjMaHiqg">
+        <body>The start and end dates for the period of time a person's work is or was in a combat zone. In addition to military personnel, civilians also may work or have worked in a combat zone.</body>
+      </ownedComment>
       <ownedAttribute xmi:id="_w2X-0JpCEeeTspZjMaHiqg" name="dateEnd" visibility="public">
+        <ownedComment xmi:id="_TXk3MAxAEei1jIj8YfdPPg" annotatedElement="_w2X-0JpCEeeTspZjMaHiqg">
+          <body>The end date for the period of time a person's work is or was in a combat zone. In addition to military personnel, civilians also may work or have worked in a combat zone.</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w2X-0ZpCEeeTspZjMaHiqg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w2X-0ppCEeeTspZjMaHiqg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ps6o0JpCEeeTspZjMaHiqg" name="dateStart" visibility="public">
+        <ownedComment xmi:id="_VLS3kAxAEei1jIj8YfdPPg" annotatedElement="_ps6o0JpCEeeTspZjMaHiqg">
+          <body>The start date for the period of time a person's work is or was in a combat zone. In addition to military personnel, civilians also may work or have worked in a combat zone.</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vNeHUZpCEeeTspZjMaHiqg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vNeHUJpCEeeTspZjMaHiqg"/>
@@ -6887,7 +6931,13 @@ An Attending Physician is the physician legally responsible for the patient's ov
       <ownedEnd xmi:id="_7WdIo7TsEee8ToGyn6JwPw" name="" visibility="private" type="_Np3dgJ1WEeKGRqm0H7Eu1A" association="_7WTXoLTsEee8ToGyn6JwPw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_AoO-cLtHEeeo-pbyiB8NZw" name="Retirement">
+      <ownedComment xmi:id="_Qpo8MAw-Eei1jIj8YfdPPg" annotatedElement="_AoO-cLtHEeeo-pbyiB8NZw">
+        <body>A person's self-identified retirement date. A person may retire multiple times.</body>
+      </ownedComment>
       <ownedAttribute xmi:id="_qSxv8Jo3EeeTspZjMaHiqg" name="dateRetired" visibility="public">
+        <ownedComment xmi:id="_Xz2gIAw-Eei1jIj8YfdPPg" annotatedElement="_qSxv8Jo3EeeTspZjMaHiqg">
+          <body>A person's self-identified retirement date.</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KiWOwZo4EeeTspZjMaHiqg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KiWOwJo4EeeTspZjMaHiqg"/>
@@ -6909,6 +6959,9 @@ An Attending Physician is the physician legally responsible for the patient's ov
       <ownedEnd xmi:id="_G8-BALtJEeeo-pbyiB8NZw" name="" visibility="private" type="_BamkoLtJEeeo-pbyiB8NZw" association="_G836YLtJEeeo-pbyiB8NZw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ZLbgELtKEeeo-pbyiB8NZw" name="EmploymentStatus">
+      <ownedComment xmi:id="_q3Th8AxJEei1jIj8YfdPPg" annotatedElement="_ZLbgELtKEeeo-pbyiB8NZw">
+        <body>A person's current economic relationship to a job. Employment status refers to whether a person is currently working for compensation, is unemployed (i.e., searching for work for compensation), or is not in the labor force (e.g. disabled, homemaker, chooses not to work, etc.). Employment status is not the same as classification of work. (OID: PHIN VADS 2.16.840.1.114222.4.11.7129)</body>
+      </ownedComment>
       <ownedAttribute xmi:id="_e5VeELtKEeeo-pbyiB8NZw" name="endState" visibility="public">
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PnwpEbtYEeeo-pbyiB8NZw" value="1"/>
@@ -6921,8 +6974,7 @@ An Attending Physician is the physician legally responsible for the patient's ov
       </ownedAttribute>
       <ownedAttribute xmi:id="_bhKBULtKEeeo-pbyiB8NZw" name="status" visibility="public">
         <ownedComment xmi:id="_m2PDMLtKEeeo-pbyiB8NZw" annotatedElement="_bhKBULtKEeeo-pbyiB8NZw">
-          <body>phin vads: 2.16.840.1.114222.4.11.7129&#xD;
-</body>
+          <body>A person's current economic relationship to a job. Employment status refers to whether a person is currently working for compensation, is unemployed (i.e., searching for work for compensation), or is not in the labor force (e.g. disabled, homemaker, chooses not to work, etc.). Employment status is not the same as classification of work. (OID: PHIN VADS 2.16.840.1.114222.4.11.7129)</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NrUKgbtYEeeo-pbyiB8NZw" value="1"/>
@@ -7367,4 +7419,22 @@ Note that FHIR points to Patient, which is good for Persons and Animals, but the
   <Default:Documentation xmi:id="_s1nqNNOdEeeihrw9sUIZpA" base_Comment="_s1nqMdOdEeeihrw9sUIZpA"/>
   <Default:Documentation xmi:id="_5BIWENOjEeeihrw9sUIZpA" base_Comment="_5BHvAdOjEeeihrw9sUIZpA"/>
   <Default:Documentation xmi:id="_t24qMNOuEeeihrw9sUIZpA" base_Comment="_t2u5MNOuEeeihrw9sUIZpA"/>
+  <Default:Documentation xmi:id="_QpvC0Aw-Eei1jIj8YfdPPg" base_Comment="_Qpo8MAw-Eei1jIj8YfdPPg"/>
+  <Default:Documentation xmi:id="_Tvy00Aw-Eei1jIj8YfdPPg" base_Comment="_Tvw_oAw-Eei1jIj8YfdPPg"/>
+  <Default:Documentation xmi:id="_Xz-b8Aw-Eei1jIj8YfdPPg" base_Comment="_Xz2gIAw-Eei1jIj8YfdPPg"/>
+  <Default:Documentation xmi:id="_ukowUAw-Eei1jIj8YfdPPg" base_Comment="_ukoJQAw-Eei1jIj8YfdPPg"/>
+  <Default:Documentation xmi:id="_yiSRoAw-Eei1jIj8YfdPPg" base_Comment="_yiRqkAw-Eei1jIj8YfdPPg"/>
+  <Default:Documentation xmi:id="_TXleQAxAEei1jIj8YfdPPg" base_Comment="_TXk3MAxAEei1jIj8YfdPPg"/>
+  <Default:Documentation xmi:id="_VLTeoAxAEei1jIj8YfdPPg" base_Comment="_VLS3kAxAEei1jIj8YfdPPg"/>
+  <Default:Documentation xmi:id="__ECWcAxIEei1jIj8YfdPPg" base_Comment="__EBvYAxIEei1jIj8YfdPPg"/>
+  <Default:Documentation xmi:id="_DSlagAxJEei1jIj8YfdPPg" base_Comment="_DSkMYAxJEei1jIj8YfdPPg"/>
+  <Default:Documentation xmi:id="_SmGn4AxJEei1jIj8YfdPPg" base_Comment="_SmFZwAxJEei1jIj8YfdPPg"/>
+  <Default:Documentation xmi:id="_Yey5kAxJEei1jIj8YfdPPg" base_Comment="_YexrcAxJEei1jIj8YfdPPg"/>
+  <Default:Documentation xmi:id="_q3UJAAxJEei1jIj8YfdPPg" base_Comment="_q3Th8AxJEei1jIj8YfdPPg"/>
+  <Default:Documentation xmi:id="_9BF8YAxKEei1jIj8YfdPPg" base_Comment="_9BEHMAxKEei1jIj8YfdPPg"/>
+  <Default:Documentation xmi:id="_6j1o8A3NEeie6_BiWHdsTA" base_Comment="_6jtGEA3NEeie6_BiWHdsTA"/>
+  <Default:Documentation xmi:id="__NkNIQ3NEeie6_BiWHdsTA" base_Comment="__NkNIA3NEeie6_BiWHdsTA"/>
+  <Default:Documentation xmi:id="_EPYhMQ3OEeie6_BiWHdsTA" base_Comment="_EPYhMA3OEeie6_BiWHdsTA"/>
+  <Default:Documentation xmi:id="_WPa_MQ3OEeie6_BiWHdsTA" base_Comment="_WPa_MA3OEeie6_BiWHdsTA"/>
+  <Default:Documentation xmi:id="_G3WnYBfyEeiwcpUehaEhrA" base_Comment="_G3M2YBfyEeiwcpUehaEhrA"/>
 </xmi:XMI>
