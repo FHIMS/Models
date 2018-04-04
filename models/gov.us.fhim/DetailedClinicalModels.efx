@@ -1654,7 +1654,7 @@ This class represents the Topic of Arm Circumference, which can be used in a var
         <ownedRule xmi:id="_Odxzs4aUEee0x_BrPkLkDA" name="_generic_OCL" constrainedElement="_Odxzu4aUEee0x_BrPkLkDA _OdxzsYaUEee0x_BrPkLkDA">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_OdxztIaUEee0x_BrPkLkDA">
             <language>OCL</language>
-            <body>self.kind.codeSystem.codeSystemName = 'LOINC' and self.kind.code = 'TBD' and self.result.unit.code = 'cm' and self.result.value.literal > 0.0</body>
+            <body>self.key.codeSystem.codeSystemName = 'LOINC' and self.key.code = 'TBD' and self.result.unit.code = 'cm' and self.result.value.literal > 0.0</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_OdxztYaUEee0x_BrPkLkDA">
