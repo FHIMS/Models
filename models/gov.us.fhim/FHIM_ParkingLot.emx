@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.5-->
+<!--Rational Software Architect Designer 9.6-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Model xmi:id="_ZLwkop1cEeKGRqm0H7Eu1A" name="FHIM_ParkingLot">
     <eAnnotations xmi:id="_DXkXgdJvEeSWN8ZsMae6GQ" source="com.ibm.xtools.uml.msl.fragments">
       <references xmi:type="uml:Package" href="StructuredDataCapture.efx#_oollsL4vEeKOk7Rt2VRC6g?FHIM_ParkingLot/StructuredDataCapture?"/>
@@ -108,6 +108,67 @@
     <packageImport xmi:id="_ZLwkpZ1cEeKGRqm0H7Eu1A">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VLvwIIeREeeJXvOkPl8Bfw" name="RequestContext" isAbstract="true">
+      <ownedComment xmi:id="_BvEfkIeSEeeJXvOkPl8Bfw" annotatedElement="_VLvwIIeREeeJXvOkPl8Bfw">
+        <body>&quot;A request by a healthcare provider or system to another healthcare provider or system to perform some act.&quot; - HL7 CIMI Request&#xD;
+This is an abstract super type of both Healthcare Order and ProposalContext, as it contains those properties that are common to both. Healthcare Order adds some more properties, while Proposal Context merely serves a concrete class to realize the properties in this abstract class.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_pYL-0IeSEeeJXvOkPl8Bfw" name="timing" visibility="public">
+        <ownedComment xmi:id="_pYL-0YeSEeeJXvOkPl8Bfw" annotatedElement="_pYL-0IeSEeeJXvOkPl8Bfw">
+          <body>&quot;The proposed timing for the request.&quot; - HL7 CIMI, Request.timing</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_VO5nkLHGEeaLhL0dBWV_ew?FHIM/Datatypes/TimeInterval?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pYL-0oeSEeeJXvOkPl8Bfw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pYL-04eSEeeJXvOkPl8Bfw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pYL-1IeSEeeJXvOkPl8Bfw" name="expectedPerformer" visibility="public">
+        <ownedComment xmi:id="_pYL-1YeSEeeJXvOkPl8Bfw" annotatedElement="_pYL-1IeSEeeJXvOkPl8Bfw">
+          <body>&quot;Persons who are expected to or intended to perform this action, e.g., the person who will perform the surgery.&quot; - HL7 CIMI, Request.expectedPerformer</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#_420A62FD03B6418CF92600E1?FHIM/Common/Participation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pYL-1oeSEeeJXvOkPl8Bfw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pYL-14eSEeeJXvOkPl8Bfw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B64589570A017A" name="priority" visibility="public">
+        <eAnnotations xmi:id="_MC55heLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <ownedComment xmi:id="_MC55g-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64589570A017A">
+          <body>&quot;This field describes the urgency of the request.  If this field is blank, the default is R&quot; (Routine) - HL7 Version 2.8, TQ1-9&#xD;
+&quot;Indicates how quickly the [request] should be addressed with respect to other requests.&quot; - HL7 FHIR, Request.priority&#xD;
+&quot;Indicates how quickly the Medication Request should be addressed with respect to other requests.&quot; - HL7 FHIR, MedicationRequest.category&#xD;
+&quot;How quickly the action must be initiated. Includes concepts such as stat, urgent, routine.&quot; - HL7 CIMI, Request.priority</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ettWYOLjEdutr_MT9HkPyQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ettWX-LjEdutr_MT9HkPyQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_StcacN2XEeaby7vXKhx5Xg" name="StatementContext" isAbstract="true">
+      <ownedComment xmi:id="_Ql29EEIXEee2bJNtigJtLg" annotatedElement="_StcacN2XEeaby7vXKhx5Xg">
+        <body>&quot;Compositional and reusable grouping of clinical statement attributes that provides the context for the topic of a clinical statement. The StatementContext class aligns with the SNOMED CT Situations with Explicit Context. The StatementContext provides the expressivity required to specify that an act was performed or not performed or that a finding was asserted to be present or absent for the given subject of information. It also often holds provenance information relevant to the context of the clinical statement. It is important to note that by default the context applies to the conjunction of the attribute specified in the statement. For instance, if a clinical statement has a topic describing a rash on left arm and a context of 'absent', then the statement states that the subject of interest did not have a rash on the left arm but might have had one on the right arm.&quot; - HL7 CIMI, StatementContext</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_zLsLcGGOEeeNCem-9yFTpQ" name="context" visibility="public">
+        <ownedComment xmi:id="_GCD0gGGPEeeNCem-9yFTpQ" annotatedElement="_zLsLcGGOEeeNCem-9yFTpQ">
+          <body>&quot;The ontological status of the statement, e.g., whether it exists, does not exist, is planned, etc. Attribute aligns with the SNOMED CT Situation with Explicit Context (SWEC) Concept Model context attributes: 'Finding context (attribute)' (SCTID: 408729009) and 'Procedure context (attribute)' (SCTID: 408730004). The range allowed for this attribute shall be consistent with the SNOMED CT concept model specification for SWEC.&quot; - HL7 CIMI, StatementContext.type</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3FwNQWGOEeeNCem-9yFTpQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3FwNQGGOEeeNCem-9yFTpQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_HczUMGGPEeeNCem-9yFTpQ" name="temporalContext" visibility="public">
+        <ownedComment xmi:id="_HczUMWGPEeeNCem-9yFTpQ" annotatedElement="_HczUMGGPEeeNCem-9yFTpQ">
+          <body>&quot;Whether the topic is prospective or retrospective. E.g., action occurred in the past. This attribute is aligned with the SNOMED Situation With Explicit Context temporal context attribute.&quot; - HL7 CIMI, StatementContext.temporalContext</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HczUMmGPEeeNCem-9yFTpQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HczUM2GPEeeNCem-9yFTpQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fipy4EIfEee2bJNtigJtLg" name="EventContext">
+      <ownedComment xmi:id="_ybkZoEIfEee2bJNtigJtLg" annotatedElement="_fipy4EIfEee2bJNtigJtLg">
+        <body>&quot;Context associated with non-clinical events such as floods, accidents, and tornadoes.&quot; - HL7 CIMI, EventContext&#xD;
+This class corresponds to the SNOMED Event hierarchy</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_lnGYUPHkEeGWjrqT5CRABg" name="CounselingRequest">
       <ownedComment xmi:id="_9iW3kPHkEeGWjrqT5CRABg" annotatedElement="_lnGYUPHkEeGWjrqT5CRABg">
         <body>A request to provide guidance in order to help a person resolve social or personal problems.  This class serves as a placeholder, anticipating the need for such a request, to be further elaborated in a future iteration.</body>
@@ -3849,18 +3910,6 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Z-HIf2KEd-vp-CAyKeWfQ" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <profileApplication xmi:id="_JnNDsFKQEd6S47BJxSzcxQ">
-      <eAnnotations xmi:id="_JnNDsVKQEd6S47BJxSzcxQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA"/>
-      </eAnnotations>
-      <appliedProfile href="pathmap://HL7_PROFILES/RIM.profile.uml#_tkA5gERaEdyoutEhWTC49A"/>
-    </profileApplication>
-    <profileApplication xmi:id="_7krssKRCEeGrsN1DjD6wSA">
-      <eAnnotations xmi:id="_7lPtYKRCEeGrsN1DjD6wSA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
-      </eAnnotations>
-      <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
-    </profileApplication>
     <profileApplication xmi:id="_ZLwkpp1cEeKGRqm0H7Eu1A">
       <eAnnotations xmi:id="_ZLwkp51cEeKGRqm0H7Eu1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -3933,7 +3982,6 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <Default:Documentation xmi:id="_izUXoHezEeK5yYf9rwRjMg" base_Comment="_izLNsHezEeK5yYf9rwRjMg"/>
   <Default:Documentation xmi:id="_nsEOgKCgEeKNT6obAX9SKQ" base_Comment="_nsAkIKCgEeKNT6obAX9SKQ"/>
   <Default:Documentation xmi:id="_wOC2oKCgEeKNT6obAX9SKQ" base_Comment="_wN-lMKCgEeKNT6obAX9SKQ"/>
-  <RIM:Role xmi:id="_1186gLHcEeKa6fDMIApN6A" base_Class="_QyjvoOaXEd6YGfoXAoNmMA"/>
   <Default:Documentation xmi:id="_I8UvMO5vEd-crcWiXVDZrQ" base_Comment="_I8K-MO5vEd-crcWiXVDZrQ"/>
   <Default:Documentation xmi:id="_NhQS8O5vEd-crcWiXVDZrQ" base_Comment="_NhHJAO5vEd-crcWiXVDZrQ"/>
   <Default:Documentation xmi:id="_kkzHEO5vEd-crcWiXVDZrQ" base_Comment="_kkpWEO5vEd-crcWiXVDZrQ"/>
@@ -4028,12 +4076,10 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <Default:Documentation xmi:id="_5pzeUBHDEeCBuOUrBnIXmQ" base_Comment="_5pptUBHDEeCBuOUrBnIXmQ"/>
   <Default:Documentation xmi:id="_9bwagAifEdyHjMW0PjGWdw" base_Comment="_9bmpgAifEdyHjMW0PjGWdw"/>
   <Default:Documentation xmi:id="_vn2RMBHDEeCBuOUrBnIXmQ" base_Comment="_vnsgMBHDEeCBuOUrBnIXmQ"/>
-  <RIM:ControlAct xmi:id="_bsF2B1wTEd6dhZ7uY2XV5Q" base_Class="_420A62FD03B6454F68ED028C"/>
   <Default:Documentation xmi:id="_EmbS00m9EeCuWJu-uLQQaQ" base_Comment="_EmYPgkm9EeCuWJu-uLQQaQ"/>
   <Default:Documentation xmi:id="_EmbS1Em9EeCuWJu-uLQQaQ" base_Comment="_EmYPhEm9EeCuWJu-uLQQaQ"/>
   <Default:Documentation xmi:id="_EmbS1km9EeCuWJu-uLQQaQ" base_Comment="_EmYPjEm9EeCuWJu-uLQQaQ"/>
   <Default:Documentation xmi:id="_EmbS1Um9EeCuWJu-uLQQaQ" base_Comment="_EmYPiEm9EeCuWJu-uLQQaQ"/>
-  <RIM:ControlAct xmi:id="_EmbS0km9EeCuWJu-uLQQaQ" base_Class="_EmYPgEm9EeCuWJu-uLQQaQ"/>
   <Default:Documentation xmi:id="_1K8PE4lHEd-pqcFAwb-XNw" base_Comment="_1KyeEolHEd-pqcFAwb-XNw"/>
   <Default:Documentation xmi:id="_1K8PFIlHEd-pqcFAwb-XNw" base_Comment="_1KyeFIlHEd-pqcFAwb-XNw"/>
   <Default:Documentation xmi:id="_1K8PFolHEd-pqcFAwb-XNw" base_Comment="_1KyeHIlHEd-pqcFAwb-XNw"/>
@@ -4046,22 +4092,16 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <Default:Documentation xmi:id="_Eq6KMkm9EeCuWJu-uLQQaQ" base_Comment="_Eq3G5Em9EeCuWJu-uLQQaQ"/>
   <Default:Documentation xmi:id="_Eq6KMUm9EeCuWJu-uLQQaQ" base_Comment="_Eq3G4km9EeCuWJu-uLQQaQ"/>
   <Default:Documentation xmi:id="_Eq6KNEm9EeCuWJu-uLQQaQ" base_Comment="_Eq3G7Em9EeCuWJu-uLQQaQ"/>
-  <RIM:ControlAct xmi:id="_1K8PEolHEd-pqcFAwb-XNw" base_Class="_1KyeEIlHEd-pqcFAwb-XNw"/>
-  <RIM:ControlAct xmi:id="_31G8ckm8EeCuWJu-uLQQaQ" base_Class="_3aJewEm8EeCuWJu-uLQQaQ"/>
-  <RIM:ControlAct xmi:id="_Eq6KMEm9EeCuWJu-uLQQaQ" base_Class="_Eq3G4Em9EeCuWJu-uLQQaQ"/>
   <Default:Documentation xmi:id="_LR1i4NESEd2J5vG-LlQtmw" base_Comment="_LRrx4NESEd2J5vG-LlQtmw"/>
   <Default:Documentation xmi:id="_SJJxQNEYEd2J5vG-LlQtmw" base_Comment="_SJAnUNEYEd2J5vG-LlQtmw"/>
   <Default:Documentation xmi:id="_U2dFANEYEd2J5vG-LlQtmw" base_Comment="_U2T7ENEYEd2J5vG-LlQtmw"/>
   <Default:Documentation xmi:id="_XdpwwNEYEd2J5vG-LlQtmw" base_Comment="_Xdf_wNEYEd2J5vG-LlQtmw"/>
-  <RIM:Device xmi:id="_P9eFIFz3Ed6WkeJA5pW9UA" base_Class="_Aenw4LTXEd2sMvQnSCqOzA"/>
   <Default:Documentation xmi:id="_Lh6UYDNcEeKkw_YjK6aRcw" base_Comment="_Lhy_oDNcEeKkw_YjK6aRcw"/>
   <Default:Documentation xmi:id="_AyA5e5aSEeCWW4VssVugdQ" base_Comment="_KGEjEBqYEd-j8JC21F3W2A"/>
   <Default:Documentation xmi:id="_AyA5fJaSEeCWW4VssVugdQ" base_Comment="_Hf2s4pOREeCRFv3DJq7yhQ"/>
   <Default:Documentation xmi:id="_P6ILQpaWEeCWW4VssVugdQ" base_Comment="_P6ILQZaWEeCWW4VssVugdQ"/>
   <Default:Documentation xmi:id="_QSnOpZaUEeCWW4VssVugdQ" base_Comment="_QSnOopaUEeCWW4VssVugdQ"/>
-  <RIM:Role xmi:id="_0r8fgJaREeCWW4VssVugdQ" base_Class="_hFfdUJaREeCWW4VssVugdQ"/>
   <Default:Documentation xmi:id="_tFb6EPGeEd-ZlYn0p4HjQw" base_Comment="_tFSJEPGeEd-ZlYn0p4HjQw"/>
-  <RIM:Role xmi:id="_UNX0UPGeEd-ZlYn0p4HjQw" base_Class="_olItUB2oEd-4VI-lpu-JjQ"/>
   <Default:Documentation xmi:id="_IYd5EiaDEdyiJKb4ZqIfnw" base_Comment="_Mmqt6eLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_Mm0e5eLiEduGJrQyRGTO1A" base_Comment="_Mm0e5OLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_Mm0e6OLiEduGJrQyRGTO1A" base_Comment="_Mm0e5-LiEduGJrQyRGTO1A"/>
@@ -4070,48 +4110,30 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <Default:Documentation xmi:id="_MnHZ0OLiEduGJrQyRGTO1A" base_Comment="_Mm9o3-LiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MnHZ1uLiEduGJrQyRGTO1A" base_Comment="_MnHZ1eLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_ModdquLiEduGJrQyRGTO1A" base_Comment="_ModdqeLiEduGJrQyRGTO1A"/>
-  <RIM:Procedure xmi:id="_sv_O4FLeEd6-4-oWZUjasQ" base_Class="_420A62FD03B6438D2B8700C8"/>
   <Default:Documentation xmi:id="_jHMlcVWqEdybD6UtZ9jHUQ" base_Comment="_jHMlcFWqEdybD6UtZ9jHUQ"/>
   <Default:Documentation xmi:id="__vlw0RHDEeCBuOUrBnIXmQ" base_Comment="__vlw0BHDEeCBuOUrBnIXmQ"/>
-  <RIM:Role xmi:id="_WS9IcFYQEd6WMdl70LfmUg" base_Class="_420A62FD03B6424309BD032B"/>
   <Default:Documentation xmi:id="_QzKxIBHFEeCBuOUrBnIXmQ" base_Comment="_QzBnMBHFEeCBuOUrBnIXmQ"/>
   <Default:Documentation xmi:id="_v_m-cPGZEd-ZlYn0p4HjQw" base_Comment="_v_cmYPGZEd-ZlYn0p4HjQw"/>
-  <RIM:Role xmi:id="_WS9IclYQEd6WMdl70LfmUg" base_Class="_420A62FD03B6423F4B4C001F"/>
   <Default:Documentation xmi:id="_XGV_YBHFEeCBuOUrBnIXmQ" base_Comment="_XGM1cBHFEeCBuOUrBnIXmQ"/>
-  <RIM:Role xmi:id="_WS9Ic1YQEd6WMdl70LfmUg" base_Class="_420A62FD03B6431F30AF01A4"/>
   <Default:Documentation xmi:id="_iYozABHFEeCBuOUrBnIXmQ" base_Comment="_iYfpEBHFEeCBuOUrBnIXmQ"/>
-  <RIM:Role xmi:id="_dsmhsB2hEd-4VI-lpu-JjQ" base_Class="_420A62FD03B645784009029B"/>
-  <RIM:Role xmi:id="_Z3wJ8JBfEeCMBO4kb261_A" base_Class="_WvSkMJBfEeCMBO4kb261_A"/>
   <Default:Documentation xmi:id="_LCE3dHwpEdybWNIzS8Vktw" base_Comment="_LCE3cnwpEdybWNIzS8Vktw"/>
-  <RIM:Role xmi:id="_9BCw0BHMEeCBuOUrBnIXmQ" base_Class="_LCE3cHwpEdybWNIzS8Vktw"/>
   <Default:Documentation xmi:id="_L_n8BuLiEduGJrQyRGTO1A" base_Comment="_L_n8BeLiEduGJrQyRGTO1A"/>
-  <RIM:Role xmi:id="_WS9IfFYQEd6WMdl70LfmUg" base_Class="_420A62FD03B6431F30820249"/>
   <Default:Documentation xmi:id="_2j8roPGNEd-ZlYn0p4HjQw" base_Comment="_2jq-0PGNEd-ZlYn0p4HjQw"/>
   <Default:Documentation xmi:id="_opYDMRHDEeCBuOUrBnIXmQ" base_Comment="_opYDMBHDEeCBuOUrBnIXmQ"/>
   <Default:Documentation xmi:id="_SygMEPGOEd-ZlYn0p4HjQw" base_Comment="_SyVM8PGOEd-ZlYn0p4HjQw"/>
-  <RIM:Place xmi:id="_DrT34FYQEd6WMdl70LfmUg" base_Class="_420A62FD03B64242CCAC02AF"/>
   <Default:Documentation xmi:id="_4GF0kBHeEeCBuOUrBnIXmQ" base_Comment="_4F8qoBHeEeCBuOUrBnIXmQ"/>
   <Default:Documentation xmi:id="_D1NZMCQmEdy5q9ASLdZxEA" base_Comment="_D1DoMCQmEdy5q9ASLdZxEA"/>
   <Default:Documentation xmi:id="_zJUYkBHeEeCBuOUrBnIXmQ" base_Comment="_zJLOoBHeEeCBuOUrBnIXmQ"/>
-  <RIM:Place xmi:id="_DrT34VYQEd6WMdl70LfmUg" base_Class="_420A62FD03B6455385C00085"/>
-  <RIM:ManufacturedMaterial xmi:id="_Yrxw0MK5EeCnJaPxQitB6A" base_Class="_VtZUIMK5EeCnJaPxQitB6A"/>
   <Default:Documentation xmi:id="_JAoo8BHFEeCBuOUrBnIXmQ" base_Comment="_JAVG8BHFEeCBuOUrBnIXmQ"/>
-  <RIM:Organization xmi:id="_FgeeQB2IEd-4VI-lpu-JjQ" base_Class="_420A62FD03B64553860202C7"/>
   <Default:Documentation xmi:id="_BcZmABHGEeCBuOUrBnIXmQ" base_Comment="_BcQcEBHGEeCBuOUrBnIXmQ"/>
-  <RIM:Organization xmi:id="_FgeeQx2IEd-4VI-lpu-JjQ" base_Class="_6chccCQuEdy5q9ASLdZxEA"/>
   <Default:Documentation xmi:id="_L-IuT-LiEduGJrQyRGTO1A" base_Comment="_L-IuTuLiEduGJrQyRGTO1A"/>
-  <RIM:Organization xmi:id="_FgeeQR2IEd-4VI-lpu-JjQ" base_Class="_420A62FD03B64243082500AD"/>
   <Default:Documentation xmi:id="_u95KsBHCEeCBuOUrBnIXmQ" base_Comment="_u9vZsBHCEeCBuOUrBnIXmQ"/>
-  <RIM:Role xmi:id="_SpGlMPGeEd-ZlYn0p4HjQw" base_Class="_lxfhAB2oEd-4VI-lpu-JjQ"/>
-  <RIM:Act xmi:id="_PMd0gEwaEeCc9OmUU3L5_A" base_Class="_eSQaMBs1Ed--ZY2-pbJ-Pw"/>
   <Default:Documentation xmi:id="_jBm0oEcfEeOPSKtS95Q8Uw" base_Comment="_i6-BIEcfEeOPSKtS95Q8Uw"/>
   <Default:Documentation xmi:id="_w8mMAEcjEeOPSKtS95Q8Uw" base_Comment="_w8dCEEcjEeOPSKtS95Q8Uw"/>
   <Default:Documentation xmi:id="_NaORxeLiEduGJrQyRGTO1A" base_Comment="_NaORxOLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_NaORyOLiEduGJrQyRGTO1A" base_Comment="_NaORx-LiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_NaYCwOLiEduGJrQyRGTO1A" base_Comment="_NaORyuLiEduGJrQyRGTO1A"/>
-  <RIM:Observation xmi:id="_br8FCVwTEd6dhZ7uY2XV5Q" base_Class="_420A62FD03B641B9FA54023F"/>
   <Default:Documentation xmi:id="_Gv0FED0lEeK9mqm0blk9EQ" base_Comment="_GvsJQD0lEeK9mqm0blk9EQ"/>
-  <RIM:Participation xmi:id="__2o9wKwcEeG4dfTp_XT2yg" base_Class="_5EZ08KwcEeG4dfTp_XT2yg"/>
   <Default:Documentation xmi:id="_L2FlgOLiEduGJrQyRGTO1A" base_Comment="_LtJr9eLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_L2iRcOLiEduGJrQyRGTO1A" base_Comment="_L2ZHg-LiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_L2ZHgeLiEduGJrQyRGTO1A" base_Comment="_L2ZHgOLiEduGJrQyRGTO1A"/>
@@ -4124,22 +4146,17 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <Default:Documentation xmi:id="_MycgEeLiEduGJrQyRGTO1A" base_Comment="_MycgEOLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MycgFOLiEduGJrQyRGTO1A" base_Comment="_MycgE-LiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MySvEeLiEduGJrQyRGTO1A" base_Comment="_MySvEOLiEduGJrQyRGTO1A"/>
-  <RIM:ActRelationship xmi:id="_RLK1MIBsEd-cvdR-JEsOjQ" base_Class="_420A62FD03B64550AAFD0313"/>
   <Default:Documentation xmi:id="_BBpc8NUdEeGzd-o9XtejuA" base_Comment="_BBhhINUdEeGzd-o9XtejuA"/>
   <Default:Documentation xmi:id="_s2Rv0NUcEeGzd-o9XtejuA" base_Comment="_s2Il4NUcEeGzd-o9XtejuA"/>
   <Default:Documentation xmi:id="_t4TvsFlgEeCyw5g2lQh-Ug" base_Comment="_t4KlwFlgEeCyw5g2lQh-Ug"/>
-  <RIM:Act xmi:id="_EZYowcdmEeCVr54V6VtSNQ" base_Class="_t0ZXsJtZEeClAtaO_zSM7g"/>
-  <RIM:Act xmi:id="_EZYowMdmEeCVr54V6VtSNQ" base_Class="_qw_REJtZEeClAtaO_zSM7g"/>
-  <RIM:Patient xmi:id="_qcR4QG9aEeC7Xu_kGrVjuQ" base_Class="_yrve8FlfEeCyw5g2lQh-Ug"/>
   <Default:Documentation xmi:id="_1U6AsCVQEeO_iaEYDPvTaA" base_Comment="_1Uz6ECVQEeO_iaEYDPvTaA"/>
   <Default:Documentation xmi:id="_9WWHkCVQEeO_iaEYDPvTaA" base_Comment="_9WM9oCVQEeO_iaEYDPvTaA"/>
   <Default:Documentation xmi:id="_4WxZwCVREeO_iaEYDPvTaA" base_Comment="_4WoP0CVREeO_iaEYDPvTaA"/>
   <term:ValueSetConstraint xmi:id="_YN8g4PXwEeWUqry1B7qRsQ" base_Property="_oOfAcFlgEeCyw5g2lQh-Ug">
-    <reference href="FHIM_Vocab.emx#_kKu4cfXvEeW1BuvtDtBQzQ"/>
+    <reference xmi:type="xsd:anyType" href="FHIM_Vocab.emx#_kKu4cfXvEeW1BuvtDtBQzQ"/>
   </term:ValueSetConstraint>
   <Default:Documentation xmi:id="_Mc_NcOLiEduGJrQyRGTO1A" base_Comment="_Mc1ceuLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_Mc_NdOLiEduGJrQyRGTO1A" base_Comment="_Mc_Nc-LiEduGJrQyRGTO1A"/>
-  <RIM:Procedure xmi:id="_-05KMJQvEd-GUpkbaCODYA" base_Class="_420A62FD03B642CEE9A60249"/>
   <Default:Documentation xmi:id="_Mb8EmOLiEduGJrQyRGTO1A" base_Comment="_Mb8El-LiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_McF1k-LiEduGJrQyRGTO1A" base_Comment="_McF1kuLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_McF1kOLiEduGJrQyRGTO1A" base_Comment="_Mb8Em-LiEduGJrQyRGTO1A"/>
@@ -4147,35 +4164,32 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <Default:Documentation xmi:id="_McO_g-LiEduGJrQyRGTO1A" base_Comment="_McO_guLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_McO_gOLiEduGJrQyRGTO1A" base_Comment="_McF1mOLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_Mdu0U-LiEduGJrQyRGTO1A" base_Comment="_Mdu0UuLiEduGJrQyRGTO1A"/>
-  <RIM:Procedure xmi:id="_HR8PAJQwEd-GUpkbaCODYA" base_Class="_420A62FD03B6426E871203C6"/>
-  <RIM:ActRelationship xmi:id="_ar7igJQwEd-GUpkbaCODYA" base_Class="_SjvTYJQwEd-GUpkbaCODYA"/>
   <Default:Documentation xmi:id="_3dzVNN9KEeaqfsYBRmvQmQ" base_Comment="_3dzVMd9KEeaqfsYBRmvQmQ"/>
   <Default:Documentation xmi:id="_kebOsPGjEd-ZlYn0p4HjQw" base_Comment="_keQ2oPGjEd-ZlYn0p4HjQw"/>
   <Default:Documentation xmi:id="_VX1qowLQEd-4q5si9Q3m-w" base_Comment="__zBzgAINEd-VSqNkiZ4fOA"/>
-  <RIM:Material xmi:id="_VX1qogLQEd-4q5si9Q3m-w" base_Class="_NtYkIOEVEd6EKMSYA1gKjA"/>
   <Default:Documentation xmi:id="_1ZTnkBHFEeCBuOUrBnIXmQ" base_Comment="_1ZKdoBHFEeCBuOUrBnIXmQ"/>
   <Default:Documentation xmi:id="_3gsK0BHFEeCBuOUrBnIXmQ" base_Comment="_3gjA4BHFEeCBuOUrBnIXmQ"/>
   <Default:Documentation xmi:id="_MArE5-LiEduGJrQyRGTO1A" base_Comment="_MArE5uLiEduGJrQyRGTO1A"/>
-  <RIM:ManufacturedMaterial xmi:id="_lUzMcFYPEd6WMdl70LfmUg" base_Class="_420A62FD03B643D7C2360379"/>
   <Default:Documentation xmi:id="_cVK8EBHCEeCBuOUrBnIXmQ" base_Comment="_cVByIBHCEeCBuOUrBnIXmQ"/>
   <Default:Documentation xmi:id="_Q_5s8BHCEeCBuOUrBnIXmQ" base_Comment="_Q8VbkBHCEeCBuOUrBnIXmQ"/>
-  <RIM:Role xmi:id="_gqTZQP2KEd-vp-CAyKeWfQ" base_Class="_bYKKMP2KEd-vp-CAyKeWfQ"/>
   <Default:Documentation xmi:id="_iRL5ZOGuEeaHnLXha23s2A" base_Comment="_iRL5YeGuEeaHnLXha23s2A"/>
   <Default:Documentation xmi:id="_2rpLYOGuEeaHnLXha23s2A" base_Comment="_2rokUeGuEeaHnLXha23s2A"/>
   <Default:Documentation xmi:id="_2QHEQEUuEeKmiJoj9rWMSg" base_Comment="_2PhOYEUuEeKmiJoj9rWMSg"/>
   <Default:Documentation xmi:id="_N0y2kEUvEeKmiJoj9rWMSg" base_Comment="_N0psoEUvEeKmiJoj9rWMSg"/>
-  <RIM:Act xmi:id="_8HwuYPjJEeCmc6EQPl3F9g" base_Class="_1mTzkPjJEeCmc6EQPl3F9g"/>
   <Default:Documentation xmi:id="_fXJnoOQTEeak6NCuAd5Onw" base_Comment="_fXJAkeQTEeak6NCuAd5Onw"/>
   <Default:Documentation xmi:id="_P10q8OQXEeak6NCuAd5Onw" base_Comment="_P1yOsOQXEeak6NCuAd5Onw"/>
   <Default:Documentation xmi:id="_XzKU9OQXEeak6NCuAd5Onw" base_Comment="_XzKU8eQXEeak6NCuAd5Onw"/>
   <Default:Documentation xmi:id="_cHkwcOQXEeak6NCuAd5Onw" base_Comment="_cHkJYeQXEeak6NCuAd5Onw"/>
   <Default:Documentation xmi:id="_jLYxcOQXEeak6NCuAd5Onw" base_Comment="_jLYKYeQXEeak6NCuAd5Onw"/>
   <Default:Documentation xmi:id="_prwHIOQXEeak6NCuAd5Onw" base_Comment="_prvgEeQXEeak6NCuAd5Onw"/>
-  <RIM:Observation xmi:id="_VC3-0Lx6EeSLwM7JIxbinw" base_Class="_7HxPELx2EeSLwM7JIxbinw"/>
-  <RIM:Observation xmi:id="_VC3-0bx6EeSLwM7JIxbinw" base_Class="_9dxdILx2EeSLwM7JIxbinw"/>
-  <RIM:Observation xmi:id="__tBp0N1uEeSq65vB-N1vxw" base_Class="_0QKFgNfqEeSxkr3j6jZ3ag"/>
   <Default:Documentation xmi:id="_y_8zYOQ4EeaH9t35G2snaA" base_Comment="_y_zCYOQ4EeaH9t35G2snaA"/>
-  <RIM:Observation xmi:id="_VC3XwLx6EeSLwM7JIxbinw" base_Class="_terqkLxzEeSLwM7JIxbinw"/>
   <Default:Documentation xmi:id="_9iezYPHkEeGWjrqT5CRABg" base_Comment="_9iW3kPHkEeGWjrqT5CRABg"/>
-  <RIM:Act xmi:id="_pD9gwPHkEeGWjrqT5CRABg" base_Class="_lnGYUPHkEeGWjrqT5CRABg"/>
+  <Default:Documentation xmi:id="_ybkZoUIfEee2bJNtigJtLg" base_Comment="_ybkZoEIfEee2bJNtigJtLg"/>
+  <Default:Documentation xmi:id="_Ql29EUIXEee2bJNtigJtLg" base_Comment="_Ql29EEIXEee2bJNtigJtLg"/>
+  <Default:Documentation xmi:id="_GCNlgGGPEeeNCem-9yFTpQ" base_Comment="_GCD0gGGPEeeNCem-9yFTpQ"/>
+  <Default:Documentation xmi:id="_HczUNGGPEeeNCem-9yFTpQ" base_Comment="_HczUMWGPEeeNCem-9yFTpQ"/>
+  <Default:Documentation xmi:id="_BvEfkYeSEeeJXvOkPl8Bfw" base_Comment="_BvEfkIeSEeeJXvOkPl8Bfw"/>
+  <Default:Documentation xmi:id="_pYL-2IeSEeeJXvOkPl8Bfw" base_Comment="_pYL-0YeSEeeJXvOkPl8Bfw"/>
+  <Default:Documentation xmi:id="_pYL-2YeSEeeJXvOkPl8Bfw" base_Comment="_pYL-1YeSEeeJXvOkPl8Bfw"/>
+  <Default:Documentation xmi:id="_Gal-FYeTEeeJXvOkPl8Bfw" base_Comment="_MC55g-LiEduGJrQyRGTO1A"/>
 </xmi:XMI>
