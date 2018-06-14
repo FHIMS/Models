@@ -4114,6 +4114,22 @@ When used as an ingredient in a drug or food in the United States, this code sho
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-NNRsRPREeaEMK-9YQqLHg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-NNRsBPREeaEMK-9YQqLHg" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_fCKz4BFuEeKu1LfuaJwFHw" name="isReprocessedDevice" visibility="public">
+        <ownedComment xmi:id="_eJdEAHAaEeiy_9OTRvuq_w" annotatedElement="_fCKz4BFuEeKu1LfuaJwFHw">
+          <body>This optional property is a placeholder for information indicating whether the Device Instance was somehow refurbished at some point in time (typically before having been implanted in the Patient). This information may be useful in determining whether a defect might have been caused by the reprocessing activity as opposed to the original manufacture.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GJJhAJC3EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GJI58JC3EeaeVcv6mxF7oQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_j5JJ4BFuEeKu1LfuaJwFHw" name="isReusedDevice" visibility="public">
+        <ownedComment xmi:id="_k91h4HAaEeiy_9OTRvuq_w" annotatedElement="_j5JJ4BFuEeKu1LfuaJwFHw">
+          <body>This optional property is a placeholder for information indicating whether the Device Instance was utilized previously in either the same Patient or a previous Patient.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Gu6ggJC3EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Gu55cJC3EeaeVcv6mxF7oQ" value="1"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_kIEVcAJlEeaG4J0T8FMiWg" name="DeviceComponent">
       <ownedComment xmi:id="_vZ7ZUAJnEeaG4J0T8FMiWg" annotatedElement="_kIEVcAJlEeaG4J0T8FMiWg">
@@ -4908,4 +4924,6 @@ Note that FHIR timing can be a Timing, Period, or a DateTime. FHIM currently lim
   <Default:Documentation xmi:id="_D8g7gbUZEee8ToGyn6JwPw" base_Comment="_D8g7gLUZEee8ToGyn6JwPw"/>
   <Default:Documentation xmi:id="_Mod_AbUZEee8ToGyn6JwPw" base_Comment="_Mod_ALUZEee8ToGyn6JwPw"/>
   <Default:Documentation xmi:id="_lMuOYcsGEeeRmrVpDYXk5A" base_Comment="_lMuOYMsGEeeRmrVpDYXk5A"/>
+  <Default:Documentation xmi:id="_eJdEAXAaEeiy_9OTRvuq_w" base_Comment="_eJdEAHAaEeiy_9OTRvuq_w"/>
+  <Default:Documentation xmi:id="_k91h4XAaEeiy_9OTRvuq_w" base_Comment="_k91h4HAaEeiy_9OTRvuq_w"/>
 </xmi:XMI>
