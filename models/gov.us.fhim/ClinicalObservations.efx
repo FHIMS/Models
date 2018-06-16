@@ -209,7 +209,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_ZpjweTgjEeiCe5h1bu-jCw" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_ZpjwejgjEeiCe5h1bu-jCw" visible="false" type="StructureCompartment"/>
           <element xmi:type="uml:Class" href="Common.efx#_8lvuIDKfEeidlpJU2TuLzA?FHIM/Common/InformationEntry?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZpjwcTgjEeiCe5h1bu-jCw" x="9193" y="-6340"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZpjwcTgjEeiCe5h1bu-jCw" x="9510" y="-6340"/>
         </children>
         <element xsi:nil="true"/>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_k13j0H_gEd-Ure_vzgD_TA" element="_k1uZ4H_gEd-Ure_vzgD_TA" source="_PptvIH_gEd-Ure_vzgD_TA" target="_fcKUMH_gEd-Ure_vzgD_TA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -739,7 +739,9 @@
     </eAnnotations>
     <packagedElement xmi:type="uml:Class" xmi:id="_3XW7MGH_EeCHAoM78Lf2xA" name="ReferenceRange" clientDependency="_3QVuoB-NEee94IovPwpKfw">
       <ownedComment xmi:id="_7CEKMEWYEeKmiJoj9rWMSg" annotatedElement="_3XW7MGH_EeCHAoM78Lf2xA">
-        <body>Indicates the criteron by which the reference range is valid.  Different reference ranges may be defined based on the subject's age, race, sex, etc.</body>
+        <body>Indicates the criteron by which the reference range is valid.  Different reference ranges may be defined based on the subject's age, race, sex, etc.&#xD;
+&quot;When the observation quantifies the amount of a toxic substance, then the upper limit of the range identifies the toxic limit.  If the observation quantifies a drug, the lower limits identify the lower therapeutic bounds and the upper limits represent the upper therapeutic bounds above which toxic side effects are common.&quot; - HL7 Version 2.8, OBX-7&#xD;
+&quot;Guidance on how to interpret the value by comparison to a normal or recommended range.&quot; - HL7 FHIR, Observation.referenceRange</body>
       </ownedComment>
       <ownedAttribute xmi:id="_nCKZoB76EeeR140udo0pbA" name="ageRange" visibility="public">
         <ownedComment xmi:id="_VsmBQB-EEeeZ3N7_V_4PrA" annotatedElement="_nCKZoB76EeeR140udo0pbA">
@@ -919,7 +921,7 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       </ownedAttribute>
       <ownedAttribute xmi:id="_kn6owB7OEeeR140udo0pbA" name="category" visibility="public">
         <ownedComment xmi:id="_kn6owR7OEeeR140udo0pbA" annotatedElement="_kn6owB7OEeeR140udo0pbA">
-          <body>This optional property is used to classify the observation into coarse-grained groups such as vital signs, laboratory, etc. This property is included for compatibility to FHIR, although in the FHIM, such a categorization is usually handled through sub-type relationships.&#xD;
+          <body>This optional property is used to classify the observation into coarse-grained groups such as vital signs, laboratory, etc. This property is included for compatibility to FHIR, although in the FHIM, such a categorization is usually handled through generalization (sub-type) relationships.&#xD;
 &quot;A code that classifies the general type of observation being made.&quot; - HL7 FHIR, Observation.category</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
@@ -938,7 +940,7 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
         <ownedComment xmi:id="_KverIHyhEeOHq5zPTCjDoQ" annotatedElement="_nbH1NVaeEd6rJ7jpZ7LBFg">
           <body>The date (and optionally, time) that the Observation took place.  Note that this is the clinically-relevant time, for example, the clinically relevant time of a result of a lab test on a blood sample is the time the blood was drawn, not when the test was run.  Note that in FHIR this can be either a point in time or a period (i.e., a TimeInterval).  In the FHIM, this is currently modeled as only a point in time.  Note also that when used by the Condition sub-type of Observation, this is the date that the Condition was first detected or asserted.&#xD;
 &#xD;
-&quot;This field is required in two circumstances.  The first is when the observations reported beneath one report header have different dates/times.  This could occur in the case of queries, timed test sequences, or clearance studies where one measurement within a battery may have a different time than another measurement....  The observation date-time is the physiologically relevant date-time or the closest approximation to that date-time.  In the case of tests performed on specimens, the relevant date-time is the specimen’s collection date-time.  In the case of observations taken directly on the patient (e.g., X-ray images, history and physical), the observation date-time is the date-time that the observation was performed.&quot; - HL7 Version 2.8, OBX-14.&#xD;
+&quot;This field is required in two circumstances. The first is when the observations reported beneath one report header have different dates/times.  This could occur in the case of queries, timed test sequences, or clearance studies where one measurement within a battery may have a different time than another measurement.... The observation date-time is the physiologically relevant date-time or the closest approximation to that date-time. In the case of tests performed on specimens, the relevant date-time is the specimen's collection date-time. In the case of observations taken directly on the patient (e.g., X-ray images, history and physical), the observation date-time is the date-time that the observation was performed.&quot; - HL7 Version 2.8, OBX-14.&#xD;
 &quot;The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the &quot;physiologically relevant time&quot;. This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself.&quot; - HL7 FHIR, Observation.effective[x]&#xD;
 &#xD;
 &quot;Contains the date/time when the corresponding problem was initially identified by the caregiver.&quot; - HL7 Version 2.8, PRB-7&#xD;
@@ -950,7 +952,8 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       </ownedAttribute>
       <ownedAttribute xmi:id="_6U_P0B7nEeeR140udo0pbA" name="dateTimeIssued" visibility="public">
         <ownedComment xmi:id="_HV9LwB7oEeeR140udo0pbA" annotatedElement="_6U_P0B7nEeeR140udo0pbA">
-          <body>&quot;The date and time this observation was made available to providers, typically after the results have been reviewed and verified.&quot; - HL7 FHIR, Observation.issued</body>
+          <body>&quot;The date and time this observation was made available to providers, typically after the results have been reviewed and verified.&quot; - HL7 FHIR, Observation.issued&#xD;
+&quot;The date and time this observation was made available to providers, typically after the results have been reviewed and verified.&quot; - HL7 CIMI, RecordedContext.RecordedContext</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-PTwUB7nEeeR140udo0pbA" value="1"/>
@@ -959,7 +962,8 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       <ownedAttribute xmi:id="_nbH1QlaeEd6rJ7jpZ7LBFg" name="method" visibility="public">
         <ownedComment xmi:id="_uy5ucH-0EeOzENpLs8HIcg" annotatedElement="_nbH1QlaeEd6rJ7jpZ7LBFg">
           <body>Provides additional detail about the means or technique used to ascertain the Observation.  The method used may affect how the observation value is interpreted.&#xD;
-&quot;Indicates the mechanism used to perform the observation.&quot; - HL7 FHIR, Observation.method.</body>
+&quot;Indicates the mechanism used to perform the observation.&quot; - HL7 FHIR, Observation.method.&#xD;
+&quot;The means by which a measurement, evaluation, or assessment was made.&quot; - HL7 CIMI, EvaluationResultTopic.method</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nbH1Q1aeEd6rJ7jpZ7LBFg" value="*"/>
@@ -986,6 +990,8 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       <ownedAttribute xmi:id="_GIb5cB7MEeeR140udo0pbA" name="resultStatus" visibility="public">
         <ownedComment xmi:id="_MeuGEB7MEeeR140udo0pbA" annotatedElement="_GIb5cB7MEeeR140udo0pbA">
           <body>Indicates the state of the result value, for example whether it is preliminary or final, etc. Note that this status differs from the record status inherited from Clinical Information, in that the record status indicates whether the record is active, obsoleted, etc. While there is some overlap between the two statuses (e.g., they both can represent entered-in-error), this property is meant to convey more clinical information regarding the reliability of the information (e.g., preliminary versus final), whereas the record status tends to focus on the lifecycle of the record (e.g., new versus active).&#xD;
+&quot;Contains the observation result status.... This field reflects the current completion status of the results for one Observation Identifier....&quot; - HL7 Version 2.8, OBX-11&#xD;
+&quot;The last recorded state of the finding, indicating whether the finding is preliminary, amended, final, to be attained, etc.&quot; - HL7 CIMI, FindingContext.status&#xD;
 &quot;The status of the result value.&quot; - HL7 FHIR, Observation.status. Note that the possible values for status in FHIR are: Registered, Preliminary, Final, Amended, Corrected, Cancelled, Entered in Error.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
@@ -995,6 +1001,9 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       <ownedAttribute xmi:id="_VCEnMPOOEeGMQvy2b7FvNg" name="value" visibility="public">
         <ownedComment xmi:id="_b8pzsPOOEeGMQvy2b7FvNg" annotatedElement="_VCEnMPOOEeGMQvy2b7FvNg">
           <body>Contains the value of the Clinical Observation.  This property is modeled as an Any datatype in the generic Observation; specific subtypes are expected to re-define this property to the appropriate datatype.&#xD;
+&quot;Contains the value observed by the observation producer....  It is not a required field because some systems will report only the Interpretation Codes.... This field may repeat for multipart, single answer results.&quot; - HL7 Version 2.8, OBX-5&#xD;
+&quot;Contains the units of measurement for the value in OBX-5, Observation Value.&quot; - HL7 Version 2.8, OBX-6&#xD;
+&quot;The value of the finding, typically a quantity for measurements and a concept code for qualitative evaluations and assertions. In general, any data type can be the value of a finding.&quot; - HL7 CIMI, RecordedContext.resultValue&#xD;
 &quot;The information determined as a result of making the observation, if the information has a simple value.&quot; - HL7 FHIR, Observation.value[x]</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_r_1eEBvxEd-afqIGzWhetA?FHIM/Datatypes/Any?"/>
@@ -1013,6 +1022,7 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       <ownedAttribute xmi:id="_l45L8BcpEeOL3Nw-k5HkNw" name="interpretationEvent" visibility="public" type="_eWYXgO3MEeCFZuasLkncZQ" association="_l4390BcpEeOL3Nw-k5HkNw">
         <ownedComment xmi:id="_ITTgQJnEEeOY14GUwwUH5Q" annotatedElement="_l45L8BcpEeOL3Nw-k5HkNw">
           <body>Pointer to an assessment of the value or result of the Clinical Observation.&#xD;
+&quot;One or more codes specifying a categorical assessment of the observation value, such as &quot;Normal&quot;, &quot;Abnormal&quot;, &quot;Positive&quot;, &quot;Negative&quot;, &quot;Resistant&quot;, &quot;Susceptible&quot;, etc....&quot; - HL7 Version 2.8, OBX-8&#xD;
 &quot;The assessment made based on the result of the observation. Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag.&quot; - HL7 FHIR, Observation.interpretation</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l46aERcpEeOL3Nw-k5HkNw" value="1"/>
@@ -1028,6 +1038,8 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       <ownedAttribute xmi:id="_LYGwEPDOEeO_Te8vAbT_YQ" name="referenceRange" visibility="public" type="_3XW7MGH_EeCHAoM78Lf2xA" association="_LYFh8PDOEeO_Te8vAbT_YQ">
         <ownedComment xmi:id="_4FD8oPDOEeO_Te8vAbT_YQ" annotatedElement="_LYGwEPDOEeO_Te8vAbT_YQ">
           <body>Pointer to a set of normal or recommended ranges that can be used to compare against the value of the actual observation or test results.&#xD;
+&quot;When the observation quantifies the amount of a toxic substance, then the upper limit of the range identifies the toxic limit.  If the observation quantifies a drug, the lower limits identify the lower therapeutic bounds and the upper limits represent the upper therapeutic bounds above which toxic side effects are common.&quot; - HL7 Version 2.8, OBX-7&#xD;
+&quot;The range for the measurement.&quot; - HL7 CIMI, EvaluationResultTopic.referenceRange&#xD;
 &quot;Guidance on how to interpret the value by comparison to a normal or recommended range.&quot; - HL7 FHIR, Observation.referenceRange</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LYHXIfDOEeO_Te8vAbT_YQ" value="*"/>
@@ -1044,7 +1056,8 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       </ownedAttribute>
       <ownedAttribute xmi:id="_fVFsIB7tEeeR140udo0pbA" name="deviceInstance" visibility="public" association="_fVEeAB7tEeeR140udo0pbA">
         <ownedComment xmi:id="_ptlJ8B7tEeeR140udo0pbA" annotatedElement="_fVFsIB7tEeeR140udo0pbA">
-          <body>&quot;The device used to generate the observation data.&quot; - HL7 FHIR, Observation.device</body>
+          <body>&quot;The device used to evaluate the characteristic such as the type of blood pressure cuff used on a patient.&quot; - HL7 CIMI, EvaluationResultTopic.device&#xD;
+&quot;The device used to generate the observation data.&quot; - HL7 FHIR, Observation.device</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="CommonProduct.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/CommonProduct/DeviceInstance?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fVGTMR7tEeeR140udo0pbA" value="1"/>
