@@ -108,6 +108,32 @@
     <packageImport xmi:id="_ZLwkpZ1cEeKGRqm0H7Eu1A">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wBabQBcBEeOL3Nw-k5HkNw" name="ObservationQualifier" clientDependency="_6814MMQbEeSaFayJQBK5xQ">
+      <ownedComment xmi:id="_zmpAEBcCEeOL3Nw-k5HkNw" annotatedElement="_wBabQBcBEeOL3Nw-k5HkNw">
+        <body>This class contains observations or information that may provide additional context to the owning clinical observation (i.e., the owning Observation class).  The information recorded in this class may likely alter a clinician's interpretation of the value in the owning Observation class.  For example, a blood pressure of 140/95 would be considered abnormal if the patient was sitting and resting, but normal if the patient had just been on a treadmill for five minutes.  In this example, the blood pressure of 140/95 is in the owning Observation class, the observation that the blood pressure was taken while patient was sitting and resting or immediately after five minutes on a treadmill would be recorded in this ObservationQualifier class.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_yzWXYBcBEeOL3Nw-k5HkNw" name="observedCharacteristic" visibility="public">
+        <ownedComment xmi:id="_nG6TgBcDEeOL3Nw-k5HkNw" annotatedElement="_yzWXYBcBEeOL3Nw-k5HkNw">
+          <body>Identifies the qualifying information (an observation) that may affect the interpretation of the owning clinical Observation.  For example, if the owning clinical Observation is a blood pressure, this class may contain information about the patient's state (i.e., whether sitting and resting, prone, after exercise, etc.).  In this example, the observedCharacteristic indicates the kind of observation that qualifies the owning Observation (e.g., &quot;patient state&quot;, &quot;cuff size&quot;), while the value contains the corresponding data for the observation (e.g., &quot;after exercise&quot;, &quot;large adult cuff&quot;).</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_52FxwbyZEea_DaXmJ278Kw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_52FxwLyZEea_DaXmJ278Kw" value="1"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_9i0b8MQbEeSaFayJQBK5xQ">
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+          <language></language>
+          <body>(ObservationQualifier)</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_2qwGwBcBEeOL3Nw-k5HkNw" name="value" visibility="public">
+        <ownedComment xmi:id="_yb94gBcJEeOL3Nw-k5HkNw" annotatedElement="_2qwGwBcBEeOL3Nw-k5HkNw">
+          <body>Contains the data describing the qualifying information (an observation) that may affect the interpretation of the owning clinical Observation.  For example, if the owning Observation is a blood pressure, this class may contain information about the patient's state (i.e., whether sitting and resting, prone, after exercise, etc.).  In this example, the category indicates the kind of observation that qualifies the owning Observation (e.g., &quot;patient state&quot;, &quot;cuff size&quot;), while the value contains the corresponding data for the observation (e.g., &quot;after exercise&quot;, &quot;large adult cuff&quot;).</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_r_1eEBvxEd-afqIGzWhetA?FHIM/Datatypes/Any?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AuTeQRchEeOL3Nw-k5HkNw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AuTeQBchEeOL3Nw-k5HkNw"/>
+      </ownedAttribute>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_VLvwIIeREeeJXvOkPl8Bfw" name="RequestContext" isAbstract="true">
       <ownedComment xmi:id="_BvEfkIeSEeeJXvOkPl8Bfw" annotatedElement="_VLvwIIeREeeJXvOkPl8Bfw">
         <body>&quot;A request by a healthcare provider or system to another healthcare provider or system to perform some act.&quot; - HL7 CIMI Request&#xD;
@@ -855,7 +881,7 @@ Adverse Event (AE): Any untoward medical occurrence in a patient or clinical inv
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R5cNIiaQEdyiJKb4ZqIfnw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nbBUsSaPEdyiJKb4ZqIfnw" name="procedure" visibility="public" association="_nbBUsCaPEdyiJKb4ZqIfnw">
-        <type xmi:type="uml:Class" href="Common.efx#_rr-pACaOEdyiJKb4ZqIfnw?FHIM/Common/Procedure?"/>
+        <type xmi:type="uml:Class" href="Common.efx#_rr-pACaOEdyiJKb4ZqIfnw?FHIM/Common/ActionPerformed?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nbKeoCaPEdyiJKb4ZqIfnw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nbBUsiaPEdyiJKb4ZqIfnw"/>
       </ownedAttribute>
@@ -3910,6 +3936,9 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Z-HIf2KEd-vp-CAyKeWfQ" value="1"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_6814MMQbEeSaFayJQBK5xQ" client="_wBabQBcBEeOL3Nw-k5HkNw">
+      <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_3TO_IMQZEeSaFayJQBK5xQ?FHIM_Vocab/VitalSignsVocab/ObservationQualifier?"/>
+    </packagedElement>
     <profileApplication xmi:id="_ZLwkpp1cEeKGRqm0H7Eu1A">
       <eAnnotations xmi:id="_ZLwkp51cEeKGRqm0H7Eu1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -4192,4 +4221,7 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
   <Default:Documentation xmi:id="_pYL-2IeSEeeJXvOkPl8Bfw" base_Comment="_pYL-0YeSEeeJXvOkPl8Bfw"/>
   <Default:Documentation xmi:id="_pYL-2YeSEeeJXvOkPl8Bfw" base_Comment="_pYL-1YeSEeeJXvOkPl8Bfw"/>
   <Default:Documentation xmi:id="_Gal-FYeTEeeJXvOkPl8Bfw" base_Comment="_MC55g-LiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_zmyxEBcCEeOL3Nw-k5HkNw" base_Comment="_zmpAEBcCEeOL3Nw-k5HkNw"/>
+  <Default:Documentation xmi:id="_nHEEgBcDEeOL3Nw-k5HkNw" base_Comment="_nG6TgBcDEeOL3Nw-k5HkNw"/>
+  <Default:Documentation xmi:id="_ycHpgBcJEeOL3Nw-k5HkNw" base_Comment="_yb94gBcJEeOL3Nw-k5HkNw"/>
 </xmi:XMI>

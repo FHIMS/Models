@@ -3071,13 +3071,13 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_c9UNALxSEeSyBtXdDFDzRA" name="102538003 (Lying)"/>
         <ownedLiteral xmi:id="_fCH9YLxSEeSyBtXdDFDzRA" name="102536004 (Lying on left side)"/>
         <ownedLiteral xmi:id="_jppiILxSEeSyBtXdDFDzRA" name="102535000 (Lying on right side)"/>
+        <ownedLiteral xmi:id="_mFxhILxkEeSyBtXdDFDzRA" name="1240000 (Prone)"/>
         <ownedLiteral xmi:id="_nG2o0LxSEeSyBtXdDFDzRA" name="33586001 (Seated)"/>
         <ownedLiteral xmi:id="_odcBQLxSEeSyBtXdDFDzRA" name="10904000 (Standing)"/>
         <ownedLiteral xmi:id="_rb9A0LxSEeSyBtXdDFDzRA" name="40199007 (Supine)"/>
         <ownedLiteral xmi:id="_voyNoLxSEeSyBtXdDFDzRA" name="414585002 (Supine with left lateral tilt)"/>
         <ownedLiteral xmi:id="_055h8LxSEeSyBtXdDFDzRA" name="30212006 (Supine, head raised)"/>
         <ownedLiteral xmi:id="_4CpbkLxSEeSyBtXdDFDzRA" name="34106002 (Trendelenburg)"/>
-        <ownedLiteral xmi:id="_mFxhILxkEeSyBtXdDFDzRA" name="1240000 (Prone)"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_kH664L61EeSMg-kgsnPV3w" name="PatientMeasurementSleepStatus">
         <ownedLiteral xmi:id="_15CzIL61EeSMg-kgsnPV3w" name="248218005 (Awake)"/>
@@ -3140,6 +3140,7 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_dt_2IMNwEeSFjdDJNF9NPA" name="76784001 (Vagina)"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_9MaIUMNxEeSFjdDJNF9NPA" name="CoreVitalSigns">
+        <ownedLiteral xmi:id="_6zukQMNyEeSFjdDJNF9NPA" name="55284-4 (Blood Pressure)"/>
         <ownedLiteral xmi:id="_Iv3kcMNyEeSFjdDJNF9NPA" name="8302-2 (Body Height)"/>
         <ownedLiteral xmi:id="_TYAAwMNyEeSFjdDJNF9NPA" name="8310-5 (Body Temperature)"/>
         <ownedLiteral xmi:id="_WhJjAMNyEeSFjdDJNF9NPA" name="3141-9 (Body Weight Measured)"/>
@@ -3148,7 +3149,6 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_hD6XIMNyEeSFjdDJNF9NPA" name="2708-6 (Oxygen Saturation In Arterial Blood)"/>
         <ownedLiteral xmi:id="_kcNvsMNyEeSFjdDJNF9NPA" name="9279-1 (Respiratory Rate)"/>
         <ownedLiteral xmi:id="_oX_BsMNyEeSFjdDJNF9NPA" name="8480-6 (Systolic Blood Pressure)"/>
-        <ownedLiteral xmi:id="_6zukQMNyEeSFjdDJNF9NPA" name="55284-4 (Blood Pressure)"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZwU_UMNzEeSFjdDJNF9NPA" name="HeartRateMeasurementMethod">
         <ownedLiteral xmi:id="_mHctAMNzEeSFjdDJNF9NPA" name="37931006 (Auscultation)"/>
@@ -3177,7 +3177,7 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_AgVP0MN1EeSFjdDJNF9NPA" name="368503001 (Structure Of Right Radial Artery)"/>
         <ownedLiteral xmi:id="_AgVP0sN1EeSFjdDJNF9NPA" name="368505008 (Structure Of Right Ulnar Artery)"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Drv0MMN7EeSFjdDJNF9NPA" name="PatientMeasurementExertionStatus">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Drv0MMN7EeSFjdDJNF9NPA" name="PatientStateExertionStatus">
         <ownedLiteral xmi:id="_LOhCEMN7EeSFjdDJNF9NPA" name="255214003 (After Exercise)"/>
         <ownedLiteral xmi:id="_UbQecMN7EeSFjdDJNF9NPA" name="263678003 (At Rest)"/>
         <ownedLiteral xmi:id="_XUR6AMN7EeSFjdDJNF9NPA" name="309604004 (During Exercise)"/>
@@ -3251,6 +3251,11 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_bOhoIMQiEeSaFayJQBK5xQ" name="-newcode - (Without Prosthesis)"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_RPOQ8MQjEeSaFayJQBK5xQ" name="InterpretationOfQuantity"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_leolsHPnEeiV16BdsfE5oQ" name="HeightMeasurementBodyPosition">
+        <ownedLiteral xmi:id="_leolsnPnEeiV16BdsfE5oQ" name="102538003 (Lying)"/>
+        <ownedLiteral xmi:id="_leoltnPnEeiV16BdsfE5oQ" name="33586001 (Seated)"/>
+        <ownedLiteral xmi:id="_leolt3PnEeiV16BdsfE5oQ" name="10904000 (Standing)"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_l-73wNlMEeS93fJLUdBkhg" name="AllergyVocab">
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_LZ6FYNoGEeSdPcnORr-kJQ" name="Reactant"/>
