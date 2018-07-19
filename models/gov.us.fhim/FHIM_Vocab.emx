@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
-  <uml:Package xmi:id="_2B97VRSVEeGGzu7fmW9pXw" name="fhim-vocab">
+<!--xtools2_universal_type_manager-->
+<!--Rational Software Architect Designer 9.6-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <uml:Package xmi:id="_2B97VRSVEeGGzu7fmW9pXw" name="FHIM_Vocab">
     <packagedElement xmi:type="uml:Package" xmi:id="_eIuzQMBVEeGOjJTiA9qJ1w" name="ImmunizationVocab">
       <ownedComment xmi:id="_W28yQMBWEeGOjJTiA9qJ1w">
         <body>This package contains the vocabulary bindings required by the Immunization Reporting sub-domain. It is based primarily on CDC requirements and reuses HITSP C80, NIP, and HL7 Immunization Domain Analysis Guidance. This package contains only value sets and each value set is intended to be bound to one or more coded attributes in the ImmunizationAndSkinTest domain in FHIM.</body>
@@ -3067,13 +3071,13 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_c9UNALxSEeSyBtXdDFDzRA" name="102538003 (Lying)"/>
         <ownedLiteral xmi:id="_fCH9YLxSEeSyBtXdDFDzRA" name="102536004 (Lying on left side)"/>
         <ownedLiteral xmi:id="_jppiILxSEeSyBtXdDFDzRA" name="102535000 (Lying on right side)"/>
+        <ownedLiteral xmi:id="_mFxhILxkEeSyBtXdDFDzRA" name="1240000 (Prone)"/>
         <ownedLiteral xmi:id="_nG2o0LxSEeSyBtXdDFDzRA" name="33586001 (Seated)"/>
         <ownedLiteral xmi:id="_odcBQLxSEeSyBtXdDFDzRA" name="10904000 (Standing)"/>
         <ownedLiteral xmi:id="_rb9A0LxSEeSyBtXdDFDzRA" name="40199007 (Supine)"/>
         <ownedLiteral xmi:id="_voyNoLxSEeSyBtXdDFDzRA" name="414585002 (Supine with left lateral tilt)"/>
         <ownedLiteral xmi:id="_055h8LxSEeSyBtXdDFDzRA" name="30212006 (Supine, head raised)"/>
         <ownedLiteral xmi:id="_4CpbkLxSEeSyBtXdDFDzRA" name="34106002 (Trendelenburg)"/>
-        <ownedLiteral xmi:id="_mFxhILxkEeSyBtXdDFDzRA" name="1240000 (Prone)"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_kH664L61EeSMg-kgsnPV3w" name="PatientMeasurementSleepStatus">
         <ownedLiteral xmi:id="_15CzIL61EeSMg-kgsnPV3w" name="248218005 (Awake)"/>
@@ -3136,6 +3140,7 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_dt_2IMNwEeSFjdDJNF9NPA" name="76784001 (Vagina)"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_9MaIUMNxEeSFjdDJNF9NPA" name="CoreVitalSigns">
+        <ownedLiteral xmi:id="_6zukQMNyEeSFjdDJNF9NPA" name="55284-4 (Blood Pressure)"/>
         <ownedLiteral xmi:id="_Iv3kcMNyEeSFjdDJNF9NPA" name="8302-2 (Body Height)"/>
         <ownedLiteral xmi:id="_TYAAwMNyEeSFjdDJNF9NPA" name="8310-5 (Body Temperature)"/>
         <ownedLiteral xmi:id="_WhJjAMNyEeSFjdDJNF9NPA" name="3141-9 (Body Weight Measured)"/>
@@ -3144,7 +3149,6 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_hD6XIMNyEeSFjdDJNF9NPA" name="2708-6 (Oxygen Saturation In Arterial Blood)"/>
         <ownedLiteral xmi:id="_kcNvsMNyEeSFjdDJNF9NPA" name="9279-1 (Respiratory Rate)"/>
         <ownedLiteral xmi:id="_oX_BsMNyEeSFjdDJNF9NPA" name="8480-6 (Systolic Blood Pressure)"/>
-        <ownedLiteral xmi:id="_6zukQMNyEeSFjdDJNF9NPA" name="55284-4 (Blood Pressure)"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZwU_UMNzEeSFjdDJNF9NPA" name="HeartRateMeasurementMethod">
         <ownedLiteral xmi:id="_mHctAMNzEeSFjdDJNF9NPA" name="37931006 (Auscultation)"/>
@@ -3173,7 +3177,7 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_AgVP0MN1EeSFjdDJNF9NPA" name="368503001 (Structure Of Right Radial Artery)"/>
         <ownedLiteral xmi:id="_AgVP0sN1EeSFjdDJNF9NPA" name="368505008 (Structure Of Right Ulnar Artery)"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Drv0MMN7EeSFjdDJNF9NPA" name="PatientMeasurementExertionStatus">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Drv0MMN7EeSFjdDJNF9NPA" name="PatientStateExertionStatus">
         <ownedLiteral xmi:id="_LOhCEMN7EeSFjdDJNF9NPA" name="255214003 (After Exercise)"/>
         <ownedLiteral xmi:id="_UbQecMN7EeSFjdDJNF9NPA" name="263678003 (At Rest)"/>
         <ownedLiteral xmi:id="_XUR6AMN7EeSFjdDJNF9NPA" name="309604004 (During Exercise)"/>
@@ -3247,6 +3251,11 @@ The following is an example coded concept:</body>
         <ownedLiteral xmi:id="_bOhoIMQiEeSaFayJQBK5xQ" name="-newcode - (Without Prosthesis)"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_RPOQ8MQjEeSaFayJQBK5xQ" name="InterpretationOfQuantity"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_leolsHPnEeiV16BdsfE5oQ" name="HeightMeasurementBodyPosition">
+        <ownedLiteral xmi:id="_leolsnPnEeiV16BdsfE5oQ" name="102538003 (Lying)"/>
+        <ownedLiteral xmi:id="_leoltnPnEeiV16BdsfE5oQ" name="33586001 (Seated)"/>
+        <ownedLiteral xmi:id="_leolt3PnEeiV16BdsfE5oQ" name="10904000 (Standing)"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_l-73wNlMEeS93fJLUdBkhg" name="AllergyVocab">
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_LZ6FYNoGEeSdPcnORr-kJQ" name="Reactant"/>
@@ -3447,11 +3456,23 @@ The following is an example coded concept:</body>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_aZ4Y8PCKEeWoT_0zIvvImQ" name="ImageOrderKind"/>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="__d9voPCKEeWoT_0zIvvImQ" name="ImagingBodySite"/>
     </packagedElement>
-    <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
-      <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
+    <profileApplication xmi:id="_p0k44AjrEeefyt20GxTcYA">
+      <eAnnotations xmi:id="_p0k44QjrEeefyt20GxTcYA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
       </eAnnotations>
-      <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_p1ISgAjrEeefyt20GxTcYA">
+      <eAnnotations xmi:id="_p1ISgQjrEeefyt20GxTcYA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_p1h7IAjrEeefyt20GxTcYA">
+      <eAnnotations xmi:id="_p1h7IQjrEeefyt20GxTcYA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_4OVBUD0TEeKt-L0gyEptgQ?Deployment/Deployment?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
     </profileApplication>
   </uml:Package>
   <term:ValueSetVersion xmi:id="_X8v_YKRMEeGZ6ueex_Me0w" identifier="2.16.840.1.114222.4.11.934" version="6" fullName="Vaccines administered (CVX)" source="CVX" url="http://phinvads.cdc.gov/vads/ViewValueSet.action?id=CEB1D613-657B-E011-A0EA-00188B39829B" definition="Vaccine Name Keyword: Clinical Vaccines, Vaccine Names" revisionDate="10/22/2008" base_Enumeration="_X8vYUKRMEeGZ6ueex_Me0w"/>
@@ -5702,11 +5723,11 @@ The following is an example coded concept:</body>
   <term:ValueSetCode xmi:id="_U7poIGmxEeOQjeHKTZgq1g" conceptName="Subsituted" base_EnumerationLiteral="_U7pBEGmxEeOQjeHKTZgq1g"/>
   <term:ValueSetVersion xmi:id="_Yus4NA6mEeSRtMKZGaK6Zw" identifier="2.16.840.1.113883.1.11.19897" fullName="Consent Type" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vs_ActCode.html#ActConsentType" definition="This value setsystem is used to specify the action referred by a consent directive. the type of consent directive, e.g., to consent or dissent to collect, access, or use in specific ways within an EHRS or for health information exchange; or to disclose health information for purposes such as research." codeSystem="_Xx5aQaRMEeGZ6ueex_Me0w" base_Enumeration="_Yus4Ig6mEeSRtMKZGaK6Zw"/>
   <term:ValueSetVersion xmi:id="_Yus4Ng6mEeSRtMKZGaK6Zw" identifier="2.16.840.1.113883.1.11.19930" fullName="Consenter Participation Function" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vs_ParticipationFunction.html#ConsenterParticipationFunction" definition="This value set be used to specify the client's relationship to the Substitute Decision Maker – if one is involved in the creation of the privacy consent directive" type="Intensional" binding="Dynamic" base_Enumeration="_Yus4Jg6mEeSRtMKZGaK6Zw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Si0RgOxyEeG7k4bbVdXbXw"/>
+    <codeSystem xmi:type="xsd:anyType" href="platform:/org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Si0RgOxyEeG7k4bbVdXbXw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_Yus4Nw6mEeSRtMKZGaK6Zw" identifier="2.16.840.1.113883.1.11.20445" fullName="Obligation Policy Code" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vs_ActCode.html#ObligationPolicy" definition="Conveys the mandated workflow action that an information custodian, receiver, or user must perform." codeSystem="_Xx5aQaRMEeGZ6ueex_Me0w" base_Enumeration="_Yus4KA6mEeSRtMKZGaK6Zw"/>
   <term:ValueSetVersion xmi:id="_Yus4OA6mEeSRtMKZGaK6Zw" identifier="2.16.840.1.113883.1.11.20448" fullName="Purpose of Use" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vs_ActReason.html#PurposeOfUse" definition="Reason for performing one or more operations on information, which may be permitted by source system’s security policy in accordance with one or more privacy policies and consent directives." base_Enumeration="_Yus4Kg6mEeSRtMKZGaK6Zw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWuTYaDqEd-dVeaMP0XXQw"/>
+    <codeSystem xmi:type="xsd:anyType" href="platform:/org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWuTYaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_Yus4OQ6mEeSRtMKZGaK6Zw" identifier="2.16.840.1.113883.1.11.20446" fullName="RefrainPolicy" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vs_ActCode.html#RefrainPolicy" definition="Conveys prohibited actions which an information custodian, receiver, or user is not permitted to perform unless otherwise authorized or permitted under specified circumstances." codeSystem="_Xx5aQaRMEeGZ6ueex_Me0w" base_Enumeration="_Yus4LA6mEeSRtMKZGaK6Zw"/>
   <term:CodeSystemVersion xmi:id="_CzuOwWZWEeOjX716b-3f7A" identifier="2.16.840.1.113883.5.1008" version="20090501" source="NULLFL" base_Enumeration="_CzuOwGZWEeOjX716b-3f7A"/>
@@ -5787,7 +5808,7 @@ The following is an example coded concept:</body>
   <term:ValueSetVersion xmi:id="_NCFX0FDEEeS8SN3quUylxg" identifier="2.16.840.1.113883.1.11.20444" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vs_ActCode.html#SecurityPolicy" codeSystem="_Xx5aQaRMEeGZ6ueex_Me0w" base_Enumeration="_NCEwwFDEEeS8SN3quUylxg"/>
   <term:ValueSetVersion xmi:id="_cnC6gVDEEeS8SN3quUylxg" identifier="2.16.840.1.113883.1.11.20471" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vs_ActCode.html#SecurityControlObservationValue" codeSystem="_Xx5aQaRMEeGZ6ueex_Me0w" base_Enumeration="_cnC6gFDEEeS8SN3quUylxg"/>
   <term:ValueSetVersion xmi:id="_l9DnoFDEEeS8SN3quUylxg" identifier="2.16.840.1.113883.1.11.20449" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vs_ActReason.html#GeneralPurposeOfUse" base_Enumeration="_l9DAkFDEEeS8SN3quUylxg">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWuTYaDqEd-dVeaMP0XXQw"/>
+    <codeSystem xmi:type="xsd:anyType" href="platform:/org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWuTYaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_3itPsVDEEeS8SN3quUylxg" identifier="2.16.840.1.113883.1.11.20464" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vs_ActCode.html#SecurityDataIntegrityObservationType" codeSystem="_Xx5aQaRMEeGZ6ueex_Me0w" base_Enumeration="_3itPsFDEEeS8SN3quUylxg"/>
   <term:ValueSetVersion xmi:id="_CwPfIFDFEeS8SN3quUylxg" identifier="2.16.840.1.113883.1.11.20463" source="HL7" url="http://www.hl7.org/v3ballotarchive/v3ballot/html/infrastructure/vocabulary/vs_ActCode.html#SecurityIntegrityConfidenceObservationType" base_Enumeration="_CwO4EFDFEeS8SN3quUylxg"/>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.2.v201410272105 Build &lt;4.4.2.v20150217-1805></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="com.ibm.ccl.oda.uml" name="Data Source" id="7">
+            <property name="instancemodels">platform:/resource/gov.us.fhim/FHIM.emx</property>
+            <property name="metamodels">http://www.eclipse.org/uml2/3.0.0/UML http://www.eclipse.org/gmf/runtime/1.0.2/notation http://www.ibm.com/xtools/1.5.3/Umlnotation</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="com.ibm.ccl.oda.uml.dataSet" name="Data Set" id="8">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">Class</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Class</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">Class</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Name</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">Name</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">LowerBound</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">LowerBound</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">LowerBound</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">UpperBound</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">UpperBound</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">UpperBound</text-property>
+                </structure>
+            </list-property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">eq</property>
+                    <expression name="expr" type="javascript">row["UpperBound"]</expression>
+                    <simple-property-list name="value1">
+                        <value>0</value>
+                    </simple-property-list>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Class</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">LowerBound</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">UpperBound</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">Class</property>
+                    <property name="nativeName">Class</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">Name</property>
+                    <property name="nativeName">Name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">7</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">LowerBound</property>
+                    <property name="nativeName">LowerBound</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">6</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">UpperBound</property>
+                    <property name="nativeName">UpperBound</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">6</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Name</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>7</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>Name</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Name</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>LowerBound</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>7</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>LowerBound</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>LowerBound</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>rowTypeURI</name>
+                    <value>http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement</value>
+                </ex-property>
+            </list-property>
+            <property name="rowQuery">instanceOf(//packagedElement,'uml:Class')/ownedAttribute</property>
+            <property name="columnQueries">Class;../@name;String#-#Name;@name;String#-#LowerBound;lowerValue/@value;Integer#-#UpperBound;upperValue/@value;Integer</property>
+            <property name="rowType">uml:NamedElement</property>
+            <property name="evaluateOnInstances">true</property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab-cell" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="9">
+            <property name="dataSet">Data Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Class</property>
+                    <text-property name="displayName">Class</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Class"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Name</property>
+                    <text-property name="displayName">Name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">LowerBound</property>
+                    <text-property name="displayName">LowerBound</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["LowerBound"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">UpperBound</property>
+                    <text-property name="displayName">UpperBound</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["UpperBound"]</expression>
+                    <property name="dataType">integer</property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
+            <column id="22"/>
+            <column id="23"/>
+            <column id="24"/>
+            <column id="34"/>
+            <header>
+                <row id="10">
+                    <cell id="11">
+                        <label id="25">
+                            <text-property name="text">Class</text-property>
+                        </label>
+                    </cell>
+                    <cell id="12">
+                        <label id="29">
+                            <text-property name="text">Name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="13">
+                        <label id="27">
+                            <text-property name="text">LowerBound</text-property>
+                        </label>
+                    </cell>
+                    <cell id="31">
+                        <label id="35">
+                            <text-property name="text">UpperBound</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="14">
+                    <cell id="15">
+                        <data id="26">
+                            <property name="resultSetColumn">Class</property>
+                        </data>
+                    </cell>
+                    <cell id="16">
+                        <data id="30">
+                            <property name="resultSetColumn">Name</property>
+                        </data>
+                    </cell>
+                    <cell id="17">
+                        <data id="28">
+                            <property name="resultSetColumn">LowerBound</property>
+                        </data>
+                    </cell>
+                    <cell id="32">
+                        <data id="36">
+                            <property name="resultSetColumn">UpperBound</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="18">
+                    <cell id="19"/>
+                    <cell id="20"/>
+                    <cell id="21"/>
+                    <cell id="33"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

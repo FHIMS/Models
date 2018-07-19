@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect 9.1.2-->
+<!--Rational Software Architect Designer 9.6-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:RIM="http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/RIM/_fvnwgAH4Ed6VH-9W1IVKXA/4 pathmap://HL7_PROFILES/RIM.profile.uml#_fvsB8AH4Ed6VH-9W1IVKXA">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_420A62FD03B643613746019D" name="HomeBasedPrimaryCare">
     <eAnnotations xmi:id="_Qs9r0EDNEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_Qs5aYEDNEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -761,7 +761,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_jiodoE2IEd-N7JZGCuVoQQ" name="homeBasedPrimaryCareEpisode_patient" memberEnd="_jiodoU2IEd-N7JZGCuVoQQ _jiodpE2IEd-N7JZGCuVoQQ">
       <eAnnotations xmi:id="_0RdKYE2TEd-N7JZGCuVoQQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
-      <ownedEnd xmi:id="_jiodpE2IEd-N7JZGCuVoQQ" name="" visibility="private" type="_420A62FD03B6439854E4017F" association="_jiodoE2IEd-N7JZGCuVoQQ"/>
+      <ownedEnd xmi:id="_jiodpE2IEd-N7JZGCuVoQQ" name="" visibility="public" type="_420A62FD03B6439854E4017F" association="_jiodoE2IEd-N7JZGCuVoQQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Llv70E2KEd-N7JZGCuVoQQ" name="HbpcAssessment">
       <ownedAttribute xmi:id="_PKem0E2KEd-N7JZGCuVoQQ" name="hearingAbility" visibility="public">
@@ -883,7 +883,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_gs0cME2KEd-N7JZGCuVoQQ" name="hbpcAssessment_primaryDiagnosis" memberEnd="_gs9mIE2KEd-N7JZGCuVoQQ _gs9mI02KEd-N7JZGCuVoQQ">
       <eAnnotations xmi:id="_2mw04E2TEd-N7JZGCuVoQQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
-      <ownedEnd xmi:id="_gs9mI02KEd-N7JZGCuVoQQ" name="" visibility="private" type="_Llv70E2KEd-N7JZGCuVoQQ" association="_gs0cME2KEd-N7JZGCuVoQQ"/>
+      <ownedEnd xmi:id="_gs9mI02KEd-N7JZGCuVoQQ" name="" visibility="public" type="_Llv70E2KEd-N7JZGCuVoQQ" association="_gs0cME2KEd-N7JZGCuVoQQ"/>
     </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_4zDiwE2SEd-N7JZGCuVoQQ" base_Comment="_4ywAwE2SEd-N7JZGCuVoQQ"/>
@@ -932,10 +932,4 @@
   <Default:Documentation xmi:id="_yOQZAE2SEd-N7JZGCuVoQQ" base_Comment="_yN9eEE2SEd-N7JZGCuVoQQ"/>
   <Default:Documentation xmi:id="_ZcJU0U2TEd-N7JZGCuVoQQ" base_Comment="_ZcJU0E2TEd-N7JZGCuVoQQ"/>
   <Default:Documentation xmi:id="_ZQcQkE2SEd-N7JZGCuVoQQ" base_Comment="_ZQJVoE2SEd-N7JZGCuVoQQ"/>
-  <RIM:Act xmi:id="_AB1KdFLIEd6-4-oWZUjasQ" base_Class="_420A62FD03B64398563E0281"/>
-  <RIM:Act xmi:id="_AB1KdlLIEd6-4-oWZUjasQ" base_Class="_420A62FD03B643985671023E"/>
-  <RIM:Observation xmi:id="_J8SxAFLfEd6-4-oWZUjasQ" base_Class="_420A62FD03B6439D9E8603A5"/>
-  <RIM:Observation xmi:id="_VWF0gE2KEd-N7JZGCuVoQQ" base_Class="_Llv70E2KEd-N7JZGCuVoQQ"/>
-  <RIM:PatientEncounter xmi:id="_DF5g8FLfEd6-4-oWZUjasQ" base_Class="_420A62FD03B6439854E4017F"/>
-  <RIM:Role xmi:id="_MZ8fMFLfEd6-4-oWZUjasQ" base_Class="_420A62FD03B643DA689C01B2"/>
 </xmi:XMI>
