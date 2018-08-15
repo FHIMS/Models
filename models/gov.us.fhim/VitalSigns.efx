@@ -538,7 +538,7 @@ Individual organizations or medical specialties will often include other common 
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_PF2dqHQaEeivUP8hArZexg" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_PF2dqXQaEeivUP8hArZexg" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_PF2dqnQaEeivUP8hArZexg" visible="false" type="StructureCompartment"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PF2doXQaEeivUP8hArZexg" x="-7608" y="14582"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PF2doXQaEeivUP8hArZexg" x="-4755" y="14582"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_utjEIHQaEeivUP8hArZexg" element="_U_B3gHQaEeivUP8hArZexg" fontName="Segoe UI" showListStereotype="Text" showListVisibility="None" fillColor="13356031" transparency="0" lineColor="8421631" lineWidth="1" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_utjEInQaEeivUP8hArZexg" type="ImageCompartment">
@@ -972,7 +972,7 @@ Blood pressure is typically expressed in terms of the systolic pressure over dia
 &#xD;
 This property contains the code that specifies the anatomical site or system that is the focus of the Observation.  In the generic clinical Observation class, this code is not “bound” to a particular value set.  In this class, the property is re-defined to a set of values that are appropriate to Blood Pressure measurements.  These values come from the SNOMED-CT coding system.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_OxHxsMEAEeSD-sVrqweICQ?FHIM_Vocab/VitalSignsVocab/BloodPressureMeasurementSite?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZJUtpdYEeOCbc0pwOBboA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZJUt5dYEeOCbc0pwOBboA"/>
         </ownedAttribute>
@@ -983,7 +983,7 @@ This property contains the code that specifies the anatomical site or system tha
           <ownedComment xmi:id="_JZJUwpdYEeOCbc0pwOBboA" annotatedElement="_JZJUv5dYEeOCbc0pwOBboA">
             <body>This property contains a code that specifies additional detail about the means or technique used to ascertain the Observation.  In the generic clinical Observation class, this code is not “bound” to a particular value set.  In this class, the property is re-defined to a set of values that are appropriate to heart rate measurements.  These values come from the SNOMED-CT coding system.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_LuKo8MD-EeSD-sVrqweICQ?FHIM_Vocab/VitalSignsVocab/BloodPressureMeasurementMethod?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JZJUw5dYEeOCbc0pwOBboA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JZJUxJdYEeOCbc0pwOBboA"/>
         </ownedAttribute>
@@ -991,7 +991,7 @@ This property contains the code that specifies the anatomical site or system tha
           <ownedComment xmi:id="_9U1BIHQbEeivUP8hArZexg" annotatedElement="_rYewUHQbEeivUP8hArZexg">
             <body>The most common method of measuring blood pressure involves the use of an inflatable (Riva-Rocci) cuff to constrict the blood flow during measurement. These cuffs are designed to operate on a specific range of body-part (e.g., arm, thigh) circumferences. Occasionally a cuff is used that is not of the ideal size for the given patient (i.e., the patient may be an infant or an obese adult), usually because the appropriate sized cuff is not available. The use of a non-ideal sized cuff may result in an inaccurate reading, and therefore must be noted. This property indicates the cuff size that was used to obtain the Blood Pressure measurement.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_OCbtcMEFEeSD-sVrqweICQ?FHIM_Vocab/VitalSignsVocab/BloodPressureCuffSize?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uZJE8XQbEeivUP8hArZexg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uZJE8HQbEeivUP8hArZexg"/>
         </ownedAttribute>
@@ -1001,7 +1001,7 @@ This property contains the code that specifies the anatomical site or system tha
 &#xD;
 This property indicates the phase at which the diastolic pressure was measured.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_ZCu6gMNoEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/BloodPressureMeasurementDiastolicEndpoint?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vLVW4XQbEeivUP8hArZexg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vLVW4nQbEeivUP8hArZexg"/>
         </ownedAttribute>
@@ -1009,7 +1009,7 @@ This property indicates the phase at which the diastolic pressure was measured.<
           <ownedComment xmi:id="_A6RTQXQbEeivUP8hArZexg" annotatedElement="_A6RTQHQbEeivUP8hArZexg">
             <body>Certain disease states can be detected by observing differences in heart rate, blood pressure, or respiration when the patient’s body is in different positions (e.g., sitting, standing, etc.). It therefore may be necessary to record the patient’s body position when recording the primary observation. This property records an observation of the patient’s body position during the time the heart rate, blood pressure, or respiration rate was observed.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_IbyfILxREeSyBtXdDFDzRA?FHIM_Vocab/VitalSignsVocab/PatientMeasurementBodyPosition?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A6RTQnQbEeivUP8hArZexg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A6RTQ3QbEeivUP8hArZexg"/>
         </ownedAttribute>
@@ -1017,7 +1017,7 @@ This property indicates the phase at which the diastolic pressure was measured.<
           <ownedComment xmi:id="_D73KEXQdEeivUP8hArZexg" annotatedElement="_D73KEHQdEeivUP8hArZexg">
             <body>Heart Rate, Blood Pressure, Respiration, and Blood Oxygen levels naturally vary depending on whether the patient is at rest, or during or shortly after exercise. This property records an sub-observation of whether the patient was at rest, exercising, or recently had been exercising at the time of the measurement.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_Drv0MMN7EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientStateExertionStatus?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D73KEnQdEeivUP8hArZexg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D73KE3QdEeivUP8hArZexg"/>
         </ownedAttribute>
@@ -1025,7 +1025,7 @@ This property indicates the phase at which the diastolic pressure was measured.<
           <ownedComment xmi:id="_s2uagHQcEeivUP8hArZexg" annotatedElement="_vNJUwHQbEeivUP8hArZexg">
             <body>Blood pressure normally rises and falls depending on whether a person is awake or asleep. This indicates whether the patient was awake or asleep at the time that the Blood Pressure measurement was taken.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_kH664L61EeSMg-kgsnPV3w?FHIM_Vocab/VitalSignsVocab/PatientMeasurementSleepStatus?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vNJUwXQbEeivUP8hArZexg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vNJUwnQbEeivUP8hArZexg"/>
         </ownedAttribute>
@@ -1298,7 +1298,7 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_kWvJ2HKEEeiXDYZdidzgig" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_kWvJ2XKEEeiXDYZdidzgig" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_kWvJ2nKEEeiXDYZdidzgig" visible="false" type="StructureCompartment"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kWvJ0XKEEeiXDYZdidzgig" x="6657" y="16801"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kWvJ0XKEEeiXDYZdidzgig" x="7608" y="16801"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_ygvNkHKIEeiXDYZdidzgig" element="_LI9LYHKHEeiXDYZdidzgig" fontName="Segoe UI" showListStereotype="Text" showListVisibility="None" fillColor="13356031" transparency="0" lineColor="8421631" lineWidth="1" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_ygvNknKIEeiXDYZdidzgig" type="ImageCompartment">
@@ -1524,7 +1524,7 @@ This class represents the measurement (or “clinical observation”) of the pat
           <ownedComment xmi:id="_qKVFkYdvEeOZ2vW3WfDP5Q" annotatedElement="_qKVFkIdvEeOZ2vW3WfDP5Q">
             <body>This property contains the code that specifies the anatomical site or system that is the focus of the observation.  In the generic clinical Observation class, this code is not “bound” to a particular value set.  In this class, the property is re-defined to a set of values that are appropriate to heart rate measurements.  These values come from the SNOMED-CT coding system.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_A8YIEMN0EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/HeartRateMeasurementSite?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qKVFkodvEeOZ2vW3WfDP5Q" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qKVFk4dvEeOZ2vW3WfDP5Q"/>
         </ownedAttribute>
@@ -1535,7 +1535,7 @@ This class represents the measurement (or “clinical observation”) of the pat
           <ownedComment xmi:id="_SkiDgYdwEeOZ2vW3WfDP5Q" annotatedElement="_SkiDgIdwEeOZ2vW3WfDP5Q">
             <body>This property contains the code that specifies additional detail about the means or technique used to ascertain the Observation.  In the generic clinical Observation class, this code is not “bound” to a particular value set.  In this class, the property is re-defined to a set of values that are appropriate to heart rate measurements.  These values come from the SNOMED-CT coding system.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_ZwU_UMNzEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/HeartRateMeasurementMethod?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SkiDgodwEeOZ2vW3WfDP5Q" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SkiDg4dwEeOZ2vW3WfDP5Q"/>
         </ownedAttribute>
@@ -1554,7 +1554,7 @@ This class represents the measurement (or “clinical observation”) of the pat
           <ownedComment xmi:id="_U1DIIXKFEeiXDYZdidzgig" annotatedElement="_U1DIIHKFEeiXDYZdidzgig">
             <body>Certain disease states can be detected by observing differences in heart rate, blood pressure, or respiration when the patient’s body is in different positions (e.g., sitting, standing, etc.). It therefore may be necessary to record the patient’s body position when recording the primary observation. This property records an observation of the patient’s body position during the time the heart rate, blood pressure, or respiration rate was observed.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_IbyfILxREeSyBtXdDFDzRA?FHIM_Vocab/VitalSignsVocab/PatientMeasurementBodyPosition?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U1DIInKFEeiXDYZdidzgig" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U1DII3KFEeiXDYZdidzgig"/>
         </ownedAttribute>
@@ -1562,7 +1562,7 @@ This class represents the measurement (or “clinical observation”) of the pat
           <ownedComment xmi:id="_H7VDsHKFEeiXDYZdidzgig" annotatedElement="_9K-fgHKEEeiXDYZdidzgig">
             <body>Heart Rate, Blood Pressure, Respiration, and Blood Oxygen levels naturally vary depending on whether the patient is at rest, or during or shortly after exercise. This property records an sub-observation of whether the patient was at rest, exercising, or recently had been exercising at the time of the measurement.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_Drv0MMN7EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientStateExertionStatus?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__dXY4XKEEeiXDYZdidzgig" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__dXY4HKEEeiXDYZdidzgig"/>
         </ownedAttribute>
@@ -1687,7 +1687,7 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_THEWUHPYEeiV16BdsfE5oQ" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_THE9YHPYEeiV16BdsfE5oQ" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_THFkcHPYEeiV16BdsfE5oQ" visible="false" type="StructureCompartment"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TG7zcXPYEeiV16BdsfE5oQ" x="4121" y="15533"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TG7zcXPYEeiV16BdsfE5oQ" x="5706" y="15533"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_78g3EHPeEeiV16BdsfE5oQ" element="_3nySgHPeEeiV16BdsfE5oQ" fontName="Segoe UI" showListStereotype="Text" showListVisibility="None" fillColor="13356031" transparency="0" lineColor="8421631" lineWidth="1" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_78heIHPeEeiV16BdsfE5oQ" type="ImageCompartment">
@@ -1918,7 +1918,7 @@ This class represents the measurement (or “clinical observation”) of the pat
           <ownedComment xmi:id="_N1xNEHPeEeiV16BdsfE5oQ" annotatedElement="_u-71EHPYEeiV16BdsfE5oQ">
             <body>Occasionally, the patient’s Height cannot be measured directly, leading the clinician to estimate the Height, or rely on the patient’s stated Height.  This class records an observation of how the patient’s Height was determined.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_7T6H4MNsEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientHeightDeterminationMethod?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y9498HPYEeiV16BdsfE5oQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y94W4HPYEeiV16BdsfE5oQ"/>
         </ownedAttribute>
@@ -1934,7 +1934,7 @@ This class represents the measurement (or “clinical observation”) of the pat
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p2pp0LyqEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_G4rTkHPoEeiV16BdsfE5oQ" name="bodyPositionQualifier" visibility="public">
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_leolsHPnEeiV16BdsfE5oQ?FHIM_Vocab/VitalSignsVocab/HeightMeasurementBodyPosition?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MWGlkXPoEeiV16BdsfE5oQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MWGlkHPoEeiV16BdsfE5oQ"/>
         </ownedAttribute>
@@ -2067,7 +2067,7 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_3jH-gnPqEeiV16BdsfE5oQ" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_3jH-g3PqEeiV16BdsfE5oQ" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_3jH-hHPqEeiV16BdsfE5oQ" visible="false" type="StructureCompartment"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3jHXcXPqEeiV16BdsfE5oQ" x="5072" y="14899"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3jHXcXPqEeiV16BdsfE5oQ" x="6023" y="14899"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_O0gIYHPtEeiV16BdsfE5oQ" element="_TPwv4HKGEeiXDYZdidzgig" fontName="Segoe UI" showListStereotype="Text" showListVisibility="None" fillColor="13356031" transparency="0" lineColor="8421631" lineWidth="1" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_O0gvcHPtEeiV16BdsfE5oQ" type="ImageCompartment">
@@ -2291,7 +2291,7 @@ This class represents the measurement (or “clinical observation”) of the pat
           <ownedComment xmi:id="_LTiN8HPrEeiV16BdsfE5oQ" annotatedElement="_LThm4HPrEeiV16BdsfE5oQ">
             <body>If the patient was receiving supplemental oxygen during the time that the patient’s blood oxygen saturation level or respiration rate was measured, this class will indicate what kind of device was being used to administer the oxygen. This information is important to know when interpreting the value of the primary observation. The value of this property is constrained to be one of a set of codes from the SNOMED-CT coding system that categorizes the kind of device that was used to administer supplemental oxygen.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_LeZXgMODEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/OxygenProvisionDevice?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LTiN8XPrEeiV16BdsfE5oQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LTiN8nPrEeiV16BdsfE5oQ"/>
         </ownedAttribute>
@@ -2299,7 +2299,7 @@ This class represents the measurement (or “clinical observation”) of the pat
           <ownedComment xmi:id="_-7y1MXPqEeiV16BdsfE5oQ" annotatedElement="_-7y1MHPqEeiV16BdsfE5oQ">
             <body>Heart Rate, Blood Pressure, Respiration, and Blood Oxygen levels naturally vary depending on whether the patient is at rest, or during or shortly after exercise. This property records an sub-observation of whether the patient was at rest, exercising, or recently had been exercising at the time of the measurement.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_Drv0MMN7EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientStateExertionStatus?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-7y1MnPqEeiV16BdsfE5oQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-7y1M3PqEeiV16BdsfE5oQ"/>
         </ownedAttribute>
@@ -2440,7 +2440,7 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_NYifsHP4EeiV16BdsfE5oQ" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_NYifsXP4EeiV16BdsfE5oQ" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_NYifsnP4EeiV16BdsfE5oQ" visible="false" type="StructureCompartment"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NYhRkXP4EeiV16BdsfE5oQ" x="2219" y="15533"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NYhRkXP4EeiV16BdsfE5oQ" x="3487" y="15533"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_qk8vgHP4EeiV16BdsfE5oQ" element="_pfN2gHP4EeiV16BdsfE5oQ" fontName="Segoe UI" showListStereotype="Text" showListVisibility="None" fillColor="13356031" transparency="0" lineColor="8421631" lineWidth="1" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_qk8vgnP4EeiV16BdsfE5oQ" type="ImageCompartment">
@@ -2665,7 +2665,7 @@ This class represents the measurement (or “clinical observation”) of the pat
           <ownedComment xmi:id="_k8mbYXQCEei9gZpjuTbcAw" annotatedElement="_k8mbYHQCEei9gZpjuTbcAw">
             <body>If the patient was receiving supplemental oxygen during the time that the patient’s blood oxygen saturation level or respiration rate was measured, this class will indicate what kind of device was being used to administer the oxygen. This information is important to know when interpreting the value of the primary observation. The value of this property is constrained to be one of a set of codes from the SNOMED-CT coding system that categorizes the kind of device that was used to administer supplemental oxygen.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_LeZXgMODEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/OxygenProvisionDevice?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k8mbYnQCEei9gZpjuTbcAw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k8mbY3QCEei9gZpjuTbcAw"/>
         </ownedAttribute>
@@ -2673,7 +2673,7 @@ This class represents the measurement (or “clinical observation”) of the pat
           <ownedComment xmi:id="_1mX78XQAEei9gZpjuTbcAw" annotatedElement="_1mX78HQAEei9gZpjuTbcAw">
             <body>Heart Rate, Blood Pressure, Respiration, and Blood Oxygen levels naturally vary depending on whether the patient is at rest, or during or shortly after exercise. This property records an sub-observation of whether the patient was at rest, exercising, or recently had been exercising at the time of the measurement.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_Drv0MMN7EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientStateExertionStatus?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1mX78nQAEei9gZpjuTbcAw" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1mX783QAEei9gZpjuTbcAw"/>
         </ownedAttribute>
@@ -2792,7 +2792,7 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_BgVsOHQEEei9gZpjuTbcAw" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_BgVsOXQEEei9gZpjuTbcAw" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_BgVsOnQEEei9gZpjuTbcAw" visible="false" type="StructureCompartment"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BgVsMXQEEei9gZpjuTbcAw" x="1585" y="14951"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BgVsMXQEEei9gZpjuTbcAw" x="4755" y="14951"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_WcIJoHQEEei9gZpjuTbcAw" element="_VsPk0HQEEei9gZpjuTbcAw" fontName="Segoe UI" showListStereotype="Text" showListVisibility="None" fillColor="13356031" transparency="0" lineColor="8421631" lineWidth="1" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_WcIJonQEEei9gZpjuTbcAw" type="ImageCompartment">
@@ -3003,7 +3003,7 @@ This class represents the measurement (or “clinical observation”) of the pat
 &#xD;
 This property contains the code that specifies the anatomical site or system that is the focus of the Observation.  In the generic clinical Observation class, this code is not “bound” to a particular value set.  In this class, the property is re-defined to a set of values that are appropriate to Temperature measurements.  These values come from the SNOMED-CT coding system.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_BxlrEMNvEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientBodyTemperatureMeasurementSite?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6SWd5IeKEeOZ2vW3WfDP5Q" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6SWd5YeKEeOZ2vW3WfDP5Q"/>
         </ownedAttribute>
@@ -3144,7 +3144,7 @@ This property contains the code that specifies the anatomical site or system tha
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_6Q49yHQVEeivUP8hArZexg" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_6Q49yXQVEeivUP8hArZexg" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_6RCuwHQVEeivUP8hArZexg" visible="false" type="StructureCompartment"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6Q49wXQVEeivUP8hArZexg" x="1268" y="14899"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6Q49wXQVEeivUP8hArZexg" x="3487" y="14899"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_Kpu0cHQWEeivUP8hArZexg" element="_JtPXAHQWEeivUP8hArZexg" fontName="Segoe UI" showListStereotype="Text" showListVisibility="None" fillColor="13356031" transparency="0" lineColor="8421631" lineWidth="1" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_Kpu0cnQWEeivUP8hArZexg" type="ImageCompartment">
@@ -3361,7 +3361,7 @@ This class represents the measurement (or “clinical observation”) of the pat
           <ownedComment xmi:id="_c8W3Q3QWEeivUP8hArZexg" annotatedElement="_c8W3QHQWEeivUP8hArZexg">
             <body>Occasionally, the patient’s Weight cannot be measured directly, leading the clinician to estimate the Weight, or rely on the patient’s stated Weight. This property indicates how the patient’s Weight was determined.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_sjs9wMN-EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientWeightDeterminationMethod?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c8W3RHQWEeivUP8hArZexg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c8W3RXQWEeivUP8hArZexg"/>
         </ownedAttribute>
@@ -3381,7 +3381,7 @@ This class represents the measurement (or “clinical observation”) of the pat
           <ownedComment xmi:id="_1KN_wN0pEeSZfdq7h5ueSA" annotatedElement="_MNR924eMEeOZ2vW3WfDP5Q">
             <body>This property contains a code that specifies additional detail about the means or technique used to ascertain the Observation.  In the generic clinical Observation class, this code is not “bound” to a particular value set.  In this class, the property is re-defined to a set of values that are appropriate to heart rate measurements.  These values come from the SNOMED-CT coding system.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_CGifAMN9EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientWeightDeterminationDevice?"/>
+          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MNR934eMEeOZ2vW3WfDP5Q" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MNR94IeMEeOZ2vW3WfDP5Q"/>
         </ownedAttribute>

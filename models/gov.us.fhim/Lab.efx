@@ -413,7 +413,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_pqNjEvjLEeCmc6EQPl3F9g" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_pqNjFPjLEeCmc6EQPl3F9g" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_pqNjFvjLEeCmc6EQPl3F9g" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Common.efx#_rr-pACaOEdyiJKb4ZqIfnw?FHIM/Common/Procedure?"/>
+          <element xmi:type="uml:Class" href="Common.efx#_rr-pACaOEdyiJKb4ZqIfnw?FHIM/Common/ActionPerformed?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pqKfwvjLEeCmc6EQPl3F9g" x="38040" y="23141"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_cJ-_IAPKEeGyxsUXi9XkTg" element="_b_84MOOaEd-8X4J7aT-aiQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="12303359" lineColor="3342489" showStereotype="Text">
@@ -494,7 +494,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_oNJGMMoTEeGas4Yp_oUthg" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_oNJGMcoTEeGas4Yp_oUthg" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_oNJtQMoTEeGas4Yp_oUthg" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/PromiseContext?"/>
+          <element xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/Promise?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oNGp8coTEeGas4Yp_oUthg" x="8242" y="3170"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_KNFPEMoXEeGas4Yp_oUthg" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519679" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -600,7 +600,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_nOgI5F6REeaNPrAIaCcL-A" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_nOgI5V6REeaNPrAIaCcL-A" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_nOgI5l6REeaNPrAIaCcL-A" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="Orders.efx#_420A62FD03B64589572B02E8?FHIM/Orders/OrderContext?"/>
+          <element xmi:type="uml:Class" href="Orders.efx#_420A62FD03B64589572B02E8?FHIM/Orders/Order?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nOW-8V6REeaNPrAIaCcL-A" x="10144" y="-4755"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_7OsnoC9REee8ZskGHfh21g" type="Note" fontName="Segoe UI" description="Note: This package is being refactored to harmonize with CIMI. Reportable Result will be a subtype of Observation.&#xD;&#xA;" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
@@ -2383,12 +2383,12 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nOgJEV6REeaNPrAIaCcL-A" type="FromMultiplicityLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_nOgJE16REeaNPrAIaCcL-A" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/OrderContext/healthcarePromise?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/Order/healthcarePromise?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nOgJEl6REeaNPrAIaCcL-A" y="396"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nOgJFF6REeaNPrAIaCcL-A" type="FromRoleLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_nOgJFl6REeaNPrAIaCcL-A" type="FromRole"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/OrderContext/healthcarePromise?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/Order/healthcarePromise?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nOgJFV6REeaNPrAIaCcL-A" x="-403" y="-340"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nOgJF16REeaNPrAIaCcL-A" visible="false" type="ToQualifierLabel">
@@ -2398,7 +2398,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nOgJGl6REeaNPrAIaCcL-A" visible="false" type="FromQualifierLabel">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_nOgJHF6REeaNPrAIaCcL-A" type="QualifierCompartment"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/OrderContext/healthcarePromise?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/Order/healthcarePromise?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nOgJG16REeaNPrAIaCcL-A" y="-186"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nOgJHV6REeaNPrAIaCcL-A" visible="false" type="ToConstraintLabel">
@@ -2408,7 +2408,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nOgJIF6REeaNPrAIaCcL-A" visible="false" type="FromConstraintLabel">
             <children xmi:type="notation:ListCompartment" xmi:id="_nOgJIl6REeaNPrAIaCcL-A" type="FromConstraintCompartment"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/OrderContext/healthcarePromise?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_v4ihEMoSEeGas4Yp_oUthg?FHIM/Orders/Order/healthcarePromise?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nOgJIV6REeaNPrAIaCcL-A" y="1058"/>
           </children>
           <element xmi:type="uml:Association" href="Orders.efx#_v4ePoMoSEeGas4Yp_oUthg?FHIM/Orders/healthcareOrder_healthcarePromise?"/>
@@ -2432,12 +2432,12 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nOgJL16REeaNPrAIaCcL-A" type="FromMultiplicityLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_nOgJMV6REeaNPrAIaCcL-A" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/PromiseContext/healthcareOrder?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/Promise/healthcareOrder?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nOgJMF6REeaNPrAIaCcL-A" y="396"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nOgJMl6REeaNPrAIaCcL-A" type="FromRoleLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_nOgJNF6REeaNPrAIaCcL-A" type="FromRole"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/PromiseContext/healthcareOrder?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/Promise/healthcareOrder?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nOgJM16REeaNPrAIaCcL-A" x="-326" y="-507"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nOgJNV6REeaNPrAIaCcL-A" visible="false" type="ToQualifierLabel">
@@ -2447,7 +2447,7 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nOgJOF6REeaNPrAIaCcL-A" visible="false" type="FromQualifierLabel">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_nOgJOl6REeaNPrAIaCcL-A" type="QualifierCompartment"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/PromiseContext/healthcareOrder?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/Promise/healthcareOrder?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nOgJOV6REeaNPrAIaCcL-A" y="-186"/>
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nOgJO16REeaNPrAIaCcL-A" visible="false" type="ToConstraintLabel">
@@ -2457,60 +2457,11 @@
           </children>
           <children xmi:type="notation:DecorationNode" xmi:id="_nOgJPl6REeaNPrAIaCcL-A" visible="false" type="FromConstraintLabel">
             <children xmi:type="notation:ListCompartment" xmi:id="_nOgJQF6REeaNPrAIaCcL-A" type="FromConstraintCompartment"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/PromiseContext/healthcareOrder?"/>
+            <element xmi:type="uml:Property" href="Orders.efx#_CDV50F6REeaNPrAIaCcL-A?FHIM/Orders/Promise/healthcareOrder?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_nOgJP16REeaNPrAIaCcL-A" y="1058"/>
           </children>
           <element xmi:type="uml:Association" href="Orders.efx#_CDMv4F6REeaNPrAIaCcL-A?FHIM/Orders/healthcarePromise_healthcareOrder?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nOgJJF6REeaNPrAIaCcL-A" points="[345, -3060, 547, 7200]$[345, -9535, 547, 725]"/>
-        </edges>
-        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_nOp6FF6REeaNPrAIaCcL-A" source="_nOW-8F6REeaNPrAIaCcL-A" target="_KNFPEMoXEeGas4Yp_oUthg" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
-          <children xmi:type="notation:DecorationNode" xmi:id="_nOp6Fl6REeaNPrAIaCcL-A" visible="false" type="NameLabel">
-            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nOp6GF6REeaNPrAIaCcL-A" type="Stereotype"/>
-            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nOp6GV6REeaNPrAIaCcL-A" type="Name"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nOp6F16REeaNPrAIaCcL-A" y="-186"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_nOp6Gl6REeaNPrAIaCcL-A" visible="false" type="ToMultiplicityLabel">
-            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nOp6HF6REeaNPrAIaCcL-A" type="ToMultiplicity"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_fmX3M4lDEd-pqcFAwb-XNw?FHIM/Orders/healthcareOrder_patientLocation/%3CProperty%3E?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_nOp6G16REeaNPrAIaCcL-A" y="396"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_nOp6HV6REeaNPrAIaCcL-A" type="ToRoleLabel">
-            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nOp6H16REeaNPrAIaCcL-A" type="ToRole"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_fmX3M4lDEd-pqcFAwb-XNw?FHIM/Orders/healthcareOrder_patientLocation/%3CProperty%3E?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_nOp6Hl6REeaNPrAIaCcL-A" y="-397"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_nOp6IF6REeaNPrAIaCcL-A" type="FromMultiplicityLabel">
-            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nOp6Il6REeaNPrAIaCcL-A" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_fmX3MIlDEd-pqcFAwb-XNw?FHIM/Orders/OrderContext/patientLocation?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_nOp6IV6REeaNPrAIaCcL-A" y="396"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_nOp6I16REeaNPrAIaCcL-A" type="FromRoleLabel">
-            <children xmi:type="notation:BasicDecorationNode" xmi:id="_nOp6JV6REeaNPrAIaCcL-A" type="FromRole"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_fmX3MIlDEd-pqcFAwb-XNw?FHIM/Orders/OrderContext/patientLocation?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_nOp6JF6REeaNPrAIaCcL-A" y="-397"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_nOp6Jl6REeaNPrAIaCcL-A" visible="false" type="ToQualifierLabel">
-            <children xmi:type="notation:SemanticListCompartment" xmi:id="_nOp6KF6REeaNPrAIaCcL-A" type="QualifierCompartment"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_fmX3M4lDEd-pqcFAwb-XNw?FHIM/Orders/healthcareOrder_patientLocation/%3CProperty%3E?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_nOp6J16REeaNPrAIaCcL-A" y="-186"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_nOp6KV6REeaNPrAIaCcL-A" visible="false" type="FromQualifierLabel">
-            <children xmi:type="notation:SemanticListCompartment" xmi:id="_nOp6K16REeaNPrAIaCcL-A" type="QualifierCompartment"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_fmX3MIlDEd-pqcFAwb-XNw?FHIM/Orders/OrderContext/patientLocation?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_nOp6Kl6REeaNPrAIaCcL-A" y="-186"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_nOp6LF6REeaNPrAIaCcL-A" visible="false" type="ToConstraintLabel">
-            <children xmi:type="notation:ListCompartment" xmi:id="_nOp6Ll6REeaNPrAIaCcL-A" type="ToConstraintCompartment"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_fmX3M4lDEd-pqcFAwb-XNw?FHIM/Orders/healthcareOrder_patientLocation/%3CProperty%3E?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_nOp6LV6REeaNPrAIaCcL-A" y="1058"/>
-          </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_nOp6L16REeaNPrAIaCcL-A" visible="false" type="FromConstraintLabel">
-            <children xmi:type="notation:ListCompartment" xmi:id="_nOp6MV6REeaNPrAIaCcL-A" type="FromConstraintCompartment"/>
-            <element xmi:type="uml:Property" href="Orders.efx#_fmX3MIlDEd-pqcFAwb-XNw?FHIM/Orders/OrderContext/patientLocation?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_nOp6MF6REeaNPrAIaCcL-A" y="1058"/>
-          </children>
-          <element xmi:type="uml:Association" href="Orders.efx#_fmOGMIlDEd-pqcFAwb-XNw?FHIM/Orders/healthcareOrder_patientLocation?"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nOp6FV6REeaNPrAIaCcL-A" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
         </edges>
         <edges xmi:type="notation:Connector" xmi:id="_agMUoC9SEee8ZskGHfh21g" type="NoteAttachment" source="_NeTLoC9SEee8ZskGHfh21g" target="_E5QyMMIBEeCdLPayeDTWtA" lineColor="0" lineWidth="1">
           <styles xmi:type="notation:ArrowStyle" xmi:id="_agMUoS9SEee8ZskGHfh21g"/>
@@ -2547,7 +2498,7 @@ See the Diagram Documentation for a walkthrough of the major concepts.</body>
         <body>This class represents an intent to perform one or more Laboratory Tests in response to a Request (an Order) from an authorized entity (usually a doctor).  A Promise is an intent to perform a service that has the strength of a commitment, i.e., other parties may rely on the originator of such promise that said originator will see to it that the promised act will be fulfilled. A promise can be either solicited or unsolicited.  The entity that makes such a promise is also called a &quot;filler&quot;, while the entity that requests the service is also called a &quot;placer&quot;.  The Laboratory Test Promise can be looked at as the Laboratory Test Order from the laboratory's point of view.</body>
       </ownedComment>
       <generalization xmi:id="_KGLzIMnmEeG_ScqIlDrcqg">
-        <general xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/PromiseContext?"/>
+        <general xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/Promise?"/>
       </generalization>
       <ownedAttribute xmi:id="_420A62FD03B645783AF70191" name="dateReportCompleted" visibility="public">
         <eAnnotations xmi:id="_M42DCeLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -2912,7 +2863,7 @@ Possible values include (from HL7 Table 909): Share To Be Determined: Category t
 It should be noted that while a Specimen Collection Promise logically occurs in response to an order, the notion of a Specimen Collection Promise is rarely implemented as separate concept, because specimen collections typically occur automatically based on policy, procedure, or contract.  Rarely would two computers be exchanging messages requesting and acknowledging specimen collections; most likely this would occur when a patient is sent to the laboratory for specimen collection.  Nevertheless, the class exists in order to support the few cases where an explicit promise is needed.</body>
       </ownedComment>
       <generalization xmi:id="_vWSTIMoTEeGas4Yp_oUthg">
-        <general xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/PromiseContext?"/>
+        <general xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/Promise?"/>
       </generalization>
       <ownedAttribute xmi:id="_q13wYEVAEeKmiJoj9rWMSg" name="accessionEvent" visibility="public" type="_QVZQ4A8SEeK0aKhL_Nyezg" association="_q117MEVAEeKmiJoj9rWMSg">
         <ownedComment xmi:id="_AxdMAEVDEeKmiJoj9rWMSg" annotatedElement="_q13wYEVAEeKmiJoj9rWMSg">
