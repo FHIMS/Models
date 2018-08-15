@@ -6034,7 +6034,14 @@ Note that the this concept is restricted to those societal roles as perceived in
 HL7 Version 2 has the following suggested values (table 1): Female; Male; Other; Unknown; Ambiguous; Not applicable.&#xD;
 &quot;Administrative Gender.&quot; - HL7 FHIR, Person.gender.&#xD;
 &quot;Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes.&quot; - HL7 FHIR, Patient.gender.&#xD;
-&quot;Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes.&quot; - HL7 FHIR, Patient.contact.gender</body>
+&quot;Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes.&quot; - HL7 FHIR, Patient.contact.gender&#xD;
+&quot;Code identifying the gender of the individual [clinician].&quot; - NCPDP Telecommunication (Field 721-MD, Data Dictionary 201104).&#xD;
+&quot;Code identifying the gender of the individual [patient].&quot; - NCPDP Telecommunication (Field 305-C5, Data Dictionary 201104).&#xD;
+&quot;The Gender of the purchaser of the product/service.&quot; - NCPDP Telecommunication (Field 595-YY, Data Dictionary 201104).&#xD;
+Note that NCPDP Telecom uses: blank=unknown (721-MD), 0=not specified (305-C5) or unknown (595-YY), 1=male, 2=female&#xD;
+&quot;Gender of the patient&quot; - NCPDP Script (Field 9703, Data Dictionary 201104). Note that Script uses M=Male, F=Female, U=Unknown&#xD;
+&quot;Code indicating the sex of the individual&quot; - ASC X12 1068 (Gender Code).  Note that X12 uses the following values: A=Not Provided, B=Not Applicable, F=Female, M=Male, N=Non-sexed, U=Unknown, X=Unsexable&#xD;
+&quot;A gender or sex of a person.&quot; - NIEM, PersonSexText</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uxsZAYs9EeaDlJMTsPFiaQ" value="1"/>
