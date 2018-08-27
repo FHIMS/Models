@@ -76,7 +76,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_oKajwAY-EeGz0dkadElrkQ" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_oKajwgY-EeGz0dkadElrkQ" visible="false" type="StructureCompartment"/>
           <element xmi:type="uml:Class" href="HealthConcern.efx#_420A62FD03B6421F8AD00244?FHIM/HealthConcern/HealthConcern?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oKYHggY-EeGz0dkadElrkQ" x="11729" y="4755"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oKYHggY-EeGz0dkadElrkQ" x="12046" y="4438"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_mwHeEAZAEeGz0dkadElrkQ" element="_mwEawAZAEeGz0dkadElrkQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" lineColor="3342489" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_mwHeEwZAEeGz0dkadElrkQ" type="ImageCompartment">
@@ -139,7 +139,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_ywJelO_rEeOM48qnBkZzmw" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_ywKFoO_rEeOM48qnBkZzmw" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_ywKFoe_rEeOM48qnBkZzmw" visible="false" type="StructureCompartment"/>
-          <element xmi:type="uml:Class" href="ClinicalObservations.efx#_nbH1LVaeEd6rJ7jpZ7LBFg?FHIM/ClinicalObservation/Observation?"/>
+          <element xmi:type="uml:Class" href="ClinicalObservations.efx#_nbH1LVaeEd6rJ7jpZ7LBFg?FHIM/ClinicalObservation/ObservationStatement?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ywIQce_rEeOM48qnBkZzmw" x="40576" y="4755"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_A8WSkLPAEeS3iYN4R_wsuw" element="_A8TPQLPAEeS3iYN4R_wsuw" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -1959,6 +1959,9 @@ As a consequence of this, all classes potentially have recursive relationships t
       <ownedEnd xmi:id="_Slvs8AY0EeGz0dkadElrkQ" name="" visibility="public" type="_ZjkgsJe6EeaSqP4Tgr4Cgg" association="_SlspoAY0EeGz0dkadElrkQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_rZMYcAY0EeGz0dkadElrkQ" name="HealthGoal" clientDependency="_tB3SsOYAEeWMCcMdatPOjA _5jPfgO0aEeWjUp19yClo5Q _QEbtIO0eEeWjUp19yClo5Q">
+      <eAnnotations xmi:id="_BVbhoKfWEeitto0cubQn1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_BVbhoafWEeitto0cubQn1A" key="EntryPoint"/>
+      </eAnnotations>
       <ownedComment xmi:id="_CYO3UAZGEeGz0dkadElrkQ" annotatedElement="_rZMYcAY0EeGz0dkadElrkQ">
         <body>An objective intended to be realized by the successful execution of the Care Plan. &#xD;
 &quot;A health goal specifies a future target or achievement towards which the effort of care planning and execution is directed. Goals represent concrete targets to reduce or eliminate concerns or risks. A Goal may exist in the absence of concerns or risks. For example, a patient may have a goal to improve their fitness level. The plan always has at least one goal.&quot; - HL7 Care Plan Domain Analysis Model.&#xD;
@@ -1999,7 +2002,7 @@ Note that a goal might be constructed of sub-goals, which might each be associat
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vkHbwbzSEeasQoRN2Ou_5g" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vkHbwLzSEeasQoRN2Ou_5g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vkHbwLzSEeasQoRN2Ou_5g"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_vkx4YDvtEeeAVuPecg5-Hg" name="expressedBy" visibility="public">
         <ownedComment xmi:id="_Bt3ksDvuEeeAVuPecg5-Hg" annotatedElement="_vkx4YDvtEeeAVuPecg5-Hg">
@@ -2074,7 +2077,7 @@ Note that a goal might be constructed of sub-goals, which might each be associat
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ieKlMO_oEeOM48qnBkZzmw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ieJ-IO_oEeOM48qnBkZzmw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ieJ-IO_oEeOM48qnBkZzmw"/>
         <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_uXpZ4OYAEeWMCcMdatPOjA">
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <language></language>
@@ -2112,6 +2115,8 @@ Note that a goal might be constructed of sub-goals, which might each be associat
           <body>&quot;The parameter whose value is being tracked, e.g. body weight, blood pressure, or hemoglobin A1c level.&quot; - HL7 FHIR, Goal.target.measure</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-VHyUKfVEeitto0cubQn1A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-VHLQKfVEeitto0cubQn1A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_PBnAgIzHEeaPWbBiMJSPyg" name="acceptanceReview" visibility="public" type="_t21S4LPCEeS3iYN4R_wsuw" association="_PBiIAIzHEeaPWbBiMJSPyg">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PBoOoIzHEeaPWbBiMJSPyg" value="*"/>
@@ -2152,6 +2157,8 @@ Note that a goal might be constructed of sub-goals, which might each be associat
           <body>&quot;The target value of the focus to be achieved to signify the fulfillment of the goal, e.g. 150 pounds, 7.0%. Either the high or low or both values of the range can be specified. When a low value is missing, it indicates that the goal is achieved at any focus value at or below the high value. Similarly, if the high value is missing, it indicates that the goal is achieved at any focus value at or above the low value.&quot; - HL7 FHIR, Goal.target.detail[x]</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_r_1eEBvxEd-afqIGzWhetA?FHIM/Datatypes/Any?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__Ar30afVEeitto0cubQn1A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__Ar30KfVEeitto0cubQn1A"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_eDAlAAY1EeGz0dkadElrkQ" name="carePlanEpisode_careTeamMember" memberEnd="_eDCaMAY1EeGz0dkadElrkQ _eDDBQAY1EeGz0dkadElrkQ">
@@ -2427,7 +2434,7 @@ Note that the efficacy of the Activity towards achieving the Goal is not always 
           <body>Pointer to an Observation of the measurable goal. For example, if the goal was to loose weight with a target weight of 180 pounds, and the patient reached 189 pounds, this association will point to a weight measurement of 189 pounds.&#xD;
 &quot;Details of what's changed (or not changed).&quot; - HL7 FHIR, Goal.outcomeReference</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="ClinicalObservations.efx#_nbH1LVaeEd6rJ7jpZ7LBFg?FHIM/ClinicalObservation/Observation?"/>
+        <type xmi:type="uml:Class" href="ClinicalObservations.efx#_nbH1LVaeEd6rJ7jpZ7LBFg?FHIM/ClinicalObservation/ObservationStatement?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0dWAMe_rEeOM48qnBkZzmw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0dWAMO_rEeOM48qnBkZzmw"/>
       </ownedAttribute>
@@ -2508,7 +2515,7 @@ Note that the efficacy of the Activity towards achieving the Goal is not always 
         <ownedComment xmi:id="_0LLlwO93EeWkMe7GVfjMFQ" annotatedElement="_yPY6cJkzEeWp2-jxt6MtWQ">
           <body>Pointer to an Observation of the measurable goal.  For example, if the goal was to loose weight with a target weight of 180 pounds, and the patient reached 189 pounds, this association will point to a weight measurement of 189 pounds.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="ClinicalObservations.efx#_nbH1LVaeEd6rJ7jpZ7LBFg?FHIM/ClinicalObservation/Observation?"/>
+        <type xmi:type="uml:Class" href="ClinicalObservations.efx#_nbH1LVaeEd6rJ7jpZ7LBFg?FHIM/ClinicalObservation/ObservationStatement?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yPaIkJkzEeWp2-jxt6MtWQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yPZhgJkzEeWp2-jxt6MtWQ"/>
       </ownedAttribute>
@@ -3093,7 +3100,7 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
 &quot;Defines criteria which must be met to determine goal achievement.&quot; - HL7 Care Plan Domain Analysis Model</body>
       </ownedComment>
       <generalization xmi:id="_FW28kPXkEeW1BuvtDtBQzQ">
-        <general xmi:type="uml:Class" href="ClinicalObservations.efx#_nbH1LVaeEd6rJ7jpZ7LBFg?FHIM/ClinicalObservation/Observation?"/>
+        <general xmi:type="uml:Class" href="ClinicalObservations.efx#_nbH1LVaeEd6rJ7jpZ7LBFg?FHIM/ClinicalObservation/ObservationStatement?"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_-_63oOt6EeW_d52hJF-Rwg" name="healthGoal_goalSuccessCriterion" memberEnd="_-__JEOt6EeW_d52hJF-Rwg __ABlUOt6EeW_d52hJF-Rwg">
