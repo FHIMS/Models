@@ -626,7 +626,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_az0GYRZHEeer2PfFeUXvjw" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_az17kBZHEeer2PfFeUXvjw" visible="false" type="StructureCompartment"/>
           <element xmi:type="uml:Class" href="Person.efx#_420A62FD03B6418A4E500034?FHIM/Person/Patient?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_azpHQRZHEeer2PfFeUXvjw" x="38674" y="38040"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_azpHQRZHEeer2PfFeUXvjw" x="37406" y="38357"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_hMNLMB3vEeeIxccvDlLgJA" element="_hLdkUB3vEeeIxccvDlLgJA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519553" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_hMZ_gB3vEeeIxccvDlLgJA" type="ImageCompartment">
@@ -2725,6 +2725,55 @@
             <layoutConstraint xmi:type="notation:Location" xmi:id="_Ld3yBLUKEee8ToGyn6JwPw" y="1058"/>
           </children>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Ld3K4bUKEee8ToGyn6JwPw" points="[78, 16, -227, -48]$[228, 57, -77, -7]"/>
+        </edges>
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_HroEIKfVEeitto0cubQn1A" source="_azpHQBZHEeer2PfFeUXvjw" target="_8eZnIAJlEeaG4J0T8FMiWg" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_HrorMKfVEeitto0cubQn1A" visible="false" type="NameLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HrpSQKfVEeitto0cubQn1A" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HrpSQafVEeitto0cubQn1A" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HrorMafVEeitto0cubQn1A" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HrpSQqfVEeitto0cubQn1A" visible="false" type="ToMultiplicityLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HrpSRKfVEeitto0cubQn1A" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="Person.efx#_HrdFAKfVEeitto0cubQn1A?FHIM/Person/patient_implantedDevice/%3CProperty%3E?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HrpSQ6fVEeitto0cubQn1A" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_Hrp5UKfVEeitto0cubQn1A" type="ToRoleLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Hrp5UqfVEeitto0cubQn1A" type="ToRole"/>
+            <element xmi:type="uml:Property" href="Person.efx#_HrdFAKfVEeitto0cubQn1A?FHIM/Person/patient_implantedDevice/%3CProperty%3E?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Hrp5UafVEeitto0cubQn1A" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_Hrp5U6fVEeitto0cubQn1A" type="FromMultiplicityLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Hrp5VafVEeitto0cubQn1A" type="FromMultiplicity"/>
+            <element xmi:type="uml:Property" href="Person.efx#_Hrb24KfVEeitto0cubQn1A?FHIM/Person/Patient/implantedDevice?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Hrp5VKfVEeitto0cubQn1A" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HrqgYKfVEeitto0cubQn1A" type="FromRoleLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_HrqgYqfVEeitto0cubQn1A" type="FromRole"/>
+            <element xmi:type="uml:Property" href="Person.efx#_Hrb24KfVEeitto0cubQn1A?FHIM/Person/Patient/implantedDevice?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HrqgYafVEeitto0cubQn1A" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HrqgY6fVEeitto0cubQn1A" type="ToQualifierLabel">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_HrqgZafVEeitto0cubQn1A" type="QualifierCompartment"/>
+            <element xmi:type="uml:Property" href="Person.efx#_HrdFAKfVEeitto0cubQn1A?FHIM/Person/patient_implantedDevice/%3CProperty%3E?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HrqgZKfVEeitto0cubQn1A" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HrqgZqfVEeitto0cubQn1A" type="FromQualifierLabel">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_HrrHcKfVEeitto0cubQn1A" type="QualifierCompartment"/>
+            <element xmi:type="uml:Property" href="Person.efx#_Hrb24KfVEeitto0cubQn1A?FHIM/Person/Patient/implantedDevice?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HrqgZ6fVEeitto0cubQn1A" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HrrHcafVEeitto0cubQn1A" type="ToConstraintLabel">
+            <children xmi:type="notation:ListCompartment" xmi:id="_HrrHc6fVEeitto0cubQn1A" type="ToConstraintCompartment"/>
+            <element xmi:type="uml:Property" href="Person.efx#_HrdFAKfVEeitto0cubQn1A?FHIM/Person/patient_implantedDevice/%3CProperty%3E?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HrrHcqfVEeitto0cubQn1A" y="1058"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_HrrHdKfVEeitto0cubQn1A" type="FromConstraintLabel">
+            <children xmi:type="notation:ListCompartment" xmi:id="_HrrugKfVEeitto0cubQn1A" type="FromConstraintCompartment"/>
+            <element xmi:type="uml:Property" href="Person.efx#_Hrb24KfVEeitto0cubQn1A?FHIM/Person/Patient/implantedDevice?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HrrHdafVEeitto0cubQn1A" y="1058"/>
+          </children>
+          <element xmi:type="uml:Association" href="Person.efx#_HraBsKfVEeitto0cubQn1A?FHIM/Person/patient_implantedDevice?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HroEIafVEeitto0cubQn1A" points="[4, -20, 58, 111]$[43, -87, 97, 44]"/>
         </edges>
       </contents>
     </eAnnotations>
