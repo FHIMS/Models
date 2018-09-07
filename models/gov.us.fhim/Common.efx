@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.6-->
+<!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
@@ -2659,6 +2659,46 @@
           <element xmi:type="uml:Generalization" href="Orders.efx#_df9d8IxcEeikEIFpfvQzog?FHIM/Orders/Promise/%3CGeneralization%3E?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_df9d8oxcEeikEIFpfvQzog" points="[-20, -20, 546, 215]$[-436, -192, 130, 43]"/>
         </edges>
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_2bJAELIiEei_tN1ilLYMuQ" element="_2a_PELIiEei_tN1ilLYMuQ" source="_bL-AUAoXEeC_TY76TuIe4Q" target="_sHsOQIxaEeikEIFpfvQzog" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_2bJnILIiEei_tN1ilLYMuQ" visible="false" type="NameLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_2bJnIrIiEei_tN1ilLYMuQ" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_2bJnI7IiEei_tN1ilLYMuQ" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2bJnIbIiEei_tN1ilLYMuQ" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_2bKOMLIiEei_tN1ilLYMuQ" type="ToMultiplicityLabel" element="_2bC5cLIiEei_tN1ilLYMuQ">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_2bK1QLIiEei_tN1ilLYMuQ" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2bKOMbIiEei_tN1ilLYMuQ" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_2bK1QbIiEei_tN1ilLYMuQ" type="ToRoleLabel" element="_2bC5cLIiEei_tN1ilLYMuQ">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_2bK1Q7IiEei_tN1ilLYMuQ" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2bK1QrIiEei_tN1ilLYMuQ" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_2bK1RLIiEei_tN1ilLYMuQ" type="FromMultiplicityLabel" element="_2bBEQLIiEei_tN1ilLYMuQ">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_2bK1RrIiEei_tN1ilLYMuQ" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2bK1RbIiEei_tN1ilLYMuQ" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_2bLcULIiEei_tN1ilLYMuQ" type="FromRoleLabel" element="_2bBEQLIiEei_tN1ilLYMuQ">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_2bLcUrIiEei_tN1ilLYMuQ" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2bLcUbIiEei_tN1ilLYMuQ" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_2bMDYLIiEei_tN1ilLYMuQ" type="ToQualifierLabel" element="_2bC5cLIiEei_tN1ilLYMuQ">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_2bMDYrIiEei_tN1ilLYMuQ" type="QualifierCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2bMDYbIiEei_tN1ilLYMuQ" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_2bMDY7IiEei_tN1ilLYMuQ" type="FromQualifierLabel" element="_2bBEQLIiEei_tN1ilLYMuQ">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_2bMqcLIiEei_tN1ilLYMuQ" type="QualifierCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2bMDZLIiEei_tN1ilLYMuQ" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_2bMqcbIiEei_tN1ilLYMuQ" type="ToConstraintLabel" element="_2bC5cLIiEei_tN1ilLYMuQ">
+            <children xmi:type="notation:ListCompartment" xmi:id="_2bMqc7IiEei_tN1ilLYMuQ" type="ToConstraintCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2bMqcrIiEei_tN1ilLYMuQ" y="1058"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_2bMqdLIiEei_tN1ilLYMuQ" type="FromConstraintLabel" element="_2bBEQLIiEei_tN1ilLYMuQ">
+            <children xmi:type="notation:ListCompartment" xmi:id="_2bNRgLIiEei_tN1ilLYMuQ" type="FromConstraintCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2bMqdbIiEei_tN1ilLYMuQ" y="1058"/>
+          </children>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2bJAEbIiEei_tN1ilLYMuQ" points="[77, -84, -74, 148]$[197, -213, 46, 19]"/>
+        </edges>
       </contents>
     </eAnnotations>
     <eAnnotations xmi:id="_MFvLEuLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -3433,9 +3473,11 @@ Verifying Calibrator, used for periodic calibration checks.</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R5QZgGs_EeiYVvtnLEaW4w" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R5KS4ms_EeiYVvtnLEaW4w"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B6438D2BF7003D" name="code" visibility="public">
+      <ownedAttribute xmi:id="_420A62FD03B6438D2BF7003D" name="topicCode" visibility="public" isDerived="true">
         <ownedComment xmi:id="_zCt_UBH0EeCBuOUrBnIXmQ" annotatedElement="_420A62FD03B6438D2BF7003D">
-          <body>Contains a code indicating a procedure or a non-procedural event involving the patient. This code could come from various coding systems; typically the Common Procedure Terminology (CPT) is used, but other coding systems might be employed, especially to capture workload-related data.&#xD;
+          <body>This property exists to show that the Action (generally a procedure) that has been performed is handled using the topicCode property inherited from ClinicalStatement. This property is marked as derived in that it will generally not be implemented, or if it is, it would be re-defined such that the allowable set of values that this property can reference is limited to procedures.&#xD;
+&#xD;
+Contains a code indicating a procedure or a non-procedural event involving the patient. This code could come from various coding systems; typically the Common Procedure Terminology (CPT) is used, but other coding systems might be employed, especially to capture workload-related data.&#xD;
 &quot;The specific procedure that is performed. Use text if the exact nature of the procedure cannot be coded (e.g. &quot;Laparoscopic Appendectomy&quot;).&quot; - HL7 FHIR, Procedure.code</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
@@ -3487,7 +3529,13 @@ Verifying Calibrator, used for periodic calibration checks.</body>
         <ownedComment xmi:id="_pRFz4WtFEeiYVvtnLEaW4w" annotatedElement="_pRFz4GtFEeiYVvtnLEaW4w">
           <body>The date/time or period over which the procedure was performed. Note that FHIR uses a choice of dateTime, Period, string, Age, or Range for its datatype, while FHIM currently only handles dateTime or Period. Further elaboration will be needed to handle string, Age, or Range in other fields.&#xD;
 &quot;Estimated or actual date, date-time, period, or age when the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of the procedure to be captured.&quot; - HL7 FHIR, Procedure.performed[x]&#xD;
-</body>
+&#xD;
+For Specimen collection events, this is the date and time during which the specimen was taken from the source (e.g., the patient, or other entity such as a sample of pond water). This property is of type Period in order to handle collections that take place over a period of time.&#xD;
+&quot;The date and time when the specimen was acquired from the source. The use of the Date Range data type allows for description of specimens collected over a period of time, for example, 24-hour urine collection. For specimens collected at a point in time, only the first component (start date/time) will be populated.&quot; - HL7 Version 2.8, SPM-17.&#xD;
+&quot;The clinically relevant date/time of the observation. In the case of observations taken directly from a subject, it is the actual date and time the observation was obtained. In the case of a specimen associated study, this field shall represent the date and time the specimen was collected or obtained.&quot; - HL7 Version 2.8, OBR-7.&#xD;
+&quot;Contains the end date and time of a study or timed specimen collection.&quot; - HL7 Version 2.8, OBR-8.&#xD;
+&quot;This field is required in two circumstances. The first is when the observations reported beneath one report header have different dates/times. This could occur in the case of queries, timed test sequences, or clearance studies where one measurement within a battery may have a different time than another measurement.... The observation date-time is the physiologically relevant date-time or the closest approximation to that date-time.  In the case of tests performed on specimens, the relevant date-time is the specimen’s collection date-time.  In the case of observations taken directly on the patient (e.g., X-ray images, history and physical), the observation date-time is the date-time that the observation was performed.&quot; - HL7 Version 2.8, OBX-14.&#xD;
+&quot;Time when specimen was collected from subject - the physiologically relevant time.&quot; - HL7 FHIR, Specimen.collection.collected[x]</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pRFz4mtFEeiYVvtnLEaW4w" value="1"/>
@@ -3500,7 +3548,13 @@ Verifying Calibrator, used for periodic calibration checks.</body>
 &quot;Contains the provider ID of the person administering the pharmaceutical/treatment.&quot; - HL7 Version 2.8, RXA-10&#xD;
 &quot;The device, practitioner, etc. who performed the action.&quot; - HL7 FHIR, MedicationAdministration.performer.actor&#xD;
 &quot;Clinician who administered the vaccine.&quot;  - HL7 FHIR, Immunization.performer&#xD;
-&quot;The party that performed the action.&quot; - HL7 CIMI, Performance.performed</body>
+&quot;The party that performed the action.&quot; - HL7 CIMI, Performance.performed&#xD;
+&#xD;
+&quot;This field identifies the performing technician.&quot; - HL7 Version 2.8, OBR-34&#xD;
+&quot;This field contains the identifier of the individual directly responsible for the observation (i.e., the person who either performed or verified it).  In a nursing service, the observer is usually the professional who performed the observation (e.g., took the blood pressure).  In a laboratory, the observer is the technician who performed or verified the analysis....&quot; - HL7 Version 2.8, OBX.16&#xD;
+&#xD;
+&quot;Identifies the person, department, or facility that collected the specimen.&quot; - HL7 Version 2.8, OBR-10&#xD;
+&quot;Person who collected the specimen.&quot; - HL7 FHIR, Specimen.collection.collector</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LJo_wk_IEeicO4zK57V_lA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LJo_w0_IEeicO4zK57V_lA"/>
@@ -3533,6 +3587,14 @@ Verifying Calibrator, used for periodic calibration checks.</body>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GAvqUaWeEei1mLn8AHKTng" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GAvqUKWeEei1mLn8AHKTng"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_2bBEQLIiEei_tN1ilLYMuQ" name="fulfillsPromise" visibility="public" association="_2a_PELIiEei_tN1ilLYMuQ">
+        <ownedComment xmi:id="_9bhSkLIiEei_tN1ilLYMuQ" annotatedElement="_2bBEQLIiEei_tN1ilLYMuQ">
+          <body>The &quot;promise&quot; that is partly or wholly enacted by the performance of this Act. Points to the Promise made in response to a Request (an Order) from an authorized entity (usually a doctor), which resulted in this Action Performed (aka Procedure). A Promise is an intent to perform a service that has the strength of a commitment, i.e., other parties may rely on the originator of such promise that said originator will see to it that the promised act will be fulfilled. The Promise can be looked at as the Order from the point of view of the entity performing the Action. In other words, the Promise is the Order from the filler's point of view.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/Promise?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2bCSYbIiEei_tN1ilLYMuQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2bCSYLIiEei_tN1ilLYMuQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6418CF92600E1" name="Participation" isAbstract="true">
@@ -3685,7 +3747,10 @@ and/or:&#xD;
 b1) Order2. relatedClinicalInformation. relatedInformationCategory is set to (a code that means) &quot;replaces&quot;, and&#xD;
 b2) Order2. relatedClinicalInformation. clinicalInformation points to Order1.&#xD;
 &#xD;
-&quot;Relates a child to its parent when a parent child relationship exists.&quot; - HL7 Version 2, ORC-8.</body>
+&quot;Relates a child to its parent when a parent child relationship exists.&quot; - HL7 Version 2, ORC-8.&#xD;
+&quot;This field is defined to make it available for other types of linkages (e.g., toxicology).  This important information, together with the information in OBR-29 or OBR-57, uniquely identifies the parent result's OBX segment related to this order.&quot; - HL7 Version 2, OBX-26.&#xD;
+&#xD;
+Note that in Laboratory, a &quot;Reflex Test&quot; will be handled through this RelatedClinicalInformation mechanism. A Reflex Test is a test that is performed and is made necessary based on results from another test, such as results that need confirmation or tests that are indicated by standards of care, so that it is necessary to perform even though the clinician hasn't ordered it. Examples include when a CBC indicates a high white blood cell count, a differential is automatically performed. These tests are usually defined within the laboratory's established procedures. In this example, the original order will point to an instance of RelatedClinicalInformation, wherein the relatedInformationCategory will contain a code that means &quot;reflex test&quot;, and a pointer (i.e., the clinicalInformation property) that points to the reflex test promise. Similarly, the reflex test promise can point to another instance of RelatedClinicalInformation, wherein the relatedInformationCategory will contain a code that means &quot;original promise&quot;, and a pointer (i.e., the clinicalInformation property) that points to the original lab test promise.</body>
       </ownedComment>
       <ownedAttribute xmi:id="_3kpEcLkyEeSvIbhHaIFeOA" name="clinicalInformation" visibility="public" type="_Wu4MgKMyEeSjK-UNpoDZuQ" association="_3kn2ULkyEeSvIbhHaIFeOA">
         <ownedComment xmi:id="_4WVVMLk0EeSvIbhHaIFeOA" annotatedElement="_3kpEcLkyEeSvIbhHaIFeOA">
@@ -6761,6 +6826,8 @@ Note that this property is marked as derived as it may be calculated or may be s
         <ownedComment xmi:id="_jAOiYAXZEeebQs_lQM5n6g" annotatedElement="_OeQTIAXZEeebQs_lQM5n6g">
           <body>Pointer to any remarks concerning the ClinicalInformation. This contstruct allows multiple (i.e., zero to many) clinicians to comment upon the clinical information, perhaps over time. For example, the data enterer may provide some comments and later the verifier may also record some additional comments. In addition, it allows the same clinician to provide multiple comments, likely over time.&#xD;
 &#xD;
+&quot;This field is for reporting additional comments related to the sample.&quot; - HL7 Version 2.8, OBR-39.&#xD;
+&quot;To communicate any details or issues about the specimen or during the specimen collection. (for example: broken vial, sent with patient, frozen).&quot; - HL7 FHIR, Specimen.note&#xD;
 &quot;May include statements about significant, unexpected or unreliable values, or information about the source of the value where this may be relevant to the interpretation of the result.&quot; - HL7 FHIR, Observation.comment&#xD;
 &quot;Unstructured notes appended to a clinical statement.&quot; - HL7 CIMI, InformationEntry.additionalText</body>
         </ownedComment>
@@ -6779,11 +6846,12 @@ Note that this property is marked as derived as it may be calculated or may be s
 &#xD;
 &quot;Contains a value that uniquely identifies a single allergy for a person&quot; - HL7 Version 2.8, IAM-7&#xD;
 &quot;Contains a unique identifier for the observation....  In most systems the identifier will point to a master observation table that will provide other attributes of the observation that may be used by the receiving system to process the observations it receives.&quot; - HL7 Version 2.8, OBX-3&#xD;
+&quot;Contains a unique identifier for this observation.&quot; - HL7 Version 2.8, OBX-21.&#xD;
 &quot;Contains the identifier assigned by an initiating system to an instance of a problem.&quot; - HL7 Version 2.8, PRB-4&#xD;
-&quot;A unique identifier assigned to this observation.&quot; - HL7 FHIR, Observation.identifier&#xD;
 &quot;This records identifiers associated with this condition that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot; - HL7 FHIR, Condition.identifier&#xD;
-&quot;The unique identifier(s) of this clinical statement. It must be entered if user wants it returned as part of any output (e.g., a wound number), otherwise it will be auto-generated, if needed, by the system serving the record. An identifier does not need to be the actual identifier of the source system. &quot; - HL7 CIMI, InformationEntry.identifier&#xD;
-&quot;This records identifiers associated with this procedure that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot; - HL7 FHIR, Procedure.identifier</body>
+&quot;A unique identifier assigned to this observation.&quot; - HL7 FHIR, Observation.identifier&#xD;
+&quot;This records identifiers associated with this procedure that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot; - HL7 FHIR, Procedure.identifier&#xD;
+&quot;The unique identifier(s) of this clinical statement. It must be entered if user wants it returned as part of any output (e.g., a wound number), otherwise it will be auto-generated, if needed, by the system serving the record. An identifier does not need to be the actual identifier of the source system. &quot; - HL7 CIMI, InformationEntry.identifier</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nbH1QFaeEd6rJ7jpZ7LBFg" value="1"/>
@@ -7057,6 +7125,9 @@ Note that this property is marked as derived as it may be calculated or may be s
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eM7Ywjn2EeiefcoRQJXpFA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eM7Ywzn2EeiefcoRQJXpFA"/>
       </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2a_PELIiEei_tN1ilLYMuQ" name="actionPerformed_fulfillsPromise" memberEnd="_2bBEQLIiEei_tN1ilLYMuQ _2bC5cLIiEei_tN1ilLYMuQ">
+      <ownedEnd xmi:id="_2bC5cLIiEei_tN1ilLYMuQ" name="" visibility="private" type="_rr-pACaOEdyiJKb4ZqIfnw" association="_2a_PELIiEei_tN1ilLYMuQ"/>
     </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_4y_8gEWWEeKmiJoj9rWMSg" base_Comment="_4y5O0EWWEeKmiJoj9rWMSg"/>
@@ -7470,4 +7541,5 @@ Note that this property is marked as derived as it may be calculated or may be s
   <Default:Documentation xmi:id="_vIs9sZysEeiv7fmxdul-zg" base_Comment="_vIs9sJysEeiv7fmxdul-zg"/>
   <Default:Documentation xmi:id="_G6q-EZytEeiv7fmxdul-zg" base_Comment="_G6q-EJytEeiv7fmxdul-zg"/>
   <Default:Documentation xmi:id="_P-JwwZytEeiv7fmxdul-zg" base_Comment="_P-JwwJytEeiv7fmxdul-zg"/>
+  <Default:Documentation xmi:id="_9bigsLIiEei_tN1ilLYMuQ" base_Comment="_9bhSkLIiEei_tN1ilLYMuQ"/>
 </xmi:XMI>

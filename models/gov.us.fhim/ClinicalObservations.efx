@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.6-->
+<!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
@@ -957,9 +957,9 @@
       <ownedComment xmi:id="_jT1YELskEeGZTLDYkoM_Sw" annotatedElement="_eWYXgO3MEeCFZuasLkncZQ">
         <body>This class represents an assessment of the value or result of the Clinical Observation or Laboratory Test. For example, a blood pressure measurement of an adult at rest with a value of 147/94 mmHg would be considered abnormally high (i.e., falls within the definition of high blood pressure). For chemistry tests, provides an indication of the result (usually automated), based upon &quot;normal&quot; values as indicated by the reference range. Examples include High, Low, Critically High, Critically Low, etc. For antibiotic sensitivity tests, provides an indication of the susceptibility of the identified organism to the test antibiotic. Possible values include: Intermediate, Moderately Susceptible, Resistant, Susceptible.  In addition, Not Tested may occasionally used when an antibiotic that would commonly be tested was not for some reason.&#xD;
 &#xD;
-&quot;One or more codes specifying a categorical assessment of the observation value, such as &quot;Normal&quot;, &quot;Abnormal&quot;, &quot;Positive&quot;, &quot;Negative&quot;, &quot;Resistant&quot;, &quot;Susceptible&quot;, etc....&quot; - HL7 Version 2.8, OBX-8.&#xD;
-&quot;The assessment made based on the result of the observation. Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag.&quot; - HL7 FHIR, Observation.interpretation&#xD;
-&quot;A clinical judgment concerning the significance or impact of the finding with respect to its subject (e.g., the patient).&quot; - HL7 CIMI, FindingTopic.interpretation</body>
+&quot;One or more codes specifying a categorical assessment of the observation value, such as &quot;Normal&quot;, &quot;Abnormal&quot;, &quot;Positive&quot;, &quot;Negative&quot;, &quot;Resistant&quot;, &quot;Susceptible&quot;, etc....&quot; - HL7 Version 2.8, OBX-8&#xD;
+&quot;A clinical judgment concerning the significance or impact of the finding with respect to its subject (e.g., the patient).&quot; - HL7 CIMI, FindingTopic.interpretation&#xD;
+&quot;The assessment made based on the result of the observation. Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag.&quot; - HL7 FHIR, Observation.interpretation</body>
       </ownedComment>
       <ownedAttribute xmi:id="_420A62FD03B64263C9AE023E" name="interpretation" visibility="public">
         <ownedComment xmi:id="_M6oyw-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64263C9AE023E">
@@ -1048,6 +1048,7 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       <ownedAttribute xmi:id="_nbH1L1aeEd6rJ7jpZ7LBFg" name="bodySite" visibility="public">
         <ownedComment xmi:id="_aR5vkH-0EeOzENpLs8HIcg" annotatedElement="_nbH1L1aeEd6rJ7jpZ7LBFg">
           <body>A code specifying detail about the anatomical site or system that is the focus of the Observation.&#xD;
+&quot;Contains the body site(s) where the measurement being reported was obtained.   This field should not be used for a specimen source or specimen collection site.  This information is of particular importance if the clinical meaning of a value is modified either directly by the site (for example, is the temperature central or peripheral?) or if the site of one measurement impacts the value of another measurement (for example, is the finger SpO2 probe on the same arm as the NIBP cuff?).  In most cases these observations are performed directly upon the patient and do not involve a specimen.&quot; - HL7 Version 2.8, OBX-20.&#xD;
 &quot;Indicates the site on the subject's body where the observation was made (i.e. the target site).&quot; - HL7 FHIR, Observation.bodySite.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
@@ -1121,7 +1122,8 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       </ownedAttribute>
       <ownedAttribute xmi:id="_fVFsIB7tEeeR140udo0pbA" name="deviceInstance" visibility="public" association="_fVEeAB7tEeeR140udo0pbA">
         <ownedComment xmi:id="_ptlJ8B7tEeeR140udo0pbA" annotatedElement="_fVFsIB7tEeeR140udo0pbA">
-          <body>&quot;The device used to evaluate the characteristic such as the type of blood pressure cuff used on a patient.&quot; - HL7 CIMI, EvaluationResultTopic.device&#xD;
+          <body>&quot;Identifies the Equipment Instance (e.g., Analyzer, Analyzer module, group of Analyzers, etc.) responsible for the production of the observation....&quot; - HL7 Version 2.8, OBX-18.&#xD;
+&quot;The device used to evaluate the characteristic such as the type of blood pressure cuff used on a patient.&quot; - HL7 CIMI, EvaluationResultTopic.device&#xD;
 &quot;The device used to generate the observation data.&quot; - HL7 FHIR, Observation.device</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="CommonProduct.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/CommonProduct/DeviceInstance?"/>
@@ -1147,19 +1149,23 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       </ownedAttribute>
       <ownedAttribute xmi:id="_l45L8BcpEeOL3Nw-k5HkNw" name="interpretationEvent" visibility="public" type="_eWYXgO3MEeCFZuasLkncZQ" association="_l4390BcpEeOL3Nw-k5HkNw">
         <ownedComment xmi:id="_ITTgQJnEEeOY14GUwwUH5Q" annotatedElement="_l45L8BcpEeOL3Nw-k5HkNw">
-          <body>Pointer to an assessment of the value or result of the Clinical Observation.&#xD;
+          <body>Pointer to a clinical judgement or assessment concerning the significance of the value or result of the Clinical Observation. For chemistry tests, provides an indication (often automated) of the result, based upon &quot;normal&quot; values as indicated by the reference range. Examples include High, Low, Critically High, Critically Low, etc. For antibiotic sensitivity tests, provides an indication of the susceptibility of the identified organism to the test antibiotic. Possible values include: Intermediate, Moderately Susceptible, Resistant, Susceptible.  In addition, Not Tested may occasionally be used when an antibiotic that would commonly be tested was not for some reason.&#xD;
+&#xD;
 &quot;One or more codes specifying a categorical assessment of the observation value, such as &quot;Normal&quot;, &quot;Abnormal&quot;, &quot;Positive&quot;, &quot;Negative&quot;, &quot;Resistant&quot;, &quot;Susceptible&quot;, etc....&quot; - HL7 Version 2.8, OBX-8&#xD;
-&quot;The assessment made based on the result of the observation. Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag.&quot; - HL7 FHIR, Observation.interpretation&#xD;
-&quot;A clinical judgment concerning the significance or impact of the finding with respect to its subject (e.g., the patient).&quot; - HL7 CIMI, FindingTopic.interpretation</body>
+&quot;A clinical judgment concerning the significance or impact of the finding with respect to its subject (e.g., the patient).&quot; - HL7 CIMI, FindingTopic.interpretation&#xD;
+&quot;The assessment made based on the result of the observation. Intended as a simple compact code often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result. Otherwise known as abnormal flag.&quot; - HL7 FHIR, Observation.interpretation</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l46aERcpEeOL3Nw-k5HkNw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l46aEBcpEeOL3Nw-k5HkNw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nbH1QlaeEd6rJ7jpZ7LBFg" name="method" visibility="public">
         <ownedComment xmi:id="_uy5ucH-0EeOzENpLs8HIcg" annotatedElement="_nbH1QlaeEd6rJ7jpZ7LBFg">
-          <body>Provides additional detail about the means or technique used to ascertain the Observation.  The method used may affect how the observation value is interpreted.&#xD;
+          <body>Provides additional detail about the means or technique used to ascertain the Observation. The method used may affect how the observation value is interpreted.&#xD;
+&quot;The method or procedure by which an observation was obtained when the sending system wishes to distinguish among one measurement obtained by different methods and the distinction is not implicit in the test ID.  Chemistry laboratories do not usually distinguish between two different methods used to measure a given serum constituent (e.g., serum potassium) as part of the test name....&quot; - HL7 Version 2.8, OBX-17.&#xD;
+&quot;The means by which a measurement, evaluation, or assessment was made.&quot; - HL7 CIMI, EvaluationResultTopic.method&#xD;
 &quot;Indicates the mechanism used to perform the observation.&quot; - HL7 FHIR, Observation.method.&#xD;
-&quot;The means by which a measurement, evaluation, or assessment was made.&quot; - HL7 CIMI, EvaluationResultTopic.method</body>
+&#xD;
+Note that for laboratory observations, the aerobic condition of the culture is included in this concept. Note also that this property can repeat.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nbH1Q1aeEd6rJ7jpZ7LBFg" value="*"/>
@@ -1196,6 +1202,7 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
         <ownedComment xmi:id="_4FD8oPDOEeO_Te8vAbT_YQ" annotatedElement="_LYGwEPDOEeO_Te8vAbT_YQ">
           <body>Pointer to a set of normal or recommended ranges that can be used to compare against the value of the actual observation or test results.&#xD;
 &quot;When the observation quantifies the amount of a toxic substance, then the upper limit of the range identifies the toxic limit.  If the observation quantifies a drug, the lower limits identify the lower therapeutic bounds and the upper limits represent the upper therapeutic bounds above which toxic side effects are common.&quot; - HL7 Version 2.8, OBX-7&#xD;
+&quot;Contains the nature of the abnormal test. Refer to HL7 Table 0080 - Nature of abnormal testing for valid values. As many of the codes as apply may be included, separated by repeat delimiters.&quot; - HL7 Version 2.8, OBX.10&#xD;
 &quot;The range for the measurement.&quot; - HL7 CIMI, EvaluationResultTopic.referenceRange&#xD;
 &quot;Guidance on how to interpret the value by comparison to a normal or recommended range.&quot; - HL7 FHIR, Observation.referenceRange</body>
         </ownedComment>

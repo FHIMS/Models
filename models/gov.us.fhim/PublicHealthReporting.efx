@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.6-->
+<!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
@@ -907,7 +907,7 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_PUIMcdAtEeGSWKtsWhX3ww" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_PUIzgNAtEeGSWKtsWhX3ww" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_PUIzgdAtEeGSWKtsWhX3ww" visible="false" type="StructureCompartment"/>
-            <element xmi:type="uml:Class" href="Common.efx#_rr-pACaOEdyiJKb4ZqIfnw?FHIM/Common/Procedure?"/>
+            <element xmi:type="uml:Class" href="Common.efx#_rr-pACaOEdyiJKb4ZqIfnw?FHIM/Common/ActionPerformed?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PUFwMdAtEeGSWKtsWhX3ww" x="-317" y="22190"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_VJ0NcNAtEeGSWKtsWhX3ww" element="_VJv8ANAtEeGSWKtsWhX3ww" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="12303359" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -2170,7 +2170,7 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_6SJPoLZ-EeGWl-7OlqBMDw" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_6SJPobZ-EeGWl-7OlqBMDw" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_6SJ2sLZ-EeGWl-7OlqBMDw" visible="false" type="StructureCompartment"/>
-            <element xmi:type="uml:Class" href="Lab.efx#_NglJMH8AEd-6KMbY3gBFOQ?FHIM/Lab/ReportableResult?"/>
+            <element xmi:type="uml:Class" href="Lab.efx#_NglJMH8AEd-6KMbY3gBFOQ?FHIM/Lab/LaboratoryObservation?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6SGzYbZ-EeGWl-7OlqBMDw" x="34553" y="18386"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_6T9EwMw7EeGPzLWdRElHZQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -2226,7 +2226,7 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_7EsS80C4EeO2aaQpQxRerg" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_7EsS9EC4EeO2aaQpQxRerg" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_7Es6AEC4EeO2aaQpQxRerg" visible="false" type="StructureCompartment"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7ErE0UC4EeO2aaQpQxRerg" x="3170" y="10144"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7ErE0UC4EeO2aaQpQxRerg" x="2219" y="10144"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_J8GzIEC5EeO2aaQpQxRerg" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_J8HaMEC5EeO2aaQpQxRerg" type="ImageCompartment">
@@ -2657,104 +2657,6 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
             <element xmi:type="uml:Association" href="Common.efx#_kLK5sN39Ed6yatlejfcw_g?FHIM/Common/diagnosisList_diagnosis?"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ugkK4bZxEeGWl-7OlqBMDw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
           </edges>
-          <edges xmi:type="umlnotation:UMLConnector" xmi:id="_6UhFcMw7EeGPzLWdRElHZQ" source="_6T9EwMw7EeGPzLWdRElHZQ" target="_cAySILPaEeGd84AyH8JgAw" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
-            <children xmi:type="notation:DecorationNode" xmi:id="_6Ui6oMw7EeGPzLWdRElHZQ" visible="false" type="NameLabel">
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_6Ui6osw7EeGPzLWdRElHZQ" type="Stereotype"/>
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_6UjhsMw7EeGPzLWdRElHZQ" type="Name"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6Ui6ocw7EeGPzLWdRElHZQ" y="-186"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_6Ujhscw7EeGPzLWdRElHZQ" visible="false" type="ToMultiplicityLabel">
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_6UkIwMw7EeGPzLWdRElHZQ" type="ToMultiplicity"/>
-              <element xmi:type="uml:Property" href="Lab.efx#_420A62FD03B64586BC410092?FHIM/Lab/specimenCollectionEvent_collectingLocation/%3CProperty%3E?"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_6Ujhssw7EeGPzLWdRElHZQ" y="396"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_6UkIwcw7EeGPzLWdRElHZQ" type="ToRoleLabel">
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_6UkIw8w7EeGPzLWdRElHZQ" type="ToRole"/>
-              <element xmi:type="uml:Property" href="Lab.efx#_420A62FD03B64586BC410092?FHIM/Lab/specimenCollectionEvent_collectingLocation/%3CProperty%3E?"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_6UkIwsw7EeGPzLWdRElHZQ" y="-397"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_6UkIxMw7EeGPzLWdRElHZQ" type="FromMultiplicityLabel">
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_6Ukv0Mw7EeGPzLWdRElHZQ" type="FromMultiplicity"/>
-              <element xmi:type="uml:Property" href="Lab.efx#_420A62FD03B64586BC410090?FHIM/Lab/SpecimenCollectionEvent/collectingLocation?"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_6UkIxcw7EeGPzLWdRElHZQ" y="396"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_6Ukv0cw7EeGPzLWdRElHZQ" type="FromRoleLabel">
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_6Ukv08w7EeGPzLWdRElHZQ" type="FromRole"/>
-              <element xmi:type="uml:Property" href="Lab.efx#_420A62FD03B64586BC410090?FHIM/Lab/SpecimenCollectionEvent/collectingLocation?"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_6Ukv0sw7EeGPzLWdRElHZQ" y="-397"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_6UlW4Mw7EeGPzLWdRElHZQ" visible="false" type="ToQualifierLabel">
-              <children xmi:type="notation:SemanticListCompartment" xmi:id="_6UlW4sw7EeGPzLWdRElHZQ" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Lab.efx#_420A62FD03B64586BC410092?FHIM/Lab/specimenCollectionEvent_collectingLocation/%3CProperty%3E?"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_6UlW4cw7EeGPzLWdRElHZQ" y="-186"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_6UlW48w7EeGPzLWdRElHZQ" visible="false" type="FromQualifierLabel">
-              <children xmi:type="notation:SemanticListCompartment" xmi:id="_6UlW5cw7EeGPzLWdRElHZQ" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Lab.efx#_420A62FD03B64586BC410090?FHIM/Lab/SpecimenCollectionEvent/collectingLocation?"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_6UlW5Mw7EeGPzLWdRElHZQ" y="-186"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_6Ul98Mw7EeGPzLWdRElHZQ" visible="false" type="ToConstraintLabel">
-              <children xmi:type="notation:ListCompartment" xmi:id="_6UmlAMw7EeGPzLWdRElHZQ" type="ToConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Lab.efx#_420A62FD03B64586BC410092?FHIM/Lab/specimenCollectionEvent_collectingLocation/%3CProperty%3E?"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_6Ul98cw7EeGPzLWdRElHZQ" y="1058"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_6UmlAcw7EeGPzLWdRElHZQ" visible="false" type="FromConstraintLabel">
-              <children xmi:type="notation:ListCompartment" xmi:id="_6UmlA8w7EeGPzLWdRElHZQ" type="FromConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Lab.efx#_420A62FD03B64586BC410090?FHIM/Lab/SpecimenCollectionEvent/collectingLocation?"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_6UmlAsw7EeGPzLWdRElHZQ" y="1058"/>
-            </children>
-            <element xmi:type="uml:Association" href="Lab.efx#_420A62FD03B64586BC3F0275?FHIM/Lab/specimenCollectionEvent_collectingLocation?"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6UhFccw7EeGPzLWdRElHZQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-          </edges>
-          <edges xmi:type="umlnotation:UMLConnector" xmi:id="_IeuhYMw8EeGPzLWdRElHZQ" source="_IebmcMw8EeGPzLWdRElHZQ" target="_6T9EwMw7EeGPzLWdRElHZQ" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
-            <children xmi:type="notation:DecorationNode" xmi:id="_IevIcMw8EeGPzLWdRElHZQ" visible="false" type="NameLabel">
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_IevIcsw8EeGPzLWdRElHZQ" type="Stereotype"/>
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_IevvgMw8EeGPzLWdRElHZQ" type="Name"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IevIccw8EeGPzLWdRElHZQ" y="-186"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_Ievvgcw8EeGPzLWdRElHZQ" visible="false" type="ToMultiplicityLabel">
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_IewWkMw8EeGPzLWdRElHZQ" type="ToMultiplicity"/>
-              <element xmi:type="uml:Property" href="Lab.efx#_W1_tlMzCEeCMF_3VBil7Gw?FHIM/Lab/labTestPromise_specimenCollectionEvent/%3CProperty%3E?"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_Ievvgsw8EeGPzLWdRElHZQ" y="396"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_IewWkcw8EeGPzLWdRElHZQ" type="ToRoleLabel">
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_IewWk8w8EeGPzLWdRElHZQ" type="ToRole"/>
-              <element xmi:type="uml:Property" href="Lab.efx#_W1_tlMzCEeCMF_3VBil7Gw?FHIM/Lab/labTestPromise_specimenCollectionEvent/%3CProperty%3E?"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_IewWksw8EeGPzLWdRElHZQ" y="-397"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_Iew9oMw8EeGPzLWdRElHZQ" type="FromMultiplicityLabel">
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_Iew9osw8EeGPzLWdRElHZQ" type="FromMultiplicity"/>
-              <element xmi:type="uml:Property" href="Lab.efx#_W1_tkczCEeCMF_3VBil7Gw?FHIM/Lab/LabTestPromise/specimenCollectionEvent?"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_Iew9ocw8EeGPzLWdRElHZQ" y="396"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_Iew9o8w8EeGPzLWdRElHZQ" type="FromRoleLabel">
-              <children xmi:type="notation:BasicDecorationNode" xmi:id="_Iew9pcw8EeGPzLWdRElHZQ" type="FromRole"/>
-              <element xmi:type="uml:Property" href="Lab.efx#_W1_tkczCEeCMF_3VBil7Gw?FHIM/Lab/LabTestPromise/specimenCollectionEvent?"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_Iew9pMw8EeGPzLWdRElHZQ" y="-397"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_Iew9psw8EeGPzLWdRElHZQ" visible="false" type="ToQualifierLabel">
-              <children xmi:type="notation:SemanticListCompartment" xmi:id="_Iexkscw8EeGPzLWdRElHZQ" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Lab.efx#_W1_tlMzCEeCMF_3VBil7Gw?FHIM/Lab/labTestPromise_specimenCollectionEvent/%3CProperty%3E?"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_IexksMw8EeGPzLWdRElHZQ" y="-186"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_Iexkssw8EeGPzLWdRElHZQ" visible="false" type="FromQualifierLabel">
-              <children xmi:type="notation:SemanticListCompartment" xmi:id="_IexktMw8EeGPzLWdRElHZQ" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Lab.efx#_W1_tkczCEeCMF_3VBil7Gw?FHIM/Lab/LabTestPromise/specimenCollectionEvent?"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_Iexks8w8EeGPzLWdRElHZQ" y="-186"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_Iexktcw8EeGPzLWdRElHZQ" visible="false" type="ToConstraintLabel">
-              <children xmi:type="notation:ListCompartment" xmi:id="_Iexkt8w8EeGPzLWdRElHZQ" type="ToConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Lab.efx#_W1_tlMzCEeCMF_3VBil7Gw?FHIM/Lab/labTestPromise_specimenCollectionEvent/%3CProperty%3E?"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_Iexktsw8EeGPzLWdRElHZQ" y="1058"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_IeyLwMw8EeGPzLWdRElHZQ" visible="false" type="FromConstraintLabel">
-              <children xmi:type="notation:ListCompartment" xmi:id="_IeyLwsw8EeGPzLWdRElHZQ" type="FromConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Lab.efx#_W1_tkczCEeCMF_3VBil7Gw?FHIM/Lab/LabTestPromise/specimenCollectionEvent?"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_IeyLwcw8EeGPzLWdRElHZQ" y="1058"/>
-            </children>
-            <element xmi:type="uml:Association" href="Lab.efx#_W1_tkMzCEeCMF_3VBil7Gw?FHIM/Lab/labTestPromise_specimenCollectionEvent?"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IeuhYcw8EeGPzLWdRElHZQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-          </edges>
           <edges xmi:type="umlnotation:UMLConnector" xmi:id="_IeyLw8w8EeGPzLWdRElHZQ" source="_IebmcMw8EeGPzLWdRElHZQ" target="_6SGzYLZ-EeGWl-7OlqBMDw" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_IeyLxcw8EeGPzLWdRElHZQ" visible="false" type="NameLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_Ieyy0Mw8EeGPzLWdRElHZQ" type="Stereotype"/>
@@ -2971,7 +2873,7 @@ The date that the Med Watch report was created.  Medwatch 3500 form question B.4
               <layoutConstraint xmi:type="notation:Location" xmi:id="_CbcuMR92EeWsloQr5xbziw" y="1058"/>
             </children>
             <element xmi:type="uml:Association" href="Encounter.efx#_Cao14B92EeWsloQr5xbziw?FHIM/Encounter/encounterEvent_reportableCondition?"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CbYcwR92EeWsloQr5xbziw" points="[1063, 725, 1130, -4624]$[1063, 4664, 1130, -685]"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CbYcwR92EeWsloQr5xbziw" points="[588, 725, -457, -4413]$[588, 4664, -457, -474]"/>
           </edges>
         </contents>
       </eAnnotations>
@@ -3176,7 +3078,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_UfgzYQgsEeKpi5AGmkKVpg" visible="false" type="OperationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_UfgzYggsEeKpi5AGmkKVpg" visible="false" type="SignalCompartment"/>
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_UfhacAgsEeKpi5AGmkKVpg" visible="false" type="StructureCompartment"/>
-            <element xmi:type="uml:Class" href="Person.efx#_420A62FD03B6418A501902C7?FHIM/Person/EmployedPerson?"/>
+            <element xmi:type="uml:Class" href="Person.efx#_420A62FD03B6418A501902C7?FHIM/Person/Worker?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UfeXIQgsEeKpi5AGmkKVpg" x="13631" y="-4121"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_fxznAAgsEeKpi5AGmkKVpg" element="_fxxKwAgsEeKpi5AGmkKVpg" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -3345,12 +3247,12 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_UfrLcQgsEeKpi5AGmkKVpg" type="FromMultiplicityLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_UfrygAgsEeKpi5AGmkKVpg" type="FromMultiplicity"/>
-              <element xmi:type="uml:Property" href="Person.efx#_420A62FD03B645633E3702BB?FHIM/Person/Person/asEmployee?"/>
+              <element xmi:type="uml:Property" href="Person.efx#_420A62FD03B645633E3702BB?FHIM/Person/Person/asWorker?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_UfrLcggsEeKpi5AGmkKVpg" y="396"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_UfrygQgsEeKpi5AGmkKVpg" type="FromRoleLabel">
               <children xmi:type="notation:BasicDecorationNode" xmi:id="_UfrygwgsEeKpi5AGmkKVpg" type="FromRole"/>
-              <element xmi:type="uml:Property" href="Person.efx#_420A62FD03B645633E3702BB?FHIM/Person/Person/asEmployee?"/>
+              <element xmi:type="uml:Property" href="Person.efx#_420A62FD03B645633E3702BB?FHIM/Person/Person/asWorker?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_UfrygggsEeKpi5AGmkKVpg" y="-397"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_UfsZkAgsEeKpi5AGmkKVpg" visible="false" type="ToQualifierLabel">
@@ -3360,7 +3262,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_UftAoAgsEeKpi5AGmkKVpg" visible="false" type="FromQualifierLabel">
               <children xmi:type="notation:SemanticListCompartment" xmi:id="_UftAoggsEeKpi5AGmkKVpg" type="QualifierCompartment"/>
-              <element xmi:type="uml:Property" href="Person.efx#_420A62FD03B645633E3702BB?FHIM/Person/Person/asEmployee?"/>
+              <element xmi:type="uml:Property" href="Person.efx#_420A62FD03B645633E3702BB?FHIM/Person/Person/asWorker?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_UftAoQgsEeKpi5AGmkKVpg" y="-186"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_UftAowgsEeKpi5AGmkKVpg" visible="false" type="ToConstraintLabel">
@@ -3370,7 +3272,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_UftnsQgsEeKpi5AGmkKVpg" visible="false" type="FromConstraintLabel">
               <children xmi:type="notation:ListCompartment" xmi:id="_UfuOwAgsEeKpi5AGmkKVpg" type="FromConstraintCompartment"/>
-              <element xmi:type="uml:Property" href="Person.efx#_420A62FD03B645633E3702BB?FHIM/Person/Person/asEmployee?"/>
+              <element xmi:type="uml:Property" href="Person.efx#_420A62FD03B645633E3702BB?FHIM/Person/Person/asWorker?"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_UftnsggsEeKpi5AGmkKVpg" y="1058"/>
             </children>
             <element xmi:type="uml:Association" href="Person.efx#_420A62FD03B645633E3601CF?FHIM/Person/person_asEmployee?"/>
@@ -3636,7 +3538,7 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
         </ownedAttribute>
         <ownedAttribute xmi:id="_j8UNQAioEeKmtKel3KkMBA" name="employmentAtTimeOfExposure" visibility="public" association="_j8Qi4AioEeKmtKel3KkMBA">
           <eAnnotations xmi:id="_kMaKgBF2EeKu1LfuaJwFHw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
-          <type xmi:type="uml:Class" href="Person.efx#_420A62FD03B6418A501902C7?FHIM/Person/EmployedPerson?"/>
+          <type xmi:type="uml:Class" href="Person.efx#_420A62FD03B6418A501902C7?FHIM/Person/Worker?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j8WCcAioEeKmtKel3KkMBA" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j8VbYAioEeKmtKel3KkMBA"/>
         </ownedAttribute>
