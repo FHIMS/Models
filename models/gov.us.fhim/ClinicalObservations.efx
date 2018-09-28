@@ -1147,6 +1147,20 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ocTYw4FxEeiFweA6NKJQOg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ocTYwoFxEeiFweA6NKJQOg"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_aEul0LNvEeioC_3IyVLSUA" name="exceptionValue" visibility="public">
+        <ownedComment xmi:id="_aEul0bNvEeioC_3IyVLSUA" annotatedElement="_aEul0LNvEeioC_3IyVLSUA">
+          <body>Indicates the reason why a test was unable to be performed.  It may indicate that the quantity of specimen was insufficient, that the specimen was contaminated, that the specimen is inappropriate for the kind of test ordered, etc.&#xD;
+Note that when the reason that a test could not be performed is due to some aspect of the specimen, the specimen appropriateness and/or speciment condition should be used instead of this property.&#xD;
+&#xD;
+&quot;As best practice in the future, a combination of SPM-21 and SPM-24 should be used to provide the most detailed coded information about the specimen reject reason and the specific specimen condition, if applicable. Use of SPM-21 is the ideal way to communicate when a test order is canceled due to specimen rejection as it codifies the reason for cancellation. Because disposition of a specimen is a CLIA requirement this reason needs to be retained and displayed in the patient record and incorporated into any type of report regardless of the medium of that report (paper, displayed on screen). The IG has identified HL70490 table as the value set for SPM-21, though the content needs improvement. The SNOMED finding hierarchy also has some appropriate terms, but is not complete. Future work on these vocabularies will expand the content. Use of SPM-24 can be very useful for communicating specimen condition information that does not meet the laboratory’s standard for acceptability (HL70493). The SNOMED finding hierarchy also has some appropriate terms, but is not complete. Future work on these vocabularies will expand the content. If a laboratory system cannot use SPM-21 and SPM-24, then this information shall be communicated using OBX-5 and NTE segment(s)&quot;&#xD;
+&#xD;
+&quot;Contains the value observed by the observation producer....  It is not a required field because some systems will report only the Interpretation Codes.... This field may repeat for multipart, single answer results.&quot; - HL7 Version 2.8, OBX-5.&#xD;
+&quot;If the result value is missing, a code explaining the reason the result cannot be provided.&quot; - HL7 CIMI, RecordedContext.exceptionValue</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aEul0rNvEeioC_3IyVLSUA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aEul07NvEeioC_3IyVLSUA"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_l45L8BcpEeOL3Nw-k5HkNw" name="interpretationEvent" visibility="public" type="_eWYXgO3MEeCFZuasLkncZQ" association="_l4390BcpEeOL3Nw-k5HkNw">
         <ownedComment xmi:id="_ITTgQJnEEeOY14GUwwUH5Q" annotatedElement="_l45L8BcpEeOL3Nw-k5HkNw">
           <body>Pointer to a clinical judgement or assessment concerning the significance of the value or result of the Clinical Observation. For chemistry tests, provides an indication (often automated) of the result, based upon &quot;normal&quot; values as indicated by the reference range. Examples include High, Low, Critically High, Critically Low, etc. For antibiotic sensitivity tests, provides an indication of the susceptibility of the identified organism to the test antibiotic. Possible values include: Intermediate, Moderately Susceptible, Resistant, Susceptible.  In addition, Not Tested may occasionally be used when an antibiotic that would commonly be tested was not for some reason.&#xD;
@@ -1428,4 +1442,5 @@ Note that for laboratory observations, the aerobic condition of the culture is i
   <Default:Documentation xmi:id="_JKN17oFxEeiFweA6NKJQOg" base_Comment="_JKN16YFxEeiFweA6NKJQOg"/>
   <Default:Documentation xmi:id="_djgDNIFxEeiFweA6NKJQOg" base_Comment="_djgDMYFxEeiFweA6NKJQOg"/>
   <Default:Documentation xmi:id="_z0OTQIFxEeiFweA6NKJQOg" base_Comment="_z0FJUIFxEeiFweA6NKJQOg"/>
+  <Default:Documentation xmi:id="_aEvM4LNvEeioC_3IyVLSUA" base_Comment="_aEul0bNvEeioC_3IyVLSUA"/>
 </xmi:XMI>
