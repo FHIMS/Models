@@ -268,7 +268,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_8Flaysp_EeC9Pb3leltpqQ" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_8FvLwMp_EeC9Pb3leltpqQ" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_8FvLwsp_EeC9Pb3leltpqQ" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8Flawsp_EeC9Pb3leltpqQ" x="57694" y="13631"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8Flawsp_EeC9Pb3leltpqQ" x="58962" y="13631"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_M_eJAMqAEeC9Pb3leltpqQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" lineColor="3342489" showParent="Name" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_M_eJA8qAEeC9Pb3leltpqQ" type="ImageCompartment">
@@ -466,7 +466,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_ZjBEMUuxEeKeIb_h9Qm4xw" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_ZjBrQEuxEeKeIb_h9Qm4xw" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_ZjBrQUuxEeKeIb_h9Qm4xw" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Zi0P4UuxEeKeIb_h9Qm4xw" x="52622" y="13631"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Zi0P4UuxEeKeIb_h9Qm4xw" x="52305" y="13631"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_4M8tIKuZEeiie9l4furyVQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_4M8tIquZEeiie9l4furyVQ" type="ImageCompartment">
@@ -4177,6 +4177,14 @@ Note that we need to model more details regarding chain of custody in general an
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WDGD8byjEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WDGD8LyjEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_DcIQYMTKEeiX_7Zz4t6LYQ" name="referenceRange" visibility="public">
+        <ownedComment xmi:id="_DcIQYcTKEeiX_7Zz4t6LYQ" annotatedElement="_DcIQYMTKEeiX_7Zz4t6LYQ">
+          <body>Anitbiotic Sensitivity observations generally do not have a reference range, so the inherited reference range is being constrained out.  FHIR and CIMI both are designed so any Observation can have a reference range, but generally only numeric observations use reference ranges.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="ClinicalObservations.efx#_3XW7MGH_EeCHAoM78Lf2xA?FHIM/ClinicalObservation/ReferenceRange?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DcIQYsTKEeiX_7Zz4t6LYQ"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DcIQY8TKEeiX_7Zz4t6LYQ"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_IJ7fgKugEeiie9l4furyVQ" name="LabTestPerformed">
       <generalization xmi:id="_P6SdcKugEeiie9l4furyVQ">
@@ -4354,4 +4362,5 @@ Note that we need to model more details regarding chain of custody in general an
   <Default:Documentation xmi:id="_KiF-YLNvEeioC_3IyVLSUA" base_Comment="_KiEJMLNvEeioC_3IyVLSUA"/>
   <Default:Documentation xmi:id="_LDL5QLNvEeioC_3IyVLSUA" base_Comment="_LDLSMLNvEeioC_3IyVLSUA"/>
   <Default:Documentation xmi:id="_MEkdwLNvEeioC_3IyVLSUA" base_Comment="_MEjPoLNvEeioC_3IyVLSUA"/>
+  <Default:Documentation xmi:id="_DcIQZMTKEeiX_7Zz4t6LYQ" base_Comment="_DcIQYcTKEeiX_7Zz4t6LYQ"/>
 </xmi:XMI>
