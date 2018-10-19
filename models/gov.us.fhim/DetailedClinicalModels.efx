@@ -245,7 +245,7 @@ This class represents a Observation Clinical Statement wherein the Gestational A
         <ownedRule xmi:id="_VwI4YHTrEeiiueO8fslTJg" name="ResultMustBePositiveAndInWeeks">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_VwI4YXTrEeiiueO8fslTJg">
             <language>OCL</language>
-            <body>self.value.unit.code = 'wk' and self.value.value.literal > 0.0 and self.value.value.literal &lt;= 40.0&#xD;
+            <body>self.value.unit.code = 'wk' and self.value.value.literal > 0.0 and self.value.value.literal &lt;= 50.0&#xD;
 -- need to verify the lower and upper limits</body>
           </specification>
         </ownedRule>
