@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.6-->
+<!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
@@ -244,7 +244,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_WRubMcg5EeSfy4Nv5qDtdw" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_WRvCQMg5EeSfy4Nv5qDtdw" visible="false" type="StructureCompartment"/>
           <element xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WRo7ocg5EeSfy4Nv5qDtdw" x="16484" y="-5389"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WRo7ocg5EeSfy4Nv5qDtdw" x="16484" y="-6023"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_pPm1oN-fEeSLwbHBnRFGvw" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14869218" transparency="0" lineColor="11842740" lineWidth="1" showParent="Name" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_pPncsN-fEeSLwbHBnRFGvw" type="ImageCompartment">
@@ -1457,6 +1457,14 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JmYswN79EeSx5bpydj26Wg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JmYFsN79EeSx5bpydj26Wg"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_U0-Z0NPkEeiPFvyVFwJcLg" name="asserter" visibility="public">
+        <ownedComment xmi:id="_ZcvPINPkEeiPFvyVFwJcLg" annotatedElement="_U0-Z0NPkEeiPFvyVFwJcLg">
+          <body>&quot;The source of the information about the allergy that is recorded.&quot; - HL7 FHIR, AllergyIntolerance.asserter</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#_420A62FD03B6418CF92600E1?FHIM/Common/Participation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YZb_EdPkEeiPFvyVFwJcLg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YZb_ENPkEeiPFvyVFwJcLg"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_C_cVILtBEeeo-pbyiB8NZw" name="bodySite" visibility="public">
         <ownedComment xmi:id="_SsxwsLtBEeeo-pbyiB8NZw" annotatedElement="_C_cVILtBEeeo-pbyiB8NZw">
           <body>&quot;The anatomical location where this condition manifests itself.&quot; - HL7 FHIR, Condition.bodySite</body>
@@ -1503,7 +1511,8 @@
           <body>&quot;The clinical status of the condition.&quot; - HL7 FHIR, Condition.clinicalStatus. Possible values include: Active; Recurrence; Inactive; Remission; Resolved.&#xD;
 &quot;Indicates the verification status for the allergy&quot; - HL7 Version 2.8, IAM-17. HL7 Version 2 has the following suggested values (table 438): Unconfirmed; Pending; Suspect; Confirmed or verified; Confirmed but inactive; Erroneous; Doubt raised.&#xD;
 &quot;Contains the verification status of a problem (e.g., confirmed, differential, provisional, rule-out, etc.).&quot; - HL7 Version 2.8, PRB-13. Note that HL7does not provide any suggested values for this code.&#xD;
-&quot;The physiological state of the condition with respect to whether it is actually of concern. Values may typicall include: Active, Relapse, Remission, Resolved, Confirmed, Ruled out, Unknown.&quot; - HL7 CIMI, BaseAssertion.clinicalStatus</body>
+&quot;The physiological state of the condition with respect to whether it is actually of concern. Values may typicall include: Active, Relapse, Remission, Resolved, Confirmed, Ruled out, Unknown.&quot; - HL7 CIMI, BaseAssertion.clinicalStatus&#xD;
+&quot;The clinical status of the allergy or intolerance.&quot; - HL7 FHIR, AllergyIntolerance.clinicalStatus. Possible values are Active, Inactive, Resolved.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_keiMMYgqEeedq9AzSGovhA" value="1"/>
@@ -1576,12 +1585,9 @@
           <body>Date when this particular Condition first manifested itself or was confirmed via testing if it had not yet manifested itself. Note that this date may be inprecise (e.g., &quot;sometime in 2006&quot;).&#xD;
 &quot;Contains the actual date of the first reaction.&quot; - HL7 Version 2.8, IAM-11&#xD;
 &quot;Contains the date/time when the problem began.&quot; - HL7 Version 2.8, PRB-16.&#xD;
-&quot;Estimated or actual date or date-time the condition began, in the opinion of the clinician.&quot; - HL7 FHIR, Condition.onset[x]&#xD;
-Note that FHIR can be a dateTime, Age, Period, Range, or a string. FHIM currently only supports a dateTime.&#xD;
-&quot;Either the age of onset, range of approximate age or descriptive string can be recorded. For conditions with multiple occurrences, this describes the first known occurrence.&quot; - HL7 FHIR, FamilyMemberHistory.condition.onset[x]&#xD;
-Note that in FHIR the datatype can be a Age, Range, Period, or string. FHIM currently models this as a date.&#xD;
-&quot;Estimated or actual date, date-time, or age when allergy or intolerance was identified.&quot; - HL7 FHIR, AllergyIntolerance.onset[x]&#xD;
-Note that FHIR can be a dateTime, Age, Period, Range, or a string. FHIM currently only supports a dateTime.</body>
+&quot;Estimated or actual date or date-time the condition began, in the opinion of the clinician.&quot; - HL7 FHIR, Condition.onset[x]. Note that in FHIR the datatype can be a dateTime, Age, Period, Range, or a string; FHIM currently only supports a dateTime, or a string using the dateOfOnsetText property.&#xD;
+&quot;Either the age of onset, range of approximate age or descriptive string can be recorded. For conditions with multiple occurrences, this describes the first known occurrence.&quot; - HL7 FHIR, FamilyMemberHistory.condition.onset[x]. Note that in FHIR the datatype can be a Age, Range, Period, or string; FHIM currently only supports a dateTime, or a string using the dateOfOnsetText property.&#xD;
+&quot;Estimated or actual date, date-time, or age when allergy or intolerance was identified.&quot; - HL7 FHIR, AllergyIntolerance.onset[x]. Note that in FHIR the datatype can be a dateTime, Age, Period, Range, or a string; FHIM currently only supports a dateTime, or a string using the dateOfOnsetText property.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hybbskUXEeCUY8hq_icSiw" value="1"/>
@@ -1608,7 +1614,8 @@ Note that FHIR can be a dateTime, Age, Period, Range, or a string. FHIM currentl
       </ownedAttribute>
       <ownedAttribute xmi:id="_iNHSEbtBEeeo-pbyiB8NZw" name="encounter" visibility="public" association="_iNHSELtBEeeo-pbyiB8NZw">
         <ownedComment xmi:id="_k5QvQLtBEeeo-pbyiB8NZw" annotatedElement="_iNHSEbtBEeeo-pbyiB8NZw">
-          <body>&quot;Encounter during which the condition was first asserted.&quot; - HL7 FHIR, Condition.context</body>
+          <body>&quot;Encounter during which the condition was first asserted.&quot; - HL7 FHIR, Condition.context&#xD;
+&quot;The encounter when the allergy or intolerance was asserted.&quot; - HL7 FHIR, AllergyIntolerance.encounter</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Encounter.efx#_420A62FD03B64213F5B40316?FHIM/Encounter/EncounterEvent?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iNRDEbtBEeeo-pbyiB8NZw" value="1"/>
@@ -1637,7 +1644,7 @@ Note that while the datatype for this concept should likely be a code, it is cur
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LpfB4MRUEeGhI5Xb1K4S5w" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lpea0MRUEeGhI5Xb1K4S5w"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_Zr0aUHiaEd-xd69YcOIcPA" name="healthConcern" visibility="public">
+      <ownedAttribute xmi:id="_Zr0aUHiaEd-xd69YcOIcPA" name="kind" visibility="public">
         <ownedComment xmi:id="_hvLOAAMZEeC6TLUcQZx_GQ" annotatedElement="_Zr0aUHiaEd-xd69YcOIcPA">
           <body>Identifies the Health Concern or Problem being described. This property is a code, which should come from an approved subset of SNOMED-CT, e.g., the &quot;VA-KP Problem List Subset.&quot;&#xD;
 Note that there is a separate class for Family History Concerns, which is a generalization of the Health Concern class. Therefore, this property should never contain a concept that has &quot;Family History Of&quot; built into it (i.e., a pre-coordinated concept), such as &quot;Family History of Diabetes&quot;. When such infomation needs to be conveyed, this property should contain &quot;Diabetes,&quot; and the FamiliyHistoryConcern subclass will indicate that the Diabetes was observed in a family member and will identify the relationship of that family member (e.g., Father, Mother) to the patient. Thus, in effect, we are creating a structure that explicity post-coordinates the concept of Family History Of with the concept of the disease that the family member had.&#xD;
@@ -1645,26 +1652,12 @@ Note that there is a separate class for Family History Concerns, which is a gene
 &quot;Identifies the problem. This is the identifier from an institution's master list of problems.&quot; - HL7 Version 2.8, PRB-3&#xD;
 &quot;Category for the risk.&quot; - HL7 Care Plan Domain Analysis Model.&#xD;
 &quot;Identification of the condition, problem or diagnosis.&quot; - HL7 FHIR, Condition.code&#xD;
-&quot;The actual condition specified. Could be a coded condition (like MI or Diabetes) or a less specific string like 'cancer' depending on how much is known about the condition and the capabilities of the creating system.&quot; - HL7 FHIR, FamilyMemberHistory.condition.code</body>
+&quot;The actual condition specified. Could be a coded condition (like MI or Diabetes) or a less specific string like 'cancer' depending on how much is known about the condition and the capabilities of the creating system.&quot; - HL7 FHIR, FamilyMemberHistory.condition.code&#xD;
+&quot;Code for an allergy or intolerance statement (either a positive or a negated/excluded statement). This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., &quot;Latex&quot;), an allergy or intolerance condition (e.g., &quot;Latex allergy&quot;), or a negated/excluded code for a specific substance or class (e.g., &quot;No latex allergy&quot;) or a general or categorical negated statement (e.g., &quot;No known allergy&quot;, &quot;No known drug allergies&quot;). Note: the substance for a specific reaction may be different from the substance identified as the cause of the risk, but it must be consistent with it. For instance, it may be a more specific substance (e.g. a brand medication) or a composite product that includes the identified substance. It must be clinically safe to only process the 'code' and ignore the 'reaction.substance'. If a receiving system is unable to confirm that AllergyIntolerance.reaction.substance falls within the semantic scope of AllergyIntolerance.code, then the receiving system should ignore AllergyIntolerance.reaction.substance.&quot; - HL7 FHIR, AllergyIntolerance.code</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K6A_AbtBEeeo-pbyiB8NZw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K6A_ALtBEeeo-pbyiB8NZw"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_QejnwN-oEeSQwMSQTXiDlA">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(Problem)</body>
-        </defaultValue>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_OiGQQLtSEeeo-pbyiB8NZw" name="note" visibility="public">
-        <ownedComment xmi:id="_xkzBENVIEeeaHvV-nCCy9A" annotatedElement="_OiGQQLtSEeeo-pbyiB8NZw">
-          <body>&quot;Additional information about the Condition. This is a general notes/comments entry for description of the Condition, its diagnosis and prognosis.&quot; - HL7 FHIR, Condition.note&#xD;
-&quot;This property allows a non condition-specific note to the made about the related person. Ideally, the note would be in the condition property, but this is not always possible.&quot; - HL7 FHIR, FamilyMemberHistory.note&#xD;
-&quot;Additional narrative about the propensity for the Adverse Reaction, not captured in other fields.&quot; - HL7 FHIR, AllergyIntolerance.note</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642C044DB02ED?FHIM/Datatypes/Annotation?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e93fIbtSEeeo-pbyiB8NZw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e93fILtSEeeo-pbyiB8NZw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_juQn8A3gEeSr7IwJ9lGnGA" name="observation" visibility="public" association="_juQA4A3gEeSr7IwJ9lGnGA">
         <type xmi:type="uml:Class" href="ClinicalObservations.efx#_nbH1LVaeEd6rJ7jpZ7LBFg?FHIM/ClinicalObservation/ObservationStatement?"/>
@@ -1773,6 +1766,7 @@ Note that this property may be removed or altered based on the outcome of the Se
       <ownedAttribute xmi:id="_PfFWwIgqEeedq9AzSGovhA" name="verificationStatus" visibility="public">
         <ownedComment xmi:id="_PfPHwIgqEeedq9AzSGovhA" annotatedElement="_PfFWwIgqEeedq9AzSGovhA">
           <body>&quot;The verification status to support the clinical status of the condition.&quot; - HL7 FHIR, Condition.verificationStatus. Possibe values include: Provisional; Differential; Confirmed; Refuted; Entered-in-Error; Unknown.&#xD;
+&quot;Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified substance (including pharmaceutical product).&quot; - HL7 FHIR, AllergyIntolerance.verificationStatus. Possible values are Confirmed, Unconfirmed, Refuted, Entered In Error.&#xD;
 &quot;The state of knowledge concerning the presence of a putative condition; e.g., confirmed, refuted, provisional, suspected.&quot; - HL7 CIMI, BaseAssertion.verificationStatus</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
@@ -2226,6 +2220,6 @@ FHIR allows this property to be a boolean, Age, Range, date, or string. FHIM cur
   <Default:Documentation xmi:id="_RfdEBNVCEeeaHvV-nCCy9A" base_Comment="_RfdEAdVCEeeaHvV-nCCy9A"/>
   <Default:Documentation xmi:id="_eGCxFNVCEeeaHvV-nCCy9A" base_Comment="_eGCxEdVCEeeaHvV-nCCy9A"/>
   <Default:Documentation xmi:id="_tcU-lNVCEeeaHvV-nCCy9A" base_Comment="_tcU-kdVCEeeaHvV-nCCy9A"/>
-  <Default:Documentation xmi:id="_xkzBEdVIEeeaHvV-nCCy9A" base_Comment="_xkzBENVIEeeaHvV-nCCy9A"/>
   <Default:Documentation xmi:id="_H5bHcdVOEeeaHvV-nCCy9A" base_Comment="_H5bHcNVOEeeaHvV-nCCy9A"/>
+  <Default:Documentation xmi:id="_ZcvPIdPkEeiPFvyVFwJcLg" base_Comment="_ZcvPINPkEeiPFvyVFwJcLg"/>
 </xmi:XMI>
