@@ -970,14 +970,6 @@ Note that the latest build of FHIR has removed this concept.</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q87xYN-eEeSLwbHBnRFGvw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q87KUN-eEeSLwbHBnRFGvw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_zbR04N-eEeSLwbHBnRFGvw" name="onsetDateTime" visibility="public">
-        <ownedComment xmi:id="_32sQQN-eEeSLwbHBnRFGvw" annotatedElement="_zbR04N-eEeSLwbHBnRFGvw">
-          <body>&quot;Record of the date and/or time of the onset of the Reaction.&quot; - HL7 FHIR, AllergyIntolerance.reaction.onset</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2CSTYN-eEeSLwbHBnRFGvw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2CRsUN-eEeSLwbHBnRFGvw"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_Bdr1IN-eEeSLwbHBnRFGvw" name="exposureRoute" visibility="public">
         <ownedComment xmi:id="_Bdr1Id-eEeSLwbHBnRFGvw" annotatedElement="_Bdr1IN-eEeSLwbHBnRFGvw">
           <body>&quot;Identification of the route by which the subject was exposed to the substance.&quot; - HL7 FHIR, AllergyIntolerance.reaction.exposureRoute&#xD;
@@ -986,6 +978,23 @@ Note that FHIR uses a code for this concept, but we modeled this as a string, be
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Bdr1It-eEeSLwbHBnRFGvw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bdr1I9-eEeSLwbHBnRFGvw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_T1g_gNuwEeeUZ4-fF6-w3Q" name="note" visibility="public">
+        <ownedComment xmi:id="_T1g_gduwEeeUZ4-fF6-w3Q" annotatedElement="_T1g_gNuwEeeUZ4-fF6-w3Q">
+          <body>&quot;Additional text about the adverse reaction event not captured in other fields.&quot; - HL7 FHIR, AllergyIntolerance.reaction.note</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642C044DB02ED?FHIM/Datatypes/Annotation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T1g_gtuwEeeUZ4-fF6-w3Q" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T1g_g9uwEeeUZ4-fF6-w3Q"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zbR04N-eEeSLwbHBnRFGvw" name="onsetDateTime" visibility="public">
+        <ownedComment xmi:id="_32sQQN-eEeSLwbHBnRFGvw" annotatedElement="_zbR04N-eEeSLwbHBnRFGvw">
+          <body>&quot;Record of the date and/or time of the onset of the Reaction.&quot; - HL7 FHIR, AllergyIntolerance.reaction.onset&#xD;
+&quot;Date of reaction to the immunization.&quot; - HL7 FHIR, Immunization.reaction.date</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2CSTYN-eEeSLwbHBnRFGvw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2CRsUN-eEeSLwbHBnRFGvw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_P-0AcNYuEd62cosTNS-_lw" name="reaction" visibility="public">
         <ownedComment xmi:id="_WLk0sMHwEeGx0M-CyAbegA" annotatedElement="_P-0AcNYuEd62cosTNS-_lw">
@@ -1009,14 +1018,6 @@ Note that FHIR uses a code for this concept, but we modeled this as a string, be
           <language></language>
           <body>(ReactionSeverity)</body>
         </defaultValue>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_T1g_gNuwEeeUZ4-fF6-w3Q" name="note" visibility="public">
-        <ownedComment xmi:id="_T1g_gduwEeeUZ4-fF6-w3Q" annotatedElement="_T1g_gNuwEeeUZ4-fF6-w3Q">
-          <body>&quot;Additional text about the adverse reaction event not captured in other fields.&quot; - HL7 FHIR, AllergyIntolerance.reaction.note</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642C044DB02ED?FHIM/Datatypes/Annotation?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T1g_gtuwEeeUZ4-fF6-w3Q" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T1g_g9uwEeeUZ4-fF6-w3Q"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_66KZ0GYAEeCWgYu_gBZhWw" name="intoleranceCondition_reaction" memberEnd="_66MPAGYAEeCWgYu_gBZhWw _66PSUGYAEeCWgYu_gBZhWw">
