@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.6-->
+<!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
@@ -2959,6 +2959,7 @@ This flexibility does cause an issue for consideration, especially for medicatio
         <ownedComment xmi:id="_RoYGINOSEeGputPQx0HXoA" annotatedElement="_QQ5xkXpnEd-44ra0dfiJCw">
           <body>Pointer to the Organization (in the Role of Manufacturer) that produced the Product.&#xD;
 &quot;Contains the manufacturer of the medical substance administered when it is a manufactured substance.&quot; - HL7 Version 2.8, RXD-20.&#xD;
+&quot;Name of vaccine manufacturer.&quot; - HL7 FHIR, Immunization.manufacturer&#xD;
 &quot;Describes the details of the manufacturer of the medication product. This is not intended to represent the distributor of a medication product.&quot; - HL7 FHIR, Medication.manufacturer</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QQ5xk3pnEd-44ra0dfiJCw" value="1"/>
@@ -3085,7 +3086,7 @@ Represents a product produced and marketed as a medicine or drug. This class rep
 &#xD;
 &quot;A product instance is (a) an individual product instance, i.e., an individually identified thing with a serial number; (b) a product lot, i.e., a set of things of the same kind (e.g., 1000 for expressing a number of tablets) or an  amorphous mass (e.g., 100 L of a liquid raw material), or  (c) any subset, member, or portion of a product lot. The  distinction between an individual thing and a lot is made in the quantity attribute, which is set to 1 (one) for  individual items, or any number e.g., 1000 or amount 100 L for sets of things or amorphous masses respectively.&quot; - HL7 Version 3.</body>
       </ownedComment>
-      <ownedAttribute xmi:id="_QvxZYO6bEd-crcWiXVDZrQ" name="id" visibility="public">
+      <ownedAttribute xmi:id="_QvxZYO6bEd-crcWiXVDZrQ" name="identifier" visibility="public">
         <ownedComment xmi:id="_kNwcEO6bEd-crcWiXVDZrQ" annotatedElement="_QvxZYO6bEd-crcWiXVDZrQ">
           <body>&quot;A unique identifier for this instance. If the product instance represents a single individual product (quantity = 1) then this id is also called the &quot;serial number&quot;.  If the product instance represents a product lot, the id is also called the &quot;lot number&quot;.&quot; - HL7 V3</body>
         </ownedComment>
@@ -3334,7 +3335,8 @@ When a medication is created by a pharmacist or by a clinician by compounding tw
     <packagedElement xmi:type="uml:Class" xmi:id="_OaEXAKEREeGnfe88WF3uxw" name="AdministeredDrug">
       <ownedComment xmi:id="_pHGBwLyFEeGK2djLWlLFew" annotatedElement="_OaEXAKEREeGnfe88WF3uxw">
         <body>&quot;Contains the identifier of the medical substance/treatment administered....  If the substance administered is a vaccine, CVX codes may be used to code this field....&quot; - HL7 Version 2.8, RXA-5&#xD;
-“A role for the product when merely refered to as one that might be administered.  This is the role through which the product model would be entered for electronic prescribing.” – HL7 Version 3 (Role->AdministerableMaterial).</body>
+“A role for the product when merely refered to as one that might be administered.  This is the role through which the product model would be entered for electronic prescribing.” – HL7 Version 3 (Role->AdministerableMaterial).&#xD;
+&quot;Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.&quot; - HL7 FHIR, MedicationAdministration.medication[x]</body>
       </ownedComment>
       <ownedAttribute xmi:id="_wM_fAL2ZEeG_PZtvUC92nw" name="administeredBarcodeId" visibility="public">
         <ownedComment xmi:id="_5uIeEL2ZEeG_PZtvUC92nw" annotatedElement="_wM_fAL2ZEeG_PZtvUC92nw">
@@ -3493,7 +3495,7 @@ When a medication is created by a pharmacist or by a clinician by compounding tw
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gAMaAAHJEeadSdoDuZEYwQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gALy8AHJEeadSdoDuZEYwQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_oJDGcKc2EeCkJ6Eur_P0ag" name="id" visibility="public">
+      <ownedAttribute xmi:id="_oJDGcKc2EeCkJ6Eur_P0ag" name="identifier" visibility="public">
         <ownedComment xmi:id="_oJDGcac2EeCkJ6Eur_P0ag" annotatedElement="_oJDGcKc2EeCkJ6Eur_P0ag">
           <body>Identifies the individual device. This may be a Serial Number assigned by the manufacturer, or some other unique identifer assigned by the owning organization (e.g., an asset control number).&#xD;
 &quot;A unique identifier for this instance. If the product instance represents a single individual product (quantity = 1) then  this id is also called the serial number. If the product instance represents a product lot, the id is also called the lot number.&quot; - HL7 V3&#xD;
@@ -3878,7 +3880,7 @@ When used as an ingredient in a drug or food in the United States, this code sho
       <ownedComment xmi:id="_Ug4SECzbEeKLfdgQhBZO1Q" annotatedElement="_XteGcIAfEeGE1-mzJa42fw">
         <body>A labeler is an organization that repackages medicinal products for sale.  In some cases a manufacturer is also the labeler.</body>
       </ownedComment>
-      <ownedAttribute xmi:id="_k9QhgIAfEeGE1-mzJa42fw" name="id" visibility="public">
+      <ownedAttribute xmi:id="_k9QhgIAfEeGE1-mzJa42fw" name="identifier" visibility="public">
         <ownedComment xmi:id="_k9QhgYAfEeGE1-mzJa42fw" annotatedElement="_k9QhgIAfEeGE1-mzJa42fw">
           <body>Uniquely identifies the labeler.</body>
         </ownedComment>
@@ -3902,7 +3904,7 @@ When used as an ingredient in a drug or food in the United States, this code sho
 &quot;Contains the manufacturer of the medical substance administered when it is a manufactured substance.&quot; - HL7 Version 2.8, RXD-20.&#xD;
 &quot;Describes the details of the manufacturer of the medication product. This is not intended to represent the distributor of a medication product.&quot; - HL7 FHIR, Medication.manufacturer</body>
       </ownedComment>
-      <ownedAttribute xmi:id="_Sala4HpnEd-44ra0dfiJCw" name="id" visibility="public">
+      <ownedAttribute xmi:id="_Sala4HpnEd-44ra0dfiJCw" name="identifier" visibility="public">
         <ownedComment xmi:id="_hv2IkPGjEd-ZlYn0p4HjQw" annotatedElement="_Sala4HpnEd-44ra0dfiJCw">
           <body>Uniquely identifies the manufacturer.</body>
         </ownedComment>
@@ -3947,6 +3949,7 @@ When used as an ingredient in a drug or food in the United States, this code sho
 &quot;Contains the expiration date of the medical substance administered.&quot; - HL7 Version 2.8, RXD-19.&#xD;
 &quot;The date and time the manufacturer no longer ensures the safety, quality, and/or proper functioning of the material.&quot; - HL7 Version 3&#xD;
 &quot;The date and time beyond which this device is no longer valid or should not be used (if applicable).&quot; - HL7 FHIR, Device.expirationDate&#xD;
+&quot;Date vaccine batch expires.&quot; - HL7 FHIR, Immunization.expirationDate&#xD;
 &quot;When this specific batch of product will expire.&quot; - HL7 FHIR, Medication.batch.expirationDate</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
@@ -3955,10 +3958,11 @@ When used as an ingredient in a drug or food in the United States, this code sho
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6419902EB03B6" name="lotId" visibility="public">
         <ownedComment xmi:id="_NejYJ-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6419902EB03B6">
-          <body>&quot;Contains the lot number of the medical substance administered.  Note:  The lot number is the number printed on the label attached to the container holding the substance and on the packaging which houses the container.  If the substance is a vaccine, for example, and a diluent is required, a lot number may appear on the vial containing the diluent; however, any such identifier associated with a diluent is not the identifier of interest. The substance lot number should be reported, not that of the diluent.&quot; - HL7 Version 2.8, RXA-15&#xD;
+          <body>&quot;Contains the lot number of the medical substance administered. Note: The lot number is the number printed on the label attached to the container holding the substance and on the packaging which houses the container. If the substance is a vaccine, for example, and a diluent is required, a lot number may appear on the vial containing the diluent; however, any such identifier associated with a diluent is not the identifier of interest. The substance lot number should be reported, not that of the diluent.&quot; - HL7 Version 2.8, RXA-15&#xD;
 &quot;Contains the lot number of the medical substance administered.&quot; - HL7 Version 2.8, RXD-18.&#xD;
 &quot;An alphanumeric string used to identify a particular batch of manufactured material.&quot; - HL7 Version 3&#xD;
 &quot;Lot number assigned by the manufacturer.&quot; - HL7 FHIR, Device.lotNumber&#xD;
+&quot;Lot number of the vaccine product.&quot; - HL7 FHIR, Immunization.lotNumber&#xD;
 &quot;The assigned lot number of a batch of the specified product.&quot; - HL7 FHIR, Medication.batch.lotNumber</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -4121,7 +4125,7 @@ When used as an ingredient in a drug or food in the United States, this code sho
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wk8gEcyxEeO7XY1kXX1jtw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wk8gEMyxEeO7XY1kXX1jtw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_BN094MyyEeO7XY1kXX1jtw" name="id" visibility="public">
+      <ownedAttribute xmi:id="_BN094MyyEeO7XY1kXX1jtw" name="identifier" visibility="public">
         <ownedComment xmi:id="_BN094cyyEeO7XY1kXX1jtw" annotatedElement="_BN094MyyEeO7XY1kXX1jtw">
           <body>Uniquely identifies the reprocessor.</body>
         </ownedComment>
@@ -4184,7 +4188,7 @@ When used as an ingredient in a drug or food in the United States, this code sho
       <ownedComment xmi:id="_vZ7ZUAJnEeaG4J0T8FMiWg" annotatedElement="_kIEVcAJlEeaG4J0T8FMiWg">
         <body>&quot;Describes the characteristics, operational status and capabilities of a medical-related component of a medical device.&quot; - HL7 FHIR, DeviceComponent</body>
       </ownedComment>
-      <ownedAttribute xmi:id="_SZnhQAJmEeaG4J0T8FMiWg" name="id" visibility="public">
+      <ownedAttribute xmi:id="_SZnhQAJmEeaG4J0T8FMiWg" name="identifier" visibility="public">
         <ownedComment xmi:id="_SZnhQQJmEeaG4J0T8FMiWg" annotatedElement="_SZnhQAJmEeaG4J0T8FMiWg">
           <body>&quot;The locally assigned unique identification by the software. For example: handle ID.&quot; - HL7 FHIR, DeviceComponent.identifier</body>
         </ownedComment>
@@ -4434,7 +4438,7 @@ This class represents a needle which may be specified in a protocol, a procedure
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3V1PQRMvEeeN9OBqDrrLrg" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3V1PQBMvEeeN9OBqDrrLrg"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_Su27EBMeEeeJEtdzPYvf5Q" name="id" visibility="public">
+      <ownedAttribute xmi:id="_Su27EBMeEeeJEtdzPYvf5Q" name="identifier" visibility="public">
         <ownedComment xmi:id="_Su27ERMeEeeJEtdzPYvf5Q" annotatedElement="_Su27EBMeEeeJEtdzPYvf5Q">
           <body>&quot;Describes the unique identification of this metric that has been assigned by the device or gateway software. For example: handle ID. It should be noted that in order to make the identifier unique, the system element of the identifier should be set to the unique identifier of the device.&quot; - HL7 FHIR, DeviceMetric.id</body>
         </ownedComment>
