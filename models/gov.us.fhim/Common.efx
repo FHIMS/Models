@@ -165,7 +165,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_9GBmdLOtEeS3iYN4R_wsuw" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_9GCNgLOtEeS3iYN4R_wsuw" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_9GCNgbOtEeS3iYN4R_wsuw" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9GAYUbOtEeS3iYN4R_wsuw" x="2536" y="-4121"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9GAYUbOtEeS3iYN4R_wsuw" x="3487" y="-4121"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_oLxRQLkXEeSvIbhHaIFeOA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519553" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_oMPLULkXEeSvIbhHaIFeOA" type="ImageCompartment">
@@ -192,7 +192,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_3-GhkLkXEeSvIbhHaIFeOA" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_3-GhkbkXEeSvIbhHaIFeOA" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_3-GhkrkXEeSvIbhHaIFeOA" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3-EsYbkXEeSvIbhHaIFeOA" x="16167" y="-4121"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3-EsYbkXEeSvIbhHaIFeOA" x="15216" y="-4121"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_8qrcELkwEeSvIbhHaIFeOA" element="_8qnKoLkwEeSvIbhHaIFeOA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="12303359" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_8qsDILkwEeSvIbhHaIFeOA" type="ImageCompartment">
@@ -3008,7 +3008,7 @@ Note that because all we need is the Person's name and contact information (name
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_W_aIoBb8EeOL3Nw-k5HkNw" name="ClinicalDataSource" clientDependency="_QZ2RsNooEeSOxtrN8-7DcQ">
       <ownedComment xmi:id="_jmeaAHioEeODk9Eid2o3dQ" annotatedElement="_W_aIoBb8EeOL3Nw-k5HkNw">
-        <body>The term &quot;provenance&quot; originally refers to the chronology of the ownership, custody or location of a historical object, but has come to mean any information about the history of any object.  This class conveys information about who provided the information about a clinically relevant assertion (such as a Clinical Observation), and when that information was recorded, entered, verified, etc.</body>
+        <body>The term &quot;provenance&quot; originally refers to the chronology of the ownership, custody or location of a historical object, but has come to mean any information about the history of any object. This class conveys information about who provided the information about a clinically relevant assertion (such as a Clinical Observation), and when that information was recorded, entered, verified, etc.</body>
       </ownedComment>
       <ownedAttribute xmi:id="_JR8mUMIxEeGx0M-CyAbegA" name="dateReported" visibility="public">
         <ownedComment xmi:id="_JR8mUcIxEeGx0M-CyAbegA" annotatedElement="_JR8mUMIxEeGx0M-CyAbegA">
@@ -3021,22 +3021,18 @@ Note that because all we need is the Person's name and contact information (name
       </ownedAttribute>
       <ownedAttribute xmi:id="_FtH2kBb-EeOL3Nw-k5HkNw" name="informationSource" visibility="public">
         <ownedComment xmi:id="_FtH2kRb-EeOL3Nw-k5HkNw" annotatedElement="_FtH2kBb-EeOL3Nw-k5HkNw">
-          <body>The property categorizes the source of the clinically relevant information.  This categorization provides an indication of the trustworthiness of the information.  For example, a Practitioner might place a higher degree of confidence in information provided by another Practitioner over information provide by a Patient's relative.  Possible values include: Patient, Patient Guardian, Other Practitioner, Records Review, Clinical Evidence, etc.  When the information source is someone other than the Author of the record (i.e., the Practitioner who &quot;owns&quot; the record, or the Patient, the name of that Person may be recorded in the Information Reporter class.&#xD;
+          <body>This property categorizes the source of the clinically relevant information. This categorization provides an indication of the trustworthiness of the information. For example, a Practitioner might place a higher degree of confidence in information provided by another Practitioner over information provide by a Patient's relative. Possible values include: Patient, Patient Guardian, Other Practitioner, Records Review, Clinical Evidence, etc. When the information source is someone other than the Author of the record (i.e., the Practitioner who &quot;owns&quot; the record, or the Patient, the name of that Person may be recorded in the Information Reporter class. Note that in VistA, this concept is generally called Observed if observed by a clinician, or Historical if patient-reported.&#xD;
 &#xD;
-Note that in VistA, this concept is generally called Observed if observed by a clinician, or Historical if patient-reported.</body>
+&quot;The source of the data when the report of the immunization event is not based on information from the person who administered the vaccine.&quot; - HL7 FHIR, Immunization.reportOrigin&#xD;
+&quot;The person or organization that provided the information about the taking of this medication. Note: Use derivedFrom when a MedicationStatement is derived from other resources, e.g. Claim or MedicationRequest.&quot; - HL7 FHIR, MedicationStatement.informationSource</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VuliobyaEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VulioLyaEea_DaXmJ278Kw"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_tJjj8N71EeSx5bpydj26Wg">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(InformationSource)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_DFXLMGGFEeKL0cZcPmQjWw" name="isPatientReported" visibility="public" isDerived="true">
         <ownedComment xmi:id="_5Bzg4HitEeODk9Eid2o3dQ" annotatedElement="_DFXLMGGFEeKL0cZcPmQjWw">
-          <body>This property indicates whether the clinically relevant information was provided by the Patient (or by a Patient's relative or guardian), and therefore provides an indication of the trustworthiness of the information.  Note that this property can be derived from the informationSource property, and therefore might not be stored as a separate concept in some implementations.</body>
+          <body>This property indicates whether the clinically relevant information was provided by the Patient (or by a Patient's relative or guardian), and therefore provides an indication of the trustworthiness of the information. Note that this property can be derived from the informationSource property, and therefore might not be stored as a separate concept in some implementations. It is therefore marked as a derived property.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W0FLEbyaEea_DaXmJ278Kw" value="1"/>
@@ -3068,6 +3064,16 @@ Represents &quot;the section of the diagnostic service where the observation was
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JGgF0xcBEeOL3Nw-k5HkNw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JGgF0hcBEeOL3Nw-k5HkNw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_7EkfsOE9EeiDi9onc7cbfQ" name="isPrimarySource" visibility="public" isDerived="true">
+        <ownedComment xmi:id="_7EkfseE9EeiDi9onc7cbfQ" annotatedElement="_7EkfsOE9EeiDi9onc7cbfQ">
+          <body>This property indicates whether the clinically relevant information was provided by a clinician who performed the service or observed the reported information and therefore provides an indication of the trustworthiness of the information. Note that this property can be derived from the informationSource property, and therefore might not be stored as a separate concept in some implementations. It is therefore marked as a derived property.&#xD;
+&#xD;
+&quot;An indication that the content of the record is based on information from the person who administered the vaccine. This reflects the context under which the data was originally recorded.&quot; - HL7 FHIR, Immunization.primarySource</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7EkfsuE9EeiDi9onc7cbfQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7Ekfs-E9EeiDi9onc7cbfQ"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Wu4MgKMyEeSjK-UNpoDZuQ" name="ClinicalStatement" clientDependency="_rbgOsOQxEeaH9t35G2snaA _WbFrQPNqEeSMC5mPc_cPMQ" isAbstract="true">
       <ownedComment xmi:id="_IGg4IKM2EeSjK-UNpoDZuQ" annotatedElement="_Wu4MgKMyEeSjK-UNpoDZuQ">
@@ -3075,18 +3081,24 @@ Represents &quot;the section of the diagnostic service where the observation was
       </ownedComment>
       <generalization xmi:id="_AwCRYDKtEeidlpJU2TuLzA" general="_8lvuIDKfEeidlpJU2TuLzA"/>
       <ownedAttribute xmi:id="_yUDeoOSkEeaMP8OhjVeyrg" name="clinicalDataSource" visibility="public" type="_W_aIoBb8EeOL3Nw-k5HkNw" association="_yUBCYOSkEeaMP8OhjVeyrg">
+        <ownedComment xmi:id="_FtwH0ORSEei4Ov8Ehaq7-w" annotatedElement="_yUDeoOSkEeaMP8OhjVeyrg">
+          <body>Pointer to information about who provided the information about a clinically relevant assertion and the circumstances surrounding that information provision.</body>
+        </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yUEFsOSkEeaMP8OhjVeyrg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yUDeoeSkEeaMP8OhjVeyrg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_OeQTIAXZEeebQs_lQM5n6g" name="comment" visibility="public">
         <ownedComment xmi:id="_jAOiYAXZEeebQs_lQM5n6g" annotatedElement="_OeQTIAXZEeebQs_lQM5n6g">
-          <body>Pointer to any remarks concerning the ClinicalInformation. This contstruct allows multiple (i.e., zero to many) clinicians to comment upon the clinical information, perhaps over time. For example, the data enterer may provide some comments and later the verifier may also record some additional comments. In addition, it allows the same clinician to provide multiple comments, likely over time.&#xD;
+          <body>Pointer to any remarks concerning the clinical information. This construct allows multiple (i.e., zero to many) clinicians to comment upon the clinical information, perhaps over time. For example, the data enterer may provide some comments and later the verifier may also record some additional comments. In addition, it allows the same clinician to provide multiple comments, likely over time.&#xD;
 &#xD;
 &quot;This field is for reporting additional comments related to the sample.&quot; - HL7 Version 2.8, OBR-39.&#xD;
 &quot;Unstructured notes appended to a clinical statement.&quot; - HL7 CIMI, InformationEntry.additionalText&#xD;
 &quot;Additional narrative about the propensity for the Adverse Reaction, not captured in other fields.&quot; - HL7 FHIR, AllergyIntolerance.note&#xD;
 &quot;Additional information about the Condition. This is a general notes/comments entry for description of the Condition, its diagnosis and prognosis.&quot; - HL7 FHIR, Condition.note&#xD;
 &quot;This property allows a non condition-specific note to the made about the related person. Ideally, the note would be in the condition property, but this is not always possible.&quot; - HL7 FHIR, FamilyMemberHistory.note&#xD;
+&quot;Extra information about the immunization that is not conveyed by the other attributes.&quot; - HL7 FHIR, Immunization.note&#xD;
+&quot;Extra information about the medication administration that is not conveyed by the other attributes.&quot; - HL7 FHIR, MedicationAdministration.note&#xD;
+&quot;Provides extra information about the medication statement that is not conveyed by the other attributes.&quot; - HL7 FHIR, MedicationStatement.note&#xD;
 &quot;May include statements about significant, unexpected or unreliable values, or information about the source of the value where this may be relevant to the interpretation of the result.&quot; - HL7 FHIR, Observation.comment&#xD;
 &quot;To communicate any details or issues about the specimen or during the specimen collection. (for example: broken vial, sent with patient, frozen).&quot; - HL7 FHIR, Specimen.note</body>
         </ownedComment>
@@ -3113,10 +3125,13 @@ Represents &quot;the section of the diagnostic service where the observation was
       <ownedAttribute xmi:id="_F7gcQDn2EeiefcoRQJXpFA" name="encounter" visibility="public">
         <ownedComment xmi:id="_F7gcQTn2EeiefcoRQJXpFA" annotatedElement="_F7gcQDn2EeiefcoRQJXpFA">
           <body>Pointer to the Encounter during which the Action was created or performed.&#xD;
+&#xD;
 &quot;Encounter associated with this clinical statement.&quot; - HL7 CIMI, ClinicalStatement.encounter&#xD;
+&quot;The visit or admission or other contact between patient and health care provider the immunization was performed as part of.&quot; - HL7 FHIR, Immunization.encounter&#xD;
+&quot;A link to an encounter, or episode of care, that identifies the particular occurrence or set occurrences of contact between patient and health care provider.&quot; - HL7 FHIR, MedicationRequest.context&#xD;
+&quot;The encounter or episode of care that establishes the context for this MedicationStatement.&quot; - HL7 FHIR, MedicationStatement.context&#xD;
 &quot;The encounter during which the procedure was performed.&quot; - HL7 FHIR, Procedure.context&#xD;
-&quot;The encounter or episode of care that establishes the context for making this request.&quot; - HL7 FHIR, Request.context&#xD;
-&quot;A link to an encounter, or episode of care, that identifies the particular occurrence or set occurrences of contact between patient and health care provider.&quot; - HL7 FHIR, MedicationRequest.context</body>
+&quot;The encounter or episode of care that establishes the context for making this request.&quot; - HL7 FHIR, Request.context</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Encounter.efx#_420A62FD03B64213F5B40316?FHIM/Encounter/EncounterEvent?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F7gcQjn2EeiefcoRQJXpFA" value="1"/>
@@ -3181,6 +3196,9 @@ Represents &quot;the section of the diagnostic service where the observation was
 &#xD;
 &quot;The patient who has the allergy or intolerance.&quot; - HL7 FHIR, AllergyIntolerance.patient&#xD;
 &quot;Indicates the patient or group who the condition record is associated with.&quot; - HL7 FHIR, Condition.subject&#xD;
+&quot;The patient who either received or did not receive the immunization.&quot; - HL7 FHIR, Immunization.patient&#xD;
+&quot;The person or animal or group receiving the medication.&quot; - HL7 FHIR, MedicationAdministration.subject&#xD;
+&quot;The person, animal or group who is/was taking the medication.&quot; - HL7 FHIR, MedicationStatement.subject&#xD;
 &quot;The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed. Comments: Indirect characteristics may be those of a specimen, fetus, donor, other observer (for example a relative or EMT), or any observation made about the subject.&quot; - HL7 FHIR, Observation.subject&#xD;
 &quot;The person, animal or group on which the procedure was performed.&quot; - HL7 FHIR, Procedure.subject</body>
         </ownedComment>
@@ -3274,11 +3292,6 @@ Represents &quot;the section of the diagnostic service where the observation was
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xyj9MH7hEeOYQJZKXKAJnw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XyjWIH7hEeOYQJZKXKAJnw"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_Lq-PAO0dEeWjUp19yClo5Q">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(CareTeamMemberRole)</body>
-        </defaultValue>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_r6v0YIsdEeGv9r5ZNThaOw" name="Indication">
@@ -3521,6 +3534,7 @@ Contains a code indicating a procedure or a non-procedural event involving the p
       <ownedAttribute xmi:id="_gmo08Gs0EeiYVvtnLEaW4w" name="fulfillsOrder" visibility="public" association="_gmV6AGs0EeiYVvtnLEaW4w">
         <ownedComment xmi:id="_nT4wEGs0EeiYVvtnLEaW4w" annotatedElement="_gmo08Gs0EeiYVvtnLEaW4w">
           <body>&quot;The order that is partly or wholly enacted by the performance of this act.&quot; - HL7 CIMI, Performance.fulfillsOrder&#xD;
+&quot;The original request, instruction or authority to perform the administration.&quot; - HL7 FHIR, MedicationAdministration.prescription&#xD;
 &quot;A reference to a resource that contains details of the request for this procedure.&quot; - HL7 FHIR, Procedure.basedOn</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Orders.efx#_420A62FD03B64589572B02E8?FHIM/Orders/Order?"/>
@@ -3538,6 +3552,7 @@ Contains a code indicating a procedure or a non-procedural event involving the p
       <ownedAttribute xmi:id="_VJ84wWtAEeiYVvtnLEaW4w" name="partOf" visibility="public" type="_rr-pACaOEdyiJKb4ZqIfnw" association="_VJ84wGtAEeiYVvtnLEaW4w">
         <ownedComment xmi:id="_c5APIGtAEeiYVvtnLEaW4w" annotatedElement="_VJ84wWtAEeiYVvtnLEaW4w">
           <body>&quot;A larger action of which this particular action is a component or step.&quot; - HL7 CIMI, Performance.partOf&#xD;
+&quot;A larger event of which this particular event is a component or step.&quot; - HL7 FHIR, MedicationAdministration.partOf&#xD;
 &quot;A larger event of which this particular procedure is a component or step.&quot; - HL7 FHIR, Procedure.partOf</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VJ84w2tAEeiYVvtnLEaW4w" value="*"/>
@@ -3546,6 +3561,9 @@ Contains a code indicating a procedure or a non-procedural event involving the p
       <ownedAttribute xmi:id="_pRFz4GtFEeiYVvtnLEaW4w" name="peformancePeriod" visibility="public">
         <ownedComment xmi:id="_pRFz4WtFEeiYVvtnLEaW4w" annotatedElement="_pRFz4GtFEeiYVvtnLEaW4w">
           <body>The date/time or period over which the procedure was performed. Note that FHIR uses a choice of dateTime, Period, string, Age, or Range for its datatype, while FHIM currently only handles dateTime or Period. Further elaboration will be needed to handle string, Age, or Range in other fields.&#xD;
+&#xD;
+&quot;Date vaccine administered or was to be administered.&quot; - HL7 FHIR, Immunization.date&#xD;
+&quot;A specific date/time or interval of time during which the administration took place (or did not take place, when the 'notGiven' attribute is true). For many administrations, such as swallowing a tablet the use of dateTime is more appropriate.&quot; - HL7 FHIR, MedicationAdministration.effective[x]&#xD;
 &quot;Estimated or actual date, date-time, period, or age when the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of the procedure to be captured.&quot; - HL7 FHIR, Procedure.performed[x]&#xD;
 &#xD;
 For Specimen collection events, this is the date and time during which the specimen was taken from the source (e.g., the patient, or other entity such as a sample of pond water). This property is of type Period in order to handle collections that take place over a period of time.&#xD;
@@ -3559,19 +3577,19 @@ For Specimen collection events, this is the date and time during which the speci
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pRFz4mtFEeiYVvtnLEaW4w" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pRFz42tFEeiYVvtnLEaW4w"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_LJo_wE_IEeicO4zK57V_lA" name="performed" visibility="public" type="_420A62FD03B6418CF92600E1">
+      <ownedAttribute xmi:id="_LJo_wE_IEeicO4zK57V_lA" name="performer" visibility="public" type="_420A62FD03B6418CF92600E1">
         <ownedComment xmi:id="_LJo_wU_IEeicO4zK57V_lA" annotatedElement="_LJo_wE_IEeicO4zK57V_lA">
           <body>Identifies the Entity that was principally responsible for the performance of the activity. In many cases this will be a clinician, but in other cases it may be the patient, a non-clinician care giver (e.g., the patient’s spouse), or an automated device.&#xD;
 &#xD;
-&quot;Contains the provider ID of the person administering the pharmaceutical/treatment.&quot; - HL7 Version 2.8, RXA-10&#xD;
-&quot;The device, practitioner, etc. who performed the action.&quot; - HL7 FHIR, MedicationAdministration.performer.actor&#xD;
-&quot;Clinician who administered the vaccine.&quot;  - HL7 FHIR, Immunization.performer&#xD;
-&quot;The party that performed the action.&quot; - HL7 CIMI, Performance.performed&#xD;
-&#xD;
+&quot;Identifies the person, department, or facility that collected the specimen.&quot; - HL7 Version 2.8, OBR-10&#xD;
 &quot;This field identifies the performing technician.&quot; - HL7 Version 2.8, OBR-34&#xD;
 &quot;This field contains the identifier of the individual directly responsible for the observation (i.e., the person who either performed or verified it).  In a nursing service, the observer is usually the professional who performed the observation (e.g., took the blood pressure).  In a laboratory, the observer is the technician who performed or verified the analysis....&quot; - HL7 Version 2.8, OBX.16&#xD;
+&quot;Contains the provider ID of the person administering the pharmaceutical/treatment.&quot; - HL7 Version 2.8, RXA-10&#xD;
 &#xD;
-&quot;Identifies the person, department, or facility that collected the specimen.&quot; - HL7 Version 2.8, OBR-10&#xD;
+&quot;The party that performed the action.&quot; - HL7 CIMI, Performance.performed&#xD;
+&#xD;
+&quot;Indicates who or what performed the event.&quot; - HL7 FHIR, Immunization.practitioner&#xD;
+&quot;The individual who was responsible for giving the medication to the patient.&quot; - HL7 FHIR, MedicationAdministration.performer&#xD;
 &quot;Person who collected the specimen.&quot; - HL7 FHIR, Specimen.collection.collector</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LJo_wk_IEeicO4zK57V_lA" value="1"/>
@@ -3728,7 +3746,7 @@ For Specimen collection events, this is the date and time during which the speci
       <eAnnotations xmi:id="_5vuVAOd5Ed6qdqXtvR-ZHQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedEnd xmi:id="_joRLhN3-Ed6yatlejfcw_g" name="" visibility="public" type="_dP9loN3-Ed6yatlejfcw_g" association="_joRLgN3-Ed6yatlejfcw_g"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_1_OF4Aq6Ed-426xscrxYmQ" name="practitionerParticipation_individualProvider" memberEnd="_1_OF4Qq6Ed-426xscrxYmQ _1_X24Aq6Ed-426xscrxYmQ">
+    <packagedElement xmi:type="uml:Association" xmi:id="_1_OF4Aq6Ed-426xscrxYmQ" name="practitionerParticipation_actor" memberEnd="_1_OF4Qq6Ed-426xscrxYmQ _1_X24Aq6Ed-426xscrxYmQ">
       <ownedEnd xmi:id="_1_X24Aq6Ed-426xscrxYmQ" name="" visibility="public" type="__uCqINw2EeaxScmtI1Szow" association="_1_OF4Aq6Ed-426xscrxYmQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6iu4IN6BEeaQL8YZ3sNKnw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6ir00N6BEeaQL8YZ3sNKnw" value="1"/>
@@ -3806,13 +3824,13 @@ Note that in Laboratory, a &quot;Reflex Test&quot; will be handled through this 
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_-VXT0LxzEeSLwM7JIxbinw" name="DeviceParticipation">
       <generalization xmi:id="_ZqxY4N5bEeaSVd0Fmxi4nQ" general="_420A62FD03B6418CF92600E1"/>
-      <ownedAttribute xmi:id="_MG5xELx0EeSLwM7JIxbinw" name="deviceInstance" visibility="public" association="_MG374Lx0EeSLwM7JIxbinw">
+      <ownedAttribute xmi:id="_MG5xELx0EeSLwM7JIxbinw" name="actor" visibility="public" association="_MG374Lx0EeSLwM7JIxbinw">
         <type xmi:type="uml:Class" href="CommonProduct.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/CommonProduct/DeviceInstance?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MG7mQbx0EeSLwM7JIxbinw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MG7mQLx0EeSLwM7JIxbinw"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_MG374Lx0EeSLwM7JIxbinw" name="nonHumanAuthor_deviceInstance" memberEnd="_MG5xELx0EeSLwM7JIxbinw _MG80YLx0EeSLwM7JIxbinw">
+    <packagedElement xmi:type="uml:Association" xmi:id="_MG374Lx0EeSLwM7JIxbinw" name="nonHumanAuthor_actor" memberEnd="_MG5xELx0EeSLwM7JIxbinw _MG80YLx0EeSLwM7JIxbinw">
       <ownedEnd xmi:id="_MG80YLx0EeSLwM7JIxbinw" name="" visibility="public" type="_-VXT0LxzEeSLwM7JIxbinw" association="_MG374Lx0EeSLwM7JIxbinw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_ukzdkNS7EeSyzs7OQneM_g" client="_GY1OsAY1EeGz0dkadElrkQ">
@@ -3826,7 +3844,7 @@ Note that in Laboratory, a &quot;Reflex Test&quot; will be handled through this 
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="__uCqINw2EeaxScmtI1Szow" name="PractitionerParticipation">
       <generalization xmi:id="_wz9bANw3EeaxScmtI1Szow" general="_420A62FD03B6418CF92600E1"/>
-      <ownedAttribute xmi:id="_1_OF4Qq6Ed-426xscrxYmQ" name="practitioner" visibility="public" association="_1_OF4Aq6Ed-426xscrxYmQ">
+      <ownedAttribute xmi:id="_1_OF4Qq6Ed-426xscrxYmQ" name="actor" visibility="public" association="_1_OF4Aq6Ed-426xscrxYmQ">
         <ownedComment xmi:id="_5zTEoBHbEeCBuOUrBnIXmQ" annotatedElement="_1_OF4Qq6Ed-426xscrxYmQ">
           <body>Represents information about a person who is authorized to provide health care services in the role of practitioner for a health care provider organization. The role of practitioner includes all functions performed for a health care provider organization in order to provide patient care and treatment.</body>
         </ownedComment>
@@ -3836,7 +3854,8 @@ Note that in Laboratory, a &quot;Reflex Test&quot; will be handled through this 
       </ownedAttribute>
       <ownedAttribute xmi:id="_CGSAMUI6Eee2bJNtigJtLg" name="onBehalfOf" visibility="public" association="_CGSAMEI6Eee2bJNtigJtLg">
         <ownedComment xmi:id="_x2Yj8EJWEeeS-9es3uiEeg" annotatedElement="_CGSAMUI6Eee2bJNtigJtLg">
-          <body>Pointer to the Organizational Provider under the auspices of which the Individual Provider participated in the Act. Since providers may be associated with multiple organizations, this mechanism facilitates the specification of the particular organization for which the provider was acting with respect to the owning Act.</body>
+          <body>Pointer to the Organizational Provider under the auspices of which the Individual Provider participated in the Act. Since providers may be associated with multiple organizations, this mechanism facilitates the specification of the particular organization for which the provider was acting with respect to the owning Act.&#xD;
+&quot;The organization the device or practitioner was acting on behalf of.&quot; - HL7 FHIR, MedicationAdministration.performer.onBehalfOf</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Provider.efx#_HC458BscEd--ZY2-pbJ-Pw?FHIM/Provider/OrganizationalProvider?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CGYG0UI6Eee2bJNtigJtLg" value="1"/>
@@ -4006,7 +4025,7 @@ Note that this property is included for compatibility with HL7 V3, and while it 
     <packagedElement xmi:type="uml:Dependency" xmi:id="_LuIMEOQzEeaH9t35G2snaA" supplier="_420A62FD03B6418CF92600E1" client="_1nqfgOQXEeak6NCuAd5Onw"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_XhE1sOQzEeaH9t35G2snaA" name="UnAffiliatedPersonParticipation">
       <generalization xmi:id="_B4f40OQ1EeaH9t35G2snaA" general="_420A62FD03B6418CF92600E1"/>
-      <ownedAttribute xmi:id="_x9vk8eQ3EeaH9t35G2snaA" name="unaffiliatedPerson" visibility="public" association="_x9vk8OQ3EeaH9t35G2snaA">
+      <ownedAttribute xmi:id="_x9vk8eQ3EeaH9t35G2snaA" name="actor" visibility="public" association="_x9vk8OQ3EeaH9t35G2snaA">
         <type xmi:type="uml:Class" href="Person.efx#_1ICBkOQ1EeaH9t35G2snaA?FHIM/Person/UnaffiliatedPerson?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x9vk8-Q3EeaH9t35G2snaA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x9vk8uQ3EeaH9t35G2snaA" value="1"/>
@@ -4014,7 +4033,7 @@ Note that this property is included for compatibility with HL7 V3, and while it 
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="__WtG8OQzEeaH9t35G2snaA" name="PatientParticipation">
       <generalization xmi:id="_C7AesOQ1EeaH9t35G2snaA" general="_420A62FD03B6418CF92600E1"/>
-      <ownedAttribute xmi:id="_adc1UOQ1EeaH9t35G2snaA" name="patient" visibility="public" association="_adbAIOQ1EeaH9t35G2snaA">
+      <ownedAttribute xmi:id="_adc1UOQ1EeaH9t35G2snaA" name="actor" visibility="public" association="_adbAIOQ1EeaH9t35G2snaA">
         <type xmi:type="uml:Class" href="Person.efx#_420A62FD03B6418A4E500034?FHIM/Person/Patient?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_addcYOQ1EeaH9t35G2snaA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_adc1UeQ1EeaH9t35G2snaA" value="1"/>
@@ -4022,7 +4041,7 @@ Note that this property is included for compatibility with HL7 V3, and while it 
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_PuOH8OQ0EeaH9t35G2snaA" name="SystemParticipation">
       <generalization xmi:id="_DmwxcOQ1EeaH9t35G2snaA" general="_420A62FD03B6418CF92600E1"/>
-      <ownedAttribute xmi:id="_YkbW0eQ4EeaH9t35G2snaA" name="deviceInstance" visibility="public" association="_YkbW0OQ4EeaH9t35G2snaA">
+      <ownedAttribute xmi:id="_YkbW0eQ4EeaH9t35G2snaA" name="actor" visibility="public" association="_YkbW0OQ4EeaH9t35G2snaA">
         <type xmi:type="uml:Class" href="CommonProduct.efx#_MsausFCxEeCsN-3dTKIrUA?FHIM/CommonProduct/DeviceInstance?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YkbW0-Q4EeaH9t35G2snaA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YkbW0uQ4EeaH9t35G2snaA" value="1"/>
@@ -4030,7 +4049,7 @@ Note that this property is included for compatibility with HL7 V3, and while it 
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_S309MOQ0EeaH9t35G2snaA" name="UnaffiliatedOrganizationParticipation">
       <generalization xmi:id="_ERrWsOQ1EeaH9t35G2snaA" general="_420A62FD03B6418CF92600E1"/>
-      <ownedAttribute xmi:id="_fN7aYeQ4EeaH9t35G2snaA" name="organization" visibility="public" association="_fN7aYOQ4EeaH9t35G2snaA">
+      <ownedAttribute xmi:id="_fN7aYeQ4EeaH9t35G2snaA" name="actor" visibility="public" association="_fN7aYOQ4EeaH9t35G2snaA">
         <ownedComment xmi:id="_Nk6fcDvTEeeAVuPecg5-Hg" annotatedElement="_fN7aYeQ4EeaH9t35G2snaA">
           <body>Pointer to the Organization that is participating in the healthcare action</body>
         </ownedComment>
@@ -4039,25 +4058,25 @@ Note that this property is included for compatibility with HL7 V3, and while it 
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fN7aYuQ4EeaH9t35G2snaA" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_adbAIOQ1EeaH9t35G2snaA" name="patientParticipation_patient" memberEnd="_adc1UOQ1EeaH9t35G2snaA _adhGwOQ1EeaH9t35G2snaA">
+    <packagedElement xmi:type="uml:Association" xmi:id="_adbAIOQ1EeaH9t35G2snaA" name="patientParticipation_actor" memberEnd="_adc1UOQ1EeaH9t35G2snaA _adhGwOQ1EeaH9t35G2snaA">
       <ownedEnd xmi:id="_adhGwOQ1EeaH9t35G2snaA" name="" visibility="private" type="__WtG8OQzEeaH9t35G2snaA" association="_adbAIOQ1EeaH9t35G2snaA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_adiU4OQ1EeaH9t35G2snaA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_adht0OQ1EeaH9t35G2snaA" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_x9vk8OQ3EeaH9t35G2snaA" name="unAffiliatedPersonParticipation_unaffiliatedPerson" memberEnd="_x9vk8eQ3EeaH9t35G2snaA _x9vk9OQ3EeaH9t35G2snaA">
+    <packagedElement xmi:type="uml:Association" xmi:id="_x9vk8OQ3EeaH9t35G2snaA" name="unAffiliatedPersonParticipation_actor" memberEnd="_x9vk8eQ3EeaH9t35G2snaA _x9vk9OQ3EeaH9t35G2snaA">
       <ownedEnd xmi:id="_x9vk9OQ3EeaH9t35G2snaA" name="" visibility="private" type="_XhE1sOQzEeaH9t35G2snaA" association="_x9vk8OQ3EeaH9t35G2snaA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x9vk9uQ3EeaH9t35G2snaA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x9vk9eQ3EeaH9t35G2snaA" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_YkbW0OQ4EeaH9t35G2snaA" name="systemParticipation_deviceInstance" memberEnd="_YkbW0eQ4EeaH9t35G2snaA _YkbW1OQ4EeaH9t35G2snaA">
+    <packagedElement xmi:type="uml:Association" xmi:id="_YkbW0OQ4EeaH9t35G2snaA" name="systemParticipation_actor" memberEnd="_YkbW0eQ4EeaH9t35G2snaA _YkbW1OQ4EeaH9t35G2snaA">
       <ownedEnd xmi:id="_YkbW1OQ4EeaH9t35G2snaA" name="" visibility="private" type="_PuOH8OQ0EeaH9t35G2snaA" association="_YkbW0OQ4EeaH9t35G2snaA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YkbW1uQ4EeaH9t35G2snaA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YkbW1eQ4EeaH9t35G2snaA" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_fN7aYOQ4EeaH9t35G2snaA" name="unaffiliatedOrganizationParticipation_organization" memberEnd="_fN7aYeQ4EeaH9t35G2snaA _fN7aZOQ4EeaH9t35G2snaA">
+    <packagedElement xmi:type="uml:Association" xmi:id="_fN7aYOQ4EeaH9t35G2snaA" name="unaffiliatedOrganizationParticipation_actor" memberEnd="_fN7aYeQ4EeaH9t35G2snaA _fN7aZOQ4EeaH9t35G2snaA">
       <ownedEnd xmi:id="_fN7aZOQ4EeaH9t35G2snaA" name="" visibility="private" type="_S309MOQ0EeaH9t35G2snaA" association="_fN7aYOQ4EeaH9t35G2snaA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fN7aZuQ4EeaH9t35G2snaA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fN7aZeQ4EeaH9t35G2snaA" value="1"/>
@@ -4128,13 +4147,13 @@ Note that this property is included for compatibility with HL7 V3, and while it 
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_BzFQIDvTEeeAVuPecg5-Hg" name="OrganizationParticipation">
       <generalization xmi:id="_QR7fUDvTEeeAVuPecg5-Hg" general="_420A62FD03B6418CF92600E1"/>
-      <ownedAttribute xmi:id="_JswiITvTEeeAVuPecg5-Hg" name="organization" visibility="public" association="_JswiIDvTEeeAVuPecg5-Hg">
+      <ownedAttribute xmi:id="_JswiITvTEeeAVuPecg5-Hg" name="actor" visibility="public" association="_JswiIDvTEeeAVuPecg5-Hg">
         <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B6418AA15801A9?FHIM/Provider/Organization?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JswiIzvTEeeAVuPecg5-Hg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JswiIjvTEeeAVuPecg5-Hg" value="1"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_JswiIDvTEeeAVuPecg5-Hg" name="organizationParticipation_organization" memberEnd="_JswiITvTEeeAVuPecg5-Hg _JswiJDvTEeeAVuPecg5-Hg">
+    <packagedElement xmi:type="uml:Association" xmi:id="_JswiIDvTEeeAVuPecg5-Hg" name="organizationParticipation_actor" memberEnd="_JswiITvTEeeAVuPecg5-Hg _JswiJDvTEeeAVuPecg5-Hg">
       <ownedEnd xmi:id="_JswiJDvTEeeAVuPecg5-Hg" name="" visibility="private" type="_BzFQIDvTEeeAVuPecg5-Hg" association="_JswiIDvTEeeAVuPecg5-Hg">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JswiJjvTEeeAVuPecg5-Hg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JswiJTvTEeeAVuPecg5-Hg" value="1"/>
@@ -6802,12 +6821,16 @@ Note that this property is marked as derived as it may be calculated or may be s
 &quot;Contains a unique identifier for this observation.&quot; - HL7 Version 2.8, OBX-21.&#xD;
 &quot;Contains the identifier assigned by an initiating system to an instance of a problem.&quot; - HL7 Version 2.8, PRB-4&#xD;
 &#xD;
+&quot;The unique identifier(s) of this clinical statement. It must be entered if user wants it returned as part of any output (e.g., a wound number), otherwise it will be auto-generated, if needed, by the system serving the record. An identifier does not need to be the actual identifier of the source system. &quot; - HL7 CIMI, InformationEntry.identifier&#xD;
+&#xD;
 &quot;Business identifiers assigned to this AllergyIntolerance by the performer or other systems which remain constant as the resource is updated and propagates from server to server.&quot; - HL7 FHIR, AllergyIntolerance.identifier&#xD;
 &quot;This records identifiers associated with this condition that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot; - HL7 FHIR, Condition.identifier&#xD;
+&quot;A unique identifier assigned to this immunization record.&quot; - HL7 FHIR, Immunization.identifier&#xD;
+&quot;External identifier - FHIR will generate its own internal identifiers (probably URLs) which do not need to be explicitly managed by the resource. The identifier here is one that would be used by another non-FHIR system - for example an automated medication pump would provide a record each time it operated; an administration while the patient was off the ward might be made with a different system and entered after the event. Particularly important if these records have to be updated.&quot;  - HL7 FHIR, MedicationAdministration.identifier&#xD;
+In Pharmacy Dispense, this is the unique identifier for this dispense, also known as a &quot;Fill Id&quot;. &quot;Identifier assigned by the dispensing facility - this is an identifier assigned outside FHIR.&quot; - HL7 FHIR, MedicationDispense.identifier&#xD;
+&quot;Identifiers associated with this Medication Statement that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate. They are business identifiers assigned to this resource by the performer or other systems and remain constant as the resource is updated and propagates from server to server.&quot; - HL7 FHIR, MedicationStatement.identifier&#xD;
 &quot;A unique identifier assigned to this observation.&quot; - HL7 FHIR, Observation.identifier&#xD;
-&quot;This records identifiers associated with this procedure that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot; - HL7 FHIR, Procedure.identifier&#xD;
-&quot;The unique identifier(s) of this clinical statement. It must be entered if user wants it returned as part of any output (e.g., a wound number), otherwise it will be auto-generated, if needed, by the system serving the record. An identifier does not need to be the actual identifier of the source system. &quot; - HL7 CIMI, InformationEntry.identifier&#xD;
-In Pharmacy Dispense, this is the unique identifier for this dispense, also known as a &quot;Fill Id&quot;. &quot;Identifier assigned by the dispensing facility - this is an identifier assigned outside FHIR.&quot; - HL7 FHIR, MedicationDispense.identifier</body>
+&quot;This records identifiers associated with this procedure that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot; - HL7 FHIR, Procedure.identifier</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nbH1QFaeEd6rJ7jpZ7LBFg" value="1"/>
@@ -6833,7 +6856,12 @@ In Pharmacy Dispense, this is the unique identifier for this dispense, also know
       <ownedAttribute xmi:id="_PSI_ADn3EeiefcoRQJXpFA" name="currentStatus" visibility="public">
         <ownedComment xmi:id="_PSI_ATn3EeiefcoRQJXpFA" annotatedElement="_PSI_ADn3EeiefcoRQJXpFA">
           <body>&quot;The latest recorded status of an action within the specified context. An action may be interpretable within a specific context such as whether it is planned, ordered, or performed. Moreover, within each of these contexts, an action may have a set of allowable states in which it can exist. For instance, a proposal may be rejected or an order may be signed, canceled or superceded by another order.&quot; - HL7 CIMI, ActionContext.currentStatus&#xD;
-&quot;A code specifying the state of the procedure. Generally this will be in-progress or completed state.&quot; - HL7 FHIR, Procedure.status</body>
+&quot;A code specifying the state of the procedure. Generally this will be in-progress or completed state.&quot; - HL7 FHIR, Procedure.status&#xD;
+&#xD;
+The current state of the Substance Administration. Possible values include: Infusing, Given, Held, Completed, etc.&#xD;
+&quot;Status of treatment administration event. Refer to HL7 Table 0322 - Completion Status in Chapter 2C for valid values.&quot; - HL7 Version 2.8, RXA-20&#xD;
+&quot;Will generally be set to show that the administration has been completed. For some long running administrations such as infusions it is possible for an administration to be started but not completed or it may be paused while some other process is under way.&quot; - HL7 FHIR, MedicationAdministration.status&#xD;
+&quot;Indicates the current status of the vaccination event.&quot; - HL7 FHIR, Immunization.status</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PSI_Ajn3EeiefcoRQJXpFA" value="*"/>
@@ -6872,8 +6900,13 @@ In Pharmacy Dispense, this is the unique identifier for this dispense, also know
       </ownedAttribute>
       <ownedAttribute xmi:id="_BtOakE_GEeicO4zK57V_lA" name="location" visibility="public">
         <ownedComment xmi:id="_OHjNQE_GEeicO4zK57V_lA" annotatedElement="_BtOakE_GEeicO4zK57V_lA">
-          <body>The location at which the procedure or action was perfored or is planned to be performed. Note that the FHIM ServiceDeliveryLocation can refer to a medical facility or to a general location identified by mailing address or by geospatial coordinates. For example, actions performed at an automobile accident scene might reference geospatial coordinates.&#xD;
+          <body>The location at which the procedure or action was performed or is planned to be performed. Note that the FHIM ServiceDeliveryLocation can refer to a medical facility or to a general location identified by mailing address or by geospatial coordinates. For example, actions performed at an automobile accident scene might reference geospatial coordinates. For inpatient situations, this location may be the room, bed, and/or ward at which the patient was located at the time of the action (e.g., medication administration, procedure).&#xD;
+&#xD;
+&quot;Contains the inpatient or outpatient location at which the drug or treatment was administered (if applicable).&quot; - HL7 Version 2.8, RXA-11&#xD;
+&quot;Specifies the location where the drug or treatment was administered.&quot; - HL7 Version 2.8, RXA-27&#xD;
+&#xD;
 &quot;Location where procedure was performed or is to be performed.&quot; - HL7 CIMI, ProcedureTopic.location&#xD;
+&quot;The service delivery location where the vaccine administration occurred.&quot;  - HL7 FHIR, Immunization.location&#xD;
 &quot;The location where the procedure actually happened. E.g. a newborn at home, a tracheostomy at a restaurant.&quot; - HL7 FHIR, Procedure.location</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
@@ -6907,7 +6940,11 @@ In Pharmacy Dispense, this is the unique identifier for this dispense, also know
         <ownedComment xmi:id="_c3Ff1Tn5EeiefcoRQJXpFA" annotatedElement="_c3Ff1Dn5EeiefcoRQJXpFA">
           <body>&quot;This field contains a coded explanation of the reason for the order event described by the order control code &quot; - HL7 Version 2.8, ORC-16&#xD;
 &quot;The reason for performing this act.&quot; - HL7 CIMI, ProcedureTopic.reason&#xD;
-&quot;The coded reason why the procedure was performed. This may be coded entity of some type, or may simply be present as text.&quot; - HL7 FHIR, Procedure.reasonCode</body>
+&quot;Reasons why a vaccine was administered.&quot; - HL7 FHIR, Immunization.explanation.reason&#xD;
+&quot;The coded reason why the procedure was performed. This may be coded entity of some type, or may simply be present as text.&quot; - HL7 FHIR, Procedure.reasonCode&#xD;
+&#xD;
+Indicates why the medication was given. Valid values in FHIR currently consist of only Given as ordered and Emergency, whereas in FHIM this property is expected to also provide a reason why a medication was administered when under a PRN* order (e.g., patient was in pain, patient was nauseous, etc.). [*PRN is an abbreviation for &quot;pro re nata&quot;, a Latin phrase meaning &quot;as the need arises.&quot; In a PRN order, the administration times (if any) are determined by the patient's needs].&#xD;
+&quot;A code indicating why the medication was given.&quot; - HL7 FHIR, MedicationAdministration.reasonCode</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c3Ff1jn5EeiefcoRQJXpFA" value="1"/>
@@ -6931,7 +6968,8 @@ In Pharmacy Dispense, this is the unique identifier for this dispense, also know
       </ownedAttribute>
       <ownedAttribute xmi:id="_PSI_DDn3EeiefcoRQJXpFA" name="supportingInformation" visibility="public" type="_29nUQBgBEeiwcpUehaEhrA">
         <ownedComment xmi:id="_PSI_DTn3EeiefcoRQJXpFA" annotatedElement="_PSI_DDn3EeiefcoRQJXpFA">
-          <body>&quot;Additional information that supports the performance, non-performance, ordering, or proposing of the clinical action, for example, the patient height and weight, or documentation of heart rate before administering the medication (in case medication needs to be held if heart rate falls in a specific range).&quot; - HL7 CIMI, ActionContext.supportingInformation</body>
+          <body>&quot;Additional information that supports the performance, non-performance, ordering, or proposing of the clinical action, for example, the patient height and weight, or documentation of heart rate before administering the medication (in case medication needs to be held if heart rate falls in a specific range).&quot; - HL7 CIMI, ActionContext.supportingInformation&#xD;
+&quot;Additional information (for example, patient height and weight) that supports the administration of the medication.&quot; - HL7 FHIR, MedicationAdministration.supportingInformation</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PSI_Djn3EeiefcoRQJXpFA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PSI_Dzn3EeiefcoRQJXpFA"/>
@@ -7428,4 +7466,6 @@ In Pharmacy Dispense, this is the unique identifier for this dispense, also know
   <Default:Documentation xmi:id="_b-FYdc1_Eeim86HQHOyP6A" base_Comment="_VuEk4aM0EeSjK-UNpoDZuQ"/>
   <Default:Documentation xmi:id="_b-FYds1_Eeim86HQHOyP6A" base_Comment="_RmTlYBTQEeeSDZ571EKARw"/>
   <Default:Documentation xmi:id="_VhDLkNO2EeiPFvyVFwJcLg" base_Comment="_VhBWYNO2EeiPFvyVFwJcLg"/>
+  <Default:Documentation xmi:id="_7EtpoOE9EeiDi9onc7cbfQ" base_Comment="_7EkfseE9EeiDi9onc7cbfQ"/>
+  <Default:Documentation xmi:id="_FtwH0eRSEei4Ov8Ehaq7-w" base_Comment="_FtwH0ORSEei4Ov8Ehaq7-w"/>
 </xmi:XMI>
