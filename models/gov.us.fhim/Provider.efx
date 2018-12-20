@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.6-->
+<!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
@@ -3132,7 +3132,7 @@ Need to model (or decide not to model):&#xD;
       <ownedComment xmi:id="_jexDcNLfEeaB48kcgQEvbA" annotatedElement="_0f65ACu5Ed-mUrYY2zR9Jw">
         <body>Represents the participation of a Network of healthcare providers with a Health Plan for the purpose of providing healthcare services to members (i.e., patients) of that Plan.</body>
       </ownedComment>
-      <ownedAttribute xmi:id="_6xNQ4Cu5Ed-mUrYY2zR9Jw" name="id" visibility="public">
+      <ownedAttribute xmi:id="_6xNQ4Cu5Ed-mUrYY2zR9Jw" name="identifier" visibility="public">
         <ownedComment xmi:id="_6xNQ4Su5Ed-mUrYY2zR9Jw" annotatedElement="_6xNQ4Cu5Ed-mUrYY2zR9Jw">
           <body>A unique identifier that the payer or information source can use to identify the person as a Policy Holder.</body>
         </ownedComment>
@@ -3330,7 +3330,7 @@ Note that FHIR has a single class, Location, which encompasses concepts which th
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gFYBMhSHEeertqFtRTH1nw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gFYBMxSHEeertqFtRTH1nw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B64586F3EA0341" name="id" visibility="public">
+      <ownedAttribute xmi:id="_420A62FD03B64586F3EA0341" name="identifier" visibility="public">
         <ownedComment xmi:id="_PjJHkPGjEd-ZlYn0p4HjQw" annotatedElement="_420A62FD03B64586F3EA0341">
           <body>Uniquely identifies the location.&#xD;
 &quot;Unique code or number identifying the location to its users.&quot; - HL7 FHIR, Location.identifier</body>
@@ -3538,7 +3538,7 @@ Note that FHIR has a single class, Location, which encompasses concepts which th
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1w1AoRPkEeaECq32HH3IBA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1w1AoBPkEeaECq32HH3IBA"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_lV6l0B2IEd-4VI-lpu-JjQ" name="id" visibility="public">
+      <ownedAttribute xmi:id="_lV6l0B2IEd-4VI-lpu-JjQ" name="identifier" visibility="public">
         <ownedComment xmi:id="_lWEW0B2IEd-4VI-lpu-JjQ" annotatedElement="_lV6l0B2IEd-4VI-lpu-JjQ">
           <body>A unique string or token used to identify the Organization - Location combination.</body>
         </ownedComment>
@@ -3603,7 +3603,7 @@ Note that FHIR has a single class, Location, which encompasses concepts which th
       <ownedComment xmi:id="_YtbugHTAEd-Bj4191_mrEA" annotatedElement="_NefmUHS_Ed-Bj4191_mrEA">
         <body>'The territory over which authority is exercised.' - dictionary.com.  This class represents the organization that has authority over a given territory or area of endeavor.  In other words, this class represents a government or governmental agency.  The government may be a national (e.g., Canada) or territorial (e.g., Virginia).  </body>
       </ownedComment>
-      <ownedAttribute xmi:id="_49GJYXS_Ed-Bj4191_mrEA" name="id" visibility="public">
+      <ownedAttribute xmi:id="_49GJYXS_Ed-Bj4191_mrEA" name="identifier" visibility="public">
         <ownedComment xmi:id="_49GJYnS_Ed-Bj4191_mrEA" annotatedElement="_49GJYXS_Ed-Bj4191_mrEA">
           <body>An unique string or token used to identify the jurisdiction</body>
         </ownedComment>
@@ -3717,7 +3717,7 @@ Note that FHIR has a single class, Location, which encompasses concepts which th
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OhvNEnynEeOHq5zPTCjDoQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OhvNE3ynEeOHq5zPTCjDoQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_3jjxcPv0Ed-3ndaGus2qMA" name="id" visibility="public">
+      <ownedAttribute xmi:id="_3jjxcPv0Ed-3ndaGus2qMA" name="identifier" visibility="public">
         <ownedComment xmi:id="_3jjxcfv0Ed-3ndaGus2qMA" annotatedElement="_3jjxcPv0Ed-3ndaGus2qMA">
           <body>Uniquely identifies the practitioner.  This property should not contain the Tax Id or the National Provider Id, as these types of Ids are called out separately.&#xD;
 &quot;An identifier that applies to this person in this role.&quot; - HL7 FHIR, Practitioner.identifier.</body>
@@ -4040,7 +4040,7 @@ Qualification: 1) a quality or accomplishment that makes someone suitable for a 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s9a8sYy2EeaPWbBiMJSPyg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s9a8sIy2EeaPWbBiMJSPyg" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_b6RqMA_bEee_pMnA6wvovQ" name="id" visibility="public">
+      <ownedAttribute xmi:id="_b6RqMA_bEee_pMnA6wvovQ" name="identifier" visibility="public">
         <ownedComment xmi:id="_o5bBMA_bEee_pMnA6wvovQ" annotatedElement="_b6RqMA_bEee_pMnA6wvovQ">
           <body>&quot;An identifier that applies to this person's qualification in this role.&quot; - HL7 FHIR, Practitioner.qualification.identifier</body>
         </ownedComment>
@@ -4323,7 +4323,7 @@ Electronic Service Information = &quot;All information reasonably necessary to d
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XFMochAZEeewyID-8Rev-g" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFMocxAZEeewyID-8Rev-g"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_nSLuEHyKEeOHq5zPTCjDoQ" name="id" visibility="public">
+      <ownedAttribute xmi:id="_nSLuEHyKEeOHq5zPTCjDoQ" name="identifier" visibility="public">
         <ownedComment xmi:id="_s0FQYHyKEeOHq5zPTCjDoQ" annotatedElement="_nSLuEHyKEeOHq5zPTCjDoQ">
           <body>&quot;An identifier assigned by the provider directory whose purpose is to uniquely identify a unique ESI for an individual, organization, individual-organization relationship.&quot; - ONC S&amp;I Clinical Element Data Dictionary (CEDD), March 2012.&#xD;
 &quot;Identifier for the organization that is used to identify the endpoint across multiple disparate systems.&quot; - HL7 FHIR, Endpoint.identifier</body>
@@ -4781,7 +4781,7 @@ Note that this class is used to schedule Providers and Healthcare Services indep
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_-90Q_wEeec1rk7YVReNA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_-90g_wEeec1rk7YVReNA"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_byqWkA_sEeec1rk7YVReNA" name="id" visibility="public">
+      <ownedAttribute xmi:id="_byqWkA_sEeec1rk7YVReNA" name="identifier" visibility="public">
         <ownedComment xmi:id="_TY4nMA_3Eeec1rk7YVReNA" annotatedElement="_byqWkA_sEeec1rk7YVReNA">
           <body>&quot;Business Identifiers that are specific to a role/location.&quot; - HL7 FHIR, PractitionerRole.identifier</body>
         </ownedComment>
@@ -5075,7 +5075,7 @@ Note that FHIR binds both category and type to the same vocabulary, so there doe
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2nJt8RToEeeYjZW8j3SRUg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2nJt8hToEeeYjZW8j3SRUg"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_-trloBTnEeeYjZW8j3SRUg" name="id" visibility="public">
+      <ownedAttribute xmi:id="_-trloBTnEeeYjZW8j3SRUg" name="identifier" visibility="public">
         <ownedComment xmi:id="_-trloRTnEeeYjZW8j3SRUg" annotatedElement="_-trloBTnEeeYjZW8j3SRUg">
           <body>&quot;External identifiers for this item.&quot; - HL7 FHIR, HealthcareService.identifier</body>
         </ownedComment>

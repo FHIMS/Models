@@ -354,7 +354,7 @@
           </children>
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_EaWV0lO0EeOPsNTFFieZWw" type="Stereotype"/>
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_EaWV01O0EeOPsNTFFieZWw" type="CommentBody"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EaTSgFO0EeOPsNTFFieZWw" x="12363" y="3804" width="10157" height="3172"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EaTSgFO0EeOPsNTFFieZWw" x="12363" y="3804" width="10474" height="2853"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_MyEVUNJqEeSWN8ZsMae6GQ" element="_Mx8ZgNJqEeSWN8ZsMae6GQ" fontName="Segoe UI" showListStereotype="Text" showListVisibility="None" showListSignature="true" fillColor="16763850" transparency="0" lineColor="16744576" lineWidth="1" showStereotype="Text">
           <eAnnotations xmi:id="_MyGKgNJqEeSWN8ZsMae6GQ" source="com.ibm.xtools.uml.ui.diagram.internal.styles">
@@ -2655,7 +2655,7 @@ Classes that are used in multiple domains are modeled in the Common package.&#xD
 The FHIM uses simple or “primitive” datatypes wherever possible, but does define several common structures.  See the Datatypes package for details on these.</body>
     </ownedComment>
     <ownedComment xmi:id="_EaFQEFO0EeOPsNTFFieZWw">
-      <body>Note that the &quot;main&quot; FHIM model does not distinguish between &quot;enumerated&quot; and &quot;non-enumerated&quot; (here called UnaffilliatedPerson) persons.  Indivudual &quot;Interoperability Models&quot;, which will be derived from the FHIM, will constrain the properties that are applicable to non-enumerated Persons, such as a Person who is acting as a Contact Party.</body>
+      <body>Note that the FHIM does not distinguish between &quot;enumerated&quot; and &quot;non-enumerated&quot; (here called UnaffilliatedPerson) persons. Individual &quot;Interoperability Models&quot;, which will be derived from the FHIM, will constrain the properties that are applicable to non-enumerated Persons, such as a Person who is acting as a Contact Party.</body>
     </ownedComment>
     <ownedComment xmi:id="_Mx8ZgNJqEeSWN8ZsMae6GQ">
       <body>Note that occasionally the FHIM will contain what appear to be circular references, for example, a Biological Entity can be a Patient (asPatient), which points to Animal and Person (subject).  When implementing the FHIM, one of these paths would be deleted based on the use case.  The FHIM shows that both pathways are potentially possible, but implementations will use different mechanisms to handle this.</body>

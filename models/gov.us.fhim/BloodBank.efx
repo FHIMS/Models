@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.6-->
+<!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
@@ -155,7 +155,7 @@
           <element xmi:type="uml:Class" href="Common.efx#_420A62FD03B642DBE3F101E7?FHIM/Common/Specimen?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kbZBsk10Ed-edbevC5ymeQ" x="35187" y="9510"/>
         </children>
-        <children xmi:type="umlnotation:UMLShape" xmi:id="_B0QQsDwjEeOgEtsAzr0sGA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519679" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_B0QQsDwjEeOgEtsAzr0sGA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519679" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_B0Q3wDwjEeOgEtsAzr0sGA" type="ImageCompartment">
             <layoutConstraint xmi:type="notation:Size" xmi:id="_B0Q3wTwjEeOgEtsAzr0sGA" width="1320" height="1320"/>
           </children>
@@ -167,7 +167,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_B0Ss8TwjEeOgEtsAzr0sGA" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_B0Ss8jwjEeOgEtsAzr0sGA" visible="false" type="StructureCompartment"/>
           <element xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B0QQsTwjEeOgEtsAzr0sGA" x="4755" y="20605"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B0QQsTwjEeOgEtsAzr0sGA" x="4755" y="20288"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_gjqfQeG8EeaHnLXha23s2A" element="_gjqfQOG8EeaHnLXha23s2A" fontName="Segoe UI" showListStereotype="Text" showListVisibility="None" fillColor="16763850" transparency="0" lineColor="16744576" lineWidth="1" showStereotype="Text">
           <eAnnotations xmi:id="_gjqfQ-G8EeaHnLXha23s2A" source="com.ibm.xtools.uml.ui.diagram.internal.styles">
@@ -946,7 +946,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_igET0eG3EeaHnLXha23s2A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_igET0OG3EeaHnLXha23s2A" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B644588D19034F" name="id" visibility="public">
+      <ownedAttribute xmi:id="_420A62FD03B644588D19034F" name="identifier" visibility="public">
         <ownedComment xmi:id="_PLeM9-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B644588D19034F">
           <body>This is the unique identifier of the transfusion event.</body>
         </ownedComment>
@@ -1110,7 +1110,7 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_2o4roOeUEd6qdqXtvR-ZHQ" name="BloodComponent">
-      <ownedAttribute xmi:id="_8AgQkOeUEd6qdqXtvR-ZHQ" name="id" visibility="public">
+      <ownedAttribute xmi:id="_8AgQkOeUEd6qdqXtvR-ZHQ" name="identifier" visibility="public">
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fmSDQeG3EeaHnLXha23s2A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fmSDQOG3EeaHnLXha23s2A" value="1"/>

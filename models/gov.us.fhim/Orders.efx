@@ -1121,20 +1121,6 @@
       <generalization xmi:id="_UHHN0JdVEeiFifyYhiAJ8A">
         <general xmi:type="uml:Class" href="Common.efx#_Da36EE_EEeicO4zK57V_lA?FHIM/Common/ActionStatement?"/>
       </generalization>
-      <ownedAttribute xmi:id="_420A62FD03B64589570A015A" name="dateTimeOrdered" visibility="public">
-        <eAnnotations xmi:id="_MCwvnOLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
-        <ownedComment xmi:id="_MCwvmuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64589570A015A">
-          <body>The date/time upon which the Order was authorized (signed) and released by the ordering provider.&#xD;
-&quot;Contains the date and time of the event that initiated the current transaction as reflected in ORC-1 Order Control Code.&quot; - HL7 Version 2.8, ORC-9&#xD;
-&quot;Contains the date/time that the changes to the request took effect or are supposed to take effect....&quot; - HL7 Version 2.8, ORC-15&#xD;
-&quot;For draft requests, indicates the date of initial creation. For requests with other statuses, indicates the date of activation.&quot; - HL7 FHIR, Request.authoredOn&#xD;
-&quot;The date (and perhaps time) when the prescription was initially written or authored on.&quot; - HL7 FHIR, MedicationRequest.authoredOn&#xD;
-&quot;Date prescription was written.&quot; - NCPDP Telecommunication (Field 414-DE, Data Dictionary 201104).</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ettWXuLjEdutr_MT9HkPyQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ettWXeLjEdutr_MT9HkPyQ" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_njwJ0OO3EeCbbuWBGGTBrA" name="advanceBeneficiaryNoticeCode" visibility="public">
         <ownedComment xmi:id="_fdRtQAcqEeGfLeiV6Brugg" annotatedElement="_njwJ0OO3EeCbbuWBGGTBrA">
           <body>&quot;This field indicates the status of the patient's or the patient's representative's consent for responsibility to pay for potentially uninsured services. This element is introduced to satisfy CMS Medical Necessity requirements for outpatient services. This element indicates (a) whether the associated diagnosis codes for the service are subject to medical necessity procedures, (b) whether, for this type of service, the patient has been informed that they may be responsible for payment for the service, and (c) whether the patient agrees to be billed for this service&quot; - HL7 Version 2.8, ORC-20</body>
@@ -1166,6 +1152,15 @@
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JcqWosSkEeG325TcQ8YAGA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JcqWo8SkEeG325TcQ8YAGA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_BF08AU_JEeicO4zK57V_lA" name="basedOn" visibility="public">
+        <ownedComment xmi:id="_REeNME_NEeicO4zK57V_lA" annotatedElement="_BF08AU_JEeicO4zK57V_lA">
+          <body>&quot;The proposal that is partly or wholly fulfilled by the performance of this act.&quot; - HL7 CIMI, Order.basedOn</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#_7cG7cDnEEeily54_XzrISg?FHIM/Common/ActionProposed?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BF08A0_JEeicO4zK57V_lA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BF08Ak_JEeicO4zK57V_lA"/>
+        <association href="Common.efx#_BF08AE_JEeicO4zK57V_lA?FHIM/Common/%3CAssociation%3E?"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_UxCjsMX-EeGsb4KXw2Babg" name="billingInformation" visibility="public" type="_SsqRIMX-EeGsb4KXw2Babg" association="_Uw9rMMX-EeGsb4KXw2Babg">
         <ownedComment xmi:id="_nkgX0MYAEeGsb4KXw2Babg" annotatedElement="_UxCjsMX-EeGsb4KXw2Babg">
@@ -1241,6 +1236,20 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BUKOkod5EeeJXvOkPl8Bfw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BUKOk4d5EeeJXvOkPl8Bfw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B64589570A015A" name="dateTimeOrdered" visibility="public">
+        <eAnnotations xmi:id="_MCwvnOLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <ownedComment xmi:id="_MCwvmuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64589570A015A">
+          <body>The date/time upon which the Order was authorized (signed) and released by the ordering provider.&#xD;
+&quot;Contains the date and time of the event that initiated the current transaction as reflected in ORC-1 Order Control Code.&quot; - HL7 Version 2.8, ORC-9&#xD;
+&quot;Contains the date/time that the changes to the request took effect or are supposed to take effect....&quot; - HL7 Version 2.8, ORC-15&#xD;
+&quot;For draft requests, indicates the date of initial creation. For requests with other statuses, indicates the date of activation.&quot; - HL7 FHIR, Request.authoredOn&#xD;
+&quot;The date (and perhaps time) when the prescription was initially written or authored on.&quot; - HL7 FHIR, MedicationRequest.authoredOn&#xD;
+&quot;Date prescription was written.&quot; - NCPDP Telecommunication (Field 414-DE, Data Dictionary 201104).</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ettWXuLjEdutr_MT9HkPyQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ettWXeLjEdutr_MT9HkPyQ" value="1"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_ep2kgZkGEeCFEfqQZ7sMZg" name="diagnosisList" visibility="public" association="_ep2kgJkGEeCFEfqQZ7sMZg">
         <ownedComment xmi:id="_5A9_oBUwEeGk2cucW4LtoA" annotatedElement="_ep2kgZkGEeCFEfqQZ7sMZg">
           <body>A (set of) specific confirmed or suspected patient diagnosis associated with a Health Care Order indicating the health care basis for the Healthcare Order.</body>
@@ -1257,12 +1266,21 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tyyPkbynEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tyyPkLynEea_DaXmJ278Kw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_v4ihEMoSEeGas4Yp_oUthg" name="promise" visibility="public" type="_3r94oOO5EeCbbuWBGGTBrA" association="_v4ePoMoSEeGas4Yp_oUthg">
-        <ownedComment xmi:id="_Vr4KcMoTEeGas4Yp_oUthg" annotatedElement="_v4ihEMoSEeGas4Yp_oUthg">
-          <body>Points to the Healthcare Promises (if any) created in response to the Healthcare Order.  Note that since both the HealthcareOrder and HealthcarePromise are abstract classes, this association is available to all subclasses, such that LabPromise would point to LabOrder, etc.</body>
+      <ownedAttribute xmi:id="_3P274IxiEeikEIFpfvQzog" name="enteringLocation" visibility="public">
+        <ownedComment xmi:id="_7g7vgIxiEeikEIFpfvQzog" annotatedElement="_3P274IxiEeikEIFpfvQzog">
+          <body>&quot;Specifies the location (e.g., nurse station, ancillary service location, clinic, floor) where the person who entered the request was physically located when the order was entered. &quot; - HL7 Version 2.8, ORC-13</body>
         </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v4kWQMoSEeGas4Yp_oUthg" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v4jvMMoSEeGas4Yp_oUthg"/>
+        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3P274YxiEeikEIFpfvQzog" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3P274oxiEeikEIFpfvQzog"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G4eUxAVGEeiuXpuGM4C-xQ" name="expectedPerformer" visibility="public">
+        <ownedComment xmi:id="_G4eUxQVGEeiuXpuGM4C-xQ" annotatedElement="_G4eUxAVGEeiuXpuGM4C-xQ">
+          <body>&quot;Persons who are expected to or intended to perform this action, e.g., the person who will perform the surgery.&quot; - HL7 CIMI, Request.expectedPerformer</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#_420A62FD03B6418CF92600E1?FHIM/Common/Participation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G4eUxgVGEeiuXpuGM4C-xQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G4eUxwVGEeiuXpuGM4C-xQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_E6tyYAcbEeGfLeiV6Brugg" name="isEscortRequired" visibility="public">
         <ownedComment xmi:id="_5QnZYAczEeGfLeiV6Brugg" annotatedElement="_E6tyYAcbEeGfLeiV6Brugg">
@@ -1288,6 +1306,60 @@
         <type xmi:type="uml:Class" href="Datatypes.efx#_AllZ0BWVEeeKharB8T6q_A?FHIM/Datatypes/Timing?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ya3RciR-EeeGzeZ-iJyMXQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ya3RcyR-EeeGzeZ-iJyMXQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_X0fyAaPsEei7vKr62x5GtA" name="orderAction" visibility="public" type="_RhWsgJdVEeiFifyYhiAJ8A" association="_X0fyAKPsEei7vKr62x5GtA">
+        <ownedComment xmi:id="_ZQSakKPsEei7vKr62x5GtA" annotatedElement="_X0fyAaPsEei7vKr62x5GtA">
+          <body>A record of action has been taken on an order, including the signature and verification required to release to the service.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X0fyA6PsEei7vKr62x5GtA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X0fyAqPsEei7vKr62x5GtA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_v1e1AIxiEeikEIFpfvQzog" name="orderingFacility" visibility="public">
+        <ownedComment xmi:id="_6HdbIIxiEeikEIFpfvQzog" annotatedElement="_v1e1AIxiEeikEIFpfvQzog">
+          <body>&quot;This field contains the name of the facility placing the order.&quot; - HL7 Version 2.8, ORC-21&#xD;
+&quot;This field contains the address of the facility placing the order.&quot; - HL7 Version 2.8, ORC-22&#xD;
+&quot;This field contains the telephone number of the facility placing the order.&quot; - HL7 Version 2.8, ORC-23</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HakQYxiEeikEIFpfvQzog" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0HakQIxiEeikEIFpfvQzog"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_gUW0AIxjEeikEIFpfvQzog" name="orderingOrganization" visibility="public">
+        <ownedComment xmi:id="_gUW0AYxjEeikEIFpfvQzog" annotatedElement="_gUW0AIxjEeikEIFpfvQzog">
+          <body>The physical location of the patient.  This information is used to communicate to the performing Service where the Patient might be found, which is particularly important for services that involve the patient (e.g., a Lab Test ordered requires a blood draw).&#xD;
+&quot;Specifies the location of the patient to whom the pharmaceutical substance is to be delivered.&quot; - HL7 Version 2.8, RXO-34.&#xD;
+&quot;Specifies the address, either mailing or physical, to which the prescription should be mailed or delivered.&quot; - HL7 Version 2.8, RXO-35.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B6418AA15801A9?FHIM/Provider/Organization?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gUW0AoxjEeikEIFpfvQzog" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gUW0A4xjEeikEIFpfvQzog"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_9DY2wE_HEeicO4zK57V_lA" name="orderingProvider" visibility="public">
+        <ownedComment xmi:id="_9DY2wU_HEeicO4zK57V_lA" annotatedElement="_9DY2wE_HEeicO4zK57V_lA">
+          <body>&#xD;
+&quot;Information about the ordering of the action such as who made the request, when the request was made, how it was made, etc...&quot; - HL7 CIMI, Request.requested</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#_1nqfgOQXEeak6NCuAd5Onw?FHIM/Common/Attribution?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9DY2wk_HEeicO4zK57V_lA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9DY2w0_HEeicO4zK57V_lA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_AbIOqE_IEeicO4zK57V_lA" name="patientInstructions" visibility="public">
+        <ownedComment xmi:id="_AbIOqU_IEeicO4zK57V_lA" annotatedElement="_AbIOqE_IEeicO4zK57V_lA">
+          <body>&quot;Identifies the ordering provider's instructions to the patient or to the provider on how to deliver or comply with the ordered procedure.&quot; - HL7 CIMI, Order.patientInstructions</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AbIOqk_IEeicO4zK57V_lA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AbIOq0_IEeicO4zK57V_lA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_PPxRoIxjEeikEIFpfvQzog" name="patientLocation" visibility="public">
+        <ownedComment xmi:id="_PPxRoYxjEeikEIFpfvQzog" annotatedElement="_PPxRoIxjEeikEIFpfvQzog">
+          <body>The physical location of the patient.  This information is used to communicate to the performing Service where the Patient might be found, which is particularly important for services that involve the patient (e.g., a Lab Test ordered requires a blood draw).&#xD;
+&quot;Specifies the location of the patient to whom the pharmaceutical substance is to be delivered.&quot; - HL7 Version 2.8, RXO-34.&#xD;
+&quot;Specifies the address, either mailing or physical, to which the prescription should be mailed or delivered.&quot; - HL7 Version 2.8, RXO-35.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PPxRooxjEeikEIFpfvQzog" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PPxRo4xjEeikEIFpfvQzog"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B64589570A015B" name="placerOrderId" visibility="public">
         <ownedComment xmi:id="_MC55gOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64589570A015B">
@@ -1321,6 +1393,25 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u5j9QdzCEeWL2f9XaFHwGQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u5j9QNzCEeWL2f9XaFHwGQ"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_G4nesAVGEeiuXpuGM4C-xQ" name="priority" visibility="public">
+        <eAnnotations xmi:id="_G4nesQVGEeiuXpuGM4C-xQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <ownedComment xmi:id="_G4nesgVGEeiuXpuGM4C-xQ" annotatedElement="_G4nesAVGEeiuXpuGM4C-xQ">
+          <body>&quot;This field describes the urgency of the request.  If this field is blank, the default is R&quot; (Routine) - HL7 Version 2.8, TQ1-9&#xD;
+&quot;Indicates how quickly the [request] should be addressed with respect to other requests.&quot; - HL7 FHIR, Request.priority&#xD;
+&quot;Indicates how quickly the Medication Request should be addressed with respect to other requests.&quot; - HL7 FHIR, MedicationRequest.category&#xD;
+&quot;How quickly the action must be initiated. Includes concepts such as stat, urgent, routine.&quot; - HL7 CIMI, Request.priority</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G4neswVGEeiuXpuGM4C-xQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G4netAVGEeiuXpuGM4C-xQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_v4ihEMoSEeGas4Yp_oUthg" name="promise" visibility="public" type="_3r94oOO5EeCbbuWBGGTBrA" association="_v4ePoMoSEeGas4Yp_oUthg">
+        <ownedComment xmi:id="_Vr4KcMoTEeGas4Yp_oUthg" annotatedElement="_v4ihEMoSEeGas4Yp_oUthg">
+          <body>Points to the Healthcare Promises (if any) created in response to the Healthcare Order.  Note that since both the HealthcareOrder and HealthcarePromise are abstract classes, this association is available to all subclasses, such that LabPromise would point to LabOrder, etc.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v4kWQMoSEeGas4Yp_oUthg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v4jvMMoSEeGas4Yp_oUthg"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_4aBxgO3KEeCFZuasLkncZQ" name="reasonForStudy" visibility="public">
         <ownedComment xmi:id="_l7FUgO3LEeCFZuasLkncZQ" annotatedElement="_4aBxgO3KEeCFZuasLkncZQ">
           <body>&quot;This is required for some studies to obtain proper reimbursement.&quot; - HL7 Version 2.8, OBR-31.  Used to link various tests or procedures together in order to provide a more complete picture of a patient's condition.  Also used for billing purposes.</body>
@@ -1329,6 +1420,14 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mrMi0O3LEeCFZuasLkncZQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mrL7wO3LEeCFZuasLkncZQ"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_YDe_cIxiEeikEIFpfvQzog" name="releaseStatus" visibility="public">
+        <ownedComment xmi:id="_YDe_cYxiEeikEIFpfvQzog" annotatedElement="_YDe_cIxiEeikEIFpfvQzog">
+          <body>This optional field tracks the status of the order action within the ordering workflow. This is different from the order status. Valid values include: Unreleased, Pre-release, Rejected, Signature Needed, Co-signature needed, etc.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YDe_coxiEeikEIFpfvQzog" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YDe_c4xiEeikEIFpfvQzog"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_Wsp5EAmDEeGe4v7RnpTDUQ" name="relevantClinicalInformation" visibility="public">
         <ownedComment xmi:id="_gTZJ0AmDEeGe4v7RnpTDUQ" annotatedElement="_Wsp5EAmDEeGe4v7RnpTDUQ">
           <body>&quot;Contains the additional clinical information about the patient or specimen.  This field is used to report the suspected diagnosis and clinical findings on requests for interpreted diagnostic studies.  Examples include reporting the amount of inspired carbon dioxide for blood gasses, the point in the menstrual cycle for cervical pap tests, and other conditions that influence test interpretations.&quot; - HL7 Version 2.8, OBR-13.  Possible values include (from HL7 Table 916): Patient was fasting prior to the procedure; The patient indicated they did not fast prior to the procedure; Not Given – Patient was not asked at the time of the procedure; Fasting not asked of the patient at time of procedure.</body>
@@ -1336,14 +1435,6 @@
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_84xFsMncEeG_ScqIlDrcqg" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_84v3kMncEeG_ScqIlDrcqg"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_BaqREIlEEd-pqcFAwb-XNw" name="remarks" visibility="public">
-        <ownedComment xmi:id="_fJjHEO62Ed-crcWiXVDZrQ" annotatedElement="_BaqREIlEEd-pqcFAwb-XNw">
-          <body>General textual comments about this Order.</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0PoXMLynEea_DaXmJ278Kw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0PnwILynEea_DaXmJ278Kw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_5Hk0kOGpEeaHnLXha23s2A" name="resultCopiesTo" visibility="public">
         <ownedComment xmi:id="_DafO0OGqEeaHnLXha23s2A" annotatedElement="_5Hk0kOGpEeaHnLXha23s2A">
@@ -1433,131 +1524,6 @@ NOTE: This property has been added for compatibility to CIMI, but is probably ha
         <type xmi:type="uml:Class" href="Datatypes.efx#_VO5nkLHGEeaLhL0dBWV_ew?FHIM/Datatypes/TimeInterval?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G4eUwgVGEeiuXpuGM4C-xQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G4eUwwVGEeiuXpuGM4C-xQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_G4eUxAVGEeiuXpuGM4C-xQ" name="expectedPerformer" visibility="public">
-        <ownedComment xmi:id="_G4eUxQVGEeiuXpuGM4C-xQ" annotatedElement="_G4eUxAVGEeiuXpuGM4C-xQ">
-          <body>&quot;Persons who are expected to or intended to perform this action, e.g., the person who will perform the surgery.&quot; - HL7 CIMI, Request.expectedPerformer</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#_420A62FD03B6418CF92600E1?FHIM/Common/Participation?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G4eUxgVGEeiuXpuGM4C-xQ" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G4eUxwVGEeiuXpuGM4C-xQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_G4nesAVGEeiuXpuGM4C-xQ" name="priority" visibility="public">
-        <eAnnotations xmi:id="_G4nesQVGEeiuXpuGM4C-xQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
-        <ownedComment xmi:id="_G4nesgVGEeiuXpuGM4C-xQ" annotatedElement="_G4nesAVGEeiuXpuGM4C-xQ">
-          <body>&quot;This field describes the urgency of the request.  If this field is blank, the default is R&quot; (Routine) - HL7 Version 2.8, TQ1-9&#xD;
-&quot;Indicates how quickly the [request] should be addressed with respect to other requests.&quot; - HL7 FHIR, Request.priority&#xD;
-&quot;Indicates how quickly the Medication Request should be addressed with respect to other requests.&quot; - HL7 FHIR, MedicationRequest.category&#xD;
-&quot;How quickly the action must be initiated. Includes concepts such as stat, urgent, routine.&quot; - HL7 CIMI, Request.priority</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G4neswVGEeiuXpuGM4C-xQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G4netAVGEeiuXpuGM4C-xQ" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_9DY2wE_HEeicO4zK57V_lA" name="_requested" visibility="public">
-        <ownedComment xmi:id="_9DY2wU_HEeicO4zK57V_lA" annotatedElement="_9DY2wE_HEeicO4zK57V_lA">
-          <body>&quot;Information about the ordering of the action such as who made the request, when the request was made, how it was made, etc...&quot; - HL7 CIMI, Request.requested</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#_1nqfgOQXEeak6NCuAd5Onw?FHIM/Common/Attribution?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9DY2wk_HEeicO4zK57V_lA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9DY2w0_HEeicO4zK57V_lA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_9DY2xE_HEeicO4zK57V_lA" name="_type" visibility="public">
-        <ownedComment xmi:id="_9DY2xU_HEeicO4zK57V_lA" annotatedElement="_9DY2xE_HEeicO4zK57V_lA">
-          <body>Indicates the action that was ordered (e.g., New, Hold, Discontinue, etc),&#xD;
-&quot;Determines the function of the order segment.... Depending on the message, the action of the control code may refer to an order or an individual service. For example, the code CA in an OMP message cancels the order. The same code in an RDS message, cancels the dispense. Very detailed explanatory notes are given at the end of this section.&quot; HL7 2.9, ORC-1. HL7 Table 119 contains 56 possible values for this field.&#xD;
-Note that the FHIM Order Action is equivalent to the ORC-1 action in only those situations where the order event is being requested (e.g., New, Suspend, Resume, Cancel). For other situations, such as acknowlegements between computer systems, the ORC-1 action has no equivelent in the FHIM.&#xD;
-&quot;Indicates the type of the request that is made, for example, to initiate an action, to suspend an ongoing activity, to discontinue an ongoing activity, or to cancel an existing request.&quot; - HL7 CIMI, Request.type</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9DY2xk_HEeicO4zK57V_lA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9DY2x0_HEeicO4zK57V_lA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_AbIOoE_IEeicO4zK57V_lA" name="_groupIdentifier" visibility="public">
-        <ownedComment xmi:id="_AbIOoU_IEeicO4zK57V_lA" annotatedElement="_AbIOoE_IEeicO4zK57V_lA">
-          <body>&quot;A shared identifier common to all requests that were authorized more or less simultaneously by a single author. It could be the identifier of a requisition or prescription that contains orders for a set of medications, each individual medication order having the identifier of the parent order.&quot; - HL7 CIMI, Order.groupIdentifier</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AbIOok_IEeicO4zK57V_lA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AbIOo0_IEeicO4zK57V_lA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_AbIOqE_IEeicO4zK57V_lA" name="_patientInstructions" visibility="public">
-        <ownedComment xmi:id="_AbIOqU_IEeicO4zK57V_lA" annotatedElement="_AbIOqE_IEeicO4zK57V_lA">
-          <body>&quot;Identifies the ordering provider's instructions to the patient or to the provider on how to deliver or comply with the ordered procedure.&quot; - HL7 CIMI, Order.patientInstructions</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AbIOqk_IEeicO4zK57V_lA" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AbIOq0_IEeicO4zK57V_lA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_AbR_oE_IEeicO4zK57V_lA" name="_priorRequest" visibility="public">
-        <ownedComment xmi:id="_AbR_oU_IEeicO4zK57V_lA" annotatedElement="_AbR_oE_IEeicO4zK57V_lA">
-          <body>&quot;A link to a resource representing an earlier order related order or prescription.&quot; - HL7 CIMI, Order.priorRequest</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AbR_ok_IEeicO4zK57V_lA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AbR_o0_IEeicO4zK57V_lA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_BF08AU_JEeicO4zK57V_lA" name="basedOn" visibility="public">
-        <ownedComment xmi:id="_REeNME_NEeicO4zK57V_lA" annotatedElement="_BF08AU_JEeicO4zK57V_lA">
-          <body>&quot;The proposal that is partly or wholly fulfilled by the performance of this act.&quot; - HL7 CIMI, Order.basedOn</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#_7cG7cDnEEeily54_XzrISg?FHIM/Common/ActionProposed?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BF08A0_JEeicO4zK57V_lA" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BF08Ak_JEeicO4zK57V_lA"/>
-        <association href="Common.efx#_BF08AE_JEeicO4zK57V_lA?FHIM/Common/%3CAssociation%3E?"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_YDe_cIxiEeikEIFpfvQzog" name="releaseStatus" visibility="public">
-        <ownedComment xmi:id="_YDe_cYxiEeikEIFpfvQzog" annotatedElement="_YDe_cIxiEeikEIFpfvQzog">
-          <body>This optional field tracks the status of the order action within the ordering workflow. This is different from the order status. Valid values include: Unreleased, Pre-release, Rejected, Signature Needed, Co-signature needed, etc.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YDe_coxiEeikEIFpfvQzog" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YDe_c4xiEeikEIFpfvQzog"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_v1e1AIxiEeikEIFpfvQzog" name="orderingFacility" visibility="public">
-        <ownedComment xmi:id="_6HdbIIxiEeikEIFpfvQzog" annotatedElement="_v1e1AIxiEeikEIFpfvQzog">
-          <body>&quot;This field contains the name of the facility placing the order.&quot; - HL7 Version 2.8, ORC-21&#xD;
-&quot;This field contains the address of the facility placing the order.&quot; - HL7 Version 2.8, ORC-22&#xD;
-&quot;This field contains the telephone number of the facility placing the order.&quot; - HL7 Version 2.8, ORC-23</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HakQYxiEeikEIFpfvQzog" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0HakQIxiEeikEIFpfvQzog"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_3P274IxiEeikEIFpfvQzog" name="enteringLocation" visibility="public">
-        <ownedComment xmi:id="_7g7vgIxiEeikEIFpfvQzog" annotatedElement="_3P274IxiEeikEIFpfvQzog">
-          <body>&quot;Specifies the location (e.g., nurse station, ancillary service location, clinic, floor) where the person who entered the request was physically located when the order was entered. &quot; - HL7 Version 2.8, ORC-13</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3P274YxiEeikEIFpfvQzog" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3P274oxiEeikEIFpfvQzog"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_PPxRoIxjEeikEIFpfvQzog" name="patientLocation" visibility="public">
-        <ownedComment xmi:id="_PPxRoYxjEeikEIFpfvQzog" annotatedElement="_PPxRoIxjEeikEIFpfvQzog">
-          <body>The physical location of the patient.  This information is used to communicate to the performing Service where the Patient might be found, which is particularly important for services that involve the patient (e.g., a Lab Test ordered requires a blood draw).&#xD;
-&quot;Specifies the location of the patient to whom the pharmaceutical substance is to be delivered.&quot; - HL7 Version 2.8, RXO-34.&#xD;
-&quot;Specifies the address, either mailing or physical, to which the prescription should be mailed or delivered.&quot; - HL7 Version 2.8, RXO-35.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PPxRooxjEeikEIFpfvQzog" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PPxRo4xjEeikEIFpfvQzog"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_gUW0AIxjEeikEIFpfvQzog" name="orderingOrganization" visibility="public">
-        <ownedComment xmi:id="_gUW0AYxjEeikEIFpfvQzog" annotatedElement="_gUW0AIxjEeikEIFpfvQzog">
-          <body>The physical location of the patient.  This information is used to communicate to the performing Service where the Patient might be found, which is particularly important for services that involve the patient (e.g., a Lab Test ordered requires a blood draw).&#xD;
-&quot;Specifies the location of the patient to whom the pharmaceutical substance is to be delivered.&quot; - HL7 Version 2.8, RXO-34.&#xD;
-&quot;Specifies the address, either mailing or physical, to which the prescription should be mailed or delivered.&quot; - HL7 Version 2.8, RXO-35.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B6418AA15801A9?FHIM/Provider/Organization?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gUW0AoxjEeikEIFpfvQzog" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gUW0A4xjEeikEIFpfvQzog"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_X0fyAaPsEei7vKr62x5GtA" name="orderAction" visibility="public" type="_RhWsgJdVEeiFifyYhiAJ8A" association="_X0fyAKPsEei7vKr62x5GtA">
-        <ownedComment xmi:id="_ZQSakKPsEei7vKr62x5GtA" annotatedElement="_X0fyAaPsEei7vKr62x5GtA">
-          <body>A record of action has been taken on an order, including the signature and verification required to release to the service.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X0fyA6PsEei7vKr62x5GtA" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X0fyAqPsEei7vKr62x5GtA"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6420BD5E80118" name="DetectedIssueEvent">
@@ -1723,7 +1689,7 @@ Note that the FHIM Order Action is equivalent to the ORC-1 action in only those 
       <ownedAttribute xmi:id="_cPyYYPDqEd-lSvs7gQOGZw" name="identifier" visibility="public">
         <ownedComment xmi:id="_cPyYYfDqEd-lSvs7gQOGZw" annotatedElement="_cPyYYPDqEd-lSvs7gQOGZw">
           <body>&quot;Contains a unique identifier for the Placer Group as referenced by the Placer application, the Filler application, or both.&quot; - HL7 Version 2.8, ORC-4&#xD;
-&quot;A shared identifier common to all requests that were authorized more or less simultaneously by a single author, representing the identifier of the requisition or prescription. E.g., an order set for a given patient contains a set of medication orderables. Each child orderable in the order set may contain a group identifier which is the identifier of the order set itself (the requisition).&quot; - HL7 CIMI Order.groupIdentifier&#xD;
+&quot;A shared identifier common to all requests that were authorized more or less simultaneously by a single author. It could be the identifier of a requisition or prescription that contains orders for a set of medications, each individual medication order having the identifier of the parent order.&quot; - HL7 CIMI, Order.groupIdentifier&#xD;
 Note that both v2 and CIMI link related orders together via the use of a shared grouping identifier, whereas the FHIM considers a Set of Orders to be a stand-alone concept in its own right.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
@@ -1859,6 +1825,22 @@ Note that both v2 and CIMI link related orders together via the use of a shared 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u9EVodOWEd2aQZomWdBJLg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u9EVoNOWEd2aQZomWdBJLg" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_myeG8IxjEeikEIFpfvQzog" name="promisingOrganization" visibility="public">
+        <ownedComment xmi:id="_myeG8YxjEeikEIFpfvQzog" annotatedElement="_myeG8IxjEeikEIFpfvQzog">
+          <body>Identifies the Organization to which the Healthcare Order was sent for performance. Used to identify the performing organization, especially when the ordering organization is different than the performing organization. For example if the VA orders a lab test from Quest Diagnostics, this field would contain Quest Diagnostics.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B6418AA15801A9?FHIM/Provider/Organization?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_myeG8oxjEeikEIFpfvQzog" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_myeG84xjEeikEIFpfvQzog"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_1mvfAE_HEeicO4zK57V_lA" name="promisingProvider" visibility="public">
+        <ownedComment xmi:id="_1mvfAU_HEeicO4zK57V_lA" annotatedElement="_1mvfAE_HEeicO4zK57V_lA">
+          <body>&quot;Information about who made the promise, when did they make it, how was it conveyed, etc...&quot; - HL7 CIMI, Promise.promised</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#_1nqfgOQXEeak6NCuAd5Onw?FHIM/Common/Attribution?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1mvfAk_HEeicO4zK57V_lA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1mvfA0_HEeicO4zK57V_lA"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_eCP24PjKEeCmc6EQPl3F9g" name="scheduledDateTime" visibility="public">
         <ownedComment xmi:id="_UECE0PjLEeCmc6EQPl3F9g" annotatedElement="_eCP24PjKEeCmc6EQPl3F9g">
           <body>&quot;The date/time the filler scheduled an observation, when applicable (e.g., action code in OBR-11-specimen action code = &quot;S&quot;).  This is a result of a request to schedule a particular test and provides a way to inform the placer of the date/time a study is scheduled (result only).&quot; - HL7 Version 2.8, OBR.36</body>
@@ -1890,22 +1872,6 @@ Note that both v2 and CIMI link related orders together via the use of a shared 
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s5PJgeOaEd-8X4J7aT-aiQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s5PJguOaEd-8X4J7aT-aiQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_1mvfAE_HEeicO4zK57V_lA" name="_promised" visibility="public">
-        <ownedComment xmi:id="_1mvfAU_HEeicO4zK57V_lA" annotatedElement="_1mvfAE_HEeicO4zK57V_lA">
-          <body>&quot;Information about who made the promise, when did they make it, how was it conveyed, etc...&quot; - HL7 CIMI, Promise.promised</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#_1nqfgOQXEeak6NCuAd5Onw?FHIM/Common/Attribution?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1mvfAk_HEeicO4zK57V_lA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1mvfA0_HEeicO4zK57V_lA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_myeG8IxjEeikEIFpfvQzog" name="promisingOrganization" visibility="public">
-        <ownedComment xmi:id="_myeG8YxjEeikEIFpfvQzog" annotatedElement="_myeG8IxjEeikEIFpfvQzog">
-          <body>Identifies the Organization to which the Healthcare Order was sent for performance. Used to identify the performing organization, especially when the ordering organization is different than the performing organization. For example if the VA orders a lab test from Quest Diagnostics, this field would contain Quest Diagnostics.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B6418AA15801A9?FHIM/Provider/Organization?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_myeG8oxjEeikEIFpfvQzog" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_myeG84xjEeikEIFpfvQzog"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Ap-YYP84EeCDQancQavJ_w" name="orderAction_detectedIssueEvent" memberEnd="_Ap_mgP84EeCDQancQavJ_w _AqA0oP84EeCDQancQavJ_w">
@@ -2111,9 +2077,10 @@ It is noted that this class is roughly equivalent to an ORC segment in HL7 versi
       </ownedAttribute>
       <ownedAttribute xmi:id="_BEHgkKPjEei7vKr62x5GtA" name="kind" visibility="public">
         <ownedComment xmi:id="_PvgW8KPjEei7vKr62x5GtA" annotatedElement="_BEHgkKPjEei7vKr62x5GtA">
-          <body>Indicates the action that was ordered (e.g., New, Hold, Discontinue, etc),&#xD;
+          <body>Indicates the action that was ordered (e.g., New, Hold, Discontinue, etc.). Note that the FHIM Order Action is equivalent to the ORC-1 action in only those situations where the order event is being requested (e.g., New, Suspend, Resume, Cancel). For other situations, such as acknowlegements between computer systems, the ORC-1 action has no equivelent in the FHIM.&#xD;
+&#xD;
 &quot;Determines the function of the order segment.... Depending on the message, the action of the control code may refer to an order or an individual service. For example, the code CA in an OMP message cancels the order. The same code in an RDS message, cancels the dispense.&quot; HL7 2.9, ORC-1. HL7 Table 119 contains 56 possible values for this field.&#xD;
-Note that the FHIM Order Action is equivalent to the ORC-1 action in only those situations where the order event is being requested (e.g., New, Suspend, Resume, Cancel). For other situations, such as acknowlegements between computer systems, the ORC-1 action has no equivelent in the FHIM.</body>
+&quot;Indicates the type of the request that is made, for example, to initiate an action, to suspend an ongoing activity, to discontinue an ongoing activity, or to cancel an existing request.&quot; - HL7 CIMI, Request.type</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FzNF4aPjEei7vKr62x5GtA" value="1"/>
@@ -2199,7 +2166,6 @@ Note that the FHIM Order Action is equivalent to the ORC-1 action in only those 
   <Default:Documentation xmi:id="_DuJYgMYAEeGsb4KXw2Babg" base_Comment="_DuGVMcYAEeGsb4KXw2Babg"/>
   <Default:Documentation xmi:id="_F9kIYBCQEeGYNskcagX10g" base_Comment="_F9a-cBCQEeGYNskcagX10g"/>
   <Default:Documentation xmi:id="_fdbeQAcqEeGfLeiV6Brugg" base_Comment="_fdRtQAcqEeGfLeiV6Brugg"/>
-  <Default:Documentation xmi:id="_fJsRAO62Ed-crcWiXVDZrQ" base_Comment="_fJjHEO62Ed-crcWiXVDZrQ"/>
   <Default:Documentation xmi:id="_FMK7gAcrEeGfLeiV6Brugg" base_Comment="_FL4AkAcrEeGfLeiV6Brugg"/>
   <Default:Documentation xmi:id="_F_ljNAcwEeGfLeiV6Brugg" base_Comment="_F_ljMQcwEeGfLeiV6Brugg"/>
   <Default:Documentation xmi:id="_G7ZWUBU1EeGk2cucW4LtoA" base_Comment="_G7PlUBU1EeGk2cucW4LtoA"/>
@@ -2282,10 +2248,7 @@ Note that the FHIM Order Action is equivalent to the ORC-1 action in only those 
   <Default:Documentation xmi:id="_G4netgVGEeiuXpuGM4C-xQ" base_Comment="_G4eUxQVGEeiuXpuGM4C-xQ"/>
   <Default:Documentation xmi:id="_G4netwVGEeiuXpuGM4C-xQ" base_Comment="_G4nesgVGEeiuXpuGM4C-xQ"/>
   <Default:Documentation xmi:id="_FOZphIxaEeikEIFpfvQzog" base_Comment="_9DY2wU_HEeicO4zK57V_lA"/>
-  <Default:Documentation xmi:id="_FOZphYxaEeikEIFpfvQzog" base_Comment="_9DY2xU_HEeicO4zK57V_lA"/>
-  <Default:Documentation xmi:id="_FOZphoxaEeikEIFpfvQzog" base_Comment="_AbIOoU_IEeicO4zK57V_lA"/>
   <Default:Documentation xmi:id="_FOZph4xaEeikEIFpfvQzog" base_Comment="_AbIOqU_IEeicO4zK57V_lA"/>
-  <Default:Documentation xmi:id="_FOZpiIxaEeikEIFpfvQzog" base_Comment="_AbR_oU_IEeicO4zK57V_lA"/>
   <Default:Documentation xmi:id="_hFxY9IxaEeikEIFpfvQzog" base_Comment="_1mvfAU_HEeicO4zK57V_lA"/>
   <Default:Documentation xmi:id="_YDe_dIxiEeikEIFpfvQzog" base_Comment="_YDe_cYxiEeikEIFpfvQzog"/>
   <Default:Documentation xmi:id="_6HdbIYxiEeikEIFpfvQzog" base_Comment="_6HdbIIxiEeikEIFpfvQzog"/>

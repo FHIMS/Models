@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.6-->
+<!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
@@ -1980,11 +1980,6 @@ Note that a goal might be constructed of sub-goals, which might each be associat
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t5cpsbzSEeasQoRN2Ou_5g" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t5cpsLzSEeasQoRN2Ou_5g"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_Dd_MkDvwEeeAVuPecg5-Hg">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(GoalCategory)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="__kz9MAY0EeGz0dkadElrkQ" name="dateEstablished" visibility="public">
         <ownedComment xmi:id="_T_wGcO9_EeWkMe7GVfjMFQ" annotatedElement="__kz9MAY0EeGz0dkadElrkQ">
@@ -2020,11 +2015,6 @@ Note that a goal might be constructed of sub-goals, which might each be associat
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvGBIbzSEeasQoRN2Ou_5g" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvGBILzSEeasQoRN2Ou_5g"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_7zayYO0aEeWjUp19yClo5Q">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(GoalAchievementState)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_0Chy8OfKEeWKHuD1aKU_UQ" name="goalIntent" visibility="public">
         <ownedComment xmi:id="_0Chy8efKEeWKHuD1aKU_UQ" annotatedElement="_0Chy8OfKEeWKHuD1aKU_UQ">
@@ -2034,7 +2024,7 @@ Note that a goal might be constructed of sub-goals, which might each be associat
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yCcfYbzSEeasQoRN2Ou_5g" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yCcfYLzSEeasQoRN2Ou_5g"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_WScXkNfJEeSTuOyAKngSWg" name="id" visibility="public">
+      <ownedAttribute xmi:id="_WScXkNfJEeSTuOyAKngSWg" name="identifier" visibility="public">
         <ownedComment xmi:id="_WScXkdfJEeSTuOyAKngSWg" annotatedElement="_WScXkNfJEeSTuOyAKngSWg">
           <body>&quot;This records identifiers associated with this care plan that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot; - HL7 FHIR, Goal.identifier</body>
         </ownedComment>
@@ -2078,11 +2068,6 @@ Note that a goal might be constructed of sub-goals, which might each be associat
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ieKlMO_oEeOM48qnBkZzmw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ieJ-IO_oEeOM48qnBkZzmw"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_uXpZ4OYAEeWMCcMdatPOjA">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(HealthGoalStatus)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_wAWgMNfJEeSTuOyAKngSWg" name="statusDate" visibility="public">
         <ownedComment xmi:id="_wAWgMdfJEeSTuOyAKngSWg" annotatedElement="_wAWgMNfJEeSTuOyAKngSWg">
@@ -2168,7 +2153,7 @@ Note that a goal might be constructed of sub-goals, which might each be associat
       <ownedComment xmi:id="_lkrAsO65EeWGc6zSCrskfQ" annotatedElement="_j-V7AAY1EeGz0dkadElrkQ">
         <body>A care plan guideline is a statement expressed by a professional organization in order to influence how care is delivered. A guideline is a &quot;best practice&quot; and may be driven by historic precidents and outcomes - adapted from the HL7 Care Plan Domain Analysis Model</body>
       </ownedComment>
-      <ownedAttribute xmi:id="_8nyrEAY3EeGz0dkadElrkQ" name="id" visibility="public">
+      <ownedAttribute xmi:id="_8nyrEAY3EeGz0dkadElrkQ" name="identifier" visibility="public">
         <ownedComment xmi:id="__F9gAO9xEeWkMe7GVfjMFQ" annotatedElement="_8nyrEAY3EeGz0dkadElrkQ">
           <body>Uniquely identifies the Care Plan Guideline. The Care Plan Guideline will typically be issued by a professional association or by the organization responsible for the care of the Patient. The organization can be identified by the issuer of the identifier which is in the &quot;system&quot; subfield of the ID datatype.</body>
         </ownedComment>
@@ -2232,13 +2217,8 @@ Note that a goal might be constructed of sub-goals, which might each be associat
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e3wMIbzSEeasQoRN2Ou_5g" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e3wMILzSEeasQoRN2Ou_5g" value="1"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_uSMWYOU1EeWlUtxA-8RVeQ">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(CarePlanKind)</body>
-        </defaultValue>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_FTwnkAY2EeGz0dkadElrkQ" name="id" visibility="public">
+      <ownedAttribute xmi:id="_FTwnkAY2EeGz0dkadElrkQ" name="identifier" visibility="public">
         <ownedComment xmi:id="_Ge-L4O_nEeOM48qnBkZzmw" annotatedElement="_FTwnkAY2EeGz0dkadElrkQ">
           <body>&quot;A unique identifier for the plan&quot; - HL7 Care Plan Domain Analysis Model&#xD;
 &quot;This records identifiers associated with this care plan that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot; - FHIR, CarePlan.identifier</body>
@@ -2287,11 +2267,6 @@ Note that a goal might be constructed of sub-goals, which might each be associat
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gRj3sbzSEeasQoRN2Ou_5g" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gRj3sLzSEeasQoRN2Ou_5g" value="1"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_9CF8cOX9EeWMCcMdatPOjA">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(CarePlanStatus)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_nBLmwNe-EeSTuOyAKngSWg" name="title" visibility="public">
         <ownedComment xmi:id="_rQ_PENe-EeSTuOyAKngSWg" annotatedElement="_nBLmwNe-EeSTuOyAKngSWg">
@@ -2489,11 +2464,6 @@ Note that the efficacy of the Activity towards achieving the Goal is not always 
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o6VEUbzSEeasQoRN2Ou_5g" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o6VEULzSEeasQoRN2Ou_5g"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_-V0jcDvwEeeAVuPecg5-Hg">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(GoalAchievementState)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_6aj0QNfUEeSTuOyAKngSWg" name="nextScheduledReview" visibility="public">
         <ownedComment xmi:id="_6aj0QdfUEeSTuOyAKngSWg" annotatedElement="_6aj0QNfUEeSTuOyAKngSWg">
@@ -2786,11 +2756,6 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HAqo8eX_EeWMCcMdatPOjA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HAqo8OX_EeWMCcMdatPOjA" value="1"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_Gza3IOX_EeWMCcMdatPOjA">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(CarePlanActivity)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_NdGSENo7EeSOxtrN8-7DcQ" name="planningStatus" visibility="public">
         <ownedComment xmi:id="_4dOjoO7QEeWGc6zSCrskfQ" annotatedElement="_NdGSENo7EeSOxtrN8-7DcQ">
@@ -2799,11 +2764,6 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i9jnIOU6EeWlUtxA-8RVeQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i9jAEOU6EeWlUtxA-8RVeQ"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_ktTtgOU6EeWlUtxA-8RVeQ">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(InterventionPlanningStatus)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3G3oMNfPEeSTuOyAKngSWg" name="postCondition" visibility="public">
         <ownedComment xmi:id="_3G3oMdfPEeSTuOyAKngSWg" annotatedElement="_3G3oMNfPEeSTuOyAKngSWg">
@@ -2863,11 +2823,6 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_05n-ce_pEeOM48qnBkZzmw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_05n-cO_pEeOM48qnBkZzmw"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_bV35cOX9EeWMCcMdatPOjA">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(CarePlanActivityStatus)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="__BiAgHdjEeWxwI-cgx2UYQ" name="statusReason" visibility="public">
         <ownedComment xmi:id="_Ku0uEHdkEeWxwI-cgx2UYQ" annotatedElement="__BiAgHdjEeWxwI-cgx2UYQ">
@@ -3182,7 +3137,7 @@ Note that the DAM has a &quot;pertainsTo&quot; property which &quot;Links the co
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ygOTojveEeeAVuPecg5-Hg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ygOTozveEeeAVuPecg5-Hg"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_wKlsQDvOEeeAVuPecg5-Hg" name="id" visibility="public">
+      <ownedAttribute xmi:id="_wKlsQDvOEeeAVuPecg5-Hg" name="identifier" visibility="public">
         <ownedComment xmi:id="_T9NbEDvPEeeAVuPecg5-Hg" annotatedElement="_wKlsQDvOEeeAVuPecg5-Hg">
           <body>&quot;This records identifiers associated with this care team that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate.&quot; - HL7 FHIR, CareTeam.identifier</body>
         </ownedComment>

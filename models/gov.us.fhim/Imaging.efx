@@ -61,7 +61,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_19PtAfsWEeSc9M34gwVpgg" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_19PtAvsWEeSc9M34gwVpgg" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_19PtA_sWEeSc9M34gwVpgg" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_19Oe4fsWEeSc9M34gwVpgg" x="-634" y="-11729"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_19Oe4fsWEeSc9M34gwVpgg" y="-11729"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_KSroMPsvEeSc9M34gwVpgg" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519679" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_KSsPQPsvEeSc9M34gwVpgg" type="ImageCompartment">
@@ -113,7 +113,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_sOc18FisEeWPFcZL8Pri7w" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_sOc18VisEeWPFcZL8Pri7w" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_sOc18lisEeWPFcZL8Pri7w" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sObn0VisEeWPFcZL8Pri7w" x="19020" y="-19337"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sObn0VisEeWPFcZL8Pri7w" x="18386" y="-19337"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_3nxeoFisEeWPFcZL8Pri7w" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_3nyFsFisEeWPFcZL8Pri7w" type="ImageCompartment">
@@ -314,7 +314,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_KoDsp3myEeW-j_oLISFbOQ" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_KoETsHmyEeW-j_oLISFbOQ" visible="false" type="StructureCompartment"/>
           <element xmi:type="uml:Class" href="Orders.efx#_3r94oOO5EeCbbuWBGGTBrA?FHIM/Orders/Promise?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KoDFkXmyEeW-j_oLISFbOQ" x="14582" y="-33919"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KoDFkXmyEeW-j_oLISFbOQ" x="14899" y="-33919"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_Od4y8PCIEeWoT_0zIvvImQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="Text" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_Od4y8vCIEeWoT_0zIvvImQ" type="ImageCompartment">
@@ -1630,11 +1630,6 @@ Note that this class represents information about the act of performing the medi
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k1ybMbyuEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k1ybMLyuEea_DaXmJ278Kw" value="1"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_KTVMIPCKEeWoT_0zIvvImQ">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(ImageEventStatus)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B64586EEDA0107" name="wasContrastMediaUsed" visibility="public" isDerived="true">
         <ownedComment xmi:id="_QBt4deLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64586EEDA0107">
@@ -1870,7 +1865,7 @@ Note that this class represents information about the act of performing the medi
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FyMnUbyuEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FyMnULyuEea_DaXmJ278Kw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B64586FBE90258" name="id" visibility="public">
+      <ownedAttribute xmi:id="_420A62FD03B64586FBE90258" name="identifier" visibility="public">
         <ownedComment xmi:id="_QCdfXeLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64586FBE90258">
           <body>Uniquely identifies the Report.</body>
         </ownedComment>
@@ -1901,11 +1896,6 @@ Note that this class represents information about the act of performing the medi
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JAjZsbyuEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JAjZsLyuEea_DaXmJ278Kw" value="1"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_aPOdkPCJEeWoT_0zIvvImQ">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(ImageReportStatus)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B645B67D9600A1" name="image" visibility="public" type="_oErcYPAuEeS1qetF27ECmQ" isUnique="false" association="_420A62FD03B645B67D9403BF">
         <ownedComment xmi:id="_QIkudOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B645B67D9600A1">
@@ -1954,7 +1944,7 @@ Note that this class represents information about the act of performing the medi
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ot9ocbyuEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ot9ocLyuEea_DaXmJ278Kw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B64550AAFD02CF" name="id" visibility="public">
+      <ownedAttribute xmi:id="_420A62FD03B64550AAFD02CF" name="identifier" visibility="public">
         <ownedComment xmi:id="_MyvbBOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64550AAFD02CF">
           <body>This property is used to uniquely identify the Imaging Event and therefore the set of images resulting from the Imaging Event.</body>
         </ownedComment>
@@ -2098,11 +2088,6 @@ Note that we have marked this property as derived because this information may b
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AO9kMfCKEeWoT_0zIvvImQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AO9kMPCKEeWoT_0zIvvImQ"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_r7q6gPKUEeWK49aD-a6xLg">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(AcquisitionModality)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Ba340PsVEeSc9M34gwVpgg" name="numberOfInstances" visibility="public" isDerived="true">
         <ownedComment xmi:id="_FpJWIF4oEeWQiN9lTU6tCQ" annotatedElement="_Ba340PsVEeSc9M34gwVpgg">
@@ -2167,11 +2152,6 @@ Note that we have marked this property as derived because this information may b
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UAlkLyuEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2T_-gLyuEea_DaXmJ278Kw"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_13iGsPKUEeWK49aD-a6xLg">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(ImagingBodySite)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_CHQoQPsWEeSc9M34gwVpgg" name="dateTime" visibility="public">
         <ownedComment xmi:id="_cSpAoF4qEeWQiN9lTU6tCQ" annotatedElement="_CHQoQPsWEeSc9M34gwVpgg">
@@ -2222,11 +2202,6 @@ Note that we have marked this property as derived because this information may b
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4nH3sLyuEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4nHQoLyuEea_DaXmJ278Kw"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_RxhG4PCIEeWoT_0zIvvImQ">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(BodySiteLaterality)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_zFJT8PsVEeSc9M34gwVpgg" name="modality" visibility="public">
         <ownedComment xmi:id="_G1pJAF4pEeWQiN9lTU6tCQ" annotatedElement="_zFJT8PsVEeSc9M34gwVpgg">
@@ -2235,11 +2210,6 @@ Note that we have marked this property as derived because this information may b
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ZLmwbyuEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ZLmwLyuEea_DaXmJ278Kw" value="1"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_YdjhEPCIEeWoT_0zIvvImQ">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(AcquisitionModality)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_4oRlUPsVEeSc9M34gwVpgg" name="numberOfInstances" visibility="public" isDerived="true">
         <ownedComment xmi:id="_zlO9YF4qEeWQiN9lTU6tCQ" annotatedElement="_4oRlUPsVEeSc9M34gwVpgg">
@@ -2406,11 +2376,6 @@ Note that in FHIR, the data type for this property is an oid. We may wish to mak
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MVNoYbyuEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MVNoYLyuEea_DaXmJ278Kw"/>
-        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_OJI4sPCNEeWoT_0zIvvImQ">
-          <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-          <language></language>
-          <body>(KOSTitle)</body>
-        </defaultValue>
       </ownedAttribute>
       <ownedAttribute xmi:id="_SMuGkPsvEeSc9M34gwVpgg" name="patient" visibility="public" association="_SMs4cPsvEeSc9M34gwVpgg">
         <ownedComment xmi:id="_IzRVQPFTEeWEJ4Z3YTwiDQ" annotatedElement="_SMuGkPsvEeSc9M34gwVpgg">

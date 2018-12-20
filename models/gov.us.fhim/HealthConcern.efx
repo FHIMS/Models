@@ -1508,11 +1508,11 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_L3L90JpgEeOswd2lHBTpDQ" name="clinicalStatus" visibility="public">
         <ownedComment xmi:id="_L3L90ZpgEeOswd2lHBTpDQ" annotatedElement="_L3L90JpgEeOswd2lHBTpDQ">
-          <body>&quot;The clinical status of the condition.&quot; - HL7 FHIR, Condition.clinicalStatus. Possible values include: Active; Recurrence; Inactive; Remission; Resolved.&#xD;
-&quot;Indicates the verification status for the allergy&quot; - HL7 Version 2.8, IAM-17. HL7 Version 2 has the following suggested values (table 438): Unconfirmed; Pending; Suspect; Confirmed or verified; Confirmed but inactive; Erroneous; Doubt raised.&#xD;
-&quot;Contains the verification status of a problem (e.g., confirmed, differential, provisional, rule-out, etc.).&quot; - HL7 Version 2.8, PRB-13. Note that HL7does not provide any suggested values for this code.&#xD;
+          <body>&quot;Indicates the verification status for the allergy&quot; - HL7 Version 2.8, IAM-17. HL7 Version 2 has the following suggested values (table 438): Unconfirmed; Pending; Suspect; Confirmed or verified; Confirmed but inactive; Erroneous; Doubt raised.&#xD;
+&quot;Contains the verification status of a problem (e.g., confirmed, differential, provisional, rule-out, etc.).&quot; - HL7 Version 2.8, PRB-13. Note that HL7 does not provide any suggested values for this code.&#xD;
 &quot;The physiological state of the condition with respect to whether it is actually of concern. Values may typicall include: Active, Relapse, Remission, Resolved, Confirmed, Ruled out, Unknown.&quot; - HL7 CIMI, BaseAssertion.clinicalStatus&#xD;
-&quot;The clinical status of the allergy or intolerance.&quot; - HL7 FHIR, AllergyIntolerance.clinicalStatus. Possible values are Active, Inactive, Resolved.</body>
+&quot;The clinical status of the allergy or intolerance.&quot; - HL7 FHIR, AllergyIntolerance.clinicalStatus. Possible values are Active; Inactive; Resolved.&#xD;
+&quot;The clinical status of the condition.&quot; - HL7 FHIR, Condition.clinicalStatus. Possible values include: Active; Recurrence; Inactive; Remission; Resolved.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_keiMMYgqEeedq9AzSGovhA" value="1"/>
@@ -1765,9 +1765,9 @@ Note that this property may be removed or altered based on the outcome of the Se
       </ownedAttribute>
       <ownedAttribute xmi:id="_PfFWwIgqEeedq9AzSGovhA" name="verificationStatus" visibility="public">
         <ownedComment xmi:id="_PfPHwIgqEeedq9AzSGovhA" annotatedElement="_PfFWwIgqEeedq9AzSGovhA">
-          <body>&quot;The verification status to support the clinical status of the condition.&quot; - HL7 FHIR, Condition.verificationStatus. Possibe values include: Provisional; Differential; Confirmed; Refuted; Entered-in-Error; Unknown.&#xD;
-&quot;Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified substance (including pharmaceutical product).&quot; - HL7 FHIR, AllergyIntolerance.verificationStatus. Possible values are Confirmed, Unconfirmed, Refuted, Entered In Error.&#xD;
-&quot;The state of knowledge concerning the presence of a putative condition; e.g., confirmed, refuted, provisional, suspected.&quot; - HL7 CIMI, BaseAssertion.verificationStatus</body>
+          <body>&quot;The state of knowledge concerning the presence of a putative condition; e.g., confirmed, refuted, provisional, suspected.&quot; - HL7 CIMI, BaseAssertion.verificationStatus&#xD;
+&quot;The verification status to support the clinical status of the condition.&quot; - HL7 FHIR, Condition.verificationStatus. Possibe values include: Provisional; Differential; Confirmed; Refuted; Entered-in-Error; Unknown.&#xD;
+&quot;Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified substance (including pharmaceutical product).&quot; - HL7 FHIR, AllergyIntolerance.verificationStatus. Possible values are Confirmed; Unconfirmed; Refuted; Entered In Error.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R395sYgqEeedq9AzSGovhA" value="1"/>
