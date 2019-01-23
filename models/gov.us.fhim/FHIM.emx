@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.6-->
+<!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
@@ -47,6 +47,7 @@
       <references xmi:type="uml:Package" href="DetailedClinicalModels.efx#_wy4_0F2jEeercrca8w8cRw?FHIM/DetailedClinicalModels?"/>
       <references xmi:type="uml:Package" href="Dialysis.efx#_E5VB0H43Eeip-sQQzeVEVw?FHIM/Dialysis?"/>
       <references xmi:type="uml:Package" href="SkinAndWound.efx#_oCGiYH43Eeip-sQQzeVEVw?FHIM/SkinAndWound?"/>
+      <references xmi:type="uml:Package" href="Contract.efx#_Hbg_ABqpEemp-ZSmHtW8Fw?FHIM/Contract?"/>
     </eAnnotations>
     <eAnnotations xmi:id="_8Ra5kOLoEdu45_8D8ShJ7w" source="uml2.diagrams" references="_420A62FD03B6420A62FD03C1">
       <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_420A62FD03B6420A62FD03C1" type="Class" name="FHIM Overview Diagram" description="The FHIM is organized into information &quot;domains&quot;, which are simply logical groupings of related concepts. These domains are represented in the model by using UML Packages. It is important to note that every element in the model can &quot;see&quot; every other element in the model – the packages serve as convenient containers for groups of elements, not barriers. Therefore, domain diagrams can and do routinely include classes from other parts of the model. In order to explicitly indicate when a class from another package is being referenced, the class will be annotated with the owning package name.&#xD;&#xA;&#xD;&#xA;The FHIM was initially populated using existing models contributed by the partner agencies, including the VHA Health Information Model (VHIM), the Biomedical Research Integrated Domain Group (BRIDG) Model, the Common Product Model (CPM), the Integrated Case Safety Report (ICSR), and various other models developed by the partner agencies directly at HL7. Since the VHIM was the most comprehensive model, it was used as the starting point, with the FHIM modeling style applied. Then each domain is refined by teams comprised of representatives from the federal partner organizations. Therefore, the FHIM contains domains that are in various states of completion, ranging from not started (aside from the initial application of the FHIM modeling style to the VHIM content) to in-progress to completed.&#xD;&#xA;&#xD;&#xA;This diagram is the main diagram of the FHIM, and it simply shows the UML packages which make up the FHIM. The packages are color-coded to indicate the current state of completion. Packages which are unchanged from the federal partner-supplied models are gray, packages which are in-progress are purple, and completed packages are green. Note that the packages marked in-progress may either be undergoing UML modeling or have completed the UML modeling phase but are awaiting or undergoing the Terminology modeling phase.&#xD;&#xA;&#xD;&#xA;FHIM data elements use simple or primitive datatypes wherever possible, but the FHIM does define several common structures for complex yet common cases (e.g, Address). See the Datatypes package for details on these.">
@@ -70,7 +71,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TA5mduLiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TA5md-LiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="Encounter.efx#_420A62FD03B6420A57DF03CA?FHIM/Encounter?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TA5mceLiEduGJrQyRGTO1A" x="8242" y="6023" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TA5mceLiEduGJrQyRGTO1A" x="12046" y="6023" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TA5meeLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14020053" lineColor="15912618" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TA5mfOLiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -81,7 +82,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TA5mgOLiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TA5mgeLiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="Imaging.efx#_420A62FD03B6420A5A37025A?FHIM/Imaging?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TA5me-LiEduGJrQyRGTO1A" x="634" y="7925" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TA5me-LiEduGJrQyRGTO1A" x="4438" y="7925" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TA5mg-LiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14020053" lineColor="15912618" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TA5mhuLiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -92,7 +93,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TA5miuLiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TA5mi-LiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="Lab.efx#_420A62FD03B6420A57B401F1?FHIM/Lab?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TA5mheLiEduGJrQyRGTO1A" x="8242" y="7925" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TA5mheLiEduGJrQyRGTO1A" x="12046" y="7925" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TA5mjeLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14020053" lineColor="15912618" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TA5mkOLiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -103,7 +104,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TA5mlOLiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TA5mleLiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="Orders.efx#_420A62FD03B6420A57FD032D?FHIM/Orders?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TA5mj-LiEduGJrQyRGTO1A" x="19654" y="7925" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TA5mj-LiEduGJrQyRGTO1A" x="634" y="9827" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TA5moeLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14020053" lineColor="15912618" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TA5mpOLiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -114,7 +115,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TA5mqOLiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TA5mqeLiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="Pharmacy.efx#_420A62FD03B6418FEF4E01D8?FHIM/Pharmacy?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TA5mo-LiEduGJrQyRGTO1A" x="8242" y="9828" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TA5mo-LiEduGJrQyRGTO1A" x="12046" y="9828" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TA5mq-LiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14020053" lineColor="15912618" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TA5mruLiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -125,7 +126,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TA5msuLiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TA5ms-LiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="HealthConcern.efx#_420A62FD03B6420A57D1024D?FHIM/HealthConcern?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TA5mreLiEduGJrQyRGTO1A" x="15850" y="6023" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TA5mreLiEduGJrQyRGTO1A" x="19654" y="6023" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TA5mteLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14020053" lineColor="15912618" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TA5muOLiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -147,7 +148,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TBCwW-LiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TBCwXOLiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="VitalSigns.efx#_420A62FD03B6418CFFCD01B6?FHIM/VitalSigns?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBCwVuLiEduGJrQyRGTO1A" x="19654" y="11728" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBCwVuLiEduGJrQyRGTO1A" x="634" y="13631" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TBCwaOLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14020053" lineColor="15912618" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TBCwa-LiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -180,7 +181,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TBCwoeLiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TBCwouLiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="Immunization.efx#_420A62FD03B64294DF9F0087?FHIM/Immunization?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBCwnOLiEduGJrQyRGTO1A" x="4438" y="7925" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBCwnOLiEduGJrQyRGTO1A" x="8242" y="7925" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TBCwpOLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="15652322" lineColor="12464763" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TBCwp-LiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -202,7 +203,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TBCwv-LiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TBMhUOLiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="Surgery.efx#_420A62FD03B64294DD880128?FHIM/Surgery?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBCwuuLiEduGJrQyRGTO1A" x="15850" y="11728" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBCwuuLiEduGJrQyRGTO1A" x="19654" y="11728" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TBMhUuLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14020053" lineColor="15912618" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TBMhVeLiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -224,7 +225,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TBMhY-LiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TBMhZOLiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="Dental.efx#_420A62FD03B6436136E100D9?FHIM/Dental?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhXuLiEduGJrQyRGTO1A" x="634" y="6023" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhXuLiEduGJrQyRGTO1A" x="4438" y="6023" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TBMhcOLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14869218" lineColor="11842740" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TBMhc-LiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -235,7 +236,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TBMhd-LiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TBMheOLiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="HomeBasedPrimaryCare.efx#_420A62FD03B643613746019D?FHIM/HomeBasedPrimaryCare?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhcuLiEduGJrQyRGTO1A" x="19654" y="6023" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhcuLiEduGJrQyRGTO1A" x="634" y="7925" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TBMheuLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14020053" lineColor="15912618" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TBMhfeLiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -246,7 +247,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TBMhgeLiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TBMhguLiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="PatientEducation.efx#_420A62FD03B6436137790312?FHIM/PatientEducation?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhfOLiEduGJrQyRGTO1A" x="634" y="9827" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhfOLiEduGJrQyRGTO1A" x="4438" y="9827" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TBMhhOLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14869218" lineColor="11842740" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TBMhh-LiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -257,7 +258,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TBMhi-LiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TBMhjOLiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="WomensHealth.efx#_420A62FD03B6436137C60273?FHIM/WomensHealth?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhhuLiEduGJrQyRGTO1A" x="634" y="13631" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhhuLiEduGJrQyRGTO1A" x="8242" y="13631" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TBMhjuLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14869218" lineColor="11842740" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TBMhkeLiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -268,7 +269,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TBMhleLiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TBMhluLiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="Dietetics.efx#_420A62FD03B64368DF45015B?FHIM/Dietetics?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhkOLiEduGJrQyRGTO1A" x="4438" y="6023" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhkOLiEduGJrQyRGTO1A" x="8242" y="6023" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TBMhmOLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14869218" lineColor="11842740" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TBMhm-LiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -279,7 +280,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TBMhn-LiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TBMhoOLiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="Prosthetics.efx#_420A62FD03B64361379100A0?FHIM/Prosthetics?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhmuLiEduGJrQyRGTO1A" x="12046" y="9828" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhmuLiEduGJrQyRGTO1A" x="15850" y="9828" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TBMhouLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14869218" lineColor="11842740" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TBMhpeLiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -312,7 +313,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TBMhveLiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TBMhvuLiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="OncologyRegistry.efx#_420A62FD03B64447DEE00169?FHIM/OncologyRegistry?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhuOLiEduGJrQyRGTO1A" x="15850" y="7925" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhuOLiEduGJrQyRGTO1A" x="19654" y="7925" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TBWSWuLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14020053" lineColor="15912618" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TBWSXeLiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -323,7 +324,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TBWSYeLiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TBWSYuLiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="EnrollEligCOB.efx#_420A62FD03B645465F2F00A1?FHIM/EnrollEligCOB?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBWSXOLiEduGJrQyRGTO1A" x="12046" y="6023" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBWSXOLiEduGJrQyRGTO1A" x="15850" y="6023" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TBWSeOLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14869218" lineColor="11842740" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TBWSe-LiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -345,7 +346,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TBfcTOLiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TBfcTeLiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="SocialWork.efx#_420A62FD03B64602A626015B?FHIM/SocialWork?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBfcR-LiEduGJrQyRGTO1A" x="8242" y="11729" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBfcR-LiEduGJrQyRGTO1A" x="12046" y="11729" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_nJTrkM3xEdyGBIphN-BYRA" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14869218" lineColor="11842740" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_nJTrk83xEdyGBIphN-BYRA" type="ImageCompartment">
@@ -356,7 +357,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_nJTrl83xEdyGBIphN-BYRA" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_nJTrmM3xEdyGBIphN-BYRA" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="SpinalCord.efx#__tLSgMtKEdyaEqBbyq3Okw?FHIM/SpinalCord?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nJTrks3xEdyGBIphN-BYRA" x="12046" y="11728" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nJTrks3xEdyGBIphN-BYRA" x="15850" y="11728" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_12sawE1PEd-ZC8uuCl8MVA" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="15136759" lineColor="3589573" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_12saw01PEd-ZC8uuCl8MVA" type="ImageCompartment">
@@ -378,7 +379,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_CImRRE1QEd-ZC8uuCl8MVA" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_CImRRU1QEd-ZC8uuCl8MVA" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="SecurityAndPrivacy.efx#_B7fCUE1QEd-ZC8uuCl8MVA?FHIM/SecurityAndPrivacy?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CIdHUk1QEd-ZC8uuCl8MVA" x="634" y="11729" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CIdHUk1QEd-ZC8uuCl8MVA" x="4438" y="11729" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_KCqdcE1TEd-ZC8uuCl8MVA" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14020053" lineColor="15912618" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_KCqdc01TEd-ZC8uuCl8MVA" type="ImageCompartment">
@@ -448,7 +449,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_WHR315NmEeCyufOLCDZkFA" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_WHR32JNmEeCyufOLCDZkFA" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="Provider.efx#_WG-84JNmEeCyufOLCDZkFA?FHIM/Provider?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WHR30pNmEeCyufOLCDZkFA" x="15850" y="9827" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WHR30pNmEeCyufOLCDZkFA" x="19654" y="9827" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_H--ikAY0EeGz0dkadElrkQ" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14020053" lineColor="15912618" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_H-_JoAY0EeGz0dkadElrkQ" type="ImageCompartment">
@@ -482,7 +483,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_vPsOgJ93EeGVHtLvLEEdog" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_vPs1kJ93EeGVHtLvLEEdog" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="PublicHealthReporting.efx#_vKAdQJ93EeGVHtLvLEEdog?FHIM/PublicHealthReporting?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vLm_wZ93EeGVHtLvLEEdog" x="19654" y="9827" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vLm_wZ93EeGVHtLvLEEdog" x="634" y="11729" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_H3byYEDJEeOMp8J4NxvidQ" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14020053" lineColor="15912618" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_H3gD0EDJEeOMp8J4NxvidQ" type="ImageCompartment">
@@ -493,7 +494,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_H3gq4kDJEeOMp8J4NxvidQ" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_H3gq40DJEeOMp8J4NxvidQ" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="Person.efx#_MMS2oEDFEeO2aaQpQxRerg?FHIM/Person?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H3byYUDJEeOMp8J4NxvidQ" x="4438" y="9828" width="3543"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H3byYUDJEeOMp8J4NxvidQ" x="8242" y="9828" width="3543"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_nj0TUIeQEeOZ2vW3WfDP5Q" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14020053" lineColor="15912618" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_nj06YIeQEeOZ2vW3WfDP5Q" type="ImageCompartment">
@@ -550,7 +551,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_I4t6ogjREeeH-JUbuHPVcg" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_I4t6owjREeeH-JUbuHPVcg" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="MedicationAdministration.efx#__EI_AAjMEeeH-JUbuHPVcg?FHIM/MedicationAdministration?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I4tTkQjREeeH-JUbuHPVcg" x="12046" y="7925" width="3569" height="1370"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I4tTkQjREeeH-JUbuHPVcg" x="15850" y="7925" width="3569" height="1370"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_ukzSoC93Eee8ZskGHfh21g" type="Note" fontName="Segoe UI" description="NOTE: The FHIM is being re-factored to harmonize with both CIMI and FHIR, which introduce new modeling patterns and styles. For an example of the new style, see the Vital Signs package. As we apply the new style across the FHIM, noticeable differences in modeling styles will be evident in different packages; we expect to have these differences resolved shortly." fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_ukzSpC93Eee8ZskGHfh21g" type="DiagramName">
@@ -584,7 +585,18 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_oa6rAH43Eeip-sQQzeVEVw" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_oa6rAX43Eeip-sQQzeVEVw" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="SkinAndWound.efx#_oCGiYH43Eeip-sQQzeVEVw?FHIM/SkinAndWound?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oa2ZkX43Eeip-sQQzeVEVw" x="4438" y="11729" width="3568"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oa2ZkX43Eeip-sQQzeVEVw" x="8242" y="11729" width="3568"/>
+        </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_KO7h0BqpEemp-ZSmHtW8Fw" fontName="Arial" fontHeight="8" showListStereotype="Text" showListVisibility="None" fillColor="14020053" lineColor="15912618" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_KO9XABqpEemp-ZSmHtW8Fw" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_KO9XARqpEemp-ZSmHtW8Fw" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_KO9XAhqpEemp-ZSmHtW8Fw" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_KO9XAxqpEemp-ZSmHtW8Fw" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_KO9-EBqpEemp-ZSmHtW8Fw" type="Parent"/>
+          <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_KO9-ERqpEemp-ZSmHtW8Fw" type="PackageContents" collapsed="true" canonical="false"/>
+          <element xmi:type="uml:Package" href="Contract.efx#_Hbg_ABqpEemp-ZSmHtW8Fw?FHIM/Contract?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KO7h0RqpEemp-ZSmHtW8Fw" x="634" y="6023" width="3569"/>
         </children>
         <element xsi:nil="true"/>
       </contents>
@@ -699,6 +711,7 @@ Note to the reader: the FHIM is a single integrated model, whereby diagrams are 
     <packagedElement xmi:type="uml:Package" href="DetailedClinicalModels.efx#_wy4_0F2jEeercrca8w8cRw?FHIM/DetailedClinicalModels?"/>
     <packagedElement xmi:type="uml:Package" href="Dialysis.efx#_E5VB0H43Eeip-sQQzeVEVw?FHIM/Dialysis?"/>
     <packagedElement xmi:type="uml:Package" href="SkinAndWound.efx#_oCGiYH43Eeip-sQQzeVEVw?FHIM/SkinAndWound?"/>
+    <packagedElement xmi:type="uml:Package" href="Contract.efx#_Hbg_ABqpEemp-ZSmHtW8Fw?FHIM/Contract?"/>
     <profileApplication xmi:id="_Lo1MoeLiEduGJrQyRGTO1A">
       <eAnnotations xmi:id="_Lo1MouLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>

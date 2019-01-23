@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.6-->
+<!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
@@ -2944,6 +2944,9 @@ In general, integrity markings indicate things such as degree of reliability of 
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X-9FoC-1EeSEjInCjBm_gA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_XFpfkCSzEeSAwtfZ1E8XUQ" name="privacyPolicy" visibility="public">
+        <ownedComment xmi:id="_GKaBcB9UEemEsa8AJe1hQA" annotatedElement="_XFpfkCSzEeSAwtfZ1E8XUQ">
+          <body>&quot;Security label privacy tag that species the applicable privacy and security policies governing this term and/or term elements.&quot; - HL7 FHIR, Contract.term.securityLabel.category</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XFpfkSSzEeSAwtfZ1E8XUQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XFpfkiSzEeSAwtfZ1E8XUQ"/>
@@ -4147,7 +4150,8 @@ Note that this role is called a &quot;Session Role&quot; in American National St
         <ownedComment xmi:id="_hLo5MG4tEeeQdaNIGK6Uxw" annotatedElement="_hE4bQEuOEeeeDrHZEaEbRA">
           <body>Security label metadata that specifies the labeled resource's level of confidentiality. The level of confidentiality specifies the degree of protection against access the data or information requires, together with a designation of that degree of protection. [HL7 PASS SLS]&#xD;
 Level of confidentiality values are in accordance with [HL7 HCS Vocab]. Examples of values are Normal, Restricted, and Very Restricted.&#xD;
-In general, classification is the confidential protection of data elements by segmentation into restricted and specifically controlled categories set by policies, professional practice, and laws, legislation, and regulations. [HL7 HCS, adapted from ASTM E-1986]</body>
+In general, classification is the confidential protection of data elements by segmentation into restricted and specifically controlled categories set by policies, professional practice, and laws, legislation, and regulations. [HL7 HCS, adapted from ASTM E-1986]&#xD;
+&quot;Security label privacy tag that species the level of confidentiality protection required for this term and/or term elements.&quot; - HL7 FHIR, Contract.term.securityLabel.classification</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cOsFYUuvEeejjOI6zW3VSQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cOsFYEuvEeejjOI6zW3VSQ"/>
@@ -4804,4 +4808,5 @@ This class is derived from ISO 22600-2, HL7 DAM, and ISO 10181-3.</body>
   <Default:Documentation xmi:id="_C4yjoHI8EeeayYbXU4sBwg" base_Comment="_C4r18HI8EeeayYbXU4sBwg"/>
   <Default:Documentation xmi:id="_WzD5sHI8EeeayYbXU4sBwg" base_Comment="_WzCEgHI8EeeayYbXU4sBwg"/>
   <Default:Documentation xmi:id="_QIwYUHJREee6r_7oTl7h6w" base_Comment="_QImnUHJREee6r_7oTl7h6w"/>
+  <Default:Documentation xmi:id="_GKjycB9UEemEsa8AJe1hQA" base_Comment="_GKaBcB9UEemEsa8AJe1hQA"/>
 </xmi:XMI>
