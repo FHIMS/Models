@@ -3908,7 +3908,8 @@ Note that in Laboratory, a &quot;Reflex Test&quot; will be handled through this 
       </ownedAttribute>
       <ownedAttribute xmi:id="_qBSPQeQ4EeaH9t35G2snaA" name="digitalSignature" visibility="public" association="_qBSPQOQ4EeaH9t35G2snaA">
         <ownedComment xmi:id="_v5LHUDK_EeidlpJU2TuLzA" annotatedElement="_qBSPQeQ4EeaH9t35G2snaA">
-          <body>&quot;A digital signature on the target Reference(s). The signer should match a Attribution.participant. The purpose of the signature is indicated.&quot; - HL7 CIMI, Attribution.signature</body>
+          <body>&quot;A digital signature on the target Reference(s). The signer should match a Attribution.participant. The purpose of the signature is indicated.&quot; - HL7 CIMI, Attribution.signature&#xD;
+&quot;Legally binding Contract DSIG signature contents in Base64.&quot; - HL7 FHIR, Contract.signer.signature</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_FdABsOQyEeaH9t35G2snaA?FHIM/Datatypes/Signature?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qBSPQ-Q4EeaH9t35G2snaA" value="1"/>
@@ -3934,7 +3935,8 @@ Note that this property is included for compatibility with HL7 V3, and while it 
       </ownedAttribute>
       <ownedAttribute xmi:id="_uTZm4DLAEeidlpJU2TuLzA" name="participant" visibility="public" type="_420A62FD03B6418CF92600E1">
         <ownedComment xmi:id="_uTZm4TLAEeidlpJU2TuLzA" annotatedElement="_uTZm4DLAEeidlpJU2TuLzA">
-          <body>&quot;A person, entity, or other party responsible for execution of some facet of the activity.&quot; - HL7 CIMI, Attribution.participant</body>
+          <body>&quot;A person, entity, or other party responsible for execution of some facet of the activity.&quot; - HL7 CIMI, Attribution.participant&#xD;
+&quot;Party which is a signator to this Contract.&quot; - HL7 FHIR, Contract.signer.party</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uTZm4jLAEeidlpJU2TuLzA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uTZm4zLAEeidlpJU2TuLzA"/>

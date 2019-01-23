@@ -4221,7 +4221,8 @@ Note that because all we need is the person's name and contact information (addr
       <ownedAttribute xmi:id="_7TKMBrYqEeGWl-7OlqBMDw" name="address" visibility="public">
         <ownedComment xmi:id="_7TKMB7YqEeGWl-7OlqBMDw" annotatedElement="_7TKMBrYqEeGWl-7OlqBMDw">
           <body>The physical location at which the Point of Contact is located or to which mail can be directed.&#xD;
-&quot;Visiting or postal addresses for the contact.&quot; - HL7 FHIR, Organization.contact.address</body>
+&quot;Visiting or postal addresses for the contact.&quot; - HL7 FHIR, Organization.contact.address&#xD;
+&quot;Visiting or postal addresses for the contact.&quot; - HL7 FHIR, InsurancePlan.contact.address</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B6418A8DCD02C2?FHIM/Datatypes/Address?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7TKMCLYqEeGWl-7OlqBMDw" value="*"/>
@@ -4230,7 +4231,8 @@ Note that because all we need is the person's name and contact information (addr
       <ownedAttribute xmi:id="_7TKL57YqEeGWl-7OlqBMDw" name="contactCategory" visibility="public">
         <ownedComment xmi:id="_7TKL6LYqEeGWl-7OlqBMDw" annotatedElement="_7TKL57YqEeGWl-7OlqBMDw">
           <body>Indicates the circumstances under which or the purposes for which this Person acts as the role of Contact Party for the owning Organization class.&#xD;
-&quot;Indicates a purpose for which the contact can be reached.&quot; - HL7 FHIR, Organization.contact.purpose</body>
+&quot;Indicates a purpose for which the contact can be reached.&quot; - HL7 FHIR, Organization.contact.purpose&#xD;
+&quot;Indicates a purpose for which the contact can be reached.&quot; - HL7 FHIR, InsurancePlan.contact.purpose</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7TKL6bYqEeGWl-7OlqBMDw" value="1"/>
@@ -4248,7 +4250,8 @@ Note that because all we need is the person's name and contact information (addr
         <eAnnotations xmi:id="_7TKL8LYqEeGWl-7OlqBMDw" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <ownedComment xmi:id="_7TKL8bYqEeGWl-7OlqBMDw" annotatedElement="_7TKL77YqEeGWl-7OlqBMDw">
           <body>The name by which a person is known or legally identified such as the name on a driver's license or passport. Note that the datatype for this property is a PersonName, which includes the various parts that make up a person's name such as family name, prefixes, suffixes, etc.&#xD;
-&quot;A name associated with the contact.&quot; - HL7 FHIR, Organization.contact.name</body>
+&quot;A name associated with the contact.&quot; - HL7 FHIR, Organization.contact.name&#xD;
+&quot;A name associated with the contact.&quot; - HL7 FHIR, InsurancePlan.contact.name</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_3lzSEFVyEdyaooytdRFnxQ?FHIM/Datatypes/PersonName?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7TKL8rYqEeGWl-7OlqBMDw" value="1"/>
@@ -4257,7 +4260,8 @@ Note that because all we need is the person's name and contact information (addr
       <ownedAttribute xmi:id="_jvCvYLYsEeGWl-7OlqBMDw" name="telecom" visibility="public">
         <ownedComment xmi:id="_jvCvYbYsEeGWl-7OlqBMDw" annotatedElement="_jvCvYLYsEeGWl-7OlqBMDw">
           <body>Indicates how and at what address that the Point of Contact can be reached via electronic communications. The datatype for this property is ContactPoint, which can be used for telephone numbers as well as email, etc. The ContactPoint data  type contains a type code to indicate what kind of telecommunications address that is being referenced. Note that this property can contain more than one entry.&#xD;
-&quot;A contact detail (e.g. a telephone number or an email address) by which the party may be contacted.&quot; - HL7 FHIR, Organization.contact.telecom</body>
+&quot;A contact detail (e.g. a telephone number or an email address) by which the party may be contacted.&quot; - HL7 FHIR, Organization.contact.telecom&#xD;
+&quot;A contact detail (e.g. a telephone number or an email address) by which the party may be contacted.&quot; - HL7 FHIR, InsurancePlan.contact.telecom</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_fImbAAEYEd-ZUM5xZsXWyw?FHIM/Datatypes/ContactPoint?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jvCvYrYsEeGWl-7OlqBMDw" value="*"/>
