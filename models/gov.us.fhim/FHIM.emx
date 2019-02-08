@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="420A62FD03B6" name="FHIM">
     <eAnnotations xmi:id="_K45i0EDKEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments">
       <references xmi:type="uml:Package" href="AdverseEventReporting.efx#_420A62FD03B642A5CE120016?FHIM/AdverseEventReporting?"/>
@@ -258,7 +258,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_TBMhi-LiEduGJrQyRGTO1A" type="Parent"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_TBMhjOLiEduGJrQyRGTO1A" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="WomensHealth.efx#_420A62FD03B6436137C60273?FHIM/WomensHealth?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhhuLiEduGJrQyRGTO1A" x="8242" y="13631" width="3500" height="1500"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBMhhuLiEduGJrQyRGTO1A" x="4438" y="13631" width="3500" height="1500"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_TBMhjuLiEduGJrQyRGTO1A" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14869218" lineColor="11842740" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_TBMhkeLiEduGJrQyRGTO1A" type="ImageCompartment">
@@ -667,9 +667,6 @@ Note to the reader: the FHIM is a single integrated model, whereby diagrams are 
     <packageImport xmi:id="_L4VBNOLiEduGJrQyRGTO1A">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
-    <packageImport xmi:id="_vVRlAKRMEeGZ6ueex_Me0w">
-      <importedPackage href="FHIM_Vocab.emx#_2B97VRSVEeGGzu7fmW9pXw?FHIM_Vocab?"/>
-    </packageImport>
     <packagedElement xmi:type="uml:Package" href="CommonProduct.efx#_SH75INNUEeGRnPi2MLPE0g?FHIM/CommonProduct?"/>
     <packagedElement xmi:type="uml:Package" href="AdverseEventReporting.efx#_420A62FD03B642A5CE120016?FHIM/AdverseEventReporting?"/>
     <packagedElement xmi:type="uml:Package" href="Allergies.efx#_420A62FD03B6418AB45103D1?FHIM/Allergies?"/>
@@ -712,6 +709,15 @@ Note to the reader: the FHIM is a single integrated model, whereby diagrams are 
     <packagedElement xmi:type="uml:Package" href="Dialysis.efx#_E5VB0H43Eeip-sQQzeVEVw?FHIM/Dialysis?"/>
     <packagedElement xmi:type="uml:Package" href="SkinAndWound.efx#_oCGiYH43Eeip-sQQzeVEVw?FHIM/SkinAndWound?"/>
     <packagedElement xmi:type="uml:Package" href="Contract.efx#_Hbg_ABqpEemp-ZSmHtW8Fw?FHIM/Contract?"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ojrvoCZjEem5e4Ns2UTn_Q" name="VocabContext">
+      <ownedLiteral xmi:id="_CZda0CZkEem5e4Ns2UTn_Q" name="FHIM proposal" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
+      <ownedLiteral xmi:id="_DF_wsCZkEem5e4Ns2UTn_Q" name="FHIR value set OID" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
+      <ownedLiteral xmi:id="_-35RMCZmEemg-8Rt-x-yhg" name="FHIR value set URI" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
+      <ownedLiteral xmi:id="_C-prMCZnEemg-8Rt-x-yhg" name="PHIN VADS URL" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
+      <ownedLiteral xmi:id="_FETJECZnEemg-8Rt-x-yhg" name="V3 value set OID" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
+      <ownedLiteral xmi:id="_HhrKcCZnEemg-8Rt-x-yhg" name="VSAC Collaboration URL" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
+      <ownedLiteral xmi:id="_Jdc6oCZnEemg-8Rt-x-yhg" name="VSAC URL" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
+    </packagedElement>
     <profileApplication xmi:id="_Lo1MoeLiEduGJrQyRGTO1A">
       <eAnnotations xmi:id="_Lo1MouLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -730,6 +736,13 @@ Note to the reader: the FHIM is a single integrated model, whereby diagrams are 
       </eAnnotations>
       <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
     </profileApplication>
+    <profileApplication xmi:id="_RQX2oCZiEem4Dt5yAyq9ww">
+      <eAnnotations xmi:id="_RQYdsCZiEem4Dt5yAyq9ww" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
   </uml:Package>
   <Default:Documentation xmi:id="_zAh94LEeEeKVutcKIuRG4A" base_Comment="_zAUigLEeEeKVutcKIuRG4A"/>
+  <term:Context xmi:id="_9supICZnEemFMesuX8fpPg" base_Enumeration="_ojrvoCZjEem5e4Ns2UTn_Q"/>
 </xmi:XMI>

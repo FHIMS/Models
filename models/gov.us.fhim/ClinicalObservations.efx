@@ -85,7 +85,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_-AfJgud0EeSKGaa1qzZLJg" visible="false" type="EnumerationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_-AfwkOd0EeSKGaa1qzZLJg" visible="false" type="AttributeCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_-Afwked0EeSKGaa1qzZLJg" visible="false" type="OperationCompartment"/>
-          <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_B2WXEGhEEeOywMcrK34nEA?FHIM_Vocab/LabVocab/Observation%20Interpretation?"/>
+          <element xmi:type="uml:Enumeration" href="Lab.efx#_B2WXEGhEEeOywMcrK34nEA?FHIM/Lab/Observation%20Interpretation?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-AdUUOd0EeSKGaa1qzZLJg" x="8876" y="16484"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_7mQ4MB7sEeeR140udo0pbA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519679" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -140,7 +140,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_0SWTiB-NEee94IovPwpKfw" type="EnumerationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_0SWTiR-NEee94IovPwpKfw" visible="false" type="AttributeCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_0SWTih-NEee94IovPwpKfw" visible="false" type="OperationCompartment"/>
-          <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_vGzOMGHhEeO5pLNjYnguHg?FHIM_Vocab/LabVocab/Criterion%20Category?"/>
+          <element xmi:type="uml:Enumeration" href="Lab.efx#_vGzOMGHhEeO5pLNjYnguHg?FHIM/Lab/Criterion%20Category?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0SWTgR-NEee94IovPwpKfw" x="28847" y="11412"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_zXMn8B-PEee94IovPwpKfw" element="_zXI9kB-PEee94IovPwpKfw" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -1308,10 +1308,10 @@ Note that for laboratory observations, the aerobic condition of the culture is i
       <ownedEnd xmi:id="_LYH-MPDOEeO_Te8vAbT_YQ" name="" visibility="public" type="_nbH1LVaeEd6rJ7jpZ7LBFg" association="_LYFh8PDOEeO_Te8vAbT_YQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_NmeRkMNzEeSFjdDJNF9NPA" client="_nbH1LVaeEd6rJ7jpZ7LBFg">
-      <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_9MaIUMNxEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/CoreVitalSigns?"/>
+      <supplier xmi:type="uml:Enumeration" href="VitalSigns.efx#_9MaIUMNxEeSFjdDJNF9NPA?FHIM/VitalSigns/CoreVitalSigns?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_B64igOd1EeSKGaa1qzZLJg" client="_eWYXgO3MEeCFZuasLkncZQ">
-      <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_B2WXEGhEEeOywMcrK34nEA?FHIM_Vocab/LabVocab/Observation%20Interpretation?"/>
+      <supplier xmi:type="uml:Enumeration" href="Lab.efx#_B2WXEGhEEeOywMcrK34nEA?FHIM/Lab/Observation%20Interpretation?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_DU1GYB7tEeeR140udo0pbA" name="observationStatement_specimen" memberEnd="_DU4wwB7tEeeR140udo0pbA _DU6l8B7tEeeR140udo0pbA">
       <ownedEnd xmi:id="_DU6l8B7tEeeR140udo0pbA" name="" visibility="private" type="_nbH1LVaeEd6rJ7jpZ7LBFg" association="_DU1GYB7tEeeR140udo0pbA">
@@ -1326,7 +1326,7 @@ Note that for laboratory observations, the aerobic condition of the culture is i
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_3QVuoB-NEee94IovPwpKfw" client="_3XW7MGH_EeCHAoM78Lf2xA">
-      <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_vGzOMGHhEeO5pLNjYnguHg?FHIM_Vocab/LabVocab/Criterion%20Category?"/>
+      <supplier xmi:type="uml:Enumeration" href="Lab.efx#_vGzOMGHhEeO5pLNjYnguHg?FHIM/Lab/Criterion%20Category?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_zXI9kB-PEee94IovPwpKfw" name="ComponentObservation">
       <ownedAttribute xmi:id="_5c8eMB-PEee94IovPwpKfw" name="dataAbsentReason" visibility="public">

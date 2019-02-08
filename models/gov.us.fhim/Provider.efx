@@ -556,7 +556,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_5jGX8tLMEeaqd8KJKwlLJw" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_5jGX89LMEeaqd8KJKwlLJw" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_5jGX9NLMEeaqd8KJKwlLJw" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5jFw4dLMEeaqd8KJKwlLJw" x="47550" y="5072"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5jFw4dLMEeaqd8KJKwlLJw" x="54841" y="7291"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_P26wkA_cEee_pMnA6wvovQ" element="_P2kLQA_cEee_pMnA6wvovQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_P3EhkA_cEee_pMnA6wvovQ" type="ImageCompartment">
@@ -2396,7 +2396,7 @@
             <children xmi:type="notation:ListCompartment" xmi:id="_F6RZExAPEeewyID-8Rev-g" type="FromConstraintCompartment"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_F6RZEhAPEeewyID-8Rev-g" y="1058"/>
           </children>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_F6FL0RAPEeewyID-8Rev-g" points="[95, 31, -301, -121]$[298, 83, -98, -69]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_F6FL0RAPEeewyID-8Rev-g" points="[1846, -1596, -18126, 3899]$[6628, -5730, -13344, -235]$[16785, -5730, -3187, -235]"/>
         </edges>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_THZhsBAPEeewyID-8Rev-g" element="_THQXwBAPEeewyID-8Rev-g" source="_HVXL8A_sEeec1rk7YVReNA" target="_R1OIIBAPEeewyID-8Rev-g" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_THaIwBAPEeewyID-8Rev-g" visible="false" type="NameLabel">
@@ -2717,7 +2717,7 @@
             <children xmi:type="notation:ListCompartment" xmi:id="_QeX1qBTnEeeYjZW8j3SRUg" type="FromConstraintCompartment"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_QeX1pxTnEeeYjZW8j3SRUg" y="1058"/>
           </children>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QeX1jBTnEeeYjZW8j3SRUg" points="[2570, -4128, 21, 6752]$[3776, -6065, 1227, 4815]$[3009, -9073, 460, 1807]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QeX1jBTnEeeYjZW8j3SRUg" points="[3174, -2726, -6666, 5724]$[7735, -6643, -2105, 1807]"/>
         </edges>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_Qeg_cBTnEeeYjZW8j3SRUg" element="_qYybABTlEeeYjZW8j3SRUg" source="_QeX1gBTnEeeYjZW8j3SRUg" target="_R1OIIBAPEeewyID-8Rev-g" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_Qeg_chTnEeeYjZW8j3SRUg" visible="false" type="NameLabel">
@@ -3449,7 +3449,9 @@ Note that FHIR has a single class, Location, which encompasses concepts which th
       </ownedAttribute>
       <ownedAttribute xmi:id="_230RkAJFEd-xr_JAHIdixg" name="name" visibility="public">
         <ownedComment xmi:id="_JmDzMPGlEd-ZlYn0p4HjQw" annotatedElement="_230RkAJFEd-xr_JAHIdixg">
-          <body>&quot;A name associated with the organization.&quot; - HL7 FHIR, Organization.name</body>
+          <body>&quot;A name associated with the organization.&quot; - HL7 FHIR, Organization.name&#xD;
+&quot;Freeform name of the pharmacy. Note: If a dispensing prescriber, the prescriber’s name and professional degree should be entered, 
+such as John Doe MD.&quot; - ASAP Standard for PDMP, PHA04: Pharmacy or Dispensing Prescriber Name</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_arfBIOV0EeGA8s9JtidNVQ" value="1"/>
@@ -3458,7 +3460,10 @@ Note that FHIR has a single class, Location, which encompasses concepts which th
       <ownedAttribute xmi:id="_snQtQLYsEeGWl-7OlqBMDw" name="pointOfContact" visibility="public" type="_7TKL4LYqEeGWl-7OlqBMDw" association="_snMb0LYsEeGWl-7OlqBMDw">
         <ownedComment xmi:id="_4BTusLYsEeGWl-7OlqBMDw" annotatedElement="_snQtQLYsEeGWl-7OlqBMDw">
           <body>Pointer to Persons who work for or represent an Organization and who may be contacted under specified circumstances.&#xD;
-&quot;Contact for the organization for a certain purpose.&quot; - HL7 FHIR, Organization.contact</body>
+&quot;Contact for the organization for a certain purpose.&quot; - HL7 FHIR, Organization.contact&#xD;
+&quot;Freeform name. 
+Chain Site ID (Situational) 
+Store number assigned by the chain to the pharmacy location. Used when PDMP needs to identify the specific pharmacy from which information is required.&quot; - ASAP Standard for PDMP, PHA10: Contact name</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_snSicLYsEeGWl-7OlqBMDw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_snR7YLYsEeGWl-7OlqBMDw"/>
@@ -3497,11 +3502,23 @@ Identifies a pharmacy location for the purposes of maintaining the NCPDP Id, whi
       <generalization xmi:id="_2GqZcDwoEeOgEtsAzr0sGA" general="_420A62FD03B64242CAB30303"/>
       <ownedAttribute xmi:id="_420A62FD03B64575B8480146" name="ncpdpId" visibility="public">
         <ownedComment xmi:id="_fhVzwBHbEeCBuOUrBnIXmQ" annotatedElement="_420A62FD03B64575B8480146">
-          <body>Contains the National Council for Prescription Drug Programs (NCPDP) Id, which assigned to each dispensing location of an organization for the purposes of facilitating electronic billing.</body>
+          <body>Contains the National Council for Prescription Drug Programs (NCPDP) Id, which assigned to each dispensing location of an organization for the purposes of facilitating electronic billing.&#xD;
+&quot;Identifier assigned to pharmacy by the National Council  
+for Prescription Drug Programs.&quot; - ASAP Standard for PDMP, PHA02: NCPDP/NABP Provider ID</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jWbR0fTrEdy4NNd432ztnw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jWbR0PTrEdy4NNd432ztnw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_0F5IACinEem4e4InRvNGGg" name="controlledSubstanceLicenseId" visibility="public">
+        <ownedComment xmi:id="_0F5IASinEem4e4InRvNGGg" annotatedElement="_0F5IACinEem4e4InRvNGGg">
+          <body>Identifies the license under which the pharmacy is authorized to dispense controlled medications.&#xD;
+&quot;
+Identifier assigned to the pharmacy by the Drug Enforcement Administration.&quot; - ASAP Standard for PDMP, PHA03: DEA Number</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0F5IAiinEem4e4InRvNGGg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0F5IAyinEem4e4InRvNGGg" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B64242CAB30303" name="ServiceDeliveryLocation">
@@ -3515,7 +3532,16 @@ Note that FHIR has a single class, Location, which encompasses concepts which th
         <ownedComment xmi:id="__zk2oe6dEd-crcWiXVDZrQ" annotatedElement="__zk2oO6dEd-crcWiXVDZrQ">
           <body>The physical location at which the Service Delivery Location is located or to which mail can be directed. Note that the ServiceDeliveryLocation class points to a physical location which also has an address. In general, it is anticipated that the Location address would be used, but this address would be used when the organizational presence at the location uses a different address. For example, the physical address may be 123 Main St, but the radiology department may be 123 Main St Suite 400, or may have a billing address at another location.&#xD;
 &quot;Specifies the address of the location where the drug or treatment was administered.&quot; - HL7 Version 2.8, RXA-28&#xD;
-&quot;Physical location.&quot; – HL7 FHIR,  Location.address</body>
+&quot;Physical location.&quot; – HL7 FHIR,  Location.address&#xD;
+&quot;Freeform text for address information.&quot; - ASAP Standard for PDMP, PHA05: Address Information – 1&#xD;
+&quot;Freeform text for additional address information.&quot; - ASAP Standard for PDMP, PHA06: Address Information – 2&#xD;
+&quot;
+Freeform text for city name.&quot; - ASAP Standard for PDMP, PHA07: 
+City Address&#xD;
+&quot;
+U.S. Postal Service state code.&quot; - ASAP Standard for PDMP, PHA08: State Address&#xD;
+&quot;
+U.S. Postal Service ZIP Code.&quot; - ASAP Standard for PDMP, PHA09: ZIP Code Address</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B6418A8DCD02C2?FHIM/Datatypes/Address?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_62kAIfnIEeSJ3abZ9RQzyQ" value="*"/>
@@ -3540,7 +3566,8 @@ Note that FHIR has a single class, Location, which encompasses concepts which th
       </ownedAttribute>
       <ownedAttribute xmi:id="_lV6l0B2IEd-4VI-lpu-JjQ" name="identifier" visibility="public">
         <ownedComment xmi:id="_lWEW0B2IEd-4VI-lpu-JjQ" annotatedElement="_lV6l0B2IEd-4VI-lpu-JjQ">
-          <body>A unique string or token used to identify the Organization - Location combination.</body>
+          <body>A unique string or token used to identify the Organization - Location combination.&#xD;
+&quot;Store number assigned by the chain to the pharmacy location. Used when PDMP needs to identify the specific pharmacy from which information is required.&quot; - ASAP Standard for PDMP, PHA12: Chain Site ID</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_b8YIs3EeaDlJMTsPFiaQ" value="1"/>
@@ -3566,7 +3593,8 @@ Note that FHIR has a single class, Location, which encompasses concepts which th
       <ownedAttribute xmi:id="_zaTccLYuEeGWl-7OlqBMDw" name="telecom" visibility="public">
         <ownedComment xmi:id="_zaTccbYuEeGWl-7OlqBMDw" annotatedElement="_zaTccLYuEeGWl-7OlqBMDw">
           <body>Indicates how and at what address that the Service Delivery Location can be reached via electronic communications. The datatype for this property is ContactPoint, which can be used for telephone numbers as well as email, etc. The ContactPoint data  type contains a type code to indicate what kind of telecommunications address that is being referenced. Note that this property can contain more than one entry.&#xD;
-&quot;The contact details of communication devices available at the location. This can include phone numbers, fax numbers, mobile numbers, email addresses and web sites.&quot; – HL7 FHIR, Location.telecom</body>
+&quot;The contact details of communication devices available at the location. This can include phone numbers, fax numbers, mobile numbers, email addresses and web sites.&quot; – HL7 FHIR, Location.telecom&#xD;
+&quot;Complete phone number including area code.&quot; - ASAP Standard for PDMP, PHA10: Phone Number</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_fImbAAEYEd-ZUM5xZsXWyw?FHIM/Datatypes/ContactPoint?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zaTccrYuEeGWl-7OlqBMDw" value="*"/>
@@ -3738,7 +3766,8 @@ Note that FHIR has a single class, Location, which encompasses concepts which th
         <eAnnotations xmi:id="_1kWlISrmEeOKCrmlnw-Z_w" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <ownedComment xmi:id="_1kWlIirmEeOKCrmlnw-Z_w" annotatedElement="_1kWlICrmEeOKCrmlnw-Z_w">
           <body>An identifier that uniquely identifies all persons and organizations who perform medical services within the United States.  This identifier is mandated by HIPAA and is maintained by CMS.&#xD;
-&quot;An identifier that applies to this person in this role.&quot; - HL7 FHIR, Practitioner.identifier.</body>
+&quot;An identifier that applies to this person in this role.&quot; - HL7 FHIR, Practitioner.identifier.&#xD;
+&quot;Identifier assigned to the pharmacy by CMS.&quot; - ASAP Standard for PDMP, PHA01: National Provider Identifier (NPI)</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1kWlIyrmEeOKCrmlnw-Z_w" value="*"/>
@@ -3916,7 +3945,8 @@ Note that FHIR has a single class, Location, which encompasses concepts which th
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6456373F20383" name="licenseId" visibility="public">
         <ownedComment xmi:id="_7xIiABqQEd-j8JC21F3W2A" annotatedElement="_420A62FD03B6456373F20383">
-          <body>Identifies a certification of a practitioner to perform certain activities that fall under the jurisdiction of the issuer of the license.</body>
+          <body>Identifies a certification of a practitioner to perform certain activities that fall under the jurisdiction of the issuer of the license.&#xD;
+&quot;Used to help identify the sending pharmacy.&quot; - ASAP Standard for PDMP, PHA13: Pharmacy’s Permit Number/License Number</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LMy60Yy2EeaPWbBiMJSPyg" value="1"/>
@@ -5692,4 +5722,5 @@ Note that if the party is a Person, this property must not be used and the cardi
   <Default:Documentation xmi:id="_tNOv1LNaEeejKsyqENIdXw" base_Comment="_tNOv0bNaEeejKsyqENIdXw"/>
   <Default:Documentation xmi:id="_zdZ39LNbEeejKsyqENIdXw" base_Comment="_zdZ38bNbEeejKsyqENIdXw"/>
   <Default:Documentation xmi:id="_BGRLQbNlEeejKsyqENIdXw" base_Comment="_BGRLQLNlEeejKsyqENIdXw"/>
+  <Default:Documentation xmi:id="_0F6WICinEem4e4InRvNGGg" base_Comment="_0F5IASinEem4e4InRvNGGg"/>
 </xmi:XMI>

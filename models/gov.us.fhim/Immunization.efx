@@ -2896,6 +2896,303 @@ b) Add MedicationAdmin non-occurance, make VaccinationNonEvent a subtype&#xD;
 c) FHIR has an Explanation, which is akin to Indication, but it is used for non-events too&#xD;
 d) FHIR points directly to the Vaccination Protocol, FHIM links through the evaluation</body>
     </ownedComment>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_XnQQgKRMEeGZ6ueex_Me0w" name="ActNoImmunizationReason (HL7_V3)">
+      <ownedComment xmi:id="_C5xWcKa2EeKk39qMkmbDrw">
+        <body>This value set is used as-is.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_XnWXIKRMEeGZ6ueex_Me0w" name="IMMUNE"/>
+      <ownedLiteral xmi:id="_XnWXIqRMEeGZ6ueex_Me0w" name="MEDPREC"/>
+      <ownedLiteral xmi:id="_XnW-MKRMEeGZ6ueex_Me0w" name="OSTOCK"/>
+      <ownedLiteral xmi:id="_XnW-MqRMEeGZ6ueex_Me0w" name="PATOBJ"/>
+      <ownedLiteral xmi:id="_XnW-NKRMEeGZ6ueex_Me0w" name="PHILISOP"/>
+      <ownedLiteral xmi:id="_XnXlQaRMEeGZ6ueex_Me0w" name="RELIG"/>
+      <ownedLiteral xmi:id="_XnXlQ6RMEeGZ6ueex_Me0w" name="VACEFF"/>
+      <ownedLiteral xmi:id="_XnYMUKRMEeGZ6ueex_Me0w" name="VACSAF"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_TzcWcMCBEeGOjJTiA9qJ1w" name="Administrative Site (IIS)">
+      <ownedComment xmi:id="_Vb5iAMCBEeGOjJTiA9qJ1w">
+        <body>This value set is used as-is.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_GbHMMWZWEeOjX716b-3f7A" name="LA"/>
+      <ownedLiteral xmi:id="_GbHzQWZWEeOjX716b-3f7A" name="LD"/>
+      <ownedLiteral xmi:id="_GbHzQ2ZWEeOjX716b-3f7A" name="LG"/>
+      <ownedLiteral xmi:id="_GbHzRWZWEeOjX716b-3f7A" name="LLFA"/>
+      <ownedLiteral xmi:id="_GbIaUWZWEeOjX716b-3f7A" name="LT"/>
+      <ownedLiteral xmi:id="_GbIaU2ZWEeOjX716b-3f7A" name="LVL"/>
+      <ownedLiteral xmi:id="_GbJBYGZWEeOjX716b-3f7A" name="RA"/>
+      <ownedLiteral xmi:id="_GbJBYmZWEeOjX716b-3f7A" name="RD"/>
+      <ownedLiteral xmi:id="_GbJBZGZWEeOjX716b-3f7A" name="RG"/>
+      <ownedLiteral xmi:id="_GbJocGZWEeOjX716b-3f7A" name="RLFA"/>
+      <ownedLiteral xmi:id="_GbJocmZWEeOjX716b-3f7A" name="RT"/>
+      <ownedLiteral xmi:id="_GbJodGZWEeOjX716b-3f7A" name="RVL"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Ioh1gGNiEeOdsZCLnE6vIw" name="Evidence Of Immunity Category">
+      <ownedLiteral xmi:id="_SqUOEGNjEeOXf9BkNIlNHQ">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_icyBQGNjEeOXf9BkNIlNHQ">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_n9_nEGNjEeOXf9BkNIlNHQ">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_xFRWcMtxEeGAAuWTs_7XwQ" name="Financial Class (PHVS_IIS)">
+      <ownedComment xmi:id="_8ZUdkMtxEeGAAuWTs_7XwQ">
+        <body>Note that funding source for a specific immunization is different from Financial Class.&#xD;
+These are documented in CDC local codes table, CDCPHINVS (Value set OID 2.16.840.1.114222.4.11.3287).</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_FWBMsGdkEeOMaPjy3E6rPQ" name="V01"/>
+      <ownedLiteral xmi:id="_HtR_AGdkEeOMaPjy3E6rPQ" name="V02"/>
+      <ownedLiteral xmi:id="_MGW4EGdkEeOMaPjy3E6rPQ" name="V03"/>
+      <ownedLiteral xmi:id="_OpQ5sGdkEeOMaPjy3E6rPQ" name="V04"/>
+      <ownedLiteral xmi:id="_RcpnUGdkEeOMaPjy3E6rPQ" name="V05"/>
+      <ownedLiteral xmi:id="_Ugt1QGdkEeOMaPjy3E6rPQ" name="V06"/>
+      <ownedLiteral xmi:id="_WO3ZIGdkEeOMaPjy3E6rPQ" name="V07"/>
+      <ownedLiteral xmi:id="_ZNYYsGdkEeOMaPjy3E6rPQ" name="V08"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_j0CjkGNtEeOKdtxRJALfNg" name="Immunization Dose Evaluation">
+      <ownedLiteral xmi:id="_xfxTwGNtEeOKdtxRJALfNg">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_0ZHfcGNtEeOKdtxRJALfNg">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_3SKJIGNtEeOKdtxRJALfNg">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_691wsGNtEeOKdtxRJALfNg">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_XWmlYKRMEeGZ6ueex_Me0w" name="Immunization Funding Source excluding nulls">
+      <ownedComment xmi:id="_3F1igMCAEeGOjJTiA9qJ1w">
+        <body>It is the same the PHVS value set except it does not include null flavors &quot;other&quot; (OTH) and &quot;unknown&quot; (UNK) to specify other funding or uknown funding sources.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_XWssAKRMEeGZ6ueex_Me0w" name="VXC1"/>
+      <ownedLiteral xmi:id="_0qslwNDnEeG0ze9kYp0s5g" name="PHC68"/>
+      <ownedLiteral xmi:id="_3HKBINDnEeG0ze9kYp0s5g" name="PHC70"/>
+      <ownedLiteral xmi:id="_5xoDUNDnEeG0ze9kYp0s5g" name="VXC2"/>
+      <ownedLiteral xmi:id="_9M-I0NDnEeG0ze9kYp0s5g" name="VXC3"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_XWa_MKRMEeGZ6ueex_Me0w" name="Immunization Information Source (PHVS_HITSP)">
+      <ownedComment xmi:id="_zU7awNDpEeG0ze9kYp0s5g">
+        <body>This value set is used as-is.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_XWfQoaRMEeGZ6ueex_Me0w" name="06"/>
+      <ownedLiteral xmi:id="_XWf3sKRMEeGZ6ueex_Me0w" name="02"/>
+      <ownedLiteral xmi:id="_XWf3sqRMEeGZ6ueex_Me0w" name="05"/>
+      <ownedLiteral xmi:id="_XWf3tKRMEeGZ6ueex_Me0w" name="04"/>
+      <ownedLiteral xmi:id="_XWgewaRMEeGZ6ueex_Me0w" name="03"/>
+      <ownedLiteral xmi:id="_XWgew6RMEeGZ6ueex_Me0w" name="08"/>
+      <ownedLiteral xmi:id="_XWhF0aRMEeGZ6ueex_Me0w" name="07"/>
+      <ownedLiteral xmi:id="_XWhF06RMEeGZ6ueex_Me0w" name="01"/>
+      <ownedLiteral xmi:id="_XWhs4KRMEeGZ6ueex_Me0w" name="00"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_CBZyENDxEeG0ze9kYp0s5g" name="Immunization Registry Status (FHIM)">
+      <ownedComment xmi:id="_a0H2wKa2EeKk39qMkmbDrw">
+        <body>FHIM-specific value set.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_g8bf0NDxEeG0ze9kYp0s5g" name="A"/>
+      <ownedLiteral xmi:id="_ppbsMNDxEeG0ze9kYp0s5g" name="I"/>
+      <ownedLiteral xmi:id="_rqx44NDxEeG0ze9kYp0s5g" name="L"/>
+      <ownedLiteral xmi:id="_w-X5cNDxEeG0ze9kYp0s5g" name="M"/>
+      <ownedLiteral xmi:id="_0Kq2UNDxEeG0ze9kYp0s5g" name="P"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_r4Kv0GQiEeO416PBOZe6TA" name="Immunization Schedule Identifier (IIS)">
+      <ownedLiteral xmi:id="_1KuD0GQjEeO416PBOZe6TA" name="VXC16"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_yLFPsGNvEeO_tI_so1N_PQ" name="Immunization Series Status">
+      <ownedLiteral xmi:id="_9xhuYGNvEeO_tI_so1N_PQ">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_BfB64GNwEeO_tI_so1N_PQ">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_C0tUYGNwEeO_tI_so1N_PQ">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_FMttkGNwEeO_tI_so1N_PQ">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_eewZkGNwEeO_tI_so1N_PQ" name="Immunization Target Dose Fulfillment">
+      <ownedLiteral xmi:id="_HduDYGmxEeOQjeHKTZgq1g">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_LvnWYGmxEeOQjeHKTZgq1g">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_TzRDwGmxEeOQjeHKTZgq1g">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_U7pBEGmxEeOQjeHKTZgq1g">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Xdq2sKRMEeGZ6ueex_Me0w" name="Manufacturers Of Vaccines (MVX PVHS_CDC_NIP)">
+      <ownedComment xmi:id="_RMlZQNDlEeG0ze9kYp0s5g">
+        <body>This value set version is used as-is.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_LDuIwGNmEeOKdtxRJALfNg" name="Patient Immunity Category">
+      <ownedLiteral xmi:id="_WBalYGNmEeOKdtxRJALfNg">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_Yh9PgGNmEeOKdtxRJALfNg">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_bIcwoGNmEeOKdtxRJALfNg">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_d3tzQGNmEeOKdtxRJALfNg">
+        <name xsi:nil="true"/>
+      </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZL0OAMtxEeGAAuWTs_7XwQ" name="Route Of Administration (PHVS_IIS)">
+      <ownedComment xmi:id="_si6bwNDmEeG0ze9kYp0s5g">
+        <body>This value set is used as-is.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_ZL0OActxEeGAAuWTs_7XwQ" name="AP"/>
+      <ownedLiteral xmi:id="_ZL0OAstxEeGAAuWTs_7XwQ" name="B"/>
+      <ownedLiteral xmi:id="_ZL0OA8txEeGAAuWTs_7XwQ" name="DT"/>
+      <ownedLiteral xmi:id="_ZL0OBMtxEeGAAuWTs_7XwQ" name="ET"/>
+      <ownedLiteral xmi:id="_ZL0OBctxEeGAAuWTs_7XwQ" name="EP"/>
+      <ownedLiteral xmi:id="_ZL0OBstxEeGAAuWTs_7XwQ" name="GTT"/>
+      <ownedLiteral xmi:id="_ZL0OB8txEeGAAuWTs_7XwQ" name="GU"/>
+      <ownedLiteral xmi:id="_ZL0OCMtxEeGAAuWTs_7XwQ" name="IMR"/>
+      <ownedLiteral xmi:id="_ZL0OCctxEeGAAuWTs_7XwQ" name="IH"/>
+      <ownedLiteral xmi:id="_ZL0OCstxEeGAAuWTs_7XwQ" name="IA"/>
+      <ownedLiteral xmi:id="_ZL0OC8txEeGAAuWTs_7XwQ" name="IB"/>
+      <ownedLiteral xmi:id="_ZL0ODMtxEeGAAuWTs_7XwQ" name="IC"/>
+      <ownedLiteral xmi:id="_ZL0ODctxEeGAAuWTs_7XwQ" name="ICV"/>
+      <ownedLiteral xmi:id="_ZL0ODstxEeGAAuWTs_7XwQ" name="ID"/>
+      <ownedLiteral xmi:id="_ZL0OD8txEeGAAuWTs_7XwQ" name="IHA"/>
+      <ownedLiteral xmi:id="_ZL0OEMtxEeGAAuWTs_7XwQ" name="IM"/>
+      <ownedLiteral xmi:id="_ZL0OEctxEeGAAuWTs_7XwQ" name="IN"/>
+      <ownedLiteral xmi:id="_ZL0OEstxEeGAAuWTs_7XwQ" name="IO"/>
+      <ownedLiteral xmi:id="_ZL0OE8txEeGAAuWTs_7XwQ" name="IP"/>
+      <ownedLiteral xmi:id="_ZL0OFMtxEeGAAuWTs_7XwQ" name="IS"/>
+      <ownedLiteral xmi:id="_ZL0OFctxEeGAAuWTs_7XwQ" name="IT"/>
+      <ownedLiteral xmi:id="_ZL0OFstxEeGAAuWTs_7XwQ" name="IU"/>
+      <ownedLiteral xmi:id="_ZL0OF8txEeGAAuWTs_7XwQ" name="IV"/>
+      <ownedLiteral xmi:id="_ZL0OGMtxEeGAAuWTs_7XwQ" name="MTH"/>
+      <ownedLiteral xmi:id="_ZL0OGctxEeGAAuWTs_7XwQ" name="MM"/>
+      <ownedLiteral xmi:id="_ZL0OGstxEeGAAuWTs_7XwQ" name="NS"/>
+      <ownedLiteral xmi:id="_ZL0OG8txEeGAAuWTs_7XwQ" name="NP"/>
+      <ownedLiteral xmi:id="_ZL0OHMtxEeGAAuWTs_7XwQ" name="NG"/>
+      <ownedLiteral xmi:id="_ZL0OHctxEeGAAuWTs_7XwQ" name="NT"/>
+      <ownedLiteral xmi:id="_ZL0OHstxEeGAAuWTs_7XwQ" name="OP"/>
+      <ownedLiteral xmi:id="_ZL0OH8txEeGAAuWTs_7XwQ" name="PO"/>
+      <ownedLiteral xmi:id="_ZL0OIMtxEeGAAuWTs_7XwQ" name="OTH"/>
+      <ownedLiteral xmi:id="_ZL0OIctxEeGAAuWTs_7XwQ" name="OT"/>
+      <ownedLiteral xmi:id="_ZL0OIstxEeGAAuWTs_7XwQ" name="PF"/>
+      <ownedLiteral xmi:id="_ZL0OI8txEeGAAuWTs_7XwQ" name="RM"/>
+      <ownedLiteral xmi:id="_ZL0OJMtxEeGAAuWTs_7XwQ" name="PR"/>
+      <ownedLiteral xmi:id="_ZL0OJctxEeGAAuWTs_7XwQ" name="SD"/>
+      <ownedLiteral xmi:id="_ZL0OJstxEeGAAuWTs_7XwQ" name="SC"/>
+      <ownedLiteral xmi:id="_ZL0OJ8txEeGAAuWTs_7XwQ" name="SL"/>
+      <ownedLiteral xmi:id="_ZL0OKMtxEeGAAuWTs_7XwQ" name="TP"/>
+      <ownedLiteral xmi:id="_ZL0OKctxEeGAAuWTs_7XwQ" name="TRA"/>
+      <ownedLiteral xmi:id="_ZL0OKstxEeGAAuWTs_7XwQ" name="TD"/>
+      <ownedLiteral xmi:id="_ZL0OK8txEeGAAuWTs_7XwQ" name="TL"/>
+      <ownedLiteral xmi:id="_ZL0OLMtxEeGAAuWTs_7XwQ" name="UR"/>
+      <ownedLiteral xmi:id="_ZL0OLctxEeGAAuWTs_7XwQ" name="VG"/>
+      <ownedLiteral xmi:id="_ZL0OLstxEeGAAuWTs_7XwQ" name="VM"/>
+      <ownedLiteral xmi:id="_ZL0OL8txEeGAAuWTs_7XwQ" name="WND"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8LLQcNDuEeG0ze9kYp0s5g" name="Substance Refusal Reason excluding 'other' (FHIM)">
+      <ownedComment xmi:id="_FKwhoKa2EeKk39qMkmbDrw">
+        <body>This value set is new for FHIM based on existing PHVS terminology.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_NPSRsNDvEeG0ze9kYp0s5g" name="00"/>
+      <ownedLiteral xmi:id="_RbDukNDvEeG0ze9kYp0s5g" name="01"/>
+      <ownedLiteral xmi:id="_UPEHQNDvEeG0ze9kYp0s5g" name="03"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_k0mooGQxEeO416PBOZe6TA" name="Treatment Completion Status (HL7)">
+      <ownedLiteral xmi:id="_tktzYGQxEeO416PBOZe6TA" name="CP"/>
+      <ownedLiteral xmi:id="_xZj-AGQxEeO416PBOZe6TA" name="NA"/>
+      <ownedLiteral xmi:id="_yclhQGQxEeO416PBOZe6TA" name="PA"/>
+      <ownedLiteral xmi:id="_0Th0wGQxEeO416PBOZe6TA" name="RE"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_rBThQND1EeG0ze9kYp0s5g" name="Vaccination Contraindication (PHVS_IIS)">
+      <ownedComment xmi:id="_4p6sAND1EeG0ze9kYp0s5g">
+        <body>This value set is a mix of two coding systems.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_YJfdUGdlEeOWZLmDWl1rsg" name="VXC30"/>
+      <ownedLiteral xmi:id="_bmg90GdlEeOWZLmDWl1rsg" name="VXC17"/>
+      <ownedLiteral xmi:id="_edt0cGdlEeOWZLmDWl1rsg" name="402306009"/>
+      <ownedLiteral xmi:id="_g2K5kGdlEeOWZLmDWl1rsg" name="VXC18"/>
+      <ownedLiteral xmi:id="_jOxIoGdlEeOWZLmDWl1rsg" name="91930004"/>
+      <ownedLiteral xmi:id="_l4sYQGdlEeOWZLmDWl1rsg" name="VXC20"/>
+      <ownedLiteral xmi:id="_oQn48GdlEeOWZLmDWl1rsg" name="VXC19"/>
+      <ownedLiteral xmi:id="_qbJ20GdlEeOWZLmDWl1rsg" name="27624003"/>
+      <ownedLiteral xmi:id="_sgpjsGdlEeOWZLmDWl1rsg" name="VXC24"/>
+      <ownedLiteral xmi:id="_u7Fl0GdlEeOWZLmDWl1rsg" name="VXC23"/>
+      <ownedLiteral xmi:id="_z7QUEGdlEeOWZLmDWl1rsg" name="VXC22"/>
+      <ownedLiteral xmi:id="_2BtqQGdlEeOWZLmDWl1rsg" name="294847001"/>
+      <ownedLiteral xmi:id="_4tgiIGdlEeOWZLmDWl1rsg" name="161461006"/>
+      <ownedLiteral xmi:id="_60v7cGdlEeOWZLmDWl1rsg" name="VXC25"/>
+      <ownedLiteral xmi:id="_9beGEGdlEeOWZLmDWl1rsg" name="VXC27"/>
+      <ownedLiteral xmi:id="_AbI8MGdmEeOWZLmDWl1rsg" name="300916003"/>
+      <ownedLiteral xmi:id="_FVCDUGdmEeOWZLmDWl1rsg" name="294468006"/>
+      <ownedLiteral xmi:id="_GSGIgGdmEeOWZLmDWl1rsg" name="77386006"/>
+      <ownedLiteral xmi:id="_IjuM4GdmEeOWZLmDWl1rsg" name="294530006"/>
+      <ownedLiteral xmi:id="_LNY90GdmEeOWZLmDWl1rsg" name="VXC21"/>
+      <ownedLiteral xmi:id="_Nr-gIGdmEeOWZLmDWl1rsg" name="294466005"/>
+      <ownedLiteral xmi:id="_PxZ7kGdmEeOWZLmDWl1rsg" name="302215000"/>
+      <ownedLiteral xmi:id="_RqgLMGdmEeOWZLmDWl1rsg" name="VXC26"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_rlhBkND1EeG0ze9kYp0s5g" name="Vaccination Reaction (PHVS_IIS)">
+      <ownedComment xmi:id="_PxcoQND2EeG0ze9kYp0s5g">
+        <body>This value set is a mix of two coding systems.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8YNtQND2EeG0ze9kYp0s5g" name="Vaccination Special Indication (PHVS_IIS)">
+      <ownedComment xmi:id="_YsCvQND3EeG0ze9kYp0s5g">
+        <body>This value set is reused as-is.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_LYJQQND3EeG0ze9kYp0s5g" name="VXC8"/>
+      <ownedLiteral xmi:id="_P884MND3EeG0ze9kYp0s5g" name="VXC7"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_X8vYUKRMEeGZ6ueex_Me0w" name="Vaccines Administered (CVX_CDC_NIP)">
+      <ownedComment xmi:id="_SRwcINDmEeG0ze9kYp0s5g">
+        <body>This value set is used as-is.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-1ISQGZVEeOjX716b-3f7A" name="VIS Bar Codes (IIS)">
+      <ownedLiteral xmi:id="_-4B1QGZVEeOjX716b-3f7A" name="253088698300001111110714"/>
+      <ownedLiteral xmi:id="_-4B1QmZVEeOjX716b-3f7A" name="253088698300002811100310"/>
+      <ownedLiteral xmi:id="_-4CcUGZVEeOjX716b-3f7A" name="253088698300003511070517"/>
+      <ownedLiteral xmi:id="_-4CcUmZVEeOjX716b-3f7A" name="253088698300006611981216"/>
+      <ownedLiteral xmi:id="_-4CcVGZVEeOjX716b-3f7A" name="253088698300004211111025"/>
+      <ownedLiteral xmi:id="_-4DDYGZVEeOjX716b-3f7A" name="253088698300005911120202"/>
+      <ownedLiteral xmi:id="_-4DDYmZVEeOjX716b-3f7A" name="253088698300007311110503"/>
+      <ownedLiteral xmi:id="_-4DDZGZVEeOjX716b-3f7A" name="253088698300008011120222"/>
+      <ownedLiteral xmi:id="_-4DqcWZVEeOjX716b-3f7A" name="253088698300008011130517"/>
+      <ownedLiteral xmi:id="_-4Dqc2ZVEeOjX716b-3f7A" name="253088698300010311120702"/>
+      <ownedLiteral xmi:id="_-4DqdWZVEeOjX716b-3f7A" name="253088698300010311130726"/>
+      <ownedLiteral xmi:id="_-4ERgWZVEeOjX716b-3f7A" name="253088698300009711120702"/>
+      <ownedLiteral xmi:id="_-4ERg2ZVEeOjX716b-3f7A" name="253088698300009711130726"/>
+      <ownedLiteral xmi:id="_-4ERhWZVEeOjX716b-3f7A" name="253088698300011011111207"/>
+      <ownedLiteral xmi:id="_-4E4kWZVEeOjX716b-3f7A" name="253088698300012711120420"/>
+      <ownedLiteral xmi:id="_-4E4k2ZVEeOjX716b-3f7A" name="253088698300013411100521"/>
+      <ownedLiteral xmi:id="_-4FfoGZVEeOjX716b-3f7A" name="253088698300014111111014"/>
+      <ownedLiteral xmi:id="_-4FfomZVEeOjX716b-3f7A" name="253088698300026411121116"/>
+      <ownedLiteral xmi:id="_-4FfpGZVEeOjX716b-3f7A" name="253088698300015811100416"/>
+      <ownedLiteral xmi:id="_-4GGsGZVEeOjX716b-3f7A" name="253088698300015811130227"/>
+      <ownedLiteral xmi:id="_-4GGsmZVEeOjX716b-3f7A" name="253088698300016511091006"/>
+      <ownedLiteral xmi:id="_-4GGtGZVEeOjX716b-3f7A" name="253088698300017211111108"/>
+      <ownedLiteral xmi:id="_-4GtwWZVEeOjX716b-3f7A" name="253088698300018911091006"/>
+      <ownedLiteral xmi:id="_-4Gtw2ZVEeOjX716b-3f7A" name="253088698300019611101206"/>
+      <ownedLiteral xmi:id="_-4GtxWZVEeOjX716b-3f7A" name="253088698300019611130826"/>
+      <ownedLiteral xmi:id="_-4HU0WZVEeOjX716b-3f7A" name="253088698300020211091006"/>
+      <ownedLiteral xmi:id="_-4HU02ZVEeOjX716b-3f7A" name="253088698300027111130509"/>
+      <ownedLiteral xmi:id="_-4HU1WZVEeOjX716b-3f7A" name="253088698300022611120124"/>
+      <ownedLiteral xmi:id="_-4H74WZVEeOjX716b-3f7A" name="253088698300023311120529"/>
+      <ownedLiteral xmi:id="_-4H742ZVEeOjX716b-3f7A" name="253088698300024011080313"/>
+      <ownedLiteral xmi:id="_-4H75WZVEeOjX716b-3f7A" name="253088698300025711110330"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_DygMsH82EeG8JPxVazzwbQ" name="VaccineInformationStatement">
       <ownedComment xmi:id="_KJsmYCzcEeKLfdgQhBZO1Q" annotatedElement="_DygMsH82EeG8JPxVazzwbQ">
         <body>A vaccine information document is an educational document intended to outline the risks and benefits of the vaccine.  It outlines the impact of infection by the disease causing organism. Also known as a Vaccine Information Sheet (VIS).</body>

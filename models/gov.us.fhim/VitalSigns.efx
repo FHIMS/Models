@@ -116,7 +116,7 @@
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_ofAkIQE9EeS53tTqzkwERQ" type="CommentBody"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oe85wQE9EeS53tTqzkwERQ" x="1902" y="-634" width="24390" height="2853"/>
         </children>
-        <children xmi:type="umlnotation:UMLShape" xmi:id="_BbC2gMNzEeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_BbC2gMNzEeSFjdDJNF9NPA" element="_9MaIUMNxEeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_BbDdkMNzEeSFjdDJNF9NPA" type="ImageCompartment">
             <layoutConstraint xmi:type="notation:Size" xmi:id="_BbDdkcNzEeSFjdDJNF9NPA" width="1320" height="1320"/>
           </children>
@@ -127,7 +127,6 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_BbEEpMNzEeSFjdDJNF9NPA" type="EnumerationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_BbErsMNzEeSFjdDJNF9NPA" visible="false" type="AttributeCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_BbErscNzEeSFjdDJNF9NPA" visible="false" type="OperationCompartment"/>
-          <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_9MaIUMNxEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/CoreVitalSigns?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BbC2gcNzEeSFjdDJNF9NPA" x="17435" y="12680"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_6YNH_XKCEeiXDYZdidzgig" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -324,6 +323,207 @@ Individual organizations or medical specialties will often include other common 
 &#xD;
 This package contains sub-packages for each of the seven vital signs.  These sub-packages contain an example &quot;Detailed Clinical Model&quot; (DCM) in which we constrain (using UML re-defines) and extend the generic clinical Observation to define a particular vital sign.  These sub-packages are meant to show how such DCMs would be modeled.  Note that a DCM is analogous to a FHIR Profile.</body>
     </ownedComment>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_OCbtcMEFEeSD-sVrqweICQ" name="BloodPressureCuffSize">
+      <ownedLiteral xmi:id="_goBZcMEOEeSx2-rVmArpvQ" name="-newCode- (Adult)"/>
+      <ownedLiteral xmi:id="_lnsYcMEOEeSx2-rVmArpvQ" name="-newCode- (Adult Thigh)"/>
+      <ownedLiteral xmi:id="_mid-oMEOEeSx2-rVmArpvQ" name="-newCode- (Infant)"/>
+      <ownedLiteral xmi:id="_uapb0MEOEeSx2-rVmArpvQ" name="-newCode- (Large Adult)"/>
+      <ownedLiteral xmi:id="_vZJEYMEOEeSx2-rVmArpvQ" name="-newCode- (Neonatal)"/>
+      <ownedLiteral xmi:id="_wFLD8MEOEeSx2-rVmArpvQ" name="-newCode- (Paediatric/Child)"/>
+      <ownedLiteral xmi:id="_xC_-IMEOEeSx2-rVmArpvQ" name="-newCode- (Small Adult)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZCu6gMNoEeSFjdDJNF9NPA" name="BloodPressureMeasurementDiastolicEndpoint">
+      <ownedLiteral xmi:id="_orHkoMNoEeSFjdDJNF9NPA" name="-newCode- Phase IV"/>
+      <ownedLiteral xmi:id="_z6V2IMNoEeSFjdDJNF9NPA" name="-newCode- Phase V"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_LuKo8MD-EeSD-sVrqweICQ" name="BloodPressureMeasurementMethod">
+      <ownedLiteral xmi:id="_78_ZwMD-EeSD-sVrqweICQ" name="779380092 (Arterial Pressure Monitoring, Invasive Method)"/>
+      <ownedLiteral xmi:id="_p2R2kMD_EeSD-sVrqweICQ" name="37931006 (Auscultation)">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="_XkqxUMEIEeSD-sVrqweICQ"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_YJedoMD_EeSD-sVrqweICQ" name="-newCode- (Automatic Cuff)"/>
+      <ownedLiteral xmi:id="_euXG8MD_EeSD-sVrqweICQ" name="-newCode- (Doppler)"/>
+      <ownedLiteral xmi:id="_sIm7AMD-EeSD-sVrqweICQ" name="113011001 (Palpation)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_OxHxsMEAEeSD-sVrqweICQ" name="BloodPressureMeasurementSite">
+      <ownedLiteral xmi:id="_qbejcMEBEeSD-sVrqweICQ" name="7569003 (Finger Structure)">
+        <specification xmi:type="uml:LiteralInteger" xmi:id="__adaoMEIEeSD-sVrqweICQ"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_0v2WQMEBEeSD-sVrqweICQ" name="-newCode- (Left Brachial Artery)"/>
+      <ownedLiteral xmi:id="_Fpf-gMEDEeSD-sVrqweICQ" name="113270003 (Left Femoral Artery)"/>
+      <ownedLiteral xmi:id="_JaPsQMEDEeSD-sVrqweICQ" name="368504007 (Left Radial Artery)"/>
+      <ownedLiteral xmi:id="_T3gVUMEDEeSD-sVrqweICQ" name="368506009 (Left Ulnar Artery)"/>
+      <ownedLiteral xmi:id="_YczsgMEDEeSD-sVrqweICQ" name="-newCode- (Right Brachial Artery)"/>
+      <ownedLiteral xmi:id="_3yIwoMEDEeSD-sVrqweICQ" name="69833005 (Right Femoral Artery)"/>
+      <ownedLiteral xmi:id="_IYXjEMEEEeSD-sVrqweICQ" name="368503001 (Right Radial Artery)"/>
+      <ownedLiteral xmi:id="_QC17cMEEEeSD-sVrqweICQ" name="368505008 (Right Ulnar Artery)"/>
+      <ownedLiteral xmi:id="_RUtzAMEEEeSD-sVrqweICQ" name="29707007 (Toe Structure)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_9MaIUMNxEeSFjdDJNF9NPA" name="CoreVitalSigns">
+      <ownedLiteral xmi:id="_6zukQMNyEeSFjdDJNF9NPA" name="55284-4 (Blood Pressure)"/>
+      <ownedLiteral xmi:id="_Iv3kcMNyEeSFjdDJNF9NPA" name="8302-2 (Body Height)"/>
+      <ownedLiteral xmi:id="_TYAAwMNyEeSFjdDJNF9NPA" name="8310-5 (Body Temperature)"/>
+      <ownedLiteral xmi:id="_WhJjAMNyEeSFjdDJNF9NPA" name="3141-9 (Body Weight Measured)"/>
+      <ownedLiteral xmi:id="_ZjB_oMNyEeSFjdDJNF9NPA" name="8462-4 (Diastolic Blood Pressure)"/>
+      <ownedLiteral xmi:id="_dUZYcMNyEeSFjdDJNF9NPA" name="8867-4 (Heart Rate)"/>
+      <ownedLiteral xmi:id="_hD6XIMNyEeSFjdDJNF9NPA" name="2708-6 (Oxygen Saturation In Arterial Blood)"/>
+      <ownedLiteral xmi:id="_kcNvsMNyEeSFjdDJNF9NPA" name="9279-1 (Respiratory Rate)"/>
+      <ownedLiteral xmi:id="_oX_BsMNyEeSFjdDJNF9NPA" name="8480-6 (Systolic Blood Pressure)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZwU_UMNzEeSFjdDJNF9NPA" name="HeartRateMeasurementMethod">
+      <ownedLiteral xmi:id="_mHctAMNzEeSFjdDJNF9NPA" name="37931006 (Auscultation)"/>
+      <ownedLiteral xmi:id="_qwxokMNzEeSFjdDJNF9NPA" name="-newcode- (Doppler)"/>
+      <ownedLiteral xmi:id="_t2FzsMNzEeSFjdDJNF9NPA" name="-newcode- (Electrocardiography)"/>
+      <ownedLiteral xmi:id="_xzD_kMNzEeSFjdDJNF9NPA" name="-newcode- (Monitor)"/>
+      <ownedLiteral xmi:id="_3swW0MNzEeSFjdDJNF9NPA" name="113011001 (Palpation)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_A8YIEMN0EeSFjdDJNF9NPA" name="HeartRateMeasurementSite">
+      <ownedLiteral xmi:id="_IBAocMN0EeSFjdDJNF9NPA" name="13383001 (Apex Of Heart)"/>
+      <ownedLiteral xmi:id="_Q265MMN0EeSFjdDJNF9NPA" name="128617001 (Arteriovenous Fistula)"/>
+      <ownedLiteral xmi:id="_YedSUMN0EeSFjdDJNF9NPA" name="-newCode- (Left Brachial Artery)"/>
+      <ownedLiteral xmi:id="_T700oMN0EeSFjdDJNF9NPA" name="113263003 (Left Common Carotid Artery Structure)"/>
+      <ownedLiteral xmi:id="_cjcxwMN0EeSFjdDJNF9NPA" name="-newcode- (Left Dorsalis Pedis Artery)"/>
+      <ownedLiteral xmi:id="_mit3QMN0EeSFjdDJNF9NPA" name="25885001 (Left Popliteal Artery Structure)"/>
+      <ownedLiteral xmi:id="_Yed5YMN0EeSFjdDJNF9NPA" name="-newCode- (Right Brachial Artery)"/>
+      <ownedLiteral xmi:id="_t3sgwMN0EeSFjdDJNF9NPA" name="65355003 (Right Common Carotid Artery Structure)"/>
+      <ownedLiteral xmi:id="_ibEFYMN0EeSFjdDJNF9NPA" name="-newcode- (Right Dorsalis Pedis Artery)"/>
+      <ownedLiteral xmi:id="_zhHAUMN0EeSFjdDJNF9NPA" name="113270003 (Structure Of Left Femoral Artery)"/>
+      <ownedLiteral xmi:id="_vuV5UMN0EeSFjdDJNF9NPA" name="214912001 (Structure Of Left Posterior Tibial Artery)"/>
+      <ownedLiteral xmi:id="_AgVP0cN1EeSFjdDJNF9NPA" name="368504007 (Structure Of Left Radial Artery)"/>
+      <ownedLiteral xmi:id="_AgVP08N1EeSFjdDJNF9NPA" name="368506009 (Structure Of Left Ulnar Artery)"/>
+      <ownedLiteral xmi:id="_zhHAUcN0EeSFjdDJNF9NPA" name="69833005 (Structure Of Right Femoral Artery)"/>
+      <ownedLiteral xmi:id="_7THkEMN0EeSFjdDJNF9NPA" name="57832007 (Structure Of Right Popliteal Artery)"/>
+      <ownedLiteral xmi:id="_J-GKwMN1EeSFjdDJNF9NPA" name="214811007 (Structure Of Right Posterior Tibial Artery)"/>
+      <ownedLiteral xmi:id="_AgVP0MN1EeSFjdDJNF9NPA" name="368503001 (Structure Of Right Radial Artery)"/>
+      <ownedLiteral xmi:id="_AgVP0sN1EeSFjdDJNF9NPA" name="368505008 (Structure Of Right Ulnar Artery)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_leolsHPnEeiV16BdsfE5oQ" name="HeightMeasurementBodyPosition">
+      <ownedLiteral xmi:id="_leolsnPnEeiV16BdsfE5oQ" name="102538003 (Lying)"/>
+      <ownedLiteral xmi:id="_leoltnPnEeiV16BdsfE5oQ" name="33586001 (Seated)"/>
+      <ownedLiteral xmi:id="_leolt3PnEeiV16BdsfE5oQ" name="10904000 (Standing)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3TO_IMQZEeSaFayJQBK5xQ" name="ObservationQualifier">
+      <ownedLiteral xmi:id="_Iwk_wMQaEeSaFayJQBK5xQ" name="-newcode- (Blood Pressure Cuff Size)"/>
+      <ownedLiteral xmi:id="_LJ95AMQaEeSaFayJQBK5xQ" name="-newcode- (Blood Pressure Measurement Diastolic Endpoint)"/>
+      <ownedLiteral xmi:id="_L9aIIMQaEeSaFayJQBK5xQ" name="-newcode- (Blood Pressure Measurement Method)"/>
+      <ownedLiteral xmi:id="_Mvd3MMQaEeSaFayJQBK5xQ" name="-newcode- (Blood Pressure Measurement Site)"/>
+      <ownedLiteral xmi:id="_NdHnYMQaEeSaFayJQBK5xQ" name="-newcode- (Heart Rate Measurement Method)"/>
+      <ownedLiteral xmi:id="_OL4x4MQaEeSaFayJQBK5xQ" name="-newcode- (Heart Rate Measurement Site)"/>
+      <ownedLiteral xmi:id="_PM-bcMQaEeSaFayJQBK5xQ" name="-newcode- (Measurement Confounding Factor)"/>
+      <ownedLiteral xmi:id="_P9w_MMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Body Temperature Measurement Site)"/>
+      <ownedLiteral xmi:id="_Qoc68MQaEeSaFayJQBK5xQ" name="-newcode- (Patient Height Determination Method)"/>
+      <ownedLiteral xmi:id="_RlBQ4MQaEeSaFayJQBK5xQ" name="-newcode- (Patient Measurement Body Exposure State)"/>
+      <ownedLiteral xmi:id="_SUNSIMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Measurement Body Position)"/>
+      <ownedLiteral xmi:id="_TLmNIMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Measurement Exertion Phase)"/>
+      <ownedLiteral xmi:id="_T2GisMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Measurement Sleep Status)"/>
+      <ownedLiteral xmi:id="_UwnqMMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Position Tilt)"/>
+      <ownedLiteral xmi:id="_VcZLEMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Weight Determination Method)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_LeZXgMODEeSFjdDJNF9NPA" name="OxygenProvisionDevice">
+      <ownedLiteral xmi:id="_fn74oMODEeSFjdDJNF9NPA" name="-newcode- (Aerosol/Humidified Mask)"/>
+      <ownedLiteral xmi:id="_u-wRoMODEeSFjdDJNF9NPA" name="-newcode- (Ambu Bag (Bag Valve Mask))"/>
+      <ownedLiteral xmi:id="_vp7VkMODEeSFjdDJNF9NPA" name="-newcode- (Assisted Ventilator)"/>
+      <ownedLiteral xmi:id="_wNANcMODEeSFjdDJNF9NPA" name="-newcode- (Bipap (Bi-Level Positive Airway Pressure))"/>
+      <ownedLiteral xmi:id="_yxKzUMODEeSFjdDJNF9NPA" name="-newcode- (Bipap-Cpap)"/>
+      <ownedLiteral xmi:id="_zg8DYMODEeSFjdDJNF9NPA" name="-newcode- (Controlled Ventilator)"/>
+      <ownedLiteral xmi:id="_2SC5EMODEeSFjdDJNF9NPA" name="-newcode- (Cpap (Continuous Positive Airway Pressure))"/>
+      <ownedLiteral xmi:id="_22H2gMODEeSFjdDJNF9NPA" name="-newcode- (Laryngeal Mask Airway)"/>
+      <ownedLiteral xmi:id="_GlB_YMOEEeSFjdDJNF9NPA" name="426294006 (Face Tent Oxygen Delivery Device)"/>
+      <ownedLiteral xmi:id="_bhwQ8MOEEeSFjdDJNF9NPA" name="-newcode- (Mustache Cannula)"/>
+      <ownedLiteral xmi:id="_cVez8MOEEeSFjdDJNF9NPA" name="-newcode- (Nasal Cannula)"/>
+      <ownedLiteral xmi:id="_lqqaoMOEEeSFjdDJNF9NPA" name="427591007 (Nonrebreather Oxygen Mask)"/>
+      <ownedLiteral xmi:id="_nU9ZQMOEEeSFjdDJNF9NPA" name="336602003 (Oxygen Mask)"/>
+      <ownedLiteral xmi:id="_qGklQMOEEeSFjdDJNF9NPA" name="426160001 (Oxygen Ventilator)"/>
+      <ownedLiteral xmi:id="_suN88MOEEeSFjdDJNF9NPA" name="425926003 (Partial Rebreather Oxygen Mask)"/>
+      <ownedLiteral xmi:id="_yLdowMOEEeSFjdDJNF9NPA" name="-newcode- (Pendant Cannula)"/>
+      <ownedLiteral xmi:id="_zvau0MOEEeSFjdDJNF9NPA" name="-newcode- (Reservoir Cannula)"/>
+      <ownedLiteral xmi:id="_0jYiYMOEEeSFjdDJNF9NPA" name="-newcode- (Room Air)"/>
+      <ownedLiteral xmi:id="_1bJ34MOEEeSFjdDJNF9NPA" name="-newcode- (T-Piece)"/>
+      <ownedLiteral xmi:id="_aEqLYMOFEeSFjdDJNF9NPA" name="-newcode- (Tracheostomy Collar)"/>
+      <ownedLiteral xmi:id="_2JVzkMOEEeSFjdDJNF9NPA" name="-newcode- (Transtracheal)"/>
+      <ownedLiteral xmi:id="_3ASpsMOEEeSFjdDJNF9NPA" name="428285009 (Venturi Mask)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_BxlrEMNvEeSFjdDJNF9NPA" name="PatientBodyTemperatureMeasurementSite">
+      <ownedLiteral xmi:id="_UzLFoMNvEeSFjdDJNF9NPA" name="280387007 (Groin Skin Crease (Inguinal Skin Crease))"/>
+      <ownedLiteral xmi:id="_YwugUMNvEeSFjdDJNF9NPA" name="-newcode- (Intravascular)"/>
+      <ownedLiteral xmi:id="_cIGEwMNvEeSFjdDJNF9NPA" name="43015003 (Lateral Ear Canal)"/>
+      <ownedLiteral xmi:id="_gXbL8MNvEeSFjdDJNF9NPA" name="71836000 (Nasopharynx)"/>
+      <ownedLiteral xmi:id="_5F4CsMNvEeSFjdDJNF9NPA" name="32849002 (Oesophagus)"/>
+      <ownedLiteral xmi:id="_D5WMUMNwEeSFjdDJNF9NPA" name="74262004 (Oral Cavity Structure)"/>
+      <ownedLiteral xmi:id="_GOv9cMNwEeSFjdDJNF9NPA" name="34402009 (Rectum)"/>
+      <ownedLiteral xmi:id="_KUBwwMNwEeSFjdDJNF9NPA" name="39937001 (Skin)"/>
+      <ownedLiteral xmi:id="_N2oU0MNwEeSFjdDJNF9NPA" name="422543003 (Structure Of Axillary Fossa)"/>
+      <ownedLiteral xmi:id="_WH8DsMNwEeSFjdDJNF9NPA" name="15672000 (Superficial Temporal Artery)"/>
+      <ownedLiteral xmi:id="_Z3s6AMNwEeSFjdDJNF9NPA" name="89837001 (Urinary Bladder)"/>
+      <ownedLiteral xmi:id="_dt_2IMNwEeSFjdDJNF9NPA" name="76784001 (Vagina)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_7T6H4MNsEeSFjdDJNF9NPA" name="PatientHeightDeterminationMethod">
+      <ownedLiteral xmi:id="__4wMEMNsEeSFjdDJNF9NPA" name="414135002 (Estimated)"/>
+      <ownedLiteral xmi:id="_m0yi4MNtEeSFjdDJNF9NPA" name="-newcode- (Estimated By Arm Span)"/>
+      <ownedLiteral xmi:id="_q0WIsMNtEeSFjdDJNF9NPA" name="258104002 (Measured (Actual))"/>
+      <ownedLiteral xmi:id="_xPbVwMNtEeSFjdDJNF9NPA" name="-newcode- (Stated)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ONHEsMN8EeSFjdDJNF9NPA" name="PatientMeasurementBodyExposureState">
+      <ownedLiteral xmi:id="_d91ygMN8EeSFjdDJNF9NPA" name="248165006 (Adequately Dressed (Appropriate Clothing / Bedding))"/>
+      <ownedLiteral xmi:id="_hAdO8MN8EeSFjdDJNF9NPA" name="248161002 (Inadequately Dressed (Reduced Clothing / Bedding))"/>
+      <ownedLiteral xmi:id="_kZEwkMN8EeSFjdDJNF9NPA" name="-newcode- (Increased Clothing / Bedding)"/>
+      <ownedLiteral xmi:id="_oJ5W0MN8EeSFjdDJNF9NPA" name="248160001 (Undressed (Naked))"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_IbyfILxREeSyBtXdDFDzRA" name="PatientMeasurementBodyPosition">
+      <ownedLiteral xmi:id="_n5tekLxREeSyBtXdDFDzRA" name="26527006 (Inverse Trendelenburg)"/>
+      <ownedLiteral xmi:id="_c9UNALxSEeSyBtXdDFDzRA" name="102538003 (Lying)"/>
+      <ownedLiteral xmi:id="_fCH9YLxSEeSyBtXdDFDzRA" name="102536004 (Lying on left side)"/>
+      <ownedLiteral xmi:id="_jppiILxSEeSyBtXdDFDzRA" name="102535000 (Lying on right side)"/>
+      <ownedLiteral xmi:id="_mFxhILxkEeSyBtXdDFDzRA" name="1240000 (Prone)"/>
+      <ownedLiteral xmi:id="_nG2o0LxSEeSyBtXdDFDzRA" name="33586001 (Seated)"/>
+      <ownedLiteral xmi:id="_odcBQLxSEeSyBtXdDFDzRA" name="10904000 (Standing)"/>
+      <ownedLiteral xmi:id="_rb9A0LxSEeSyBtXdDFDzRA" name="40199007 (Supine)"/>
+      <ownedLiteral xmi:id="_voyNoLxSEeSyBtXdDFDzRA" name="414585002 (Supine with left lateral tilt)"/>
+      <ownedLiteral xmi:id="_055h8LxSEeSyBtXdDFDzRA" name="30212006 (Supine, head raised)"/>
+      <ownedLiteral xmi:id="_4CpbkLxSEeSyBtXdDFDzRA" name="34106002 (Trendelenburg)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_kH664L61EeSMg-kgsnPV3w" name="PatientMeasurementSleepStatus">
+      <ownedLiteral xmi:id="_15CzIL61EeSMg-kgsnPV3w" name="248218005 (Awake)"/>
+      <ownedLiteral xmi:id="_Ekc3oL62EeSMg-kgsnPV3w" name="248220008 (Asleep)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ImIJoMQiEeSaFayJQBK5xQ" name="PatientState">
+      <ownedLiteral xmi:id="_WT120MQiEeSaFayJQBK5xQ" name="-newcode - (Dry aka Euvolemic)"/>
+      <ownedLiteral xmi:id="_YSriEMQiEeSaFayJQBK5xQ" name="-newcode - (Fluid Imbalance)"/>
+      <ownedLiteral xmi:id="_Y-MkQMQiEeSaFayJQBK5xQ" name="371825009 (Patient On Oxygen)"/>
+      <ownedLiteral xmi:id="_ZsEW4MQiEeSaFayJQBK5xQ" name="-newcode - (With Cast Or Brace)"/>
+      <ownedLiteral xmi:id="_afNrEMQiEeSaFayJQBK5xQ" name="-newcode - (With Prosthesis)"/>
+      <ownedLiteral xmi:id="_bOhoIMQiEeSaFayJQBK5xQ" name="-newcode - (Without Prosthesis)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Drv0MMN7EeSFjdDJNF9NPA" name="PatientStateExertionStatus">
+      <ownedLiteral xmi:id="_LOhCEMN7EeSFjdDJNF9NPA" name="255214003 (After Exercise)"/>
+      <ownedLiteral xmi:id="_UbQecMN7EeSFjdDJNF9NPA" name="263678003 (At Rest)"/>
+      <ownedLiteral xmi:id="_XUR6AMN7EeSFjdDJNF9NPA" name="309604004 (During Exercise)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_CGifAMN9EeSFjdDJNF9NPA" name="PatientWeightDeterminationDevice">
+      <ownedLiteral xmi:id="_JSfIUMN9EeSFjdDJNF9NPA" name="-newcode- (Bed)"/>
+      <ownedLiteral xmi:id="_azgIAMN9EeSFjdDJNF9NPA" name="-newcode- (Chair)"/>
+      <ownedLiteral xmi:id="_ct0foMN9EeSFjdDJNF9NPA" name="-newcode- (Lift Scale)"/>
+      <ownedLiteral xmi:id="_f00s0MN9EeSFjdDJNF9NPA" name="-newcode- (Standing Weight)"/>
+      <ownedLiteral xmi:id="_i-9GgMN9EeSFjdDJNF9NPA" name="-newcode- (Wheelchair Scale)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_sjs9wMN-EeSFjdDJNF9NPA" name="PatientWeightDeterminationMethod">
+      <ownedLiteral xmi:id="_zhczAMN-EeSFjdDJNF9NPA" name="-newcode- (Calculated)"/>
+      <ownedLiteral xmi:id="_6_OzMMN-EeSFjdDJNF9NPA" name="414135002 (Estimated)"/>
+      <ownedLiteral xmi:id="_BZW-AMN_EeSFjdDJNF9NPA" name="258104002 (Measured (Actual))"/>
+      <ownedLiteral xmi:id="_FK7LIMN_EeSFjdDJNF9NPA" name="-newcode- (Stated)"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_X9AeEKRMEeGZ6ueex_Me0w" name="VitalSignResultValueSet">
+      <ownedLiteral xmi:id="_X9Hy0KRMEeGZ6ueex_Me0w" name="8310-5"/>
+      <ownedLiteral xmi:id="_X9IZ4aRMEeGZ6ueex_Me0w" name="8462-4"/>
+      <ownedLiteral xmi:id="_X9IZ46RMEeGZ6ueex_Me0w" name="8480-6"/>
+      <ownedLiteral xmi:id="_X9IZ5aRMEeGZ6ueex_Me0w" name="8287-5"/>
+      <ownedLiteral xmi:id="_X9JA8aRMEeGZ6ueex_Me0w" name="8867-4"/>
+      <ownedLiteral xmi:id="_X9JA86RMEeGZ6ueex_Me0w" name="8302-2"/>
+      <ownedLiteral xmi:id="_X9JoAKRMEeGZ6ueex_Me0w" name="8306-3"/>
+      <ownedLiteral xmi:id="_X9JoAqRMEeGZ6ueex_Me0w" name="2710-2"/>
+      <ownedLiteral xmi:id="_X9JoBKRMEeGZ6ueex_Me0w" name="9279-1"/>
+      <ownedLiteral xmi:id="_X9KPEaRMEeGZ6ueex_Me0w" name="3141-9"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_sXpXgH-1EeOzENpLs8HIcg" name="VitalSignsObservationList">
       <ownedComment xmi:id="_w0TJAH-1EeOzENpLs8HIcg" annotatedElement="_sXpXgH-1EeOzENpLs8HIcg">
         <body>This class contains a collection of clinical Observations traditionally called “Vital Signs” because they are measurements of the body’s basic functions.  The absence of a pulse, respiration, or blood pressure are indications that the patient is dead, hence the term “vital” in the name.  Traditionally, there are four vital signs: Heart rate or pulse; Respiration rate, Blood pressure, and Body temperature.  Body height and Body weight are also often included among vital signs because these measurements are often used (in conjunction with other observations) to provide a gross indication of potential health concerns.  The FHIM includes a seventh vital sign, Blood oxygen saturation, as the human body requires a specific balance of oxygen in the blood below which organ function may be compromised.&#xD;
@@ -374,7 +574,7 @@ Individual organizations or medical specialties will often include other common 
             <element xsi:nil="true"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i9wRhYdsEeOZ2vW3WfDP5Q" x="-21662" y="-4121"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_q2MjMLxkEeSyBtXdDFDzRA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_q2MjMLxkEeSyBtXdDFDzRA" element="_IbyfILxREeSyBtXdDFDzRA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_q2NxULxkEeSyBtXdDFDzRA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_q2NxUbxkEeSyBtXdDFDzRA" width="1320" height="1320"/>
             </children>
@@ -385,10 +585,9 @@ Individual organizations or medical specialties will often include other common 
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_q2OYYrxkEeSyBtXdDFDzRA" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_q2OYY7xkEeSyBtXdDFDzRA" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_q2OYZLxkEeSyBtXdDFDzRA" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_IbyfILxREeSyBtXdDFDzRA?FHIM_Vocab/VitalSignsVocab/PatientMeasurementBodyPosition?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q2MjMbxkEeSyBtXdDFDzRA" x="8559" y="13631"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_GjvtgL7EEeSMg-kgsnPV3w" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_GjvtgL7EEeSMg-kgsnPV3w" element="_kH664L61EeSMg-kgsnPV3w" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_GjwUkL7EEeSMg-kgsnPV3w" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_GjwUkb7EEeSMg-kgsnPV3w" width="1320" height="1320"/>
             </children>
@@ -399,10 +598,9 @@ Individual organizations or medical specialties will often include other common 
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_Gjw7o77EEeSMg-kgsnPV3w" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_Gjw7pL7EEeSMg-kgsnPV3w" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_GjxisL7EEeSMg-kgsnPV3w" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_kH664L61EeSMg-kgsnPV3w?FHIM_Vocab/VitalSignsVocab/PatientMeasurementSleepStatus?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Gjvtgb7EEeSMg-kgsnPV3w" x="8559" y="26707"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_y5b-gMESEeSx2-rVmArpvQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_y5b-gMESEeSx2-rVmArpvQ" element="_OCbtcMEFEeSD-sVrqweICQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_y5fo4MESEeSx2-rVmArpvQ" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_y5fo4cESEeSx2-rVmArpvQ" width="1320" height="1320"/>
             </children>
@@ -413,10 +611,9 @@ Individual organizations or medical specialties will often include other common 
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_y5gP8sESEeSx2-rVmArpvQ" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_y5g3AMESEeSx2-rVmArpvQ" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_y5g3AcESEeSx2-rVmArpvQ" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_OCbtcMEFEeSD-sVrqweICQ?FHIM_Vocab/VitalSignsVocab/BloodPressureCuffSize?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y5b-gcESEeSx2-rVmArpvQ" x="-16801" y="23458"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_SR58YMNnEeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_SR58YMNnEeSFjdDJNF9NPA" element="_OxHxsMEAEeSD-sVrqweICQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_SR6jcMNnEeSFjdDJNF9NPA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_SR6jccNnEeSFjdDJNF9NPA" width="1320" height="1320"/>
             </children>
@@ -427,10 +624,9 @@ Individual organizations or medical specialties will often include other common 
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_SR7xk8NnEeSFjdDJNF9NPA" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_SR8YoMNnEeSFjdDJNF9NPA" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_SR8YocNnEeSFjdDJNF9NPA" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_OxHxsMEAEeSD-sVrqweICQ?FHIM_Vocab/VitalSignsVocab/BloodPressureMeasurementSite?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SR58YcNnEeSFjdDJNF9NPA" x="-18069" y="13631"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_I_4h8MNoEeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_I_4h8MNoEeSFjdDJNF9NPA" element="_LuKo8MD-EeSD-sVrqweICQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_I_5JAMNoEeSFjdDJNF9NPA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_I_5JAcNoEeSFjdDJNF9NPA" width="1320" height="1320"/>
             </children>
@@ -441,10 +637,9 @@ Individual organizations or medical specialties will often include other common 
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_I_5wE8NoEeSFjdDJNF9NPA" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_I_5wFMNoEeSFjdDJNF9NPA" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_I_6XIMNoEeSFjdDJNF9NPA" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_LuKo8MD-EeSD-sVrqweICQ?FHIM_Vocab/VitalSignsVocab/BloodPressureMeasurementMethod?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I_4h8cNoEeSFjdDJNF9NPA" x="-21239" y="19654"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_SVctsMNpEeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_SVctsMNpEeSFjdDJNF9NPA" element="_ZCu6gMNoEeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_SVd70MNpEeSFjdDJNF9NPA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_SVd70cNpEeSFjdDJNF9NPA" width="1320" height="1320"/>
             </children>
@@ -455,10 +650,9 @@ Individual organizations or medical specialties will often include other common 
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_SVei4MNpEeSFjdDJNF9NPA" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_SVei4cNpEeSFjdDJNF9NPA" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_SVei4sNpEeSFjdDJNF9NPA" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_ZCu6gMNoEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/BloodPressureMeasurementDiastolicEndpoint?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SVctscNpEeSFjdDJNF9NPA" x="-20288" y="28213"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_CPpD4OQ7EeSuxrYeYCfuhA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_CPpD4OQ7EeSuxrYeYCfuhA" element="_Drv0MMN7EeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_CPpq8OQ7EeSuxrYeYCfuhA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_CPpq8eQ7EeSuxrYeYCfuhA" width="1320" height="1320"/>
             </children>
@@ -469,7 +663,6 @@ Individual organizations or medical specialties will often include other common 
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_CPqSA-Q7EeSuxrYeYCfuhA" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_CPqSBOQ7EeSuxrYeYCfuhA" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_CPq5EOQ7EeSuxrYeYCfuhA" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_Drv0MMN7EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientStateExertionStatus?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CPpD4eQ7EeSuxrYeYCfuhA" x="8559" y="23458"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_D02ql3QaEeivUP8hArZexg" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -1127,27 +1320,13 @@ This class represents the measurement (or “clinical observation”) of the pat
       <packagedElement xmi:type="uml:Association" xmi:id="_7a9bMJdaEeOCbc0pwOBboA" memberEnd="_7a-pUJdaEeOCbc0pwOBboA _7a_3cJdaEeOCbc0pwOBboA">
         <ownedEnd xmi:id="_7a_3cJdaEeOCbc0pwOBboA" name="" visibility="public" type="_X9r8MJdYEeOCbc0pwOBboA" association="_7a9bMJdaEeOCbc0pwOBboA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_3-lYkMEAEeSD-sVrqweICQ" client="_JZJUsJdYEeOCbc0pwOBboA">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_LuKo8MD-EeSD-sVrqweICQ?FHIM_Vocab/VitalSignsVocab/BloodPressureMeasurementMethod?"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_V2grkMNnEeSFjdDJNF9NPA" client="_JZJUsJdYEeOCbc0pwOBboA">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_OxHxsMEAEeSD-sVrqweICQ?FHIM_Vocab/VitalSignsVocab/BloodPressureMeasurementSite?"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_4FXLQHQeEeivUP8hArZexg" client="_JZJUsJdYEeOCbc0pwOBboA">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_OCbtcMEFEeSD-sVrqweICQ?FHIM_Vocab/VitalSignsVocab/BloodPressureCuffSize?"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_48iq4HQeEeivUP8hArZexg" client="_JZJUsJdYEeOCbc0pwOBboA">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_ZCu6gMNoEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/BloodPressureMeasurementDiastolicEndpoint?"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_5o-6IHQeEeivUP8hArZexg" client="_JZJUsJdYEeOCbc0pwOBboA">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_IbyfILxREeSyBtXdDFDzRA?FHIM_Vocab/VitalSignsVocab/PatientMeasurementBodyPosition?"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_6CV1UHQeEeivUP8hArZexg" client="_JZJUsJdYEeOCbc0pwOBboA">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_Drv0MMN7EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientStateExertionStatus?"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_6eeXsHQeEeivUP8hArZexg" client="_JZJUsJdYEeOCbc0pwOBboA">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_kH664L61EeSMg-kgsnPV3w?FHIM_Vocab/VitalSignsVocab/PatientMeasurementSleepStatus?"/>
-      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_3-lYkMEAEeSD-sVrqweICQ" supplier="_LuKo8MD-EeSD-sVrqweICQ" client="_JZJUsJdYEeOCbc0pwOBboA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_V2grkMNnEeSFjdDJNF9NPA" supplier="_OxHxsMEAEeSD-sVrqweICQ" client="_JZJUsJdYEeOCbc0pwOBboA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_4FXLQHQeEeivUP8hArZexg" supplier="_OCbtcMEFEeSD-sVrqweICQ" client="_JZJUsJdYEeOCbc0pwOBboA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_48iq4HQeEeivUP8hArZexg" supplier="_ZCu6gMNoEeSFjdDJNF9NPA" client="_JZJUsJdYEeOCbc0pwOBboA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_5o-6IHQeEeivUP8hArZexg" supplier="_IbyfILxREeSyBtXdDFDzRA" client="_JZJUsJdYEeOCbc0pwOBboA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_6CV1UHQeEeivUP8hArZexg" supplier="_Drv0MMN7EeSFjdDJNF9NPA" client="_JZJUsJdYEeOCbc0pwOBboA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_6eeXsHQeEeivUP8hArZexg" supplier="_kH664L61EeSMg-kgsnPV3w" client="_JZJUsJdYEeOCbc0pwOBboA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_gY2Z4IduEeOZ2vW3WfDP5Q" name="HeartRate">
       <eAnnotations xmi:id="_gY3A8IduEeOZ2vW3WfDP5Q" source="uml2.diagrams" references="_gY3A8YduEeOZ2vW3WfDP5Q">
@@ -1176,7 +1355,7 @@ This class represents the measurement (or “clinical observation”) of the pat
             <element xsi:nil="true"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hSRVNYduEeOZ2vW3WfDP5Q" x="317" y="-2536"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_5WxBkMNzEeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_5WxBkMNzEeSFjdDJNF9NPA" element="_ZwU_UMNzEeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_5WxooMNzEeSFjdDJNF9NPA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_5WxoocNzEeSFjdDJNF9NPA" width="1320" height="1320"/>
             </children>
@@ -1187,10 +1366,9 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_5WyPtMNzEeSFjdDJNF9NPA" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_5Wy2wMNzEeSFjdDJNF9NPA" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_5Wy2wcNzEeSFjdDJNF9NPA" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_ZwU_UMNzEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/HeartRateMeasurementMethod?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5WxBkcNzEeSFjdDJNF9NPA" x="9827" y="21873"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_VXnV0MN3EeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_VXnV0MN3EeSFjdDJNF9NPA" element="_A8YIEMN0EeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_VXoj8MN3EeSFjdDJNF9NPA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_VXoj8cN3EeSFjdDJNF9NPA" width="1320" height="1320"/>
             </children>
@@ -1201,10 +1379,9 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_VXoj9sN3EeSFjdDJNF9NPA" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_VXpLAMN3EeSFjdDJNF9NPA" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_VXpLAcN3EeSFjdDJNF9NPA" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_A8YIEMN0EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/HeartRateMeasurementSite?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VXnV0cN3EeSFjdDJNF9NPA" x="634" y="21873"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_nUWywMN4EeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_nUWywMN4EeSFjdDJNF9NPA" element="_IbyfILxREeSyBtXdDFDzRA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_nUXZ0MN4EeSFjdDJNF9NPA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_nUXZ0cN4EeSFjdDJNF9NPA" width="1320" height="1320"/>
             </children>
@@ -1215,10 +1392,9 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_nUYA5MN4EeSFjdDJNF9NPA" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_nUYA5cN4EeSFjdDJNF9NPA" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_nUYn8MN4EeSFjdDJNF9NPA" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_IbyfILxREeSyBtXdDFDzRA?FHIM_Vocab/VitalSignsVocab/PatientMeasurementBodyPosition?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nUWywcN4EeSFjdDJNF9NPA" x="16484" y="21873"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_i3nboOQ7EeSuxrYeYCfuhA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_i3nboOQ7EeSuxrYeYCfuhA" element="_Drv0MMN7EeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_i3oCsOQ7EeSuxrYeYCfuhA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_i3oCseQ7EeSuxrYeYCfuhA" width="1320" height="1320"/>
             </children>
@@ -1229,7 +1405,6 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_i3opweQ7EeSuxrYeYCfuhA" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_i3opwuQ7EeSuxrYeYCfuhA" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_i3opw-Q7EeSuxrYeYCfuhA" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_Drv0MMN7EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientStateExertionStatus?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i3nboeQ7EeSuxrYeYCfuhA" x="23458" y="21873"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_UWbH93KEEeiXDYZdidzgig" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -1567,18 +1742,10 @@ This class represents the measurement (or “clinical observation”) of the pat
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__dXY4HKEEeiXDYZdidzgig"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_b06C0HQdEeivUP8hArZexg" client="_EVpMQH-3EeOzENpLs8HIcg">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_A8YIEMN0EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/HeartRateMeasurementSite?"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_cMTPIHQdEeivUP8hArZexg" client="_EVpMQH-3EeOzENpLs8HIcg">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_ZwU_UMNzEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/HeartRateMeasurementMethod?"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_csa5oHQdEeivUP8hArZexg" client="_EVpMQH-3EeOzENpLs8HIcg">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_IbyfILxREeSyBtXdDFDzRA?FHIM_Vocab/VitalSignsVocab/PatientMeasurementBodyPosition?"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_dISWQHQdEeivUP8hArZexg" client="_EVpMQH-3EeOzENpLs8HIcg">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_Drv0MMN7EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientStateExertionStatus?"/>
-      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_b06C0HQdEeivUP8hArZexg" supplier="_A8YIEMN0EeSFjdDJNF9NPA" client="_EVpMQH-3EeOzENpLs8HIcg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_cMTPIHQdEeivUP8hArZexg" supplier="_ZwU_UMNzEeSFjdDJNF9NPA" client="_EVpMQH-3EeOzENpLs8HIcg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_csa5oHQdEeivUP8hArZexg" supplier="_IbyfILxREeSyBtXdDFDzRA" client="_EVpMQH-3EeOzENpLs8HIcg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_dISWQHQdEeivUP8hArZexg" supplier="_Drv0MMN7EeSFjdDJNF9NPA" client="_EVpMQH-3EeOzENpLs8HIcg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_jPnxsId5EeOZ2vW3WfDP5Q" name="Height">
       <eAnnotations xmi:id="_jPnxsYd5EeOZ2vW3WfDP5Q" source="uml2.diagrams" references="_jPnxsod5EeOZ2vW3WfDP5Q">
@@ -1607,7 +1774,7 @@ This class represents the measurement (or “clinical observation”) of the pat
             <element xsi:nil="true"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jPnxvod5EeOZ2vW3WfDP5Q" x="-634" y="-3804"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_AkXfcMNuEeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_AkXfcMNuEeSFjdDJNF9NPA" element="_7T6H4MNsEeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_AkYGgMNuEeSFjdDJNF9NPA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_AkYGgcNuEeSFjdDJNF9NPA" width="1320" height="1320"/>
             </children>
@@ -1618,7 +1785,6 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_AkYtksNuEeSFjdDJNF9NPA" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_AkYtk8NuEeSFjdDJNF9NPA" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_AkYtlMNuEeSFjdDJNF9NPA" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_7T6H4MNsEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientHeightDeterminationMethod?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AkXfccNuEeSFjdDJNF9NPA" x="1902" y="18703"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_LKfhUHPYEeiV16BdsfE5oQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -1693,7 +1859,7 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_78isQHPeEeiV16BdsfE5oQ" type="ValueSpecification"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_78iFMXPeEeiV16BdsfE5oQ" x="16801" y="14899"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_-lIwEHPnEeiV16BdsfE5oQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_-lIwEHPnEeiV16BdsfE5oQ" element="_leolsHPnEeiV16BdsfE5oQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_-lJXIHPnEeiV16BdsfE5oQ" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_-lJXIXPnEeiV16BdsfE5oQ" width="1320" height="1320"/>
             </children>
@@ -1704,7 +1870,6 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_-lJ-M3PnEeiV16BdsfE5oQ" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_-lKlQHPnEeiV16BdsfE5oQ" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_-lKlQXPnEeiV16BdsfE5oQ" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_leolsHPnEeiV16BdsfE5oQ?FHIM_Vocab/VitalSignsVocab/HeightMeasurementBodyPosition?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-lIwEXPnEeiV16BdsfE5oQ" x="9510" y="18703"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_wmcTMIFyEeiFweA6NKJQOg" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -1939,12 +2104,8 @@ This class represents the measurement (or “clinical observation”) of the pat
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MWGlkHPoEeiV16BdsfE5oQ"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_-7vQAHPYEeiV16BdsfE5oQ" client="_jPo_4Id5EeOZ2vW3WfDP5Q">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_7T6H4MNsEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientHeightDeterminationMethod?"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_APgnMHPoEeiV16BdsfE5oQ" client="_jPo_4Id5EeOZ2vW3WfDP5Q">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_leolsHPnEeiV16BdsfE5oQ?FHIM_Vocab/VitalSignsVocab/HeightMeasurementBodyPosition?"/>
-      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_-7vQAHPYEeiV16BdsfE5oQ" supplier="_7T6H4MNsEeSFjdDJNF9NPA" client="_jPo_4Id5EeOZ2vW3WfDP5Q"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_APgnMHPoEeiV16BdsfE5oQ" supplier="_leolsHPnEeiV16BdsfE5oQ" client="_jPo_4Id5EeOZ2vW3WfDP5Q"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_7n4HQId_EeOZ2vW3WfDP5Q" name="O2Saturation">
       <eAnnotations xmi:id="_7n4HQYd_EeOZ2vW3WfDP5Q" source="uml2.diagrams" references="_7n4HQod_EeOZ2vW3WfDP5Q">
@@ -1973,7 +2134,7 @@ This class represents the measurement (or “clinical observation”) of the pat
             <element xsi:nil="true"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7n4HTod_EeOZ2vW3WfDP5Q" x="-951" y="-4438"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_XhVdkMOGEeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_XhVdkMOGEeSFjdDJNF9NPA" element="_LeZXgMODEeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_XhWrsMOGEeSFjdDJNF9NPA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_XhWrscOGEeSFjdDJNF9NPA" width="1320" height="1320"/>
             </children>
@@ -1984,10 +2145,9 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_XhXSwMOGEeSFjdDJNF9NPA" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_XhXSwcOGEeSFjdDJNF9NPA" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_XhXSwsOGEeSFjdDJNF9NPA" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_LeZXgMODEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/OxygenProvisionDevice?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XhVdkcOGEeSFjdDJNF9NPA" x="951" y="19337"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_H_EhUOQ6EeSuxrYeYCfuhA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_H_EhUOQ6EeSuxrYeYCfuhA" element="_Drv0MMN7EeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_H_FvcOQ6EeSuxrYeYCfuhA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_H_FvceQ6EeSuxrYeYCfuhA" width="1320" height="1320"/>
             </children>
@@ -1998,7 +2158,6 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_H_GWguQ6EeSuxrYeYCfuhA" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_H_GWg-Q6EeSuxrYeYCfuhA" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_H_G9kOQ6EeSuxrYeYCfuhA" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_Drv0MMN7EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientStateExertionStatus?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H_EhUeQ6EeSuxrYeYCfuhA" x="11412" y="19337"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_uw4s0HPqEeiV16BdsfE5oQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -2312,12 +2471,8 @@ This class represents the measurement (or “clinical observation”) of the pat
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LqHh83PrEeiV16BdsfE5oQ"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_y69OoHPsEeiV16BdsfE5oQ" client="_7n58iId_EeOZ2vW3WfDP5Q">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_Drv0MMN7EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientStateExertionStatus?"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_zobYoHPsEeiV16BdsfE5oQ" client="_7n58iId_EeOZ2vW3WfDP5Q">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_LeZXgMODEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/OxygenProvisionDevice?"/>
-      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_y69OoHPsEeiV16BdsfE5oQ" supplier="_Drv0MMN7EeSFjdDJNF9NPA" client="_7n58iId_EeOZ2vW3WfDP5Q"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_zobYoHPsEeiV16BdsfE5oQ" supplier="_LeZXgMODEeSFjdDJNF9NPA" client="_7n58iId_EeOZ2vW3WfDP5Q"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_dbRB4IeDEeOZ2vW3WfDP5Q" name="RespirationRate">
       <eAnnotations xmi:id="_dbRB4YeDEeOZ2vW3WfDP5Q" source="uml2.diagrams" references="_dbRB4oeDEeOZ2vW3WfDP5Q">
@@ -2346,7 +2501,7 @@ This class represents the measurement (or “clinical observation”) of the pat
             <element xsi:nil="true"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dbRB7oeDEeOZ2vW3WfDP5Q" x="-3170" y="-3487"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_lnQ3cMN7EeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_lnQ3cMN7EeSFjdDJNF9NPA" element="_Drv0MMN7EeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_lnRegMN7EeSFjdDJNF9NPA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_lnRegcN7EeSFjdDJNF9NPA" width="1320" height="1320"/>
             </children>
@@ -2357,10 +2512,9 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_lnSFk8N7EeSFjdDJNF9NPA" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_lnSFlMN7EeSFjdDJNF9NPA" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_lnSsoMN7EeSFjdDJNF9NPA" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_Drv0MMN7EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientStateExertionStatus?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lnQ3ccN7EeSFjdDJNF9NPA" x="9193" y="19020"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_j13NMMQpEeSIzYl50ETw0A" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_j13NMMQpEeSIzYl50ETw0A" element="_LeZXgMODEeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_j16QgMQpEeSIzYl50ETw0A" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_j16QgcQpEeSIzYl50ETw0A" width="1320" height="1320"/>
             </children>
@@ -2371,7 +2525,6 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_j17eocQpEeSIzYl50ETw0A" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_j18FsMQpEeSIzYl50ETw0A" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_j18swMQpEeSIzYl50ETw0A" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_LeZXgMODEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/OxygenProvisionDevice?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j13NMcQpEeSIzYl50ETw0A" x="-2536" y="19020"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_IPRf0HP4EeiV16BdsfE5oQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -2678,12 +2831,8 @@ This class represents the measurement (or “clinical observation”) of the pat
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1mX783QAEei9gZpjuTbcAw"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_nO-GoHQCEei9gZpjuTbcAw" client="_dbSQyIeDEeOZ2vW3WfDP5Q">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_LeZXgMODEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/OxygenProvisionDevice?"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_nlNcYHQCEei9gZpjuTbcAw" client="_dbSQyIeDEeOZ2vW3WfDP5Q">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_Drv0MMN7EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientStateExertionStatus?"/>
-      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_nO-GoHQCEei9gZpjuTbcAw" supplier="_LeZXgMODEeSFjdDJNF9NPA" client="_dbSQyIeDEeOZ2vW3WfDP5Q"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_nlNcYHQCEei9gZpjuTbcAw" supplier="_Drv0MMN7EeSFjdDJNF9NPA" client="_dbSQyIeDEeOZ2vW3WfDP5Q"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_6SUBgIeKEeOZ2vW3WfDP5Q" name="Temperature">
       <eAnnotations xmi:id="_6SUBgYeKEeOZ2vW3WfDP5Q" source="uml2.diagrams" references="_6SUBgoeKEeOZ2vW3WfDP5Q">
@@ -2712,7 +2861,7 @@ This class represents the measurement (or “clinical observation”) of the pat
             <element xsi:nil="true"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6SUBjoeKEeOZ2vW3WfDP5Q" x="-3170" y="-3487"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_rANTEMNwEeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_rANTEMNwEeSFjdDJNF9NPA" element="_BxlrEMNvEeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_rAN6IMNwEeSFjdDJNF9NPA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_rAN6IcNwEeSFjdDJNF9NPA" width="1320" height="1320"/>
             </children>
@@ -2723,7 +2872,6 @@ This class represents the measurement (or “clinical observation”) of the pat
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_rAPIQMNwEeSFjdDJNF9NPA" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_rAPIQcNwEeSFjdDJNF9NPA" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_rAPIQsNwEeSFjdDJNF9NPA" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_BxlrEMNvEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientBodyTemperatureMeasurementSite?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rANTEcNwEeSFjdDJNF9NPA" x="2853" y="18755"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_9ttvN3QDEei9gZpjuTbcAw" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -3019,9 +3167,7 @@ This property contains the code that specifies the anatomical site or system tha
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5oNeELyqEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_6SWeA4eKEeOZ2vW3WfDP5Q" client="_6SWd3oeKEeOZ2vW3WfDP5Q">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_BxlrEMNvEeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientBodyTemperatureMeasurementSite?"/>
-      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_6SWeA4eKEeOZ2vW3WfDP5Q" supplier="_BxlrEMNvEeSFjdDJNF9NPA" client="_6SWd3oeKEeOZ2vW3WfDP5Q"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_MNRVwIeMEeOZ2vW3WfDP5Q" name="Weight">
       <eAnnotations xmi:id="_MNRVwYeMEeOZ2vW3WfDP5Q" source="uml2.diagrams" references="_MNRVwoeMEeOZ2vW3WfDP5Q">
@@ -3050,7 +3196,7 @@ This property contains the code that specifies the anatomical site or system tha
             <element xsi:nil="true"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MNRVzoeMEeOZ2vW3WfDP5Q" x="-4755" y="-3804"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_xxcDYMN9EeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_xxcDYMN9EeSFjdDJNF9NPA" element="_CGifAMN9EeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_xxcqcMN9EeSFjdDJNF9NPA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_xxcqccN9EeSFjdDJNF9NPA" width="1320" height="1320"/>
             </children>
@@ -3061,10 +3207,9 @@ This property contains the code that specifies the anatomical site or system tha
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_xxdRhMN9EeSFjdDJNF9NPA" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_xxdRhcN9EeSFjdDJNF9NPA" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_xxd4kMN9EeSFjdDJNF9NPA" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_CGifAMN9EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientWeightDeterminationDevice?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xxcDYcN9EeSFjdDJNF9NPA" x="-1902" y="19020"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_odFbwMOAEeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_odFbwMOAEeSFjdDJNF9NPA" element="_sjs9wMN-EeSFjdDJNF9NPA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_odGp4MOAEeSFjdDJNF9NPA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_odGp4cOAEeSFjdDJNF9NPA" width="1320" height="1320"/>
             </children>
@@ -3075,7 +3220,6 @@ This property contains the code that specifies the anatomical site or system tha
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_odHQ8MOAEeSFjdDJNF9NPA" type="EnumerationCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_odHQ8cOAEeSFjdDJNF9NPA" visible="false" type="AttributeCompartment"/>
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_odHQ8sOAEeSFjdDJNF9NPA" visible="false" type="OperationCompartment"/>
-            <element xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_sjs9wMN-EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientWeightDeterminationMethod?"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_odFbwcOAEeSFjdDJNF9NPA" x="6974" y="19337"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_2j5utnQVEeivUP8hArZexg" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -3386,12 +3530,8 @@ This class represents the measurement (or “clinical observation”) of the pat
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MNR94IeMEeOZ2vW3WfDP5Q"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_5dSUwMN9EeSFjdDJNF9NPA" client="_MNR9zIeMEeOZ2vW3WfDP5Q">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_CGifAMN9EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientWeightDeterminationDevice?"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_HjuQUHQXEeivUP8hArZexg" client="_MNR9zIeMEeOZ2vW3WfDP5Q">
-        <supplier xmi:type="uml:Enumeration" href="FHIM_Vocab.emx#_sjs9wMN-EeSFjdDJNF9NPA?FHIM_Vocab/VitalSignsVocab/PatientWeightDeterminationMethod?"/>
-      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_5dSUwMN9EeSFjdDJNF9NPA" supplier="_CGifAMN9EeSFjdDJNF9NPA" client="_MNR9zIeMEeOZ2vW3WfDP5Q"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_HjuQUHQXEeivUP8hArZexg" supplier="_sjs9wMN-EeSFjdDJNF9NPA" client="_MNR9zIeMEeOZ2vW3WfDP5Q"/>
     </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_w0c6AH-1EeOzENpLs8HIcg" base_Comment="_w0TJAH-1EeOzENpLs8HIcg"/>
