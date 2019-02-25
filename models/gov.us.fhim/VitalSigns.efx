@@ -324,205 +324,201 @@ Individual organizations or medical specialties will often include other common 
 This package contains sub-packages for each of the seven vital signs.  These sub-packages contain an example &quot;Detailed Clinical Model&quot; (DCM) in which we constrain (using UML re-defines) and extend the generic clinical Observation to define a particular vital sign.  These sub-packages are meant to show how such DCMs would be modeled.  Note that a DCM is analogous to a FHIR Profile.</body>
     </ownedComment>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_OCbtcMEFEeSD-sVrqweICQ" name="BloodPressureCuffSize">
-      <ownedLiteral xmi:id="_goBZcMEOEeSx2-rVmArpvQ" name="-newCode- (Adult)"/>
-      <ownedLiteral xmi:id="_lnsYcMEOEeSx2-rVmArpvQ" name="-newCode- (Adult Thigh)"/>
-      <ownedLiteral xmi:id="_mid-oMEOEeSx2-rVmArpvQ" name="-newCode- (Infant)"/>
-      <ownedLiteral xmi:id="_uapb0MEOEeSx2-rVmArpvQ" name="-newCode- (Large Adult)"/>
-      <ownedLiteral xmi:id="_vZJEYMEOEeSx2-rVmArpvQ" name="-newCode- (Neonatal)"/>
-      <ownedLiteral xmi:id="_wFLD8MEOEeSx2-rVmArpvQ" name="-newCode- (Paediatric/Child)"/>
-      <ownedLiteral xmi:id="_xC_-IMEOEeSx2-rVmArpvQ" name="-newCode- (Small Adult)"/>
+      <ownedLiteral xmi:id="_goBZcMEOEeSx2-rVmArpvQ" name="-newCode- (Adult)" classifier="_OCbtcMEFEeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_lnsYcMEOEeSx2-rVmArpvQ" name="-newCode- (Adult Thigh)" classifier="_OCbtcMEFEeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_mid-oMEOEeSx2-rVmArpvQ" name="-newCode- (Infant)" classifier="_OCbtcMEFEeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_uapb0MEOEeSx2-rVmArpvQ" name="-newCode- (Large Adult)" classifier="_OCbtcMEFEeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_vZJEYMEOEeSx2-rVmArpvQ" name="-newCode- (Neonatal)" classifier="_OCbtcMEFEeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_wFLD8MEOEeSx2-rVmArpvQ" name="-newCode- (Paediatric/Child)" classifier="_OCbtcMEFEeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_xC_-IMEOEeSx2-rVmArpvQ" name="-newCode- (Small Adult)" classifier="_OCbtcMEFEeSD-sVrqweICQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZCu6gMNoEeSFjdDJNF9NPA" name="BloodPressureMeasurementDiastolicEndpoint">
-      <ownedLiteral xmi:id="_orHkoMNoEeSFjdDJNF9NPA" name="-newCode- Phase IV"/>
-      <ownedLiteral xmi:id="_z6V2IMNoEeSFjdDJNF9NPA" name="-newCode- Phase V"/>
+      <ownedLiteral xmi:id="_orHkoMNoEeSFjdDJNF9NPA" name="-newCode- Phase IV" classifier="_ZCu6gMNoEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_z6V2IMNoEeSFjdDJNF9NPA" name="-newCode- Phase V" classifier="_ZCu6gMNoEeSFjdDJNF9NPA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_LuKo8MD-EeSD-sVrqweICQ" name="BloodPressureMeasurementMethod">
-      <ownedLiteral xmi:id="_78_ZwMD-EeSD-sVrqweICQ" name="779380092 (Arterial Pressure Monitoring, Invasive Method)"/>
-      <ownedLiteral xmi:id="_p2R2kMD_EeSD-sVrqweICQ" name="37931006 (Auscultation)">
-        <specification xmi:type="uml:LiteralInteger" xmi:id="_XkqxUMEIEeSD-sVrqweICQ"/>
-      </ownedLiteral>
-      <ownedLiteral xmi:id="_YJedoMD_EeSD-sVrqweICQ" name="-newCode- (Automatic Cuff)"/>
-      <ownedLiteral xmi:id="_euXG8MD_EeSD-sVrqweICQ" name="-newCode- (Doppler)"/>
-      <ownedLiteral xmi:id="_sIm7AMD-EeSD-sVrqweICQ" name="113011001 (Palpation)"/>
+      <ownedLiteral xmi:id="_78_ZwMD-EeSD-sVrqweICQ" name="779380092 (Arterial Pressure Monitoring, Invasive Method)" classifier="_LuKo8MD-EeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_p2R2kMD_EeSD-sVrqweICQ" name="37931006 (Auscultation)" classifier="_LuKo8MD-EeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_YJedoMD_EeSD-sVrqweICQ" name="-newCode- (Automatic Cuff)" classifier="_LuKo8MD-EeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_euXG8MD_EeSD-sVrqweICQ" name="-newCode- (Doppler)" classifier="_LuKo8MD-EeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_sIm7AMD-EeSD-sVrqweICQ" name="113011001 (Palpation)" classifier="_LuKo8MD-EeSD-sVrqweICQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_OxHxsMEAEeSD-sVrqweICQ" name="BloodPressureMeasurementSite">
-      <ownedLiteral xmi:id="_qbejcMEBEeSD-sVrqweICQ" name="7569003 (Finger Structure)">
-        <specification xmi:type="uml:LiteralInteger" xmi:id="__adaoMEIEeSD-sVrqweICQ"/>
-      </ownedLiteral>
-      <ownedLiteral xmi:id="_0v2WQMEBEeSD-sVrqweICQ" name="-newCode- (Left Brachial Artery)"/>
-      <ownedLiteral xmi:id="_Fpf-gMEDEeSD-sVrqweICQ" name="113270003 (Left Femoral Artery)"/>
-      <ownedLiteral xmi:id="_JaPsQMEDEeSD-sVrqweICQ" name="368504007 (Left Radial Artery)"/>
-      <ownedLiteral xmi:id="_T3gVUMEDEeSD-sVrqweICQ" name="368506009 (Left Ulnar Artery)"/>
-      <ownedLiteral xmi:id="_YczsgMEDEeSD-sVrqweICQ" name="-newCode- (Right Brachial Artery)"/>
-      <ownedLiteral xmi:id="_3yIwoMEDEeSD-sVrqweICQ" name="69833005 (Right Femoral Artery)"/>
-      <ownedLiteral xmi:id="_IYXjEMEEEeSD-sVrqweICQ" name="368503001 (Right Radial Artery)"/>
-      <ownedLiteral xmi:id="_QC17cMEEEeSD-sVrqweICQ" name="368505008 (Right Ulnar Artery)"/>
-      <ownedLiteral xmi:id="_RUtzAMEEEeSD-sVrqweICQ" name="29707007 (Toe Structure)"/>
+      <ownedLiteral xmi:id="_qbejcMEBEeSD-sVrqweICQ" name="7569003 (Finger Structure)" classifier="_OxHxsMEAEeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_0v2WQMEBEeSD-sVrqweICQ" name="-newCode- (Left Brachial Artery)" classifier="_OxHxsMEAEeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_Fpf-gMEDEeSD-sVrqweICQ" name="113270003 (Left Femoral Artery)" classifier="_OxHxsMEAEeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_JaPsQMEDEeSD-sVrqweICQ" name="368504007 (Left Radial Artery)" classifier="_OxHxsMEAEeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_T3gVUMEDEeSD-sVrqweICQ" name="368506009 (Left Ulnar Artery)" classifier="_OxHxsMEAEeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_YczsgMEDEeSD-sVrqweICQ" name="-newCode- (Right Brachial Artery)" classifier="_OxHxsMEAEeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_3yIwoMEDEeSD-sVrqweICQ" name="69833005 (Right Femoral Artery)" classifier="_OxHxsMEAEeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_IYXjEMEEEeSD-sVrqweICQ" name="368503001 (Right Radial Artery)" classifier="_OxHxsMEAEeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_QC17cMEEEeSD-sVrqweICQ" name="368505008 (Right Ulnar Artery)" classifier="_OxHxsMEAEeSD-sVrqweICQ"/>
+      <ownedLiteral xmi:id="_RUtzAMEEEeSD-sVrqweICQ" name="29707007 (Toe Structure)" classifier="_OxHxsMEAEeSD-sVrqweICQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_9MaIUMNxEeSFjdDJNF9NPA" name="CoreVitalSigns">
-      <ownedLiteral xmi:id="_6zukQMNyEeSFjdDJNF9NPA" name="55284-4 (Blood Pressure)"/>
-      <ownedLiteral xmi:id="_Iv3kcMNyEeSFjdDJNF9NPA" name="8302-2 (Body Height)"/>
-      <ownedLiteral xmi:id="_TYAAwMNyEeSFjdDJNF9NPA" name="8310-5 (Body Temperature)"/>
-      <ownedLiteral xmi:id="_WhJjAMNyEeSFjdDJNF9NPA" name="3141-9 (Body Weight Measured)"/>
-      <ownedLiteral xmi:id="_ZjB_oMNyEeSFjdDJNF9NPA" name="8462-4 (Diastolic Blood Pressure)"/>
-      <ownedLiteral xmi:id="_dUZYcMNyEeSFjdDJNF9NPA" name="8867-4 (Heart Rate)"/>
-      <ownedLiteral xmi:id="_hD6XIMNyEeSFjdDJNF9NPA" name="2708-6 (Oxygen Saturation In Arterial Blood)"/>
-      <ownedLiteral xmi:id="_kcNvsMNyEeSFjdDJNF9NPA" name="9279-1 (Respiratory Rate)"/>
-      <ownedLiteral xmi:id="_oX_BsMNyEeSFjdDJNF9NPA" name="8480-6 (Systolic Blood Pressure)"/>
+      <ownedLiteral xmi:id="_6zukQMNyEeSFjdDJNF9NPA" name="55284-4 (Blood Pressure)" classifier="_9MaIUMNxEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_Iv3kcMNyEeSFjdDJNF9NPA" name="8302-2 (Body Height)" classifier="_9MaIUMNxEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_TYAAwMNyEeSFjdDJNF9NPA" name="8310-5 (Body Temperature)" classifier="_9MaIUMNxEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_WhJjAMNyEeSFjdDJNF9NPA" name="3141-9 (Body Weight Measured)" classifier="_9MaIUMNxEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_ZjB_oMNyEeSFjdDJNF9NPA" name="8462-4 (Diastolic Blood Pressure)" classifier="_9MaIUMNxEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_dUZYcMNyEeSFjdDJNF9NPA" name="8867-4 (Heart Rate)" classifier="_9MaIUMNxEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_hD6XIMNyEeSFjdDJNF9NPA" name="2708-6 (Oxygen Saturation In Arterial Blood)" classifier="_9MaIUMNxEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_kcNvsMNyEeSFjdDJNF9NPA" name="9279-1 (Respiratory Rate)" classifier="_9MaIUMNxEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_oX_BsMNyEeSFjdDJNF9NPA" name="8480-6 (Systolic Blood Pressure)" classifier="_9MaIUMNxEeSFjdDJNF9NPA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ZwU_UMNzEeSFjdDJNF9NPA" name="HeartRateMeasurementMethod">
-      <ownedLiteral xmi:id="_mHctAMNzEeSFjdDJNF9NPA" name="37931006 (Auscultation)"/>
-      <ownedLiteral xmi:id="_qwxokMNzEeSFjdDJNF9NPA" name="-newcode- (Doppler)"/>
-      <ownedLiteral xmi:id="_t2FzsMNzEeSFjdDJNF9NPA" name="-newcode- (Electrocardiography)"/>
-      <ownedLiteral xmi:id="_xzD_kMNzEeSFjdDJNF9NPA" name="-newcode- (Monitor)"/>
-      <ownedLiteral xmi:id="_3swW0MNzEeSFjdDJNF9NPA" name="113011001 (Palpation)"/>
+      <ownedLiteral xmi:id="_mHctAMNzEeSFjdDJNF9NPA" name="37931006 (Auscultation)" classifier="_ZwU_UMNzEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_qwxokMNzEeSFjdDJNF9NPA" name="-newcode- (Doppler)" classifier="_ZwU_UMNzEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_t2FzsMNzEeSFjdDJNF9NPA" name="-newcode- (Electrocardiography)" classifier="_ZwU_UMNzEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_xzD_kMNzEeSFjdDJNF9NPA" name="-newcode- (Monitor)" classifier="_ZwU_UMNzEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_3swW0MNzEeSFjdDJNF9NPA" name="113011001 (Palpation)" classifier="_ZwU_UMNzEeSFjdDJNF9NPA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_A8YIEMN0EeSFjdDJNF9NPA" name="HeartRateMeasurementSite">
-      <ownedLiteral xmi:id="_IBAocMN0EeSFjdDJNF9NPA" name="13383001 (Apex Of Heart)"/>
-      <ownedLiteral xmi:id="_Q265MMN0EeSFjdDJNF9NPA" name="128617001 (Arteriovenous Fistula)"/>
-      <ownedLiteral xmi:id="_YedSUMN0EeSFjdDJNF9NPA" name="-newCode- (Left Brachial Artery)"/>
-      <ownedLiteral xmi:id="_T700oMN0EeSFjdDJNF9NPA" name="113263003 (Left Common Carotid Artery Structure)"/>
-      <ownedLiteral xmi:id="_cjcxwMN0EeSFjdDJNF9NPA" name="-newcode- (Left Dorsalis Pedis Artery)"/>
-      <ownedLiteral xmi:id="_mit3QMN0EeSFjdDJNF9NPA" name="25885001 (Left Popliteal Artery Structure)"/>
-      <ownedLiteral xmi:id="_Yed5YMN0EeSFjdDJNF9NPA" name="-newCode- (Right Brachial Artery)"/>
-      <ownedLiteral xmi:id="_t3sgwMN0EeSFjdDJNF9NPA" name="65355003 (Right Common Carotid Artery Structure)"/>
-      <ownedLiteral xmi:id="_ibEFYMN0EeSFjdDJNF9NPA" name="-newcode- (Right Dorsalis Pedis Artery)"/>
-      <ownedLiteral xmi:id="_zhHAUMN0EeSFjdDJNF9NPA" name="113270003 (Structure Of Left Femoral Artery)"/>
-      <ownedLiteral xmi:id="_vuV5UMN0EeSFjdDJNF9NPA" name="214912001 (Structure Of Left Posterior Tibial Artery)"/>
-      <ownedLiteral xmi:id="_AgVP0cN1EeSFjdDJNF9NPA" name="368504007 (Structure Of Left Radial Artery)"/>
-      <ownedLiteral xmi:id="_AgVP08N1EeSFjdDJNF9NPA" name="368506009 (Structure Of Left Ulnar Artery)"/>
-      <ownedLiteral xmi:id="_zhHAUcN0EeSFjdDJNF9NPA" name="69833005 (Structure Of Right Femoral Artery)"/>
-      <ownedLiteral xmi:id="_7THkEMN0EeSFjdDJNF9NPA" name="57832007 (Structure Of Right Popliteal Artery)"/>
-      <ownedLiteral xmi:id="_J-GKwMN1EeSFjdDJNF9NPA" name="214811007 (Structure Of Right Posterior Tibial Artery)"/>
-      <ownedLiteral xmi:id="_AgVP0MN1EeSFjdDJNF9NPA" name="368503001 (Structure Of Right Radial Artery)"/>
-      <ownedLiteral xmi:id="_AgVP0sN1EeSFjdDJNF9NPA" name="368505008 (Structure Of Right Ulnar Artery)"/>
+      <ownedLiteral xmi:id="_IBAocMN0EeSFjdDJNF9NPA" name="13383001 (Apex Of Heart)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_Q265MMN0EeSFjdDJNF9NPA" name="128617001 (Arteriovenous Fistula)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_YedSUMN0EeSFjdDJNF9NPA" name="-newCode- (Left Brachial Artery)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_T700oMN0EeSFjdDJNF9NPA" name="113263003 (Left Common Carotid Artery Structure)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_cjcxwMN0EeSFjdDJNF9NPA" name="-newcode- (Left Dorsalis Pedis Artery)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_mit3QMN0EeSFjdDJNF9NPA" name="25885001 (Left Popliteal Artery Structure)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_Yed5YMN0EeSFjdDJNF9NPA" name="-newCode- (Right Brachial Artery)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_t3sgwMN0EeSFjdDJNF9NPA" name="65355003 (Right Common Carotid Artery Structure)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_ibEFYMN0EeSFjdDJNF9NPA" name="-newcode- (Right Dorsalis Pedis Artery)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_zhHAUMN0EeSFjdDJNF9NPA" name="113270003 (Structure Of Left Femoral Artery)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_vuV5UMN0EeSFjdDJNF9NPA" name="214912001 (Structure Of Left Posterior Tibial Artery)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_AgVP0cN1EeSFjdDJNF9NPA" name="368504007 (Structure Of Left Radial Artery)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_AgVP08N1EeSFjdDJNF9NPA" name="368506009 (Structure Of Left Ulnar Artery)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_zhHAUcN0EeSFjdDJNF9NPA" name="69833005 (Structure Of Right Femoral Artery)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_7THkEMN0EeSFjdDJNF9NPA" name="57832007 (Structure Of Right Popliteal Artery)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_J-GKwMN1EeSFjdDJNF9NPA" name="214811007 (Structure Of Right Posterior Tibial Artery)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_AgVP0MN1EeSFjdDJNF9NPA" name="368503001 (Structure Of Right Radial Artery)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_AgVP0sN1EeSFjdDJNF9NPA" name="368505008 (Structure Of Right Ulnar Artery)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_leolsHPnEeiV16BdsfE5oQ" name="HeightMeasurementBodyPosition">
-      <ownedLiteral xmi:id="_leolsnPnEeiV16BdsfE5oQ" name="102538003 (Lying)"/>
-      <ownedLiteral xmi:id="_leoltnPnEeiV16BdsfE5oQ" name="33586001 (Seated)"/>
-      <ownedLiteral xmi:id="_leolt3PnEeiV16BdsfE5oQ" name="10904000 (Standing)"/>
+      <ownedLiteral xmi:id="_leolsnPnEeiV16BdsfE5oQ" name="102538003 (Lying)" classifier="_leolsHPnEeiV16BdsfE5oQ"/>
+      <ownedLiteral xmi:id="_leoltnPnEeiV16BdsfE5oQ" name="33586001 (Seated)" classifier="_leolsHPnEeiV16BdsfE5oQ"/>
+      <ownedLiteral xmi:id="_leolt3PnEeiV16BdsfE5oQ" name="10904000 (Standing)" classifier="_leolsHPnEeiV16BdsfE5oQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_3TO_IMQZEeSaFayJQBK5xQ" name="ObservationQualifier">
-      <ownedLiteral xmi:id="_Iwk_wMQaEeSaFayJQBK5xQ" name="-newcode- (Blood Pressure Cuff Size)"/>
-      <ownedLiteral xmi:id="_LJ95AMQaEeSaFayJQBK5xQ" name="-newcode- (Blood Pressure Measurement Diastolic Endpoint)"/>
-      <ownedLiteral xmi:id="_L9aIIMQaEeSaFayJQBK5xQ" name="-newcode- (Blood Pressure Measurement Method)"/>
-      <ownedLiteral xmi:id="_Mvd3MMQaEeSaFayJQBK5xQ" name="-newcode- (Blood Pressure Measurement Site)"/>
-      <ownedLiteral xmi:id="_NdHnYMQaEeSaFayJQBK5xQ" name="-newcode- (Heart Rate Measurement Method)"/>
-      <ownedLiteral xmi:id="_OL4x4MQaEeSaFayJQBK5xQ" name="-newcode- (Heart Rate Measurement Site)"/>
-      <ownedLiteral xmi:id="_PM-bcMQaEeSaFayJQBK5xQ" name="-newcode- (Measurement Confounding Factor)"/>
-      <ownedLiteral xmi:id="_P9w_MMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Body Temperature Measurement Site)"/>
-      <ownedLiteral xmi:id="_Qoc68MQaEeSaFayJQBK5xQ" name="-newcode- (Patient Height Determination Method)"/>
-      <ownedLiteral xmi:id="_RlBQ4MQaEeSaFayJQBK5xQ" name="-newcode- (Patient Measurement Body Exposure State)"/>
-      <ownedLiteral xmi:id="_SUNSIMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Measurement Body Position)"/>
-      <ownedLiteral xmi:id="_TLmNIMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Measurement Exertion Phase)"/>
-      <ownedLiteral xmi:id="_T2GisMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Measurement Sleep Status)"/>
-      <ownedLiteral xmi:id="_UwnqMMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Position Tilt)"/>
-      <ownedLiteral xmi:id="_VcZLEMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Weight Determination Method)"/>
+      <ownedLiteral xmi:id="_Iwk_wMQaEeSaFayJQBK5xQ" name="-newcode- (Blood Pressure Cuff Size)" classifier="_3TO_IMQZEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_LJ95AMQaEeSaFayJQBK5xQ" name="-newcode- (Blood Pressure Measurement Diastolic Endpoint)" classifier="_3TO_IMQZEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_L9aIIMQaEeSaFayJQBK5xQ" name="-newcode- (Blood Pressure Measurement Method)" classifier="_3TO_IMQZEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_Mvd3MMQaEeSaFayJQBK5xQ" name="-newcode- (Blood Pressure Measurement Site)" classifier="_3TO_IMQZEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_NdHnYMQaEeSaFayJQBK5xQ" name="-newcode- (Heart Rate Measurement Method)" classifier="_3TO_IMQZEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_OL4x4MQaEeSaFayJQBK5xQ" name="-newcode- (Heart Rate Measurement Site)" classifier="_3TO_IMQZEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_PM-bcMQaEeSaFayJQBK5xQ" name="-newcode- (Measurement Confounding Factor)" classifier="_3TO_IMQZEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_P9w_MMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Body Temperature Measurement Site)" classifier="_3TO_IMQZEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_Qoc68MQaEeSaFayJQBK5xQ" name="-newcode- (Patient Height Determination Method)" classifier="_3TO_IMQZEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_RlBQ4MQaEeSaFayJQBK5xQ" name="-newcode- (Patient Measurement Body Exposure State)" classifier="_3TO_IMQZEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_SUNSIMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Measurement Body Position)" classifier="_3TO_IMQZEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_TLmNIMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Measurement Exertion Phase)" classifier="_3TO_IMQZEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_T2GisMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Measurement Sleep Status)" classifier="_3TO_IMQZEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_UwnqMMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Position Tilt)" classifier="_3TO_IMQZEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_VcZLEMQaEeSaFayJQBK5xQ" name="-newcode- (Patient Weight Determination Method)" classifier="_3TO_IMQZEeSaFayJQBK5xQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_LeZXgMODEeSFjdDJNF9NPA" name="OxygenProvisionDevice">
-      <ownedLiteral xmi:id="_fn74oMODEeSFjdDJNF9NPA" name="-newcode- (Aerosol/Humidified Mask)"/>
-      <ownedLiteral xmi:id="_u-wRoMODEeSFjdDJNF9NPA" name="-newcode- (Ambu Bag (Bag Valve Mask))"/>
-      <ownedLiteral xmi:id="_vp7VkMODEeSFjdDJNF9NPA" name="-newcode- (Assisted Ventilator)"/>
-      <ownedLiteral xmi:id="_wNANcMODEeSFjdDJNF9NPA" name="-newcode- (Bipap (Bi-Level Positive Airway Pressure))"/>
-      <ownedLiteral xmi:id="_yxKzUMODEeSFjdDJNF9NPA" name="-newcode- (Bipap-Cpap)"/>
-      <ownedLiteral xmi:id="_zg8DYMODEeSFjdDJNF9NPA" name="-newcode- (Controlled Ventilator)"/>
-      <ownedLiteral xmi:id="_2SC5EMODEeSFjdDJNF9NPA" name="-newcode- (Cpap (Continuous Positive Airway Pressure))"/>
-      <ownedLiteral xmi:id="_22H2gMODEeSFjdDJNF9NPA" name="-newcode- (Laryngeal Mask Airway)"/>
-      <ownedLiteral xmi:id="_GlB_YMOEEeSFjdDJNF9NPA" name="426294006 (Face Tent Oxygen Delivery Device)"/>
-      <ownedLiteral xmi:id="_bhwQ8MOEEeSFjdDJNF9NPA" name="-newcode- (Mustache Cannula)"/>
-      <ownedLiteral xmi:id="_cVez8MOEEeSFjdDJNF9NPA" name="-newcode- (Nasal Cannula)"/>
-      <ownedLiteral xmi:id="_lqqaoMOEEeSFjdDJNF9NPA" name="427591007 (Nonrebreather Oxygen Mask)"/>
-      <ownedLiteral xmi:id="_nU9ZQMOEEeSFjdDJNF9NPA" name="336602003 (Oxygen Mask)"/>
-      <ownedLiteral xmi:id="_qGklQMOEEeSFjdDJNF9NPA" name="426160001 (Oxygen Ventilator)"/>
-      <ownedLiteral xmi:id="_suN88MOEEeSFjdDJNF9NPA" name="425926003 (Partial Rebreather Oxygen Mask)"/>
-      <ownedLiteral xmi:id="_yLdowMOEEeSFjdDJNF9NPA" name="-newcode- (Pendant Cannula)"/>
-      <ownedLiteral xmi:id="_zvau0MOEEeSFjdDJNF9NPA" name="-newcode- (Reservoir Cannula)"/>
-      <ownedLiteral xmi:id="_0jYiYMOEEeSFjdDJNF9NPA" name="-newcode- (Room Air)"/>
-      <ownedLiteral xmi:id="_1bJ34MOEEeSFjdDJNF9NPA" name="-newcode- (T-Piece)"/>
-      <ownedLiteral xmi:id="_aEqLYMOFEeSFjdDJNF9NPA" name="-newcode- (Tracheostomy Collar)"/>
-      <ownedLiteral xmi:id="_2JVzkMOEEeSFjdDJNF9NPA" name="-newcode- (Transtracheal)"/>
-      <ownedLiteral xmi:id="_3ASpsMOEEeSFjdDJNF9NPA" name="428285009 (Venturi Mask)"/>
+      <ownedLiteral xmi:id="_fn74oMODEeSFjdDJNF9NPA" name="-newcode- (Aerosol/Humidified Mask)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_u-wRoMODEeSFjdDJNF9NPA" name="-newcode- (Ambu Bag (Bag Valve Mask))" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_vp7VkMODEeSFjdDJNF9NPA" name="-newcode- (Assisted Ventilator)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_wNANcMODEeSFjdDJNF9NPA" name="-newcode- (Bipap (Bi-Level Positive Airway Pressure))" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_yxKzUMODEeSFjdDJNF9NPA" name="-newcode- (Bipap-Cpap)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_zg8DYMODEeSFjdDJNF9NPA" name="-newcode- (Controlled Ventilator)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_2SC5EMODEeSFjdDJNF9NPA" name="-newcode- (Cpap (Continuous Positive Airway Pressure))" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_22H2gMODEeSFjdDJNF9NPA" name="-newcode- (Laryngeal Mask Airway)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_GlB_YMOEEeSFjdDJNF9NPA" name="426294006 (Face Tent Oxygen Delivery Device)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_bhwQ8MOEEeSFjdDJNF9NPA" name="-newcode- (Mustache Cannula)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_cVez8MOEEeSFjdDJNF9NPA" name="-newcode- (Nasal Cannula)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_lqqaoMOEEeSFjdDJNF9NPA" name="427591007 (Nonrebreather Oxygen Mask)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_nU9ZQMOEEeSFjdDJNF9NPA" name="336602003 (Oxygen Mask)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_qGklQMOEEeSFjdDJNF9NPA" name="426160001 (Oxygen Ventilator)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_suN88MOEEeSFjdDJNF9NPA" name="425926003 (Partial Rebreather Oxygen Mask)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_yLdowMOEEeSFjdDJNF9NPA" name="-newcode- (Pendant Cannula)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_zvau0MOEEeSFjdDJNF9NPA" name="-newcode- (Reservoir Cannula)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_0jYiYMOEEeSFjdDJNF9NPA" name="-newcode- (Room Air)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_1bJ34MOEEeSFjdDJNF9NPA" name="-newcode- (T-Piece)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_aEqLYMOFEeSFjdDJNF9NPA" name="-newcode- (Tracheostomy Collar)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_2JVzkMOEEeSFjdDJNF9NPA" name="-newcode- (Transtracheal)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_3ASpsMOEEeSFjdDJNF9NPA" name="428285009 (Venturi Mask)" classifier="_LeZXgMODEeSFjdDJNF9NPA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_BxlrEMNvEeSFjdDJNF9NPA" name="PatientBodyTemperatureMeasurementSite">
-      <ownedLiteral xmi:id="_UzLFoMNvEeSFjdDJNF9NPA" name="280387007 (Groin Skin Crease (Inguinal Skin Crease))"/>
-      <ownedLiteral xmi:id="_YwugUMNvEeSFjdDJNF9NPA" name="-newcode- (Intravascular)"/>
-      <ownedLiteral xmi:id="_cIGEwMNvEeSFjdDJNF9NPA" name="43015003 (Lateral Ear Canal)"/>
-      <ownedLiteral xmi:id="_gXbL8MNvEeSFjdDJNF9NPA" name="71836000 (Nasopharynx)"/>
-      <ownedLiteral xmi:id="_5F4CsMNvEeSFjdDJNF9NPA" name="32849002 (Oesophagus)"/>
-      <ownedLiteral xmi:id="_D5WMUMNwEeSFjdDJNF9NPA" name="74262004 (Oral Cavity Structure)"/>
-      <ownedLiteral xmi:id="_GOv9cMNwEeSFjdDJNF9NPA" name="34402009 (Rectum)"/>
-      <ownedLiteral xmi:id="_KUBwwMNwEeSFjdDJNF9NPA" name="39937001 (Skin)"/>
-      <ownedLiteral xmi:id="_N2oU0MNwEeSFjdDJNF9NPA" name="422543003 (Structure Of Axillary Fossa)"/>
-      <ownedLiteral xmi:id="_WH8DsMNwEeSFjdDJNF9NPA" name="15672000 (Superficial Temporal Artery)"/>
-      <ownedLiteral xmi:id="_Z3s6AMNwEeSFjdDJNF9NPA" name="89837001 (Urinary Bladder)"/>
-      <ownedLiteral xmi:id="_dt_2IMNwEeSFjdDJNF9NPA" name="76784001 (Vagina)"/>
+      <ownedLiteral xmi:id="_UzLFoMNvEeSFjdDJNF9NPA" name="280387007 (Groin Skin Crease (Inguinal Skin Crease))" classifier="_BxlrEMNvEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_YwugUMNvEeSFjdDJNF9NPA" name="-newcode- (Intravascular)" classifier="_BxlrEMNvEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_cIGEwMNvEeSFjdDJNF9NPA" name="43015003 (Lateral Ear Canal)" classifier="_BxlrEMNvEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_gXbL8MNvEeSFjdDJNF9NPA" name="71836000 (Nasopharynx)" classifier="_BxlrEMNvEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_5F4CsMNvEeSFjdDJNF9NPA" name="32849002 (Oesophagus)" classifier="_BxlrEMNvEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_D5WMUMNwEeSFjdDJNF9NPA" name="74262004 (Oral Cavity Structure)" classifier="_BxlrEMNvEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_GOv9cMNwEeSFjdDJNF9NPA" name="34402009 (Rectum)" classifier="_BxlrEMNvEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_KUBwwMNwEeSFjdDJNF9NPA" name="39937001 (Skin)" classifier="_BxlrEMNvEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_N2oU0MNwEeSFjdDJNF9NPA" name="422543003 (Structure Of Axillary Fossa)" classifier="_BxlrEMNvEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_WH8DsMNwEeSFjdDJNF9NPA" name="15672000 (Superficial Temporal Artery)" classifier="_BxlrEMNvEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_Z3s6AMNwEeSFjdDJNF9NPA" name="89837001 (Urinary Bladder)" classifier="_BxlrEMNvEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_dt_2IMNwEeSFjdDJNF9NPA" name="76784001 (Vagina)" classifier="_BxlrEMNvEeSFjdDJNF9NPA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_7T6H4MNsEeSFjdDJNF9NPA" name="PatientHeightDeterminationMethod">
-      <ownedLiteral xmi:id="__4wMEMNsEeSFjdDJNF9NPA" name="414135002 (Estimated)"/>
-      <ownedLiteral xmi:id="_m0yi4MNtEeSFjdDJNF9NPA" name="-newcode- (Estimated By Arm Span)"/>
-      <ownedLiteral xmi:id="_q0WIsMNtEeSFjdDJNF9NPA" name="258104002 (Measured (Actual))"/>
-      <ownedLiteral xmi:id="_xPbVwMNtEeSFjdDJNF9NPA" name="-newcode- (Stated)"/>
+      <ownedLiteral xmi:id="__4wMEMNsEeSFjdDJNF9NPA" name="414135002 (Estimated)" classifier="_7T6H4MNsEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_m0yi4MNtEeSFjdDJNF9NPA" name="-newcode- (Estimated By Arm Span)" classifier="_7T6H4MNsEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_q0WIsMNtEeSFjdDJNF9NPA" name="258104002 (Measured (Actual))" classifier="_7T6H4MNsEeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_xPbVwMNtEeSFjdDJNF9NPA" name="-newcode- (Stated)" classifier="_7T6H4MNsEeSFjdDJNF9NPA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ONHEsMN8EeSFjdDJNF9NPA" name="PatientMeasurementBodyExposureState">
-      <ownedLiteral xmi:id="_d91ygMN8EeSFjdDJNF9NPA" name="248165006 (Adequately Dressed (Appropriate Clothing / Bedding))"/>
-      <ownedLiteral xmi:id="_hAdO8MN8EeSFjdDJNF9NPA" name="248161002 (Inadequately Dressed (Reduced Clothing / Bedding))"/>
-      <ownedLiteral xmi:id="_kZEwkMN8EeSFjdDJNF9NPA" name="-newcode- (Increased Clothing / Bedding)"/>
-      <ownedLiteral xmi:id="_oJ5W0MN8EeSFjdDJNF9NPA" name="248160001 (Undressed (Naked))"/>
+      <ownedLiteral xmi:id="_d91ygMN8EeSFjdDJNF9NPA" name="248165006 (Adequately Dressed (Appropriate Clothing / Bedding))" classifier="_ONHEsMN8EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_hAdO8MN8EeSFjdDJNF9NPA" name="248161002 (Inadequately Dressed (Reduced Clothing / Bedding))" classifier="_ONHEsMN8EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_kZEwkMN8EeSFjdDJNF9NPA" name="-newcode- (Increased Clothing / Bedding)" classifier="_ONHEsMN8EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_oJ5W0MN8EeSFjdDJNF9NPA" name="248160001 (Undressed (Naked))" classifier="_ONHEsMN8EeSFjdDJNF9NPA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_IbyfILxREeSyBtXdDFDzRA" name="PatientMeasurementBodyPosition">
-      <ownedLiteral xmi:id="_n5tekLxREeSyBtXdDFDzRA" name="26527006 (Inverse Trendelenburg)"/>
-      <ownedLiteral xmi:id="_c9UNALxSEeSyBtXdDFDzRA" name="102538003 (Lying)"/>
-      <ownedLiteral xmi:id="_fCH9YLxSEeSyBtXdDFDzRA" name="102536004 (Lying on left side)"/>
-      <ownedLiteral xmi:id="_jppiILxSEeSyBtXdDFDzRA" name="102535000 (Lying on right side)"/>
-      <ownedLiteral xmi:id="_mFxhILxkEeSyBtXdDFDzRA" name="1240000 (Prone)"/>
-      <ownedLiteral xmi:id="_nG2o0LxSEeSyBtXdDFDzRA" name="33586001 (Seated)"/>
-      <ownedLiteral xmi:id="_odcBQLxSEeSyBtXdDFDzRA" name="10904000 (Standing)"/>
-      <ownedLiteral xmi:id="_rb9A0LxSEeSyBtXdDFDzRA" name="40199007 (Supine)"/>
-      <ownedLiteral xmi:id="_voyNoLxSEeSyBtXdDFDzRA" name="414585002 (Supine with left lateral tilt)"/>
-      <ownedLiteral xmi:id="_055h8LxSEeSyBtXdDFDzRA" name="30212006 (Supine, head raised)"/>
-      <ownedLiteral xmi:id="_4CpbkLxSEeSyBtXdDFDzRA" name="34106002 (Trendelenburg)"/>
+      <ownedLiteral xmi:id="_n5tekLxREeSyBtXdDFDzRA" name="26527006 (Inverse Trendelenburg)" classifier="_IbyfILxREeSyBtXdDFDzRA"/>
+      <ownedLiteral xmi:id="_c9UNALxSEeSyBtXdDFDzRA" name="102538003 (Lying)" classifier="_IbyfILxREeSyBtXdDFDzRA"/>
+      <ownedLiteral xmi:id="_fCH9YLxSEeSyBtXdDFDzRA" name="102536004 (Lying on left side)" classifier="_IbyfILxREeSyBtXdDFDzRA"/>
+      <ownedLiteral xmi:id="_jppiILxSEeSyBtXdDFDzRA" name="102535000 (Lying on right side)" classifier="_IbyfILxREeSyBtXdDFDzRA"/>
+      <ownedLiteral xmi:id="_mFxhILxkEeSyBtXdDFDzRA" name="1240000 (Prone)" classifier="_IbyfILxREeSyBtXdDFDzRA"/>
+      <ownedLiteral xmi:id="_nG2o0LxSEeSyBtXdDFDzRA" name="33586001 (Seated)" classifier="_IbyfILxREeSyBtXdDFDzRA"/>
+      <ownedLiteral xmi:id="_odcBQLxSEeSyBtXdDFDzRA" name="10904000 (Standing)" classifier="_IbyfILxREeSyBtXdDFDzRA"/>
+      <ownedLiteral xmi:id="_rb9A0LxSEeSyBtXdDFDzRA" name="40199007 (Supine)" classifier="_IbyfILxREeSyBtXdDFDzRA"/>
+      <ownedLiteral xmi:id="_voyNoLxSEeSyBtXdDFDzRA" name="414585002 (Supine with left lateral tilt)" classifier="_IbyfILxREeSyBtXdDFDzRA"/>
+      <ownedLiteral xmi:id="_055h8LxSEeSyBtXdDFDzRA" name="30212006 (Supine, head raised)" classifier="_IbyfILxREeSyBtXdDFDzRA"/>
+      <ownedLiteral xmi:id="_4CpbkLxSEeSyBtXdDFDzRA" name="34106002 (Trendelenburg)" classifier="_IbyfILxREeSyBtXdDFDzRA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_kH664L61EeSMg-kgsnPV3w" name="PatientMeasurementSleepStatus">
-      <ownedLiteral xmi:id="_15CzIL61EeSMg-kgsnPV3w" name="248218005 (Awake)"/>
-      <ownedLiteral xmi:id="_Ekc3oL62EeSMg-kgsnPV3w" name="248220008 (Asleep)"/>
+      <ownedLiteral xmi:id="_15CzIL61EeSMg-kgsnPV3w" name="248218005 (Awake)" classifier="_kH664L61EeSMg-kgsnPV3w"/>
+      <ownedLiteral xmi:id="_Ekc3oL62EeSMg-kgsnPV3w" name="248220008 (Asleep)" classifier="_kH664L61EeSMg-kgsnPV3w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ImIJoMQiEeSaFayJQBK5xQ" name="PatientState">
-      <ownedLiteral xmi:id="_WT120MQiEeSaFayJQBK5xQ" name="-newcode - (Dry aka Euvolemic)"/>
-      <ownedLiteral xmi:id="_YSriEMQiEeSaFayJQBK5xQ" name="-newcode - (Fluid Imbalance)"/>
-      <ownedLiteral xmi:id="_Y-MkQMQiEeSaFayJQBK5xQ" name="371825009 (Patient On Oxygen)"/>
-      <ownedLiteral xmi:id="_ZsEW4MQiEeSaFayJQBK5xQ" name="-newcode - (With Cast Or Brace)"/>
-      <ownedLiteral xmi:id="_afNrEMQiEeSaFayJQBK5xQ" name="-newcode - (With Prosthesis)"/>
-      <ownedLiteral xmi:id="_bOhoIMQiEeSaFayJQBK5xQ" name="-newcode - (Without Prosthesis)"/>
+      <ownedLiteral xmi:id="_WT120MQiEeSaFayJQBK5xQ" name="-newcode- (Dry aka Euvolemic)" classifier="_ImIJoMQiEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_YSriEMQiEeSaFayJQBK5xQ" name="-newcode- (Fluid Imbalance)" classifier="_ImIJoMQiEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_Y-MkQMQiEeSaFayJQBK5xQ" name="371825009 (Patient On Oxygen)" classifier="_ImIJoMQiEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_ZsEW4MQiEeSaFayJQBK5xQ" name="-newcode- (With Cast Or Brace)" classifier="_ImIJoMQiEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_afNrEMQiEeSaFayJQBK5xQ" name="-newcode- (With Prosthesis)" classifier="_ImIJoMQiEeSaFayJQBK5xQ"/>
+      <ownedLiteral xmi:id="_bOhoIMQiEeSaFayJQBK5xQ" name="-newcode- (Without Prosthesis)" classifier="_ImIJoMQiEeSaFayJQBK5xQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Drv0MMN7EeSFjdDJNF9NPA" name="PatientStateExertionStatus">
-      <ownedLiteral xmi:id="_LOhCEMN7EeSFjdDJNF9NPA" name="255214003 (After Exercise)"/>
-      <ownedLiteral xmi:id="_UbQecMN7EeSFjdDJNF9NPA" name="263678003 (At Rest)"/>
-      <ownedLiteral xmi:id="_XUR6AMN7EeSFjdDJNF9NPA" name="309604004 (During Exercise)"/>
+      <ownedLiteral xmi:id="_LOhCEMN7EeSFjdDJNF9NPA" name="255214003 (After Exercise)" classifier="_Drv0MMN7EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_UbQecMN7EeSFjdDJNF9NPA" name="263678003 (At Rest)" classifier="_Drv0MMN7EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_XUR6AMN7EeSFjdDJNF9NPA" name="309604004 (During Exercise)" classifier="_Drv0MMN7EeSFjdDJNF9NPA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_CGifAMN9EeSFjdDJNF9NPA" name="PatientWeightDeterminationDevice">
-      <ownedLiteral xmi:id="_JSfIUMN9EeSFjdDJNF9NPA" name="-newcode- (Bed)"/>
-      <ownedLiteral xmi:id="_azgIAMN9EeSFjdDJNF9NPA" name="-newcode- (Chair)"/>
-      <ownedLiteral xmi:id="_ct0foMN9EeSFjdDJNF9NPA" name="-newcode- (Lift Scale)"/>
-      <ownedLiteral xmi:id="_f00s0MN9EeSFjdDJNF9NPA" name="-newcode- (Standing Weight)"/>
-      <ownedLiteral xmi:id="_i-9GgMN9EeSFjdDJNF9NPA" name="-newcode- (Wheelchair Scale)"/>
+      <ownedLiteral xmi:id="_JSfIUMN9EeSFjdDJNF9NPA" name="-newcode- (Bed)" classifier="_CGifAMN9EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_azgIAMN9EeSFjdDJNF9NPA" name="-newcode- (Chair)" classifier="_CGifAMN9EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_ct0foMN9EeSFjdDJNF9NPA" name="-newcode- (Lift Scale)" classifier="_CGifAMN9EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_f00s0MN9EeSFjdDJNF9NPA" name="-newcode- (Standing Weight)" classifier="_CGifAMN9EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_i-9GgMN9EeSFjdDJNF9NPA" name="-newcode- (Wheelchair Scale)" classifier="_CGifAMN9EeSFjdDJNF9NPA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_sjs9wMN-EeSFjdDJNF9NPA" name="PatientWeightDeterminationMethod">
-      <ownedLiteral xmi:id="_zhczAMN-EeSFjdDJNF9NPA" name="-newcode- (Calculated)"/>
-      <ownedLiteral xmi:id="_6_OzMMN-EeSFjdDJNF9NPA" name="414135002 (Estimated)"/>
-      <ownedLiteral xmi:id="_BZW-AMN_EeSFjdDJNF9NPA" name="258104002 (Measured (Actual))"/>
-      <ownedLiteral xmi:id="_FK7LIMN_EeSFjdDJNF9NPA" name="-newcode- (Stated)"/>
+      <ownedLiteral xmi:id="_zhczAMN-EeSFjdDJNF9NPA" name="-newcode- (Calculated)" classifier="_sjs9wMN-EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_6_OzMMN-EeSFjdDJNF9NPA" name="414135002 (Estimated)" classifier="_sjs9wMN-EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_BZW-AMN_EeSFjdDJNF9NPA" name="258104002 (Measured (Actual))" classifier="_sjs9wMN-EeSFjdDJNF9NPA"/>
+      <ownedLiteral xmi:id="_FK7LIMN_EeSFjdDJNF9NPA" name="-newcode- (Stated)" classifier="_sjs9wMN-EeSFjdDJNF9NPA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_X9AeEKRMEeGZ6ueex_Me0w" name="VitalSignResultValueSet">
-      <ownedLiteral xmi:id="_X9Hy0KRMEeGZ6ueex_Me0w" name="8310-5"/>
-      <ownedLiteral xmi:id="_X9IZ4aRMEeGZ6ueex_Me0w" name="8462-4"/>
-      <ownedLiteral xmi:id="_X9IZ46RMEeGZ6ueex_Me0w" name="8480-6"/>
-      <ownedLiteral xmi:id="_X9IZ5aRMEeGZ6ueex_Me0w" name="8287-5"/>
-      <ownedLiteral xmi:id="_X9JA8aRMEeGZ6ueex_Me0w" name="8867-4"/>
-      <ownedLiteral xmi:id="_X9JA86RMEeGZ6ueex_Me0w" name="8302-2"/>
-      <ownedLiteral xmi:id="_X9JoAKRMEeGZ6ueex_Me0w" name="8306-3"/>
-      <ownedLiteral xmi:id="_X9JoAqRMEeGZ6ueex_Me0w" name="2710-2"/>
-      <ownedLiteral xmi:id="_X9JoBKRMEeGZ6ueex_Me0w" name="9279-1"/>
-      <ownedLiteral xmi:id="_X9KPEaRMEeGZ6ueex_Me0w" name="3141-9"/>
+      <ownedLiteral xmi:id="_X9JoAqRMEeGZ6ueex_Me0w" name="2710-2" classifier="_X9AeEKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_X9KPEaRMEeGZ6ueex_Me0w" name="3141-9" classifier="_X9AeEKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_X9IZ5aRMEeGZ6ueex_Me0w" name="8287-5" classifier="_X9AeEKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_X9JA86RMEeGZ6ueex_Me0w" name="8302-2" classifier="_X9AeEKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_X9JoAKRMEeGZ6ueex_Me0w" name="8306-3" classifier="_X9AeEKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_X9Hy0KRMEeGZ6ueex_Me0w" name="8310-5" classifier="_X9AeEKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_X9IZ4aRMEeGZ6ueex_Me0w" name="8462-4" classifier="_X9AeEKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_X9IZ46RMEeGZ6ueex_Me0w" name="8480-6" classifier="_X9AeEKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_X9JA8aRMEeGZ6ueex_Me0w" name="8867-4" classifier="_X9AeEKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_X9JoBKRMEeGZ6ueex_Me0w" name="9279-1" classifier="_X9AeEKRMEeGZ6ueex_Me0w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_sXpXgH-1EeOzENpLs8HIcg" name="VitalSignsObservationList">
       <ownedComment xmi:id="_w0TJAH-1EeOzENpLs8HIcg" annotatedElement="_sXpXgH-1EeOzENpLs8HIcg">
@@ -572,7 +568,7 @@ Individual organizations or medical specialties will often include other common 
             <styles xmi:type="notation:TextStyle" xmi:id="_i9wRg4dsEeOZ2vW3WfDP5Q"/>
             <styles xmi:type="notation:LineTypeStyle" xmi:id="_i9wRhIdsEeOZ2vW3WfDP5Q"/>
             <element xsi:nil="true"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i9wRhYdsEeOZ2vW3WfDP5Q" x="-21662" y="-4121"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i9wRhYdsEeOZ2vW3WfDP5Q" x="-21873" y="-4121"/>
           </children>
           <children xmi:type="umlnotation:UMLShape" xmi:id="_q2MjMLxkEeSyBtXdDFDzRA" element="_IbyfILxREeSyBtXdDFDzRA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_q2NxULxkEeSyBtXdDFDzRA" type="ImageCompartment">

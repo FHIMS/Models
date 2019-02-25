@@ -1948,58 +1948,58 @@ As a consequence of this, all classes potentially have recursive relationships t
     </ownedComment>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_qRfHsOX-EeWMCcMdatPOjA" name="CarePlanActivity"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_UEl5oOX8EeWMCcMdatPOjA" name="CarePlanActivityStatus">
-      <ownedLiteral xmi:id="_3CHzgOX8EeWMCcMdatPOjA" name="not-started"/>
-      <ownedLiteral xmi:id="_4SEYcOX8EeWMCcMdatPOjA" name="scheduled"/>
-      <ownedLiteral xmi:id="_GkgjUOX9EeWMCcMdatPOjA" name="in-progress"/>
-      <ownedLiteral xmi:id="_INAyMOX9EeWMCcMdatPOjA" name="on-hold"/>
-      <ownedLiteral xmi:id="_Iuo4kOX9EeWMCcMdatPOjA" name="completed"/>
-      <ownedLiteral xmi:id="_JcKs8OX9EeWMCcMdatPOjA" name="cancelled"/>
+      <ownedLiteral xmi:id="_3CHzgOX8EeWMCcMdatPOjA" name="not-started" classifier="_UEl5oOX8EeWMCcMdatPOjA"/>
+      <ownedLiteral xmi:id="_4SEYcOX8EeWMCcMdatPOjA" name="scheduled" classifier="_UEl5oOX8EeWMCcMdatPOjA"/>
+      <ownedLiteral xmi:id="_GkgjUOX9EeWMCcMdatPOjA" name="in-progress" classifier="_UEl5oOX8EeWMCcMdatPOjA"/>
+      <ownedLiteral xmi:id="_INAyMOX9EeWMCcMdatPOjA" name="on-hold" classifier="_UEl5oOX8EeWMCcMdatPOjA"/>
+      <ownedLiteral xmi:id="_Iuo4kOX9EeWMCcMdatPOjA" name="completed" classifier="_UEl5oOX8EeWMCcMdatPOjA"/>
+      <ownedLiteral xmi:id="_JcKs8OX9EeWMCcMdatPOjA" name="cancelled" classifier="_UEl5oOX8EeWMCcMdatPOjA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_KsnagOU0EeWlUtxA-8RVeQ" name="CarePlanKind"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_inWjAOX9EeWMCcMdatPOjA" name="CarePlanStatus">
-      <ownedLiteral xmi:id="_01a18OX9EeWMCcMdatPOjA" name="active"/>
-      <ownedLiteral xmi:id="_3z1H0OX9EeWMCcMdatPOjA" name="cancelled"/>
-      <ownedLiteral xmi:id="_3IK7sOX9EeWMCcMdatPOjA" name="completed"/>
-      <ownedLiteral xmi:id="_z2DqsOX9EeWMCcMdatPOjA" name="draft (pending)"/>
-      <ownedLiteral xmi:id="_x_ZEAOX9EeWMCcMdatPOjA" name="proposed"/>
+      <ownedLiteral xmi:id="_01a18OX9EeWMCcMdatPOjA" name="active" classifier="_inWjAOX9EeWMCcMdatPOjA"/>
+      <ownedLiteral xmi:id="_3z1H0OX9EeWMCcMdatPOjA" name="cancelled" classifier="_inWjAOX9EeWMCcMdatPOjA"/>
+      <ownedLiteral xmi:id="_3IK7sOX9EeWMCcMdatPOjA" name="completed" classifier="_inWjAOX9EeWMCcMdatPOjA"/>
+      <ownedLiteral xmi:id="_z2DqsOX9EeWMCcMdatPOjA" name="draft (pending)" classifier="_inWjAOX9EeWMCcMdatPOjA"/>
+      <ownedLiteral xmi:id="_x_ZEAOX9EeWMCcMdatPOjA" name="proposed" classifier="_inWjAOX9EeWMCcMdatPOjA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_0OWpQOx8EeW5tJ4V3DOBLA" name="CareTeamMemberRole">
-      <ownedLiteral xmi:id="_3BIS4Ox8EeW5tJ4V3DOBLA" name="careGiver"/>
-      <ownedLiteral xmi:id="_575a4Ox8EeW5tJ4V3DOBLA" name="patient"/>
-      <ownedLiteral xmi:id="_81jIkOx8EeW5tJ4V3DOBLA" name="stakeholder"/>
-      <ownedLiteral xmi:id="_C0HYwOx9EeW5tJ4V3DOBLA" name="supportingMember"/>
+      <ownedLiteral xmi:id="_3BIS4Ox8EeW5tJ4V3DOBLA" name="careGiver" classifier="_0OWpQOx8EeW5tJ4V3DOBLA"/>
+      <ownedLiteral xmi:id="_575a4Ox8EeW5tJ4V3DOBLA" name="patient" classifier="_0OWpQOx8EeW5tJ4V3DOBLA"/>
+      <ownedLiteral xmi:id="_81jIkOx8EeW5tJ4V3DOBLA" name="stakeholder" classifier="_0OWpQOx8EeW5tJ4V3DOBLA"/>
+      <ownedLiteral xmi:id="_C0HYwOx9EeW5tJ4V3DOBLA" name="supportingMember" classifier="_0OWpQOx8EeW5tJ4V3DOBLA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_U1dgMOt-EeW_d52hJF-Rwg" name="GoalAchievementState">
-      <ownedLiteral xmi:id="_Z6-ogOt-EeW_d52hJF-Rwg" name="in-progress"/>
-      <ownedLiteral xmi:id="_e2v-8Ot-EeW_d52hJF-Rwg" name="sustaining"/>
-      <ownedLiteral xmi:id="_gqAsUOt-EeW_d52hJF-Rwg" name="improving"/>
-      <ownedLiteral xmi:id="_hsbyoOt-EeW_d52hJF-Rwg" name="stable"/>
-      <ownedLiteral xmi:id="_i1HR8Ot-EeW_d52hJF-Rwg" name="deteriorating"/>
-      <ownedLiteral xmi:id="_j7tGkOt-EeW_d52hJF-Rwg" name="achieved"/>
-      <ownedLiteral xmi:id="_kqUgEOt-EeW_d52hJF-Rwg" name="optimal"/>
-      <ownedLiteral xmi:id="_leaPcOt-EeW_d52hJF-Rwg" name="abandoned"/>
+      <ownedLiteral xmi:id="_Z6-ogOt-EeW_d52hJF-Rwg" name="in-progress" classifier="_U1dgMOt-EeW_d52hJF-Rwg"/>
+      <ownedLiteral xmi:id="_e2v-8Ot-EeW_d52hJF-Rwg" name="sustaining" classifier="_U1dgMOt-EeW_d52hJF-Rwg"/>
+      <ownedLiteral xmi:id="_gqAsUOt-EeW_d52hJF-Rwg" name="improving" classifier="_U1dgMOt-EeW_d52hJF-Rwg"/>
+      <ownedLiteral xmi:id="_hsbyoOt-EeW_d52hJF-Rwg" name="stable" classifier="_U1dgMOt-EeW_d52hJF-Rwg"/>
+      <ownedLiteral xmi:id="_i1HR8Ot-EeW_d52hJF-Rwg" name="deteriorating" classifier="_U1dgMOt-EeW_d52hJF-Rwg"/>
+      <ownedLiteral xmi:id="_j7tGkOt-EeW_d52hJF-Rwg" name="achieved" classifier="_U1dgMOt-EeW_d52hJF-Rwg"/>
+      <ownedLiteral xmi:id="_kqUgEOt-EeW_d52hJF-Rwg" name="optimal" classifier="_U1dgMOt-EeW_d52hJF-Rwg"/>
+      <ownedLiteral xmi:id="_leaPcOt-EeW_d52hJF-Rwg" name="abandoned" classifier="_U1dgMOt-EeW_d52hJF-Rwg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_HIracO0bEeWjUp19yClo5Q" name="GoalCategory">
-      <ownedLiteral xmi:id="_erwqQO0bEeWjUp19yClo5Q" name="behavioral"/>
-      <ownedLiteral xmi:id="_Vbpw0O0bEeWjUp19yClo5Q" name="dietary"/>
-      <ownedLiteral xmi:id="_hJYjQO0bEeWjUp19yClo5Q" name="nursing"/>
-      <ownedLiteral xmi:id="_inb1oO0bEeWjUp19yClo5Q" name="physiotherapy"/>
-      <ownedLiteral xmi:id="_c0b8QO0bEeWjUp19yClo5Q" name="safety"/>
+      <ownedLiteral xmi:id="_erwqQO0bEeWjUp19yClo5Q" name="behavioral" classifier="_HIracO0bEeWjUp19yClo5Q"/>
+      <ownedLiteral xmi:id="_Vbpw0O0bEeWjUp19yClo5Q" name="dietary" classifier="_HIracO0bEeWjUp19yClo5Q"/>
+      <ownedLiteral xmi:id="_hJYjQO0bEeWjUp19yClo5Q" name="nursing" classifier="_HIracO0bEeWjUp19yClo5Q"/>
+      <ownedLiteral xmi:id="_inb1oO0bEeWjUp19yClo5Q" name="physiotherapy" classifier="_HIracO0bEeWjUp19yClo5Q"/>
+      <ownedLiteral xmi:id="_c0b8QO0bEeWjUp19yClo5Q" name="safety" classifier="_HIracO0bEeWjUp19yClo5Q"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_f44qQOYAEeWMCcMdatPOjA" name="HealthGoalStatus">
-      <ownedLiteral xmi:id="_k8SMEOt5EeW_d52hJF-Rwg" name="proposed"/>
-      <ownedLiteral xmi:id="_ntYasOt5EeW_d52hJF-Rwg" name="complete"/>
-      <ownedLiteral xmi:id="_5m_gkOt5EeW_d52hJF-Rwg" name="planned"/>
-      <ownedLiteral xmi:id="_627ecOt5EeW_d52hJF-Rwg" name="accepted"/>
-      <ownedLiteral xmi:id="_7l1L0Ot5EeW_d52hJF-Rwg" name="rejected"/>
-      <ownedLiteral xmi:id="_8h2vMOt5EeW_d52hJF-Rwg" name="in-progress"/>
-      <ownedLiteral xmi:id="_-tzCUOt5EeW_d52hJF-Rwg" name="on-hold"/>
-      <ownedLiteral xmi:id="__rBfkOt5EeW_d52hJF-Rwg" name="cancelled"/>
+      <ownedLiteral xmi:id="_k8SMEOt5EeW_d52hJF-Rwg" name="proposed" classifier="_f44qQOYAEeWMCcMdatPOjA"/>
+      <ownedLiteral xmi:id="_ntYasOt5EeW_d52hJF-Rwg" name="complete" classifier="_f44qQOYAEeWMCcMdatPOjA"/>
+      <ownedLiteral xmi:id="_5m_gkOt5EeW_d52hJF-Rwg" name="planned" classifier="_f44qQOYAEeWMCcMdatPOjA"/>
+      <ownedLiteral xmi:id="_627ecOt5EeW_d52hJF-Rwg" name="accepted" classifier="_f44qQOYAEeWMCcMdatPOjA"/>
+      <ownedLiteral xmi:id="_7l1L0Ot5EeW_d52hJF-Rwg" name="rejected" classifier="_f44qQOYAEeWMCcMdatPOjA"/>
+      <ownedLiteral xmi:id="_8h2vMOt5EeW_d52hJF-Rwg" name="in-progress" classifier="_f44qQOYAEeWMCcMdatPOjA"/>
+      <ownedLiteral xmi:id="_-tzCUOt5EeW_d52hJF-Rwg" name="on-hold" classifier="_f44qQOYAEeWMCcMdatPOjA"/>
+      <ownedLiteral xmi:id="__rBfkOt5EeW_d52hJF-Rwg" name="cancelled" classifier="_f44qQOYAEeWMCcMdatPOjA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_9TE-0OU5EeWlUtxA-8RVeQ" name="InterventionPlanningStatus">
-      <ownedLiteral xmi:id="_U1qfYOU6EeWlUtxA-8RVeQ" name="accepted"/>
-      <ownedLiteral xmi:id="_EfPDgOU6EeWlUtxA-8RVeQ" name="proposed"/>
-      <ownedLiteral xmi:id="_Yvrd4OU6EeWlUtxA-8RVeQ" name="rejected"/>
+      <ownedLiteral xmi:id="_U1qfYOU6EeWlUtxA-8RVeQ" name="accepted" classifier="_9TE-0OU5EeWlUtxA-8RVeQ"/>
+      <ownedLiteral xmi:id="_EfPDgOU6EeWlUtxA-8RVeQ" name="proposed" classifier="_9TE-0OU5EeWlUtxA-8RVeQ"/>
+      <ownedLiteral xmi:id="_Yvrd4OU6EeWlUtxA-8RVeQ" name="rejected" classifier="_9TE-0OU5EeWlUtxA-8RVeQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_SlspoAY0EeGz0dkadElrkQ" name="carePlanEpisode_patient" memberEnd="_Slt3wAY0EeGz0dkadElrkQ _Slvs8AY0EeGz0dkadElrkQ">
       <ownedEnd xmi:id="_Slvs8AY0EeGz0dkadElrkQ" name="" visibility="public" type="_ZjkgsJe6EeaSqP4Tgr4Cgg" association="_SlspoAY0EeGz0dkadElrkQ"/>
