@@ -1196,7 +1196,8 @@ This property indicates the phase at which the diastolic pressure was measured.<
         </ownedAttribute>
         <ownedAttribute xmi:id="_A6RTQHQbEeivUP8hArZexg" name="bodyPositionQualifier" visibility="public">
           <ownedComment xmi:id="_A6RTQXQbEeivUP8hArZexg" annotatedElement="_A6RTQHQbEeivUP8hArZexg">
-            <body>Certain disease states can be detected by observing differences in heart rate, blood pressure, or respiration when the patient’s body is in different positions (e.g., sitting, standing, etc.). It therefore may be necessary to record the patient’s body position when recording the primary observation. This property records an observation of the patient’s body position during the time the heart rate, blood pressure, or respiration rate was observed.</body>
+            <body>Certain disease states can be detected by observing differences in heart rate, blood pressure, or respiration when the patient’s body is in different positions (e.g., sitting, standing, etc.). It therefore may be necessary to record the patient’s body position when recording the primary observation. This property records an observation of the patient’s body position during the time the heart rate, blood pressure, or respiration rate was observed.&#xD;
+&quot;Position for orthostatic blood pressure.&quot; - PCORnet Common Data Model, Vital.BP_Position. Possible values include: Sitting; Standing; Supine; No information; Unknown; Other.</body>
           </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A6RTQnQbEeivUP8hArZexg" value="1"/>
@@ -1250,7 +1251,9 @@ This class represents the measurement (or “clinical observation”) of the pat
       <packagedElement xmi:type="uml:Class" xmi:id="_aZAdMJdaEeOCbc0pwOBboA" name="SystolicBloodPressureObservation">
         <ownedComment xmi:id="_OsKnoN04EeSZfdq7h5ueSA" annotatedElement="_aZAdMJdaEeOCbc0pwOBboA">
           <body>“Blood pressure (BP) is the pressure exerted by circulating blood upon the walls of blood vessels and is one of the principal vital signs. When used without further specification, &quot;blood pressure&quot; usually refers to the arterial pressure of the systemic circulation, usually measured at a person's upper arm. A person’s blood pressure is usually expressed in terms of the systolic (maximum) pressure over diastolic (minimum) pressure”– Wikipedia.&#xD;
-This class represents the measurement (or “clinical observation”) of the patient’s Systolic Blood Pressure, which is the maximum pressure exerted by circulating blood upon the walls of blood vessels during the heart’s pumping phase.  This class also re-defines the generic clinical Observation class to fix the observed characteristic to LOINC 8680-6.</body>
+This class represents the measurement (or “clinical observation”) of the patient’s Systolic Blood Pressure, which is the maximum pressure exerted by circulating blood upon the walls of blood vessels during the heart’s pumping phase.  This class also re-defines the generic clinical Observation class to fix the observed characteristic to LOINC 8680-6.&#xD;
+&#xD;
+&quot;Systolic blood pressure (in mmHg).&quot; - PCORnet Common Data Model, Vital.Systolic</body>
         </ownedComment>
         <ownedRule xmi:id="_jp6XkHQaEeivUP8hArZexg" name="TopicIsSystolicBloodPressure" constrainedElement="_EVpMQH-3EeOzENpLs8HIcg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_jp6XkXQaEeivUP8hArZexg">
@@ -1281,8 +1284,9 @@ This class represents the measurement (or “clinical observation”) of the pat
       <packagedElement xmi:type="uml:Class" xmi:id="_adk0IJdaEeOCbc0pwOBboA" name="DiastolicBloodPressureObservation">
         <ownedComment xmi:id="_aaqPEN04EeSZfdq7h5ueSA" annotatedElement="_adk0IJdaEeOCbc0pwOBboA">
           <body>“Blood pressure (BP) is the pressure exerted by circulating blood upon the walls of blood vessels and is one of the principal vital signs. When used without further specification, &quot;blood pressure&quot; usually refers to the arterial pressure of the systemic circulation, usually measured at a person's upper arm. A person’s blood pressure is usually expressed in terms of the systolic (maximum) pressure over diastolic (minimum) pressure”– Wikipedia.&#xD;
+This class represents the measurement (or “clinical observation”) of the patient’s Diastolic Blood Pressure, which is the minimum pressure exerted by circulating blood upon the walls of blood vessels during the heart’s pumping phase.  This class also re-defines the generic clinical Observation class to fix the observed characteristic to LOINC 8462-4.&#xD;
 &#xD;
-This class represents the measurement (or “clinical observation”) of the patient’s Diastolic Blood Pressure, which is the minimum pressure exerted by circulating blood upon the walls of blood vessels during the heart’s pumping phase.  This class also re-defines the generic clinical Observation class to fix the observed characteristic to LOINC 8462-4.</body>
+&quot;Diastolic blood pressure (in mmHg).&quot; - PCORnet Common Data Model, Vital.Diastolic</body>
         </ownedComment>
         <ownedRule xmi:id="_YSGYgHQfEeivUP8hArZexg" name="ValueIsDiastolic" constrainedElement="_EVpMQH-3EeOzENpLs8HIcg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_YSGYgXQfEeivUP8hArZexg">
@@ -2052,8 +2056,9 @@ This package represents the measurement (or “clinical observation”) of the p
       <packagedElement xmi:type="uml:Class" xmi:id="_jPo_4Id5EeOZ2vW3WfDP5Q" name="HeightObservation" clientDependency="_-7vQAHPYEeiV16BdsfE5oQ _APgnMHPoEeiV16BdsfE5oQ">
         <ownedComment xmi:id="_cvuuMN0mEeSZfdq7h5ueSA" annotatedElement="_jPo_4Id5EeOZ2vW3WfDP5Q">
           <body>“Human height or stature is the distance from the bottom of the feet to the top of the head, standing erect. … Growth has long been recognized as a measure of the health of individuals” – Wikipedia.&#xD;
+This class represents the measurement (or “clinical observation”) of the patient’s Height.  This class re-defines the generic clinical Observation class to fix the observed characteristic to LOINC 8302-2 and to set the data type of the observation value to a Physical Quantity.&#xD;
 &#xD;
-This class represents the measurement (or “clinical observation”) of the patient’s Height.  This class re-defines the generic clinical Observation class to fix the observed characteristic to LOINC 8302-2 and to set the data type of the observation value to a Physical Quantity.</body>
+&quot;Height (in inches) measured by standing.... Decimal precision is permissible.&quot; - PCORnet Common Data Model, Vital.HT</body>
         </ownedComment>
         <ownedRule xmi:id="_3nySgHPeEeiV16BdsfE5oQ" name="ValueIsHeight" constrainedElement="_EVpMQH-3EeOzENpLs8HIcg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_3nySgXPeEeiV16BdsfE5oQ">
@@ -3259,7 +3264,7 @@ This property contains the code that specifies the anatomical site or system tha
             <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_2j5u4HQVEeivUP8hArZexg" visible="false" type="StructureCompartment"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2j5u4XQVEeivUP8hArZexg" x="-2853" y="-1268"/>
           </children>
-          <children xmi:type="umlnotation:UMLShape" xmi:id="_6Q49wHQVEeivUP8hArZexg" element="_MNR9zIeMEeOZ2vW3WfDP5Q" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_6Q49wHQVEeivUP8hArZexg" element="_MNR9zIeMEeOZ2vW3WfDP5Q" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" lineColor="3342489" showStereotype="Text">
             <children xmi:type="notation:DecorationNode" xmi:id="_6Q49wnQVEeivUP8hArZexg" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_6Q49w3QVEeivUP8hArZexg" width="1320" height="1320"/>
             </children>
@@ -3474,8 +3479,9 @@ This package represents the measurement (or “clinical observation”) of the p
       <packagedElement xmi:type="uml:Class" xmi:id="_MNR9zIeMEeOZ2vW3WfDP5Q" name="WeightObservation" clientDependency="_5dSUwMN9EeSFjdDJNF9NPA _HjuQUHQXEeivUP8hArZexg">
         <ownedComment xmi:id="_a_fYQN0pEeSZfdq7h5ueSA" annotatedElement="_MNR9zIeMEeOZ2vW3WfDP5Q">
           <body>Human body weight refers “to a person's mass or weight. Body weight is measured in kilograms … or pounds. Strictly speaking, body weight is the measurement of weight without items located on the person. Practically though, body weight is measured with clothes on, but without shoes or heavy accessories such as mobile phones and wallets and using manual or digital weighing scales. Excess or reduced body weight is regarded as an indicator of determining a person's health, with body volume measurement providing an extra dimension by calculating the distribution of body weight.” – Wikipedia.&#xD;
+This class represents the measurement (or “clinical observation”) of the patient’s Weight.  This class re-defines the generic clinical Observation class to fix the observed characteristic to LOINC 3141-9 and to set the data type of the observation value to a Physical Quantity.&#xD;
 &#xD;
-This class represents the measurement (or “clinical observation”) of the patient’s Weight.  This class re-defines the generic clinical Observation class to fix the observed characteristic to LOINC 3141-9 and to set the data type of the observation value to a Physical Quantity.</body>
+&quot;Weight (in pounds).... Decimal precision is permissible.&quot; - PCORnet Common Data Model, Vital.WT</body>
         </ownedComment>
         <ownedRule xmi:id="_JtPXAHQWEeivUP8hArZexg" name="TopicIsWeight" constrainedElement="_EVpMQH-3EeOzENpLs8HIcg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_JtPXAXQWEeivUP8hArZexg">

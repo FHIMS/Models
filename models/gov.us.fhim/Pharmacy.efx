@@ -2287,7 +2287,7 @@
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_d3-45cNxEei8IJ7C73qKZA" type="Name"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d3-448NxEei8IJ7C73qKZA" y="-186"/>
           </children>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_d3-44cNxEei8IJ7C73qKZA" points="[0, -4550, 4761, 2656]$[0, -5519, 4761, 1687]$[-2973, -5519, 1788, 1687]$[-2973, -6692, 1788, 514]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_d3-44cNxEei8IJ7C73qKZA" points="[0, -4550, 2909, 2656]$[0, -5519, 2909, 1687]$[-3030, -5519, -121, 1687]$[-3030, -6692, -121, 514]"/>
         </edges>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_lZLZccNxEei8IJ7C73qKZA" element="_lZLZcMNxEei8IJ7C73qKZA" source="_Onl_4NNJEeGRnPi2MLPE0g" target="_Yq8zYL3LEeivztAtc-w8PQ" fontName="Arial" fontHeight="10" routing="Tree" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_lZLZc8NxEei8IJ7C73qKZA" type="NameLabel">
@@ -2295,7 +2295,7 @@
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_lZLZdsNxEei8IJ7C73qKZA" type="Name"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lZLZdMNxEei8IJ7C73qKZA" y="-186"/>
           </children>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lZLZcsNxEei8IJ7C73qKZA" points="[0, -752, -3869, 2656]$[0, -1721, -3869, 1687]$[5657, -1721, 1788, 1687]$[5657, -2894, 1788, 514]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lZLZcsNxEei8IJ7C73qKZA" points="[0, -752, -3869, 2656]$[0, -1721, -3869, 1687]$[3748, -1721, -121, 1687]$[3748, -2894, -121, 514]"/>
         </edges>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_by6-gNxXEeirRMa3uJFRsQ" element="_byxNgNxXEeirRMa3uJFRsQ" source="_8zcicNNAEeGRnPi2MLPE0g" target="_Yek44NxXEeirRMa3uJFRsQ" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_by6-gtxXEeirRMa3uJFRsQ" visible="false" type="NameLabel">
@@ -2611,8 +2611,8 @@ It is noted that in the typical Pharmacy workflow, the prescription will be “f
       </generalization>
       <ownedAttribute xmi:id="_1MBPsNOQEeGputPQx0HXoA" name="actualStrength" visibility="public">
         <ownedComment xmi:id="_ItYWgNOREeGputPQx0HXoA" annotatedElement="_1MBPsNOQEeGputPQx0HXoA">
-          <body>&quot;Use when [DispensedDrug] does not specify the strength.  This is the numeric part of the strength, of a single dosage unit of the dispensed product&quot; - HL7 Version 2.8, RXD-16.&#xD;
-&quot;Use when [DispensedDrug] does not specify the strength.  This is the unit of the strength, of a single dosage unit of the dispensed product&quot; - HL7 Version 2.8, RXD-17.</body>
+          <body>&quot;Use when [DispensedDrug] does not specify the strength. This is the numeric part of the strength, of a single dosage unit of the dispensed product&quot; - HL7 Version 2.8, RXD-16.&#xD;
+&quot;Use when [DispensedDrug] does not specify the strength. This is the unit of the strength, of a single dosage unit of the dispensed product&quot; - HL7 Version 2.8, RXD-17.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e2mDobzUEeasQoRN2Ou_5g" value="1"/>
@@ -2633,7 +2633,8 @@ Dispense = &quot;to make up and distribute (medicine), esp. on prescription.&quo
       <ownedAttribute xmi:id="_2KrlEEtEEdyGhN1DL5AQjA" name="dateTimeFilled" visibility="public">
         <ownedComment xmi:id="_2KrlEUtEEdyGhN1DL5AQjA" annotatedElement="_2KrlEEtEEdyGhN1DL5AQjA">
           <body>Indicates when the pharmaceutical/treatment was removed from inventory and prepared for delivery to the patient.  Note that this differs from the &quot;dispense date/time&quot; in that the fill date is when the pharmaceutical/treatment was removed from inventory (e.g., when the pharmacist filled a bottle with tablets from inventory); once filled, the medication may remain in the pharmacy awaiting pick-up, where as the dispense date/time is when the mediation leaves the control of the pharmacy.  Once delivered to the patient or another caregiver, the medication is then considered &quot;dispensed.&quot;&#xD;
-&quot;The time when the dispensed product was packaged and reviewed.&quot; - HL7 FHIR, MedicationDispense.whenPrepared</body>
+&quot;The time when the dispensed product was packaged and reviewed.&quot; - HL7 FHIR, MedicationDispense.whenPrepared&#xD;
+&quot;Date prescription was prepared.&quot; - ASAP Standard for PDMP, DSP05: Date Filled</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bGjoYfUiEdyqkvQ4FycnSQ" value="1"/>
@@ -2643,11 +2644,26 @@ Dispense = &quot;to make up and distribute (medicine), esp. on prescription.&quo
         <ownedComment xmi:id="_NbkVmeLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6419901DD0065">
           <body>The length of time in days that the quantity dispensed will last if consumed at the rate prescribed.  For example if the patient is instructed to take 2 pills a day, 60 pills will last 30 days.&#xD;
 &quot;Estimated number of days the prescription will last.&quot; - NCPDP Telecommunication (Field 405-D5, Data Dictionary 201104).&#xD;
-&quot;The amount of medication expressed as a timing amount.&quot; - HL7 FHIR, MedicationDispense.daysSupply</body>
+&quot;The amount of medication expressed as a timing amount.&quot; - HL7 FHIR, MedicationDispense.daysSupply&#xD;
+&quot;The calculated or estimated number of days the medication will cover.&quot; - ASAP Standard for PDMP, DSP10: Days Supply&#xD;
+&quot;Days supply. Number of days that the medication supports based on the number of doses as reported by the pharmacist. This amount is typically found on the dispensing record. Integer values are expected.&quot; - PCORnet Common Data Model, Dispensing.Dispense_Sup.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mf0qsfUxEdyqkvQ4FycnSQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mf0qsPUxEdyqkvQ4FycnSQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zfDvkNKIEeGtfrdPU3R3yA" name="dispensedDrug" visibility="public" association="_ze1tINKIEeGtfrdPU3R3yA">
+        <ownedComment xmi:id="_GNtnENKJEeGtfrdPU3R3yA" annotatedElement="_zfDvkNKIEeGtfrdPU3R3yA">
+          <body>Pointer to the medication or pharmacy-stocked item that the Pharmacy actually supplied to the Patient or the Patient’s caregiver. This will normally be the same as the one ordered by the prescriber, but may be different under certain pre-defined conditions. For example, the provider may have ordered a brand-name drug, but indicated that a generic substitution is authorized, and the pharmacy may have substituted a generic drug. Other situations include changes due to inventory at hand, for example the prescriber may have ordered 10 mg tablets, but only 5 mg tablets were available. Note that the ordering application will typically indicate a Medicinal Product using a code like RxNorm, while the dispensing system will typically be more specific by indicating the Packaged Medicinal Product, using a code like the National Drug Code to specify the container from which the medication was dispensed, for pricing, inventory tracking, and recall-management purposes.&#xD;
+&quot;Identifies the medical substance or treatment ordered to be given to the patient; it is equivalent to [the Ordered Item].&quot; - HL7 Version 2.8, RXD-2.&#xD;
+&quot;Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.&quot; - HL7 FHIR, MedicationDispense.medication[x]&#xD;
+&quot;Full product identification as indicated in DSP07 [Product Id Qualifier], including leading zeros without punctuation. If the product is a compound, use 99999 as the first five characters of the product code. The remaining six characters are assigned by the pharmacy.&quot; - ASAP Standard for PDMP, DSP08: Product Id&#xD;
+&quot;
+Used to identify the type of product ID contained in DSP08 [Product Id].&quot; - ASAP Standard for PDMP, DSP07: Product ID Qualifier. Possible values include: NDC; UPC; HRI; UPN; DIN; Compound (Used to indicate it is a compound. The CDI segment then becomes a required segment. Also, see instructions for DSP08.) Note that in FHIM, this information is in the Code data type</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="CommonProduct.efx#_aN6pMGRXEeCsvJrE4KlOMA?FHIM/CommonProduct/DispensedDrug?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zfFkwdKIEeGtfrdPU3R3yA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zfFkwNKIEeGtfrdPU3R3yA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3X-dkNQXEeG6j-OawvA6JA" name="dispenseCategory" visibility="public">
         <ownedComment xmi:id="_PHBs0NQYEeG6j-OawvA6JA" annotatedElement="_3X-dkNQXEeG6j-OawvA6JA">
@@ -2678,12 +2694,37 @@ Dispense = &quot;to make up and distribute (medicine), esp. on prescription.&quo
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oG8pQE-TEd6jZ6Xjdfhi0A" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oGy4QE-TEd6jZ6Xjdfhi0A"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_KJf9IOGtEeaHnLXha23s2A" name="dispenser" visibility="public">
+        <ownedComment xmi:id="_KJf9IeGtEeaHnLXha23s2A" annotatedElement="_KJf9IOGtEeaHnLXha23s2A">
+          <body>Pointer to the person who dispensed the prescription.  The dispenser is the person who facilitated the release of the medication from the pharmacy's control, as opposed to the filler who is the person who measured out and packaged the medication.  For example, the person who counted out the pills and put them in the bottle is the filler, the person who gave the bottle of pills to the patient is the dispenser.  The person playing the filler role and the person playing the dispenser role may be the same person.&#xD;
+&quot;Contains the provider ID of the person dispensing the pharmaceutical.&quot; - HL7 Version 2.8, RXD-10.&#xD;
+&quot;The individual responsible for dispensing the medication.&quot; - HL7 FHIR, MedicationDispense.dispenser</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KJf9IuGtEeaHnLXha23s2A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KJf9I-GtEeaHnLXha23s2A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_YUyHoGnZEeCyXraDASYTcQ" name="dispenseRecipient" visibility="public" type="_0KbgMGnWEeCyXraDASYTcQ" association="_YUsBAGnZEeCyXraDASYTcQ">
+        <ownedComment xmi:id="_0Mp5gCagEeOyp-Ce3y08Wg" annotatedElement="_YUyHoGnZEeCyXraDASYTcQ">
+          <body>Pointer to the person who picked up (i.e., took custody of) the dispensed medication.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YU1K8WnZEeCyXraDASYTcQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YU1K8GnZEeCyXraDASYTcQ"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_8QUwUMNxEei8IJ7C73qKZA" name="dispenseToLocation" visibility="public">
         <ownedComment xmi:id="_D2DLkMNyEei8IJ7C73qKZA" annotatedElement="_8QUwUMNxEei8IJ7C73qKZA">
           <body>&quot;Contains the inpatient or outpatient location where the drug or treatment was dispensed (if applicable).  The default (null) value is the current census location for the patient.&quot; - HL7 Version 2.8, RXD-13.</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EoofEMNyEei8IJ7C73qKZA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EomC0MNyEei8IJ7C73qKZA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_dBBoIC2IEeGWR8bvqgjcQA" name="dispensingDevice" visibility="public" association="_dA3QEC2IEeGWR8bvqgjcQA">
+        <ownedComment xmi:id="_3ZMIgE5tEeSkCZQ0odaC4w" annotatedElement="_dBBoIC2IEeGWR8bvqgjcQA">
+          <body>Pointer to information about the automated equipment which was used to fill the prescription.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="CommonProduct.efx#_420A62FD03B6425C004E004C?FHIM/CommonProduct/Device?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dBCPMS2IEeGWR8bvqgjcQA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dBCPMC2IEeGWR8bvqgjcQA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_pW4VENONEeGputPQx0HXoA" name="dispensingInstructions" visibility="public">
         <ownedComment xmi:id="_pW4VEdONEeGputPQx0HXoA" annotatedElement="_pW4VENONEeGputPQx0HXoA">
@@ -2693,17 +2734,27 @@ Dispense = &quot;to make up and distribute (medicine), esp. on prescription.&quo
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pW4VEtONEeGputPQx0HXoA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pW4VE9ONEeGputPQx0HXoA"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_bL5uMOGtEeaHnLXha23s2A" name="filler" visibility="public">
+        <ownedComment xmi:id="_bL5uMeGtEeaHnLXha23s2A" annotatedElement="_bL5uMOGtEeaHnLXha23s2A">
+          <body>Pointer to the person who filled the prescription.  The filler is the person who measured out and packaged the medication, as opposed to the dispenser who is the person who facilitated the release of the medication from the pharmacy's control.  For example, the person who counted out the pills and put them in the bottle is the filler, the person who gave the bottle of pills to the patient is the dispenser.  The person playing the filler role and the person playing the dispenser role may be the same person.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bL5uMuGtEeaHnLXha23s2A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bL5uM-GtEeaHnLXha23s2A"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_wbEHcF7eEeCcBvMgXNMeOQ" name="fillSequenceNumber" visibility="public">
         <ownedComment xmi:id="_Zwf_4BIbEeGplcxjJOwMxw" annotatedElement="_wbEHcF7eEeCcBvMgXNMeOQ">
           <body>This property enumerates how the current fill relates to the number of times that the medication request (prescription) has been filled. It is noted that this concept exists in both NCPDP and in HL7 version 2, yet the numbering is different in these two standards: NCPDP uses zero for the original fill then increments for each refill, while HL7 version 2 uses one for the original fill then increments for each refill. Implementers are cautioned to be cognizant of how this data is locally stored and how it is represented in the target standard.&#xD;
 &quot;This field starts with 1 the first time that medication/treatment is delivered/dispensed for this order.  Increments by one with each additional issuance.&quot; - HL7 Version 2.8, RXD-1.&#xD;
-&quot;The code indicating whether the prescription is an original or a refill.&quot; - NCPDP Telecommunication (Field 403-D3, Data Dictionary 201104).  Note that while the NCPDP Telecommunication structure treats this field as a code, it contains a number from 0-99, where zero is the original fill, and 1-99 are refills.</body>
+&quot;The code indicating whether the prescription is an original or a refill.&quot; - NCPDP Telecommunication (Field 403-D3, Data Dictionary 201104).  Note that while the NCPDP Telecommunication structure treats this field as a code, it contains a number from 0-99, where zero is the original fill, and 1-99 are refills.&#xD;
+&quot;Number of the fill of the prescription. 
+0 indicates original dispensing, 01-99 is the refill number.&quot; - ASAP Standard for PDMP, DSP06: Refill Number</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i05sQbzUEeasQoRN2Ou_5g" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i05sQLzUEeasQoRN2Ou_5g" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_NWgcYDubEeCQ7Mi7IS1BrQ" name="_id" visibility="public">
+      <ownedAttribute xmi:id="_NWgcYDubEeCQ7Mi7IS1BrQ" name="_identifier" visibility="public">
         <ownedComment xmi:id="_dxavoDubEeCQ7Mi7IS1BrQ" annotatedElement="_NWgcYDubEeCQ7Mi7IS1BrQ">
           <body>The unique identifier for this dispense, also known as a &quot;Fill Id&quot;.&#xD;
 &quot;Identifier assigned by the dispensing facility - this is an identifier assigned outside FHIR.&quot; - HL7 FHIR, MedicationDispense.identifier</body>
@@ -2729,6 +2780,40 @@ Dispense = &quot;to make up and distribute (medicine), esp. on prescription.&quo
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L8abItONEeGputPQx0HXoA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L8abI9ONEeGputPQx0HXoA"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_hPpbIDx5Eemr2oDdJO-yUA" name="partialFill" visibility="public">
+        <ownedComment xmi:id="_orLYkDx5Eemr2oDdJO-yUA" annotatedElement="_hPpbIDx5Eemr2oDdJO-yUA">
+          <body>&quot;This field is used when the quantity in DSP09 is less than the metric quantity per dispensing authorized by the prescriber. This dispensing activity is often referred to as a split filling.&quot; - ASAP Standard for PDMP, DSP13: Partial Fill Indicator. Possible values include: 00=Not a Partial Fill; 01=First Partial Fill; 02-99=Additional Fills. 
+Note: For additional fills per prescription, increment by one. So the second partial fill would be reported as 02, up to a maximum of 99.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l6-h0Dx5Eemr2oDdJO-yUA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l696wDx5Eemr2oDdJO-yUA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_b4-2oOGtEeaHnLXha23s2A" name="pharmacist" visibility="public">
+        <ownedComment xmi:id="_b4-2oeGtEeaHnLXha23s2A" annotatedElement="_b4-2oOGtEeaHnLXha23s2A">
+          <body>Pointer to the Person (in the Role of Pharmacist) who is responsible for fulfillment of the medication order and providing oversight.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b4-2ouGtEeaHnLXha23s2A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b4-2o-GtEeaHnLXha23s2A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FefsYNNUEeGRnPi2MLPE0g" name="pharmacy" visibility="public" association="_Fed3MNNUEeGRnPi2MLPE0g">
+        <ownedComment xmi:id="_EjJwUNQWEeG6j-OawvA6JA" annotatedElement="_FefsYNNUEeGRnPi2MLPE0g">
+          <body>&quot;Specifies the pharmacy that will dispense or has dispensed the prescription.&quot; - HL7 Version 2.8, RXD-30.&#xD;
+&quot;Specifies the address of the dispensing facility or the patient's location where the dispensing will occur.&quot; - HL7 Version 2.8, RXD-31.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64575B75903D9?FHIM/Provider/Pharmacy?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FegTcNNUEeGRnPi2MLPE0g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FefsYdNUEeGRnPi2MLPE0g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_nV7GQPXoEeW1BuvtDtBQzQ" name="pharmacyPromise" visibility="public" type="_420A62FD03B641B4BDD30213" association="_nV4qAPXoEeW1BuvtDtBQzQ">
+        <ownedComment xmi:id="_IslI8PXpEeW1BuvtDtBQzQ" annotatedElement="_nV7GQPXoEeW1BuvtDtBQzQ">
+          <body>Pointer to the Pharmacy Promise under which this Dispense event was authorized. Through Pharmacy Promise the Dispense also has visibility of the original Request, or prescription.&#xD;
+&quot;Indicates the medication order that is being dispensed against.&quot; - HL7 FHIR, MedicationDispense.authorizingPrescription</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nV7GQvXoEeW1BuvtDtBQzQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nV7GQfXoEeW1BuvtDtBQzQ" value="1"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_Tln68Ca2EeOyp-Ce3y08Wg" name="productSelectionCode" visibility="public">
         <ownedComment xmi:id="_W_OUACa2EeOyp-Ce3y08Wg" annotatedElement="_Tln68Ca2EeOyp-Ce3y08Wg">
           <body>&quot;Code indicating whether or not the prescriber’s instructions regarding generic substitution were followed.&quot; - NCPDP Telecommunication (Field 408-D8, Data Dictionary 201104).  Possible values include: Substitution Not Allowed by Prescriber; Substitution Not Allowed-Brand Drug Mandated by Law; Substitution Allowed-Patient Requested Product Dispensed; Substitution Allowed-Pharmacist Selected Product Dispensed; Substitution Allowed-Generic Drug Not in Stock; Substitution Allowed-Brand Drug Dispensed as a Generic; Substitution Allowed-Generic Drug Not Available in Marketplace; Substitution Allowed By Prescriber but Plan Requests Brand; Override; No Product Selection Indicated.</body>
@@ -2741,7 +2826,10 @@ Dispense = &quot;to make up and distribute (medicine), esp. on prescription.&quo
         <ownedComment xmi:id="_NYJOK-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B641991130035F">
           <body>The quanitity of the medication dispensed to this patient in fulfillment of a request.&#xD;
 &quot;Quantity dispensed expressed in metric decimal units.&quot; - NCPDP Telecommunication (Field 442-E7, Data Dictionary 201104).&#xD;
-&quot;The amount of medication that has been dispensed. Includes unit of measure.&quot; - HL7 FHIR, MedicationDispense.quantity</body>
+&quot;The amount of medication that has been dispensed. Includes unit of measure.&quot; - HL7 FHIR, MedicationDispense.quantity&#xD;
+&quot;Number of metric units dispensed in metric decimal format. Example: 2.5. Note: For compounds show the first quantity in [Compound Ingredient Quantity].&quot; - ASAP Standard for PDMP, DSP09: Quantity Dispensed&#xD;
+&quot;Number of units (pills, tablets, vials) dispensed. Net amount per NDC per dispensing. This amount is typically found on the dispensing record. Positive values are expected.&quot; - PCORnet Common Data Model, Dispensing.Dispense_Amt.&#xD;
+&quot;Identifies the unit of measure for the quantity dispensed in DSP09 [Quantity Dispensed]&quot; - ASAP Standard for PDMP, DSP11: Drug Dosage Units Code. Possible values include: Each (used to report solid dosage units or indivisible package; Milliliters (ml) (for liters adjust to the decimal milliliter equivalent); Grams (gm) (for milligrams adjust to the decimal gram equivalent).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O_pXEUuTEdyGhN1DL5AQjA" value="1"/>
@@ -2792,74 +2880,6 @@ Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requ
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oImagbzUEeasQoRN2Ou_5g" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oImagLzUEeasQoRN2Ou_5g"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_zfDvkNKIEeGtfrdPU3R3yA" name="dispensedDrug" visibility="public" association="_ze1tINKIEeGtfrdPU3R3yA">
-        <ownedComment xmi:id="_GNtnENKJEeGtfrdPU3R3yA" annotatedElement="_zfDvkNKIEeGtfrdPU3R3yA">
-          <body>Pointer to the medication or pharmacy-stocked item that the Pharmacy actually supplied to the Patient or the Patient’s caregiver. This will normally be the same as the one ordered by the prescriber, but may be different under certain pre-defined conditions. For example, the provider may have ordered a brand-name drug, but indicated that a generic substitution is authorized, and the pharmacy may have substituted a generic drug. Other situations include changes due to inventory at hand, for example the prescriber may have ordered 10 mg tablets, but only 5 mg tablets were available. Note that the ordering application will typically indicate a Medicinal Product using a code like RxNorm, while the dispensing system will typically be more specific by indicating the Packaged Medicinal Product, using a code like the National Drug Code to specify the container from which the medication was dispensed, for pricing, inventory tracking, and recall-management purposes.&#xD;
-&quot;Identifies the medical substance or treatment ordered to be given to the patient; it is equivalent to [the Ordered Item].&quot; - HL7 Version 2.8, RXD-2.&#xD;
-&quot;Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.&quot; - HL7 FHIR, MedicationDispense.medication[x]</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="CommonProduct.efx#_aN6pMGRXEeCsvJrE4KlOMA?FHIM/CommonProduct/DispensedDrug?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zfFkwdKIEeGtfrdPU3R3yA" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zfFkwNKIEeGtfrdPU3R3yA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_YUyHoGnZEeCyXraDASYTcQ" name="dispenseRecipient" visibility="public" type="_0KbgMGnWEeCyXraDASYTcQ" association="_YUsBAGnZEeCyXraDASYTcQ">
-        <ownedComment xmi:id="_0Mp5gCagEeOyp-Ce3y08Wg" annotatedElement="_YUyHoGnZEeCyXraDASYTcQ">
-          <body>Pointer to the person who picked up (i.e., took custody of) the dispensed medication.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YU1K8WnZEeCyXraDASYTcQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YU1K8GnZEeCyXraDASYTcQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_dBBoIC2IEeGWR8bvqgjcQA" name="dispensingDevice" visibility="public" association="_dA3QEC2IEeGWR8bvqgjcQA">
-        <ownedComment xmi:id="_3ZMIgE5tEeSkCZQ0odaC4w" annotatedElement="_dBBoIC2IEeGWR8bvqgjcQA">
-          <body>Pointer to information about the automated equipment which was used to fill the prescription.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="CommonProduct.efx#_420A62FD03B6425C004E004C?FHIM/CommonProduct/Device?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dBCPMS2IEeGWR8bvqgjcQA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dBCPMC2IEeGWR8bvqgjcQA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_FefsYNNUEeGRnPi2MLPE0g" name="pharmacy" visibility="public" association="_Fed3MNNUEeGRnPi2MLPE0g">
-        <ownedComment xmi:id="_EjJwUNQWEeG6j-OawvA6JA" annotatedElement="_FefsYNNUEeGRnPi2MLPE0g">
-          <body>&quot;Specifies the pharmacy that will dispense or has dispensed the prescription.&quot; - HL7 Version 2.8, RXD-30.&#xD;
-&quot;Specifies the address of the dispensing facility or the patient's location where the dispensing will occur.&quot; - HL7 Version 2.8, RXD-31.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64575B75903D9?FHIM/Provider/Pharmacy?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FegTcNNUEeGRnPi2MLPE0g" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FefsYdNUEeGRnPi2MLPE0g" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_nV7GQPXoEeW1BuvtDtBQzQ" name="pharmacyPromise" visibility="public" type="_420A62FD03B641B4BDD30213" association="_nV4qAPXoEeW1BuvtDtBQzQ">
-        <ownedComment xmi:id="_IslI8PXpEeW1BuvtDtBQzQ" annotatedElement="_nV7GQPXoEeW1BuvtDtBQzQ">
-          <body>Pointer to the Pharmacy Promise under which this Dispense event was authorized. Through Pharmacy Promise the Dispense also has visibility of the original Request, or prescription.&#xD;
-&quot;Indicates the medication order that is being dispensed against.&quot; - HL7 FHIR, MedicationDispense.authorizingPrescription</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nV7GQvXoEeW1BuvtDtBQzQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nV7GQfXoEeW1BuvtDtBQzQ" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_KJf9IOGtEeaHnLXha23s2A" name="dispenser" visibility="public">
-        <ownedComment xmi:id="_KJf9IeGtEeaHnLXha23s2A" annotatedElement="_KJf9IOGtEeaHnLXha23s2A">
-          <body>Pointer to the person who dispensed the prescription.  The dispenser is the person who facilitated the release of the medication from the pharmacy's control, as opposed to the filler who is the person who measured out and packaged the medication.  For example, the person who counted out the pills and put them in the bottle is the filler, the person who gave the bottle of pills to the patient is the dispenser.  The person playing the filler role and the person playing the dispenser role may be the same person.&#xD;
-&quot;Contains the provider ID of the person dispensing the pharmaceutical.&quot; - HL7 Version 2.8, RXD-10.&#xD;
-&quot;The individual responsible for dispensing the medication.&quot; - HL7 FHIR, MedicationDispense.dispenser</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KJf9IuGtEeaHnLXha23s2A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KJf9I-GtEeaHnLXha23s2A"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_bL5uMOGtEeaHnLXha23s2A" name="filler" visibility="public">
-        <ownedComment xmi:id="_bL5uMeGtEeaHnLXha23s2A" annotatedElement="_bL5uMOGtEeaHnLXha23s2A">
-          <body>Pointer to the person who filled the prescription.  The filler is the person who measured out and packaged the medication, as opposed to the dispenser who is the person who facilitated the release of the medication from the pharmacy's control.  For example, the person who counted out the pills and put them in the bottle is the filler, the person who gave the bottle of pills to the patient is the dispenser.  The person playing the filler role and the person playing the dispenser role may be the same person.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bL5uMuGtEeaHnLXha23s2A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bL5uM-GtEeaHnLXha23s2A"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_b4-2oOGtEeaHnLXha23s2A" name="pharmacist" visibility="public">
-        <ownedComment xmi:id="_b4-2oeGtEeaHnLXha23s2A" annotatedElement="_b4-2oOGtEeaHnLXha23s2A">
-          <body>Pointer to the Person (in the Role of Pharmacist) who is responsible for fulfillment of the medication order and providing oversight.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b4-2ouGtEeaHnLXha23s2A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b4-2o-GtEeaHnLXha23s2A" value="1"/>
-      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B641B4BDD30213" name="PharmacyPromise" clientDependency="_tfjvQPXuEeW1BuvtDtBQzQ">
       <eAnnotations xmi:id="_NY41B-LiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -2880,6 +2900,17 @@ Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requ
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_evgGGeLjEdutr_MT9HkPyQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_evgGGOLjEdutr_MT9HkPyQ"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B64586FA280229" name="dispense" visibility="public" type="_420A62FD03B641928F4302E4" isUnique="false" association="_420A62FD03B64586FA270029">
+        <ownedComment xmi:id="_NhFHsOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64586FA280229">
+          <body>Pointer to information about the provision of a medication to a Patient or care provider under the authority of the owning Pharmacy Promise. In other words, this is a collection of dispensing events associated with the (pharmacy systems's view of the ) Order.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NhFHs-LiEduGJrQyRGTO1A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NhFHsuLiEduGJrQyRGTO1A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_I_RhYXLuEeaOoaRAWXA_qQ" name="dosage" visibility="public" type="_HqoJ8HE-EeaIzczSuyGEmQ" association="_I_RhYHLuEeaOoaRAWXA_qQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I_RhY3LuEeaOoaRAWXA_qQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I_RhYnLuEeaOoaRAWXA_qQ"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B641990EA80281" name="expirationDate" visibility="public">
         <eAnnotations xmi:id="_NZob5uLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <ownedComment xmi:id="_NZob5OLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B641990EA80281">
@@ -2888,6 +2919,14 @@ Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requ
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_evgGHeLjEdutr_MT9HkPyQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_evgGHOLjEdutr_MT9HkPyQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Zu294OGsEeaHnLXha23s2A" name="finisher" visibility="public">
+        <ownedComment xmi:id="_Zu294eGsEeaHnLXha23s2A" annotatedElement="_Zu294OGsEeaHnLXha23s2A">
+          <body>A pharmacy personnel who reviews the order and makes any required changes that are allowed under the usual and customary boundaries. The end result of this activity is an order that can be fulfilled. This role also called verifier, or perfecter.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zu294uGsEeaHnLXha23s2A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zu294-GsEeaHnLXha23s2A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B64592CA620331" name="isHospitalSuppliedSelfAdministered" visibility="public">
         <ownedComment xmi:id="_NB8t4L-0Ed2cYoIY7XWEQw" annotatedElement="_420A62FD03B64592CA620331">
@@ -2942,6 +2981,48 @@ Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requ
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Tq7mgfUxEdyqkvQ4FycnSQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Tq7mgPUxEdyqkvQ4FycnSQ"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B64592BE3A0349" name="patientReportedMedication" visibility="public" type="_420A62FD03B641B4BE0F00E3" isUnique="false" association="_420A62FD03B64592BE390136">
+        <ownedComment xmi:id="_NhYCruLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64592BE3A0349">
+          <body>Pointer to information about medication(s) which the patient reports to be using.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NhhzouLiEduGJrQyRGTO1A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NhhzoeLiEduGJrQyRGTO1A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_afl3UXpgEd-44ra0dfiJCw" name="pharmacy" visibility="public" association="_afl3UHpgEd-44ra0dfiJCw">
+        <ownedComment xmi:id="_e7T0sHpgEd-44ra0dfiJCw" annotatedElement="_afl3UXpgEd-44ra0dfiJCw">
+          <body>&quot;Specifies the pharmacy that will dispense or has dispensed the prescription.&quot; - HL7 Version 2.8, RXO-32.&#xD;
+&quot;Specifies the address of the dispensing facility.&quot; - HL7 Version 2.8, RXO-33.&#xD;
+&quot;Contains the telecommunication contact information for the pharmacy.&quot; - HL7 Version 2.8, RXO-36.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64575B75903D9?FHIM/Provider/Pharmacy?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_afl3U3pgEd-44ra0dfiJCw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_afl3UnpgEd-44ra0dfiJCw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_UxG2oNNbEeGRnPi2MLPE0g" name="pharmacyGeneratedOrderModification" visibility="public" type="_CtWV8PaTEeCbn6MPgQ_rxg" association="_UxDMQNNbEeGRnPi2MLPE0g">
+        <ownedComment xmi:id="_yOL74E5wEeSkCZQ0odaC4w" annotatedElement="_UxG2oNNbEeGRnPi2MLPE0g">
+          <body>Pointer to information concerning any changes made to the original order by the pharmacist.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UxIEwNNbEeGRnPi2MLPE0g" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UxHdsNNbEeGRnPi2MLPE0g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_BN3fMPaeEeCbn6MPgQ_rxg" name="pharmacyInferredDiagnosis" visibility="public" association="_BN1C8PaeEeCbn6MPgQ_rxg">
+        <ownedComment xmi:id="_PWBtYE50EeSkCZQ0odaC4w" annotatedElement="_BN3fMPaeEeCbn6MPgQ_rxg">
+          <body>Many claims require a diagnosis in order to be adjudicated, especially in workers compensation situations or where multiple payers are involved.  In those cases and where the pharmacy does not have a diagnosis supplied by the prescriber, the pharmacy may infer a diagnosis based on the medication or services ordered.  See field 6813 of the NCPDP SCRIPT DRU segment.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#_e4dl4AgVEd6eWYJXJewDdQ?FHIM/Common/DiagnosisListEntry?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BN4tUPaeEeCbn6MPgQ_rxg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BN4GQPaeEeCbn6MPgQ_rxg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_eIc3YHLqEeaOoaRAWXA_qQ" name="promisedItem" visibility="public" association="_eITtcHLqEeaOoaRAWXA_qQ">
+        <ownedComment xmi:id="_O9alsHLsEeaOoaRAWXA_qQ" annotatedElement="_eIc3YHLqEeaOoaRAWXA_qQ">
+          <body>Pointer to the medication or pharmacy-stocked item that the Pharmacy has agreed to supply to the Patient. This will normally be the same as the one ordered by the prescriber, but may be different under certain pre-defined conditions. For example, the provider may have ordered a brand-name drug, but indicated that a generic substitution is authorized, and the pharmacy may have substituted a generic drug. Other situations include changes due to inventory at hand, for example the prescriber may have ordered 10 mg tablets, but only 5 mg tablets were available.&#xD;
+&quot;Identifies the medical substance or treatment that has been ordered to be given to the patient, as encoded by the pharmacy or treatment supplier&quot; - HL7 Version 2.8, RXE-2.&#xD;
+&quot;This field accommodates the identification of any codes that might be associated with the pharmaceutical substance. Common codes include: the Generic Product Identifier (GPI), Generic Code Number_Sequence Number (GCN_SEQNO), National Drug Code (NDC).&quot; - HL7 Version 2.8, RXE-31.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="CommonProduct.efx#_420A62FD03B6426545CB0072?FHIM/CommonProduct/OrderablePharmacyItem?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eIc3YnLqEeaOoaRAWXA_qQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eIc3YXLqEeaOoaRAWXA_qQ" value="1"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B641A342230296" name="requestedAdministrationTime" visibility="public" isOrdered="true" isUnique="false">
         <eAnnotations xmi:id="_NZB--uLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <ownedComment xmi:id="_NZB--OLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B641A342230296">
@@ -2958,6 +3039,13 @@ Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requ
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64239FAA800D9?FHIM/Datatypes/TimeQuantity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PGIwEC17EeCcBZN8gPxxdg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PGIJAC17EeCcBZN8gPxxdg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_HwvEccd5EeCVr54V6VtSNQ" name="returnToStock" visibility="public" type="_wwMFEKDYEeC1WJi4dBiHRA" association="_HwvEcMd5EeCVr54V6VtSNQ">
+        <ownedComment xmi:id="_WSeeEEqCEeSqlerh7YvyAA" annotatedElement="_HwvEccd5EeCVr54V6VtSNQ">
+          <body>Pointer to information about the reversal of a provision of a medication to a patient or care provider under the authority of the owning Pharmacy Promise.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HwvEc8d5EeCVr54V6VtSNQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HwvEcsd5EeCVr54V6VtSNQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B64592CA80029C" name="scheduleType" visibility="public">
         <ownedComment xmi:id="_NdXFUuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64592CA80029C">
@@ -3003,74 +3091,6 @@ Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requ
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zUCYMbzUEeasQoRN2Ou_5g" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zUCYMLzUEeasQoRN2Ou_5g"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B64586FA280229" name="dispense" visibility="public" type="_420A62FD03B641928F4302E4" isUnique="false" association="_420A62FD03B64586FA270029">
-        <ownedComment xmi:id="_NhFHsOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64586FA280229">
-          <body>Pointer to information about the provision of a medication to a Patient or care provider under the authority of the owning Pharmacy Promise. In other words, this is a collection of dispensing events associated with the (pharmacy systems's view of the ) Order.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NhFHs-LiEduGJrQyRGTO1A" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NhFHsuLiEduGJrQyRGTO1A"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_I_RhYXLuEeaOoaRAWXA_qQ" name="dosage" visibility="public" type="_HqoJ8HE-EeaIzczSuyGEmQ" association="_I_RhYHLuEeaOoaRAWXA_qQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I_RhY3LuEeaOoaRAWXA_qQ" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I_RhYnLuEeaOoaRAWXA_qQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B64592BE3A0349" name="patientReportedMedication" visibility="public" type="_420A62FD03B641B4BE0F00E3" isUnique="false" association="_420A62FD03B64592BE390136">
-        <ownedComment xmi:id="_NhYCruLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64592BE3A0349">
-          <body>Pointer to information about medication(s) which the patient reports to be using.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NhhzouLiEduGJrQyRGTO1A" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NhhzoeLiEduGJrQyRGTO1A"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_BN3fMPaeEeCbn6MPgQ_rxg" name="pharmacyInferredDiagnosis" visibility="public" association="_BN1C8PaeEeCbn6MPgQ_rxg">
-        <ownedComment xmi:id="_PWBtYE50EeSkCZQ0odaC4w" annotatedElement="_BN3fMPaeEeCbn6MPgQ_rxg">
-          <body>Many claims require a diagnosis in order to be adjudicated, especially in workers compensation situations or where multiple payers are involved.  In those cases and where the pharmacy does not have a diagnosis supplied by the prescriber, the pharmacy may infer a diagnosis based on the medication or services ordered.  See field 6813 of the NCPDP SCRIPT DRU segment.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#_e4dl4AgVEd6eWYJXJewDdQ?FHIM/Common/DiagnosisListEntry?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BN4tUPaeEeCbn6MPgQ_rxg" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BN4GQPaeEeCbn6MPgQ_rxg"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_afl3UXpgEd-44ra0dfiJCw" name="pharmacy" visibility="public" association="_afl3UHpgEd-44ra0dfiJCw">
-        <ownedComment xmi:id="_e7T0sHpgEd-44ra0dfiJCw" annotatedElement="_afl3UXpgEd-44ra0dfiJCw">
-          <body>&quot;Specifies the pharmacy that will dispense or has dispensed the prescription.&quot; - HL7 Version 2.8, RXO-32.&#xD;
-&quot;Specifies the address of the dispensing facility.&quot; - HL7 Version 2.8, RXO-33.&#xD;
-&quot;Contains the telecommunication contact information for the pharmacy.&quot; - HL7 Version 2.8, RXO-36.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64575B75903D9?FHIM/Provider/Pharmacy?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_afl3U3pgEd-44ra0dfiJCw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_afl3UnpgEd-44ra0dfiJCw" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_UxG2oNNbEeGRnPi2MLPE0g" name="pharmacyGeneratedOrderModification" visibility="public" type="_CtWV8PaTEeCbn6MPgQ_rxg" association="_UxDMQNNbEeGRnPi2MLPE0g">
-        <ownedComment xmi:id="_yOL74E5wEeSkCZQ0odaC4w" annotatedElement="_UxG2oNNbEeGRnPi2MLPE0g">
-          <body>Pointer to information concerning any changes made to the original order by the pharmacist.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UxIEwNNbEeGRnPi2MLPE0g" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UxHdsNNbEeGRnPi2MLPE0g"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_eIc3YHLqEeaOoaRAWXA_qQ" name="promisedItem" visibility="public" association="_eITtcHLqEeaOoaRAWXA_qQ">
-        <ownedComment xmi:id="_O9alsHLsEeaOoaRAWXA_qQ" annotatedElement="_eIc3YHLqEeaOoaRAWXA_qQ">
-          <body>Pointer to the medication or pharmacy-stocked item that the Pharmacy has agreed to supply to the Patient. This will normally be the same as the one ordered by the prescriber, but may be different under certain pre-defined conditions. For example, the provider may have ordered a brand-name drug, but indicated that a generic substitution is authorized, and the pharmacy may have substituted a generic drug. Other situations include changes due to inventory at hand, for example the prescriber may have ordered 10 mg tablets, but only 5 mg tablets were available.&#xD;
-&quot;Identifies the medical substance or treatment that has been ordered to be given to the patient, as encoded by the pharmacy or treatment supplier&quot; - HL7 Version 2.8, RXE-2.&#xD;
-&quot;This field accommodates the identification of any codes that might be associated with the pharmaceutical substance. Common codes include: the Generic Product Identifier (GPI), Generic Code Number_Sequence Number (GCN_SEQNO), National Drug Code (NDC).&quot; - HL7 Version 2.8, RXE-31.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="CommonProduct.efx#_420A62FD03B6426545CB0072?FHIM/CommonProduct/OrderablePharmacyItem?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eIc3YnLqEeaOoaRAWXA_qQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eIc3YXLqEeaOoaRAWXA_qQ" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_HwvEccd5EeCVr54V6VtSNQ" name="returnToStock" visibility="public" type="_wwMFEKDYEeC1WJi4dBiHRA" association="_HwvEcMd5EeCVr54V6VtSNQ">
-        <ownedComment xmi:id="_WSeeEEqCEeSqlerh7YvyAA" annotatedElement="_HwvEccd5EeCVr54V6VtSNQ">
-          <body>Pointer to information about the reversal of a provision of a medication to a patient or care provider under the authority of the owning Pharmacy Promise.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HwvEc8d5EeCVr54V6VtSNQ" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HwvEcsd5EeCVr54V6VtSNQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_Zu294OGsEeaHnLXha23s2A" name="finisher" visibility="public">
-        <ownedComment xmi:id="_Zu294eGsEeaHnLXha23s2A" annotatedElement="_Zu294OGsEeaHnLXha23s2A">
-          <body>A pharmacy personnel who reviews the order and makes any required changes that are allowed under the usual and customary boundaries. The end result of this activity is an order that can be fulfilled. This role also called verifier, or perfecter.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zu294uGsEeaHnLXha23s2A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zu294-GsEeaHnLXha23s2A"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B641B4BE0F00E3" name="PatientReportedMedication">
@@ -3249,6 +3269,7 @@ Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requ
           <body>Pointer to the Service Delivery Location to which the medication was directed. In other words, this property indicates the location of patient so that the medication is sent to the correct location.&#xD;
 &quot;Identification of the facility/location where the medication was shipped to, as part of the dispense event.&quot; - HL7 FHIR, MedicationDispense.destination</body>
         </ownedComment>
+        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cE7xcsNyEei8IJ7C73qKZA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cE7xc8NyEei8IJ7C73qKZA"/>
       </ownedAttribute>
@@ -3282,6 +3303,22 @@ Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requ
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1cPjYFtDEeaxDokgI-Y3eA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1cO8UFtDEeaxDokgI-Y3eA"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_KTMWMMTHEeiX_7Zz4t6LYQ" name="deliverTo" visibility="public">
+        <ownedComment xmi:id="_KTMWMcTHEeiX_7Zz4t6LYQ" annotatedElement="_KTMWMMTHEeiX_7Zz4t6LYQ">
+          <body>Pointer to the clinical provider or agency to which the mediction will be delivered.  Added 3/18/2015 to handle the designation in the order of a specialty drug of the provider which should receive for example.  For example, an IV medication would not be sent to the patient's home but to the home infusion agency that will administer the medication.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Provider.efx#_aW26cBsbEd--ZY2-pbJ-Pw?FHIM/Provider/HealthcareProvider?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KTMWMsTHEeiX_7Zz4t6LYQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KTMWM8THEeiX_7Zz4t6LYQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_PcOkgMNyEei8IJ7C73qKZA" name="deliverToLocation" visibility="public">
+        <ownedComment xmi:id="_PcOkgcNyEei8IJ7C73qKZA" annotatedElement="_PcOkgMNyEei8IJ7C73qKZA">
+          <body>&quot;Specifies the location of the patient to whom the pharmaceutical substance is to be delivered.&quot; - HL7 Version 2.8, RXO-34.&#xD;
+&quot;Specifies the address, either mailing or physical, to which the prescription should be mailed or delivered.&quot; - HL7 Version 2.8, RXO-35.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PcOkgsNyEei8IJ7C73qKZA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PcOkg8NyEei8IJ7C73qKZA"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6427039C90006" name="dispensingInstructions" visibility="public">
         <ownedComment xmi:id="_NIMtpOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6427039C90006">
           <body>&quot;Identifies the ordering provider's instructions to the pharmacy or the non-pharmacy treatment provider (e.g., respiratory therapy).&quot; - HL7 Version 2.8, RXO-6.</body>
@@ -3289,6 +3326,24 @@ Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requ
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5fhZkIkOEd-lPoUWU4L5Vw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5fXokIkOEd-lPoUWU4L5Vw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_IbCL4XLuEeaOoaRAWXA_qQ" name="dosage" visibility="public" type="_HqoJ8HE-EeaIzczSuyGEmQ" association="_IbCL4HLuEeaOoaRAWXA_qQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IbCL43LuEeaOoaRAWXA_qQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IbCL4nLuEeaOoaRAWXA_qQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NgioUCf2EeC-JKXSDMHR6A" name="drugCoverageStatus" visibility="public" type="_L_H44Cf2EeC-JKXSDMHR6A" association="_NggMECf2EeC-JKXSDMHR6A">
+        <ownedComment xmi:id="_NOQwoE5pEeSkCZQ0odaC4w" annotatedElement="_NgioUCf2EeC-JKXSDMHR6A">
+          <body>Pointer to a set of (zero to many) coverage statuses for the prescribed drug.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NgkdgSf2EeC-JKXSDMHR6A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NgkdgCf2EeC-JKXSDMHR6A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3LduYBd7EeC9Abp3tFVARg" name="drugUseEvaluation" visibility="public" type="_ItpdgAMJEeC6TLUcQZx_GQ" association="_3LbSIBd7EeC9Abp3tFVARg">
+        <ownedComment xmi:id="__xk6UE5uEeSkCZQ0odaC4w" annotatedElement="_3LduYBd7EeC9Abp3tFVARg">
+          <body>Pointer to the results of a Drug Use Evaluation (DUE) or a Drug Utilization Review (DUR).</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3Le8gBd7EeC9Abp3tFVARg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3LeVcBd7EeC9Abp3tFVARg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6427039C90038" name="expirationDate" visibility="public">
         <ownedComment xmi:id="_NIV3leLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6427039C90038">
@@ -3314,6 +3369,16 @@ Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requ
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AzUJkqMxEeSjK-UNpoDZuQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AzUJk6MxEeSjK-UNpoDZuQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TcfcMNEuEeG6d5ozG3gSdw" name="indication" visibility="public" association="_TcDXUNEuEeG6d5ozG3gSdw">
+        <ownedComment xmi:id="_UkowANEuEeG6d5ozG3gSdw" annotatedElement="_TcfcMNEuEeG6d5ozG3gSdw">
+          <body>&quot;Identifies the condition or problem for which the drug/treatment was prescribed.&quot; - HL7 Version 2.8, RXO-20.&#xD;
+&quot;Contains the identifier of the condition or problem for which the drug/treatment was prescribed.  May repeat if multiple indications are relevant.&quot; - HL7 Version 2.8, RXD-21.&#xD;
+&quot;Can be the reason or the indication for writing the prescription.&quot; - HL7 FHIR, MedicationOrder.reasonCode</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#_r6v0YIsdEeGv9r5ZNThaOw?FHIM/Common/Indication?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TcjtoNEuEeG6d5ozG3gSdw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TcjGkNEuEeG6d5ozG3gSdw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6427039C9006A" name="intendedDuration" visibility="public">
         <ownedComment xmi:id="_NIfokuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6427039C9006A">
@@ -3355,11 +3420,23 @@ Indicates whether &quot;the pharmacist or non-pharmacist treatment supplier fill
           <body>&quot;Defines the number of times the requested dispense amount can be given to the patient, subject to local regulation. Refers to outpatient only.&quot; - HL7 Version 2.8, RXO-13.&#xD;
 &quot;The total original number of refills.  Outpatient only&quot; - HL7 Version 2.8, RXE-12.&#xD;
 &quot;An integer indicating the number of times, in addition to the original dispense, (aka refills or repeats) that the patient can receive the prescribed medication. Usage Notes: This integer does NOT include the original order dispense. This means that if an order indicates dispense 30 tablets plus &quot;3 repeats&quot;, then the order can be dispensed a total of 4 times and the patient can receive a total of 120 tablets.&quot; - HL7 FHIR, MedicationOrder.dispenseRequest.numberOfRepeatsAllowed&#xD;
-&quot;Number of refills authorized by the prescriber.&quot; - NCPDP Telecommunication (Field 415-DF, Data Dictionary 201104).  Note that while the NCPDP Telecommunication structure treats this field as a code, it contains a number from 0-99, where zero means no refills authorized, and 1-98 are the number of refills authorized, and 99 means unlimited refills authorized.</body>
+&quot;Number of refills authorized by the prescriber.&quot; - NCPDP Telecommunication (Field 415-DF, Data Dictionary 201104).  Note that while the NCPDP Telecommunication structure treats this field as a code, it contains a number from 0-99, where zero means no refills authorized, and 1-98 are the number of refills authorized, and 99 means unlimited refills authorized.&#xD;
+&quot;The number of refills authorized by the prescriber.&quot; - ASAP Standard for PDMP, DSP04: Refills Authorized</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Hi3CMMuQEeGZENvAz6pEGw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hi1NAMuQEeGZENvAz6pEGw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_otOpYYnEEd-_v4Q8joL6LQ" name="orderedItem" visibility="public" association="_otOpYInEEd-_v4Q8joL6LQ">
+        <ownedComment xmi:id="_8rxoIMrEEeG4_uv2Hb_AVQ" annotatedElement="_otOpYYnEEd-_v4Q8joL6LQ">
+          <body>Pointer to the medication or pharmacy-stocked item that the prescribing clinician has ordered to be supplied to the Patient.&#xD;
+&quot;Identifies the treatment product or treatment ordered to be given to the patient.... Examples ... include medications and certain devices or supplies, e.g., inhaler spacers, blood glucose monitors, syringes, infusion sets, which might require prescription.&quot; - HL7 Version 2.8, RXO-1.&#xD;
+&quot;This field accommodates the identification of any codes that might be associated with the pharmaceutical substance. Common codes include: the Generic Product Identifier (GPI), Generic Code Number_Sequence Number (GCN_SEQNO), National Drug Code (NDC).&quot; - HL7 Version 2.8, RXO-24.&#xD;
+&quot;Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications.&quot; - HL7 FHIR, MedicationRequest.medication</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="CommonProduct.efx#_420A62FD03B6426545CB0072?FHIM/CommonProduct/OrderablePharmacyItem?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_otOpY4nEEd-_v4Q8joL6LQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_otOpYonEEd-_v4Q8joL6LQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_L9m8UCf-EeC-JKXSDMHR6A" name="patientInstructions" visibility="public">
         <eAnnotations xmi:id="_L9m8USf-EeC-JKXSDMHR6A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -3373,6 +3450,16 @@ Indicates whether &quot;the pharmacist or non-pharmacist treatment supplier fill
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L9m8Uyf-EeC-JKXSDMHR6A" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L9m8VCf-EeC-JKXSDMHR6A"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_BcvVQNEyEeG6d5ozG3gSdw" name="pharmacy" visibility="public" association="_Bcs5ANEyEeG6d5ozG3gSdw">
+        <ownedComment xmi:id="_EOXvYNEyEeG6d5ozG3gSdw" annotatedElement="_BcvVQNEyEeG6d5ozG3gSdw">
+          <body>&quot;Specifies the pharmacy that will dispense or has dispensed the prescription.&quot; - HL7 Version 2.8, RXO-32.&#xD;
+&quot;Specifies the address of the dispensing facility.&quot; - HL7 Version 2.8, RXO-33.&#xD;
+&quot;Contains the telecommunication contact information for the pharmacy.&quot; - HL7 Version 2.8, RXO-36.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64575B75903D9?FHIM/Provider/Pharmacy?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Bcv8UdEyEeG6d5ozG3gSdw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bcv8UNEyEeG6d5ozG3gSdw"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_Yz7RYL2aEeG_PZtvUC92nw" name="pharmacyOrderCategory" visibility="public">
         <ownedComment xmi:id="_5RK_0L2aEeG_PZtvUC92nw" annotatedElement="_Yz7RYL2aEeG_PZtvUC92nw">
           <body>This optional property is used to group related medication orders. It is included for compatibility with HL7 version 2.&#xD;
@@ -3384,11 +3471,37 @@ Indicates whether &quot;the pharmacist or non-pharmacist treatment supplier fill
       </ownedAttribute>
       <ownedAttribute xmi:id="_-t2t8HOHEeaZZ59GOtQfLA" name="pharmacyOrderSetting" visibility="public">
         <ownedComment xmi:id="_TWTYoHOIEeaZZ59GOtQfLA" annotatedElement="_-t2t8HOHEeaZZ59GOtQfLA">
-          <body>&quot;Indicates where type of medication order and where the medication is expected to be consumed or administered.&quot; - HL7 FHIR, MedicationOrder.category  Possible values include: Inpatient, Outpatient, Community</body>
+          <body>&quot;Indicates where type of medication order and where the medication is expected to be consumed or administered.&quot; - HL7 FHIR, MedicationOrder.category. Possible values include: Inpatient, Outpatient, Community&#xD;
+&quot;Code indicating how the pharmacy received the prescription&quot; - ASAP Standard for PDMP, DSP12: Transmission Form of Rx Origin Code. Possible values include: Written Prescription; Telephone Prescription; Telephone Emergency Prescription; Fax Prescription; Electronic Prescription; Transferred/Forwarded Rx; Other</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VJOu0XOIEeaZZ59GOtQfLA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VJOu0HOIEeaZZ59GOtQfLA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vH4qkOGkEeaHnLXha23s2A" name="prescriberAgent" visibility="public">
+        <ownedComment xmi:id="_7HP_kOGkEeaHnLXha23s2A" annotatedElement="_vH4qkOGkEeaHnLXha23s2A">
+          <body>A person who has been designated to act on behalf of the prescriber.  For example, a physician's assistant may be authorized to telephonically authorize refill requests for the prescriber.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zBv4EeGkEeaHnLXha23s2A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zBv4EOGkEeaHnLXha23s2A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_6Q1WIBd2EeC9Abp3tFVARg" name="priorAuthorization" visibility="public" association="_6Qy54Bd2EeC9Abp3tFVARg">
+        <ownedComment xmi:id="_5ZzS8E79EeSJI4YBId-MmA" annotatedElement="_6Q1WIBd2EeC9Abp3tFVARg">
+          <body>Pointer to information concerning a prior authorization already issued by a payer.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="EnrollEligCOB.efx#_07EAwBd1EeC9Abp3tFVARg?FHIM/EnrollEligCOB/PriorAuthorization?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Q3LUBd2EeC9Abp3tFVARg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Q2kQBd2EeC9Abp3tFVARg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_5SagsOGrEeaHnLXha23s2A" name="supervisor" visibility="public">
+        <ownedComment xmi:id="_5SagseGrEeaHnLXha23s2A" annotatedElement="_5SagsOGrEeaHnLXha23s2A">
+          <body>&quot;Supervisor information may be needed based upon state law. A supervisor is the supervising physician under whose authority the prescription is being prescribed by the primary care provider.&quot; - NCPDP Script, PVD Segment&#xD;
+Pointer to the person who is managerially responsible for the prescriber. Usually used in long-term care settings.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5SagsuGrEeaHnLXha23s2A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5Sags-GrEeaHnLXha23s2A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6431E057801C3" name="_startDate" visibility="public">
         <ownedComment xmi:id="_Nc6Za-LiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6431E057801C3">
@@ -3406,96 +3519,6 @@ Indicates whether &quot;the pharmacist or non-pharmacist treatment supplier fill
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9R_PEbzUEeasQoRN2Ou_5g" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9R_PELzUEeasQoRN2Ou_5g"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_NgioUCf2EeC-JKXSDMHR6A" name="drugCoverageStatus" visibility="public" type="_L_H44Cf2EeC-JKXSDMHR6A" association="_NggMECf2EeC-JKXSDMHR6A">
-        <ownedComment xmi:id="_NOQwoE5pEeSkCZQ0odaC4w" annotatedElement="_NgioUCf2EeC-JKXSDMHR6A">
-          <body>Pointer to a set of (zero to many) coverage statuses for the prescribed drug.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NgkdgSf2EeC-JKXSDMHR6A" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NgkdgCf2EeC-JKXSDMHR6A"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_3LduYBd7EeC9Abp3tFVARg" name="drugUseEvaluation" visibility="public" type="_ItpdgAMJEeC6TLUcQZx_GQ" association="_3LbSIBd7EeC9Abp3tFVARg">
-        <ownedComment xmi:id="__xk6UE5uEeSkCZQ0odaC4w" annotatedElement="_3LduYBd7EeC9Abp3tFVARg">
-          <body>Pointer to the results of a Drug Use Evaluation (DUE) or a Drug Utilization Review (DUR).</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3Le8gBd7EeC9Abp3tFVARg" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3LeVcBd7EeC9Abp3tFVARg"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_otOpYYnEEd-_v4Q8joL6LQ" name="orderedItem" visibility="public" association="_otOpYInEEd-_v4Q8joL6LQ">
-        <ownedComment xmi:id="_8rxoIMrEEeG4_uv2Hb_AVQ" annotatedElement="_otOpYYnEEd-_v4Q8joL6LQ">
-          <body>Pointer to the medication or pharmacy-stocked item that the prescribing clinician has ordered to be supplied to the Patient.&#xD;
-&quot;Identifies the treatment product or treatment ordered to be given to the patient.... Examples ... include medications and certain devices or supplies, e.g., inhaler spacers, blood glucose monitors, syringes, infusion sets, which might require prescription.&quot; - HL7 Version 2.8, RXO-1.&#xD;
-&quot;This field accommodates the identification of any codes that might be associated with the pharmaceutical substance. Common codes include: the Generic Product Identifier (GPI), Generic Code Number_Sequence Number (GCN_SEQNO), National Drug Code (NDC).&quot; - HL7 Version 2.8, RXO-24.&#xD;
-&quot;Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications.&quot; - HL7 FHIR, MedicationRequest.medication</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="CommonProduct.efx#_420A62FD03B6426545CB0072?FHIM/CommonProduct/OrderablePharmacyItem?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_otOpY4nEEd-_v4Q8joL6LQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_otOpYonEEd-_v4Q8joL6LQ" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_6Q1WIBd2EeC9Abp3tFVARg" name="priorAuthorization" visibility="public" association="_6Qy54Bd2EeC9Abp3tFVARg">
-        <ownedComment xmi:id="_5ZzS8E79EeSJI4YBId-MmA" annotatedElement="_6Q1WIBd2EeC9Abp3tFVARg">
-          <body>Pointer to information concerning a prior authorization already issued by a payer.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="EnrollEligCOB.efx#_07EAwBd1EeC9Abp3tFVARg?FHIM/EnrollEligCOB/PriorAuthorization?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Q3LUBd2EeC9Abp3tFVARg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Q2kQBd2EeC9Abp3tFVARg"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_TcfcMNEuEeG6d5ozG3gSdw" name="indication" visibility="public" association="_TcDXUNEuEeG6d5ozG3gSdw">
-        <ownedComment xmi:id="_UkowANEuEeG6d5ozG3gSdw" annotatedElement="_TcfcMNEuEeG6d5ozG3gSdw">
-          <body>&quot;Identifies the condition or problem for which the drug/treatment was prescribed.&quot; - HL7 Version 2.8, RXO-20.&#xD;
-&quot;Contains the identifier of the condition or problem for which the drug/treatment was prescribed.  May repeat if multiple indications are relevant.&quot; - HL7 Version 2.8, RXD-21.&#xD;
-&quot;Can be the reason or the indication for writing the prescription.&quot; - HL7 FHIR, MedicationOrder.reasonCode</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#_r6v0YIsdEeGv9r5ZNThaOw?FHIM/Common/Indication?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TcjtoNEuEeG6d5ozG3gSdw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TcjGkNEuEeG6d5ozG3gSdw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_BcvVQNEyEeG6d5ozG3gSdw" name="pharmacy" visibility="public" association="_Bcs5ANEyEeG6d5ozG3gSdw">
-        <ownedComment xmi:id="_EOXvYNEyEeG6d5ozG3gSdw" annotatedElement="_BcvVQNEyEeG6d5ozG3gSdw">
-          <body>&quot;Specifies the pharmacy that will dispense or has dispensed the prescription.&quot; - HL7 Version 2.8, RXO-32.&#xD;
-&quot;Specifies the address of the dispensing facility.&quot; - HL7 Version 2.8, RXO-33.&#xD;
-&quot;Contains the telecommunication contact information for the pharmacy.&quot; - HL7 Version 2.8, RXO-36.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64575B75903D9?FHIM/Provider/Pharmacy?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Bcv8UdEyEeG6d5ozG3gSdw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bcv8UNEyEeG6d5ozG3gSdw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_vH4qkOGkEeaHnLXha23s2A" name="prescriberAgent" visibility="public">
-        <ownedComment xmi:id="_7HP_kOGkEeaHnLXha23s2A" annotatedElement="_vH4qkOGkEeaHnLXha23s2A">
-          <body>A person who has been designated to act on behalf of the prescriber.  For example, a physician's assistant may be authorized to telephonically authorize refill requests for the prescriber.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zBv4EeGkEeaHnLXha23s2A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zBv4EOGkEeaHnLXha23s2A"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_IbCL4XLuEeaOoaRAWXA_qQ" name="dosage" visibility="public" type="_HqoJ8HE-EeaIzczSuyGEmQ" association="_IbCL4HLuEeaOoaRAWXA_qQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IbCL43LuEeaOoaRAWXA_qQ" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IbCL4nLuEeaOoaRAWXA_qQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_5SagsOGrEeaHnLXha23s2A" name="supervisor" visibility="public">
-        <ownedComment xmi:id="_5SagseGrEeaHnLXha23s2A" annotatedElement="_5SagsOGrEeaHnLXha23s2A">
-          <body>&quot;Supervisor information may be needed based upon state law. A supervisor is the supervising physician under whose authority the prescription is being prescribed by the primary care provider.&quot; - NCPDP Script, PVD Segment&#xD;
-Pointer to the person who is managerially responsible for the prescriber. Usually used in long-term care settings.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5SagsuGrEeaHnLXha23s2A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5Sags-GrEeaHnLXha23s2A"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_PcOkgMNyEei8IJ7C73qKZA" name="deliverToLocation" visibility="public">
-        <ownedComment xmi:id="_PcOkgcNyEei8IJ7C73qKZA" annotatedElement="_PcOkgMNyEei8IJ7C73qKZA">
-          <body>&quot;Specifies the location of the patient to whom the pharmaceutical substance is to be delivered.&quot; - HL7 Version 2.8, RXO-34.&#xD;
-&quot;Specifies the address, either mailing or physical, to which the prescription should be mailed or delivered.&quot; - HL7 Version 2.8, RXO-35.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PcOkgsNyEei8IJ7C73qKZA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PcOkg8NyEei8IJ7C73qKZA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_KTMWMMTHEeiX_7Zz4t6LYQ" name="deliverTo" visibility="public">
-        <ownedComment xmi:id="_KTMWMcTHEeiX_7Zz4t6LYQ" annotatedElement="_KTMWMMTHEeiX_7Zz4t6LYQ">
-          <body>Pointer to the clinical provider or agency to which the mediction will be delivered.  Added 3/18/2015 to handle the designation in the order of a specialty drug of the provider which should receive for example.  For example, an IV medication would not be sent to the patient's home but to the home infusion agency that will administer the medication.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_aW26cBsbEd--ZY2-pbJ-Pw?FHIM/Provider/HealthcareProvider?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KTMWMsTHEeiX_7Zz4t6LYQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KTMWM8THEeiX_7Zz4t6LYQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B64592CB8B0303" name="InfusionPromise" clientDependency="_uECmgPVYEeWSF-Rwv3QnNw">
@@ -3987,7 +4010,9 @@ Note that neither NCPDP SCRIPT nor NCPDP Telecom contain this information direct
 &quot;Indicates the units for the give amount.&quot; - HL7 Version 2.8, RXO-4.&#xD;
 &quot;Amount of medication per dose.&quot; - HL7 FHIR, Dosage.dose[x]&#xD;
 &quot;The quantity of vaccine product that was administered.&quot; - HL7 FHIR, Immunization.doseQuantity&#xD;
-&quot;The amount of the medication given at one administration event. Use this value when the administration is essentially an instantaneous event such as a swallowing a tablet or giving an injection.&quot; - HL7 FHIR, MedicationAdministration.dosage.dose</body>
+&quot;The amount of the medication given at one administration event. Use this value when the administration is essentially an instantaneous event such as a swallowing a tablet or giving an injection.&quot; - HL7 FHIR, MedicationAdministration.dosage.dose&#xD;
+&quot;Dose of a given mediation, as dispensed.&quot; - PCORnet Common Data Model, Dispensing.Dispense_Dose_Disp.&#xD;
+&quot;Units of measure associated with the dose of the medication as dispensed.&quot; - PCORnet Common Data Model, Dispensing.Dispense_Dose_Disp_Unit.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F63021A?FHIM/Datatypes/PhysicalQuantityInterval?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9ZOU8bzTEeasQoRN2Ou_5g" value="1"/>
@@ -4070,7 +4095,8 @@ Indicates the form of the material making up a single dose (as opposed to how th
 &quot;The method of introducing the therapeutic material into or onto the subject.&quot; - HL7 Version 3&#xD;
 &quot;How drug should enter body.&quot; - HL7 FHIR, Dosage.route&#xD;
 &quot;The path by which the vaccine product is taken into the body.&quot; - HL7 FHIR, Immunization.route&#xD;
-&quot;A code specifying the route or physiological path of administration of a therapeutic agent into or onto the patient. For example, topical, intravenous, etc.&quot; - HL7 FHIR, MedicationAdministration.dosage.route</body>
+&quot;A code specifying the route or physiological path of administration of a therapeutic agent into or onto the patient. For example, topical, intravenous, etc.&quot; - HL7 FHIR, MedicationAdministration.dosage.route&#xD;
+&quot;Route of delivery&quot; - PCORnet Common Data Model, Dispensing.Dispense_Route.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CzI_8bzUEeasQoRN2Ou_5g" value="1"/>
@@ -4290,4 +4316,5 @@ Indicates the form of the material making up a single dose (as opposed to how th
   <Default:Documentation xmi:id="_Xl-GlORSEei4Ov8Ehaq7-w" base_Comment="_Xl-GkeRSEei4Ov8Ehaq7-w"/>
   <Default:Documentation xmi:id="_nQ1c9ORSEei4Ov8Ehaq7-w" base_Comment="_nQ1c8eRSEei4Ov8Ehaq7-w"/>
   <Default:Documentation xmi:id="_zRaS5ORSEei4Ov8Ehaq7-w" base_Comment="_zRaS4eRSEei4Ov8Ehaq7-w"/>
+  <Default:Documentation xmi:id="_orik8Dx5Eemr2oDdJO-yUA" base_Comment="_orLYkDx5Eemr2oDdJO-yUA"/>
 </xmi:XMI>

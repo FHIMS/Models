@@ -617,7 +617,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_8l5fJjKfEeidlpJU2TuLzA" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_8l5fJzKfEeidlpJU2TuLzA" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_8l5fKDKfEeidlpJU2TuLzA" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8lvuIjKfEeidlpJU2TuLzA" x="-2536" y="10461"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8lvuIjKfEeidlpJU2TuLzA" x="-3487" y="11412"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_-ft1kDn0EeiefcoRQJXpFA" element="_x5t_MDnEEeily54_XzrISg" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_-ft1kjn0EeiefcoRQJXpFA" type="ImageCompartment">
@@ -2650,14 +2650,14 @@ Key concept here is that these are audit-trail type information about who did so
       <body>Used ONLY when the subject of information is DIFFERENT than the Patient (or is NOT a Patient (e.g., a sample of pond water)).</body>
     </ownedComment>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_zpQTQGQyEeODL8RnVGcWEw" name="Act Instance Status">
-      <ownedLiteral xmi:id="_WIH7MGQzEeODL8RnVGcWEw" name="aborted"   classifier="_zpQTQGQyEeODL8RnVGcWEw"/>
-      <ownedLiteral xmi:id="_XyDtcGQzEeODL8RnVGcWEw" name="active"    classifier="_zpQTQGQyEeODL8RnVGcWEw"/>
+      <ownedLiteral xmi:id="_WIH7MGQzEeODL8RnVGcWEw" name="aborted" classifier="_zpQTQGQyEeODL8RnVGcWEw"/>
+      <ownedLiteral xmi:id="_XyDtcGQzEeODL8RnVGcWEw" name="active" classifier="_zpQTQGQyEeODL8RnVGcWEw"/>
       <ownedLiteral xmi:id="_aGE-gGQzEeODL8RnVGcWEw" name="cancelled" classifier="_zpQTQGQyEeODL8RnVGcWEw"/>
       <ownedLiteral xmi:id="_bdTQIGQzEeODL8RnVGcWEw" name="completed" classifier="_zpQTQGQyEeODL8RnVGcWEw"/>
-      <ownedLiteral xmi:id="_keY2IGQzEeODL8RnVGcWEw" name="held"      classifier="_zpQTQGQyEeODL8RnVGcWEw"/>
-      <ownedLiteral xmi:id="_llH0sGQzEeODL8RnVGcWEw" name="new"       classifier="_zpQTQGQyEeODL8RnVGcWEw"/>
+      <ownedLiteral xmi:id="_keY2IGQzEeODL8RnVGcWEw" name="held" classifier="_zpQTQGQyEeODL8RnVGcWEw"/>
+      <ownedLiteral xmi:id="_llH0sGQzEeODL8RnVGcWEw" name="new" classifier="_zpQTQGQyEeODL8RnVGcWEw"/>
       <ownedLiteral xmi:id="_nsw2oGQzEeODL8RnVGcWEw" name="nullified" classifier="_zpQTQGQyEeODL8RnVGcWEw"/>
-      <ownedLiteral xmi:id="_pkqzcGQzEeODL8RnVGcWEw" name="obsolete"  classifier="_zpQTQGQyEeODL8RnVGcWEw"/>
+      <ownedLiteral xmi:id="_pkqzcGQzEeODL8RnVGcWEw" name="obsolete" classifier="_zpQTQGQyEeODL8RnVGcWEw"/>
       <ownedLiteral xmi:id="_saB3AGQzEeODL8RnVGcWEw" name="suspended" classifier="_zpQTQGQyEeODL8RnVGcWEw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_uXEAcPCHEeWoT_0zIvvImQ" name="BodySiteLaterality">
@@ -3129,7 +3129,8 @@ Note that because all we need is the Person's name and contact information (name
           <body>This property categorizes the source of the clinically relevant information. This categorization provides an indication of the trustworthiness of the information. For example, a Practitioner might place a higher degree of confidence in information provided by another Practitioner over information provide by a Patient's relative. Possible values include: Patient, Patient Guardian, Other Practitioner, Records Review, Clinical Evidence, etc. When the information source is someone other than the Author of the record (i.e., the Practitioner who &quot;owns&quot; the record, or the Patient, the name of that Person may be recorded in the Information Reporter class. Note that in VistA, this concept is generally called Observed if observed by a clinician, or Historical if patient-reported.&#xD;
 &#xD;
 &quot;The source of the data when the report of the immunization event is not based on information from the person who administered the vaccine.&quot; - HL7 FHIR, Immunization.reportOrigin&#xD;
-&quot;The person or organization that provided the information about the taking of this medication. Note: Use derivedFrom when a MedicationStatement is derived from other resources, e.g. Claim or MedicationRequest.&quot; - HL7 FHIR, MedicationStatement.informationSource</body>
+&quot;The person or organization that provided the information about the taking of this medication. Note: Use derivedFrom when a MedicationStatement is derived from other resources, e.g. Claim or MedicationRequest.&quot; - HL7 FHIR, MedicationStatement.informationSource&#xD;
+&quot;Please note: The Patient-reported category can include reporting by patient's family or guardian.&quot; - PCORnet Common Data Model, Vital.Vital_Source. Possible values include: Patient-reported; Patient device direct feed; Healthcare delivery setting; Healthcare device direct feed; No information; Unknown; Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VuliobyaEea_DaXmJ278Kw" value="1"/>
@@ -3576,7 +3577,8 @@ Verifying Calibrator, used for periodic calibration checks.</body>
         <ownedComment xmi:id="_h9SsgPGUEd-ZlYn0p4HjQw" annotatedElement="_kdpFsAgVEd6eWYJXJewDdQ">
           <body>Provides an indication of whether the diagnosis is primary, secondary, tertiary, etc.&#xD;
 &quot;Ranking of the diagnosis (for each role type).&quot; - HL7 FHIR, Encounter.diagnosis.rank&#xD;
-&quot;Sequence of diagnosis which serves to provide a link.&quot; - HL7 FHIR, Claim.diagnosis.sequence</body>
+&quot;Sequence of diagnosis which serves to provide a link.&quot; - HL7 FHIR, Claim.diagnosis.sequence&#xD;
+&quot;Principal discharge diagnosis flag.&quot; - PCORnet Common Data Model, Encounter.PDX. Possible values include: Principal; Secondary; No information; Unknown; Other.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b2mCsbyaEea_DaXmJ278Kw" value="1"/>
@@ -3613,7 +3615,9 @@ Verifying Calibrator, used for periodic calibration checks.</body>
 Contains a code indicating a procedure or a non-procedural event involving the patient. This code could come from various coding systems; typically the Common Procedure Terminology (CPT) is used, but other coding systems might be employed, especially to capture workload-related data.&#xD;
 &quot;The specific procedure that is performed. Use text if the exact nature of the procedure cannot be coded (e.g. &quot;Laparoscopic Appendectomy&quot;).&quot; - HL7 FHIR, Procedure.code&#xD;
 The name of the principal procedure for this surgical case. All cases must have a principal procedure. [FileMan 130,26]&#xD;
-The Current Procedural Terminology (CPT) code corresponding with the planned principal surgical procedure. [FileMan 130,27]</body>
+The Current Procedural Terminology (CPT) code corresponding with the planned principal surgical procedure. [FileMan 130,27]&#xD;
+&quot;Procedure code.&quot; - PCORnet Common Data Model, Procedures_PX.&#xD;
+&quot;Procedure code type.&quot; - PCORnet Common Data Model, Procedures_PX_Type. Possible values include: ICD-9-CM; ICD-10-PCS; ICD-11-PCS; CPT; HCPCS; LOINC; NDC; Revenue; No information; Unknown; Other. Note that in the FHIM, this is built in to the Code data type.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sYUIkbyaEea_DaXmJ278Kw" value="*"/>
@@ -3800,7 +3804,8 @@ The Current Procedural Terminology (CPT) code modifier(s) corresponding with the
 29308-4  Diagnosis (used for Encounter Diagnosis template)&#xD;
 10219-4  Preoperative Diagnosis&#xD;
 10218-6  Postoperative Diagnosis&#xD;
-&quot;Role that this diagnosis has within the encounter (e.g. admission, billing, discharge …).&quot; - HL7 FHIR, Encounter.diagnosis.role</body>
+&quot;Role that this diagnosis has within the encounter (e.g. admission, billing, discharge …).&quot; - HL7 FHIR, Encounter.diagnosis.role&#xD;
+&quot;Classification of diagnosis source.&quot; - PCORnet Common Data Model, Encounter.DX_Source. Possible values include: Admitting; Discharge; Final; Interim; No information; Unknown; Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_45UnELxhEeSyBtXdDFDzRA" value="1"/>
@@ -3810,7 +3815,9 @@ The Current Procedural Terminology (CPT) code modifier(s) corresponding with the
         <ownedComment xmi:id="_M_w_IPGTEd-ZlYn0p4HjQw" annotatedElement="_420A62FD03B64240710C0054">
           <body>Contains a code that most closely identifies the condition or the diagnosis. This code will come from one of several  commonly used coding systems, depending on the branch of medicine involved (e.g., clinical medicine, dentistry, mental  health), and on the purpose (e.g., clinical, billing). The code will likely come from one of the following:  Structured Nomenclature for Medicine (SNOMED), International Classifications of Diseases (ICD), Diagnostic and Statistical  Manual of Mental Disorders (DSM).&#xD;
 &quot;Reason the encounter takes place, as specified using information from another resource. For admissions, this is the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure.&quot; - HL7 FHIR, Encounter.diagnosis.condition&#xD;
-&quot;The diagnosis.&quot; - HL7 FHIR, Claim.diagnosis.diagnosis[x]. Note that FHIR can be a code or a pointer to a Condition.</body>
+&quot;The diagnosis.&quot; - HL7 FHIR, Claim.diagnosis.diagnosis[x]. Note that FHIR can be a code or a pointer to a Condition.&#xD;
+&quot;Diagnosis code.&quot; - PCORnet Common Data Model, Encounter.DX.&#xD;
+&quot;Diagnosis code type.&quot; - PCORnet Common Data Model, Encounter.DX_Type. Possible values include: ICD-9-CM; ICD-10-CM; ICD-11-CM; SNOMED-CT; No information; Unknown; Other. Note that in the FHIM, this would be known from the codeSystem of the Code datatype.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xTlWgRWAEd6k0oda9Q09hg" value="1"/>
@@ -3835,7 +3842,8 @@ The Current Procedural Terminology (CPT) code modifier(s) corresponding with the
       </ownedComment>
       <ownedAttribute xmi:id="_g73PoN3-Ed6yatlejfcw_g" name="precedence" visibility="public">
         <ownedComment xmi:id="_SUpeEBHdEeCBuOUrBnIXmQ" annotatedElement="_g73PoN3-Ed6yatlejfcw_g">
-          <body>Provides an indication of whether the procedure is primary, secondary, tertiary, etc.</body>
+          <body>Provides an indication of whether the procedure is primary, secondary, tertiary, etc.&#xD;
+&quot;Principal procedure flag.&quot; - PCORnet Common Data Model, Procedures.PPX. Possible values include: Principal; Secondary; No information; Unknown; Other.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yhV8UbyaEea_DaXmJ278Kw" value="1"/>
@@ -6852,7 +6860,8 @@ Note that this property is marked as derived as it may be calculated or may be s
 In Pharmacy Dispense, this is the unique identifier for this dispense, also known as a &quot;Fill Id&quot;. &quot;Identifier assigned by the dispensing facility - this is an identifier assigned outside FHIR.&quot; - HL7 FHIR, MedicationDispense.identifier&#xD;
 &quot;Identifiers associated with this Medication Statement that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate. They are business identifiers assigned to this resource by the performer or other systems and remain constant as the resource is updated and propagates from server to server.&quot; - HL7 FHIR, MedicationStatement.identifier&#xD;
 &quot;A unique identifier assigned to this observation.&quot; - HL7 FHIR, Observation.identifier&#xD;
-&quot;This records identifiers associated with this procedure that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot; - HL7 FHIR, Procedure.identifier</body>
+&quot;This records identifiers associated with this procedure that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot; - HL7 FHIR, Procedure.identifier&#xD;
+&quot;Serial number assigned to the prescription by the pharmacy.&quot; - ASAP Standard for PDMP, DSP02: Prescription Number</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nbH1QFaeEd6rJ7jpZ7LBFg" value="1"/>

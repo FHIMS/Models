@@ -767,7 +767,8 @@ This property redefines the inherited FindingTopic.result property so that it is
       <packagedElement xmi:type="uml:Class" xmi:id="_hGI1PmJvEee2PY0OGMs0Sw" name="BodyMassIndexFinding">
         <ownedComment xmi:id="_hGI1P2JvEee2PY0OGMs0Sw" annotatedElement="_hGI1PmJvEee2PY0OGMs0Sw">
           <body>The body mass index (BMI) is a value derived from the mass (weight) and height of an individual. The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m2, resulting from mass in kilograms and height in meters. The BMI is an attempt to quantify the amount of tissue mass (muscle, fat, and bone) in an individual, and then categorize that person as underweight, normal weight, overweight, or obese based on that value. It is noted that health risks associated with BMI differ depending on the person's race, so the definition of overweight, obese, etc. may need to be adjusted based on the patient's race. - adapted from wikipedia.&#xD;
-This class represents an Observation Clinical Statement wherein the Body Mass Index has been Evaluated, which can be used in a variety of other models as if it were a datatype.</body>
+This class represents an Observation Clinical Statement wherein the Body Mass Index has been Evaluated, which can be used in a variety of other models as if it were a datatype.&#xD;
+&quot;BMI if calculated in the source system. Decimal precision is permissible.&quot; - PCORnet Common Data Model, Vital.Original_BMI</body>
         </ownedComment>
         <ownedRule xmi:id="_ZJF1MHS_Eeiix4MStZHfGQ" name="ResultMustBePositiveAndInKG/M2">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZJF1MXS_Eeiix4MStZHfGQ">
@@ -1273,7 +1274,8 @@ This property redefines the inherited Observation.value property so that it is o
       <packagedElement xmi:type="uml:Class" xmi:id="_Z6lFD6fREeitto0cubQn1A" name="SmokingStatus_MU" clientDependency="_dMluYKfZEeitto0cubQn1A">
         <ownedComment xmi:id="_Z6lFEKfREeitto0cubQn1A" annotatedElement="_Z6lFD6fREeitto0cubQn1A">
           <body>Whether and how much the Patient smokes tobacco products. This Smoking Status observation is specific to Meaningful Use (MU), and is bound to a set of eight possible MU-prescribed answer values.&#xD;
-This class represents an Observation Clinical Statement wherein the patients smoking status has been evaluated, which can be used in a variety of other models as if it were a datatype.</body>
+This class represents an Observation Clinical Statement wherein the patients smoking status has been evaluated, which can be used in a variety of other models as if it were a datatype.&#xD;
+&quot;Indicator for any form of tobacco that is smoked.&quot; - PCORnet Common Data Model, Vital.BP_Position. Possible values include: Current every day smoker; Current some day smoker; Former smoker; Never smoker; Smoker, current status unknown; Unknown if ever smoked; Heavy tobacco smoker; Light tobacco smoker; No information; Unknown; Other.</body>
         </ownedComment>
         <ownedRule xmi:id="_Z6lFE6fREeitto0cubQn1A" name="TopicIsSmokingStatus">
           <constrainedElement xmi:type="uml:Class" href="VitalSigns.efx#_EVpMQH-3EeOzENpLs8HIcg?FHIM/VitalSigns/HeartRate/HeartRateObservation?"/>

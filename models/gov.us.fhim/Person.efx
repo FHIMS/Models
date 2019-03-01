@@ -3406,14 +3406,6 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
         <body>This class represents an organism, whether it is currently alive or not.  This class is equivalent to the HL7 V3 Living Subject class.</body>
       </ownedComment>
       <generalization xmi:id="_covX0BA2Ed-2E9qx-lgHBg" general="_MF0JYOEVEd6EKMSYA1gKjA"/>
-      <ownedAttribute xmi:id="_9kHJAFjvEeG6Pp3Py7p1bw" name="isOrganDonor" visibility="public">
-        <ownedComment xmi:id="_GX22kFjwEeG6Pp3Py7p1bw" annotatedElement="_9kHJAFjvEeG6Pp3Py7p1bw">
-          <body>Indicates whether the patient has consented to be an organ donor upon their demise.</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLC8UMJEEeK_EPjbFxtubQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DLCVQMJEEeK_EPjbFxtubQ"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_Ey3dgIq5Ed-W_sKBWcwIbA" name="age" visibility="public" isDerived="true">
         <ownedComment xmi:id="_diPhUIq5Ed-W_sKBWcwIbA" annotatedElement="_Ey3dgIq5Ed-W_sKBWcwIbA">
           <body>The length of time that an organism has lived.  Note that this property will typically be derived or calculated as needed, and as such may not always be present as a separate concept.  Added 7/8/10 for vMR.</body>
@@ -3438,6 +3430,29 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h_4ZcsChEeGTTrvHOo3_pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h_4Zc8ChEeGTTrvHOo3_pw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B6456339840258" name="asPatient" visibility="public" type="_420A62FD03B6418A4E500034" isUnique="false" association="_420A62FD03B64563398301DB">
+        <ownedComment xmi:id="_TzgNcC6SEd6RGqZb7W4v4w" annotatedElement="_420A62FD03B6456339840258">
+          <body>Pointer to the role of a person or animal as a recipient of health care services from a healthcare provider.  Note that if the person or animal is a research subject, a different association (asResearchSubject) is used.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NUtfs-LiEduGJrQyRGTO1A" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NUtfsuLiEduGJrQyRGTO1A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_420A62FD03B6455395A201F1" name="biologicalSex" visibility="public">
+        <ownedComment xmi:id="_NQixVOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6455395A201F1">
+          <body>The sex of a living subject.  Note that the biological sex is different from administrative gender which is defined for administrative purposes. This attribute reflects the karyotypic sex of the patient, regardless of whether sexual organs may have been altered. For example, a neutered dog will still have the same underlying chromosomes.&#xD;
+&quot;Sex assigned at birth.&quot; - PCORnet Common Data Model, Demographic.Sex. Possible values include: Ambiguous, Female, Male, No information, Unknown, Other.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gM050I3nEeC71dGAKsmahg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gMzrsI3nEeC71dGAKsmahg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_E2uWQNmUEeChWYqvVB0Hpw" name="causeOfDeath" visibility="public" type="_7TcCINmTEeChWYqvVB0Hpw" association="_E2r6ANmUEeChWYqvVB0Hpw">
+        <ownedComment xmi:id="_z22ucDG8EeGoIvbvHHPRDA" annotatedElement="_E2uWQNmUEeChWYqvVB0Hpw">
+          <body>A pointer to zero or more Cause Of Death instances that provide information on the condition(s) that caused or contributed to the death of the organism.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E2vkYNmUEeChWYqvVB0Hpw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E2u9UNmUEeChWYqvVB0Hpw"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6426E8690032C" name="dateOfBirth" visibility="public">
         <ownedComment xmi:id="_yKfUsBqMEd-j8JC21F3W2A" annotatedElement="_420A62FD03B6426E8690032C">
           <body>The date and time of the birth or hatching of the living subject.&#xD;
@@ -3446,7 +3461,9 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
 &quot;The next of kin/associated party's birth date and time.&quot; - HL7 Version 2.8, NK1-16.&#xD;
 &quot;The birth date for the person.&quot; - HL7 FHIR, Person.birthDate.&#xD;
 &quot;The date of birth for the individual.&quot; - HL7 FHIR, Patient.birthDate.&#xD;
-&quot;Date patient was born.&quot; - ASAP Standard for PDMP, PAT18: Date of Birth</body>
+&quot;Date patient was born.&quot; - ASAP Standard for PDMP, PAT18: Date of Birth&#xD;
+&quot;Date of birth.&quot; - PCORnet Common Data Model, Demographic.Birth_Date&#xD;
+&quot;Time of birth.&quot; - PCORnet Common Data Model, Demographic.Birth_Time</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d_E_gcJEEeK_EPjbFxtubQ" value="1"/>
@@ -3476,6 +3493,14 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_evNLNeLjEdutr_MT9HkPyQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_evNLNOLjEdutr_MT9HkPyQ"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_9kHJAFjvEeG6Pp3Py7p1bw" name="isOrganDonor" visibility="public">
+        <ownedComment xmi:id="_GX22kFjwEeG6Pp3Py7p1bw" annotatedElement="_9kHJAFjvEeG6Pp3Py7p1bw">
+          <body>Indicates whether the patient has consented to be an organ donor upon their demise.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLC8UMJEEeK_EPjbFxtubQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DLCVQMJEEeK_EPjbFxtubQ"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_Q_1pgOm_Ed6i8ZcSzaiIHw" name="multipleBirthOrder" visibility="public">
         <ownedComment xmi:id="_AM4RYBqNEd-j8JC21F3W2A" annotatedElement="_Q_1pgOm_Ed6i8ZcSzaiIHw">
           <body>If the biological entity was born along with other siblings, this property indicates the order the entity was born.  For example, for a set of twins, this property indicates which twin was born first and which was born second.  This property is primarily used to distinguish records for newborn infants who have not yet have been given names.  This property may also be used in research situations to distinguish individuals who were part of a multi-child pregnancy.&#xD;
@@ -3496,20 +3521,6 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_evNLR-LjEdutr_MT9HkPyQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_evNLRuLjEdutr_MT9HkPyQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B6456339840258" name="asPatient" visibility="public" type="_420A62FD03B6418A4E500034" isUnique="false" association="_420A62FD03B64563398301DB">
-        <ownedComment xmi:id="_TzgNcC6SEd6RGqZb7W4v4w" annotatedElement="_420A62FD03B6456339840258">
-          <body>Pointer to the role of a person or animal as a recipient of health care services from a healthcare provider.  Note that if the person or animal is a research subject, a different association (asResearchSubject) is used.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NUtfs-LiEduGJrQyRGTO1A" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NUtfsuLiEduGJrQyRGTO1A"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_E2uWQNmUEeChWYqvVB0Hpw" name="causeOfDeath" visibility="public" type="_7TcCINmTEeChWYqvVB0Hpw" association="_E2r6ANmUEeChWYqvVB0Hpw">
-        <ownedComment xmi:id="_z22ucDG8EeGoIvbvHHPRDA" annotatedElement="_E2uWQNmUEeChWYqvVB0Hpw">
-          <body>A pointer to zero or more Cause Of Death instances that provide information on the condition(s) that caused or contributed to the death of the organism.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E2vkYNmUEeChWYqvVB0Hpw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E2u9UNmUEeChWYqvVB0Hpw"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_7TcCINmTEeChWYqvVB0Hpw" name="CauseOfDeath">
@@ -3883,7 +3894,8 @@ We removed veryImportantPerson code (4/4/2013) because we do not have a use-case
           <body>A language for which the Person has some level of proficiency for written or spoken communication.&#xD;
 &quot;The patient's primary language.  HL7 recommends using ISO table 639&quot; - HL7 Version 2.8, PID-15.&#xD;
 &quot;The next of kin/associated party's primary speaking language.&quot; - HL7 Version 2.8, NK1-20.&#xD;
-&quot;The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case. E.g. &quot;en&quot; for English, or &quot;en-US&quot; for American English versus &quot;en-EN&quot; for England English.&quot; - HL7 FHIR, Patient.communication.language.</body>
+&quot;The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case. E.g. &quot;en&quot; for English, or &quot;en-US&quot; for American English versus &quot;en-EN&quot; for England English.&quot; - HL7 FHIR, Patient.communication.language.&#xD;
+&quot;Preferred spoken language of communication as expressed by the patient.&quot; - PCORnet Common Data Model, Demographic.Pat Pref Language_Spoken</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_evNLS-LjEdutr_MT9HkPyQ" value="1"/>
@@ -3913,14 +3925,6 @@ We removed veryImportantPerson code (4/4/2013) because we do not have a use-case
 &quot;This patient is known to be an animal.&quot; - HL7 FHIR, Patient.animal</body>
       </ownedComment>
       <generalization xmi:id="_XYBsIBA2Ed-2E9qx-lgHBg" general="_KBfhMOEVEd6EKMSYA1gKjA"/>
-      <ownedAttribute xmi:id="_420A62FD03B6455395A201F1" name="biologicalSex" visibility="public">
-        <ownedComment xmi:id="_NQixVOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6455395A201F1">
-          <body>The sex of a living subject.  Note that the biological sex is different from administrative gender which is defined for administrative purposes.  This attribute reflects the karyotypic sex of the patient, regardless of whether sexual organs may have been altered.  For example, a neutered dog will still have the same underlying chromosomes.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gM050I3nEeC71dGAKsmahg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gMzrsI3nEeC71dGAKsmahg"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_aQFIEIVKEd-6PJo369YzhQ" name="name" visibility="public">
         <ownedComment xmi:id="_sjImEO6wEd-crcWiXVDZrQ" annotatedElement="_aQFIEIVKEd-6PJo369YzhQ">
           <body>A name used to identify the non-human individual.  Typically used only when the individual is a pet or a beast of burden.  Examples include &quot;Spot&quot;, &quot;Fido&quot;, &quot;Seattle Slew&quot;. Note that this property is typically not used when the subject is a lower order organism or a stock animal.&#xD;
@@ -4149,7 +4153,8 @@ Note that the definition of this property needs to be refined.</body>
         <ownedComment xmi:id="_XPxocBqREd-j8JC21F3W2A" annotatedElement="_420A62FD03B6422B959E03BD">
           <body>A unique identifier for the Person or Animal while in the role of Patient.  Note that the patient Id is assigned by the Healthcare Provider (organization), and that the Id data type includes an assigning authority component which identifies the organization that assigned the id.  A single Person will typically have multiple patient Ids; one at each organization which considers that Person a Patient.&#xD;
 &quot;Contains the list of identifiers (one or more) used by the healthcare facility to uniquely identify a patient (e.g., medical record number, billing number, birth registry, national unique individual identifier, etc.).&quot; - HL7 Version 2.8, PID-3.&#xD;
-&quot;An identifier for this patient.&quot; - HL7 FHIR, Patient.identifier.</body>
+&quot;An identifier for this patient.&quot; - HL7 FHIR, Patient.identifier.&#xD;
+&quot;Arbitrary person-level identifier used to link across tables.&quot; - PCORnet Common Data Model, Demographic.PatId</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_evDaL-LjEdutr_MT9HkPyQ" value="1"/>
@@ -4285,10 +4290,12 @@ Note that NCPDP Telecom uses: blank=unknown (721-MD), 0=not specified (305-C5) o
       </ownedAttribute>
       <ownedAttribute xmi:id="_Y-OY0PkiEeGFnccz7SeroA" name="ethnicity" visibility="public">
         <ownedComment xmi:id="_Y-OY0_kiEeGFnccz7SeroA" annotatedElement="_Y-OY0PkiEeGFnccz7SeroA">
-          <body>A group of people whose members identify with each other, through a common heritage, often consisting of a common language, a common culture (often including a shared religion) and an ideology that stresses common ancestry or endogamy .  In addition, an ethnic group often shares an interest in a homeland connected with a specific geographical area and common traditions, including food preferences  (Wikipedia).  Note that unlike race, which concentrates on a person s physical heritage, ethnicity is concerned with the cultural heritage with which a person identifies themselves.  Examples of ethnicity include: German, Scandinavian, Italian, Irish, etc.  These ethnic groups are of the same race (Caucasian, or  white ).  Note also that the set of ethnicity values used may vary based on the purpose for collecting this information.  The U.S. Office of Management and Budget (OMB) issues a set to be used for census purposes.  See OMB publication 15.  This property may contain more than one ethnicity for a given person, identified in no particular order.&#xD;
+          <body>A group of people whose members identify with each other, through a common heritage, often consisting of a common language, a common culture (often including a shared religion) and an ideology that stresses common ancestry or endogamy. In addition, an ethnic group often shares an interest in a homeland connected with a specific geographical area and common traditions, including food preferences  (Wikipedia). Note that unlike race, which concentrates on a person s physical heritage, ethnicity is concerned with the cultural heritage with which a person identifies themselves.  Examples of ethnicity include: German, Scandinavian, Italian, Irish, etc. These ethnic groups are of the same race (Caucasian, or  white ). Note also that the set of ethnicity values used may vary based on the purpose for collecting this information. The U.S. Office of Management and Budget (OMB) issues a set to be used for census purposes.  See OMB publication 15. This property may contain more than one ethnicity for a given person, identified in no particular order.&#xD;
 &quot;This field further defines the patient's ancestry.&quot; - HL7 Version 2.8, PID-22.&#xD;
 &quot;The next of kin/associated party's ethnic group.&quot; - HL7 Version 2.8, NK1-28.&#xD;
-HL7 Version 2 has the following suggested values (table 189): Hispanic or Latino; Not Hispanic or Latino; Unknown.</body>
+HL7 Version 2 has the following suggested values (table 189): Hispanic or Latino; Not Hispanic or Latino; Unknown.&#xD;
+&quot;A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.&quot; - PCORnet Common Data Model, Demographic.Hispanic. Possible values include: Yes; No; Refuse to answer; No information; Unknown; Other.&#xD;
+</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y-OY1PkiEeGFnccz7SeroA" value="*"/>
@@ -4304,7 +4311,8 @@ HL7 Version 2 has the following suggested values (table 189): Hispanic or Latino
       </ownedAttribute>
       <ownedAttribute xmi:id="_c_C5kLUqEeiWRsqEq7kYtg" name="genderIdentity" visibility="public">
         <ownedComment xmi:id="_bkFFgLUsEeiWRsqEq7kYtg" annotatedElement="_c_C5kLUqEeiWRsqEq7kYtg">
-          <body>A  person's perception of having a particular gender, which may or may not correspond with their birth sex.</body>
+          <body>A  person's perception of having a particular gender, which may or may not correspond with their birth sex.&#xD;
+&quot;Current gender identity.&quot; - PCORnet Common Data Model, Demographic.Sex. Possible values include: Man; Woman; Transgender male/Trans man/Female-to-male; Transgender female/Trans woman/Male-to-female; Genderqueer; Something else; Multiple gender categories; Decline to answer; No information; Unknown; Other</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c_C5krUqEeiWRsqEq7kYtg" value="1"/>
@@ -4468,7 +4476,8 @@ such as John Doe MD.&quot; - ASAP Standard for PDMP, PHA04: Pharmacy or Dispensi
           <body>A classification of humans into large and distinct populations or groups by factors such as heritable phenotypic characteristics or geographic ancestry, but also often influenced by and correlated with traits such as appearance, culture, ethnicity, and socio-economic status.  (Wikipedia).  This property may contain more than one race for a given person, identified in no particular order.&#xD;
 &quot;This field refers to the patient's race.&quot; - HL7 Version 2.8, PID-10.&#xD;
 &quot;The race of the next of kin/associated party.&quot; - HL7 Version 2.8, NK1-35.&#xD;
-HL7 Version 2 has the following suggested values (table 5): American Indian or Alaska Native; Asian; Black or African American; Native Hawaiian or Other Pacific Islander; White; Other Race.</body>
+HL7 Version 2 has the following suggested values (table 5): American Indian or Alaska Native; Asian; Black or African American; Native Hawaiian or Other Pacific Islander; White; Other Race.&#xD;
+&quot;&quot; - PCORnet Common Data Model, Demographic.Race. Possible values include: American Indian or Alaska Native; Asian; Black or African American; Native Hawaiian or Other Pacific Islander; White; Multiple race; Refuse to answer; No information; Unknown; Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_grY41PkiEeGFnccz7SeroA" value="*"/>
@@ -4486,6 +4495,14 @@ Note that HL7 Version 2 table 6 lists 85 suggested values for this field.</body>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_evNLP-LjEdutr_MT9HkPyQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_evNLPuLjEdutr_MT9HkPyQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oOTSMDtvEemQIZRQAaXE5w" name="sexualOrientation" visibility="public">
+        <ownedComment xmi:id="_IjB90DtwEemQIZRQAaXE5w" annotatedElement="_oOTSMDtvEemQIZRQAaXE5w">
+          <body>&quot;Sexual orientation.&quot; - PCORnet Common Data Model, Demographic.Sexual_Orientation. Possible values include: Bisexual; Gay; Lesbian; Queer; Questioning; Straight; Something else; Multiple sexual orientations; Decline to answer; No information; Unknown; Other.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tFLhkDtvEemQIZRQAaXE5w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tFK6gDtvEemQIZRQAaXE5w"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6426E869603AC" name="ssn" visibility="public">
         <eAnnotations xmi:id="_NQixWeLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -8000,7 +8017,6 @@ Note that FHIR points to Patient, which is good for Persons and Animals, but the
   <Default:Documentation xmi:id="_aM8ZEMiDEeKVX7oj83E-Mw" base_Comment="_vDN9U1-OEd-WjrW-OJ9BNQ"/>
   <Default:Documentation xmi:id="_A_EFEMhnEeKZ5qLCaMpP2Q" base_Comment="_LSoEgBqSEd-j8JC21F3W2A"/>
   <Default:Documentation xmi:id="_bJoxAMhmEeKZ5qLCaMpP2Q" base_Comment="_yKfUsBqMEd-j8JC21F3W2A"/>
-  <Default:Documentation xmi:id="_boUVcMiEEeKVX7oj83E-Mw" base_Comment="_NQixVOLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_bqkNoMiDEeKVX7oj83E-Mw" base_Comment="_vDN9UV-OEd-WjrW-OJ9BNQ"/>
   <Default:Documentation xmi:id="_BxorUMiEEeKVX7oj83E-Mw" base_Comment="_2T8LcBqOEd-j8JC21F3W2A"/>
   <Default:Documentation xmi:id="_c78UAMfVEeKnEbt4LwGVaA" base_Comment="_OP9UQJXtEeCD7vwmJe8BlA"/>
@@ -8351,4 +8367,6 @@ Note that FHIR points to Patient, which is good for Persons and Animals, but the
   <Default:Documentation xmi:id="_B2YokDbvEemAFf5zl0EQUg" base_Comment="_22ly0DG4EeGoIvbvHHPRDA"/>
   <Default:Documentation xmi:id="_XPzLYDfaEemB7Pqxl_wVvA" base_Comment="_XPwIEDfaEemB7Pqxl_wVvA"/>
   <Default:Documentation xmi:id="_sfQywDfaEemB7Pqxl_wVvA" base_Comment="_sfPkoDfaEemB7Pqxl_wVvA"/>
+  <Default:Documentation xmi:id="_SwJkADtuEemQIZRQAaXE5w" base_Comment="_NQixVOLiEduGJrQyRGTO1A"/>
+  <Default:Documentation xmi:id="_IjWG4DtwEemQIZRQAaXE5w" base_Comment="_IjB90DtwEemQIZRQAaXE5w"/>
 </xmi:XMI>

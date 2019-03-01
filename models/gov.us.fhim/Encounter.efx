@@ -532,6 +532,20 @@
           <element xmi:type="uml:Class" href="DetailedClinicalModels.efx#_t4MPD7UvEeiWRsqEq7kYtg?FHIM/DetailedClinicalModels/LastMenstrualPeriodStartDate/LastMenstrualPeriodStartDate?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gtXZ4bU0EeiWRsqEq7kYtg" x="-4438" y="25677"/>
         </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_o9sVsDuZEemQIZRQAaXE5w" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" fillColor="8487423" lineColor="3342489" showParent="Name" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_o94i8DuZEemQIZRQAaXE5w" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_o94i8TuZEemQIZRQAaXE5w" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_o94i8juZEemQIZRQAaXE5w" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_o94i8zuZEemQIZRQAaXE5w" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_o94i9DuZEemQIZRQAaXE5w" type="Parent"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_o95KADuZEemQIZRQAaXE5w" type="AttributeCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_o96_MDuZEemQIZRQAaXE5w" visible="false" type="OperationCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_o96_MTuZEemQIZRQAaXE5w" visible="false" type="SignalCompartment"/>
+          <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_o97mQDuZEemQIZRQAaXE5w" visible="false" type="StructureCompartment"/>
+          <element xmi:type="uml:Class" href="EnrollEligCOB.efx#_EMWvIEvwEeCrON7ycdFLuQ?FHIM/EnrollEligCOB/DiagnosisRelatedGroup?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9sVsTuZEemQIZRQAaXE5w" x="18703" y="9193"/>
+        </children>
         <element xsi:nil="true"/>
         <edges xmi:type="notation:Connector" xmi:id="_br2KQJCzEeaeVcv6mxF7oQ" type="NoteAttachment" source="_ammrYJCxEeaeVcv6mxF7oQ" target="_OLYg0JCxEeaeVcv6mxF7oQ" lineColor="0" lineWidth="1">
           <styles xmi:type="notation:ArrowStyle" xmi:id="_br2KQZCzEeaeVcv6mxF7oQ"/>
@@ -1893,6 +1907,46 @@
           </children>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ElO1EbU1EeiWRsqEq7kYtg" points="[168, 76, -535, -204]$[648, 301, -55, 21]"/>
         </edges>
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_sX-EMDuZEemQIZRQAaXE5w" element="_sXSuwDuZEemQIZRQAaXE5w" source="_Be2tMAXIEeebQs_lQM5n6g" target="_o9sVsDuZEemQIZRQAaXE5w" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_sYAgcDuZEemQIZRQAaXE5w" type="NameLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_sYAgcjuZEemQIZRQAaXE5w" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_sYAgczuZEemQIZRQAaXE5w" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sYAgcTuZEemQIZRQAaXE5w" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_sYBHgDuZEemQIZRQAaXE5w" type="ToMultiplicityLabel" element="_sXuzoDuZEemQIZRQAaXE5w">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_sYBukDuZEemQIZRQAaXE5w" type="ToMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_sYBHgTuZEemQIZRQAaXE5w" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_sYCVoDuZEemQIZRQAaXE5w" type="ToRoleLabel" element="_sXuzoDuZEemQIZRQAaXE5w">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_sYCVojuZEemQIZRQAaXE5w" type="ToRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_sYCVoTuZEemQIZRQAaXE5w" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_sYCVozuZEemQIZRQAaXE5w" type="FromMultiplicityLabel" element="_sXp7IDuZEemQIZRQAaXE5w">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_sYCVpTuZEemQIZRQAaXE5w" type="FromMultiplicity"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_sYCVpDuZEemQIZRQAaXE5w" y="396"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_sYC8sDuZEemQIZRQAaXE5w" type="FromRoleLabel" element="_sXp7IDuZEemQIZRQAaXE5w">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_sYC8sjuZEemQIZRQAaXE5w" type="FromRole"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_sYC8sTuZEemQIZRQAaXE5w" y="-397"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_sYC8szuZEemQIZRQAaXE5w" type="ToQualifierLabel" element="_sXuzoDuZEemQIZRQAaXE5w">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_sYC8tTuZEemQIZRQAaXE5w" type="QualifierCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_sYC8tDuZEemQIZRQAaXE5w" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_sYC8tjuZEemQIZRQAaXE5w" type="FromQualifierLabel" element="_sXp7IDuZEemQIZRQAaXE5w">
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_sYC8uDuZEemQIZRQAaXE5w" type="QualifierCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_sYC8tzuZEemQIZRQAaXE5w" y="-186"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_sYDjwDuZEemQIZRQAaXE5w" type="ToConstraintLabel" element="_sXuzoDuZEemQIZRQAaXE5w">
+            <children xmi:type="notation:ListCompartment" xmi:id="_sYEK0DuZEemQIZRQAaXE5w" type="ToConstraintCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_sYDjwTuZEemQIZRQAaXE5w" y="1058"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_sYEx4DuZEemQIZRQAaXE5w" type="FromConstraintLabel" element="_sXp7IDuZEemQIZRQAaXE5w">
+            <children xmi:type="notation:ListCompartment" xmi:id="_sYEx4juZEemQIZRQAaXE5w" type="FromConstraintCompartment"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_sYEx4TuZEemQIZRQAaXE5w" y="1058"/>
+          </children>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sX-EMTuZEemQIZRQAaXE5w" points="[52, 60, -76, -72]$[42, 130, -86, -2]"/>
+        </edges>
       </contents>
     </eAnnotations>
     <eAnnotations xmi:id="_Mmqt4OLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -2078,7 +2132,8 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
       </ownedAttribute>
       <ownedAttribute xmi:id="_1VhAkOQMEeak6NCuAd5Onw" name="attender" visibility="public">
         <ownedComment xmi:id="_NeLpsOQNEeak6NCuAd5Onw" annotatedElement="_1VhAkOQMEeak6NCuAd5Onw">
-          <body>&quot;Contains the attending physician information.&quot; - HL7 Version 2.8, PV1-7</body>
+          <body>An Attending Physician is the physician legally responsible for the patient's overall care while the patient is hospitalized. This physician will often direct other clinicians in regard to the patient's care. This property points to the Practitioner who is acting as the Attending Physician.&#xD;
+&quot;Contains the attending physician information.&quot; - HL7 Version 2.8, PV1-7</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1VhAkeQMEeak6NCuAd5Onw" value="*"/>
@@ -2140,6 +2195,14 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlc4sGfqEeGK0elVFnH6lw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlcRoGfqEeGK0elVFnH6lw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_ElIucLU1EeiWRsqEq7kYtg" name="lastMenstrualPeriodStartDate" visibility="public" association="_ElDO4LU1EeiWRsqEq7kYtg">
+        <ownedComment xmi:id="_GAf5MLU1EeiWRsqEq7kYtg" annotatedElement="_ElIucLU1EeiWRsqEq7kYtg">
+          <body>Pointer to an observation of the date when the Patient last experienced a menstrual cycle.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="DetailedClinicalModels.efx#_t4MPD7UvEeiWRsqEq7kYtg?FHIM/DetailedClinicalModels/LastMenstrualPeriodStartDate/LastMenstrualPeriodStartDate?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ElIucrU1EeiWRsqEq7kYtg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ElIucbU1EeiWRsqEq7kYtg"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_5f4ZEFPDEeO95rHo5Ki4qQ" name="modeOfArrival" visibility="public">
         <ownedComment xmi:id="_5f4ZEVPDEeO95rHo5Ki4qQ" annotatedElement="_5f4ZEFPDEeO95rHo5Ki4qQ">
           <body>&quot;Identifies how the patient was brought to the healthcare facility.&quot; - HL7 Version 2.8, PV2-38.  Possible values include (from HL7 Table 430): Ambulance; Car; On foot; Helicopter; Public Transport; Other; Unknown.</body>
@@ -2165,6 +2228,9 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WjZX0JC1EeaeVcv6mxF7oQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_1xXPEOQMEeak6NCuAd5Onw" name="primaryCarePhysician" visibility="public">
+        <ownedComment xmi:id="_Ajqo0DuXEemQIZRQAaXE5w" annotatedElement="_1xXPEOQMEeak6NCuAd5Onw">
+          <body>A Primary Care Provider is the doctor selected by the patient to be the first physician contacted for any medical problem. The doctor acts as the patient's regular physician and coordinates any other care the patient needs, such as a visit to a specialist or hospitalization. This property points to the Practitioner who is acting as the Patient's primary care physician.</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1xXPEeQMEeak6NCuAd5Onw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1xXPEuQMEeak6NCuAd5Onw" value="1"/>
@@ -2284,14 +2350,6 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CarSIB92EeWsloQr5xbziw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CaqrEB92EeWsloQr5xbziw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_zF8wwEo2Eeiyfctrd2Hs6w" name="priorTemporaryLocation" visibility="public">
-        <ownedComment xmi:id="_1m5qkEo2Eeiyfctrd2Hs6w" annotatedElement="_zF8wwEo2Eeiyfctrd2Hs6w">
-          <body>&quot;This field is used to reflect the patient's temporary location (such as the operating room/theatre or x-ray) prior to a transfer from a temporary location to an actual location, or from a temporary location to another temporary location. The first component may be the nursing station for inpatient locations, or the clinic, department, or home for locations other than inpatient.&quot; - HL7 Version 2.8, PV1-43</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_95NfAEo2Eeiyfctrd2Hs6w" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_95M38Eo2Eeiyfctrd2Hs6w"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_zKAxYEo2Eeiyfctrd2Hs6w" name="assignedPatientLocation" visibility="public">
         <ownedComment xmi:id="_B3TsQEo3Eeiyfctrd2Hs6w" annotatedElement="_zKAxYEo2Eeiyfctrd2Hs6w">
           <body>&quot;This field contains the patient's initial assigned location or the location to which the patient is being moved.  The first component may be the nursing station for inpatient locations, or clinic or department, for locations other than inpatient.  For canceling a transaction or discharging a patient, the current location (after the cancellation event or before the discharge event) should be in this field.&quot; - HL7 Version 2.8, PV1-3</body>
@@ -2300,9 +2358,27 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__9AiwUo2Eeiyfctrd2Hs6w" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__9AiwEo2Eeiyfctrd2Hs6w"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_GrOHMEo3Eeiyfctrd2Hs6w" name="pendingLocation" visibility="public">
+        <ownedComment xmi:id="_XnXfQEo3Eeiyfctrd2Hs6w" annotatedElement="_GrOHMEo3Eeiyfctrd2Hs6w">
+          <body>&quot;Indicates the point of care, room, bed, healthcare facility ID, and bed status to which the patient may be moved.  The first component may be the nursing station for inpatient locations, or the clinic, department, or home for locations other than inpatient.&quot; - HL7 Version 2.8, PV1-42</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GrOHMUo3Eeiyfctrd2Hs6w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GrOHMko3Eeiyfctrd2Hs6w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zF8wwEo2Eeiyfctrd2Hs6w" name="priorTemporaryLocation" visibility="public">
+        <ownedComment xmi:id="_1m5qkEo2Eeiyfctrd2Hs6w" annotatedElement="_zF8wwEo2Eeiyfctrd2Hs6w">
+          <body>&quot;This field is used to reflect the patient's temporary location (such as the operating room/theatre or x-ray) prior to a transfer from a temporary location to an actual location, or from a temporary location to another temporary location. The first component may be the nursing station for inpatient locations, or the clinic, department, or home for locations other than inpatient.&quot; - HL7 Version 2.8, PV1-43</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_95NfAEo2Eeiyfctrd2Hs6w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_95M38Eo2Eeiyfctrd2Hs6w"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_GiAg0Eo3Eeiyfctrd2Hs6w" name="serviceDeliveryLocation" visibility="public">
         <ownedComment xmi:id="_LDr8QEo3Eeiyfctrd2Hs6w" annotatedElement="_GiAg0Eo3Eeiyfctrd2Hs6w">
-          <body>&quot;The location to which the patient is assigned. It is a role played by a place at which services may be provided. Note that a single physical place can play multiple service delivery location roles each with its own attributes. For example, a Podiatry clinic and Research clinic may meet on alternate days in the same physical location; each clinic uses its own mailing address and telephone number.&quot; (HL7) </body>
+          <body>&quot;The location to which the patient is assigned. It is a role played by a place at which services may be provided. Note that a single physical place can play multiple service delivery location roles each with its own attributes. For example, a Podiatry clinic and Research clinic may meet on alternate days in the same physical location; each clinic uses its own mailing address and telephone number.&quot; (HL7)&#xD;
+&quot;Geographic location (3 digit zip code).&quot; - PCORnet Common Data Model, Encounter.Facility_Location&#xD;
+&quot;Local facility code that identifies the hospital or clinic. Used for chart abstraction and validation.&quot; - PCORnet Common Data Model, Encounter.FacilityId</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GiAg0Uo3Eeiyfctrd2Hs6w" value="1"/>
@@ -2315,22 +2391,6 @@ Possible values include (from HL7 V2 Table 9): No functional limitations; Ambula
         <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Gm5n4Uo3Eeiyfctrd2Hs6w" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Gm5n4ko3Eeiyfctrd2Hs6w"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_GrOHMEo3Eeiyfctrd2Hs6w" name="pendingLocation" visibility="public">
-        <ownedComment xmi:id="_XnXfQEo3Eeiyfctrd2Hs6w" annotatedElement="_GrOHMEo3Eeiyfctrd2Hs6w">
-          <body>&quot;Indicates the point of care, room, bed, healthcare facility ID, and bed status to which the patient may be moved.  The first component may be the nursing station for inpatient locations, or the clinic, department, or home for locations other than inpatient.&quot; - HL7 Version 2.8, PV1-42</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GrOHMUo3Eeiyfctrd2Hs6w" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GrOHMko3Eeiyfctrd2Hs6w"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_ElIucLU1EeiWRsqEq7kYtg" name="lastMenstrualPeriodStartDate" visibility="public" association="_ElDO4LU1EeiWRsqEq7kYtg">
-        <ownedComment xmi:id="_GAf5MLU1EeiWRsqEq7kYtg" annotatedElement="_ElIucLU1EeiWRsqEq7kYtg">
-          <body>Pointer to an observation of the date when the Patient last experienced a menstrual cycle.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="DetailedClinicalModels.efx#_t4MPD7UvEeiWRsqEq7kYtg?FHIM/DetailedClinicalModels/LastMenstrualPeriodStartDate/LastMenstrualPeriodStartDate?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ElIucrU1EeiWRsqEq7kYtg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ElIucbU1EeiWRsqEq7kYtg"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B64214277401EB" name="Appointment">
@@ -2954,7 +3014,9 @@ This class represents the result of the enumeration, which may be stored as a si
       </ownedComment>
       <ownedAttribute xmi:id="_9Uhg8NivEdyb35bKix456w" name="date" visibility="public">
         <ownedComment xmi:id="_zdw9sCqKEd6tfJk2wVTfYw" annotatedElement="_9Uhg8NivEdyb35bKix456w">
-          <body>&quot;This field contains the discharge date/time.  It is to be used if the event date/time is different than the discharge date and time, that is, a retroactive update.  This field is also used to reflect the date/time of an outpatient/emergency patient discharge.&quot; - HL7 Version 2.8, PV1-45</body>
+          <body>&quot;This field contains the discharge date/time.  It is to be used if the event date/time is different than the discharge date and time, that is, a retroactive update.  This field is also used to reflect the date/time of an outpatient/emergency patient discharge.&quot; - HL7 Version 2.8, PV1-45&#xD;
+&quot;Discharge date.&quot; - PCORnet Common Data Model, Encounter.Discharge_Date&#xD;
+&quot;Discharge time.&quot; - PCORnet Common Data Model, Encounter.Discharge_Time</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Leg6cdiwEdyb35bKix456w" value="1"/>
@@ -2963,7 +3025,9 @@ This class represents the result of the enumeration, which may be stored as a si
       <ownedAttribute xmi:id="_420A62FD03B642397A330322" name="disposition" visibility="public">
         <ownedComment xmi:id="_McihiuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642397A330322">
           <body>&quot;Contains the disposition of the patient at time of discharge (i.e., discharged to home, expired, etc.). ...use the Official Uniform Billing (UB) 04 2008 numeric codes found on form locator 17.&quot; - HL7 Version 2.8, PV1-36. Note that while the encounter is still &quot;active&quot; (i.e., the encounter does not have an end date yet) this attribute should be interpreted as the expected discharge disposition. When the encounter is &quot;completed&quot; this attribute contains the actual discharge disposition.&#xD;
-&quot;Category or kind of location after discharge.&quot; - HL7 FHIR, Encounter.hospitalization.dischargeDisposition</body>
+&quot;Category or kind of location after discharge.&quot; - HL7 FHIR, Encounter.hospitalization.dischargeDisposition&#xD;
+&quot;Vital status at discharge.&quot; - PCORnet Common Data Model, Encounter.Discharge_Disposition. Possible values include: Discharged alive; Expired; No information; Unknown; Other.&#xD;
+&quot;Discharge status.&quot; - PCORnet Common Data Model, Encounter.Discharge_Status. Possible values include: Adult Foster Home; Assisted Living Facility; Against Medical Advice; Absent without leave; Expired; Home Health; Home/Self Care; Hospice; Other Acute Inpatient Hospital; Nursing Home (Includes ICF); Rehabilitation Facility; Residential Facility; Still In Hospital; Skilled Nursing Facility; No information; Unknown; Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NhXMEJC0EeaeVcv6mxF7oQ" value="1"/>
@@ -3170,7 +3234,9 @@ This class represents the result of the enumeration, which may be stored as a si
         <ownedComment xmi:id="_KbFm0fkvEeaFsfhBEypeuw" annotatedElement="_KbFm0PkvEeaFsfhBEypeuw">
           <body>Indicates what kind (i.e., subtype) of Encounter that an encounter instance is. This property is included for compatibility with FHIR, and is therefore both optional and marked as derived. In FHIM, the kind of Encounter is known by the subtype of Encounter that the instance instantiates. In other words, FHIM has an EmergencyEncounter class and it is therefore known that an EmergencyEncounter is an EmergencyEncounter, whereas in FHIR an EmergencyEncounter is an Encounter with type EmergencyEncounter.&#xD;
 &quot;This field is used by systems to categorize patients by site.  It does not have a consistent industry-wide definition.  It is subject to site specific variations.&quot; - HL7 Version 2.8, PV1-2.  HL7 Version 2 has the following suggested values (table 4): Emergency; Inpatient; Outpatient; Preadmit; Recurring patient; Obstetrics; Commercial Account; Not Applicable; Unknown.&#xD;
-&quot;inpatient | outpatient | ambulatory | emergency +.&quot; - HL7 FHIR, Encounter.class</body>
+&quot;inpatient | outpatient | ambulatory | emergency +.&quot; - HL7 FHIR, Encounter.class&#xD;
+&quot;Encounter type....&quot; - PCORnet Common Data Model, Encounter.Enc_Type. Possible values include: Ambulatory Visit; Emergency Department; Emergency Department Admit to Inpatient Hospital Stay; Inpatient Hospital Stay; Non-Acute Institutional Stay; Observation Stay; Institutional Professional Consult
+; Other Ambulatory Visit; No information; Unknown; Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KbFm0vkvEeaFsfhBEypeuw" value="1"/>
@@ -3198,7 +3264,8 @@ This class represents the result of the enumeration, which may be stored as a si
         <ownedComment xmi:id="_MXK5WOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6423F4C5502C6">
           <body>This property uniquely identifies the Encounter. This property can be used, among other purposes, to associate the current Encounter with other Encounters, or with events that occurred during the Encounter.&#xD;
 &quot;Contains the unique number assigned to each patient visit.&quot; - HL7 Version 2.8, PV1-19&#xD;
-&quot;Identifier(s) by which this encounter is known.&quot; - HL7 FHIR, Encounter.identifier</body>
+&quot;Identifier(s) by which this encounter is known.&quot; - HL7 FHIR, Encounter.identifier&#xD;
+&quot;Arbitrary encounter-level identifier. Used to link across tables.&quot; - PCORnet Common Data Model, Encounter.EncounterId</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_taTJAJCzEeaeVcv6mxF7oQ" value="1"/>
@@ -3241,7 +3308,8 @@ This class represents the result of the enumeration, which may be stored as a si
       <ownedAttribute xmi:id="_yibDAIedEeOX_brmw15GsQ" name="scopingProvider" visibility="public" association="_yiYmwIedEeOX_brmw15GsQ">
         <ownedComment xmi:id="_5-gaEIedEeOX_brmw15GsQ" annotatedElement="_yibDAIedEeOX_brmw15GsQ">
           <body>Pointer to the Healthcare Provider (organization) under whose auspices the Encounter occurred.&#xD;
-&quot;An organization that is in charge of maintaining the information of this Encounter (e.g. who maintains the report or the master service catalog item, etc.). This MAY be the same as the organization on the Patient record, however it could be different. This MAY not be not the Service Delivery Location's Organization.&quot; - HL7 FHIR, Encounter.serviceProvider</body>
+&quot;An organization that is in charge of maintaining the information of this Encounter (e.g. who maintains the report or the master service catalog item, etc.). This MAY be the same as the organization on the Patient record, however it could be different. This MAY not be not the Service Delivery Location's Organization.&quot; - HL7 FHIR, Encounter.serviceProvider&#xD;
+&quot;Code for the provider who is most responsible for this encounter.&quot; - PCORnet Common Data Model, Encounter.ProviderId</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Provider.efx#_aW26cBsbEd--ZY2-pbJ-Pw?FHIM/Provider/HealthcareProvider?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yicRIYedEeOX_brmw15GsQ" value="1"/>
@@ -3414,7 +3482,9 @@ Admission: &quot;A full stay. The formal acceptance by a hospital or other inpat
       </ownedComment>
       <ownedAttribute xmi:id="_kvGW8ExgEdyVYrcEhQ5TbQ" name="admissionDate" visibility="public">
         <ownedComment xmi:id="_TAidYCqKEd6tfJk2wVTfYw" annotatedElement="_kvGW8ExgEdyVYrcEhQ5TbQ">
-          <body>&quot;This field contains the admit date/time.  It is to be used if the event date/time is different than the admit date and time, i.e., a retroactive update.  This field is also used to reflect the date/time of an outpatient/emergency patient registration.&quot; - HL7 Version 2.8, PV1-44</body>
+          <body>&quot;This field contains the admit date/time. It is to be used if the event date/time is different than the admit date and time, i.e., a retroactive update. This field is also used to reflect the date/time of an outpatient/emergency patient registration.&quot; - HL7 Version 2.8, PV1-44&#xD;
+&quot;Encounter or admission date.&quot; - PCORnet Common Data Model, Encounter.Admit_Date&#xD;
+&quot;Encounter or admission time.&quot; - PCORnet Common Data Model, Encounter.Admit_Time</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rZH-8UxgEdyVYrcEhQ5TbQ" value="1"/>
@@ -3447,7 +3517,8 @@ Admission: &quot;A full stay. The formal acceptance by a hospital or other inpat
       <ownedAttribute xmi:id="_rDZUYMPuEeGriO8gBy203A" name="admissionSource" visibility="public">
         <ownedComment xmi:id="_rDZUYcPuEeGriO8gBy203A" annotatedElement="_rDZUYMPuEeGriO8gBy203A">
           <body>&quot;Indicates where the patient was admitted.... In the US, this field should use the Official Uniform Billing (UB) 04 2008 numeric codes found on form locator 15 [which is] the Point of Origin for Admission or Visit.&quot; - HL7 Version 2.8, PV1-14.&#xD;
-&quot;From where patient was admitted (physician referral, transfer).&quot; - HL7 FHIR, Encounter.hospitalization.admitSource</body>
+&quot;From where patient was admitted (physician referral, transfer).&quot; - HL7 FHIR, Encounter.hospitalization.admitSource&#xD;
+&quot;Admitting source&quot; - PCORnet Common Data Model, Encounter.Admitting_Source. Possible values include: Adult Foster Home; Assisted Living Facility; Ambulatory Visit; Emergency Department; Home Health; Home/Self Care; Hospice; Other Acute Inpatient Hospital; Nursing Home (Includes ICF); Rehabilitation Facility; Residential Facility; Skilled Nursing Facility; Intra-hospital; No information; Unknown; Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rDZUYsPuEeGriO8gBy203A" value="1"/>
@@ -3470,6 +3541,16 @@ Labor and Delivery; Routine; Newborn (Birth in healthcare facility); Urgent; Ele
         <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DpWRoEo3Eeiyfctrd2Hs6w" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DpVqkEo3Eeiyfctrd2Hs6w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_sXp7IDuZEemQIZRQAaXE5w" name="diagnosisRelatedGroup" visibility="public" association="_sXSuwDuZEemQIZRQAaXE5w">
+        <ownedComment xmi:id="_BC2X0DuaEemQIZRQAaXE5w" annotatedElement="_sXp7IDuZEemQIZRQAaXE5w">
+          <body>Pointer to the Diagnosis Related Group(s) for which the Patient was admitted.&#xD;
+&quot;3-digit Diagnosis Related Group (DRG). The DRG is used for reimbursement for inpatient encounters. It is a Medicare requirement that combines diagnoses into clinical concepts for billing. Frequently used in observational data analyses.&quot; - PCORnet Common Data Model, Encounter.DRG.&#xD;
+&quot;DRG code version&quot; - PCORnet Common Data Model, Encounter.DRG_Type. Possible values include: CMS-DRG (old system); MS-DRG (current system); No information; Unknown; Other.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="EnrollEligCOB.efx#_EMWvIEvwEeCrON7ycdFLuQ?FHIM/EnrollEligCOB/DiagnosisRelatedGroup?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sXrwUTuZEemQIZRQAaXE5w" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sXrwUDuZEemQIZRQAaXE5w"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_nP2-0AXJEeebQs_lQM5n6g" name="ChronicCareEncounter">
@@ -3620,6 +3701,9 @@ Labor and Delivery; Routine; Newborn (Birth in healthcare facility); Urgent; Ele
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ElDO4LU1EeiWRsqEq7kYtg" memberEnd="_ElIucLU1EeiWRsqEq7kYtg _ElIuc7U1EeiWRsqEq7kYtg">
       <ownedEnd xmi:id="_ElIuc7U1EeiWRsqEq7kYtg" name="" visibility="private" type="_420A62FD03B64213F5B40316" association="_ElDO4LU1EeiWRsqEq7kYtg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_sXSuwDuZEemQIZRQAaXE5w" memberEnd="_sXp7IDuZEemQIZRQAaXE5w _sXuzoDuZEemQIZRQAaXE5w">
+      <ownedEnd xmi:id="_sXuzoDuZEemQIZRQAaXE5w" name="" visibility="private" type="_Bd7gIAXIEeebQs_lQM5n6g" association="_sXSuwDuZEemQIZRQAaXE5w"/>
     </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_-glNEGitEeG3pKm-C5y0hA" base_Comment="_SZ3dIZQZEd-GUpkbaCODYA"/>
@@ -3800,4 +3884,6 @@ Labor and Delivery; Routine; Newborn (Birth in healthcare facility); Urgent; Ele
   <Default:Documentation xmi:id="_P4ddYUo4Eeiyfctrd2Hs6w" base_Comment="_P4ddYEo4Eeiyfctrd2Hs6w"/>
   <Default:Documentation xmi:id="_D6mjsLU1EeiWRsqEq7kYtg" base_Comment="_D6hEILU1EeiWRsqEq7kYtg"/>
   <Default:Documentation xmi:id="_GAf5MbU1EeiWRsqEq7kYtg" base_Comment="_GAf5MLU1EeiWRsqEq7kYtg"/>
+  <Default:Documentation xmi:id="_Aj-K0DuXEemQIZRQAaXE5w" base_Comment="_Ajqo0DuXEemQIZRQAaXE5w"/>
+  <Default:Documentation xmi:id="_BC40EDuaEemQIZRQAaXE5w" base_Comment="_BC2X0DuaEemQIZRQAaXE5w"/>
 </xmi:XMI>
