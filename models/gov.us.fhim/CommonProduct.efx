@@ -3496,7 +3496,9 @@ Note that an important difference exists between the FHIM Packaged Medicinal Pro
         <ownedComment xmi:id="_06Be4Pa9EeGoRqAZLJ6Mwg" annotatedElement="_fhhUAGRbEeCsvJrE4KlOMA">
           <body>This property is used to identify the packaged product (or “sale-able item”), using any coding system except the National Drug Code (NDC), as we have created a separate property for NDC. HL7 and NCPDP both have a single property (which could be multi-valued) to hold any and all such codes in one place, but in the FHIM, we identify the NDC separately due to its importance in federal implementations.&#xD;
 &#xD;
-“The item code for a packaged product (e.g., complete National Drug Code [NDC] in the U.S.)” - HL7 Version 3 (PackagedProduct.code).</body>
+“The item code for a packaged product (e.g., complete National Drug Code [NDC] in the U.S.)” - HL7 Version 3 (PackagedProduct.code).&#xD;
+&quot;Code to identify the type of product ID contained in CDI03 [Product ID].&quot; - ASAP Standard for PDMP, CDI02: Product ID Qualifier. Possible values include: NDC; UPC; HRI; UPN; DIN.&#xD;
+&quot;Full product identification as indicated in CDI02 [Product ID Qualifier], including leading zeros without punctuation.&quot; - ASAP Standard for PDMP, CDI03: Product ID</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jcnQkWRbEeCsvJrE4KlOMA" value="1"/>
@@ -3641,7 +3643,11 @@ When a medication is created by a pharmacist or by a clinician by compounding tw
 &quot;Identifies the amount of this component to be added to the specified amount of the base.&quot; - HL7 Version 2.8, RXC-3.&#xD;
 &quot;Identifies the units for the component amount.  If present, this overrides the units implied by RXC-2-component code.  This must be in simple units that reflect the actual quantity of the component being added.  It does not include compound units.&quot; - HL7 Version 2.8, RXC-4.&#xD;
 &quot;Use when RXC-2-component code does not specify the strength. This is the numeric part of the strength, used in combination with RXC-6-component strength units.&quot; - HL7 Version 2.8, RXC-5.&#xD;
-&quot;Use when RXC-2-component code does not specify the strength.  This is the unit of the strength, used in combination with RXC-5-component strength.&quot; - HL7 Version 2.8, RXC-6.</body>
+&quot;Use when RXC-2-component code does not specify the strength.  This is the unit of the strength, used in combination with RXC-5-component strength.&quot; - HL7 Version 2.8, RXC-6.&#xD;
+&quot;
+Metric decimal quantity of the ingredient identified in CDI03 [Product Id]&quot; - ASAP Standard for PDMP, CDI04: Component Ingredient Quantity&#xD;
+&quot;
+Identifies the unit of measure for the quantity dispensed in CDI04 [Component Ingredient Quantity]&quot; - ASAP Standard for PDMP, CDI05: Compound Drug Dosage Units Code. Possible values include: Each (used to report solid dosage units or indivisible package); Milliliters; Grams.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I7MTMbybEea_DaXmJ278Kw" value="1"/>
@@ -4103,7 +4109,9 @@ This property indicates whether the ingredient represented by this class is acti
       <ownedAttribute xmi:id="_HRzCYM_3Ed-YeMSrwW6svA" name="code" visibility="public">
         <eAnnotations xmi:id="_HRzCYc_3Ed-YeMSrwW6svA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <ownedComment xmi:id="_68zLYO6REd-crcWiXVDZrQ" annotatedElement="_HRzCYM_3Ed-YeMSrwW6svA">
-          <body>Identifies the generic medicine using some coding system such as RxNorm or NDF-RT.</body>
+          <body>Identifies the generic medicine using some coding system such as RxNorm or MED-RT.&#xD;
+Indicates which kind of &quot;RxNorm code that is populated in the DRU-010-09 field in the SCRIPT transaction.&quot; - ASAP Standard for PDMP, DSP18: RxNorm Product Qualifier. Possible values include: Semantic Clinical Drug (SCD); Semantic Branded Drug (SBD); Generic Package (GPCK); Branded Package (BPCK)&#xD;
+&quot;Used for electronic prescriptions to capture the prescribed drug product identification.&quot; - ASAP Standard for PDMP, DSP19: RxNorm Code</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HRzCYs_3Ed-YeMSrwW6svA" value="1"/>

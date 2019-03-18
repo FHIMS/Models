@@ -1254,7 +1254,8 @@ Date the prescription was written (authorized)&quot; - ASAP Standard for PDMP, D
       </ownedAttribute>
       <ownedAttribute xmi:id="_ep2kgZkGEeCFEfqQZ7sMZg" name="diagnosisList" visibility="public" association="_ep2kgJkGEeCFEfqQZ7sMZg">
         <ownedComment xmi:id="_5A9_oBUwEeGk2cucW4LtoA" annotatedElement="_ep2kgZkGEeCFEfqQZ7sMZg">
-          <body>A (set of) specific confirmed or suspected patient diagnosis associated with a Health Care Order indicating the health care basis for the Healthcare Order.</body>
+          <body>A (set of) specific confirmed or suspected patient diagnosis associated with a Health Care Order indicating the health care basis for the Healthcare Order.&#xD;
+&quot;This field is used to report the ICD-10 code. If required by a PDMP, this field would be populated only when the ICD-10 code is included with the prescription.&quot; - ASAP Standard for PDMP, DSP25: Diagnosis Code</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Common.efx#_e4dl4AgVEd6eWYJXJewDdQ?FHIM/Common/DiagnosisListEntry?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ep2kg5kGEeCFEfqQZ7sMZg" value="*"/>
@@ -1357,7 +1358,9 @@ Date the prescription was written (authorized)&quot; - ASAP Standard for PDMP, D
         <ownedComment xmi:id="_PPxRoYxjEeikEIFpfvQzog" annotatedElement="_PPxRoIxjEeikEIFpfvQzog">
           <body>The physical location of the patient.  This information is used to communicate to the performing Service where the Patient might be found, which is particularly important for services that involve the patient (e.g., a Lab Test ordered requires a blood draw).&#xD;
 &quot;Specifies the location of the patient to whom the pharmaceutical substance is to be delivered.&quot; - HL7 Version 2.8, RXO-34.&#xD;
-&quot;Specifies the address, either mailing or physical, to which the prescription should be mailed or delivered.&quot; - HL7 Version 2.8, RXO-35.</body>
+&quot;Specifies the address, either mailing or physical, to which the prescription should be mailed or delivered.&quot; - HL7 Version 2.8, RXO-35.&#xD;
+&quot;
+Code indicating where patient is located when receiving pharmacy services&quot; - ASAP Standard for PDMP, PAT21: Patient Location Code. Possible values include: Home; Intermediary care; Nursing home; Long-term/extended care; Rest home; Boarding home; Skilled-care facility; Sub-acute care facility; Acute-care facility; Outpatient; Hospice; Unknown; or Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PPxRooxjEeikEIFpfvQzog" value="1"/>
@@ -1366,7 +1369,9 @@ Date the prescription was written (authorized)&quot; - ASAP Standard for PDMP, D
       <ownedAttribute xmi:id="_420A62FD03B64589570A015B" name="placerOrderId" visibility="public">
         <ownedComment xmi:id="_MC55gOLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64589570A015B">
           <body>&quot;This field is the placer application's order number.&quot; - HL7 Version 2.8, ORC-2&#xD;
-&quot;This field is identical to ORC-2-Placer Order Number....  It identifies an order uniquely among all orders from a particular ordering application.&quot; - HL7 Version 2.8, OBR-2.</body>
+&quot;This field is identical to ORC-2-Placer Order Number....  It identifies an order uniquely among all orders from a particular ordering application.&quot; - HL7 Version 2.8, OBR-2.&#xD;
+&quot;This field should be populated with the Initiator Reference Number from field UIB-030-01 in the SCRIPT transaction.&quot; - ASAP Standard for PDMP, DSP20: Electronic Prescription Reference Number&#xD;
+&quot;This field will be populated with the Initiator Control Reference from field UIH-030-01 in the SCRIPT standard.&quot; - ASAP Standard for PDMP, DSP21: Electronic Prescription Order Number</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lfVUgfTqEdy4NNd432ztnw" value="1"/>

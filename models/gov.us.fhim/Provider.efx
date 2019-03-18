@@ -3767,7 +3767,9 @@ U.S. Postal Service ZIP Code.&quot; - ASAP Standard for PDMP, PHA09: ZIP Code Ad
         <ownedComment xmi:id="_1kWlIirmEeOKCrmlnw-Z_w" annotatedElement="_1kWlICrmEeOKCrmlnw-Z_w">
           <body>An identifier that uniquely identifies all persons and organizations who perform medical services within the United States.  This identifier is mandated by HIPAA and is maintained by CMS.&#xD;
 &quot;An identifier that applies to this person in this role.&quot; - HL7 FHIR, Practitioner.identifier.&#xD;
-&quot;Identifier assigned to the pharmacy by CMS.&quot; - ASAP Standard for PDMP, PHA01: National Provider Identifier (NPI)</body>
+&quot;Identifier assigned to the pharmacist by CMS. This number can be used to identify the pharmacist dispensing the medication.&quot; - ASAP Standard for PDMP, DSP14: Pharmacist National Provider Identifier (NPI)&#xD;
+&quot;Identifier assigned to the pharmacy by CMS.&quot; - ASAP Standard for PDMP, PHA01: National Provider Identifier (NPI)&#xD;
+&quot;Identifier assigned to the prescriber by CMS. &quot; - ASAP Standard for PDMP, PRE01: National Provider Identifier (NPI)</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1kWlIyrmEeOKCrmlnw-Z_w" value="*"/>
@@ -3809,7 +3811,8 @@ U.S. Postal Service ZIP Code.&quot; - ASAP Standard for PDMP, PHA09: ZIP Code Ad
       <ownedAttribute xmi:id="_1roXYBsUEd--ZY2-pbJ-Pw" name="telecom" visibility="public">
         <ownedComment xmi:id="_1roXYRsUEd--ZY2-pbJ-Pw" annotatedElement="_1roXYBsUEd--ZY2-pbJ-Pw">
           <body>Indicates how and at what address that the Healthcare Provider can be reached via electronic communications. The datatype for this property is ContactPoint, which can be used for telephone numbers as well as email, etc.  The ContactPoint data  type contains a type code to indicate what kind of telecommunications address that is being referenced. Note that this property can contain more than one entry.&#xD;
-&quot;A contact detail for the practitioner, e.g. a telephone number or an email address.&quot; - HL7 FHIR, Practitioner.telecom.</body>
+&quot;A contact detail for the practitioner, e.g. a telephone number or an email address.&quot; - HL7 FHIR, Practitioner.telecom.&#xD;
+&quot;The prescriber's primary phone number&quot; - ASAP Standard for PDMP, PRE08: Phone Number</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_fImbAAEYEd-ZUM5xZsXWyw?FHIM/Datatypes/ContactPoint?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rwYoAPnEEeSJ3abZ9RQzyQ" value="*"/>
@@ -3946,7 +3949,9 @@ U.S. Postal Service ZIP Code.&quot; - ASAP Standard for PDMP, PHA09: ZIP Code Ad
       <ownedAttribute xmi:id="_420A62FD03B6456373F20383" name="licenseId" visibility="public">
         <ownedComment xmi:id="_7xIiABqQEd-j8JC21F3W2A" annotatedElement="_420A62FD03B6456373F20383">
           <body>Identifies a certification of a practitioner to perform certain activities that fall under the jurisdiction of the issuer of the license.&#xD;
-&quot;Used to help identify the sending pharmacy.&quot; - ASAP Standard for PDMP, PHA13: Pharmacy’s Permit Number/License Number</body>
+&quot;Assigned to the pharmacist by the State Licensing Board. This data element can be used to identify the pharmacist dispensing the medication.&quot; - ASAP Standard for PDMP, DSP15: Pharmacist State License Number&#xD;
+&quot;Used to help identify the sending pharmacy.&quot; - ASAP Standard for PDMP, PHA13: Pharmacy’s Permit Number/License Number&#xD;
+&quot;Identification assigned to the Prescriber by the State Licensing Board.&quot; - ASAP Standard for PDMP, PRE04: Prescriber State License Number</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LMy60Yy2EeaPWbBiMJSPyg" value="1"/>
@@ -4026,7 +4031,12 @@ U.S. Postal Service ZIP Code.&quot; - ASAP Standard for PDMP, PHA09: ZIP Code Ad
       <ownedAttribute xmi:id="_420A62FD03B64563738E00AD" name="controlledSubstanceLicenseId" visibility="public">
         <ownedComment xmi:id="_MFt_QBqbEd-j8JC21F3W2A" annotatedElement="_420A62FD03B64563738E00AD">
           <body>Identifies the license under which the practitioner is authorized to prescribe controlled medications.&#xD;
-&quot;Identifies the provider's controlled substance number, if required, by site.&quot; - HL7 Version 2.8, RXO-14.</body>
+&quot;Identifies the provider's controlled substance number, if required, by site.&quot; - HL7 Version 2.8, RXO-14.&#xD;
+&quot;
+Identifying number assigned to a prescriber or an institution by the Drug Enforcement Administration (DEA).&quot; - ASAP Standard for PDMP, PRE02: DEA Number&#xD;
+&quot;Identifying number assigned to a prescriber by an institution 
+when the institution's DEA number is used&quot; - ASAP Standard for PDMP, PRE03: DEA Number Suffix&#xD;
+&quot;This field gives a PDMP the option of requiring the XDEA Number (NADEAN) in the PRE Segment when the prescription is for opioid dependency.&quot; - ASAP Standard for PDMP, PRE09: XDEA Number</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gFGmcYy2EeaPWbBiMJSPyg" value="1"/>

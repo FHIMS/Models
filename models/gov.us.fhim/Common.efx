@@ -6861,7 +6861,10 @@ In Pharmacy Dispense, this is the unique identifier for this dispense, also know
 &quot;Identifiers associated with this Medication Statement that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate. They are business identifiers assigned to this resource by the performer or other systems and remain constant as the resource is updated and propagates from server to server.&quot; - HL7 FHIR, MedicationStatement.identifier&#xD;
 &quot;A unique identifier assigned to this observation.&quot; - HL7 FHIR, Observation.identifier&#xD;
 &quot;This records identifiers associated with this procedure that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot; - HL7 FHIR, Procedure.identifier&#xD;
-&quot;Serial number assigned to the prescription by the pharmacy.&quot; - ASAP Standard for PDMP, DSP02: Prescription Number</body>
+&quot;Serial number assigned to the prescription by the pharmacy.&quot; - ASAP Standard for PDMP, DSP02: Prescription Number&#xD;
+&quot;Number assigned to state issued serialized prescription blank. Required if state issues serialized prescription 
+pads for prescribers to use.&quot; - ASAP Standard for PDMP, AIR02: State Issued Rx Serial Number&#xD;
+</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nbH1QFaeEd6rJ7jpZ7LBFg" value="1"/>

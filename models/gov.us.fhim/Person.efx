@@ -3817,9 +3817,11 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
 &quot;Identifier for a person within a particular scope.&quot; - HL7 FHIR, Person.identifier.&#xD;
 &quot;Identifier for the organization that is used to identify the organization across multiple disparate systems.&quot; - HL7 FHIR, Organization.identifier&#xD;
 &quot;Identifier for a person within a particular scope.&quot; - HL7 FHIR, RelatedPerson.identifier&#xD;
+&quot;ID number of the person dropping off or picking up the prescription, if required by the PDMP.&quot; - ASAP Standard for PDMP, AIR05: ID of Person Dropping Off or Picking Up Rx&#xD;
 &quot;Identification number for the patient as indicated in PAT02 [ID Qualifier]. An example would be the driver’s license number.&quot; - ASAP Standard for PDMP, PAT03: ID of Patient&#xD;
-&quot;Identification that might be required by the PDMP
-to further identify the individual. An example might be in that PAT03 [ID of Patient] driver’s license is required and in PAT06 [Additional ID] Social Security number is also required&quot; - ASAP Standard for PDMP, PAT06: Additional ID</body>
+&quot;Identification that might be required by the PDMP 
+to further identify the individual. An example might be in that PAT03 [ID of Patient] driver’s license is required and in PAT06 [Additional ID] Social Security number is also required&quot; - ASAP Standard for PDMP, PAT06: Additional ID&#xD;
+</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_to7N8IAbEeGE1-mzJa42fw" value="*"/>
@@ -4440,15 +4442,22 @@ This property is typically used for identity management purposes, especially to 
       </ownedAttribute>
       <ownedAttribute xmi:id="_oFBQoOwVEd6PwKowkorMOw" name="name" visibility="public">
         <ownedComment xmi:id="_FeCvYBqVEd-j8JC21F3W2A" annotatedElement="_oFBQoOwVEd6PwKowkorMOw">
-          <body>The name by which a person is known or legally identified such as the name on a driver's license or passport.  Note that the data type for this property is a PersonName, which includes the various parts that make up a person's name such as family name, prefixes, suffixes, etc.  Note that in HL7, the PersonName data type contains a type code to indicate what kind of name is being referenced.  The FHIM explicitly models the name type, so in this case the attribute name is &quot;Legal Name&quot;, and the type code would be set to &quot;Legal Name&quot; when targeting an HL7 implementation.&#xD;
+          <body>The name by which a person is known or legally identified such as the name on a driver's license or passport. Note that the data type for this property is a PersonName, which includes the various parts that make up a person's name such as family name, prefixes, suffixes, etc. Note that in HL7, the PersonName data type contains a type code to indicate what kind of name is being referenced. The FHIM explicitly models the name type, so in this case the attribute name is &quot;Legal Name&quot;, and the type code would be set to &quot;Legal Name&quot; when targeting an HL7 implementation.&#xD;
 &#xD;
 &quot;Contains one or more of the names of the patient....&quot; - HL7 Version 2.8, PID-5&#xD;
 &quot;A name associated with the person.&quot; - HL7 FHIR, Person.name&#xD;
 &quot;A name associated with the individual.&quot; - HL7 FHIR, Patient.name&#xD;
 &quot;A name associated with the contact person.&quot; - HL7 FHIR, Patient.contact.name&#xD;
 &quot;A name associated with the person.&quot; - HL7 FHIR, RelatedPerson.name&#xD;
+&quot;Last name of the person dropping off or picking up Rx.&quot; - ASAP Standard for PDMP, AIR07: Last Name of Person Dropping Off or Picking Up Rx&#xD;
+&quot;First name of the person dropping off or picking up Rx&quot; - ASAP Standard for PDMP, AIR08: First Name of Person Dropping Off or Picking Up Rx&#xD;
+&quot;Last name or initials of the pharmacist dispensing the medication&quot; - ASAP Standard for PDMP, AIR09: Last Name or Initials of Pharmacist&#xD;
+&quot;First name of the pharmacist dispensing the medication&quot; - ASAP Standard for PDMP, AIR10: First Name of Pharmacist&#xD;
 &quot;Freeform name of the pharmacy. Note: If a dispensing prescriber, the prescriber’s name and professional degree should be entered,
-such as John Doe MD.&quot; - ASAP Standard for PDMP, PHA04: Pharmacy or Dispensing Prescriber Name</body>
+such as John Doe MD.&quot; - ASAP Standard for PDMP, PHA04: Pharmacy or Dispensing Prescriber Name&#xD;
+&quot;Prescriber's last name.&quot; - ASAP Standard for PDMP, PRE05: Last Name&#xD;
+&quot;Prescriber's first name.&quot; - ASAP Standard for PDMP, PRE06: First Name&#xD;
+&quot;Prescriber's middle name or initial.&quot; - ASAP Standard for PDMP, PRE07: Middle Name</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_3lzSEFVyEdyaooytdRFnxQ?FHIM/Datatypes/PersonName?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oFBQo-wVEd6PwKowkorMOw" value="*"/>
