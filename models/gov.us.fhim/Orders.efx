@@ -1240,6 +1240,7 @@
         <eAnnotations xmi:id="_MCwvnOLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <ownedComment xmi:id="_MCwvmuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64589570A015A">
           <body>The date/time upon which the Order was authorized (signed) and released by the ordering provider.&#xD;
+This is the date and time the order was released from OE/RR. If the TO service entered the order stub through the Add Order (AD) action, this is the service-specified request date. [FileMan 123,3]&#xD;
 &quot;Contains the date and time of the event that initiated the current transaction as reflected in ORC-1 Order Control Code.&quot; - HL7 Version 2.8, ORC-9&#xD;
 &quot;Contains the date/time that the changes to the request took effect or are supposed to take effect....&quot; - HL7 Version 2.8, ORC-15&#xD;
 &quot;For draft requests, indicates the date of initial creation. For requests with other statuses, indicates the date of activation.&quot; - HL7 FHIR, Request.authoredOn&#xD;
@@ -1319,7 +1320,8 @@ Date the prescription was written (authorized)&quot; - ASAP Standard for PDMP, D
       </ownedAttribute>
       <ownedAttribute xmi:id="_v1e1AIxiEeikEIFpfvQzog" name="orderingFacility" visibility="public">
         <ownedComment xmi:id="_6HdbIIxiEeikEIFpfvQzog" annotatedElement="_v1e1AIxiEeikEIFpfvQzog">
-          <body>&quot;This field contains the name of the facility placing the order.&quot; - HL7 Version 2.8, ORC-21&#xD;
+          <body>The institution/hospital (File 4) that is requesting the consult. This field is mandatory if the consult/ request is being sent to another hospital/institution, so that routing information can be obtained in order to return the results to the sending hospital/institution.&#xD;
+&quot;This field contains the name of the facility placing the order.&quot; - HL7 Version 2.8, ORC-21&#xD;
 &quot;This field contains the address of the facility placing the order.&quot; - HL7 Version 2.8, ORC-22&#xD;
 &quot;This field contains the telephone number of the facility placing the order.&quot; - HL7 Version 2.8, ORC-23</body>
         </ownedComment>
@@ -1357,6 +1359,7 @@ Date the prescription was written (authorized)&quot; - ASAP Standard for PDMP, D
       <ownedAttribute xmi:id="_PPxRoIxjEeikEIFpfvQzog" name="patientLocation" visibility="public">
         <ownedComment xmi:id="_PPxRoYxjEeikEIFpfvQzog" annotatedElement="_PPxRoIxjEeikEIFpfvQzog">
           <body>The physical location of the patient.  This information is used to communicate to the performing Service where the Patient might be found, which is particularly important for services that involve the patient (e.g., a Lab Test ordered requires a blood draw).&#xD;
+Pointer to the location of the patient when the consult/request order was placed. [FileMan 123,.04]&#xD;
 &quot;Specifies the location of the patient to whom the pharmaceutical substance is to be delivered.&quot; - HL7 Version 2.8, RXO-34.&#xD;
 &quot;Specifies the address, either mailing or physical, to which the prescription should be mailed or delivered.&quot; - HL7 Version 2.8, RXO-35.&#xD;
 &quot;

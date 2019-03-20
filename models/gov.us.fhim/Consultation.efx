@@ -19,7 +19,7 @@
             <element xsi:nil="true"/>
           </children>
           <element xsi:nil="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QXLLHOLiEduGJrQyRGTO1A" x="-951" y="-634" width="9433" height="1668"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QXLLHOLiEduGJrQyRGTO1A" x="-634" y="-634" width="9433" height="1668"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_VU7poE1YEd-ZC8uuCl8MVA" element="_420A62FD03B642B1F78C0027" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" lineColor="3342489" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_VU7po01YEd-ZC8uuCl8MVA" type="ImageCompartment">
@@ -720,11 +720,11 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B642B3094903E0" name="ProcessActivities">
       <eAnnotations xmi:id="_MHh60-LiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedComment xmi:id="_MHOY2uLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642B3094903E0">
-        <body>action activities for consultProcedurePromise,  it is used for tracking/auditing  </body>
+        <body>Maintains history of processing actions. [FileMan 123,40].</body>
       </ownedComment>
       <ownedAttribute xmi:id="_420A62FD03B642B30A4F0347" name="activity" visibility="public">
         <ownedComment xmi:id="_MHYJ1eLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642B30A4F0347">
-          <body>The activity being taken and updated.</body>
+          <body>This is the activity that is being updated. [FileMan 123,40->123.02,1].</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z0xK4eGnEeaHnLXha23s2A" value="1"/>
@@ -739,13 +739,13 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_et3HXuLjEdutr_MT9HkPyQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_et3HXeLjEdutr_MT9HkPyQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_420A62FD03B642B30D190249" name="time" visibility="public">
+      <ownedAttribute xmi:id="_420A62FD03B642B30D190249" name="dateTime" visibility="public">
         <ownedComment xmi:id="_MHYJ2OLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642B30D190249">
-          <body> The actual date and time the activity tracking update was added to the process activities multiple.</body>
+          <body>This is the actual date and time the activity tracking update was added to the set of Request Processing Activities. [FileMan 123,40->123.02,.01].</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bO8C0eGnEeaHnLXha23s2A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bO8C0OGnEeaHnLXha23s2A"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bO8C0OGnEeaHnLXha23s2A" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B642D6876E03AB" name="lastActivity" visibility="public" type="_420A62FD03B642B3094903E0" isUnique="false" association="_420A62FD03B642D6876C00E1">
         <ownedComment xmi:id="_MIRhueLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642D6876E03AB">
@@ -820,20 +820,25 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B642DD0A8403E3" name="serviceRenderedSetting" visibility="public">
         <ownedComment xmi:id="_MHrExuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B642DD0A8403E3">
-          <body>value to indicate if the service is to be rendered on an outpatient or inpatient basis.  This is to alleviate the confusion if patient is currently an inpatient/outpatient but is just about to be discharged/admitted and become a outpatient/inpatient. (Data Type = Set of Codes I:inpatient,O:outpatient)  </body>
+          <body>Indicates if the service is to be rendered on an outpatient or inpatient basis. This is to alleviate the confusion if patient is currently an inpatient/outpatient but is just about to be discharged/admitted and become a outpatient/inpatient. [FileMan 123,14]. Possible values are Inpatient; Outpatient.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U09pAeGnEeaHnLXha23s2A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U09pAOGnEeaHnLXha23s2A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-s2dcIk3Ed-pqcFAwb-XNw" name="provisionalDiagnosis" visibility="public" association="_-ssscIk3Ed-pqcFAwb-XNw">
+        <ownedComment xmi:id="_7XSDsEphEemILrdLdSgIvA" annotatedElement="_-s2dcIk3Ed-pqcFAwb-XNw">
+          <body>This is the Provisional Diagnosis the ordering clinician would specify on the consult request. [FileMan 123,30]. Note that this is a text field.&#xD;
+This field is used to store the coded portion of the Provisional Diagnosis if a coded diagnosis is sent. [FileMan 123,30.1].</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Common.efx#_420A62FD03B6424070DB0209?FHIM/Common/Diagnosis?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-s2dcok3Ed-pqcFAwb-XNw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-s2dcYk3Ed-pqcFAwb-XNw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6431EE3320119" name="orderedProcedure" visibility="public">
         <ownedComment xmi:id="_NJGFkeLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B6431EE3320119">
-          <body>Identifies a kind of procedure that can be, is, or has been requested as part of an order.</body>
+          <body>Identifies a kind of procedure that can be, is, or has been requested as part of an order.&#xD;
+This field contains the [procedure] that is associated with this request. [FileMan 123,1.01]</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RiQiIeGnEeaHnLXha23s2A" value="1"/>
@@ -896,4 +901,5 @@
   <Default:Documentation xmi:id="_Rc230qc1EeCkJ6Eur_P0ag" base_Comment="_NJGFkeLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_-YbKgeGmEeaHnLXha23s2A" base_Comment="_-YbKgOGmEeaHnLXha23s2A"/>
   <Default:Documentation xmi:id="_XGB4AOStEeaMP8OhjVeyrg" base_Comment="_XF_bwOStEeaMP8OhjVeyrg"/>
+  <Default:Documentation xmi:id="_7XsTYEphEemILrdLdSgIvA" base_Comment="_7XSDsEphEemILrdLdSgIvA"/>
 </xmi:XMI>
