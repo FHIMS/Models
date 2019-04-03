@@ -1134,9 +1134,12 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
     <packagedElement xmi:type="uml:Class" xmi:id="_nbH1BlaeEd6rJ7jpZ7LBFg" name="ObservationSet">
       <eAnnotations xmi:id="_sswqwHy_EeSWGIFkX6Zyfg" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedComment xmi:id="_nbH1B1aeEd6rJ7jpZ7LBFg" annotatedElement="_nbH1BlaeEd6rJ7jpZ7LBFg">
-        <body>This class is a PLACEHOLDER for some kind of panel of related observations</body>
+        <body>This class is a PLACEHOLDER for some kind of panel of related observations. A requirement is known to exist to handle groups of observations that were not necessarily taken at the same time by the same clinician. For example, blood pressure measurements every 10 minutes during a dialysis session. This kind of measurement is sometimes called a battery.</body>
       </ownedComment>
-      <ownedAttribute xmi:id="_nbH1FFaeEd6rJ7jpZ7LBFg" name="type" visibility="public">
+      <ownedAttribute xmi:id="_nbH1FFaeEd6rJ7jpZ7LBFg" name="kind" visibility="public">
+        <ownedComment xmi:id="_a19N4E9AEem9pppHp85gNA" annotatedElement="_nbH1FFaeEd6rJ7jpZ7LBFg">
+          <body>Categorizes the Observation Set, i.e., identifies what type of observation set is being instantiated, for example a blood pressure battery during dialysis.</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8IOMcbyZEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8IOMcLyZEea_DaXmJ278Kw" value="1"/>
@@ -1616,4 +1619,5 @@ Note that for laboratory observations, the aerobic condition of the culture is i
   <Default:Documentation xmi:id="_djgDNIFxEeiFweA6NKJQOg" base_Comment="_djgDMYFxEeiFweA6NKJQOg"/>
   <Default:Documentation xmi:id="_z0OTQIFxEeiFweA6NKJQOg" base_Comment="_z0FJUIFxEeiFweA6NKJQOg"/>
   <Default:Documentation xmi:id="_aEvM4LNvEeioC_3IyVLSUA" base_Comment="_aEul0bNvEeioC_3IyVLSUA"/>
+  <Default:Documentation xmi:id="_a1_qIE9AEem9pppHp85gNA" base_Comment="_a19N4E9AEem9pppHp85gNA"/>
 </xmi:XMI>

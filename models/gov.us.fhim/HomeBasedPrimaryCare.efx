@@ -86,7 +86,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_-eUoCk2IEd-N7JZGCuVoQQ" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_-eUoDE2IEd-N7JZGCuVoQQ" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_-eUoDk2IEd-N7JZGCuVoQQ" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-eUoAk2IEd-N7JZGCuVoQQ" x="27262" y="11412"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-eUoAk2IEd-N7JZGCuVoQQ" x="27262" y="11095"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_0ywS4E2OEd-N7JZGCuVoQQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" lineColor="3342489" showParent="Name" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_0ywS402OEd-N7JZGCuVoQQ" type="ImageCompartment">
@@ -485,14 +485,6 @@ The VA's Home Based Primary Care program provides health care services to Vetera
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jiodo02IEd-N7JZGCuVoQQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jiodok2IEd-N7JZGCuVoQQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_DwO4kEqXEemY3IR3-rlTUQ" name="reviewDate" visibility="public">
-        <ownedComment xmi:id="_TR52sEqXEemY3IR3-rlTUQ" annotatedElement="_DwO4kEqXEemY3IR3-rlTUQ">
-          <body>The date upon which the patient was considered or reviewed for the Home Based Primary Care program. This date must be prior to or the same as the discharge date. [FileMan 631,17].</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DwO4kkqXEemY3IR3-rlTUQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DwO4k0qXEemY3IR3-rlTUQ" value="1"/>
-      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B64398563E0281" name="HbpcAdmission">
       <eAnnotations xmi:id="_MqPmWuLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -507,6 +499,9 @@ The VA's Home Based Primary Care program provides health care services to Vetera
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MwNEYeLiEduGJrQyRGTO1A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_k60e8E2QEd-N7JZGCuVoQQ" name="dateAdmitted" visibility="public">
+        <ownedComment xmi:id="_i4hpEE8zEem9pppHp85gNA" annotatedElement="_k60e8E2QEd-N7JZGCuVoQQ">
+          <body>The date upon which the patient was considered or reviewed for the Home Based Primary Care program. This date must be prior to or the same as the discharge date. [FileMan 631,17].</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eL7EUEqDEemY3IR3-rlTUQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eL4oEEqDEemY3IR3-rlTUQ"/>
@@ -849,7 +844,6 @@ Possible values include: No help; Receives help; Not done or done without patien
   <Default:Documentation xmi:id="_ZQcQkE2SEd-N7JZGCuVoQQ" base_Comment="_ZQJVoE2SEd-N7JZGCuVoQQ"/>
   <Default:Documentation xmi:id="__BB0wEplEemILrdLdSgIvA" base_Comment="__A_YgEplEemILrdLdSgIvA"/>
   <Default:Documentation xmi:id="_OGKaUEqGEemY3IR3-rlTUQ" base_Comment="_OGApUEqGEemY3IR3-rlTUQ"/>
-  <Default:Documentation xmi:id="_TR-IIEqXEemY3IR3-rlTUQ" base_Comment="_TR52sEqXEemY3IR3-rlTUQ"/>
   <Default:Documentation xmi:id="_GeEYkEsrEembzfEpqDYXWw" base_Comment="_MqGcauLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_GeE_oEsrEembzfEpqDYXWw" base_Comment="_i44ZMU2MEd-N7JZGCuVoQQ"/>
   <Default:Documentation xmi:id="_GeE_oUsrEembzfEpqDYXWw" base_Comment="_MqPmWOLiEduGJrQyRGTO1A"/>
@@ -857,4 +851,5 @@ Possible values include: No help; Receives help; Not done or done without patien
   <Default:Documentation xmi:id="_jTEGkUsuEembzfEpqDYXWw" base_Comment="_KuZ8wU2NEd-N7JZGCuVoQQ"/>
   <Default:Documentation xmi:id="_w1wvMEsxEembzfEpqDYXWw" base_Comment="_w1dNMEsxEembzfEpqDYXWw"/>
   <Default:Documentation xmi:id="_rmiFsEs7EembzfEpqDYXWw" base_Comment="_rmfpcEs7EembzfEpqDYXWw"/>
+  <Default:Documentation xmi:id="_i4l6gE8zEem9pppHp85gNA" base_Comment="_i4hpEE8zEem9pppHp85gNA"/>
 </xmi:XMI>

@@ -3473,7 +3473,7 @@ The principal Pre-OP ICD diagnosis code (coded). [FileMan 130,32.5]</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-CekQAMIEem_R7tSACEwMg" name="specimen" visibility="public">
         <ownedComment xmi:id="_Q-Y0oAMJEem_R7tSACEwMg" annotatedElement="_-CekQAMIEem_R7tSACEwMg">
-          <body>Pointer to any specimen(s) collected and sent to the lab for analysis. [FileMan 130,47] (Note that in VistA, this is a string field, in FHIM is is a pointer to the Specimen class).</body>
+          <body>Pointer to any specimen(s) collected and sent to the lab for analysis. [FileMan 130,49] (Note that in VistA, this is a string field, in FHIM is is a pointer to the Specimen class).</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Common.efx#_420A62FD03B642DBE3F101E7?FHIM/Common/Specimen?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BpypMQMJEem_R7tSACEwMg" value="*"/>
@@ -3670,6 +3670,9 @@ Identifies the attending staff provider responsible for this case. This is requi
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z-n6QN5hEeaSVd0Fmxi4nQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_GihIIAMIEem_R7tSACEwMg" name="finalCountsPerformer" visibility="public">
+        <ownedComment xmi:id="_Jm994E82Eem9pppHp85gNA" annotatedElement="_GihIIAMIEem_R7tSACEwMg">
+          <body>&quot;This is the name of the person doing the final count of sponges, sharps and instruments.&quot; [FileMan 130,47]</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Common.efx#__uCqINw2EeaxScmtI1Szow?FHIM/Common/PractitionerParticipation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QNk4MAMIEem_R7tSACEwMg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QNbuQAMIEem_R7tSACEwMg"/>
@@ -5514,4 +5517,5 @@ A procedural coding modifier used to indicate that the other procedure performed
   <Default:Documentation xmi:id="_FdMNsQVLEemv1b7rTX4Gow" base_Comment="_FdMNsAVLEemv1b7rTX4Gow"/>
   <Default:Documentation xmi:id="_M1QDkQVPEemv1b7rTX4Gow" base_Comment="_M1QDkAVPEemv1b7rTX4Gow"/>
   <Default:Documentation xmi:id="_hYtOoQVREemv1b7rTX4Gow" base_Comment="_hYtOoAVREemv1b7rTX4Gow"/>
+  <Default:Documentation xmi:id="_Jm_MAE82Eem9pppHp85gNA" base_Comment="_Jm994E82Eem9pppHp85gNA"/>
 </xmi:XMI>

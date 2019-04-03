@@ -3361,7 +3361,7 @@ Note that the &quot;document title&quot; is in the &quot;text&quot; sub-componen
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Off64H82EeG8JPxVazzwbQ" name="Vaccine">
       <ownedComment xmi:id="_WWm-QLyFEeGK2djLWlLFew" annotatedElement="_Off64H82EeG8JPxVazzwbQ">
-        <body>&quot;Contains the identifier of the medical substance/treatment administered....  If the substance administered is a vaccine, CVX codes may be used to code this field....&quot; - HL7 Version 2.8, RXA-5</body>
+        <body>&quot;A preparation of a weakened or killed pathogen, such as a bacterium or virus, or of a portion of the pathogen's structure that upon administration to an individual stimulates antibody production or cellular immunity against the pathogen but is incapable of causing severe infection.&quot; - The American Heritage Medical Dictionary. This class represents a vaccine, identified by a code from a controlled vocabulary.</body>
       </ownedComment>
       <generalization xmi:id="_uci9UOE_EeiDi9onc7cbfQ">
         <general xmi:type="uml:Class" href="CommonProduct.efx#_oDnb8AF2EeC0SO5AWIN0Qg?FHIM/CommonProduct/MedicinalProduct?"/>
@@ -4833,6 +4833,9 @@ Indicates the state of the assignment of the patient dose to the vaccine series.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CbqsUOLvEeiAguMEAhAYVA"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_qxmOQeLvEeiAguMEAhAYVA" name="immunizationSchedule" visibility="public" type="_3DrtIKEVEeGnfe88WF3uxw" association="_qxmOQOLvEeiAguMEAhAYVA">
+          <ownedComment xmi:id="_-pLHsE9CEem9pppHp85gNA" annotatedElement="_qxmOQeLvEeiAguMEAhAYVA">
+            <body>Pointer to the Immunization Schedule against which an immunization event is being evaluated for inclusion.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qxvYMeLvEeiAguMEAhAYVA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qxvYMOLvEeiAguMEAhAYVA"/>
         </ownedAttribute>
@@ -4993,6 +4996,9 @@ Indicates the state of the assignment of the patient dose to the vaccine series.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Jp1v8KEWEeGnfe88WF3uxw"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_-jAfkFNsEeaHsPdvgbW7pw" name="vaccine" visibility="public" type="_Off64H82EeG8JPxVazzwbQ" association="_-i2ukFNsEeaHsPdvgbW7pw">
+          <ownedComment xmi:id="_hRl3wE9EEem9pppHp85gNA" annotatedElement="_-jAfkFNsEeaHsPdvgbW7pw">
+            <body>Pointer to the Vaccine that is specified to be administered by an Immunization Schedule. For example, a Measles, Mumps and Rubella Immunization Schedule will specify the use of the MMRII vaccine manufactured by Merck, CVX code 03.</body>
+          </ownedComment>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-jAfklNsEeaHsPdvgbW7pw" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-jAfkVNsEeaHsPdvgbW7pw"/>
         </ownedAttribute>
@@ -5562,4 +5568,6 @@ Indicates the state of the assignment of the patient dose to the vaccine series.
   <Default:Documentation xmi:id="_F7IGoDkvEemna_idNav1oQ" base_Comment="_F7FDUDkvEemna_idNav1oQ"/>
   <Default:Documentation xmi:id="_qngvADkvEemna_idNav1oQ" base_Comment="_qneSwDkvEemna_idNav1oQ"/>
   <Default:Documentation xmi:id="_4z7KYDkvEemna_idNav1oQ" base_Comment="_4z4HEDkvEemna_idNav1oQ"/>
+  <Default:Documentation xmi:id="_-pM84E9CEem9pppHp85gNA" base_Comment="_-pLHsE9CEem9pppHp85gNA"/>
+  <Default:Documentation xmi:id="_hRns8E9EEem9pppHp85gNA" base_Comment="_hRl3wE9EEem9pppHp85gNA"/>
 </xmi:XMI>

@@ -641,6 +641,11 @@
     <ownedComment xmi:id="__lI6kEm5EemPhZxFx5aDOA">
       <body>Note: The Audiology And Speech Pathology domain originates from the VA VistA system. The FHIM team has not yet undertaken to model this domain, so it is largely a reflection of the VistA as-is data elements with the FHIM modeling style applied.</body>
     </ownedComment>
+    <ownedComment xmi:id="_Tu_aQEtmEemecKGrQh4dWw" annotatedElement="_420A62FD03B64602A55202DB">
+      <body>The Audiology And Speech Pathology domain originates from the VA's VistA system. The FHIM team has not yet undertaken to model this domain, so it is largely a reflection of the VistA as-is data elements with the FHIM modeling style applied.&#xD;
+&#xD;
+As in many other modules of VistA, the Audiology And Speech Pathology begins with an Audiology And Speech Pathology Patient file, which points to the Patient and adds additional demographic information. This file thus serves to identify the cohort of Patients that are of interest to the Audiology And Speech Pathology program (i.e., containing that subset of Patients that are known to the program). It then contains a record of various visits to the Audiology And Speech Pathology clinic, and records the results of any audiometric tests performed during the visit (in the ASP Examination class). This class also contains summaries of any physical examinations, diagnostics, etc. The ASP Examination class is the principal clinical class in this model.</body>
+    </ownedComment>
     <packagedElement xmi:type="uml:Association" xmi:id="_ZrB8cAfLEdy3KpsmoxUG6w" name="aspClinicVisitEvent_clinic" memberEnd="_ZrLtcAfLEdy3KpsmoxUG6w _ZrLtcQfLEdy3KpsmoxUG6w">
       <eAnnotations xmi:id="_thtgAOd5Ed6qdqXtvR-ZHQ" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedEnd xmi:id="_ZrLtcQfLEdy3KpsmoxUG6w" name="" visibility="public" type="_kvQ20PjhEdudipnrbPwkbg" association="_ZrB8cAfLEdy3KpsmoxUG6w"/>
@@ -1090,4 +1095,5 @@ Contains the title of the audiologist who adequated the clinic visit. [FileMan 5
   <Default:Documentation xmi:id="_ASAgOUgQEemQwYDnOStv8A" base_Comment="_DeELwPm5EdugT9gWNLG-rw"/>
   <Default:Documentation xmi:id="_3aIrIEgQEemQwYDnOStv8A" base_Comment="_3aGO4EgQEemQwYDnOStv8A"/>
   <Default:Documentation xmi:id="_8uxNgEgQEemQwYDnOStv8A" base_Comment="_8uuxQEgQEemQwYDnOStv8A"/>
+  <Default:Documentation xmi:id="_TvUxcEtmEemecKGrQh4dWw" base_Comment="_Tu_aQEtmEemecKGrQh4dWw"/>
 </xmi:XMI>

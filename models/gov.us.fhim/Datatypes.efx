@@ -1807,6 +1807,9 @@ Note that this property will be replaced by some other concept or group of conce
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AmhAIwewEeCPOdVNW49Akw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_q3PtwGO1EeWL1ov4GOhBTA" name="codeSystem" visibility="public" type="_nrpUcGO1EeWL1ov4GOhBTA" association="_q3LcUGO1EeWL1ov4GOhBTA">
+        <ownedComment xmi:id="_HzHQEE81Eem9pppHp85gNA" annotatedElement="_q3PtwGO1EeWL1ov4GOhBTA">
+          <body>Pointer to &quot;The identification of the code system that defines the meaning of the symbol in the code.&quot; - HL7 FHIR, Coding.system</body>
+        </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q3Ri8GO1EeWL1ov4GOhBTA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q3Q74GO1EeWL1ov4GOhBTA" value="1"/>
       </ownedAttribute>
@@ -2112,6 +2115,10 @@ The State code is defined in the USPS Publication 28.  Note that while technical
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_79-7YPApEeS1qetF27ECmQ" supplier="_EfrFEPApEeS1qetF27ECmQ" client="_3lzSEFVyEdyaooytdRFnxQ"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_nrpUcGO1EeWL1ov4GOhBTA" name="CodeSystem">
+      <ownedComment xmi:id="_yLm8IE80Eem9pppHp85gNA" annotatedElement="_nrpUcGO1EeWL1ov4GOhBTA">
+        <body>&quot;The identification of the code system that defines the meaning of the symbol in the code.&quot; - HL7 FHIR, Coding.system&#xD;
+Note that in FHIR, Coding.system is a URI pointing to the code system (which presumes that each code system has a URI, and that each has a separate URI for each version of the code system). In the FHIM, we've made this a separate class to show how the logical pieces of a code system identifier would be made up.</body>
+      </ownedComment>
       <generalization xmi:id="_s8z0oAAMEeapUr0Xy0Y4Kw" general="_r_1eEBvxEd-afqIGzWhetA"/>
       <ownedAttribute xmi:id="_Ami1UwewEeCPOdVNW49Akw" name="codeSystemId">
         <ownedComment xmi:id="_Ami1VAewEeCPOdVNW49Akw" annotatedElement="_Ami1UwewEeCPOdVNW49Akw">
@@ -2135,7 +2142,7 @@ Note that this property will be replaced by some other concept or group of conce
       </ownedAttribute>
       <ownedAttribute xmi:id="_o-VSUFx8EeCsbYJDFyCu_A" name="codeSystemVersion">
         <ownedComment xmi:id="_o-VSUVx8EeCsbYJDFyCu_A" annotatedElement="_o-VSUFx8EeCsbYJDFyCu_A">
-          <body>This property identifies the release name or version of the coding scheme or coding system of which the code is a member.  This version number identifies the possible members of a coding system as of a particular time.  If a coding system isn't formally versioned, such as NDC, the date on which the coding system was published could be used here.&#xD;
+          <body>This property identifies the release name or version of the coding scheme or coding system of which the code is a member. This version number identifies the possible members of a coding system as of a particular time. If a coding system isn't formally versioned, such as NDC, the date on which the coding system was published could be used here.&#xD;
 Note that this property will be replaced by some other concept or group of concepts when this abstract class is replaced by a specific class for a given target platform.&#xD;
 &quot;The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.&quot; - HL7 FHIR, Coding.version.&#xD;
 </body>
@@ -2453,4 +2460,6 @@ Note that FHIR uses a Time datatime, FHIM uses a string for now</body>
   <Default:Documentation xmi:id="_No-GwTvYEeeAVuPecg5-Hg" base_Comment="_No-GwDvYEeeAVuPecg5-Hg"/>
   <Default:Documentation xmi:id="_hdgoQDvYEeeAVuPecg5-Hg" base_Comment="_hdXeUDvYEeeAVuPecg5-Hg"/>
   <Default:Documentation xmi:id="_JnQPUEoyEee6lNMNhkBtHQ" base_Comment="_JnECEEoyEee6lNMNhkBtHQ"/>
+  <Default:Documentation xmi:id="_yLoxUE80Eem9pppHp85gNA" base_Comment="_yLm8IE80Eem9pppHp85gNA"/>
+  <Default:Documentation xmi:id="_HzIeME81Eem9pppHp85gNA" base_Comment="_HzHQEE81Eem9pppHp85gNA"/>
 </xmi:XMI>

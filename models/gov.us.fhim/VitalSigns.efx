@@ -21,7 +21,7 @@
           <styles xmi:type="notation:TextStyle" xmi:id="_5Pew84RoEeOnHN_ty8qFhw"/>
           <styles xmi:type="notation:LineTypeStyle" xmi:id="_5Pew9IRoEeOnHN_ty8qFhw"/>
           <element xsi:nil="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5Pew9YRoEeOnHN_ty8qFhw" x="-3487" y="-634"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5Pew9YRoEeOnHN_ty8qFhw" x="-3487" y="-317"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_T04N4IdsEeOZ2vW3WfDP5Q" type="rectangle" fontName="Segoe UI" fillColor="16116705" transparency="0" lineColor="14263149" lineWidth="1">
           <children xmi:type="notation:BasicDecorationNode" xmi:id="_T07RMIdsEeOZ2vW3WfDP5Q" type="DiagramName">
@@ -394,6 +394,9 @@ This package contains sub-packages for each of the seven vital signs.  These sub
       <ownedLiteral xmi:id="_AgVP0sN1EeSFjdDJNF9NPA" name="368505008 (Structure Of Right Ulnar Artery)" classifier="_A8YIEMN0EeSFjdDJNF9NPA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_leolsHPnEeiV16BdsfE5oQ" name="HeightMeasurementBodyPosition">
+      <ownedComment xmi:id="_r-Fo8E8_Eem9pppHp85gNA" annotatedElement="_leolsHPnEeiV16BdsfE5oQ">
+        <body>The accuracy of the height measurement may be affected by whether the patient was lying, sitting, or standing at the time of the measurement. This enumeration holds the possible body position values (value set) for the Height Observation.</body>
+      </ownedComment>
       <ownedLiteral xmi:id="_leolsnPnEeiV16BdsfE5oQ" name="102538003 (Lying)" classifier="_leolsHPnEeiV16BdsfE5oQ"/>
       <ownedLiteral xmi:id="_leoltnPnEeiV16BdsfE5oQ" name="33586001 (Seated)" classifier="_leolsHPnEeiV16BdsfE5oQ"/>
       <ownedLiteral xmi:id="_leolt3PnEeiV16BdsfE5oQ" name="10904000 (Standing)" classifier="_leolsHPnEeiV16BdsfE5oQ"/>
@@ -2100,6 +2103,9 @@ This class represents the measurement (or “clinical observation”) of the pat
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p2pp0LyqEea_DaXmJ278Kw" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_G4rTkHPoEeiV16BdsfE5oQ" name="bodyPositionQualifier" visibility="public">
+          <ownedComment xmi:id="_EbqAgE8_Eem9pppHp85gNA" annotatedElement="_G4rTkHPoEeiV16BdsfE5oQ">
+            <body>The accuracy of the height measurement may be affected by whether the patient was lying, sitting, or standing at the time of the measurement. This property records an observation of the patient's body position during the time the height measurement.</body>
+          </ownedComment>
           <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MWGlkXPoEeiV16BdsfE5oQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MWGlkHPoEeiV16BdsfE5oQ"/>
@@ -3586,4 +3592,6 @@ This class represents the measurement (or “clinical observation”) of the pat
   <Default:Documentation xmi:id="_XqXxgXQcEeivUP8hArZexg" base_Comment="_XqXxgHQcEeivUP8hArZexg"/>
   <Default:Documentation xmi:id="_s2uagXQcEeivUP8hArZexg" base_Comment="_s2uagHQcEeivUP8hArZexg"/>
   <Default:Documentation xmi:id="_D73KFHQdEeivUP8hArZexg" base_Comment="_D73KEXQdEeivUP8hArZexg"/>
+  <Default:Documentation xmi:id="_Ebtq4E8_Eem9pppHp85gNA" base_Comment="_EbqAgE8_Eem9pppHp85gNA"/>
+  <Default:Documentation xmi:id="_r-G3EE8_Eem9pppHp85gNA" base_Comment="_r-Fo8E8_Eem9pppHp85gNA"/>
 </xmi:XMI>

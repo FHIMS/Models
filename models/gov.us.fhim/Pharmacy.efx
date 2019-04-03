@@ -2920,6 +2920,9 @@ Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requ
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NhFHsuLiEduGJrQyRGTO1A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_I_RhYXLuEeaOoaRAWXA_qQ" name="dosage" visibility="public" type="_HqoJ8HE-EeaIzczSuyGEmQ" association="_I_RhYHLuEeaOoaRAWXA_qQ">
+        <ownedComment xmi:id="_nmn8UFCmEemUKvBLX4d8cg" annotatedElement="_I_RhYXLuEeaOoaRAWXA_qQ">
+          <body>Pointer to information used to describe how the medication should be taken by the Patient, as described by the Pharmacist (the pharmacist can change the ordered dosage under certain circumstances).</body>
+        </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I_RhY3LuEeaOoaRAWXA_qQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I_RhYnLuEeaOoaRAWXA_qQ"/>
       </ownedAttribute>
@@ -3342,6 +3345,9 @@ Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requ
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5fXokIkOEd-lPoUWU4L5Vw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_IbCL4XLuEeaOoaRAWXA_qQ" name="dosage" visibility="public" type="_HqoJ8HE-EeaIzczSuyGEmQ" association="_IbCL4HLuEeaOoaRAWXA_qQ">
+        <ownedComment xmi:id="_nKTzwFCmEemUKvBLX4d8cg" annotatedElement="_IbCL4XLuEeaOoaRAWXA_qQ">
+          <body>Pointer to information used to describe how the medication should be taken by the Patient, as ordered by the prescriber.</body>
+        </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IbCL43LuEeaOoaRAWXA_qQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IbCL4nLuEeaOoaRAWXA_qQ"/>
       </ownedAttribute>
@@ -3990,7 +3996,8 @@ Note that neither NCPDP SCRIPT nor NCPDP Telecom contain this information direct
     <packagedElement xmi:type="uml:Dependency" xmi:id="_tfjvQPXuEeW1BuvtDtBQzQ" supplier="_ksGWoPUfEeWp_Mwb77TLSQ" client="_420A62FD03B641B4BDD30213"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_HqoJ8HE-EeaIzczSuyGEmQ" name="Dosage">
       <ownedComment xmi:id="_IqZ2oBSqEeertqFtRTH1nw" annotatedElement="_HqoJ8HE-EeaIzczSuyGEmQ">
-        <body>&quot;Indicates how the medication is/was taken or should be taken by the patient.&quot; - HL7 FHIR, Dosage&#xD;
+        <body>This class is used to contain the collective information used to describe how the medication should be taken by the Patient. This information is used by at least two other classes and will likely be used elsewhere. In the past much of this information would have been conveyed in free-form text called a &quot;sig&quot;, while the other fields are used to contain those components of the sig in separate fields.&#xD;
+&quot;Indicates how the medication is/was taken or should be taken by the patient.&quot; - HL7 FHIR, Dosage&#xD;
 &quot;Describes the medication dosage information details e.g. dose, rate, site, route, etc.&quot; - HL7 FHIR, MedicationAdministration.dosage</body>
       </ownedComment>
       <ownedAttribute xmi:id="_ABVSkBSrEeertqFtRTH1nw" name="additionalInstruction" visibility="public">
@@ -4134,6 +4141,24 @@ Indicates the form of the material making up a single dose (as opposed to how th
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PZY3IxSqEeertqFtRTH1nw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PZY3JBSqEeertqFtRTH1nw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_aLWPoLyPEeGK2djLWlLFew" name="strength" visibility="public">
+        <ownedComment xmi:id="_GzXR0LyQEeGK2djLWlLFew" annotatedElement="_aLWPoLyPEeGK2djLWlLFew">
+          <body>&quot;Use when (the administeredDrug) does not specify the strength. This is the numeric part of the strength&quot; - HL7 Version 2.8, RXA-13&#xD;
+&quot;Use when (the administeredDrug) does not specify the strength. This is the unit of the strength.&quot; - HL7 Version 2.8, RXA-14</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kk8KgJC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kk7jcJC2EeaeVcv6mxF7oQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_7aG2IL01EeGHr5yhv0QPSw" name="strengthVolume" visibility="public">
+        <ownedComment xmi:id="_7aG2Ib01EeGHr5yhv0QPSw" annotatedElement="_7aG2IL01EeGHr5yhv0QPSw">
+          <body>&quot;Defines the volume measurement in which the drug strength concentration is contained. For example, Acetaminophen 120 MG/5ML Elixir means that 120 MG of the drug is in a solution with a volume of 5 ML, (this field contains 5)&quot; - HL7 Version 2.8, RXA-23&#xD;
+&quot;Indicates the volumetric unit associated&quot; (with the volume measurement in which the drug strength concentration is contained. For example, Acetaminophen 120 MG/5ML Elixir means that 120 MG of the drug is in a solution with a volume of 5 ML, this field contains ML) - HL7 Version 2.8, RXA-24</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_latU4JC2EeaeVcv6mxF7oQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_last0JC2EeaeVcv6mxF7oQ"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_qlIzwHE4EeaIzczSuyGEmQ" name="text" visibility="public">
         <ownedComment xmi:id="_zzigABSqEeertqFtRTH1nw" annotatedElement="_qlIzwHE4EeaIzczSuyGEmQ">
           <body>This property contains the dosage instructions as ordered by the prescriber. Also called &quot;sig&quot; which is an abbreviation for either the latin term &quot;signa&quot;, which means &quot;write&quot; or &quot;label&quot;, or the latin term &quot;signetur&quot;, which means &quot;let it be labeled (according to prescription).&quot;&#xD;
@@ -4153,25 +4178,6 @@ on the prescription vial label.&quot; - ASAP Standard for PDMP, DSP23: Rx SIG</b
         <type xmi:type="uml:Class" href="Datatypes.efx#_AllZ0BWVEeeKharB8T6q_A?FHIM/Datatypes/Timing?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FKD0AbzUEeasQoRN2Ou_5g" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FKD0ALzUEeasQoRN2Ou_5g"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_nqY84BSqEeertqFtRTH1nw" name="--" visibility="private"/>
-      <ownedAttribute xmi:id="_aLWPoLyPEeGK2djLWlLFew" name="strength" visibility="public">
-        <ownedComment xmi:id="_GzXR0LyQEeGK2djLWlLFew" annotatedElement="_aLWPoLyPEeGK2djLWlLFew">
-          <body>&quot;Use when (the administeredDrug) does not specify the strength. This is the numeric part of the strength&quot; - HL7 Version 2.8, RXA-13&#xD;
-&quot;Use when (the administeredDrug) does not specify the strength. This is the unit of the strength.&quot; - HL7 Version 2.8, RXA-14</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kk8KgJC2EeaeVcv6mxF7oQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kk7jcJC2EeaeVcv6mxF7oQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_7aG2IL01EeGHr5yhv0QPSw" name="strengthVolume" visibility="public">
-        <ownedComment xmi:id="_7aG2Ib01EeGHr5yhv0QPSw" annotatedElement="_7aG2IL01EeGHr5yhv0QPSw">
-          <body>&quot;Defines the volume measurement in which the drug strength concentration is contained. For example, Acetaminophen 120 MG/5ML Elixir means that 120 MG of the drug is in a solution with a volume of 5 ML, (this field contains 5)&quot; - HL7 Version 2.8, RXA-23&#xD;
-&quot;Indicates the volumetric unit associated&quot; (with the volume measurement in which the drug strength concentration is contained. For example, Acetaminophen 120 MG/5ML Elixir means that 120 MG of the drug is in a solution with a volume of 5 ML, this field contains ML) - HL7 Version 2.8, RXA-24</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F630221?FHIM/Datatypes/Quantity?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_latU4JC2EeaeVcv6mxF7oQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_last0JC2EeaeVcv6mxF7oQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_eITtcHLqEeaOoaRAWXA_qQ" name="pharmacyPromise_promisedItem" memberEnd="_eIc3YHLqEeaOoaRAWXA_qQ _eIc3Y3LqEeaOoaRAWXA_qQ">
@@ -4353,4 +4359,6 @@ on the prescription vial label.&quot; - ASAP Standard for PDMP, DSP23: Rx SIG</b
   <Default:Documentation xmi:id="_zRaS5ORSEei4Ov8Ehaq7-w" base_Comment="_zRaS4eRSEei4Ov8Ehaq7-w"/>
   <Default:Documentation xmi:id="_orik8Dx5Eemr2oDdJO-yUA" base_Comment="_orLYkDx5Eemr2oDdJO-yUA"/>
   <Default:Documentation xmi:id="_JcRToEj9EemizKu8LnX0Aw" base_Comment="_Jb8jgEj9EemizKu8LnX0Aw"/>
+  <Default:Documentation xmi:id="_nKqZEFCmEemUKvBLX4d8cg" base_Comment="_nKTzwFCmEemUKvBLX4d8cg"/>
+  <Default:Documentation xmi:id="_nmpxgFCmEemUKvBLX4d8cg" base_Comment="_nmn8UFCmEemUKvBLX4d8cg"/>
 </xmi:XMI>
