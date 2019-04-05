@@ -3455,15 +3455,16 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6426E8690032C" name="dateOfBirth" visibility="public">
         <ownedComment xmi:id="_yKfUsBqMEd-j8JC21F3W2A" annotatedElement="_420A62FD03B6426E8690032C">
-          <body>The date and time of the birth or hatching of the living subject.&#xD;
+          <body>The date (and, optionally, time) of the birth or hatching of the living subject.&#xD;
 &#xD;
 &quot;The patient's date and time of birth.&quot; - HL7 Version 2.8, PID-7.&#xD;
 &quot;The next of kin/associated party's birth date and time.&quot; - HL7 Version 2.8, NK1-16.&#xD;
 &quot;The birth date for the person.&quot; - HL7 FHIR, Person.birthDate.&#xD;
 &quot;The date of birth for the individual.&quot; - HL7 FHIR, Patient.birthDate.&#xD;
 &quot;Date patient was born.&quot; - ASAP Standard for PDMP, PAT18: Date of Birth&#xD;
-&quot;Date of birth.&quot; - PCORnet Common Data Model, Demographic.Birth_Date&#xD;
-&quot;Time of birth.&quot; - PCORnet Common Data Model, Demographic.Birth_Time</body>
+&quot;Date of birth.&quot; - 	, Demographic.Birth_Date&#xD;
+&quot;Time of birth.&quot; - PCORnet Common Data Model, Demographic.Birth_Time&#xD;
+&quot;A date a person was born.&quot; - NIEM Core, PersonBirthDate</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d_E_gcJEEeK_EPjbFxtubQ" value="1"/>
@@ -4457,7 +4458,8 @@ This property is typically used for identity management purposes, especially to 
 such as John Doe MD.&quot; - ASAP Standard for PDMP, PHA04: Pharmacy or Dispensing Prescriber Name&#xD;
 &quot;Prescriber's last name.&quot; - ASAP Standard for PDMP, PRE05: Last Name&#xD;
 &quot;Prescriber's first name.&quot; - ASAP Standard for PDMP, PRE06: First Name&#xD;
-&quot;Prescriber's middle name or initial.&quot; - ASAP Standard for PDMP, PRE07: Middle Name</body>
+&quot;Prescriber's middle name or initial.&quot; - ASAP Standard for PDMP, PRE07: Middle Name&#xD;
+&quot;A combination of names and/or titles by which a person is known.&quot; - NIEM Core, PersonName</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_3lzSEFVyEdyaooytdRFnxQ?FHIM/Datatypes/PersonName?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oFBQo-wVEd6PwKowkorMOw" value="*"/>
