@@ -2545,8 +2545,8 @@ Note that this is a required field in FHIR that is used to link a Questionnaire 
 &quot;A terminology code that corresponds to this group or question (e.g. a code from LOINC, which defines many questions and answers).&quot; - HL7 FHIR, Questionnaire.item.code</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__qjcMbg7Eee9erX2IY_lug" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__qjcMLg7Eee9erX2IY_lug"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__qjcMbg7Eee9erX2IY_lug" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__qjcMLg7Eee9erX2IY_lug" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_5dRPALhFEee9erX2IY_lug" name="isReadOnly" visibility="public">
         <ownedComment xmi:id="_MIXcMLhGEee9erX2IY_lug" annotatedElement="_5dRPALhFEee9erX2IY_lug">
@@ -8611,7 +8611,7 @@ self.totalScoreValue.literal >= 0.0 and self.totalScoreValue.literal &lt;= 45.0<
           <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Nfz3Mlo4EemQxoKaf8JXfg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Nfz3M1o4EemQxoKaf8JXfg" value="1"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Nfz3NFo4EemQxoKaf8JXfg" value="value=2; text=Horrible">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Nfz3NFo4EemQxoKaf8JXfg" value="value=4; text=Horrible">
             <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           </defaultValue>
         </ownedAttribute>
@@ -8622,7 +8622,7 @@ self.totalScoreValue.literal >= 0.0 and self.totalScoreValue.literal &lt;= 45.0<
           <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Nf1FUlo4EemQxoKaf8JXfg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Nf1FU1o4EemQxoKaf8JXfg" value="1"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Nf1FVFo4EemQxoKaf8JXfg" value="value=3; text=Excruciating">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Nf1FVFo4EemQxoKaf8JXfg" value="value=5; text=Excruciating">
             <type xmi:type="uml:Class" href="Datatypes.efx#_ZYu5cHUeEeGl_7Z-4li2AA?FHIM/Datatypes/CodeWithValue?"/>
           </defaultValue>
         </ownedAttribute>
@@ -9248,7 +9248,7 @@ self.totalScoreValue.literal >= 0.0 and self.totalScoreValue.literal &lt;= 45.0<
           </specification>
         </ownedRule>
         <generalization xmi:id="_YxpZ01oiEemQxoKaf8JXfg" general="_qUzhx1odEemQxoKaf8JXfg"/>
-        <ownedAttribute xmi:id="_YxpZ1FoiEemQxoKaf8JXfg" name="possibleResponse" visibility="public">
+        <ownedAttribute xmi:id="_YxpZ1FoiEemQxoKaf8JXfg" name="possibleResponse" visibility="public" type="_TmT9YFoiEemQxoKaf8JXfg">
           <ownedComment xmi:id="_i0aSsFo3EemQxoKaf8JXfg" annotatedElement="_YxpZ1FoiEemQxoKaf8JXfg">
             <body>In general, (i.e., this property's supertype) represents the possible responses to a question on an Assessment Instrument. Specifically, this property is redefined to contain the possible responses to the the SF-MPQ question: &quot;Which of the following best describes your current pain?&quot;. The response must be a member of the PPIType enumeration, and therefore, the datatype of this property has been redefined from Any to PPIType.</body>
           </ownedComment>
