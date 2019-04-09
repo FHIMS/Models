@@ -3230,12 +3230,15 @@ Represents &quot;the section of the diagnostic service where the observation was
       </ownedAttribute>
       <ownedAttribute xmi:id="_F7gcQDn2EeiefcoRQJXpFA" name="encounter" visibility="public">
         <ownedComment xmi:id="_F7gcQTn2EeiefcoRQJXpFA" annotatedElement="_F7gcQDn2EeiefcoRQJXpFA">
-          <body>Pointer to the Encounter during which the Action was created or performed.&#xD;
+          <body>Pointer to the Encounter during which the Action or Observation occurred. When used by the Condition Statement sub-type, this is the Encounter during which the Condition was first asserted.&#xD;
 &#xD;
 &quot;Encounter associated with this clinical statement.&quot; - HL7 CIMI, ClinicalStatement.encounter&#xD;
+&quot;The encounter when the allergy or intolerance was asserted.&quot; - HL7 FHIR, AllergyIntolerance.encounter&#xD;
+&quot;Encounter during which the condition was first asserted.&quot; - HL7 FHIR, Condition.context&#xD;
 &quot;The visit or admission or other contact between patient and health care provider the immunization was performed as part of.&quot; - HL7 FHIR, Immunization.encounter&#xD;
 &quot;A link to an encounter, or episode of care, that identifies the particular occurrence or set occurrences of contact between patient and health care provider.&quot; - HL7 FHIR, MedicationRequest.context&#xD;
 &quot;The encounter or episode of care that establishes the context for this MedicationStatement.&quot; - HL7 FHIR, MedicationStatement.context&#xD;
+&quot;The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made.&quot; - HL7 FHIR, Observation.context&#xD;
 &quot;The encounter during which the procedure was performed.&quot; - HL7 FHIR, Procedure.context&#xD;
 &quot;The encounter or episode of care that establishes the context for making this request.&quot; - HL7 FHIR, Request.context&#xD;
 This is the visit associated with this surgery case. [FileMan 130,.015]</body>
