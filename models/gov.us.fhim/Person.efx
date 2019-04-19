@@ -3476,7 +3476,8 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
           <body>This property contains the date (and optionally time) that the subject died. If the date of death is known, the isDeceased property should be set to true.  However, in some cases it might only be known that the subject is deceased while the actual date of death might be unknown, so it is possible that the isDeceased property could be true even though this dateOfDeath property is empty.&#xD;
 &#xD;
 &quot;Contains the date and time at which the patient death occurred.&quot; - HL7 Version 2.8, PID-29.&#xD;
-&quot;Indicates if the individual is deceased or not.&quot; - HL7 FHIR, Patient.deceased[x]. Note that FHIR has a single concept with a choice of datatypes (dateTime or boolean), thus FHIR handles both the dateOfDeath and isDeceased concepts in a single field. The FHIM separates these two into separate properties.</body>
+&quot;Indicates if the individual is deceased or not.&quot; - HL7 FHIR, Patient.deceased[x]. Note that FHIR has a single concept with a choice of datatypes (dateTime or boolean), thus FHIR handles both the dateOfDeath and isDeceased concepts in a single field. The FHIM separates these two into separate properties.&#xD;
+&quot;A date a person died or was declared legally dead.&quot; NIEM PersonDeathDate</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_evNLL-LjEdutr_MT9HkPyQ" value="1"/>
@@ -3488,7 +3489,8 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
           <body>This property indicates whether or not the subject is deceased.  Among other uses, this field (as an alternative to examining the date of death) is often used to quickly separate living patients from dead ones.  If the date of death is known, this field could be calculated on the basis of whether the date of death is filled in.  However, in some cases it might only be known that the patient is deceased while the actual date of death might be unknown.  Therefore this property is not modeled as a calculated field, but can be manually populated.&#xD;
 &#xD;
 &quot;Indicates whether the patient is deceased.&quot; - HL7 Version 2.8, PID-30.&#xD;
-&quot;Indicates if the individual is deceased or not.&quot; - HL7 FHIR, Patient.deceased[x]. Note that FHIR has a single concept with a choice of datatypes (dateTime or boolean), thus FHIR handles both the dateOfDeath and isDeceased concepts in a single field. The FHIM separates these two into separate properties.</body>
+&quot;Indicates if the individual is deceased or not.&quot; - HL7 FHIR, Patient.deceased[x]. Note that FHIR has a single concept with a choice of datatypes (dateTime or boolean), thus FHIR handles both the dateOfDeath and isDeceased concepts in a single field. The FHIM separates these two into separate properties.&#xD;
+&quot;True if a person is alive; false if a person is dead.&quot; NIEM PersonLivingIndicator</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_evNLNeLjEdutr_MT9HkPyQ" value="1"/>
@@ -4264,6 +4266,7 @@ HL7 Version 2 has the following suggested values (table 1): Female; Male; Other;
 Note that NCPDP Telecom uses: blank=unknown (721-MD), 0=not specified (305-C5) or unknown (595-YY), 1=male, 2=female&#xD;
 &quot;Gender of the patient&quot; - NCPDP Script (Field 9703, Data Dictionary 201104). Note that Script uses M=Male, F=Female, U=Unknown&#xD;
 &quot;Code indicating the sex of the individual&quot; - ASC X12 1068 (Gender Code).  Note that X12 uses the following values: A=Not Provided, B=Not Applicable, F=Female, M=Male, N=Non-sexed, U=Unknown, X=Unsexable&#xD;
+&quot;A gender or sex of a person.&quot; NIEM PersonSexCode&#xD;
 &quot;A gender or sex of a person.&quot; - NIEM, PersonSexText&#xD;
 &quot;Code indicating the sex of the patient&quot; - ASAP Standard for PDMP, PAT19: Gender Code. Possible values include: Male, Female, Unknown.</body>
         </ownedComment>
@@ -4274,9 +4277,10 @@ Note that NCPDP Telecom uses: blank=unknown (721-MD), 0=not specified (305-C5) o
       <ownedAttribute xmi:id="_420A62FD03B645538E6E004F" name="birthAddress" visibility="public">
         <eAnnotations xmi:id="_NQGFauLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <ownedComment xmi:id="_0d7SwBqTEd-j8JC21F3W2A" annotatedElement="_420A62FD03B645538E6E004F">
-          <body>The city, state (or other designation such as province or region) and country where a person was born.  Used for both identification and statistical purposes.&#xD;
+          <body>The city, state (or other designation such as province or region) and country where a person was born. Used for both identification and statistical purposes.&#xD;
 &#xD;
-&quot;Indicates the location of the patient's birth&quot; - HL7 Version 2.8, PID-23.</body>
+&quot;Indicates the location of the patient's birth&quot; - HL7 Version 2.8, PID-23.&#xD;
+&quot;A location where a person was born.&quot; NIEM PersonBirthLocation</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B6418A8DCD02C2?FHIM/Datatypes/Address?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_evNLLeLjEdutr_MT9HkPyQ" value="1"/>
@@ -4293,12 +4297,13 @@ Note that NCPDP Telecom uses: blank=unknown (721-MD), 0=not specified (305-C5) o
       </ownedAttribute>
       <ownedAttribute xmi:id="_Y-OY0PkiEeGFnccz7SeroA" name="ethnicity" visibility="public">
         <ownedComment xmi:id="_Y-OY0_kiEeGFnccz7SeroA" annotatedElement="_Y-OY0PkiEeGFnccz7SeroA">
-          <body>A group of people whose members identify with each other, through a common heritage, often consisting of a common language, a common culture (often including a shared religion) and an ideology that stresses common ancestry or endogamy. In addition, an ethnic group often shares an interest in a homeland connected with a specific geographical area and common traditions, including food preferences  (Wikipedia). Note that unlike race, which concentrates on a person s physical heritage, ethnicity is concerned with the cultural heritage with which a person identifies themselves.  Examples of ethnicity include: German, Scandinavian, Italian, Irish, etc. These ethnic groups are of the same race (Caucasian, or  white ). Note also that the set of ethnicity values used may vary based on the purpose for collecting this information. The U.S. Office of Management and Budget (OMB) issues a set to be used for census purposes.  See OMB publication 15. This property may contain more than one ethnicity for a given person, identified in no particular order.&#xD;
+          <body>A group of people whose members identify with each other, through a common heritage, often consisting of a common language, a common culture (often including a shared religion) and an ideology that stresses common ancestry or endogamy. In addition, an ethnic group often shares an interest in a homeland connected with a specific geographical area and common traditions, including food preferences (Wikipedia). Note that unlike race, which concentrates on a person s physical heritage, ethnicity is concerned with the cultural heritage with which a person identifies themselves. Examples of ethnicity include: German, Scandinavian, Italian, Irish, etc. These ethnic groups are of the same race (Caucasian, or white ). Note also that the set of ethnicity values used may vary based on the purpose for collecting this information. The U.S. Office of Management and Budget (OMB) issues a set to be used for census purposes. See OMB publication 15. This property may contain more than one ethnicity for a given person, identified in no particular order.&#xD;
+&#xD;
 &quot;This field further defines the patient's ancestry.&quot; - HL7 Version 2.8, PID-22.&#xD;
 &quot;The next of kin/associated party's ethnic group.&quot; - HL7 Version 2.8, NK1-28.&#xD;
 HL7 Version 2 has the following suggested values (table 189): Hispanic or Latino; Not Hispanic or Latino; Unknown.&#xD;
 &quot;A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.&quot; - PCORnet Common Data Model, Demographic.Hispanic. Possible values include: Yes; No; Refuse to answer; No information; Unknown; Other.&#xD;
-</body>
+&quot;A cultural lineage of a person.&quot; NIEM PersonEthnicityCode</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y-OY1PkiEeGFnccz7SeroA" value="*"/>
@@ -4485,10 +4490,12 @@ such as John Doe MD.&quot; - ASAP Standard for PDMP, PHA04: Pharmacy or Dispensi
       <ownedAttribute xmi:id="_grY40PkiEeGFnccz7SeroA" name="race" visibility="public">
         <ownedComment xmi:id="_grY40_kiEeGFnccz7SeroA" annotatedElement="_grY40PkiEeGFnccz7SeroA">
           <body>A classification of humans into large and distinct populations or groups by factors such as heritable phenotypic characteristics or geographic ancestry, but also often influenced by and correlated with traits such as appearance, culture, ethnicity, and socio-economic status.  (Wikipedia).  This property may contain more than one race for a given person, identified in no particular order.&#xD;
+&#xD;
 &quot;This field refers to the patient's race.&quot; - HL7 Version 2.8, PID-10.&#xD;
 &quot;The race of the next of kin/associated party.&quot; - HL7 Version 2.8, NK1-35.&#xD;
 HL7 Version 2 has the following suggested values (table 5): American Indian or Alaska Native; Asian; Black or African American; Native Hawaiian or Other Pacific Islander; White; Other Race.&#xD;
-&quot;&quot; - PCORnet Common Data Model, Demographic.Race. Possible values include: American Indian or Alaska Native; Asian; Black or African American; Native Hawaiian or Other Pacific Islander; White; Multiple race; Refuse to answer; No information; Unknown; Other.</body>
+&quot;&quot; - PCORnet Common Data Model, Demographic.Race. Possible values include: American Indian or Alaska Native; Asian; Black or African American; Native Hawaiian or Other Pacific Islander; White; Multiple race; Refuse to answer; No information; Unknown; Other.&#xD;
+&quot;A classification of a person based on factors such as geographical locations and genetics.&quot; NIEM PersonRaceCode</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_grY41PkiEeGFnccz7SeroA" value="*"/>
