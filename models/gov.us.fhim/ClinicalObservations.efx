@@ -1120,7 +1120,8 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       <ownedAttribute xmi:id="_XX-xkIFwEeiFweA6NKJQOg" name="basedOn" visibility="public" association="_XXiFoIFwEeiFweA6NKJQOg">
         <ownedComment xmi:id="_cCKowIFwEeiFweA6NKJQOg" annotatedElement="_XX-xkIFwEeiFweA6NKJQOg">
           <body>&quot;A plan, proposal or order that is fulfilled in whole or in part by this event.&quot; - HL7 CIMI, EvaluationResultTopic.basedOn&#xD;
-&quot;A plan, proposal or order that is fulfilled in whole or in part by this event.&quot; - HL7 FHIR, Observation.basedOn</body>
+&quot;A plan, proposal or order that is fulfilled in whole or in part by this event.&quot; - HL7 FHIR, Observation.basedOn&#xD;
+&quot;The order, proposal or plan that is fulfilled in whole or in part by this QuestionnaireResponse. For example, a ServiceRequest seeking an intake assessment or a decision support recommendation to assess for post-partum depression.&quot; - HL7 FHIR, QuestionnaireResponse.basedOn</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Common.efx#_Da36EE_EEeicO4zK57V_lA?FHIM/Common/ActionStatement?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XX-xkoFwEeiFweA6NKJQOg" value="*"/>
@@ -1128,8 +1129,8 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       </ownedAttribute>
       <ownedAttribute xmi:id="_nbH1L1aeEd6rJ7jpZ7LBFg" name="bodySite" visibility="public">
         <ownedComment xmi:id="_aR5vkH-0EeOzENpLs8HIcg" annotatedElement="_nbH1L1aeEd6rJ7jpZ7LBFg">
-          <body>A code specifying detail about the anatomical site or system that is the focus of the Observation.&#xD;
-&quot;Contains the body site(s) where the measurement being reported was obtained.   This field should not be used for a specimen source or specimen collection site.  This information is of particular importance if the clinical meaning of a value is modified either directly by the site (for example, is the temperature central or peripheral?) or if the site of one measurement impacts the value of another measurement (for example, is the finger SpO2 probe on the same arm as the NIBP cuff?).  In most cases these observations are performed directly upon the patient and do not involve a specimen.&quot; - HL7 Version 2.8, OBX-20.&#xD;
+          <body>Identifies the anatomical site or system that is the focus of the Observation.&#xD;
+&quot;Contains the body site(s) where the measurement being reported was obtained.  This field should not be used for a specimen source or specimen collection site. This information is of particular importance if the clinical meaning of a value is modified either directly by the site (for example, is the temperature central or peripheral?) or if the site of one measurement impacts the value of another measurement (for example, is the finger SpO2 probe on the same arm as the NIBP cuff?).  In most cases these observations are performed directly upon the patient and do not involve a specimen.&quot; - HL7 Version 2.8, OBX-20.&#xD;
 &quot;Indicates the site on the subject's body where the observation was made (i.e. the target site).&quot; - HL7 FHIR, Observation.bodySite.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>

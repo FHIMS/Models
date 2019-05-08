@@ -3461,6 +3461,7 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
 &quot;The next of kin/associated party's birth date and time.&quot; - HL7 Version 2.8, NK1-16.&#xD;
 &quot;The birth date for the person.&quot; - HL7 FHIR, Person.birthDate.&#xD;
 &quot;The date of birth for the individual.&quot; - HL7 FHIR, Patient.birthDate.&#xD;
+&quot;The date of birth for the practitioner.&quot; - HL7 FHIR, Practitioner.birthDate&#xD;
 &quot;Date patient was born.&quot; - ASAP Standard for PDMP, PAT18: Date of Birth&#xD;
 &quot;Date of birth.&quot; - 	, Demographic.Birth_Date&#xD;
 &quot;Time of birth.&quot; - PCORnet Common Data Model, Demographic.Birth_Time&#xD;
@@ -3882,7 +3883,8 @@ We removed veryImportantPerson code (4/4/2013) because we do not have a use-case
         <body>The language communication capabilities for a Person.&#xD;
 &quot;The patient's primary language.  HL7 recommends using ISO table 639&quot; - HL7 Version 2.8, PID-15.&#xD;
 &quot;The next of kin/associated party's primary speaking language.&quot; - HL7 Version 2.8, NK1-20.&#xD;
-&quot;Languages which may be used to communicate with the patient about his or her health&quot; - HL7 FHIR, Patient.communication.</body>
+&quot;Languages which may be used to communicate with the patient about his or her health&quot; - HL7 FHIR, Patient.communication.&#xD;
+&quot;A language the practitioner can use in patient communication.&quot; - HL7 FHIR, Practitioner.communication</body>
       </ownedComment>
       <ownedAttribute xmi:id="_420A62FD03B6418A994A0104" name="isPreferred" visibility="public">
         <eAnnotations xmi:id="_NQ_dROLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
@@ -3900,6 +3902,7 @@ We removed veryImportantPerson code (4/4/2013) because we do not have a use-case
 &quot;The patient's primary language.  HL7 recommends using ISO table 639&quot; - HL7 Version 2.8, PID-15.&#xD;
 &quot;The next of kin/associated party's primary speaking language.&quot; - HL7 Version 2.8, NK1-20.&#xD;
 &quot;The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case. E.g. &quot;en&quot; for English, or &quot;en-US&quot; for American English versus &quot;en-EN&quot; for England English.&quot; - HL7 FHIR, Patient.communication.language.&#xD;
+&quot;A language the practitioner can use in patient communication.&quot; - HL7 FHIR, Practitioner.communication&#xD;
 &quot;Preferred spoken language of communication as expressed by the patient.&quot; - PCORnet Common Data Model, Demographic.Pat Pref Language_Spoken</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
@@ -4240,7 +4243,8 @@ We had an ethnicityGroup and raceCategory to handle more coarse-grained codesets
 &quot;Contains the address of the patient.  Multiple addresses for the same person may be sent.&quot; - HL7 Version 2.8, PID-11.&#xD;
 &quot;One or more addresses for the person.&quot; - HL7 FHIR, Person.address.&#xD;
 &quot;Addresses for the individual.&quot; - HL7 FHIR, Patient.address.&#xD;
-&quot;Address for the contact person.&quot; - HL7 FHIR, Patient.contact.address</body>
+&quot;Address for the contact person.&quot; - HL7 FHIR, Patient.contact.address&#xD;
+&quot;Address(es) of the practitioner that are not role specific (typically home address). Work addresses are not typically entered in this property as they are usually role dependent.&quot; - HL7 FHIR, Practitioner.address</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B6418A8DCD02C2?FHIM/Datatypes/Address?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YLpIQCKUEeCBocG0Z_rtrQ" value="*"/>
@@ -4257,17 +4261,23 @@ Note that the this concept is restricted to those societal roles as perceived in
 &quot;The patient's sex.&quot; - HL7 Version 2.8, PID-8.&#xD;
 &quot;The next of kin/associated party's sex.&quot; - HL7 Version 2.8, NK1-15.&#xD;
 HL7 Version 2 has the following suggested values (table 1): Female; Male; Other; Unknown; Ambiguous; Not applicable.&#xD;
+&#xD;
 &quot;Administrative Gender.&quot; - HL7 FHIR, Person.gender.&#xD;
 &quot;Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes.&quot; - HL7 FHIR, Patient.gender.&#xD;
 &quot;Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes.&quot; - HL7 FHIR, Patient.contact.gender&#xD;
+&quot;Administrative Gender - the gender that the person is considered to have for administration and record keeping purposes.&quot; - HL7 FHIR, Practitioner.gender&#xD;
+&#xD;
 &quot;Code identifying the gender of the individual [clinician].&quot; - NCPDP Telecommunication (Field 721-MD, Data Dictionary 201104).&#xD;
 &quot;Code identifying the gender of the individual [patient].&quot; - NCPDP Telecommunication (Field 305-C5, Data Dictionary 201104).&#xD;
 &quot;The Gender of the purchaser of the product/service.&quot; - NCPDP Telecommunication (Field 595-YY, Data Dictionary 201104).&#xD;
 Note that NCPDP Telecom uses: blank=unknown (721-MD), 0=not specified (305-C5) or unknown (595-YY), 1=male, 2=female&#xD;
 &quot;Gender of the patient&quot; - NCPDP Script (Field 9703, Data Dictionary 201104). Note that Script uses M=Male, F=Female, U=Unknown&#xD;
+&#xD;
 &quot;Code indicating the sex of the individual&quot; - ASC X12 1068 (Gender Code).  Note that X12 uses the following values: A=Not Provided, B=Not Applicable, F=Female, M=Male, N=Non-sexed, U=Unknown, X=Unsexable&#xD;
+&#xD;
 &quot;A gender or sex of a person.&quot; NIEM PersonSexCode&#xD;
 &quot;A gender or sex of a person.&quot; - NIEM, PersonSexText&#xD;
+&#xD;
 &quot;Code indicating the sex of the patient&quot; - ASAP Standard for PDMP, PAT19: Gender Code. Possible values include: Male, Female, Unknown.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
@@ -4451,10 +4461,13 @@ This property is typically used for identity management purposes, especially to 
           <body>The name by which a person is known or legally identified such as the name on a driver's license or passport. Note that the data type for this property is a PersonName, which includes the various parts that make up a person's name such as family name, prefixes, suffixes, etc. Note that in HL7, the PersonName data type contains a type code to indicate what kind of name is being referenced. The FHIM explicitly models the name type, so in this case the attribute name is &quot;Legal Name&quot;, and the type code would be set to &quot;Legal Name&quot; when targeting an HL7 implementation.&#xD;
 &#xD;
 &quot;Contains one or more of the names of the patient....&quot; - HL7 Version 2.8, PID-5&#xD;
+&#xD;
 &quot;A name associated with the person.&quot; - HL7 FHIR, Person.name&#xD;
 &quot;A name associated with the individual.&quot; - HL7 FHIR, Patient.name&#xD;
 &quot;A name associated with the contact person.&quot; - HL7 FHIR, Patient.contact.name&#xD;
+&quot;The name(s) associated with the practitioner.&quot; - HL7 FHIR, Practitioner.name&#xD;
 &quot;A name associated with the person.&quot; - HL7 FHIR, RelatedPerson.name&#xD;
+&#xD;
 &quot;Last name of the person dropping off or picking up Rx.&quot; - ASAP Standard for PDMP, AIR07: Last Name of Person Dropping Off or Picking Up Rx&#xD;
 &quot;First name of the person dropping off or picking up Rx&quot; - ASAP Standard for PDMP, AIR08: First Name of Person Dropping Off or Picking Up Rx&#xD;
 &quot;Last name or initials of the pharmacist dispensing the medication&quot; - ASAP Standard for PDMP, AIR09: Last Name or Initials of Pharmacist&#xD;
@@ -4464,6 +4477,7 @@ such as John Doe MD.&quot; - ASAP Standard for PDMP, PHA04: Pharmacy or Dispensi
 &quot;Prescriber's last name.&quot; - ASAP Standard for PDMP, PRE05: Last Name&#xD;
 &quot;Prescriber's first name.&quot; - ASAP Standard for PDMP, PRE06: First Name&#xD;
 &quot;Prescriber's middle name or initial.&quot; - ASAP Standard for PDMP, PRE07: Middle Name&#xD;
+&#xD;
 &quot;A combination of names and/or titles by which a person is known.&quot; - NIEM Core, PersonName</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_3lzSEFVyEdyaooytdRFnxQ?FHIM/Datatypes/PersonName?"/>
@@ -4473,7 +4487,8 @@ such as John Doe MD.&quot; - ASAP Standard for PDMP, PHA04: Pharmacy or Dispensi
       <ownedAttribute xmi:id="_Nj4b4Pm-EeSJ3abZ9RQzyQ" name="photo" visibility="public">
         <ownedComment xmi:id="_aINfIPm-EeSJ3abZ9RQzyQ" annotatedElement="_Nj4b4Pm-EeSJ3abZ9RQzyQ">
           <body>&quot;An image that can be displayed as a thumbnail of the person to enhance the identification of the individual.&quot; - HL7 FHIR, Person.photo.&#xD;
-&quot;Image of the patient.&quot; - HL7 FHIR, Patient.photo.</body>
+&quot;Image of the patient.&quot; - HL7 FHIR, Patient.photo.&#xD;
+&quot;Image of the person.&quot; - HL7 FHIR, Practitioner.photo</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64586C73900D7?FHIM/Datatypes/Image?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TDJg8Pm-EeSJ3abZ9RQzyQ" value="1"/>
@@ -4604,7 +4619,8 @@ Note that HL7 Version 2 table 6 lists 85 suggested values for this field.</body>
           <body>A pointer to information regarding the language communication capabilities for a Person.&#xD;
 &quot;The patient's primary language.  HL7 recommends using ISO table 639&quot; - HL7 Version 2.8, PID-15.&#xD;
 &quot;The next of kin/associated party's primary speaking language.&quot; - HL7 Version 2.8, NK1-20.&#xD;
-&quot;Languages which may be used to communicate with the patient about his or her health&quot; - HL7 FHIR, Patient.communication.</body>
+&quot;Languages which may be used to communicate with the patient about his or her health&quot; - HL7 FHIR, Patient.communication.&#xD;
+&quot;A language the practitioner can use in patient communication.&quot; - HL7 FHIR, Practitioner.communication</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NUtfuOLiEduGJrQyRGTO1A" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NUtft-LiEduGJrQyRGTO1A"/>
@@ -4872,7 +4888,8 @@ Possible values include (from HL7 Table 140): US Army; US Navy; US Air Force; US
     <packagedElement xmi:type="uml:Class" xmi:id="_PhnrMEJbEeOM0Zvgf2xtag" name="PersonalRelationship">
       <eAnnotations xmi:id="_PhnrMUJbEeOM0Zvgf2xtag" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
       <ownedComment xmi:id="_PhnrMkJbEeOM0Zvgf2xtag" annotatedElement="_PhnrMEJbEeOM0Zvgf2xtag">
-        <body>This Role identifies a Person to whom the originating Person is related in some way.</body>
+        <body>This Role identifies a Person to whom the originating Person is related in some way.&#xD;
+&quot;Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process.&quot; - FHIR RelatedPerson</body>
       </ownedComment>
       <ownedAttribute xmi:id="_PhnrR0JbEeOM0Zvgf2xtag" name="relationshipCategory" visibility="public">
         <ownedComment xmi:id="_PhnrSEJbEeOM0Zvgf2xtag" annotatedElement="_PhnrR0JbEeOM0Zvgf2xtag">

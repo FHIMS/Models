@@ -574,7 +574,7 @@
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_e3kiG_h_EeamspOPLo07ww" visible="false" type="StructureCompartment"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e3kiEvh_EeamspOPLo07ww" x="22190" y="-1902"/>
         </children>
-        <children xmi:type="umlnotation:UMLShape" xmi:id="_eB9DMPn0EeaPd4r0BT6ZOg" element="_5p2X0PnqEeaPd4r0BT6ZOg" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_eB9DMPn0EeaPd4r0BT6ZOg" element="_5p2X0PnqEeaPd4r0BT6ZOg" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="14869218" transparency="0" lineColor="11842740" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_eB9qQPn0EeaPd4r0BT6ZOg" type="ImageCompartment">
             <layoutConstraint xmi:type="notation:Size" xmi:id="_eB9qQfn0EeaPd4r0BT6ZOg" width="1320" height="1320"/>
           </children>
@@ -640,7 +640,7 @@
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_hMamlx3vEeeIxccvDlLgJA" visible="false" type="StructureCompartment"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hMNLMR3vEeeIxccvDlLgJA" x="36772" y="23141"/>
         </children>
-        <children xmi:type="umlnotation:UMLShape" xmi:id="_4j_VgbLSEeeKfvjx78dWlQ" element="_4j_VgLLSEeeKfvjx78dWlQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_4j_VgbLSEeeKfvjx78dWlQ" element="_4j_VgLLSEeeKfvjx78dWlQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" lineColor="3342489" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_4j_Vg7LSEeeKfvjx78dWlQ" type="ImageCompartment">
             <layoutConstraint xmi:type="notation:Size" xmi:id="_4j_VhLLSEeeKfvjx78dWlQ" width="1320" height="1320"/>
           </children>
@@ -651,7 +651,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_4j_VibLSEeeKfvjx78dWlQ" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_4j_VirLSEeeKfvjx78dWlQ" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_4kIfcLLSEeeKfvjx78dWlQ" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4j_VgrLSEeeKfvjx78dWlQ" x="34236" y="12680"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4j_VgrLSEeeKfvjx78dWlQ" x="34236" y="12046"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_yZwogLTuEee8ToGyn6JwPw" element="_yZwBcLTuEee8ToGyn6JwPw" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519679" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_yZwogrTuEee8ToGyn6JwPw" type="ImageCompartment">
@@ -4954,13 +4954,29 @@ A UDI is a unique numeric or alphanumeric code that consists of two parts: a) a 
       <generalization xmi:id="_Q5rmoLLWEeeKfvjx78dWlQ">
         <general xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
       </generalization>
+      <ownedAttribute xmi:id="_-WbNcG6UEemntNRsNQgNtA" name="basedOn" visibility="public">
+        <ownedComment xmi:id="_-WbNcW6UEemntNRsNQgNtA" annotatedElement="_-WbNcG6UEemntNRsNQgNtA">
+          <body>&quot;A plan, proposal or order that is fulfilled in whole or in part by this DeviceUseStatement.&quot; - HL7 FHIR, DeviceUseStatement.basedOn</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#_Da36EE_EEeicO4zK57V_lA?FHIM/Common/ActionStatement?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-WbNcm6UEemntNRsNQgNtA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-WbNc26UEemntNRsNQgNtA"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_F0-qcLLTEeeKfvjx78dWlQ" name="bodySite" visibility="public">
         <ownedComment xmi:id="_LNOvQLLYEeeKfvjx78dWlQ" annotatedElement="_F0-qcLLTEeeKfvjx78dWlQ">
-          <body>&quot;Indicates the site on the subject's body where the device was used (i.e. the target site).&quot;- HL7 FHIR, DeviceUseStatement.bodySite</body>
+          <body>&quot;Indicates the anotomic location on the subject's body where the device was used ( i.e. the target).&quot; - HL7 FHIR, DeviceUseStatement.bodySite</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F0-qcbLTEeeKfvjx78dWlQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F0-qcrLTEeeKfvjx78dWlQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q9sRQG6aEemntNRsNQgNtA" name="derivedFrom" visibility="public">
+        <ownedComment xmi:id="_Q9sRQW6aEemntNRsNQgNtA" annotatedElement="_Q9sRQG6aEemntNRsNQgNtA">
+          <body>&quot;Allows linking the DeviceUseStatement to the underlying Request, or to other information that supports or is used to derive the DeviceUseStatement.&quot; - HL7 FHIR, DeviceUseStatement.derivedFrom</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Common.efx#_Wu4MgKMyEeSjK-UNpoDZuQ?FHIM/Common/ClinicalStatement?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q9sRQm6aEemntNRsNQgNtA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q9sRQ26aEemntNRsNQgNtA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_bIlOIbLXEeeKfvjx78dWlQ" name="device" visibility="public" type="_420A62FD03B6425C004E004C" association="_bIlOILLXEeeKfvjx78dWlQ">
         <ownedComment xmi:id="_h7ByULLXEeeKfvjx78dWlQ" annotatedElement="_bIlOIbLXEeeKfvjx78dWlQ">
@@ -4970,14 +4986,21 @@ Note, it's unclear whether this should point to Device or DeviceInstance. FHIR's
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bIlOI7LXEeeKfvjx78dWlQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bIlOIrLXEeeKfvjx78dWlQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_FzYH8LLTEeeKfvjx78dWlQ" name="indication" visibility="public">
-        <ownedComment xmi:id="_DQaCoLLYEeeKfvjx78dWlQ" annotatedElement="_FzYH8LLTEeeKfvjx78dWlQ">
-          <body>&quot;Reason or justification for the use of the device.&quot;- HL7 FHIR, DeviceUseStatement.indication&#xD;
-Note that we may point to the Indication class instead, depending on the vocabulary bound to this concept.</body>
+      <ownedAttribute xmi:id="_tBmLcG6bEemntNRsNQgNtA" name="reasonCode" visibility="public">
+        <ownedComment xmi:id="_1Md7IG6bEemntNRsNQgNtA" annotatedElement="_tBmLcG6bEemntNRsNQgNtA">
+          <body>&quot;Reason or justification for the use of the device.&quot; - HL7 FHIR, DeviceUseStatement.reasonCode</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FzYH8bLTEeeKfvjx78dWlQ" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FzYH8rLTEeeKfvjx78dWlQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tBmLcm6bEemntNRsNQgNtA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tBmLc26bEemntNRsNQgNtA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_3Hp1cG6bEemntNRsNQgNtA" name="reasonReference" visibility="public">
+        <ownedComment xmi:id="_3Hp1cW6bEemntNRsNQgNtA" annotatedElement="_3Hp1cG6bEemntNRsNQgNtA">
+          <body>&quot;Indicates another resource whose existence justifies this DeviceUseStatement.&quot; - HL7 FHIR, DeviceUseStatement.reasonReference</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_r_1eEBvxEd-afqIGzWhetA?FHIM/Datatypes/Any?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3Hp1cm6bEemntNRsNQgNtA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3Hp1c26bEemntNRsNQgNtA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_FxeDcLLTEeeKfvjx78dWlQ" name="timing" visibility="public">
         <ownedComment xmi:id="_-9FBsLLWEeeKfvjx78dWlQ" annotatedElement="_FxeDcLLTEeeKfvjx78dWlQ">
@@ -4987,14 +5010,6 @@ Note that FHIR timing can be a Timing, Period, or a DateTime. FHIM currently lim
         <type xmi:type="uml:Class" href="Datatypes.efx#_AllZ0BWVEeeKharB8T6q_A?FHIM/Datatypes/Timing?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FxeDcbLTEeeKfvjx78dWlQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FxeDcrLTEeeKfvjx78dWlQ"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_BgdhQLLTEeeKfvjx78dWlQ" name="whenUsed" visibility="public">
-        <ownedComment xmi:id="_szsacLLWEeeKfvjx78dWlQ" annotatedElement="_BgdhQLLTEeeKfvjx78dWlQ">
-          <body>&quot;The time period over which the device was used.&quot;- HL7 FHIR, DeviceUseStatement.whenUsed</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EBesgbLTEeeKfvjx78dWlQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EBesgLLTEeeKfvjx78dWlQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_bIlOILLXEeeKfvjx78dWlQ" name="deviceUseStatement_device" memberEnd="_bIlOIbLXEeeKfvjx78dWlQ _bIlOJLLXEeeKfvjx78dWlQ">
@@ -5277,10 +5292,8 @@ Note that FHIR timing can be a Timing, Period, or a DateTime. FHIM currently lim
   <Default:Documentation xmi:id="_tV7lAB4OEeeIxccvDlLgJA" base_Comment="_tVx0AB4OEeeIxccvDlLgJA"/>
   <Default:Documentation xmi:id="_EOml4R4PEeeIxccvDlLgJA" base_Comment="_EOml4B4PEeeIxccvDlLgJA"/>
   <Default:Documentation xmi:id="_F1nHILLUEeeKfvjx78dWlQ" base_Comment="_F1l5ALLUEeeKfvjx78dWlQ"/>
-  <Default:Documentation xmi:id="_szsacbLWEeeKfvjx78dWlQ" base_Comment="_szsacLLWEeeKfvjx78dWlQ"/>
   <Default:Documentation xmi:id="_-9FBsbLWEeeKfvjx78dWlQ" base_Comment="_-9FBsLLWEeeKfvjx78dWlQ"/>
   <Default:Documentation xmi:id="_h7ByUbLXEeeKfvjx78dWlQ" base_Comment="_h7ByULLXEeeKfvjx78dWlQ"/>
-  <Default:Documentation xmi:id="_DQaCobLYEeeKfvjx78dWlQ" base_Comment="_DQaCoLLYEeeKfvjx78dWlQ"/>
   <Default:Documentation xmi:id="_LNOvQbLYEeeKfvjx78dWlQ" base_Comment="_LNOvQLLYEeeKfvjx78dWlQ"/>
   <Default:Documentation xmi:id="_3bQzhLTuEee8ToGyn6JwPw" base_Comment="_3bQzgbTuEee8ToGyn6JwPw"/>
   <Default:Documentation xmi:id="_MA-6UbTvEee8ToGyn6JwPw" base_Comment="_MA-6ULTvEee8ToGyn6JwPw"/>
@@ -5301,4 +5314,8 @@ Note that FHIR timing can be a Timing, Period, or a DateTime. FHIM currently lim
   <Default:Documentation xmi:id="_lMuOYcsGEeeRmrVpDYXk5A" base_Comment="_lMuOYMsGEeeRmrVpDYXk5A"/>
   <Default:Documentation xmi:id="_eJdEAXAaEeiy_9OTRvuq_w" base_Comment="_eJdEAHAaEeiy_9OTRvuq_w"/>
   <Default:Documentation xmi:id="_k91h4XAaEeiy_9OTRvuq_w" base_Comment="_k91h4HAaEeiy_9OTRvuq_w"/>
+  <Default:Documentation xmi:id="_-WhUEG6UEemntNRsNQgNtA" base_Comment="_-WbNcW6UEemntNRsNQgNtA"/>
+  <Default:Documentation xmi:id="_Q9uGcG6aEemntNRsNQgNtA" base_Comment="_Q9sRQW6aEemntNRsNQgNtA"/>
+  <Default:Documentation xmi:id="_1Mr9kG6bEemntNRsNQgNtA" base_Comment="_1Md7IG6bEemntNRsNQgNtA"/>
+  <Default:Documentation xmi:id="_3Hp1dG6bEemntNRsNQgNtA" base_Comment="_3Hp1cW6bEemntNRsNQgNtA"/>
 </xmi:XMI>

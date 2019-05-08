@@ -471,7 +471,7 @@
           <styles xmi:type="notation:TextStyle" xmi:id="_8F3pM1jKEeG6Pp3Py7p1bw"/>
           <styles xmi:type="notation:LineTypeStyle" xmi:id="_8F3pNFjKEeG6Pp3Py7p1bw"/>
           <element xsi:nil="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8F3pNVjKEeG6Pp3Py7p1bw" x="317" y="-1057" width="6981"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8F3pNVjKEeG6Pp3Py7p1bw" x="634" width="8568"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_vLm_wJ93EeGVHtLvLEEdog" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="15652322" lineColor="12464763" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_vLwwwJ93EeGVHtLvLEEdog" type="ImageCompartment">
@@ -551,18 +551,6 @@
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_I4t6owjREeeH-JUbuHPVcg" type="PackageContents" collapsed="true" canonical="false"/>
           <element xmi:type="uml:Package" href="MedicationAdministration.efx#__EI_AAjMEeeH-JUbuHPVcg?FHIM/MedicationAdministration?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I4tTkQjREeeH-JUbuHPVcg" x="15850" y="7925" width="3569" height="1370"/>
-        </children>
-        <children xmi:type="notation:Shape" xmi:id="_ukzSoC93Eee8ZskGHfh21g" type="Note" fontName="Segoe UI" description="NOTE: The FHIM is being re-factored to harmonize with both CIMI and FHIR, which introduce new modeling patterns and styles. For an example of the new style, see the Vital Signs package. As we apply the new style across the FHIM, noticeable differences in modeling styles will be evident in different packages; we expect to have these differences resolved shortly." fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
-          <children xmi:type="notation:BasicDecorationNode" xmi:id="_ukzSpC93Eee8ZskGHfh21g" type="DiagramName">
-            <element xsi:nil="true"/>
-          </children>
-          <children xmi:type="notation:BasicDecorationNode" xmi:id="_ukzSpS93Eee8ZskGHfh21g" type="Description">
-            <element xsi:nil="true"/>
-          </children>
-          <styles xmi:type="notation:TextStyle" xmi:id="_ukzSoS93Eee8ZskGHfh21g"/>
-          <styles xmi:type="notation:LineTypeStyle" xmi:id="_ukzSoi93Eee8ZskGHfh21g"/>
-          <element xsi:nil="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ukzSoy93Eee8ZskGHfh21g" x="7608" y="-1268" width="15871" height="2855"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_Mi32UGG0EeeNCem-9yFTpQ" fontName="Arial" fontHeight="8" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="15652322" lineColor="12464763" showStereotype="None">
           <children xmi:type="notation:DecorationNode" xmi:id="_Mi32UmG0EeeNCem-9yFTpQ" type="ImageCompartment">
@@ -715,6 +703,38 @@ Note to the reader: the FHIM is a single integrated model, whereby diagrams are 
       <ownedLiteral xmi:id="_FETJECZnEemg-8Rt-x-yhg" name="V3 value set OID" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
       <ownedLiteral xmi:id="_HhrKcCZnEemg-8Rt-x-yhg" name="VSAC Collaboration URL" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
       <ownedLiteral xmi:id="_Jdc6oCZnEemg-8Rt-x-yhg" name="VSAC URL" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WZUTUGYREemgP9Z5nchGkg" name="physicalHealth_diagnosis">
+      <ownedEnd xmi:id="_WZUTUWYREemgP9Z5nchGkg" name="" visibility="public" association="_WZUTUGYREemgP9Z5nchGkg">
+        <type xmi:type="uml:Class" href="BehavioralHealth.efx#_UmWinI8GEd-XNpj2tjovxA?FHIM/BehavioralHealth/Behavioral%20Health%20Domain/PhysicalHealth?"/>
+      </ownedEnd>
+      <memberEnd href="BehavioralHealth.efx#_UmWin48GEd-XNpj2tjovxA?FHIM/BehavioralHealth/Behavioral%20Health%20Domain/PhysicalHealth/diagnosis?"/>
+      <memberEnd href="#_WZUTUWYREemgP9Z5nchGkg?FHIM/physicalHealth_diagnosis/%3CProperty%3E?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WZUTUmYREemgP9Z5nchGkg" name="medication_medicationAdministered">
+      <ownedEnd xmi:id="_WZUTU2YREemgP9Z5nchGkg" name="" visibility="public" association="_WZUTUmYREemgP9Z5nchGkg">
+        <type xmi:type="uml:Class" href="BehavioralHealth.efx#_UmWioo8GEd-XNpj2tjovxA?FHIM/BehavioralHealth/Behavioral%20Health%20Domain/Medication?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WZUTVGYREemgP9Z5nchGkg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WZUTVWYREemgP9Z5nchGkg" value="1"/>
+      </ownedEnd>
+      <memberEnd href="BehavioralHealth.efx#_UmWipY8GEd-XNpj2tjovxA?FHIM/BehavioralHealth/Behavioral%20Health%20Domain/Medication/medicationAdministered?"/>
+      <memberEnd href="#_WZUTU2YREemgP9Z5nchGkg?FHIM/medication_medicationAdministered/%3CProperty%3E?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WZXWomYREemgP9Z5nchGkg" name="substanceOfChoice_substance">
+      <ownedEnd xmi:id="_WZXWo2YREemgP9Z5nchGkg" name="" visibility="public" association="_WZXWomYREemgP9Z5nchGkg">
+        <type xmi:type="uml:Class" href="BehavioralHealth.efx#_UmWjNI8GEd-XNpj2tjovxA?FHIM/BehavioralHealth/Behavioral%20Health%20Domain/SubstanceOfChoice?"/>
+      </ownedEnd>
+      <memberEnd href="BehavioralHealth.efx#_qu3L4HCiEeKknILXOCcS7w?FHIM/BehavioralHealth/Behavioral%20Health%20Domain/SubstanceOfChoice/substance?"/>
+      <memberEnd href="#_WZXWo2YREemgP9Z5nchGkg?FHIM/substanceOfChoice_substance/%3CProperty%3E?"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WZXWpGYREemgP9Z5nchGkg" name="diagnosticSummary_diagnosis">
+      <ownedEnd xmi:id="_WZXWpWYREemgP9Z5nchGkg" name="" visibility="public" association="_WZXWpGYREemgP9Z5nchGkg">
+        <type xmi:type="uml:Class" href="BehavioralHealth.efx#_UmWjVY8GEd-XNpj2tjovxA?FHIM/BehavioralHealth/Behavioral%20Health%20Domain/DiagnosticSummary?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WZXWpmYREemgP9Z5nchGkg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WZXWp2YREemgP9Z5nchGkg" value="1"/>
+      </ownedEnd>
+      <memberEnd href="BehavioralHealth.efx#_UmWjV48GEd-XNpj2tjovxA?FHIM/BehavioralHealth/Behavioral%20Health%20Domain/DiagnosticSummary/diagnosis?"/>
+      <memberEnd href="#_WZXWpWYREemgP9Z5nchGkg?FHIM/diagnosticSummary_diagnosis/%3CProperty%3E?"/>
     </packagedElement>
     <profileApplication xmi:id="_Lo1MoeLiEduGJrQyRGTO1A">
       <eAnnotations xmi:id="_Lo1MouLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
