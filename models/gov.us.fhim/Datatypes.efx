@@ -1469,7 +1469,8 @@ Note that this property may be replaced by some other concept or group of concep
         <body>Indicates the monetary amount to be transferred from the debit to the credit account.</body>
       </ownedComment>
       <ownedComment xmi:id="_Qbj-cO2fEd-YWc6j70EPjw" annotatedElement="_420A62FD03B641886F630160">
-        <body>&quot;A quantity expressing an amount of money in some currency. While the monetary amount is a single kind of quantity (money)  the exchange rates between the different units are variable. This is the principle difference between PQ and MO, and the  reason why currency units are not physical units.&quot; - HL7 V3</body>
+        <body>&quot;A quantity expressing an amount of money in some currency. While the monetary amount is a single kind of quantity (money) the exchange rates between the different units are variable. This is the principle difference between PQ and MO, and the  reason why currency units are not physical units.&quot; - HL7 V3&#xD;
+In FHIR, this data type is called Money.</body>
       </ownedComment>
       <generalization xmi:id="_9GSMAOqeEeS5D9mZzS_77A" general="_420A62FD03B641886F630221"/>
       <ownedAttribute xmi:id="_420A62FD03B643D93D1000CD" name="unit" visibility="public" type="_GmKqYGAfEd6a0qoC8Dh7hA">
@@ -1588,7 +1589,7 @@ Used if available in pharmacy system and required by the PDMP.&quot; - ASAP Stan
       </ownedComment>
       <ownedComment xmi:id="_0QY6cO2kEd-YWc6j70EPjw" annotatedElement="_420A62FD03B641886F630221">
         <body>&quot;A dimensioned quantity expressing the result of measuring&quot; - HL7 V3&#xD;
-&quot;A measured amount (or an amount that can potentially be measured). Note that measured amounts include amounts that are not precisely quantified, including amounts involving arbitrary units and floating currencies.&quot; - HL7 FHIR, Quantity.</body>
+&quot;A measured amount (or an amount that can potentially be measured). Note that measured amounts include amounts that are not precisely quantified, including amounts involving arbitrary units and floating currencies.&quot; - HL7 FHIR, Quantity. Note that the FHIR Quantity data type includes an optional comparator, which is not commonly used. In FHIM, we have created a sub type (QuantityWithComparator) that adds the comparator property.</body>
       </ownedComment>
       <generalization xmi:id="_w2QycAAMEeapUr0Xy0Y4Kw" general="_r_1eEBvxEd-afqIGzWhetA"/>
       <ownedAttribute xmi:id="_420A62FD03B6424AC40901DE" name="value" visibility="public" type="_N-BAoNYeEd62cosTNS-_lw">
@@ -1785,7 +1786,8 @@ Note that the FHIM has one data type that can be used to hold a date, a date-and
         <body>A length of time specified as a Physical Quantity, e.g., 5 minutes, 2.5 hours.</body>
       </ownedComment>
       <ownedComment xmi:id="_j-QVEPwQEd-3ndaGus2qMA" annotatedElement="_420A62FD03B64239FAA800D9">
-        <body>This class represents an amount of time, such as 10 minutes, 3.2 seconds, etc. This class is structurally identical to a Physical Quantity, although the units of measure are by definition time units (e.g., hours), rather than physical units (e.g., kilograms).</body>
+        <body>This class represents an amount of time, such as 10 minutes, 3.2 seconds, etc. This class is structurally identical to a Quantity, although the units of measure are by definition time units (e.g., hours), rather than physical units (e.g., kilograms).&#xD;
+In FHIR, this data type is called Duration.</body>
       </ownedComment>
       <generalization xmi:id="_3-RdcOqrEeS5D9mZzS_77A" general="_420A62FD03B641886F630221"/>
       <ownedAttribute xmi:id="_420A62FD03B643037E010077" name="unit" visibility="public" type="_GmKqYGAfEd6a0qoC8Dh7hA">
@@ -2138,6 +2140,9 @@ The State code is defined in the USPS Publication 28.  Note that while technical
       <eAnnotations xmi:id="_JYm5QOqfEeS5D9mZzS_77A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <details xmi:id="_JYngUOqfEeS5D9mZzS_77A" key="PQ"/>
       </eAnnotations>
+      <ownedComment xmi:id="_ThUlIHKLEemp48yFN8eASg" annotatedElement="_oz0YYOqeEeS5D9mZzS_77A">
+        <body>The FHIR Quantity data type includes an optional comparator, which is not commonly used. In FHIM, this sub type adds the comparator property.</body>
+      </ownedComment>
       <generalization xmi:id="_3HJ7IOqeEeS5D9mZzS_77A" general="_420A62FD03B641886F630221"/>
       <ownedAttribute xmi:id="_r-XBwOqeEeS5D9mZzS_77A" name="comparator" visibility="public" type="_GmKqYGAfEd6a0qoC8Dh7hA">
         <ownedComment xmi:id="_1y8hQOqeEeS5D9mZzS_77A" annotatedElement="_r-XBwOqeEeS5D9mZzS_77A">
@@ -2530,4 +2535,5 @@ Note that FHIR uses a Time datatime, FHIM uses a string for now</body>
   <Default:Documentation xmi:id="_ADUd0HDqEem4VqdP4TIrvQ" base_Comment="_ADSBkHDqEem4VqdP4TIrvQ"/>
   <Default:Documentation xmi:id="_TVhHQHDqEem4VqdP4TIrvQ" base_Comment="_TVeD8HDqEem4VqdP4TIrvQ"/>
   <Default:Documentation xmi:id="_kBQ2YHDrEem4VqdP4TIrvQ" base_Comment="_kBPBMHDrEem4VqdP4TIrvQ"/>
+  <Default:Documentation xmi:id="_ThVzQHKLEemp48yFN8eASg" base_Comment="_ThUlIHKLEemp48yFN8eASg"/>
 </xmi:XMI>

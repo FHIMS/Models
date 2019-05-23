@@ -3220,6 +3220,7 @@ Represents &quot;the section of the diagnostic service where the observation was
 &quot;The encounter when the allergy or intolerance was asserted.&quot; - HL7 FHIR, AllergyIntolerance.encounter&#xD;
 &quot;Encounter during which the condition was first asserted.&quot; - HL7 FHIR, Condition.context&#xD;
 &quot;The visit or admission or other contact between patient and health care provider the immunization was performed as part of.&quot; - HL7 FHIR, Immunization.encounter&#xD;
+&quot;The encounter or episode of care that establishes the context for this event.&quot; - HL7 FHIR, MedicationDispense.context&#xD;
 &quot;A link to an encounter, or episode of care, that identifies the particular occurrence or set occurrences of contact between patient and health care provider.&quot; - HL7 FHIR, MedicationRequest.context&#xD;
 &quot;The encounter or episode of care that establishes the context for this MedicationStatement.&quot; - HL7 FHIR, MedicationStatement.context&#xD;
 &quot;The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made.&quot; - HL7 FHIR, Observation.context&#xD;
@@ -3245,6 +3246,7 @@ This is the visit associated with this surgery case. [FileMan 130,.015]</body>
 &quot;This property allows a non condition-specific note to the made about the related person. Ideally, the note would be in the condition property, but this is not always possible.&quot; - HL7 FHIR, FamilyMemberHistory.note&#xD;
 &quot;Extra information about the immunization that is not conveyed by the other attributes.&quot; - HL7 FHIR, Immunization.note&#xD;
 &quot;Extra information about the medication administration that is not conveyed by the other attributes.&quot; - HL7 FHIR, MedicationAdministration.note&#xD;
+&quot;Extra information about the dispense that could not be conveyed in the other attributes.&quot; - HL7 FHIR, MedicationDispense.note&#xD;
 &quot;Provides extra information about the medication statement that is not conveyed by the other attributes.&quot; - HL7 FHIR, MedicationStatement.note&#xD;
 &quot;May include statements about significant, unexpected or unreliable values, or information about the source of the value where this may be relevant to the interpretation of the result.&quot; - HL7 FHIR, Observation.comment&#xD;
 &quot;To communicate any details or issues about the specimen or during the specimen collection. (for example: broken vial, sent with patient, frozen).&quot; - HL7 FHIR, Specimen.note</body>
@@ -3260,8 +3262,11 @@ This is the visit associated with this surgery case. [FileMan 130,.015]</body>
 &quot;Indicates the verification status for the allergy.&quot; - HL7 Version 2.8, IAM-17.  HL7 Version 2 has the following suggested values (table 438): Unconfirmed; Pending; Suspect; Confirmed or verified; Confirmed but inactive; Erroneous; Doubt raised.&#xD;
 &quot;Contains the observation result status.... This field reflects the current completion status of the results for one Observation Identifier....&quot; - HL7 Version 2.8, OBX-11.&#xD;
 &quot;Contains the current status of the problem at this particular date/time (e.g., active, active-improving, active-stable, active-worsening, inactive, resolved, etc.).&quot; - HL7 Version 2.8, PRB-14&#xD;
+&#xD;
 &quot;Concept indicating the state of this record. E.g., entered in error.&quot; - HL7 CIMI InformationEntry.recordStatus&#xD;
+&#xD;
 &quot;A code representing the patient or other source's judgment about the state of the device used that this statement is about. Generally this will be active or completed.&quot; Possible values are: Active; Completed; Entered in Error; Intended; Stopped; On Hold (aka Suspended). - HL7 FHIR, DeviceUseStatement.status&#xD;
+&quot;A code specifying the state of the set of dispense events.&quot; - HL7 FHIR, MedicationDispense.status&#xD;
 &quot;The position of the questionnaire response within its overall lifecycle.&quot; - HL7 FHIR, QuestionnaireResponse.status</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
@@ -3314,6 +3319,7 @@ An additional operative procedure performed by a different surgical team under t
 &quot;The patient who used the device.&quot; - HL7 FHIR, DeviceUseStatement.subject&#xD;
 &quot;The patient who either received or did not receive the immunization.&quot; - HL7 FHIR, Immunization.patient&#xD;
 &quot;The person or animal or group receiving the medication.&quot; - HL7 FHIR, MedicationAdministration.subject&#xD;
+&quot;A link to a resource representing the person or the group to whom the medication will be given.&quot; - HL7 FHIR, MedicationDispense.subject&#xD;
 &quot;The person, animal or group who is/was taking the medication.&quot; - HL7 FHIR, MedicationStatement.subject&#xD;
 &quot;The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed. Comments: Indirect characteristics may be those of a specimen, fetus, donor, other observer (for example a relative or EMT), or any observation made about the subject.&quot; - HL7 FHIR, Observation.subject&#xD;
 &quot;The person, animal or group on which the procedure was performed.&quot; - HL7 FHIR, Procedure.subject&#xD;
@@ -3354,6 +3360,7 @@ An additional operative procedure performed by a different surgical team under t
         <ownedComment xmi:id="_RmTlYBTQEeeSDZ571EKARw" annotatedElement="_NgU0YOQxEeaH9t35G2snaA">
           <body>&quot;Provenance information specific to the recording of the clinical statement (e.g., when recorded, where recorded, etc...).&quot; - HL7 CIMI, InformationEntry.recorded&#xD;
 &quot;Individual who recorded the record and takes responsibility for its content.&quot; - HL7 FHIR, AllergyIntolerance.recorder&#xD;
+&quot;Individual who recorded the record and takes responsibility for its content.&quot; - HL7 FHIR, Condition.recorder&#xD;
 &quot;Person who received the answers to the questions in the QuestionnaireResponse and recorded them in the system.&quot; - HL7 FHIR, QuestionnaireResponse.author</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NgU0YeQxEeaH9t35G2snaA" value="1"/>
@@ -3447,6 +3454,14 @@ An additional operative procedure performed by a different surgical team under t
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19aj0R-xEee94IovPwpKfw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19aj0B-xEee94IovPwpKfw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_p38lsHKHEemp48yFN8eASg" name="duration" visibility="public">
+        <ownedComment xmi:id="_rEq3gHKHEemp48yFN8eASg" annotatedElement="_p38lsHKHEemp48yFN8eASg">
+          <body>&quot;The span of time over which the collection of a specimen occurred.&quot; - HL7 FHIR, Specimen.collection.duration</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64239FAA800D9?FHIM/Datatypes/TimeQuantity?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u3dMoHKHEemp48yFN8eASg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u3clkHKHEemp48yFN8eASg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_0jvp8P8sEd-Koe9flR96lw" name="handlingCode" visibility="public">
         <ownedComment xmi:id="_Awh_sBHgEeCBuOUrBnIXmQ" annotatedElement="_0jvp8P8sEd-Koe9flR96lw">
@@ -3659,6 +3674,7 @@ The Current Procedural Terminology (CPT) code corresponding with the planned pri
         <ownedComment xmi:id="_nT4wEGs0EeiYVvtnLEaW4w" annotatedElement="_gmo08Gs0EeiYVvtnLEaW4w">
           <body>&quot;The order that is partly or wholly enacted by the performance of this act.&quot; - HL7 CIMI, Performance.fulfillsOrder&#xD;
 &quot;The original request, instruction or authority to perform the administration.&quot; - HL7 FHIR, MedicationAdministration.prescription&#xD;
+&quot;Indicates the medication order that is being dispensed against.&quot; - HL7 FHIR, MedicationDispense.authorizingPrescription&#xD;
 &quot;A reference to a resource that contains details of the request for this procedure.&quot; - HL7 FHIR, Procedure.basedOn&#xD;
 Pointer to the order which requested the surgical procedure. [FileMan 130,100]</body>
         </ownedComment>
@@ -3678,6 +3694,7 @@ Pointer to the order which requested the surgical procedure. [FileMan 130,100]</
         <ownedComment xmi:id="_c5APIGtAEeiYVvtnLEaW4w" annotatedElement="_VJ84wWtAEeiYVvtnLEaW4w">
           <body>&quot;A larger action of which this particular action is a component or step.&quot; - HL7 CIMI, Performance.partOf&#xD;
 &quot;A larger event of which this particular event is a component or step.&quot; - HL7 FHIR, MedicationAdministration.partOf&#xD;
+&quot;The procedure that trigger the dispense.&quot; - HL7 FHIR, MedicationDispense.partOf&#xD;
 &quot;A larger event of which this particular procedure is a component or step.&quot; - HL7 FHIR, Procedure.partOf</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VJ84w2tAEeiYVvtnLEaW4w" value="*"/>
@@ -4015,6 +4032,7 @@ Note that in Laboratory, a &quot;Reflex Test&quot; will be handled through this 
           <body>The date (and optionally time) that the Clinical Information was recorded into the EHR. This date/time is potentially different from the time that the underlying condition occurred or was actually observed.&#xD;
 &quot;The time at which the activity was recorded.&quot; - HL7 CIMI, Attribution.recordedOn&#xD;
 &quot;The recordedDate represents when this particular AllergyIntolerance record was created in the system, which is often a system-generated date.&quot; - HL7 FHIR, AllergyIntolerance.recordedDate&#xD;
+&quot;The recordedDate represents when this particular Condition record was created in the system, which is often a system-generated date.&quot; - HL7 FHIR, Condition.recordedDate&#xD;
 &quot;The date and time this observation was made available.&quot; - HL7 FHIR, Observation.issued.&#xD;
 &quot;The date and/or time that this set of answers were last changed.&quot; - HL7 FHIR, QuestionnaireResponse.authored</body>
         </ownedComment>
@@ -4592,6 +4610,14 @@ Note that FHIR has a subject property that points to the resource that the Flag 
       <ownedComment xmi:id="_8d7f4NUeEeeaHvV-nCCy9A" annotatedElement="_GWWocNUdEeeaHvV-nCCy9A">
         <body>&quot;A photo, video, or audio recording acquired or used in healthcare. The actual content may be inline or provided by direct reference.&quot; - HL7 FHIR, Media</body>
       </ownedComment>
+      <ownedAttribute xmi:id="_GUZ1wHG4Eemt26ppfO_ibQ" name="basedOn" visibility="public" type="_Da36EE_EEeicO4zK57V_lA">
+        <ownedComment xmi:id="_VNSVkHG4Eemt26ppfO_ibQ" annotatedElement="_GUZ1wHG4Eemt26ppfO_ibQ">
+          <body>&quot;A procedure that is fulfilled in whole or in part by the creation of this media.&quot; - HL7 FHIR, Media.basedOn&#xD;
+Note that in FHIR, this could be a Service Request or a Care Plan. In the FHIM this is currently modeled as any Action Statement.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VzxGwHG4Eemt26ppfO_ibQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VzwfsHG4Eemt26ppfO_ibQ"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_Y2EIMNUhEeeaHvV-nCCy9A" name="bodySite" visibility="public">
         <ownedComment xmi:id="_qf2pYNUhEeeaHvV-nCCy9A" annotatedElement="_Y2EIMNUhEeeaHvV-nCCy9A">
           <body>&quot;Indicates the site on the subject's body where the media was collected (i.e. the target site).&quot; - HL7 FHIR, Media.bodySite</body>
@@ -4616,13 +4642,22 @@ Note that FHIR has a subject property that points to the resource that the Flag 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZDVvMdUhEeeaHvV-nCCy9A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZDVvMtUhEeeaHvV-nCCy9A" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_CxJxcNUfEeeaHvV-nCCy9A" name="context" visibility="public">
-        <ownedComment xmi:id="_3XxMcNUgEeeaHvV-nCCy9A" annotatedElement="_CxJxcNUfEeeaHvV-nCCy9A">
-          <body>&quot;The encounter or episode of care that establishes the context for this media.&quot; - HL7 FHIR, Media.context</body>
+      <ownedAttribute xmi:id="_C6ON4NUfEeeaHvV-nCCy9A" name="dateTimeCreated" visibility="public">
+        <ownedComment xmi:id="_NsImYNUhEeeaHvV-nCCy9A" annotatedElement="_C6ON4NUfEeeaHvV-nCCy9A">
+          <body>&quot;The date and time(s) at which the media was collected.&quot; - HL7 FHIR, Media.created[x]&#xD;
+Note that FHIR can be a dateTime or a Period. The FHIM is modeled as a Period in order to handle both cases.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Encounter.efx#_qS7A8GitEeG3pKm-C5y0hA?FHIM/Encounter/AbstractEncounter?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CxJxcdUfEeeaHvV-nCCy9A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CxJxctUfEeeaHvV-nCCy9A"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C6ON4dUfEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C6ON4tUfEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_S95gUHHNEemt26ppfO_ibQ" name="dateTimeIssued" visibility="public">
+        <ownedComment xmi:id="_CZgrgHHOEemt26ppfO_ibQ" annotatedElement="_S95gUHHNEemt26ppfO_ibQ">
+          <body>&quot;The date and time this version of the media was made available to providers, typically after having been reviewed.&quot; - HL7 FHIR, Media.issued</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gElpwXHNEemt26ppfO_ibQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gElpwHHNEemt26ppfO_ibQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Y9GkUNUhEeeaHvV-nCCy9A" name="device" visibility="public">
         <ownedComment xmi:id="_uzELANUhEeeaHvV-nCCy9A" annotatedElement="_Y9GkUNUhEeeaHvV-nCCy9A">
@@ -4633,6 +4668,14 @@ Note that FHIR can point to either a Device or a DeviceMetric. FHIM points to De
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y9GkUdUhEeeaHvV-nCCy9A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y9GkUtUhEeeaHvV-nCCy9A"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_VeZ4wHHOEemt26ppfO_ibQ" name="deviceName" visibility="public">
+        <ownedComment xmi:id="_fOiWEHHOEemt26ppfO_ibQ" annotatedElement="_VeZ4wHHOEemt26ppfO_ibQ">
+          <body>&quot;The name of the device manufacturer of the device that was used to make the recording.&quot; - HL7 FHIR, Media.deviceName</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pE1FwXHOEemt26ppfO_ibQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pE1FwHHOEemt26ppfO_ibQ"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_FazM4NUiEeeaHvV-nCCy9A" name="duration" visibility="public">
         <ownedComment xmi:id="_beUHYNUiEeeaHvV-nCCy9A" annotatedElement="_FazM4NUiEeeaHvV-nCCy9A">
           <body>&quot;The duration of the recording in seconds - for audio and video.&quot; - HL7 FHIR, Media.duration</body>
@@ -4640,6 +4683,14 @@ Note that FHIR can point to either a Device or a DeviceMetric. FHIM points to De
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FazM4dUiEeeaHvV-nCCy9A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FazM4tUiEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CxJxcNUfEeeaHvV-nCCy9A" name="encounter" visibility="public">
+        <ownedComment xmi:id="_3XxMcNUgEeeaHvV-nCCy9A" annotatedElement="_CxJxcNUfEeeaHvV-nCCy9A">
+          <body>&quot;The encounter that establishes the context for this media.&quot; - HL7 FHIR, Media.encounter</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Encounter.efx#_qS7A8GitEeG3pKm-C5y0hA?FHIM/Encounter/AbstractEncounter?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CxJxcdUfEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CxJxctUfEeeaHvV-nCCy9A"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_FUQgANUiEeeaHvV-nCCy9A" name="frames" visibility="public">
         <ownedComment xmi:id="_Wb-18NUiEeeaHvV-nCCy9A" annotatedElement="_FUQgANUiEeeaHvV-nCCy9A">
@@ -4665,6 +4716,14 @@ Note that FHIR can point to either a Device or a DeviceMetric. FHIM points to De
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A5oPIdUfEeeaHvV-nCCy9A" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A5oPINUfEeeaHvV-nCCy9A"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_8N0x4NUfEeeaHvV-nCCy9A" name="modality" visibility="public">
+        <ownedComment xmi:id="_8N0x4dUfEeeaHvV-nCCy9A" annotatedElement="_8N0x4NUfEeeaHvV-nCCy9A">
+          <body>&quot;Details of the type of the media - usually, how it was acquired (what type of device). If images sourced from a DICOM system, are wrapped in a Media resource, then this is the modality.&quot; - HL7 FHIR, Media.modality</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8N0x4tUfEeeaHvV-nCCy9A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8N0x49UfEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_yIZSoNUiEeeaHvV-nCCy9A" name="note" visibility="public">
         <ownedComment xmi:id="_3ESk4NUiEeeaHvV-nCCy9A" annotatedElement="_yIZSoNUiEeeaHvV-nCCy9A">
           <body>&quot;Comments made about the media by the performer, subject or other participants.&quot; - HL7 FHIR, Media.note</body>
@@ -4673,21 +4732,20 @@ Note that FHIR can point to either a Device or a DeviceMetric. FHIM points to De
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yIZSotUiEeeaHvV-nCCy9A" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yIZSo9UiEeeaHvV-nCCy9A"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_C6ON4NUfEeeaHvV-nCCy9A" name="occurrence" visibility="public">
-        <ownedComment xmi:id="_NsImYNUhEeeaHvV-nCCy9A" annotatedElement="_C6ON4NUfEeeaHvV-nCCy9A">
-          <body>&quot;The date and time(s) at which the media was collected.&quot; - HL7 FHIR, Media.occurrence[x]&#xD;
-Note that FHIR can be a dateTime or a Period. The FHIM is modeled as a TimeInterval in order to handle both cases.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_VO5nkLHGEeaLhL0dBWV_ew?FHIM/Datatypes/TimeInterval?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C6ON4dUfEeeaHvV-nCCy9A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C6ON4tUfEeeaHvV-nCCy9A"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_DDVGkNUfEeeaHvV-nCCy9A" name="operator" visibility="public" type="_420A62FD03B6418CF92600E1">
         <ownedComment xmi:id="_U5FVQNUhEeeaHvV-nCCy9A" annotatedElement="_DDVGkNUfEeeaHvV-nCCy9A">
           <body>&quot;The person who administered the collection of the image.&quot; - HL7 FHIR, Media.operator</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DDVGkdUfEeeaHvV-nCCy9A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DDVGktUfEeeaHvV-nCCy9A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EARagHG5Eemt26ppfO_ibQ" name="partOf" visibility="public">
+        <ownedComment xmi:id="_GKiSoHG5Eemt26ppfO_ibQ" annotatedElement="_EARagHG5Eemt26ppfO_ibQ">
+          <body>&quot;A larger event of which this particular event is a component or step.&quot; - HL7 FHIR, Media.partOf</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_r_1eEBvxEd-afqIGzWhetA?FHIM/Datatypes/Any?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HeVc0XG5Eemt26ppfO_ibQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HeVc0HG5Eemt26ppfO_ibQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_DSgLANUfEeeaHvV-nCCy9A" name="reason" visibility="public">
         <ownedComment xmi:id="_e7CiYNUhEeeaHvV-nCCy9A" annotatedElement="_DSgLANUfEeeaHvV-nCCy9A">
@@ -4697,13 +4755,10 @@ Note that FHIR can be a dateTime or a Period. The FHIM is modeled as a TimeInter
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DSgLAdUfEeeaHvV-nCCy9A" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DSgLAtUfEeeaHvV-nCCy9A"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_8N0x4NUfEeeaHvV-nCCy9A" name="subCategory" visibility="public">
-        <ownedComment xmi:id="_8N0x4dUfEeeaHvV-nCCy9A" annotatedElement="_8N0x4NUfEeeaHvV-nCCy9A">
-          <body>&quot;Details of the type of the media - usually, how it was acquired (what type of device). If images sourced from a DICOM system, are wrapped in a Media resource, then this is the modality.&quot; - HL7 FHIR, Media.subtype</body>
-        </ownedComment>
+      <ownedAttribute xmi:id="_a2kc0HG5Eemt26ppfO_ibQ" name="status" visibility="public">
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8N0x4tUfEeeaHvV-nCCy9A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8N0x49UfEeeaHvV-nCCy9A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cXrqQHG5Eemt26ppfO_ibQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cXqcIHG5Eemt26ppfO_ibQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_CnZYgNUfEeeaHvV-nCCy9A" name="subject" visibility="public" type="_61ai4MTBEd-6Z_53K--WsA">
         <ownedComment xmi:id="_Z1A5MNUgEeeaHvV-nCCy9A" annotatedElement="_CnZYgNUfEeeaHvV-nCCy9A">
@@ -6894,7 +6949,7 @@ Note that this property is marked as derived as it may be calculated or may be s
 &quot;An external identifier for this statement such as an IRI.&quot; - HL7 FHIR, DeviceUseStatement.identifier&#xD;
 &quot;A unique identifier assigned to this immunization record.&quot; - HL7 FHIR, Immunization.identifier&#xD;
 &quot;External identifier - FHIR will generate its own internal identifiers (probably URLs) which do not need to be explicitly managed by the resource. The identifier here is one that would be used by another non-FHIR system - for example an automated medication pump would provide a record each time it operated; an administration while the patient was off the ward might be made with a different system and entered after the event. Particularly important if these records have to be updated.&quot;  - HL7 FHIR, MedicationAdministration.identifier&#xD;
-In Pharmacy Dispense, this is the unique identifier for this dispense, also known as a &quot;Fill Id&quot;. &quot;Identifier assigned by the dispensing facility - this is an identifier assigned outside FHIR.&quot; - HL7 FHIR, MedicationDispense.identifier&#xD;
+&quot;Identifiers associated with this Medication Dispense that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate. They are business identifiers assigned to this resource by the performer or other systems and remain constant as the resource is updated and propagates from server to server.&quot; - HL7 FHIR, MedicationDispense.identifier&#xD;
 &quot;Identifiers associated with this Medication Statement that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate. They are business identifiers assigned to this resource by the performer or other systems and remain constant as the resource is updated and propagates from server to server.&quot; - HL7 FHIR, MedicationStatement.identifier&#xD;
 &quot;A unique identifier assigned to this observation.&quot; - HL7 FHIR, Observation.identifier&#xD;
 &quot;This records identifiers associated with this procedure that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot; - HL7 FHIR, Procedure.identifier&#xD;
@@ -6979,6 +7034,7 @@ The current state of the Substance Administration. Possible values include: Infu
 &#xD;
 &quot;Location where procedure was performed or is to be performed.&quot; - HL7 CIMI, ProcedureTopic.location&#xD;
 &quot;The service delivery location where the vaccine administration occurred.&quot;  - HL7 FHIR, Immunization.location&#xD;
+&quot;The principal physical location where the dispense was performed.&quot; - HL7 FHIR, MedicationDispense.location&#xD;
 &quot;The location where the procedure actually happened. E.g. a newborn at home, a tracheostomy at a restaurant.&quot; - HL7 FHIR, Procedure.location</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Provider.efx#_420A62FD03B64242CAB30303?FHIM/Provider/ServiceDeliveryLocation?"/>
@@ -7054,7 +7110,8 @@ Comments or additional information concerning why the surgical case was canceled
       <ownedAttribute xmi:id="_PSI_DDn3EeiefcoRQJXpFA" name="supportingInformation" visibility="public" type="_29nUQBgBEeiwcpUehaEhrA">
         <ownedComment xmi:id="_PSI_DTn3EeiefcoRQJXpFA" annotatedElement="_PSI_DDn3EeiefcoRQJXpFA">
           <body>&quot;Additional information that supports the performance, non-performance, ordering, or proposing of the clinical action, for example, the patient height and weight, or documentation of heart rate before administering the medication (in case medication needs to be held if heart rate falls in a specific range).&quot; - HL7 CIMI, ActionContext.supportingInformation&#xD;
-&quot;Additional information (for example, patient height and weight) that supports the administration of the medication.&quot; - HL7 FHIR, MedicationAdministration.supportingInformation</body>
+&quot;Additional information (for example, patient height and weight) that supports the administration of the medication.&quot; - HL7 FHIR, MedicationAdministration.supportingInformation&#xD;
+&quot;Additional information that supports the medication being dispensed.&quot; - HL7 FHIR, MedicationDispense.supportingInformation</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PSI_Djn3EeiefcoRQJXpFA" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PSI_Dzn3EeiefcoRQJXpFA"/>
@@ -7550,4 +7607,9 @@ Comments or additional information concerning why the surgical case was canceled
   <Default:Documentation xmi:id="_G19QkG0LEemI7-F9UAreNQ" base_Comment="_G160UG0LEemI7-F9UAreNQ"/>
   <Default:Documentation xmi:id="_ISXHsG0MEemI7-F9UAreNQ" base_Comment="_ISWgoW0MEemI7-F9UAreNQ"/>
   <Default:Documentation xmi:id="_oHK9IG0MEemI7-F9UAreNQ" base_Comment="_oHIg4G0MEemI7-F9UAreNQ"/>
+  <Default:Documentation xmi:id="_VNnFsHG4Eemt26ppfO_ibQ" base_Comment="_VNSVkHG4Eemt26ppfO_ibQ"/>
+  <Default:Documentation xmi:id="_GKku4HG5Eemt26ppfO_ibQ" base_Comment="_GKiSoHG5Eemt26ppfO_ibQ"/>
+  <Default:Documentation xmi:id="_CZjHwHHOEemt26ppfO_ibQ" base_Comment="_CZgrgHHOEemt26ppfO_ibQ"/>
+  <Default:Documentation xmi:id="_fOkLQHHOEemt26ppfO_ibQ" base_Comment="_fOiWEHHOEemt26ppfO_ibQ"/>
+  <Default:Documentation xmi:id="_rErekHKHEemp48yFN8eASg" base_Comment="_rEq3gHKHEemp48yFN8eASg"/>
 </xmi:XMI>

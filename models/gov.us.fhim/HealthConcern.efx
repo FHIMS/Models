@@ -1423,7 +1423,8 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_U0-Z0NPkEeiPFvyVFwJcLg" name="asserter" visibility="public">
         <ownedComment xmi:id="_ZcvPINPkEeiPFvyVFwJcLg" annotatedElement="_U0-Z0NPkEeiPFvyVFwJcLg">
-          <body>&quot;The source of the information about the allergy that is recorded.&quot; - HL7 FHIR, AllergyIntolerance.asserter</body>
+          <body>&quot;The source of the information about the allergy that is recorded.&quot; - HL7 FHIR, AllergyIntolerance.asserter&#xD;
+&quot;Individual who is making the condition statement.&quot; - HL7 FHIR, Condition.asserter</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Common.efx#_420A62FD03B6418CF92600E1?FHIM/Common/Participation?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YZb_EdPkEeiPFvyVFwJcLg" value="1"/>
@@ -2035,6 +2036,9 @@ FHIR allows this property to be a boolean, Age, Range, date, or string. FHIM cur
         <body>&quot;Clinical stage or grade of a condition. May include formal severity assessments.&quot; - HL7 FHIR, Condition.stage</body>
       </ownedComment>
       <ownedAttribute xmi:id="_i9l3ULtCEeeo-pbyiB8NZw" name="summary" visibility="public">
+        <ownedComment xmi:id="_m75JoHKaEemp48yFN8eASg" annotatedElement="_i9l3ULtCEeeo-pbyiB8NZw">
+          <body>&quot;A simple summary of the stage such as &quot;Stage 3&quot;. The determination of the stage is disease-specific.&quot; - HL7 FHIR, Condition.stage.summary</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oEv-YbtCEeeo-pbyiB8NZw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oEv-YLtCEeeo-pbyiB8NZw"/>
@@ -2157,4 +2161,5 @@ FHIR allows this property to be a boolean, Age, Range, date, or string. FHIM cur
   <Default:Documentation xmi:id="_tcU-lNVCEeeaHvV-nCCy9A" base_Comment="_tcU-kdVCEeeaHvV-nCCy9A"/>
   <Default:Documentation xmi:id="_H5bHcdVOEeeaHvV-nCCy9A" base_Comment="_H5bHcNVOEeeaHvV-nCCy9A"/>
   <Default:Documentation xmi:id="_ZcvPIdPkEeiPFvyVFwJcLg" base_Comment="_ZcvPINPkEeiPFvyVFwJcLg"/>
+  <Default:Documentation xmi:id="_m76XwHKaEemp48yFN8eASg" base_Comment="_m75JoHKaEemp48yFN8eASg"/>
 </xmi:XMI>

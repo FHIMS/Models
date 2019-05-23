@@ -3275,6 +3275,7 @@ This flexibility does cause an issue for consideration, especially for medicatio
         <ownedComment xmi:id="_RoYGINOSEeGputPQx0HXoA" annotatedElement="_QQ5xkXpnEd-44ra0dfiJCw">
           <body>Pointer to the Organization (in the Role of Manufacturer) that produced the Product.&#xD;
 &quot;Contains the manufacturer of the medical substance administered when it is a manufactured substance.&quot; - HL7 Version 2.8, RXD-20.&#xD;
+&#xD;
 &quot;Name of vaccine manufacturer.&quot; - HL7 FHIR, Immunization.manufacturer&#xD;
 &quot;Describes the details of the manufacturer of the medication product. This is not intended to represent the distributor of a medication product.&quot; - HL7 FHIR, Medication.manufacturer</body>
         </ownedComment>
@@ -3404,7 +3405,8 @@ Represents a product produced and marketed as a medicine or drug. This class rep
       </ownedComment>
       <ownedAttribute xmi:id="_QvxZYO6bEd-crcWiXVDZrQ" name="identifier" visibility="public">
         <ownedComment xmi:id="_kNwcEO6bEd-crcWiXVDZrQ" annotatedElement="_QvxZYO6bEd-crcWiXVDZrQ">
-          <body>&quot;A unique identifier for this instance. If the product instance represents a single individual product (quantity = 1) then this id is also called the &quot;serial number&quot;.  If the product instance represents a product lot, the id is also called the &quot;lot number&quot;.&quot; - HL7 V3</body>
+          <body>&quot;A unique identifier for this instance. If the product instance represents a single individual product (quantity = 1) then this id is also called the &quot;serial number&quot;.  If the product instance represents a product lot, the id is also called the &quot;lot number&quot;.&quot; - HL7 V3&#xD;
+&quot;Business identifier for this medication.&quot; - HL7 FHIR, Medication.identifier</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XqGLEDumEeCQ7Mi7IS1BrQ" value="1"/>
@@ -4065,7 +4067,7 @@ This property indicates whether the ingredient represented by this class is acti
       <ownedAttribute xmi:id="_j-wOsM_6Ed-YeMSrwW6svA" name="quantity" visibility="public">
         <ownedComment xmi:id="_x4rL4M_6Ed-YeMSrwW6svA" annotatedElement="_j-wOsM_6Ed-YeMSrwW6svA">
           <body>“A ratio specifying the strength of the ingredient as amount of ingredient substance (numerator) in amount of medicine (denominator). For example, a 50 mg tablet contains 50 mg in 1 tablet; a 50 mg per 5 mL syrup contains 50 mg in 5 mL. Note that for countable dose forms (&quot;eaches&quot;) no unit is required in the denominator, i.e., the denominator is a dimensionless number with unit 1 (one, the unity).  The fact that the dose is per tablet, capsule, or whatever the dose form may be is recorded in the formCode of the scoping product, not in a unit of measureConstraint. The quantity expressed by Role quantity numerator and denominator must always be one of the following kinds of quantity: 1) count; 2) amount of substance; 3) mass; 4) volume; 5) arbitrary unit (representing some extensive property of Entity). In the given context these five quantities can be clearly discriminated by examination of the unit in use. An Entity is either countable (case 1) or not countable, in which case some unit is required (cases 2-4). This must be derivable from the Entity formCode. The dimension of the denominator must be the same as the dimension of all of the quantity numerators of the scoper's (i.e., the product's) played roles (e.g., package content, part of kit, etc.).&quot; – HL7 Version 3 (Role.quantity).&#xD;
-&quot;Specifies how many (or how much) of the items there are in this Medication. For example, 250 mg per tablet. This is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet.&quot; - HL7 FHIR, Medication.ingredient.amount</body>
+&quot;Specifies how many (or how much) of the items there are in this Medication. For example, 250 mg per tablet. This is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet.&quot; - HL7 FHIR, Medication.ingredient.strength</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_2xsJQM_6Ed-YeMSrwW6svA?FHIM/Datatypes/QuantityRatio?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kVnA8bybEea_DaXmJ278Kw" value="1"/>
@@ -4139,8 +4141,8 @@ Indicates which kind of &quot;RxNorm code that is populated in the DRU-010-09 fi
         <body>Substance: &quot;The tangible matter of which a thing consists; a specific type of matter, esp. a homogeneous material with a definite composition.&quot; - Collins English Dictionary&#xD;
 This class represents a substance, either manufactured or found naturally, which might be referenced by clinical records. This class may represent ingredients in a medication, a substance to which the patient was exposed or which the patient consumes, or an analyte, among many other potential uses.&#xD;
 &quot;The Substance entity is used to describe any material that functions as an ingredient of the Medicine.&quot; - HL7 Version 3.&#xD;
-&quot;A homogeneous material with a definite composition.&quot; - HL7 FHIR, Substance&#xD;
-&quot;The actual ingredient - either a substance (simple ingredient) or another medication.&quot; - HL7 FHIR, Medication.ingredient.item[x]</body>
+&quot;The actual ingredient - either a substance (simple ingredient) or another medication.&quot; - HL7 FHIR, Medication.ingredient.item[x]&#xD;
+&quot;A homogeneous material with a definite composition.&quot; - HL7 FHIR, Substance</body>
       </ownedComment>
       <ownedAttribute xmi:id="_2c2WkLUGEee8ToGyn6JwPw" name="category" visibility="public">
         <ownedComment xmi:id="_2c2WkbUGEee8ToGyn6JwPw" annotatedElement="_2c2WkLUGEee8ToGyn6JwPw">
@@ -4765,8 +4767,8 @@ This class represents a needle which may be specified in a protocol, a procedure
           <body>&quot;Describes the unique identification of this metric that has been assigned by the device or gateway software. For example: handle ID. It should be noted that in order to make the identifier unique, the system element of the identifier should be set to the unique identifier of the device.&quot; - HL7 FHIR, DeviceMetric.id</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Su27EhMeEeeJEtdzPYvf5Q" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Su27ExMeEeeJEtdzPYvf5Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Su27EhMeEeeJEtdzPYvf5Q" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Su27ExMeEeeJEtdzPYvf5Q"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_hHt3ABMeEeeJEtdzPYvf5Q" name="kind" visibility="public">
         <ownedComment xmi:id="_hHt3ARMeEeeJEtdzPYvf5Q" annotatedElement="_hHt3ABMeEeeJEtdzPYvf5Q">
@@ -4782,7 +4784,7 @@ This class represents a needle which may be specified in a protocol, a procedure
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_AllZ0BWVEeeKharB8T6q_A?FHIM/Datatypes/Timing?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sEjGEhMgEeeJEtdzPYvf5Q" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sEjGExMgEeeJEtdzPYvf5Q" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sEjGExMgEeeJEtdzPYvf5Q"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="___4okBMfEeeJEtdzPYvf5Q" name="operationalStatus" visibility="public">
         <ownedComment xmi:id="___4okRMfEeeJEtdzPYvf5Q" annotatedElement="___4okBMfEeeJEtdzPYvf5Q">
@@ -4851,7 +4853,7 @@ This class represents a needle which may be specified in a protocol, a procedure
         <ownedComment xmi:id="_CGi_0RMwEeeN9OBqDrrLrg" annotatedElement="_CGi_0BMwEeeN9OBqDrrLrg">
           <body>&quot;Describes the time last calibration has been performed.&quot; - HL7 FHIR, DeviceMetric.calibration.time</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CGi_0hMwEeeN9OBqDrrLrg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CGi_0xMwEeeN9OBqDrrLrg"/>
       </ownedAttribute>
@@ -5081,7 +5083,8 @@ Note that FHIR timing can be a Timing, Period, or a DateTime. FHIM currently lim
       </ownedAttribute>
       <ownedAttribute xmi:id="__UgzdrUJEee8ToGyn6JwPw" name="ingredientSubstance" visibility="public" type="_420A62FD03B645919F1600B4" association="__UgzerUJEee8ToGyn6JwPw">
         <ownedComment xmi:id="__Ugzd7UJEee8ToGyn6JwPw" annotatedElement="__UgzdrUJEee8ToGyn6JwPw">
-          <body>Pointer to the Substances used as an ingredient in the Food Product.</body>
+          <body>Pointer to the Substances used as an ingredient in the Food Product.&#xD;
+&quot;Another substance that is a component of this substance.&quot; - HL7 FHIR, Substance.ingredient.substance[x]</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__UgzeLUJEee8ToGyn6JwPw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__UgzebUJEee8ToGyn6JwPw" value="1"/>

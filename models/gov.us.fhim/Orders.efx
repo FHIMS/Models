@@ -1294,6 +1294,7 @@
         <ownedComment xmi:id="_MCwvmuLiEduGJrQyRGTO1A" annotatedElement="_420A62FD03B64589570A015A">
           <body>The date/time upon which the Order was authorized (signed) and released by the ordering provider.&#xD;
 This is the date and time the order was released from OE/RR. If the TO service entered the order stub through the Add Order (AD) action, this is the service-specified request date. [FileMan 123,3]&#xD;
+&quot;The date/time the tubefeeding was ordered and will be effective.&quot; FileMan 115,1->115.01,40->115.04,.01&#xD;
 &quot;Contains the date and time of the event that initiated the current transaction as reflected in ORC-1 Order Control Code.&quot; - HL7 Version 2.8, ORC-9&#xD;
 &quot;Contains the date/time that the changes to the request took effect or are supposed to take effect....&quot; - HL7 Version 2.8, ORC-15&#xD;
 &quot;For draft requests, indicates the date of initial creation. For requests with other statuses, indicates the date of activation.&quot; - HL7 FHIR, Request.authoredOn&#xD;
@@ -1394,8 +1395,7 @@ Date the prescription was written (authorized)&quot; - ASAP Standard for PDMP, D
       </ownedAttribute>
       <ownedAttribute xmi:id="_9DY2wE_HEeicO4zK57V_lA" name="orderingProvider" visibility="public">
         <ownedComment xmi:id="_9DY2wU_HEeicO4zK57V_lA" annotatedElement="_9DY2wE_HEeicO4zK57V_lA">
-          <body>&#xD;
-&quot;Information about the ordering of the action such as who made the request, when the request was made, how it was made, etc...&quot; - HL7 CIMI, Request.requested</body>
+          <body>&quot;Information about the ordering of the action such as who made the request, when the request was made, how it was made, etc...&quot; - HL7 CIMI, Request.requested</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Common.efx#_1nqfgOQXEeak6NCuAd5Onw?FHIM/Common/Attribution?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9DY2wk_HEeicO4zK57V_lA" value="1"/>
