@@ -2636,8 +2636,7 @@
       <body>Differences between FHIM and FHIR:&#xD;
  - dropped type, because that's known by the calling Attribution (e.g., Signer)&#xD;
  - dropped when, because that's known by the calling Attribution&#xD;
- - dropped who, because that's known by the calling Attribution&#xD;
- - did not model onBehalfOf, because it's uncertain how to handle this</body>
+ - dropped who, because that's known by the calling Attribution</body>
     </ownedComment>
     <ownedComment xmi:id="_gwYsMOSnEeaMP8OhjVeyrg" annotatedElement="_jdXpIOSiEeaMP8OhjVeyrg">
       <body>Viewed, Updated, Forwarded, Printed, etc.&#xD;
@@ -3226,7 +3225,7 @@ Represents &quot;the section of the diagnostic service where the observation was
 &quot;The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made.&quot; - HL7 FHIR, Observation.context&#xD;
 &quot;The encounter during which the procedure was performed.&quot; - HL7 FHIR, Procedure.context&#xD;
 &quot;The Encounter during which this questionnaire response was created or to which the creation of this record is tightly associated.&quot; - HL7 FHIR, QuestionnaireResponse.encounter&#xD;
-&quot;The encounter or episode of care that establishes the context for making this request.&quot; - HL7 FHIR, Request.context&#xD;
+&quot;The Encounter during which this [Request subtype] was created or to which the creation of this record is tightly associated.&quot; Request.encounter&#xD;
 &#xD;
 This is the visit associated with this surgery case. [FileMan 130,.015]</body>
         </ownedComment>
