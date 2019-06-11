@@ -3845,7 +3845,8 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_MF0JYOEVEd6EKMSYA1gKjA" name="Entity" isAbstract="true">
       <ownedComment xmi:id="__7Ux4BqNEd-j8JC21F3W2A" annotatedElement="_MF0JYOEVEd6EKMSYA1gKjA">
-        <body>'A physical thing, group of physical things or an organization capable of participating in Acts while in a role.  An entity is a physical object that has, had or will have existence. The only exception to this is Organization, which while not having a physical presence, fulfills the other characteristics of an Entity.  Entity stipulates the thing itself, not the Roles it may play: the Role of Patient, e.g., is played by the Person Entity.'  HL7 RIM.</body>
+        <body>A physical thing, group of physical things, or an organization. This class is the super-type of all Entities (colored green) in the HL7 V3 Act-Role-Entity pattern.&#xD;
+&quot;A physical thing, group of physical things or an organization capable of participating in Acts while in a role. An entity is a physical object that has, had or will have existence. The only exception to this is Organization, which while not having a physical presence, fulfills the other characteristics of an Entity.  Entity stipulates the thing itself, not the Roles it may play: the Role of Patient, e.g., is played by the Person Entity.&quot;  HL7 RIM.</body>
       </ownedComment>
       <ownedAttribute xmi:id="_8ABmQBsXEd--ZY2-pbJ-Pw" name="identifier" visibility="public">
         <ownedComment xmi:id="_RcE4IBsYEd--ZY2-pbJ-Pw" annotatedElement="_8ABmQBsXEd--ZY2-pbJ-Pw">

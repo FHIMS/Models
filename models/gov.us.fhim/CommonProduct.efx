@@ -4069,7 +4069,7 @@ This property indicates whether the ingredient represented by this class is acti
           <body>“A ratio specifying the strength of the ingredient as amount of ingredient substance (numerator) in amount of medicine (denominator). For example, a 50 mg tablet contains 50 mg in 1 tablet; a 50 mg per 5 mL syrup contains 50 mg in 5 mL. Note that for countable dose forms (&quot;eaches&quot;) no unit is required in the denominator, i.e., the denominator is a dimensionless number with unit 1 (one, the unity).  The fact that the dose is per tablet, capsule, or whatever the dose form may be is recorded in the formCode of the scoping product, not in a unit of measureConstraint. The quantity expressed by Role quantity numerator and denominator must always be one of the following kinds of quantity: 1) count; 2) amount of substance; 3) mass; 4) volume; 5) arbitrary unit (representing some extensive property of Entity). In the given context these five quantities can be clearly discriminated by examination of the unit in use. An Entity is either countable (case 1) or not countable, in which case some unit is required (cases 2-4). This must be derivable from the Entity formCode. The dimension of the denominator must be the same as the dimension of all of the quantity numerators of the scoper's (i.e., the product's) played roles (e.g., package content, part of kit, etc.).&quot; – HL7 Version 3 (Role.quantity).&#xD;
 &quot;Specifies how many (or how much) of the items there are in this Medication. For example, 250 mg per tablet. This is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet.&quot; - HL7 FHIR, Medication.ingredient.strength</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_2xsJQM_6Ed-YeMSrwW6svA?FHIM/Datatypes/QuantityRatio?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_2xsJQM_6Ed-YeMSrwW6svA?FHIM/Datatypes/Ratio?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kVnA8bybEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kVnA8LybEea_DaXmJ278Kw" value="1"/>
       </ownedAttribute>
@@ -4249,7 +4249,8 @@ When used as an ingredient in a drug or food in the United States, this code sho
       </ownedAttribute>
       <ownedAttribute xmi:id="_qIKSYIAaEeGE1-mzJa42fw" name="mvx" visibility="public">
         <ownedComment xmi:id="_n26vYCw7EeKmqZ4YenSzAg" annotatedElement="_qIKSYIAaEeGE1-mzJa42fw">
-          <body>Uniquely identifies the manufacturer, for those products that are vaccines.  This property is a code from HL7 Table 0227, Manufacturers of Vaccines (MVX), which is maintained by the CDC's National Center for Immunization and Respiratory Diseases (NCIRD).</body>
+          <body>Uniquely identifies the manufacturer, for those products that are vaccines. This property is a code from HL7 Table 0227, Manufacturers of Vaccines (MVX), which is maintained by the CDC's National Center for Immunization and Respiratory Diseases (NCIRD).&#xD;
+&quot;Name of vaccine manufacturer.&quot; - HL7 FHIR, Immunization.manufacturer</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4PWLgbybEea_DaXmJ278Kw" value="1"/>
@@ -5025,7 +5026,7 @@ Note that FHIR timing can be a Timing, Period, or a DateTime. FHIM currently lim
         <ownedComment xmi:id="_3bQzgbTuEee8ToGyn6JwPw" annotatedElement="_3bQzgLTuEee8ToGyn6JwPw">
           <body>&quot;The amount of the ingredient in the substance - a concentration ratio.&quot; - HL7 FHIR, Substance.ingredient.quantity</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_2xsJQM_6Ed-YeMSrwW6svA?FHIM/Datatypes/QuantityRatio?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_2xsJQM_6Ed-YeMSrwW6svA?FHIM/Datatypes/Ratio?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3bQzgrTuEee8ToGyn6JwPw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3bQzg7TuEee8ToGyn6JwPw" value="1"/>
       </ownedAttribute>
@@ -5077,7 +5078,7 @@ Note that FHIR timing can be a Timing, Period, or a DateTime. FHIM currently lim
         <ownedComment xmi:id="__Ugzc7UJEee8ToGyn6JwPw" annotatedElement="__UgzcrUJEee8ToGyn6JwPw">
           <body>&quot;The amount of the ingredient in the substance - a concentration ratio.&quot; - HL7 FHIR, Substance.ingredient.quantity</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_2xsJQM_6Ed-YeMSrwW6svA?FHIM/Datatypes/QuantityRatio?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_2xsJQM_6Ed-YeMSrwW6svA?FHIM/Datatypes/Ratio?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__UgzdLUJEee8ToGyn6JwPw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__UgzdbUJEee8ToGyn6JwPw" value="1"/>
       </ownedAttribute>

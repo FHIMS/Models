@@ -1146,7 +1146,7 @@ Please click on one of the two diagrams below</body>
           <body>&quot;The quantity of the specified nutrient to include in diet.&quot; - HL7 FHIR, NutritionOrder.oralDiet.nutrient.amount&#xD;
 Note that FHIR models this as a SimpleQuantity, whereas the FHIM allows an Interval (low and high) and a Frequency so that one can represent a range such as 2-3mg.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F63021A?FHIM/Datatypes/PhysicalQuantityInterval?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B641886F63021A?FHIM/Datatypes/Range?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AGFcgVprEealceNkT9nzrg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AGFcgFprEealceNkT9nzrg"/>
       </ownedAttribute>
@@ -1225,30 +1225,6 @@ Note that FHIR models this as a SimpleQuantity, whereas the FHIM allows an Inter
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9YJigVpdEealceNkT9nzrg" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9YJigFpdEealceNkT9nzrg"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_Lnx0YHyvEem396rCQEdNZA" name="instantiates" visibility="public">
-        <ownedComment xmi:id="_S6U08HyvEem396rCQEdNZA" annotatedElement="_Lnx0YHyvEem396rCQEdNZA">
-          <body>&quot;The URL pointing to a protocol, guideline, orderset or other definition that is adhered to in whole or in part by this NutritionOrder.&quot; - HL7 FHIR, NutritionOrder.instantiates</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UJQtQXyvEem396rCQEdNZA" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UJQtQHyvEem396rCQEdNZA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_-JbOUHytEem396rCQEdNZA" name="instantiatesCanonical" visibility="public">
-        <ownedComment xmi:id="_PO6IkHyuEem396rCQEdNZA" annotatedElement="_-JbOUHytEem396rCQEdNZA">
-          <body>&quot;The URL pointing to a FHIR-defined protocol, guideline, orderset or other definition that is adhered to in whole or in part by this NutritionOrder.&quot; - HL7 FHIR, NutritionOrder.instantiatesCanonical</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q33qcHyuEem396rCQEdNZA" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q33DYHyuEem396rCQEdNZA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_sAPl8HyuEem396rCQEdNZA" name="instantiatesUri" visibility="public">
-        <ownedComment xmi:id="_8_RS4HyuEem396rCQEdNZA" annotatedElement="_sAPl8HyuEem396rCQEdNZA">
-          <body>&quot;The URL pointing to an externally maintained protocol, guideline, orderset or other definition that is adhered to in whole or in part by this NutritionOrder.&quot; - HL7 FHIR, NutritionOrder.instantiatesUri</body>
-        </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1qNw4HyuEem396rCQEdNZA" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1qNJ0HyuEem396rCQEdNZA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3rFDQFpjEealceNkT9nzrg" name="instruction" visibility="public">
         <ownedComment xmi:id="_3rFDQVpjEealceNkT9nzrg" annotatedElement="_3rFDQFpjEealceNkT9nzrg">
@@ -1348,7 +1324,7 @@ Note that FHIR models this as a SimpleQuantity, whereas the FHIM allows an Inter
         <ownedComment xmi:id="_WgIx4HLlEeeRrc6SOEd2wQ" annotatedElement="_HkIn4U2HEd-N7JZGCuVoQQ">
           <body>&quot;The percentile rank of the arm circumference.&quot; FileMan 115,11->115.011,45.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Real?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Decimal?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cFUj8Lf0EeaN8pnTZH8VBg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cFT84Lf0EeaN8pnTZH8VBg"/>
       </ownedAttribute>
@@ -1388,7 +1364,7 @@ Note that FHIR models this as a SimpleQuantity, whereas the FHIM allows an Inter
         <ownedComment xmi:id="_mByh4HLlEeeRrc6SOEd2wQ" annotatedElement="_Ryq4cU2HEd-N7JZGCuVoQQ">
           <body>&quot;The percentile rank of the bone-free arm muscle area&quot; FileMan 115,11->115.011,49.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Real?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Decimal?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gsMBYLf0EeaN8pnTZH8VBg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gsLaULf0EeaN8pnTZH8VBg"/>
       </ownedAttribute>
@@ -1404,7 +1380,7 @@ Note that FHIR models this as a SimpleQuantity, whereas the FHIM allows an Inter
         <ownedComment xmi:id="_ePwI8HLlEeeRrc6SOEd2wQ" annotatedElement="_LdjwgU2HEd-N7JZGCuVoQQ">
           <body>&quot;The percentile rank of the calf circumference.&quot; FileMan 115,11->115.011,47.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Real?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Decimal?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iG4dwLf0EeaN8pnTZH8VBg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iG32sLf0EeaN8pnTZH8VBg"/>
       </ownedAttribute>
@@ -1519,7 +1495,7 @@ Note that property points to the Height Observation in the Vital Signs domain, w
         <ownedComment xmi:id="_VqFwIHLkEeeRrc6SOEd2wQ" annotatedElement="_uo3dIE2GEd-N7JZGCuVoQQ">
           <body>&quot;The value of the Nitrogen Balance calculated during the assessment.&quot; FileMan 115,11->115.011,23.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Real?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Decimal?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zc9_0Lf0EeaN8pnTZH8VBg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zc9YwLf0EeaN8pnTZH8VBg"/>
       </ownedAttribute>
@@ -1535,7 +1511,7 @@ Note that property points to the Height Observation in the Vital Signs domain, w
         <ownedComment xmi:id="_8nwQ4HLfEeeRrc6SOEd2wQ" annotatedElement="_EygqQE2GEd-N7JZGCuVoQQ">
           <body>&quot;The percentage of total body weight missing due to amputations.&quot; FileMan 115,11->115.011,11.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Real?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Decimal?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1OPwMLf0EeaN8pnTZH8VBg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1OPJILf0EeaN8pnTZH8VBg"/>
       </ownedAttribute>
@@ -1592,7 +1568,7 @@ Note that property points to the Height Observation in the Vital Signs domain, w
         <ownedComment xmi:id="_PzZNEHLlEeeRrc6SOEd2wQ" annotatedElement="_BUsDEE2HEd-N7JZGCuVoQQ">
           <body>&quot;The percentile rank of the subscapular skin fold measurement.&quot; FileMan 115,11->115.011,43.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Real?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Decimal?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4LRiALf0EeaN8pnTZH8VBg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4LQ68Lf0EeaN8pnTZH8VBg"/>
       </ownedAttribute>
@@ -1608,7 +1584,7 @@ Note that property points to the Height Observation in the Vital Signs domain, w
         <ownedComment xmi:id="_djsJoHLkEeeRrc6SOEd2wQ" annotatedElement="_-jFeIE2GEd-N7JZGCuVoQQ">
           <body>&quot;The percentile rank of the triceps skin fold measurement.&quot; FileMan 115,11->115.011,41.</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Real?"/>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_N-BAoNYeEd62cosTNS-_lw?FHIM/Datatypes/Decimal?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5UnvsLf0EeaN8pnTZH8VBg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5UnIoLf0EeaN8pnTZH8VBg"/>
       </ownedAttribute>
@@ -1927,9 +1903,6 @@ Note that because this class is a subtype of Observation Statement, a number of 
   <Default:Documentation xmi:id="_V-XYmc2HEeim86HQHOyP6A" base_Comment="_f_kLoHLjEeeRrc6SOEd2wQ"/>
   <Default:Documentation xmi:id="_V-XYms2HEeim86HQHOyP6A" base_Comment="_Co8P4HLjEeeRrc6SOEd2wQ"/>
   <Default:Documentation xmi:id="_V-XYm82HEeim86HQHOyP6A" base_Comment="__pwh8HLiEeeRrc6SOEd2wQ"/>
-  <Default:Documentation xmi:id="_PO-aAHyuEem396rCQEdNZA" base_Comment="_PO6IkHyuEem396rCQEdNZA"/>
-  <Default:Documentation xmi:id="_8_ShAHyuEem396rCQEdNZA" base_Comment="_8_RS4HyuEem396rCQEdNZA"/>
-  <Default:Documentation xmi:id="_S6WDEHyvEem396rCQEdNZA" base_Comment="_S6U08HyvEem396rCQEdNZA"/>
   <Default:Documentation xmi:id="_sMhR8HyvEem396rCQEdNZA" base_Comment="_sMdAgHyvEem396rCQEdNZA"/>
   <Default:Documentation xmi:id="_8vEhcHyzEem396rCQEdNZA" base_Comment="_8vDTUHyzEem396rCQEdNZA"/>
   <Default:Documentation xmi:id="_AKEosHy0Eem396rCQEdNZA" base_Comment="_AKDakHy0Eem396rCQEdNZA"/>
