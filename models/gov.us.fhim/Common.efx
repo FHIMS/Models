@@ -86,7 +86,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_bL_1ggoXEeC_TY76TuIe4Q" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_bL_1hAoXEeC_TY76TuIe4Q" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_bL_1hgoXEeC_TY76TuIe4Q" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bL_OcgoXEeC_TY76TuIe4Q" x="28213" y="49452"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bL_OcgoXEeC_TY76TuIe4Q" x="31700" y="47550"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_bMKNkAoXEeC_TY76TuIe4Q" element="_420A62FD03B642DBE3F101E7" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519679" lineColor="3342489" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_bMKNkwoXEeC_TY76TuIe4Q" type="ImageCompartment">
@@ -951,7 +951,7 @@
           </children>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bNg4dgoXEeC_TY76TuIe4Q" points="[1, 0, 0, 4118]$[1, -4118, 0, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bRW2owoXEeC_TY76TuIe4Q" id="(0.4998599,0.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bRW2pAoXEeC_TY76TuIe4Q" id="(0.453972602739726,0.08459346920885383)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bRW2pAoXEeC_TY76TuIe4Q" id="(0.9794520547945206,0.6925716246354434)"/>
         </edges>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_Ou_3ZgoZEeC_TY76TuIe4Q" element="_1_OF4Aq6Ed-426xscrxYmQ" source="__vBhkNw2EeaxScmtI1Szow" target="_OuxN4AoZEeC_TY76TuIe4Q" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_Ou_3aQoZEeC_TY76TuIe4Q" visible="false" type="NameLabel">
@@ -3900,6 +3900,7 @@ The date that the surgical procedure was performed. [FileMan 130,.09]&#xD;
 &quot;This field is required in two circumstances. The first is when the observations reported beneath one report header have different dates/times. This could occur in the case of queries, timed test sequences, or clearance studies where one measurement within a battery may have a different time than another measurement.... The observation date-time is the physiologically relevant date-time or the closest approximation to that date-time.  In the case of tests performed on specimens, the relevant date-time is the specimen’s collection date-time.  In the case of observations taken directly on the patient (e.g., X-ray images, history and physical), the observation date-time is the date-time that the observation was performed.&quot; - HL7 Version 2.8, OBX-14.&#xD;
 &quot;The date and time when the specimen was acquired from the source. The use of the Date Range data type allows for description of specimens collected over a period of time, for example, 24-hour urine collection. For specimens collected at a point in time, only the first component (start date/time) will be populated.&quot; - HL7 Version 2.8, SPM-17.&#xD;
 &#xD;
+&quot;Time of product collection.&quot; - HL7 FHIR, BiologicallyDerivedProduct.collection.collected[x]&#xD;
 &quot;Date vaccine administered or was to be administered.&quot; - HL7 FHIR, Immunization.date&#xD;
 &quot;A specific date/time or interval of time during which the administration took place (or did not take place, when the 'notGiven' attribute is true). For many administrations, such as swallowing a tablet the use of dateTime is more appropriate.&quot; - HL7 FHIR, MedicationAdministration.effective[x]&#xD;
 &quot;Estimated or actual date, date-time, period, or age when the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of the procedure to be captured.&quot; - HL7 FHIR, Procedure.performed[x]&#xD;
@@ -3920,6 +3921,7 @@ The date that the surgical procedure was performed. [FileMan 130,.09]&#xD;
 &#xD;
 &quot;The party that performed the action.&quot; - HL7 CIMI, Performance.performed&#xD;
 &#xD;
+&quot;Healthcare professional who is performing the collection.&quot; - HL7 FHIR, BiologicallyDerivedProduct.collection.collector&#xD;
 &quot;Indicates who or what performed the event.&quot; - HL7 FHIR, Immunization.practitioner&#xD;
 &quot;Indicates who or what performed the medication administration and how they were involved.&quot; - HL7 FHIR, MedicationAdministration.performer&#xD;
 &quot;Person who collected the specimen.&quot; - HL7 FHIR, Specimen.collection.collector&#xD;
