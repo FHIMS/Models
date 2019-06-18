@@ -1594,14 +1594,6 @@ Code indicating where patient is located when receiving pharmacy services&quot; 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JxNKwQmNEeGe4v7RnpTDUQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JxNKwAmNEeGe4v7RnpTDUQ"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_KGVSUIuuEemlfYEhSLS4IA" name="wasReported" visibility="public">
-        <ownedComment xmi:id="_N7-HIIuuEemlfYEhSLS4IA" annotatedElement="_KGVSUIuuEemlfYEhSLS4IA">
-          <body>&quot;Indicates if this record was captured as a secondary reported record rather than as an original primary source-of-truth record. It may also indicate the source of the report.&quot; - HL7 FHIR, Request.reported[x] pattern.&#xD;
-Note that this property can be a boolean or a pointer to a number of different resources in FHIR. In the FHIM, this property is currently modeled only as a boolean.</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MxWuIIuuEemlfYEhSLS4IA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MxWHEIuuEemlfYEhSLS4IA"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_uYHV4AcfEeGfLeiV6Brugg" name="wasTransportArranged" visibility="public">
         <ownedComment xmi:id="_o1N98AczEeGfLeiV6Brugg" annotatedElement="_uYHV4AcfEeGfLeiV6Brugg">
           <body>Indicates &quot;whether transport arrangements are known to have been made.&quot; - HL7 Version 2.8, OBR-41</body>
@@ -2390,6 +2382,5 @@ Note that in FHIR, the cardinality of this property is zero-to-many, but in FHIM
   <Default:Documentation xmi:id="_CGQyoG9NEemvD7T0D2EM6A" base_Comment="_CGPkhW9NEemvD7T0D2EM6A"/>
   <Default:Documentation xmi:id="_keltsG9NEemvD7T0D2EM6A" base_Comment="_keiDUG9NEemvD7T0D2EM6A"/>
   <Default:Documentation xmi:id="_8SI78IuoEemlfYEhSLS4IA" base_Comment="_8R0L0IuoEemlfYEhSLS4IA"/>
-  <Default:Documentation xmi:id="_N7-uMIuuEemlfYEhSLS4IA" base_Comment="_N7-HIIuuEemlfYEhSLS4IA"/>
   <Default:Documentation xmi:id="_WEnscIuyEemlfYEhSLS4IA" base_Comment="_WEmeUIuyEemlfYEhSLS4IA"/>
 </xmi:XMI>
