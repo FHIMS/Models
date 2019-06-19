@@ -389,7 +389,7 @@
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_oYSMcN7cEeinYNcLU-92BA" visible="false" type="StructureCompartment"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oYQ-Ud7cEeinYNcLU-92BA" x="21873" y="31066"/>
         </children>
-        <children xmi:type="umlnotation:UMLShape" xmi:id="_zsqDsN7cEeinYNcLU-92BA" element="_AyJDEKwlEeG4dfTp_XT2yg" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519679" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_zsqDsN7cEeinYNcLU-92BA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519679" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_zsqDst7cEeinYNcLU-92BA" type="ImageCompartment">
             <layoutConstraint xmi:type="notation:Size" xmi:id="_zsqDs97cEeinYNcLU-92BA" width="1320" height="1320"/>
           </children>
@@ -400,6 +400,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_zsqDuN7cEeinYNcLU-92BA" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_zsqDud7cEeinYNcLU-92BA" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_zsqDut7cEeinYNcLU-92BA" visible="false" type="StructureCompartment"/>
+          <element xmi:type="uml:Class" href="PublicHealthReporting.efx#_AyJDEKwlEeG4dfTp_XT2yg?FHIM/PublicHealthReporting/PublicHealthClient?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zsqDsd7cEeinYNcLU-92BA" x="6974" y="-10461"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_4XXfUN7cEeinYNcLU-92BA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519553" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
@@ -2011,84 +2012,102 @@
           </children>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zsqDvN7cEeinYNcLU-92BA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
         </edges>
-        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_zsqD2d7cEeinYNcLU-92BA" element="_Sbwu8NKiEeGtfrdPU3R3yA" source="_zsqDsN7cEeinYNcLU-92BA" target="_UD8wkN7cEeinYNcLU-92BA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_zsqD2d7cEeinYNcLU-92BA" source="_zsqDsN7cEeinYNcLU-92BA" target="_UD8wkN7cEeinYNcLU-92BA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_zsqD297cEeinYNcLU-92BA" visible="false" type="NameLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_zsqD3d7cEeinYNcLU-92BA" type="Stereotype"/>
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_zsqD3t7cEeinYNcLU-92BA" type="Name"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zsqD3N7cEeinYNcLU-92BA" y="-186"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_zsqD397cEeinYNcLU-92BA" visible="false" type="ToMultiplicityLabel" element="_ScFfENKiEeGtfrdPU3R3yA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_zsqD397cEeinYNcLU-92BA" visible="false" type="ToMultiplicityLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_zsqD4d7cEeinYNcLU-92BA" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="PublicHealthReporting.efx#_ScFfENKiEeGtfrdPU3R3yA?FHIM/PublicHealthReporting/publicHealthClient_patient/%3CProperty%3E?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_zsqD4N7cEeinYNcLU-92BA" y="396"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_zsqD4t7cEeinYNcLU-92BA" type="ToRoleLabel" element="_ScFfENKiEeGtfrdPU3R3yA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_zsqD4t7cEeinYNcLU-92BA" type="ToRoleLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_zsqD5N7cEeinYNcLU-92BA" type="ToRole"/>
+            <element xmi:type="uml:Property" href="PublicHealthReporting.efx#_ScFfENKiEeGtfrdPU3R3yA?FHIM/PublicHealthReporting/publicHealthClient_patient/%3CProperty%3E?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_zsqD497cEeinYNcLU-92BA" y="-397"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_zsqD5d7cEeinYNcLU-92BA" type="FromMultiplicityLabel" element="_Sb6f8NKiEeGtfrdPU3R3yA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_zsqD5d7cEeinYNcLU-92BA" type="FromMultiplicityLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_zsqD597cEeinYNcLU-92BA" type="FromMultiplicity"/>
+            <element xmi:type="uml:Property" href="PublicHealthReporting.efx#_Sb6f8NKiEeGtfrdPU3R3yA?FHIM/PublicHealthReporting/PublicHealthClient/patient?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_zsqD5t7cEeinYNcLU-92BA" y="396"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_zsqD6N7cEeinYNcLU-92BA" type="FromRoleLabel" element="_Sb6f8NKiEeGtfrdPU3R3yA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_zsqD6N7cEeinYNcLU-92BA" type="FromRoleLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_zsqD6t7cEeinYNcLU-92BA" type="FromRole"/>
+            <element xmi:type="uml:Property" href="PublicHealthReporting.efx#_Sb6f8NKiEeGtfrdPU3R3yA?FHIM/PublicHealthReporting/PublicHealthClient/patient?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_zsqD6d7cEeinYNcLU-92BA" y="-397"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_zsqD697cEeinYNcLU-92BA" type="ToQualifierLabel" element="_ScFfENKiEeGtfrdPU3R3yA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_zsqD697cEeinYNcLU-92BA" type="ToQualifierLabel">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_zsqD7d7cEeinYNcLU-92BA" type="QualifierCompartment"/>
+            <element xmi:type="uml:Property" href="PublicHealthReporting.efx#_ScFfENKiEeGtfrdPU3R3yA?FHIM/PublicHealthReporting/publicHealthClient_patient/%3CProperty%3E?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_zsqD7N7cEeinYNcLU-92BA" y="-186"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_zsqD7t7cEeinYNcLU-92BA" type="FromQualifierLabel" element="_Sb6f8NKiEeGtfrdPU3R3yA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_zsqD7t7cEeinYNcLU-92BA" type="FromQualifierLabel">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_zsqD8N7cEeinYNcLU-92BA" type="QualifierCompartment"/>
+            <element xmi:type="uml:Property" href="PublicHealthReporting.efx#_Sb6f8NKiEeGtfrdPU3R3yA?FHIM/PublicHealthReporting/PublicHealthClient/patient?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_zsqD797cEeinYNcLU-92BA" y="-186"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_zsqD8d7cEeinYNcLU-92BA" type="ToConstraintLabel" element="_ScFfENKiEeGtfrdPU3R3yA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_zsqD8d7cEeinYNcLU-92BA" type="ToConstraintLabel">
             <children xmi:type="notation:ListCompartment" xmi:id="_zsqD897cEeinYNcLU-92BA" type="ToConstraintCompartment"/>
+            <element xmi:type="uml:Property" href="PublicHealthReporting.efx#_ScFfENKiEeGtfrdPU3R3yA?FHIM/PublicHealthReporting/publicHealthClient_patient/%3CProperty%3E?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_zsqD8t7cEeinYNcLU-92BA" y="1058"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_zsqD9N7cEeinYNcLU-92BA" type="FromConstraintLabel" element="_Sb6f8NKiEeGtfrdPU3R3yA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_zsqD9N7cEeinYNcLU-92BA" type="FromConstraintLabel">
             <children xmi:type="notation:ListCompartment" xmi:id="_zsqD9t7cEeinYNcLU-92BA" type="FromConstraintCompartment"/>
+            <element xmi:type="uml:Property" href="PublicHealthReporting.efx#_Sb6f8NKiEeGtfrdPU3R3yA?FHIM/PublicHealthReporting/PublicHealthClient/patient?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_zsqD9d7cEeinYNcLU-92BA" y="1058"/>
           </children>
+          <element xmi:type="uml:Association" href="PublicHealthReporting.efx#_Sbwu8NKiEeGtfrdPU3R3yA?FHIM/PublicHealthReporting/publicHealthClient_patient?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zsqD2t7cEeinYNcLU-92BA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
         </edges>
-        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_4XXfW97cEeinYNcLU-92BA" element="_TAFGcL_qEeG9Y6ZcZJMJaA" source="_zsqDsN7cEeinYNcLU-92BA" target="_4XXfUN7cEeinYNcLU-92BA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_4XXfW97cEeinYNcLU-92BA" source="_zsqDsN7cEeinYNcLU-92BA" target="_4XXfUN7cEeinYNcLU-92BA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_4XXfXd7cEeinYNcLU-92BA" visible="false" type="NameLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_4XXfX97cEeinYNcLU-92BA" type="Stereotype"/>
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_4XXfYN7cEeinYNcLU-92BA" type="Name"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4XXfXt7cEeinYNcLU-92BA" y="-186"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_4XXfYd7cEeinYNcLU-92BA" visible="false" type="ToMultiplicityLabel" element="_TATv8L_qEeG9Y6ZcZJMJaA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_4XXfYd7cEeinYNcLU-92BA" visible="false" type="ToMultiplicityLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_4XXfY97cEeinYNcLU-92BA" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="PublicHealthReporting.efx#_TATv8L_qEeG9Y6ZcZJMJaA?FHIM/PublicHealthReporting/publicHealthClient_publicHealthJurisdiction/%3CProperty%3E?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_4XXfYt7cEeinYNcLU-92BA" y="396"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_4XXfZN7cEeinYNcLU-92BA" type="ToRoleLabel" element="_TATv8L_qEeG9Y6ZcZJMJaA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_4XXfZN7cEeinYNcLU-92BA" type="ToRoleLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_4XXfZt7cEeinYNcLU-92BA" type="ToRole"/>
+            <element xmi:type="uml:Property" href="PublicHealthReporting.efx#_TATv8L_qEeG9Y6ZcZJMJaA?FHIM/PublicHealthReporting/publicHealthClient_publicHealthJurisdiction/%3CProperty%3E?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_4XXfZd7cEeinYNcLU-92BA" y="-397"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_4XXfZ97cEeinYNcLU-92BA" type="FromMultiplicityLabel" element="_TALNEL_qEeG9Y6ZcZJMJaA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_4XXfZ97cEeinYNcLU-92BA" type="FromMultiplicityLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_4XXfad7cEeinYNcLU-92BA" type="FromMultiplicity"/>
+            <element xmi:type="uml:Property" href="PublicHealthReporting.efx#_TALNEL_qEeG9Y6ZcZJMJaA?FHIM/PublicHealthReporting/PublicHealthClient/publicHealthJurisdiction?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_4XXfaN7cEeinYNcLU-92BA" y="396"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_4XXfat7cEeinYNcLU-92BA" type="FromRoleLabel" element="_TALNEL_qEeG9Y6ZcZJMJaA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_4XXfat7cEeinYNcLU-92BA" type="FromRoleLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_4XXfbN7cEeinYNcLU-92BA" type="FromRole"/>
+            <element xmi:type="uml:Property" href="PublicHealthReporting.efx#_TALNEL_qEeG9Y6ZcZJMJaA?FHIM/PublicHealthReporting/PublicHealthClient/publicHealthJurisdiction?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_4XXfa97cEeinYNcLU-92BA" y="-397"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_4XXfbd7cEeinYNcLU-92BA" type="ToQualifierLabel" element="_TATv8L_qEeG9Y6ZcZJMJaA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_4XXfbd7cEeinYNcLU-92BA" type="ToQualifierLabel">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_4XXfb97cEeinYNcLU-92BA" type="QualifierCompartment"/>
+            <element xmi:type="uml:Property" href="PublicHealthReporting.efx#_TATv8L_qEeG9Y6ZcZJMJaA?FHIM/PublicHealthReporting/publicHealthClient_publicHealthJurisdiction/%3CProperty%3E?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_4XXfbt7cEeinYNcLU-92BA" y="-186"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_4XXfcN7cEeinYNcLU-92BA" type="FromQualifierLabel" element="_TALNEL_qEeG9Y6ZcZJMJaA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_4XXfcN7cEeinYNcLU-92BA" type="FromQualifierLabel">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_4XXfct7cEeinYNcLU-92BA" type="QualifierCompartment"/>
+            <element xmi:type="uml:Property" href="PublicHealthReporting.efx#_TALNEL_qEeG9Y6ZcZJMJaA?FHIM/PublicHealthReporting/PublicHealthClient/publicHealthJurisdiction?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_4XXfcd7cEeinYNcLU-92BA" y="-186"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_4XXfc97cEeinYNcLU-92BA" type="ToConstraintLabel" element="_TATv8L_qEeG9Y6ZcZJMJaA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_4XXfc97cEeinYNcLU-92BA" type="ToConstraintLabel">
             <children xmi:type="notation:ListCompartment" xmi:id="_4XXfdd7cEeinYNcLU-92BA" type="ToConstraintCompartment"/>
+            <element xmi:type="uml:Property" href="PublicHealthReporting.efx#_TATv8L_qEeG9Y6ZcZJMJaA?FHIM/PublicHealthReporting/publicHealthClient_publicHealthJurisdiction/%3CProperty%3E?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_4XXfdN7cEeinYNcLU-92BA" y="1058"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_4XXfdt7cEeinYNcLU-92BA" type="FromConstraintLabel" element="_TALNEL_qEeG9Y6ZcZJMJaA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_4XXfdt7cEeinYNcLU-92BA" type="FromConstraintLabel">
             <children xmi:type="notation:ListCompartment" xmi:id="_4XXfeN7cEeinYNcLU-92BA" type="FromConstraintCompartment"/>
+            <element xmi:type="uml:Property" href="PublicHealthReporting.efx#_TALNEL_qEeG9Y6ZcZJMJaA?FHIM/PublicHealthReporting/PublicHealthClient/publicHealthJurisdiction?"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_4XXfd97cEeinYNcLU-92BA" y="1058"/>
           </children>
+          <element xmi:type="uml:Association" href="PublicHealthReporting.efx#_TAFGcL_qEeG9Y6ZcZJMJaA?FHIM/PublicHealthReporting/publicHealthClient_publicHealthJurisdiction?"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_4XXfXN7cEeinYNcLU-92BA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
         </edges>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_4XXfed7cEeinYNcLU-92BA" element="_-tMIANKgEeGtfrdPU3R3yA" source="_BdmggN7cEeinYNcLU-92BA" target="_4XXfUN7cEeinYNcLU-92BA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
@@ -3681,59 +3700,6 @@ Note that the &quot;document title&quot; is in the &quot;text&quot; sub-componen
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_G5ubcKwcEeG4dfTp_XT2yg" name="immunizationHistoryList_patient" memberEnd="_G5ys4KwcEeG4dfTp_XT2yg _G54McKwcEeG4dfTp_XT2yg">
       <ownedEnd xmi:id="_G54McKwcEeG4dfTp_XT2yg" name="" visibility="public" type="_fuXvYKEcEeGnfe88WF3uxw" association="_G5ubcKwcEeG4dfTp_XT2yg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_AyJDEKwlEeG4dfTp_XT2yg" name="PublicHealthClient">
-      <ownedComment xmi:id="_kKvesCziEeKLfdgQhBZO1Q" annotatedElement="_AyJDEKwlEeG4dfTp_XT2yg">
-        <body>A Public Health Client is a Patient from the viewpoint of a Jurisdiction.  For example, John Doe lives in Arizona, and has been seen by two practices, whereby he is patient number 123 at practice A and patient number 456 at practice B.  The state of Arizona will assign a single id to John, say, XYZ.  This id (the recordId property of this class) is correlated to the ids from the two practices.  In other words, each patient will have a separate id and record at each medical practice, but will have one id at the jurisdictional level.</body>
-      </ownedComment>
-      <ownedAttribute xmi:id="_UkytMNgiEeG3E4mt6RKX5Q" name="beginDate" visibility="public">
-        <ownedComment xmi:id="_H9HV4CzjEeKLfdgQhBZO1Q" annotatedElement="_UkytMNgiEeG3E4mt6RKX5Q">
-          <body>The earliest known date upon which the Patient had a service performed or a condition that was reportable to the Public Health Jurisdiction.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dd9KQbyiEea_DaXmJ278Kw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dd9KQLyiEea_DaXmJ278Kw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_UkzUQNgiEeG3E4mt6RKX5Q" name="endDate" visibility="public">
-        <ownedComment xmi:id="_JezLECzjEeKLfdgQhBZO1Q" annotatedElement="_UkzUQNgiEeG3E4mt6RKX5Q">
-          <body>The latest known date upon which the Patient had a service performed or a condition that was reportable to the Public Health Jurisdiction.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D1XksbyiEea_DaXmJ278Kw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D1XksLyiEea_DaXmJ278Kw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_-bOS8LGeEeGkU9GcFSzOCA" name="recordId" visibility="public">
-        <ownedComment xmi:id="_UoNvgCzjEeKLfdgQhBZO1Q" annotatedElement="_-bOS8LGeEeGkU9GcFSzOCA">
-          <body>Uniquely identifies the patient from a jurisdictional point of view.  This id is used to aggregate data reported from multiple sources within the jurisdiction; each source may have it's own id for the patient.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_mZFS8ERREdyvWauSJSvkeQ?FHIM/Datatypes/Id?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FaiywbyiEea_DaXmJ278Kw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FaiywLyiEea_DaXmJ278Kw" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_80NR0LGeEeGkU9GcFSzOCA" name="status" visibility="public">
-        <ownedComment xmi:id="_ce6mIL_vEeG9Y6ZcZJMJaA" annotatedElement="_80NR0LGeEeGkU9GcFSzOCA">
-          <body>Indicates the active/inactive status of the patient in the IIS. This is a jurisdictional status. See MIROW “Management of Moved or Gone Elsewhere (MOGE) and Other Patient Status Designations in IIS guidelines.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F3-8sbyiEea_DaXmJ278Kw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F3-8sLyiEea_DaXmJ278Kw" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_TALNEL_qEeG9Y6ZcZJMJaA" name="publicHealthJurisdiction" visibility="public" association="_TAFGcL_qEeG9Y6ZcZJMJaA">
-        <ownedComment xmi:id="_zgGNMCzkEeKLfdgQhBZO1Q" annotatedElement="_TALNEL_qEeG9Y6ZcZJMJaA">
-          <body>An organization that is responsible for Public Health either at the local, state, or national level.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Provider.efx#_zory4LGdEeGkU9GcFSzOCA?FHIM/Provider/PublicHealthJurisdiction?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TASh0L_qEeG9Y6ZcZJMJaA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TAR6wL_qEeG9Y6ZcZJMJaA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_Sb6f8NKiEeGtfrdPU3R3yA" name="patient" visibility="public" association="_Sbwu8NKiEeGtfrdPU3R3yA">
-        <ownedComment xmi:id="_iGFC0CzjEeKLfdgQhBZO1Q" annotatedElement="_Sb6f8NKiEeGtfrdPU3R3yA">
-          <body>Identifies the Patient (from the Provider's point of view) that correlates to the Public Health Client record.  For example, John Doe lives in Arizona, and has been seen by two practices, whereby he is patient number 123 at practice A and patient number 456 at practice B.  The state of Arizona will assign a single id to John, say, XYZ.  The Public Health Client class will contain a recordId = XYZ.  This property points to Practice A, patientId=123, and Practice B, patientId=456.</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Person.efx#_420A62FD03B6418A4E500034?FHIM/Person/Patient?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sb7uEdKiEeGtfrdPU3R3yA" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Sb7uENKiEeGtfrdPU3R3yA"/>
-      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_x5tEYLGkEeGkU9GcFSzOCA" name="ImmunizationForecast">
       <eAnnotations xmi:id="_x5uSgLGkEeGkU9GcFSzOCA" source="uml2.diagrams" references="_x5uSgbGkEeGkU9GcFSzOCA">
@@ -5461,9 +5427,6 @@ Indicates the state of the assignment of the patient dose to the vaccine series.
         <ownedEnd xmi:id="_w4yRQIxcEemQwsnSqQ26mw" name="" visibility="private" type="_TmW8EKEZEeGnfe88WF3uxw" association="_w4um4IxcEemQwsnSqQ26mw"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_TAFGcL_qEeG9Y6ZcZJMJaA" name="publicHealthClient_publicHealthJurisdiction" memberEnd="_TALNEL_qEeG9Y6ZcZJMJaA _TATv8L_qEeG9Y6ZcZJMJaA">
-      <ownedEnd xmi:id="_TATv8L_qEeG9Y6ZcZJMJaA" name="" visibility="public" type="_AyJDEKwlEeG4dfTp_XT2yg" association="_TAFGcL_qEeG9Y6ZcZJMJaA"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_vF-n4L_vEeG9Y6ZcZJMJaA" name="ImmunizationRegistrySubmission">
       <eAnnotations xmi:id="_RkXn4MBiEeGAoul-aOV7oA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <details xmi:id="_RkYO8MBiEeGAoul-aOV7oA" key="EntryPoint"/>
@@ -5481,10 +5444,11 @@ Indicates the state of the assignment of the patient dose to the vaccine series.
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z7j2wb_vEeG9Y6ZcZJMJaA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z7j2wL_vEeG9Y6ZcZJMJaA" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_1BRhoL_vEeG9Y6ZcZJMJaA" name="publicHealthClient" visibility="public" type="_AyJDEKwlEeG4dfTp_XT2yg" association="_1BHwoL_vEeG9Y6ZcZJMJaA">
+      <ownedAttribute xmi:id="_1BRhoL_vEeG9Y6ZcZJMJaA" name="publicHealthClient" visibility="public" association="_1BHwoL_vEeG9Y6ZcZJMJaA">
         <ownedComment xmi:id="_nsZAgCziEeKLfdgQhBZO1Q" annotatedElement="_1BRhoL_vEeG9Y6ZcZJMJaA">
           <body>A Public Health Client is a Patient from the viewpoint of a Jurisdiction.</body>
         </ownedComment>
+        <type xmi:type="uml:Class" href="PublicHealthReporting.efx#_AyJDEKwlEeG4dfTp_XT2yg?FHIM/PublicHealthReporting/PublicHealthClient?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1BSIsb_vEeG9Y6ZcZJMJaA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1BSIsL_vEeG9Y6ZcZJMJaA" value="1"/>
       </ownedAttribute>
@@ -5568,9 +5532,6 @@ Indicates the state of the assignment of the patient dose to the vaccine series.
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_-tMIANKgEeGtfrdPU3R3yA" name="immunizationRegistrySubmission_publicHealthJurisdiction" memberEnd="_-tWgENKgEeGtfrdPU3R3yA _-titUNKgEeGtfrdPU3R3yA">
       <ownedEnd xmi:id="_-titUNKgEeGtfrdPU3R3yA" name="" visibility="public" type="_vF-n4L_vEeG9Y6ZcZJMJaA" association="_-tMIANKgEeGtfrdPU3R3yA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_Sbwu8NKiEeGtfrdPU3R3yA" name="publicHealthClient_patient" memberEnd="_Sb6f8NKiEeGtfrdPU3R3yA _ScFfENKiEeGtfrdPU3R3yA">
-      <ownedEnd xmi:id="_ScFfENKiEeGtfrdPU3R3yA" name="" visibility="public" type="_AyJDEKwlEeG4dfTp_XT2yg" association="_Sbwu8NKiEeGtfrdPU3R3yA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_kscRANKiEeGtfrdPU3R3yA" name="ImmunizationFundingEligibility">
       <ownedComment xmi:id="__FLkgCzlEeKLfdgQhBZO1Q" annotatedElement="_kscRANKiEeGtfrdPU3R3yA">
@@ -5702,11 +5663,9 @@ Indicates the state of the assignment of the patient dose to the vaccine series.
   <Default:Documentation xmi:id="_FI5GgNKpEeGtfrdPU3R3yA" base_Comment="_FIwjoNKpEeGtfrdPU3R3yA"/>
   <Default:Documentation xmi:id="_GOCYMLyFEeGK2djLWlLFew" base_Comment="_GN-GwLyFEeGK2djLWlLFew"/>
   <Default:Documentation xmi:id="_H4b9ICzWEeKLfdgQhBZO1Q" base_Comment="_H4YSwCzWEeKLfdgQhBZO1Q"/>
-  <Default:Documentation xmi:id="_H9LAQCzjEeKLfdgQhBZO1Q" base_Comment="_H9HV4CzjEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_Hw6gMCzTEeKLfdgQhBZO1Q" base_Comment="_Hw210CzTEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_IcMfkCzYEeKLfdgQhBZO1Q" base_Comment="_IcJcQCzYEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_J7IKcCzSEeKLfdgQhBZO1Q" base_Comment="_J7FHICzSEeKLfdgQhBZO1Q"/>
-  <Default:Documentation xmi:id="_Je2OYCzjEeKLfdgQhBZO1Q" base_Comment="_JezLECzjEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_JwWWcCzVEeKLfdgQhBZO1Q" base_Comment="_JwSFACzVEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_KJvpsCzcEeKLfdgQhBZO1Q" base_Comment="_KJsmYCzcEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_MGVG8NEuEeG6d5ozG3gSdw" base_Comment="_MGL9ANEuEeG6d5ozG3gSdw"/>
@@ -5726,7 +5685,6 @@ Indicates the state of the assignment of the patient dose to the vaccine series.
   <Default:Documentation xmi:id="_TMqUUCzfEeKLfdgQhBZO1Q" base_Comment="_TMnRACzfEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_TVA64CzmEeKLfdgQhBZO1Q" base_Comment="_TU9QgCzmEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_TuTmoCzQEeKLfdgQhBZO1Q" base_Comment="_TuOuICzQEeKLfdgQhBZO1Q"/>
-  <Default:Documentation xmi:id="_UoQy0CzjEeKLfdgQhBZO1Q" base_Comment="_UoNvgCzjEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_Ut6I0CzYEeKLfdgQhBZO1Q" base_Comment="_Ut3FgCzYEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_V2roYCzQEeKLfdgQhBZO1Q" base_Comment="_V2nW8CzQEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_VcdCICzeEeKLfdgQhBZO1Q" base_Comment="_VcZ-0CzeEeKLfdgQhBZO1Q"/>
@@ -5745,13 +5703,10 @@ Indicates the state of the assignment of the patient dose to the vaccine series.
   <Default:Documentation xmi:id="_cO0u0CzTEeKLfdgQhBZO1Q" base_Comment="_cOxrgCzTEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_cQEV4CzcEeKLfdgQhBZO1Q" base_Comment="_cQBSkCzcEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_cUup4CzQEeKLfdgQhBZO1Q" base_Comment="_cUq_gCzQEeKLfdgQhBZO1Q"/>
-  <Default:Documentation xmi:id="_cfDwEL_vEeG9Y6ZcZJMJaA" base_Comment="_ce6mIL_vEeG9Y6ZcZJMJaA"/>
   <Default:Documentation xmi:id="_e-PD0KOiEeKXo6wNsb0JpQ" base_Comment="_pne-QLGeEeGkU9GcFSzOCA"/>
   <Default:Documentation xmi:id="_h6hGUCzTEeKLfdgQhBZO1Q" base_Comment="_h6db8CzTEeKLfdgQhBZO1Q"/>
-  <Default:Documentation xmi:id="_iGItMCzjEeKLfdgQhBZO1Q" base_Comment="_iGFC0CzjEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_j6vKQCzWEeKLfdgQhBZO1Q" base_Comment="_j6sG8CzWEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_jKz3IP_9EeGbvqRkTkah6w" base_Comment="_jKr7UP_9EeGbvqRkTkah6w"/>
-  <Default:Documentation xmi:id="_kKzJECziEeKLfdgQhBZO1Q" base_Comment="_kKvesCziEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_kTzi0CzcEeKLfdgQhBZO1Q" base_Comment="_kTwfgCzcEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_kkQAUCzhEeKLfdgQhBZO1Q" base_Comment="_kkJ5sCzhEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_nscq4CziEeKLfdgQhBZO1Q" base_Comment="_nsZAgCziEeKLfdgQhBZO1Q"/>
@@ -5767,7 +5722,6 @@ Indicates the state of the assignment of the patient dose to the vaccine series.
   <Default:Documentation xmi:id="_wO55UCzQEeKLfdgQhBZO1Q" base_Comment="_wO22ACzQEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_wrA70NKiEeGtfrdPU3R3yA" base_Comment="_XYvhEL_wEeG9Y6ZcZJMJaA"/>
   <Default:Documentation xmi:id="_y6b7YCzkEeKLfdgQhBZO1Q" base_Comment="_y6Y4ECzkEeKLfdgQhBZO1Q"/>
-  <Default:Documentation xmi:id="_zgJQgCzkEeKLfdgQhBZO1Q" base_Comment="_zgGNMCzkEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_AKU-MGdUEeOSXYfwme4xPQ" base_Comment="_AF1fwGdUEeOSXYfwme4xPQ"/>
   <Default:Documentation xmi:id="_MC5usGdUEeOSXYfwme4xPQ" base_Comment="_MC4gkWdUEeOSXYfwme4xPQ"/>
   <Default:Documentation xmi:id="_N5IbEGdVEeOSXYfwme4xPQ" base_Comment="_N4-qEGdVEeOSXYfwme4xPQ"/>
