@@ -1,2 +1,2 @@
 # FHIM
-FHIM models and documentation
+FHIM models and various other related health domain models
