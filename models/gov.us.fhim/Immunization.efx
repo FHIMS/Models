@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_420A62FD03B64294DF9F0087" name="Immunization">
     <eAnnotations xmi:id="_PjQcUEDOEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_PjK8wEDOEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -5647,6 +5647,15 @@ Indicates the state of the assignment of the patient dose to the vaccine series.
     <packagedElement xmi:type="uml:Association" xmi:id="_ztKaMIxYEemQwsnSqQ26mw" name="targetDose_patientSeries" memberEnd="_ztd8MIxYEemQwsnSqQ26mw _ztgYcIxYEemQwsnSqQ26mw">
       <ownedEnd xmi:id="_ztgYcIxYEemQwsnSqQ26mw" name="" visibility="private" type="_F4bMcKEZEeGnfe88WF3uxw" association="_ztKaMIxYEemQwsnSqQ26mw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Nn6BQK_BEemZi92e3z6fAA" name="VocabContext">
+      <ownedLiteral xmi:id="_Nn6BQa_BEemZi92e3z6fAA" name="FHIM proposal" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
+      <ownedLiteral xmi:id="_Nn6BQq_BEemZi92e3z6fAA" name="FHIR value set OID" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
+      <ownedLiteral xmi:id="_Nn6BQ6_BEemZi92e3z6fAA" name="FHIR value set URI" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
+      <ownedLiteral xmi:id="_Nn6BRK_BEemZi92e3z6fAA" name="PHIN VADS URL" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
+      <ownedLiteral xmi:id="_Nn6BRa_BEemZi92e3z6fAA" name="V3 value set OID" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
+      <ownedLiteral xmi:id="_Nn6BRq_BEemZi92e3z6fAA" name="VSAC Collaboration URL" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
+      <ownedLiteral xmi:id="_Nn6BR6_BEemZi92e3z6fAA" name="VSAC URL" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_0KhdcNglEeG3E4mt6RKX5Q" base_Comment="_0KY6kNglEeG3E4mt6RKX5Q"/>
   <Default:Documentation xmi:id="_13i4oCzXEeKLfdgQhBZO1Q" base_Comment="_13fOQCzXEeKLfdgQhBZO1Q"/>
@@ -5769,4 +5778,5 @@ Indicates the state of the assignment of the patient dose to the vaccine series.
   <Default:Documentation xmi:id="__uW-YIxcEemQwsnSqQ26mw" base_Comment="__uT7EIxcEemQwsnSqQ26mw"/>
   <Default:Documentation xmi:id="_XDWu4IxdEemQwsnSqQ26mw" base_Comment="_Gi3J8CzZEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_XfB-QIxdEemQwsnSqQ26mw" base_Comment="_XfBXMYxdEemQwsnSqQ26mw"/>
+  <term:Context xmi:id="_j9bm4K_DEemW96-eSLsKRw" base_Enumeration="_Nn6BQK_BEemZi92e3z6fAA"/>
 </xmi:XMI>
