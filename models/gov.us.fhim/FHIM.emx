@@ -706,38 +706,6 @@ Note to the reader: the FHIM is a single integrated model, whereby diagrams are 
       <ownedLiteral xmi:id="_HhrKcCZnEemg-8Rt-x-yhg" name="VSAC Collaboration URL" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
       <ownedLiteral xmi:id="_Jdc6oCZnEemg-8Rt-x-yhg" name="VSAC URL" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_WZUTUGYREemgP9Z5nchGkg" name="physicalHealth_diagnosis">
-      <ownedEnd xmi:id="_WZUTUWYREemgP9Z5nchGkg" name="" visibility="public" association="_WZUTUGYREemgP9Z5nchGkg">
-        <type xmi:type="uml:Class" href="BehavioralHealth.efx#_UmWinI8GEd-XNpj2tjovxA?FHIM/BehavioralHealth/_Old_BehavioralHealthDomain/PhysicalHealth?"/>
-      </ownedEnd>
-      <memberEnd href="BehavioralHealth.efx#_UmWin48GEd-XNpj2tjovxA?FHIM/BehavioralHealth/Behavioral%20Health%20Domain/PhysicalHealth/diagnosis?"/>
-      <memberEnd href="#_WZUTUWYREemgP9Z5nchGkg?FHIM/physicalHealth_diagnosis/%3CProperty%3E?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_WZUTUmYREemgP9Z5nchGkg" name="medication_medicationAdministered">
-      <ownedEnd xmi:id="_WZUTU2YREemgP9Z5nchGkg" name="" visibility="public" association="_WZUTUmYREemgP9Z5nchGkg">
-        <type xmi:type="uml:Class" href="BehavioralHealth.efx#_UmWioo8GEd-XNpj2tjovxA?FHIM/BehavioralHealth/_Old_BehavioralHealthDomain/Medication?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WZUTVGYREemgP9Z5nchGkg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WZUTVWYREemgP9Z5nchGkg" value="1"/>
-      </ownedEnd>
-      <memberEnd href="BehavioralHealth.efx#_UmWipY8GEd-XNpj2tjovxA?FHIM/BehavioralHealth/Behavioral%20Health%20Domain/Medication/medicationAdministered?"/>
-      <memberEnd href="#_WZUTU2YREemgP9Z5nchGkg?FHIM/medication_medicationAdministered/%3CProperty%3E?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_WZXWomYREemgP9Z5nchGkg" name="substanceOfChoice_substance">
-      <ownedEnd xmi:id="_WZXWo2YREemgP9Z5nchGkg" name="" visibility="public" association="_WZXWomYREemgP9Z5nchGkg">
-        <type xmi:type="uml:Class" href="BehavioralHealth.efx#_UmWjNI8GEd-XNpj2tjovxA?FHIM/BehavioralHealth/_Old_BehavioralHealthDomain/SubstanceOfChoice?"/>
-      </ownedEnd>
-      <memberEnd href="BehavioralHealth.efx#_qu3L4HCiEeKknILXOCcS7w?FHIM/BehavioralHealth/Behavioral%20Health%20Domain/SubstanceOfChoice/substance?"/>
-      <memberEnd href="#_WZXWo2YREemgP9Z5nchGkg?FHIM/substanceOfChoice_substance/%3CProperty%3E?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_WZXWpGYREemgP9Z5nchGkg" name="diagnosticSummary_diagnosis">
-      <ownedEnd xmi:id="_WZXWpWYREemgP9Z5nchGkg" name="" visibility="public" association="_WZXWpGYREemgP9Z5nchGkg">
-        <type xmi:type="uml:Class" href="BehavioralHealth.efx#_UmWjVY8GEd-XNpj2tjovxA?FHIM/BehavioralHealth/_Old_BehavioralHealthDomain/DiagnosticSummary?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WZXWpmYREemgP9Z5nchGkg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WZXWp2YREemgP9Z5nchGkg" value="1"/>
-      </ownedEnd>
-      <memberEnd href="BehavioralHealth.efx#_UmWjV48GEd-XNpj2tjovxA?FHIM/BehavioralHealth/Behavioral%20Health%20Domain/DiagnosticSummary/diagnosis?"/>
-      <memberEnd href="#_WZXWpWYREemgP9Z5nchGkg?FHIM/diagnosticSummary_diagnosis/%3CProperty%3E?"/>
-    </packagedElement>
     <profileApplication xmi:id="_Lo1MoeLiEduGJrQyRGTO1A">
       <eAnnotations xmi:id="_Lo1MouLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
