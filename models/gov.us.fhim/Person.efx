@@ -863,6 +863,19 @@
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_3c9mVZH2EemcxoCk63GQMA" visible="false" type="StructureCompartment"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3c8_QZH2EemcxoCk63GQMA" x="42795" y="27896"/>
         </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_pIDCQJLSEemAxNKDbtwmxQ" element="_WsWHcKRMEeGZ6ueex_Me0w" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" fillColor="14869218" transparency="0" lineColor="11842740" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_pIDCQpLSEemAxNKDbtwmxQ" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_pIDCQ5LSEemAxNKDbtwmxQ" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_pIDCRJLSEemAxNKDbtwmxQ" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_pIDpUJLSEemAxNKDbtwmxQ" type="Kind"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_pIDpUZLSEemAxNKDbtwmxQ" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_pIDpUpLSEemAxNKDbtwmxQ" type="Parent"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_pIDpU5LSEemAxNKDbtwmxQ" type="EnumerationCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_pIDpVJLSEemAxNKDbtwmxQ" visible="false" type="AttributeCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_pIDpVZLSEemAxNKDbtwmxQ" visible="false" type="OperationCompartment"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pIDCQZLSEemAxNKDbtwmxQ" x="45331"/>
+        </children>
         <element xsi:nil="true"/>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_ODUHLBAzEd-2E9qx-lgHBg" element="_420A62FD03B645633C38002A" source="_OCkgORAzEd-2E9qx-lgHBg" target="_OCavNBAzEd-2E9qx-lgHBg" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_ODUHLxAzEd-2E9qx-lgHBg" visible="false" type="NameLabel">
@@ -2965,6 +2978,53 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
     <ownedComment xmi:id="_-xJnEIetEem0EZyD1ntpqA" annotatedElement="_l0XegO_4Ed6OG-vjYTopTQ">
       <body>Note: Patient isn't normally instantiated, but rather HumanPatient or AnimalPatient is.</body>
     </ownedComment>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_cuBLSJE7EemEQp10rBVdtw" name="GenderSelfIdentity">
+      <ownedLiteral xmi:id="_cuBLSZE7EemEQp10rBVdtw" name="Gender Variant"/>
+      <ownedLiteral xmi:id="_cuBLSpE7EemEQp10rBVdtw" name="Man"/>
+      <ownedLiteral xmi:id="_cuBLS5E7EemEQp10rBVdtw" name="Intersex"/>
+      <ownedLiteral xmi:id="_cuBLTJE7EemEQp10rBVdtw" name="Questioning"/>
+      <ownedLiteral xmi:id="_cuBLTZE7EemEQp10rBVdtw" name="Transgender"/>
+      <ownedLiteral xmi:id="_cuBLTpE7EemEQp10rBVdtw" name="Woman"/>
+      <ownedLiteral xmi:id="_cuBLT5E7EemEQp10rBVdtw" name="Decline to Answer"/>
+      <ownedLiteral xmi:id="_cuBLUJE7EemEQp10rBVdtw" name="Not Applicable"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_cuByhJE7EemEQp10rBVdtw" name="SexualOrientation">
+      <ownedLiteral xmi:id="_cuByhZE7EemEQp10rBVdtw" name="Asexual"/>
+      <ownedLiteral xmi:id="_cuByhpE7EemEQp10rBVdtw" name="Bisexual"/>
+      <ownedLiteral xmi:id="_cuByh5E7EemEQp10rBVdtw" name="Gay"/>
+      <ownedLiteral xmi:id="_cuByiJE7EemEQp10rBVdtw" name="Heterosexual"/>
+      <ownedLiteral xmi:id="_cuByiZE7EemEQp10rBVdtw" name="Lesbian"/>
+      <ownedLiteral xmi:id="_cuByipE7EemEQp10rBVdtw" name="Questioning"/>
+      <ownedLiteral xmi:id="_cuByi5E7EemEQp10rBVdtw" name="Decline to Answer"/>
+      <ownedLiteral xmi:id="_cuByjJE7EemEQp10rBVdtw" name="Not Applicable "/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_cuBwWJE7EemEQp10rBVdtw" name="OMHEthnicity">
+      <ownedLiteral xmi:id="_cuBwWZE7EemEQp10rBVdtw" name="HispanicLatino"/>
+      <ownedLiteral xmi:id="_cuBwWpE7EemEQp10rBVdtw" name="NotHispanicLatino"/>
+      <ownedLiteral xmi:id="_cuBwW5E7EemEQp10rBVdtw" name="Mexican American"/>
+      <ownedLiteral xmi:id="_cuBwXJE7EemEQp10rBVdtw" name="Puerto Rican"/>
+      <ownedLiteral xmi:id="_cuBwXZE7EemEQp10rBVdtw" name="Mexican"/>
+      <ownedLiteral xmi:id="_cuBwXpE7EemEQp10rBVdtw" name="Chicano/a"/>
+      <ownedLiteral xmi:id="_cuBwX5E7EemEQp10rBVdtw" name="Cuban"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_cuBwd5E7EemEQp10rBVdtw" name="OMHRace">
+      <ownedLiteral xmi:id="_cuBweJE7EemEQp10rBVdtw" name="American Indian or Alaska Native"/>
+      <ownedLiteral xmi:id="_cuBweZE7EemEQp10rBVdtw" name="Asian"/>
+      <ownedLiteral xmi:id="_cuBwepE7EemEQp10rBVdtw" name="Black"/>
+      <ownedLiteral xmi:id="_cuBwe5E7EemEQp10rBVdtw" name="NativeHawaiian"/>
+      <ownedLiteral xmi:id="_cuBwfJE7EemEQp10rBVdtw" name="White"/>
+      <ownedLiteral xmi:id="_cuBwfZE7EemEQp10rBVdtw" name="AsianIndian"/>
+      <ownedLiteral xmi:id="_cuBwfpE7EemEQp10rBVdtw" name="Chinese"/>
+      <ownedLiteral xmi:id="_cuBwf5E7EemEQp10rBVdtw" name="Filipino"/>
+      <ownedLiteral xmi:id="_cuBwgJE7EemEQp10rBVdtw" name="Japanese"/>
+      <ownedLiteral xmi:id="_cuBwgZE7EemEQp10rBVdtw" name="Korean"/>
+      <ownedLiteral xmi:id="_cuBwgpE7EemEQp10rBVdtw" name="Vietnamese"/>
+      <ownedLiteral xmi:id="_cuBwg5E7EemEQp10rBVdtw" name="Native HawaiianOrOtherPacificIslander "/>
+      <ownedLiteral xmi:id="_cuBwhJE7EemEQp10rBVdtw" name="GuamanianOrChamorro "/>
+      <ownedLiteral xmi:id="_cuBwhZE7EemEQp10rBVdtw" name="Samoan"/>
+      <ownedLiteral xmi:id="_cuBwhpE7EemEQp10rBVdtw" name="OtherPacificIslander "/>
+      <ownedLiteral xmi:id="_cuBwh5E7EemEQp10rBVdtw" name="OtherRace"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_cuBwEJE7EemEQp10rBVdtw" name="MilitaryServiceDischargeStatus">
       <ownedLiteral xmi:id="_cuBwEZE7EemEQp10rBVdtw" name="Bad Conduct"/>
       <ownedLiteral xmi:id="_cuBwEpE7EemEQp10rBVdtw" name="Dishonorable"/>
@@ -3087,8 +3147,9 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
       <ownedLiteral xmi:id="_XV2Xc6RMEeGZ6ueex_Me0w" name="UNCLE" classifier="_XVnt8KRMEeGZ6ueex_Me0w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_WsWHcKRMEeGZ6ueex_Me0w" name="FHIM_Administrative Gender">
-      <ownedLiteral xmi:id="_WwSzUKRMEeGZ6ueex_Me0w" name="F" classifier="_WsWHcKRMEeGZ6ueex_Me0w"/>
-      <ownedLiteral xmi:id="_WwTaYaRMEeGZ6ueex_Me0w" name="M" classifier="_WsWHcKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_WwSzUKRMEeGZ6ueex_Me0w" name="F (Female)" classifier="_WsWHcKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_WwTaYaRMEeGZ6ueex_Me0w" name="M (Male)" classifier="_WsWHcKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_vR2SEJLSEemAxNKDbtwmxQ" name="U (Undifferentiated)" classifier="_WsWHcKRMEeGZ6ueex_Me0w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_IpJ6oM8EEeK9wcpwFaQlwA" name="FHIM_AdvancedDirectiveKind">
       <ownedLiteral xmi:id="_W-DjsNzmEeKJNK8N5ws2Ew" name="443564001" classifier="_IpJ6oM8EEeK9wcpwFaQlwA"/>
@@ -3242,10 +3303,10 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
       <ownedLiteral xmi:id="_mpE7ANz6EeK97f-3loAo4w" name="wo1" classifier="_5yirsM8DEeK9wcpwFaQlwA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_PdRvQM8DEeK9wcpwFaQlwA" name="LanguageAbilityProficiency">
-      <ownedLiteral xmi:id="_E1oTwM8GEeK9wcpwFaQlwA" name="E" classifier="_PdRvQM8DEeK9wcpwFaQlwA"/>
-      <ownedLiteral xmi:id="_FSOJIM8GEeK9wcpwFaQlwA" name="F" classifier="_PdRvQM8DEeK9wcpwFaQlwA"/>
-      <ownedLiteral xmi:id="_FdgMEM8GEeK9wcpwFaQlwA" name="G" classifier="_PdRvQM8DEeK9wcpwFaQlwA"/>
-      <ownedLiteral xmi:id="_FinVkM8GEeK9wcpwFaQlwA" name="P" classifier="_PdRvQM8DEeK9wcpwFaQlwA"/>
+      <ownedLiteral xmi:id="_E1oTwM8GEeK9wcpwFaQlwA" name="E (Excellent)" classifier="_PdRvQM8DEeK9wcpwFaQlwA"/>
+      <ownedLiteral xmi:id="_FSOJIM8GEeK9wcpwFaQlwA" name="F (Fair)" classifier="_PdRvQM8DEeK9wcpwFaQlwA"/>
+      <ownedLiteral xmi:id="_FdgMEM8GEeK9wcpwFaQlwA" name="G (Good)" classifier="_PdRvQM8DEeK9wcpwFaQlwA"/>
+      <ownedLiteral xmi:id="_FinVkM8GEeK9wcpwFaQlwA" name="P (Poor)" classifier="_PdRvQM8DEeK9wcpwFaQlwA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Z-tjIM8CEeK9wcpwFaQlwA" name="Industry (Census)">
       <ownedLiteral xmi:id="_aJP_MM8CEeK9wcpwFaQlwA" name="0170" classifier="_Z-tjIM8CEeK9wcpwFaQlwA"/>
@@ -3608,12 +3669,12 @@ The FHIM uses simple or “primitive” datatypes wherever possible, but does de
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_6LlUQGZVEeOjX716b-3f7A" name="ISO 639-2 Language"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_XdfQgKRMEeGZ6ueex_Me0w" name="LanguageAbilityMode">
-      <ownedLiteral xmi:id="_XdkJAKRMEeGZ6ueex_Me0w" name="ESGN" classifier="_XdfQgKRMEeGZ6ueex_Me0w"/>
-      <ownedLiteral xmi:id="_XdkJAqRMEeGZ6ueex_Me0w" name="ESP" classifier="_XdfQgKRMEeGZ6ueex_Me0w"/>
-      <ownedLiteral xmi:id="_XdkwEKRMEeGZ6ueex_Me0w" name="EWR" classifier="_XdfQgKRMEeGZ6ueex_Me0w"/>
-      <ownedLiteral xmi:id="_XdkwEqRMEeGZ6ueex_Me0w" name="RSGN" classifier="_XdfQgKRMEeGZ6ueex_Me0w"/>
-      <ownedLiteral xmi:id="_XdkwFKRMEeGZ6ueex_Me0w" name="RSP" classifier="_XdfQgKRMEeGZ6ueex_Me0w"/>
-      <ownedLiteral xmi:id="_XdlXIaRMEeGZ6ueex_Me0w" name="RWR" classifier="_XdfQgKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_XdkJAKRMEeGZ6ueex_Me0w" name="ESGN (Expressed signed)" classifier="_XdfQgKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_XdkJAqRMEeGZ6ueex_Me0w" name="ESP (Expressed spoken)" classifier="_XdfQgKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_XdkwEKRMEeGZ6ueex_Me0w" name="EWR (Expressed written)" classifier="_XdfQgKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_XdkwEqRMEeGZ6ueex_Me0w" name="RSGN (Received signed)" classifier="_XdfQgKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_XdkwFKRMEeGZ6ueex_Me0w" name="RSP (Received spoken)" classifier="_XdfQgKRMEeGZ6ueex_Me0w"/>
+      <ownedLiteral xmi:id="_XdlXIaRMEeGZ6ueex_Me0w" name="RWR (Received written)" classifier="_XdfQgKRMEeGZ6ueex_Me0w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_sdrb8I0tEeCD3bb30FJGhQ" name="AdvanceDirective">
       <ownedComment xmi:id="_nN9-EJX6EeCD7vwmJe8BlA" annotatedElement="_sdrb8I0tEeCD3bb30FJGhQ">
@@ -4196,10 +4257,12 @@ We removed veryImportantPerson code (4/4/2013) because we do not have a use-case
       <ownedAttribute xmi:id="_420A62FD03B6418A96D500A5" name="language" visibility="public">
         <ownedComment xmi:id="_KjvsoBqPEd-j8JC21F3W2A" annotatedElement="_420A62FD03B6418A96D500A5">
           <body>A language for which the Person has some level of proficiency for written or spoken communication.&#xD;
-&quot;The patient's primary language.  HL7 recommends using ISO table 639&quot; - HL7 Version 2.8, PID-15.&#xD;
+&quot;The language about which the Staff Member has some knowledge. HL7 recommends using ISO 639 as the suggested values in User-defined Table 0296 – Primary Language.&quot; - HL7 Version 2.8, LAN-2.&#xD;
 &quot;The next of kin/associated party's primary speaking language.&quot; - HL7 Version 2.8, NK1-20.&#xD;
+&quot;The patient's primary language.  HL7 recommends using ISO table 639&quot; - HL7 Version 2.8, PID-15.&#xD;
 &quot;The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case. E.g. &quot;en&quot; for English, or &quot;en-US&quot; for American English versus &quot;en-EN&quot; for England English.&quot; - HL7 FHIR, Patient.communication.language.&#xD;
 &quot;A language the practitioner can use in patient communication.&quot; - HL7 FHIR, Practitioner.communication&#xD;
+&quot;The preferred language spoken by the client. This information is required by the United States Meaningful Use electronic health record incentive program.&quot; - HL7 Behavioral Health Record DAM R2, Client.preferredLanguage&#xD;
 &quot;Preferred spoken language of communication as expressed by the patient.&quot; - PCORnet Common Data Model, Demographic.Pat Pref Language_Spoken</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
@@ -4208,7 +4271,8 @@ We removed veryImportantPerson code (4/4/2013) because we do not have a use-case
       </ownedAttribute>
       <ownedAttribute xmi:id="_420A62FD03B6418A983702B7" name="methodOfExpression" visibility="public">
         <ownedComment xmi:id="_MFyuMBqPEd-j8JC21F3W2A" annotatedElement="_420A62FD03B6418A983702B7">
-          <body>The means by which the person is capable of communicating in the language. Examples of method of expression would be written and spoken.</body>
+          <body>The means by which the person is capable of communicating in the language. Examples of method of expression would be written and spoken.&#xD;
+&quot;The ability the Staff Member possesses with respect to the language.&quot; Possible values (in Table 0403) include: Read; Write; Speak; Understand; Sign. - HL7 Version 2.8, LAN-3.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_evNLTeLjEdutr_MT9HkPyQ" value="1"/>
@@ -4217,7 +4281,8 @@ We removed veryImportantPerson code (4/4/2013) because we do not have a use-case
       <ownedAttribute xmi:id="_420A62FD03B6418A98AA03A3" name="proficiencyLevel" visibility="public">
         <eAnnotations xmi:id="_NRInMeLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
         <ownedComment xmi:id="_OJ-McBqPEd-j8JC21F3W2A" annotatedElement="_420A62FD03B6418A98AA03A3">
-          <body>&quot;A value representing the level of proficiency in a language.&quot; - HL7 V3.</body>
+          <body>&quot;The level of knowledge the Staff Member possesses with respect to the language ability.&quot; Possible values (in Table 0404) include: Excellent; Good; Fair; Poor; Some (level unknown); None. - HL7 Version 2.8, LAN-4.&#xD;
+&quot;A value representing the level of proficiency in a language.&quot; - HL7 V3.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_evNLT-LjEdutr_MT9HkPyQ" value="1"/>
@@ -4627,6 +4692,7 @@ HL7 Version 2 has the following suggested values (table 189): Hispanic or Latino
       <ownedAttribute xmi:id="_c_C5kLUqEeiWRsqEq7kYtg" name="genderIdentity" visibility="public">
         <ownedComment xmi:id="_bkFFgLUsEeiWRsqEq7kYtg" annotatedElement="_c_C5kLUqEeiWRsqEq7kYtg">
           <body>A  person's perception of having a particular gender, which may or may not correspond with their birth sex.&#xD;
+&quot;The client's gender identity, otherwise known as core gender identity, and refers to how the client self-identifies. It is not based on the person’s anatomy.&quot; - HL7 Behavioral Health Record DAM R2, Client.genderIdentity&#xD;
 &quot;Current gender identity.&quot; - PCORnet Common Data Model, Demographic.Sex. Possible values include: Man; Woman; Transgender male/Trans man/Female-to-male; Transgender female/Trans woman/Male-to-female; Genderqueer; Something else; Multiple gender categories; Decline to answer; No information; Unknown; Other</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
@@ -4828,7 +4894,8 @@ Note that HL7 Version 2 table 6 lists 85 suggested values for this field.</body>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oOTSMDtvEemQIZRQAaXE5w" name="sexualOrientation" visibility="public">
         <ownedComment xmi:id="_IjB90DtwEemQIZRQAaXE5w" annotatedElement="_oOTSMDtvEemQIZRQAaXE5w">
-          <body>&quot;Sexual orientation.&quot; - PCORnet Common Data Model, Demographic.Sexual_Orientation. Possible values include: Bisexual; Gay; Lesbian; Queer; Questioning; Straight; Something else; Multiple sexual orientations; Decline to answer; No information; Unknown; Other.</body>
+          <body>&quot;An enduring pattern, or lack thereof, of a romantic, sexual, and/or emotional attraction to men, women, or all genders.&quot; - HL7 Behavioral Health Record DAM R2, Client.sexualOrientation&#xD;
+&quot;Sexual orientation.&quot; - PCORnet Common Data Model, Demographic.Sexual_Orientation. Possible values include: Bisexual; Gay; Lesbian; Queer; Questioning; Straight; Something else; Multiple sexual orientations; Decline to answer; No information; Unknown; Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tFLhkDtvEemQIZRQAaXE5w" value="1"/>

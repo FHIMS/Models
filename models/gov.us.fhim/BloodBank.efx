@@ -906,12 +906,12 @@
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kbiysk10Ed-edbevC5ymeQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
         </edges>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_TQ0FsEmTEemPhZxFx5aDOA" element="_TQZ2AEmTEemPhZxFx5aDOA" source="_CO2MsOeWEd6qdqXtvR-ZHQ" target="_Jobz8OeXEd6qdqXtvR-ZHQ" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
-          <children xmi:type="notation:DecorationNode" xmi:id="_TQ4-MEmTEemPhZxFx5aDOA" type="NameLabel">
+          <children xmi:type="notation:DecorationNode" xmi:id="_TQ4-MEmTEemPhZxFx5aDOA" visible="false" type="NameLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_TQ5lQEmTEemPhZxFx5aDOA" type="Stereotype"/>
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_TQ5lQUmTEemPhZxFx5aDOA" type="Name"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TQ4-MUmTEemPhZxFx5aDOA" y="-186"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_TQ6zYEmTEemPhZxFx5aDOA" type="ToMultiplicityLabel" element="_TQhKwEmTEemPhZxFx5aDOA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_TQ6zYEmTEemPhZxFx5aDOA" visible="false" type="ToMultiplicityLabel" element="_TQhKwEmTEemPhZxFx5aDOA">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_TQ6zYkmTEemPhZxFx5aDOA" type="ToMultiplicity"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_TQ6zYUmTEemPhZxFx5aDOA" y="396"/>
           </children>
@@ -927,19 +927,19 @@
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_TQ8BgEmTEemPhZxFx5aDOA" type="FromRole"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_TQ7adUmTEemPhZxFx5aDOA" y="-397"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_TQ8BgUmTEemPhZxFx5aDOA" type="ToQualifierLabel" element="_TQhKwEmTEemPhZxFx5aDOA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_TQ8BgUmTEemPhZxFx5aDOA" visible="false" type="ToQualifierLabel" element="_TQhKwEmTEemPhZxFx5aDOA">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_TQ8Bg0mTEemPhZxFx5aDOA" type="QualifierCompartment"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_TQ8BgkmTEemPhZxFx5aDOA" y="-186"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_TQ8BhEmTEemPhZxFx5aDOA" type="FromQualifierLabel" element="_TQeHcEmTEemPhZxFx5aDOA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_TQ8BhEmTEemPhZxFx5aDOA" visible="false" type="FromQualifierLabel" element="_TQeHcEmTEemPhZxFx5aDOA">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_TQ8okEmTEemPhZxFx5aDOA" type="QualifierCompartment"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_TQ8BhUmTEemPhZxFx5aDOA" y="-186"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_TQ8okUmTEemPhZxFx5aDOA" type="ToConstraintLabel" element="_TQhKwEmTEemPhZxFx5aDOA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_TQ8okUmTEemPhZxFx5aDOA" visible="false" type="ToConstraintLabel" element="_TQhKwEmTEemPhZxFx5aDOA">
             <children xmi:type="notation:ListCompartment" xmi:id="_TQ9PoEmTEemPhZxFx5aDOA" type="ToConstraintCompartment"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_TQ8okkmTEemPhZxFx5aDOA" y="1058"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_TQ9PoUmTEemPhZxFx5aDOA" type="FromConstraintLabel" element="_TQeHcEmTEemPhZxFx5aDOA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_TQ9PoUmTEemPhZxFx5aDOA" visible="false" type="FromConstraintLabel" element="_TQeHcEmTEemPhZxFx5aDOA">
             <children xmi:type="notation:ListCompartment" xmi:id="_TQ9Po0mTEemPhZxFx5aDOA" type="FromConstraintCompartment"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_TQ9PokmTEemPhZxFx5aDOA" y="1058"/>
           </children>
@@ -1627,7 +1627,7 @@ These are the patient's serum antibodies. [FileMan 63,1->63.01,7->63.46,.01]</bo
     <packagedElement xmi:type="uml:Association" xmi:id="_vWnBwOedEd6qdqXtvR-ZHQ" name="bloodBankTest_specimen" memberEnd="_vWwywOedEd6qdqXtvR-ZHQ _vWwyw-edEd6qdqXtvR-ZHQ">
       <ownedEnd xmi:id="_vWwyw-edEd6qdqXtvR-ZHQ" name="" visibility="public" type="_0UO2ieeWEd6qdqXtvR-ZHQ" association="_vWnBwOedEd6qdqXtvR-ZHQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_TQZ2AEmTEemPhZxFx5aDOA" memberEnd="_TQeHcEmTEemPhZxFx5aDOA _TQhKwEmTEemPhZxFx5aDOA">
+    <packagedElement xmi:type="uml:Association" xmi:id="_TQZ2AEmTEemPhZxFx5aDOA" name="bloodBankRecord_bloodBankTest" memberEnd="_TQeHcEmTEemPhZxFx5aDOA _TQhKwEmTEemPhZxFx5aDOA">
       <ownedEnd xmi:id="_TQhKwEmTEemPhZxFx5aDOA" name="" visibility="private" type="_JUXv0OeUEd6qdqXtvR-ZHQ" association="_TQZ2AEmTEemPhZxFx5aDOA"/>
     </packagedElement>
   </uml:Package>
