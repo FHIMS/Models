@@ -791,6 +791,20 @@
           <element xmi:type="uml:Class" href="ClinicalObservations.efx#_nbH1LVaeEd6rJ7jpZ7LBFg?FHIM/ClinicalObservation/ObservationStatement?"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_awYAMYvOEemlfYEhSLS4IA" x="14582" y="4755"/>
         </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_EcOdELiOEemh19b8hZ8Drg" fontName="Arial" fontHeight="10" showListStereotype="Text" showListVisibility="None" fillColor="13434879" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_EcT8oLiOEemh19b8hZ8Drg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_EcT8obiOEemh19b8hZ8Drg" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_EcUjsLiOEemh19b8hZ8Drg" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_EcUjsbiOEemh19b8hZ8Drg" type="Kind"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_EcUjsriOEemh19b8hZ8Drg" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_EcUjs7iOEemh19b8hZ8Drg" type="Parent"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_EcVKwLiOEemh19b8hZ8Drg" type="EnumerationCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_EcVKwbiOEemh19b8hZ8Drg" visible="false" type="AttributeCompartment"/>
+          <children xmi:type="notation:SemanticListCompartment" xmi:id="_EcVx0LiOEemh19b8hZ8Drg" visible="false" type="OperationCompartment"/>
+          <element xmi:type="uml:Enumeration" href="FHIM.emx#_ojrvoCZjEem5e4Ns2UTn_Q?FHIM/VocabContext?"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EcOdEbiOEemh19b8hZ8Drg" x="-10144" y="32968"/>
+        </children>
         <element xsi:nil="true"/>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_SYlF197aEeinYNcLU-92BA" source="_SYhbkd7aEeinYNcLU-92BA" target="_SYhbcN7aEeinYNcLU-92BA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_SYlF2N7aEeinYNcLU-92BA" visible="false" type="NameLabel">
@@ -3090,7 +3104,7 @@ b) Add MedicationAdmin non-occurance, make VaccinationNonEvent a subtype&#xD;
 c) FHIR has an Explanation, which is akin to Indication, but it is used for non-events too&#xD;
 d) FHIR points directly to the Vaccination Protocol, FHIM links through the evaluation</body>
     </ownedComment>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_XnQQgKRMEeGZ6ueex_Me0w" name="_ActNoImmunizationReason_V3">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_XnQQgKRMEeGZ6ueex_Me0w" name="ActNoImmunizationReason_V3">
       <ownedComment xmi:id="_C5xWcKa2EeKk39qMkmbDrw">
         <body>This value set is used as-is.</body>
       </ownedComment>
@@ -5648,13 +5662,13 @@ Indicates the state of the assignment of the patient dose to the vaccine series.
       <ownedEnd xmi:id="_ztgYcIxYEemQwsnSqQ26mw" name="" visibility="private" type="_F4bMcKEZEeGnfe88WF3uxw" association="_ztKaMIxYEemQwsnSqQ26mw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Nn6BQK_BEemZi92e3z6fAA" name="VocabContext">
-      <ownedLiteral xmi:id="_Nn6BQa_BEemZi92e3z6fAA" name="FHIM proposal" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
-      <ownedLiteral xmi:id="_Nn6BQq_BEemZi92e3z6fAA" name="FHIR value set OID" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
-      <ownedLiteral xmi:id="_Nn6BQ6_BEemZi92e3z6fAA" name="FHIR value set URI" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
-      <ownedLiteral xmi:id="_Nn6BRK_BEemZi92e3z6fAA" name="PHIN VADS URL" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
-      <ownedLiteral xmi:id="_Nn6BRa_BEemZi92e3z6fAA" name="V3 value set OID" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
-      <ownedLiteral xmi:id="_Nn6BRq_BEemZi92e3z6fAA" name="VSAC Collaboration URL" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
-      <ownedLiteral xmi:id="_Nn6BR6_BEemZi92e3z6fAA" name="VSAC URL" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
+      <ownedLiteral xmi:id="_Nn6BRa_BEemZi92e3z6fAA" name="C-CDA_2.1" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
+      <ownedLiteral xmi:id="_Nn6BQa_BEemZi92e3z6fAA" name="FHIM_Defined_Content" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
+      <ownedLiteral xmi:id="_Nn6BQq_BEemZi92e3z6fAA" name="HL7_FHIR_R4" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
+      <ownedLiteral xmi:id="_Nn6BQ6_BEemZi92e3z6fAA" name="HL7_ICSR" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
+      <ownedLiteral xmi:id="_Nn6BRK_BEemZi92e3z6fAA" name="HL7_V2" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
+      <ownedLiteral xmi:id="_Nn6BRq_BEemZi92e3z6fAA" name="NCPDP_Script" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
+      <ownedLiteral xmi:id="_Nn6BR6_BEemZi92e3z6fAA" name="US_Core_R4" classifier="_Nn6BQK_BEemZi92e3z6fAA"/>
     </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_0KhdcNglEeG3E4mt6RKX5Q" base_Comment="_0KY6kNglEeG3E4mt6RKX5Q"/>
@@ -5779,4 +5793,8 @@ Indicates the state of the assignment of the patient dose to the vaccine series.
   <Default:Documentation xmi:id="_XDWu4IxdEemQwsnSqQ26mw" base_Comment="_Gi3J8CzZEeKLfdgQhBZO1Q"/>
   <Default:Documentation xmi:id="_XfB-QIxdEemQwsnSqQ26mw" base_Comment="_XfBXMYxdEemQwsnSqQ26mw"/>
   <term:Context xmi:id="_j9bm4K_DEemW96-eSLsKRw" base_Enumeration="_Nn6BQK_BEemZi92e3z6fAA"/>
+  <term:ValueSetConstraints xmi:id="_vOAy4LiNEemh19b8hZ8Drg" base_Property="_P4mwcL_wEeG9Y6ZcZJMJaA">
+    <constraints xmi:id="_YYYpgLiOEemh19b8hZ8Drg" context="NCPDP_Script" valueSetName="foo" valueSetURI="bar" valueSetOID="ssss"/>
+    <constraints xmi:id="_Uoh3ILiPEemwleXD7Vnp-Q" context="HL7_V2" valueSetName="bar" valueSetURI="" valueSetOID="ttt"/>
+  </term:ValueSetConstraints>
 </xmi:XMI>
