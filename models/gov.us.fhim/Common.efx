@@ -4531,7 +4531,7 @@ The Current Procedural Terminology (CPT) code corresponding with the planned pri
 29308-4  Diagnosis (used for Encounter Diagnosis template)&#xD;
 10219-4  Preoperative Diagnosis&#xD;
 10218-6  Postoperative Diagnosis&#xD;
-&quot;Role that this diagnosis has within the encounter (e.g. admission, billing, discharge …).&quot; - HL7 FHIR, Encounter.diagnosis.role&#xD;
+&quot;Role that this diagnosis has within the encounter (e.g. admission, billing, discharge …).&quot; Possible values include: Admission diagnosis; Discharge diagnosis; Chief complaint; Comorbidity diagnosis; pre-op diagnosis; post-op diagnosis; Billing. - HL7 FHIR, Encounter.diagnosis.use&#xD;
 &quot;Classification of diagnosis source.&quot; - PCORnet Common Data Model, Encounter.DX_Source. Possible values include: Admitting; Discharge; Final; Interim; No information; Unknown; Other.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
