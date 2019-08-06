@@ -1099,19 +1099,19 @@ Note that FHIR uses a code for this concept, but we modeled this as a string, be
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A6tzQK3BEeaTV_0rLvgAyQ" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_nz1qQCZnEemHf8QKd17Jzw" name="VocabContext">
-      <ownedLiteral xmi:id="_nz1qQSZnEemHf8QKd17Jzw" name="FHIM proposal" classifier="_nz1qQCZnEemHf8QKd17Jzw"/>
-      <ownedLiteral xmi:id="_nz1qQiZnEemHf8QKd17Jzw" name="FHIR value set OID" classifier="_nz1qQCZnEemHf8QKd17Jzw"/>
-      <ownedLiteral xmi:id="_nz1qQyZnEemHf8QKd17Jzw" name="FHIR value set URI" classifier="_nz1qQCZnEemHf8QKd17Jzw"/>
-      <ownedLiteral xmi:id="_nz1qRCZnEemHf8QKd17Jzw" name="PHIN VADS URL" classifier="_nz1qQCZnEemHf8QKd17Jzw"/>
-      <ownedLiteral xmi:id="_nz1qRSZnEemHf8QKd17Jzw" name="V3 value set OID" classifier="_nz1qQCZnEemHf8QKd17Jzw"/>
-      <ownedLiteral xmi:id="_nz1qRiZnEemHf8QKd17Jzw" name="VSAC Collaboration URL" classifier="_nz1qQCZnEemHf8QKd17Jzw"/>
-      <ownedLiteral xmi:id="_nz1qRyZnEemHf8QKd17Jzw" name="VSAC URL" classifier="_nz1qQCZnEemHf8QKd17Jzw"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_Snu2kEBKEemmqsuDcMslCA" supplier="_FlHm0NoHEeSdPcnORr-kJQ" client="_LZ6FYNoGEeSdPcnORr-kJQ"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_TJRdYEBKEemmqsuDcMslCA" supplier="_vv2jsNoGEeSdPcnORr-kJQ" client="_LZ6FYNoGEeSdPcnORr-kJQ"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_TpoYcEBKEemmqsuDcMslCA" supplier="_PJF3cNoHEeSdPcnORr-kJQ" client="_LZ6FYNoGEeSdPcnORr-kJQ"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_ULehQEBKEemmqsuDcMslCA" supplier="_9hnDYNoGEeSdPcnORr-kJQ" client="_LZ6FYNoGEeSdPcnORr-kJQ"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_HQLRwLiWEemtKK2Z_pANzw" name="VocabContext">
+      <ownedLiteral xmi:id="_HQLRwbiWEemtKK2Z_pANzw" name="C-CDA_2.1" classifier="_HQLRwLiWEemtKK2Z_pANzw"/>
+      <ownedLiteral xmi:id="_HQLRwriWEemtKK2Z_pANzw" name="FHIM_Defined_Content" classifier="_HQLRwLiWEemtKK2Z_pANzw"/>
+      <ownedLiteral xmi:id="_HQLRw7iWEemtKK2Z_pANzw" name="HL7_FHIR_R4" classifier="_HQLRwLiWEemtKK2Z_pANzw"/>
+      <ownedLiteral xmi:id="_HQLRxLiWEemtKK2Z_pANzw" name="HL7_ICSR" classifier="_HQLRwLiWEemtKK2Z_pANzw"/>
+      <ownedLiteral xmi:id="_HQLRxbiWEemtKK2Z_pANzw" name="HL7_V2" classifier="_HQLRwLiWEemtKK2Z_pANzw"/>
+      <ownedLiteral xmi:id="_HQLRxriWEemtKK2Z_pANzw" name="NCPDP_Script" classifier="_HQLRwLiWEemtKK2Z_pANzw"/>
+      <ownedLiteral xmi:id="_HQLRx7iWEemtKK2Z_pANzw" name="US_Core_R4" classifier="_HQLRwLiWEemtKK2Z_pANzw"/>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_1RHOAGX9EeCWgYu_gBZhWw" base_Comment="_1Q-EEGX9EeCWgYu_gBZhWw"/>
   <Default:Documentation xmi:id="_2fXwwMIzEeGx0M-CyAbegA" base_Comment="_2fOm0MIzEeGx0M-CyAbegA"/>
@@ -1162,6 +1162,6 @@ Note that FHIR uses a code for this concept, but we modeled this as a string, be
     <constraints xmi:id="_RUW-wiZiEem4Dt5yAyq9ww" context="FHIR FHIR value set OID" valueSetName="AllergyIntoleranceCategory" valueSetOID="&quot;&#x9;2.16.840.1.113883.4.642.3.123&quot;"/>
     <constraints xmi:id="_RUXl0CZiEem4Dt5yAyq9ww" context="FHIR FHIR value set URI" valueSetName="AllergyIntoleranceCategory" valueSetURI="http://hl7.org/fhir/ValueSet/allergy-intolerance-category"/>
   </term:ValueSetConstraints>
-  <term:Context xmi:id="_6t1PECZnEemFMesuX8fpPg" base_Enumeration="_nz1qQCZnEemHf8QKd17Jzw"/>
   <Default:Documentation xmi:id="_4ySfAEdOEemimpXAYu5S8Q" base_Comment="_4yM_cEdOEemimpXAYu5S8Q"/>
+  <term:Context xmi:id="_YIc2cLiWEemtKK2Z_pANzw" base_Enumeration="_HQLRwLiWEemtKK2Z_pANzw"/>
 </xmi:XMI>

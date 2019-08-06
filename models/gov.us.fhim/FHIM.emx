@@ -709,16 +709,16 @@ Note to the reader: the FHIM is a single integrated model, whereby diagrams are 
     <packagedElement xmi:type="uml:Package" href="DetailedClinicalModels.efx#_wy4_0F2jEeercrca8w8cRw?FHIM/DetailedClinicalModels?"/>
     <packagedElement xmi:type="uml:Package" href="SkinAndWound.efx#_oCGiYH43Eeip-sQQzeVEVw?FHIM/SkinAndWound?"/>
     <packagedElement xmi:type="uml:Package" href="Contract.efx#_Hbg_ABqpEemp-ZSmHtW8Fw?FHIM/Contract?"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ojrvoCZjEem5e4Ns2UTn_Q" name="VocabContext">
-      <ownedLiteral xmi:id="_CZda0CZkEem5e4Ns2UTn_Q" name="FHIM proposal" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
-      <ownedLiteral xmi:id="_DF_wsCZkEem5e4Ns2UTn_Q" name="FHIR value set OID" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
-      <ownedLiteral xmi:id="_-35RMCZmEemg-8Rt-x-yhg" name="FHIR value set URI" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
-      <ownedLiteral xmi:id="_C-prMCZnEemg-8Rt-x-yhg" name="PHIN VADS URL" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
-      <ownedLiteral xmi:id="_FETJECZnEemg-8Rt-x-yhg" name="V3 value set OID" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
-      <ownedLiteral xmi:id="_HhrKcCZnEemg-8Rt-x-yhg" name="VSAC Collaboration URL" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
-      <ownedLiteral xmi:id="_Jdc6oCZnEemg-8Rt-x-yhg" name="VSAC URL" classifier="_ojrvoCZjEem5e4Ns2UTn_Q"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Package" href="Measure.efx#_bs8tYLYkEemNd-3wg7C_4g?FHIM/Measure?"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_SWMj8LiWEemtKK2Z_pANzw" name="VocabContext">
+      <ownedLiteral xmi:id="_SWMj8biWEemtKK2Z_pANzw" name="C-CDA_2.1" classifier="_SWMj8LiWEemtKK2Z_pANzw"/>
+      <ownedLiteral xmi:id="_SWMj8riWEemtKK2Z_pANzw" name="FHIM_Defined_Content" classifier="_SWMj8LiWEemtKK2Z_pANzw"/>
+      <ownedLiteral xmi:id="_SWMj87iWEemtKK2Z_pANzw" name="HL7_FHIR_R4" classifier="_SWMj8LiWEemtKK2Z_pANzw"/>
+      <ownedLiteral xmi:id="_SWMj9LiWEemtKK2Z_pANzw" name="HL7_ICSR" classifier="_SWMj8LiWEemtKK2Z_pANzw"/>
+      <ownedLiteral xmi:id="_SWMj9biWEemtKK2Z_pANzw" name="HL7_V2" classifier="_SWMj8LiWEemtKK2Z_pANzw"/>
+      <ownedLiteral xmi:id="_SWMj9riWEemtKK2Z_pANzw" name="NCPDP_Script" classifier="_SWMj8LiWEemtKK2Z_pANzw"/>
+      <ownedLiteral xmi:id="_SWMj97iWEemtKK2Z_pANzw" name="US_Core_R4" classifier="_SWMj8LiWEemtKK2Z_pANzw"/>
+    </packagedElement>
     <profileApplication xmi:id="_Lo1MoeLiEduGJrQyRGTO1A">
       <eAnnotations xmi:id="_Lo1MouLiEduGJrQyRGTO1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -745,5 +745,5 @@ Note to the reader: the FHIM is a single integrated model, whereby diagrams are 
     </profileApplication>
   </uml:Package>
   <Default:Documentation xmi:id="_zAh94LEeEeKVutcKIuRG4A" base_Comment="_zAUigLEeEeKVutcKIuRG4A"/>
-  <term:Context xmi:id="_9supICZnEemFMesuX8fpPg" base_Enumeration="_ojrvoCZjEem5e4Ns2UTn_Q"/>
+  <term:Context xmi:id="_VJIloLiWEemtKK2Z_pANzw" base_Enumeration="_SWMj8LiWEemtKK2Z_pANzw"/>
 </xmi:XMI>
