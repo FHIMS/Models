@@ -72,7 +72,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_7mSGVB7sEeeR140udo0pbA" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_7mStYB7sEeeR140udo0pbA" visible="false" type="StructureCompartment"/>
           <element xmi:type="uml:Class" href="Common.efx#_420A62FD03B642DBE3F101E7?FHIM/Common/Specimen?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7mQ4MR7sEeeR140udo0pbA" x="27896" y="-2219"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7mQ4MR7sEeeR140udo0pbA" x="29164" y="-2853"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_Z76A8B7tEeeR140udo0pbA" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8519553" transparency="0" lineColor="3342489" lineWidth="1" showParent="Name" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_Z76oAB7tEeeR140udo0pbA" type="ImageCompartment">
@@ -1005,7 +1005,7 @@
       <ownedAttribute xmi:id="_8465QB70EeeR140udo0pbA" name="kind" visibility="public">
         <ownedComment xmi:id="_dAh8oB76EeeR140udo0pbA" annotatedElement="_8465QB70EeeR140udo0pbA">
           <body>Specifies the type of Reference Range to which this criterion belongs. For example, there are normal reference ranges, therapeutic ranges, etc.&#xD;
-&quot;Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.&quot; - HL7 FHIR, Observation.referenceRange.type</body>
+&quot;Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.&quot; Possible values are: Normal Range; Recommended Range; Treatment Range; Therapeutic Desired Level; Pre Therapeutic Desired Level; Post Therapeutic Desired Level; Endocrine; Pre-Puberty; Follicular Stage; MidCycle; Luteal; Post-Menopause. - HL7 FHIR, Observation.referenceRange.type</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__9D_sR70EeeR140udo0pbA" value="1"/>
@@ -1120,7 +1120,7 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       <ownedAttribute xmi:id="_XX-xkIFwEeiFweA6NKJQOg" name="basedOn" visibility="public" association="_XXiFoIFwEeiFweA6NKJQOg">
         <ownedComment xmi:id="_cCKowIFwEeiFweA6NKJQOg" annotatedElement="_XX-xkIFwEeiFweA6NKJQOg">
           <body>&quot;A plan, proposal or order that is fulfilled in whole or in part by this event.&quot; - HL7 CIMI, EvaluationResultTopic.basedOn&#xD;
-&quot;A plan, proposal or order that is fulfilled in whole or in part by this event.&quot; - HL7 FHIR, Observation.basedOn&#xD;
+&quot;A plan, proposal or order that is fulfilled in whole or in part by this event. For example, a MedicationRequest may require a patient to have laboratory test performed before it is dispensed.&quot; - HL7 FHIR, Observation.basedOn&#xD;
 &quot;The order, proposal or plan that is fulfilled in whole or in part by this QuestionnaireResponse. For example, a ServiceRequest seeking an intake assessment or a decision support recommendation to assess for post-partum depression.&quot; - HL7 FHIR, QuestionnaireResponse.basedOn</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Common.efx#_Da36EE_EEeicO4zK57V_lA?FHIM/Common/ActionStatement?"/>
@@ -1140,7 +1140,7 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       <ownedAttribute xmi:id="_kn6owB7OEeeR140udo0pbA" name="category" visibility="public">
         <ownedComment xmi:id="_kn6owR7OEeeR140udo0pbA" annotatedElement="_kn6owB7OEeeR140udo0pbA">
           <body>This optional property is used to classify the observation into coarse-grained groups such as vital signs, laboratory, etc. This property is included for compatibility to FHIR, although in the FHIM, such a categorization is usually handled through generalization (sub-type) relationships.&#xD;
-&quot;A code that classifies the general type of observation being made.&quot; - HL7 FHIR, Observation.category</body>
+&quot;A code that classifies the general type of observation being made.&quot; Possible values are: Activity; Exam; Imaging; Laboratory; Procedure; Social History; Survey; Therapy; Vital Signs. - HL7 FHIR, Observation.category</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kn6owh7OEeeR140udo0pbA" value="*"/>
@@ -1156,8 +1156,8 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
       </ownedAttribute>
       <ownedAttribute xmi:id="_EpMB8HywEeSWGIFkX6Zyfg" name="dataAbsentReason" visibility="public">
         <ownedComment xmi:id="_EpMB8XywEeSWGIFkX6Zyfg" annotatedElement="_EpMB8HywEeSWGIFkX6Zyfg">
-          <body>&quot;Provides a reason why the expected value in [value] is missing&quot; - HL7 FHIR, Observation.dataAbsentReason.&#xD;
-&quot;If the result value is missing, a code explaining the reason the result cannot be provided.&quot; - HL7 CIMI, RecordedContext.exceptionValue</body>
+          <body>&quot;If the result value is missing, a code explaining the reason the result cannot be provided.&quot; - HL7 CIMI, RecordedContext.exceptionValue&#xD;
+&quot;Provides a reason why the expected value in [value] is missing&quot; - HL7 FHIR, Observation.dataAbsentReason.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EpMB8nywEeSWGIFkX6Zyfg" value="1"/>
@@ -1168,10 +1168,11 @@ When used with a &quot;Vital Sign&quot; Observation, this text is an abbreviated
           <body>The date (and optionally, time) that the Observation took place.  Note that this is the clinically-relevant time, for example, the clinically relevant time of a result of a lab test on a blood sample is the time the blood was drawn, not when the test was run.  Note that in FHIR this can be either a point in time or a period (i.e., a TimeInterval).  In the FHIM, this is currently modeled as only a point in time.  Note also that when used by the Condition sub-type of Observation, this is the date that the Condition was first detected or asserted.&#xD;
 &#xD;
 &quot;This field is required in two circumstances. The first is when the observations reported beneath one report header have different dates/times.  This could occur in the case of queries, timed test sequences, or clearance studies where one measurement within a battery may have a different time than another measurement.... The observation date-time is the physiologically relevant date-time or the closest approximation to that date-time. In the case of tests performed on specimens, the relevant date-time is the specimen's collection date-time. In the case of observations taken directly on the patient (e.g., X-ray images, history and physical), the observation date-time is the date-time that the observation was performed.&quot; - HL7 Version 2.8, OBX-14.&#xD;
+&quot;Contains the date/time when the corresponding problem was initially identified by the caregiver.&quot; - HL7 Version 2.8, PRB-7&#xD;
+&#xD;
+&quot;Estimated or actual date the condition/problem/diagnosis was first detected/suspected.&quot; - HL7 FHIR, Condition resource.&#xD;
 &quot;The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the &quot;physiologically relevant time&quot;. This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself.&quot; - HL7 FHIR, Observation.effective[x]&#xD;
 &#xD;
-&quot;Contains the date/time when the corresponding problem was initially identified by the caregiver.&quot; - HL7 Version 2.8, PRB-7&#xD;
-&quot;Estimated or actual date the condition/problem/diagnosis was first detected/suspected.&quot; - HL7 FHIR, Condition resource.&#xD;
 &quot;Date of vitals measure.&quot; - PCORnet Common Data Model, Vital.Measure_Date&#xD;
 &quot;Time of vitals measure.&quot; - PCORnet Common Data Model, Vital.Measure_Time</body>
         </ownedComment>
@@ -1311,7 +1312,7 @@ Note that for laboratory observations, the aerobic condition of the culture is i
           <body>Indicates the state of the result value, for example whether it is preliminary or final, etc. Note that this status differs from the record status inherited from Clinical Information, in that the record status indicates whether the record is active, obsoleted, etc. While there is some overlap between the two statuses (e.g., they both can represent entered-in-error), this property is meant to convey more clinical information regarding the reliability of the information (e.g., preliminary versus final), whereas the record status tends to focus on the lifecycle of the record (e.g., new versus active).&#xD;
 &quot;Contains the observation result status.... This field reflects the current completion status of the results for one Observation Identifier....&quot; - HL7 Version 2.8, OBX-11&#xD;
 &quot;The last recorded state of the finding, indicating whether the finding is preliminary, amended, final, to be attained, etc.&quot; - HL7 CIMI, FindingContext.status&#xD;
-&quot;The status of the result value.&quot; - HL7 FHIR, Observation.status. Note that the possible values for status in FHIR are: Registered, Preliminary, Final, Amended, Corrected, Cancelled, Entered in Error.</body>
+&quot;The status of the result value.&quot; - HL7 FHIR, Observation.status. Note that the possible values for status in FHIR are: Registered, Preliminary, Final, Amended, Corrected, Cancelled, Entered in Error, Unknown.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JfsJIR7MEeeR140udo0pbA" value="1"/>
@@ -1396,6 +1397,9 @@ Note that for laboratory observations, the aerobic condition of the culture is i
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_3QVuoB-NEee94IovPwpKfw" supplier="_vGzOMGHhEeO5pLNjYnguHg" client="_3XW7MGH_EeCHAoM78Lf2xA"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_zXI9kB-PEee94IovPwpKfw" name="ComponentObservation">
+      <ownedComment xmi:id="_sZgvILYVEemNd-3wg7C_4g" annotatedElement="_zXI9kB-PEee94IovPwpKfw">
+        <body>&quot;Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations.&quot; - HL7 FHIR, Observation.component</body>
+      </ownedComment>
       <ownedAttribute xmi:id="_5c8eMB-PEee94IovPwpKfw" name="dataAbsentReason" visibility="public">
         <ownedComment xmi:id="_5c8eMR-PEee94IovPwpKfw" annotatedElement="_5c8eMB-PEee94IovPwpKfw">
           <body>&quot;Provides a reason why the expected value in the element Observation.value[x] is missing.&quot; - HL7 FHIR, Observation.component.dataAbsentReason</body>
@@ -1554,4 +1558,5 @@ Note that for laboratory observations, the aerobic condition of the culture is i
   <Default:Documentation xmi:id="_z0OTQIFxEeiFweA6NKJQOg" base_Comment="_z0FJUIFxEeiFweA6NKJQOg"/>
   <Default:Documentation xmi:id="_aEvM4LNvEeioC_3IyVLSUA" base_Comment="_aEul0bNvEeioC_3IyVLSUA"/>
   <Default:Documentation xmi:id="_a1_qIE9AEem9pppHp85gNA" base_Comment="_a19N4E9AEem9pppHp85gNA"/>
+  <Default:Documentation xmi:id="_sZ2tYLYVEemNd-3wg7C_4g" base_Comment="_sZgvILYVEemNd-3wg7C_4g"/>
 </xmi:XMI>
