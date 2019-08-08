@@ -1253,7 +1253,8 @@
 &#xD;
 &quot;This field may be specified by the requester, in which case it indicates the earliest date/time at which the services should be started. In many cases, however, the start date/time will be implied or will be defined by other fields in the service request record (e.g., urgency STAT). In such a case, this field will be empty. The filling service will often record a value in this field after receipt of the service request, however, and compute an end time on the basis of the start date/time for the filling service's internal use.&quot; - HL7 Version 2.8, TQ1-7&#xD;
 &quot;When the activity should start.&quot; - HL7 CIMI Order.startDateTime&#xD;
-&quot;The date or time(s) at which the activity or service is desired to occur or not occur.&quot; - HL7 FHIR, Request.occurrence[x] pattern.</body>
+&quot;The date or time(s) at which the activity or service is desired to occur or not occur.&quot; - HL7 FHIR, Request.occurrence[x] pattern.&#xD;
+&quot;The time when this communication is to occur.&quot; - HL7 FHIR, CommunicationRequest.occurrence[x]</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_urnEUVpXEeaTlpPFsokSJQ" value="1"/>
@@ -1275,6 +1276,7 @@
 &quot;When filled in by the requester of the service, this field should contain the latest date/time that the service should be performed. If it has not been performed by the specified time, it should not be performed at all. The requester may not always fill in this value, yet the filling service may fill it in on the basis of the instruction it receives and the actual start time. Regardless of the value of the end date/time, the service should be stopped at the earliest of the date/times specified by either the duration or the end date/time.&quot; - HL7 Version 2.8, TQ1-8&#xD;
 &quot;When the activity should end.&quot; - HL7 CIMI Order.stopDateTime&#xD;
 &quot;The date or time(s) at which the activity or service is desired to occur or not occur.&quot; - HL7 FHIR, Request.occurrence[x] pattern.&#xD;
+&quot;The time when this communication is to occur.&quot; - HL7 FHIR, CommunicationRequest.occurrence[x]&#xD;
 &quot;The date (and perhaps time) when the prescription was stopped.&quot; - HL7 FHIR, MedicationOrder.dateEnded</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B64244824602F5?FHIM/Datatypes/PointInTime?"/>
@@ -1300,6 +1302,7 @@
 &quot;Contains the date and time of the event that initiated the current transaction as reflected in ORC-1 Order Control Code.&quot; - HL7 Version 2.8, ORC-9&#xD;
 &quot;Contains the date/time that the changes to the request took effect or are supposed to take effect....&quot; - HL7 Version 2.8, ORC-15&#xD;
 &quot;For draft [Request sub-types], indicates the date of initial creation. For requests with other statuses, indicates the date of activation.&quot; - HL7 FHIR, Request.authoredOn pattern.&#xD;
+&quot;For draft requests, indicates the date of initial creation. For requests with other statuses, indicates the date of activation.&quot; - HL7 FHIR, CommunicationRequest.authoredOn&#xD;
 &quot;The date (and perhaps time) when the prescription was initially written or authored on.&quot; - HL7 FHIR, MedicationRequest.authoredOn&#xD;
 &#xD;
 &quot;Date prescription was written.&quot; - NCPDP Telecommunication (Field 414-DE, Data Dictionary 201104).&#xD;
@@ -1323,6 +1326,7 @@ Date the prescription was written (authorized)&quot; - ASAP Standard for PDMP, D
       <ownedAttribute xmi:id="_pbzvIIuoEemlfYEhSLS4IA" name="doNotPerform" visibility="public">
         <ownedComment xmi:id="_8R0L0IuoEemlfYEhSLS4IA" annotatedElement="_pbzvIIuoEemlfYEhSLS4IA">
           <body>&quot;If true indicates that the [Request sub-type] is asking for the specified action to not occur.&quot; - HL7 FHIR, Request.doNotPerform pattern.&#xD;
+&quot;If true indicates that the CommunicationRequest is asking for the specified action to not occur.&quot; - HL7 FHIR, CommunicationRequest.doNotPerform&#xD;
 Note that this property is included for compatibility with FHIR. In the FHIM, this instruction would be handled by using ActionProposedAgainst.</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
@@ -1418,7 +1422,8 @@ Note that this property is included for compatibility with FHIR. In the FHIM, th
       <ownedAttribute xmi:id="_9DY2wE_HEeicO4zK57V_lA" name="orderingProvider" visibility="public">
         <ownedComment xmi:id="_9DY2wU_HEeicO4zK57V_lA" annotatedElement="_9DY2wE_HEeicO4zK57V_lA">
           <body>&quot;Information about the ordering of the action such as who made the request, when the request was made, how it was made, etc...&quot; - HL7 CIMI, Request.requested&#xD;
-&quot;Who initiated the [Request sub-type] and has responsibility for its activation.&quot; - HL7 FHIR, Request.requester pattern.</body>
+&quot;Who initiated the [Request sub-type] and has responsibility for its activation.&quot; - HL7 FHIR, Request.requester pattern.&#xD;
+&quot;The device, individual, or organization who initiated the request and has responsibility for its activation.&quot; - HL7 FHIR, CommunicationRequest.requester</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Common.efx#_1nqfgOQXEeak6NCuAd5Onw?FHIM/Common/Attribution?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9DY2wk_HEeicO4zK57V_lA" value="1"/>
@@ -1601,15 +1606,6 @@ Code indicating where patient is located when receiving pharmacy services&quot; 
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3vUKIbynEea_DaXmJ278Kw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3vUKILynEea_DaXmJ278Kw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_G4eUwAVGEeiuXpuGM4C-xQ" name="_timing" visibility="public">
-        <ownedComment xmi:id="_G4eUwQVGEeiuXpuGM4C-xQ" annotatedElement="_G4eUwAVGEeiuXpuGM4C-xQ">
-          <body>&quot;The proposed timing for the request.&quot; - HL7 CIMI, Request.timing&#xD;
-NOTE: This property has been added for compatibility to CIMI, but is probably handled by dateTimeBegin and dateTimeEnd</body>
-        </ownedComment>
-        <type xmi:type="uml:Class" href="Datatypes.efx#_VO5nkLHGEeaLhL0dBWV_ew?FHIM/Datatypes/TimeInterval?"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G4eUwgVGEeiuXpuGM4C-xQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G4eUwwVGEeiuXpuGM4C-xQ"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_420A62FD03B6420BD5E80118" name="DetectedIssueEvent">
@@ -2355,7 +2351,6 @@ Note that in FHIR, the cardinality of this property is zero-to-many, but in FHIM
   <Default:Documentation xmi:id="_4b_r4Ls9Eeeo-pbyiB8NZw" base_Comment="_4b2h8Ls9Eeeo-pbyiB8NZw"/>
   <Default:Documentation xmi:id="_8HPOmLs9Eeeo-pbyiB8NZw" base_Comment="_8HPOkbs9Eeeo-pbyiB8NZw"/>
   <Default:Documentation xmi:id="_8HPOmbs9Eeeo-pbyiB8NZw" base_Comment="_8HPOlbs9Eeeo-pbyiB8NZw"/>
-  <Default:Documentation xmi:id="_G4netQVGEeiuXpuGM4C-xQ" base_Comment="_G4eUwQVGEeiuXpuGM4C-xQ"/>
   <Default:Documentation xmi:id="_G4netgVGEeiuXpuGM4C-xQ" base_Comment="_G4eUxQVGEeiuXpuGM4C-xQ"/>
   <Default:Documentation xmi:id="_G4netwVGEeiuXpuGM4C-xQ" base_Comment="_G4nesgVGEeiuXpuGM4C-xQ"/>
   <Default:Documentation xmi:id="_FOZphIxaEeikEIFpfvQzog" base_Comment="_9DY2wU_HEeicO4zK57V_lA"/>
