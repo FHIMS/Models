@@ -21,7 +21,7 @@
           <styles xmi:type="notation:TextStyle" xmi:id="_taBedQoSEeCTNeGQJWjJDA"/>
           <styles xmi:type="notation:LineTypeStyle" xmi:id="_taBedgoSEeCTNeGQJWjJDA"/>
           <element xsi:nil="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_taBedwoSEeCTNeGQJWjJDA" x="-26311" y="-9510"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_taBedwoSEeCTNeGQJWjJDA" x="-26311" y="-9827"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_bLT5AAoXEeC_TY76TuIe4Q" element="_420A62FD03B6424070DB0209" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" lineColor="3342489" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_bLVHIAoXEeC_TY76TuIe4Q" type="ImageCompartment">
@@ -3853,6 +3853,7 @@ This is the visit associated with this surgery case. [FileMan 130,.015]</body>
 &quot;Details about the device statement that were not represented at all or sufficiently in one of the attributes provided in a class. These may include for example a comment, an instruction, or a note associated with the statement.&quot; - HL7 FHIR, DeviceUseStatement.note&#xD;
 &quot;Comments made about the [Event sub-type] by the performer, subject or other participants.&quot; - HL7 FHIR, Event.note pattern.&#xD;
 &quot;This property allows a non condition-specific note to the made about the related person. Ideally, the note would be in the condition property, but this is not always possible.&quot; - HL7 FHIR, FamilyMemberHistory.note&#xD;
+&quot;An area where general notes can be placed about this specific condition.&quot; - HL7 FHIR, FamilyMemberHistory.condition.note&#xD;
 &quot;Extra information about the immunization that is not conveyed by the other attributes.&quot; - HL7 FHIR, Immunization.note&#xD;
 &quot;Extra information about the medication administration that is not conveyed by the other attributes.&quot; - HL7 FHIR, MedicationAdministration.note&#xD;
 &quot;Extra information about the dispense that could not be conveyed in the other attributes.&quot; - HL7 FHIR, MedicationDispense.note&#xD;
@@ -3956,6 +3957,7 @@ An additional operative procedure performed by a different surgical team under t
 &quot;Indicates the patient or group who the condition record is associated with.&quot; - HL7 FHIR, Condition.subject&#xD;
 &quot;The patient who used the device.&quot; - HL7 FHIR, DeviceUseStatement.subject&#xD;
 &quot;The individual or set of individuals the action is being or was performed on.&quot; - HL7 FHIR, Event.subject pattern.&#xD;
+&quot;The person who this history concerns.&quot; - HL7 FHIR, FamilyMemberHistory.patient&#xD;
 &quot;The patient who either received or did not receive the immunization.&quot; - HL7 FHIR, Immunization.patient&#xD;
 &quot;The person or animal or group receiving the medication.&quot; - HL7 FHIR, MedicationAdministration.subject&#xD;
 &quot;A link to a resource representing the person or the group to whom the medication will be given.&quot; - HL7 FHIR, MedicationDispense.subject&#xD;
@@ -4741,6 +4743,7 @@ Note that in Laboratory, a &quot;Reflex Test&quot; will be handled through this 
 &quot;The time at which the activity was recorded.&quot; - HL7 CIMI, Attribution.recordedOn&#xD;
 &quot;The recordedDate represents when this particular AllergyIntolerance record was created in the system, which is often a system-generated date.&quot; - HL7 FHIR, AllergyIntolerance.recordedDate&#xD;
 &quot;The recordedDate represents when this particular Condition record was created in the system, which is often a system-generated date.&quot; - HL7 FHIR, Condition.recordedDate&#xD;
+&quot;The date (and possibly time) when the family member history was recorded or last updated.&quot; - HL7 FHIR, FamilyMemberHistory.date&#xD;
 &quot;The date the occurrence of the immunization was first captured in the record - potentially significantly after the occurrence of the event.&quot; - HL7 FHIR, Immunization.recorded&#xD;
 &quot;The date and time this observation was made available.&quot; - HL7 FHIR, Observation.issued.&#xD;
 &quot;The date and/or time that this set of answers were last changed.&quot; - HL7 FHIR, QuestionnaireResponse.authored</body>
@@ -7673,6 +7676,7 @@ Note that this property is marked as derived as it may be calculated or may be s
 &quot;This records identifiers associated with this condition that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).&quot; - HL7 FHIR, Condition.identifier&#xD;
 &quot;An external identifier for this statement such as an IRI.&quot; - HL7 FHIR, DeviceUseStatement.identifier&#xD;
 &quot;Business identifiers assigned to this [Event sub-type] by the performer and/or other systems. These identifiers remain constant as the resource is updated and propagates from server to server.&quot; - HL7 FHIR, Event.identifier pattern.&#xD;
+&quot;Business identifiers assigned to this family member history by the performer or other systems which remain constant as the resource is updated and propagates from server to server.&quot; - HL7 FHIR, FamilyMemberHistory.identifier&#xD;
 &quot;A unique identifier assigned to this immunization record.&quot; - HL7 FHIR, Immunization.identifier&#xD;
 &quot;External identifier - FHIR will generate its own internal identifiers (probably URLs) which do not need to be explicitly managed by the resource. The identifier here is one that would be used by another non-FHIR system - for example an automated medication pump would provide a record each time it operated; an administration while the patient was off the ward might be made with a different system and entered after the event. Particularly important if these records have to be updated.&quot;  - HL7 FHIR, MedicationAdministration.identifier&#xD;
 &quot;Identifiers associated with this Medication Dispense that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate. They are business identifiers assigned to this resource by the performer or other systems and remain constant as the resource is updated and propagates from server to server.&quot; - HL7 FHIR, MedicationDispense.identifier&#xD;
