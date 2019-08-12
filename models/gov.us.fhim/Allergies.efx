@@ -864,6 +864,15 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zClg0MIzEeGx0M-CyAbegA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zCk5wMIzEeGx0M-CyAbegA"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_U6lb0L1CEemgPuUiaZu1Iw" name="clinicalStatus" visibility="public">
+        <ownedComment xmi:id="_U6lb0b1CEemgPuUiaZu1Iw" annotatedElement="_U6lb0L1CEemgPuUiaZu1Iw">
+          <body>&quot;The clinical status of the allergy or intolerance.&quot; - HL7 FHIR, AllergyIntolerance.clinicalStatus. Possible values are Active; Inactive; Resolved.&#xD;
+Note that this property re-defines the inherited clinicalStatus property from HealthConcern to bind to a slightly different terminology.</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U6lb0r1CEemgPuUiaZu1Iw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U6lb071CEemgPuUiaZu1Iw"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_zyE4YOsuEeKoPIE7gccV1g" name="criticality" visibility="public">
         <ownedComment xmi:id="_zyE4YesuEeKoPIE7gccV1g" annotatedElement="_zyE4YOsuEeKoPIE7gccV1g">
           <body>Provides an indication of the seriousness or intensity of a reaction that the patient would be expected to experience upon a further exposure to the Reactant.&#xD;
@@ -1138,30 +1147,39 @@ Note that FHIR uses a code for this concept, but we modeled this as a string, be
   <Default:Documentation xmi:id="_T1g_hNuwEeeUZ4-fF6-w3Q" base_Comment="_T1g_gduwEeeUZ4-fF6-w3Q"/>
   <Default:Documentation xmi:id="_kF6F4dPnEeiPFvyVFwJcLg" base_Comment="_kF6F4NPnEeiPFvyVFwJcLg"/>
   <term:ValueSetConstraints xmi:id="_RURfMCZiEem4Dt5yAyq9ww" base_Property="_zyE4YOsuEeKoPIE7gccV1g">
-    <constraints xmi:id="_RUTUYCZiEem4Dt5yAyq9ww" context="C-CDA V3 value set OID" valueSetName="Criticality Observation" valueSetOID="2.16.840.1.113883.1.11.20549"/>
-    <constraints xmi:id="_RUTUYSZiEem4Dt5yAyq9ww" context="C-CDA VSAC URL" valueSetName="Criticality Observation" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.20549/definition"/>
-    <constraints xmi:id="_RUT7cCZiEem4Dt5yAyq9ww" context="FHIR FHIR value set URI" valueSetName="Allergy Intolerance Criticality" valueSetURI="http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality"/>
-    <constraints xmi:id="_RUUigCZiEem4Dt5yAyq9ww" context="FHIR FHIR value set OID" valueSetName="Allergy Intolerance Criticality" valueSetOID="2.16.840.1.113883.4.642.3.119"/>
+    <constraints xmi:id="_RUTUYCZiEem4Dt5yAyq9ww" context="HL7_FHIR_R4" valueSetName="Allergy Intolerance Criticality" valueSetURI="http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality" valueSetOID="http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality"/>
+    <constraints xmi:id="_RUTUYSZiEem4Dt5yAyq9ww" context="C-CDA_2.1" valueSetName="Criticality Observation" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.20549/expansion" valueSetOID="2.16.840.1.113883.1.11.20549"/>
   </term:ValueSetConstraints>
   <term:ValueSetConstraints xmi:id="_RUUigSZiEem4Dt5yAyq9ww" base_Property="_qMUt0GuCEeCZQ_Ui4wPHHw">
-    <constraints xmi:id="_RUVJkCZiEem4Dt5yAyq9ww" context="C-CDA V3 value set OID" valueSetName="Allergy and Intolerance Type" valueSetOID="2.16.840.1.113883.3.88.12.3221.6.2"/>
-    <constraints xmi:id="_RUVJkSZiEem4Dt5yAyq9ww" context="0" valueSetName="Allergy and Intolerance Type" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.3221.6.2/expansion"/>
-    <constraints xmi:id="_qDRIgCZiEem4Dt5yAyq9ww" context="0"/>
-    <constraints xmi:id="_rIhgYCZiEem4Dt5yAyq9ww" context="1"/>
+    <constraints xmi:id="_80-SQL03EemgPuUiaZu1Iw" context="C-CDA_2.1" valueSetName="Allergy and Intolerance Type" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.3221.6.2/expansion" valueSetOID="2.16.840.1.113883.3.88.12.3221.6.2"/>
   </term:ValueSetConstraints>
   <term:ValueSetConstraints xmi:id="_RUVwoCZiEem4Dt5yAyq9ww" base_Property="_420A62FD03B6418BD7C9014C">
-    <constraints xmi:id="_RUVwoSZiEem4Dt5yAyq9ww" context="FHIR FHIR value set OID" valueSetName="AllergyIntoleranceType" valueSetOID="2.16.840.1.113883.4.642.3.121"/>
-    <constraints xmi:id="_RUWXsCZiEem4Dt5yAyq9ww" context="FHIR FHIR value set URI" valueSetName="AllergyIntoleranceType" valueSetURI="http://hl7.org/fhir/ValueSet/allergy-intolerance-type"/>
+    <constraints xmi:id="_h4RB8L08EemgPuUiaZu1Iw" context="HL7_FHIR_R4" valueSetName="AllergyIntoleranceType" valueSetURI="http://hl7.org/fhir/ValueSet/allergy-intolerance-type" valueSetOID="http://hl7.org/fhir/ValueSet/allergy-intolerance-type"/>
   </term:ValueSetConstraints>
   <term:ValueSetConstraints xmi:id="_RUWXsSZiEem4Dt5yAyq9ww" base_Property="_t_VCcGX9EeCWgYu_gBZhWw">
-    <constraints xmi:id="_RUWXsiZiEem4Dt5yAyq9ww" context="C-CDA VSAC URL" valueSetName="Substance-Reactant for Intolerance" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1010.1/definition"/>
-    <constraints xmi:id="_RUWXsyZiEem4Dt5yAyq9ww" context="C-CDA V3 value set OID" valueSetName="Substance-Reactant for Intolerance" valueSetOID="2.16.840.1.113762.1.4.1010.1"/>
-    <constraints xmi:id="_RUW-wCZiEem4Dt5yAyq9ww" context="FHIM Proposal FHIM proposal" valueSetName="Reactant substance" valueSetOID="2.16.840.1.113883.3.2074.1.1.31"/>
+    <constraints xmi:id="_RUWXsiZiEem4Dt5yAyq9ww" context="HL7_FHIR_R4" valueSetName="AllergyIntoleranceSubstance/Product,ConditionAndNegationCodes" valueSetURI="http://hl7.org/fhir/ValueSet/allergyintolerance-code" valueSetOID="http://hl7.org/fhir/ValueSet/allergyintolerance-code"/>
+    <constraints xmi:id="_RUWXsyZiEem4Dt5yAyq9ww" context="US_Core_R4" valueSetName="Common substances for allergy and intolerance documentation including refutations" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1186.8/expansion" valueSetOID="2.16.840.1.113762.1.4.1186.8"/>
+    <constraints xmi:id="__bIC4L08EemgPuUiaZu1Iw" context="C-CDA_2.1" valueSetName="Substance-Reactant for Intolerance" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1010.1/expansion" valueSetOID="2.16.840.1.113762.1.4.1010.1"/>
   </term:ValueSetConstraints>
   <term:ValueSetConstraints xmi:id="_RUW-wSZiEem4Dt5yAyq9ww" base_Property="_CeA3sGX_EeCWgYu_gBZhWw">
-    <constraints xmi:id="_RUW-wiZiEem4Dt5yAyq9ww" context="FHIR FHIR value set OID" valueSetName="AllergyIntoleranceCategory" valueSetOID="&quot;&#x9;2.16.840.1.113883.4.642.3.123&quot;"/>
-    <constraints xmi:id="_RUXl0CZiEem4Dt5yAyq9ww" context="FHIR FHIR value set URI" valueSetName="AllergyIntoleranceCategory" valueSetURI="http://hl7.org/fhir/ValueSet/allergy-intolerance-category"/>
+    <constraints xmi:id="_RUW-wiZiEem4Dt5yAyq9ww" context="HL7_FHIR_R4" valueSetName="AllergyIntoleranceCategory" valueSetURI="http://hl7.org/fhir/ValueSet/allergy-intolerance-category" valueSetOID="http://hl7.org/fhir/ValueSet/allergy-intolerance-category"/>
   </term:ValueSetConstraints>
   <Default:Documentation xmi:id="_4ySfAEdOEemimpXAYu5S8Q" base_Comment="_4yM_cEdOEemimpXAYu5S8Q"/>
   <term:Context xmi:id="_YIc2cLiWEemtKK2Z_pANzw" base_Enumeration="_HQLRwLiWEemtKK2Z_pANzw"/>
+  <term:ValueSetConstraints xmi:id="_0mphwL0-EemgPuUiaZu1Iw" base_Property="_P-0AcNYuEd62cosTNS-_lw">
+    <constraints xmi:id="_38FMgL0-EemgPuUiaZu1Iw" context="HL7_FHIR_R4" valueSetName="SNOMEDCTClinicalFindings" valueSetURI="http://hl7.org/fhir/ValueSet/clinical-findings" valueSetOID="http://hl7.org/fhir/ValueSet/clinical-findings"/>
+    <constraints xmi:id="_9TbEoL0-EemgPuUiaZu1Iw" context="FHIM_Defined_Content" valueSetName="Adverse clinical reaction" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.2074.1.1.30/expansion" valueSetOID="2.16.840.1.113883.3.2074.1.1.30"/>
+    <constraints xmi:id="_H2bwYL0_EemgPuUiaZu1Iw" context="C-CDA_2.1" valueSetName="Problem" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.3221.7.4/expansion" valueSetOID="2.16.840.1.113883.3.88.12.3221.7.4"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_Og8gkL0_EemgPuUiaZu1Iw" base_Property="_TVkSYN7-EeSx5bpydj26Wg">
+    <constraints xmi:id="_T6R8wL0_EemgPuUiaZu1Iw" context="HL7_FHIR_R4" valueSetName="AllergyIntoleranceSeverity" valueSetURI="http://hl7.org/fhir/ValueSet/reaction-event-severity" valueSetOID="http://hl7.org/fhir/ValueSet/reaction-event-severity"/>
+    <constraints xmi:id="_bFLdML0_EemgPuUiaZu1Iw" context="FHIM_Defined_Content" valueSetName="Reaction severity" valueSetURI="https://vsaccollab.nlm.nih.gov/collab/page/site/2x16x840x1x113762x1x4x1143x150/dashboard" valueSetOID="2.16.840.1.113883.3.2074.1.1.64"/>
+    <constraints xmi:id="_wekxwL1BEemgPuUiaZu1Iw" context="C-CDA_2.1" valueSetName="Reaction severity" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.3221.6.8/expansion" valueSetOID="2.16.840.1.113883.3.88.12.3221.6.8"/>
+  </term:ValueSetConstraints>
+  <Default:Documentation xmi:id="_U64WwL1CEemgPuUiaZu1Iw" base_Comment="_U6lb0b1CEemgPuUiaZu1Iw"/>
+  <term:ValueSetConstraints xmi:id="_xr2AsL1CEemgPuUiaZu1Iw" base_Property="_U6lb0L1CEemgPuUiaZu1Iw">
+    <constraints xmi:id="_-rtwcL1CEemgPuUiaZu1Iw" context="HL7_FHIR_R4" valueSetName="AllergyIntoleranceClinicalStatusCodes" valueSetURI="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical" valueSetOID="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+    <constraints xmi:id="_DzCPkL1DEemgPuUiaZu1Iw" context="FHIM_Defined_Content" valueSetName="Propensity to adverse reaction status" valueSetURI="https://vsaccollab.nlm.nih.gov/collab/page/site/2x16x840x1x113762x1x4x1143x149/dashboard" valueSetOID="2.16.840.1.113762.1.4.1062.1"/>
+    <constraints xmi:id="_JWJ54L1DEemgPuUiaZu1Iw" context="C-CDA_2.1" valueSetName="Problem Status" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.80.68/expansion" valueSetOID="2.16.840.1.113883.3.88.12.80.68"/>
+  </term:ValueSetConstraints>
 </xmi:XMI>
