@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="__EI_AAjMEeeH-JUbuHPVcg" name="MedicationAdministration">
     <eAnnotations xmi:id="_wMc1MAjQEeeH-JUbuHPVcg" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_wMaY8AjQEeeH-JUbuHPVcg" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -1770,6 +1770,15 @@ This property carries both the low (aka minimum), and high (aka maximum) amounts
     <packagedElement xmi:type="uml:Association" xmi:id="_w5x8wIvNEemlfYEhSLS4IA" name="medicationAdministrationPerformed_patientEducationPerformed" memberEnd="_w5zK4IvNEemlfYEhSLS4IA _w51AEIvNEemlfYEhSLS4IA">
       <ownedEnd xmi:id="_w51AEIvNEemlfYEhSLS4IA" name="" visibility="private" type="_420A62FD03B641A349EF0070" association="_w5x8wIvNEemlfYEhSLS4IA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_0Fjk4L1UEem6teCTbJ0YYw" name="VocabContext">
+      <ownedLiteral xmi:id="_0Fjk4b1UEem6teCTbJ0YYw" name="C-CDA_2.1" classifier="_0Fjk4L1UEem6teCTbJ0YYw"/>
+      <ownedLiteral xmi:id="_0Fjk4r1UEem6teCTbJ0YYw" name="FHIM_Defined_Content" classifier="_0Fjk4L1UEem6teCTbJ0YYw"/>
+      <ownedLiteral xmi:id="_0Fjk471UEem6teCTbJ0YYw" name="HL7_FHIR_R4" classifier="_0Fjk4L1UEem6teCTbJ0YYw"/>
+      <ownedLiteral xmi:id="_0Fjk5L1UEem6teCTbJ0YYw" name="HL7_ICSR" classifier="_0Fjk4L1UEem6teCTbJ0YYw"/>
+      <ownedLiteral xmi:id="_0Fjk5b1UEem6teCTbJ0YYw" name="HL7_V2" classifier="_0Fjk4L1UEem6teCTbJ0YYw"/>
+      <ownedLiteral xmi:id="_0Fjk5r1UEem6teCTbJ0YYw" name="NCPDP_Script" classifier="_0Fjk4L1UEem6teCTbJ0YYw"/>
+      <ownedLiteral xmi:id="_0Fjk571UEem6teCTbJ0YYw" name="US_Core_R4" classifier="_0Fjk4L1UEem6teCTbJ0YYw"/>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_AbMgg4AkEeGE1-mzJa42fw" base_Comment="_NdqAReLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_AbMggIAkEeGE1-mzJa42fw" base_Comment="_NYcJGOLiEduGJrQyRGTO1A"/>
@@ -1803,4 +1812,12 @@ This property carries both the low (aka minimum), and high (aka maximum) amounts
   <Default:Documentation xmi:id="_TCVegeP8Eea407qNHok1lQ" base_Comment="_TCVegOP8Eea407qNHok1lQ"/>
   <Default:Documentation xmi:id="_qegcYd98EeivS9YtLMEM6w" base_Comment="_qegcYN98EeivS9YtLMEM6w"/>
   <Default:Documentation xmi:id="_FDQzgIvOEemlfYEhSLS4IA" base_Comment="_FDQMcIvOEemlfYEhSLS4IA"/>
+  <term:ValueSetConstraints xmi:id="_lrvmsL1UEem6teCTbJ0YYw" base_Property="_2jKB8AlrEeKmMfGXbG9elQ">
+    <constraints xmi:id="_m679sL1UEem6teCTbJ0YYw" context="HL7_V2" valueSetName="Vaccination Contraindication (IIS)" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=DAEDFBD4-9BB9-DF11-9BDD-0015173D1785" valueSetOID="2.16.840.1.114222.4.11.3288"/>
+  </term:ValueSetConstraints>
+  <term:Context xmi:id="_2DZxoL1UEem6teCTbJ0YYw" base_Enumeration="_0Fjk4L1UEem6teCTbJ0YYw"/>
+  <term:ValueSetConstraints xmi:id="_BA4y4L1VEem6teCTbJ0YYw" base_Property="_ZE9VMLGgEeGkU9GcFSzOCA">
+    <constraints xmi:id="_CsxF4L1VEem6teCTbJ0YYw" context="HL7_V2" valueSetName="Substance Refusal Reason (IIS)" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=8C3A2600-F1B8-DF11-9BDD-0015173D1785" valueSetOID="2.16.840.1.114222.4.11.3380"/>
+    <constraints xmi:id="_MUhqUL1VEem6teCTbJ0YYw" context="HL7_FHIR_R4" valueSetName="ImmunizationStatusReasonCodes" valueSetURI="http://hl7.org/fhir/ValueSet/immunization-status-reason" valueSetOID="http://hl7.org/fhir/ValueSet/immunization-status-reason"/>
+  </term:ValueSetConstraints>
 </xmi:XMI>
