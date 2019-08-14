@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_SH75INNUEeGRnPi2MLPE0g" name="CommonProduct">
     <eAnnotations xmi:id="_gVKzELf1EeaN8pnTZH8VBg" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_gVGhoLf1EeaN8pnTZH8VBg" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -5491,6 +5491,15 @@ Note that FHIR timing can be a Timing, Period, or a DateTime. FHIM currently lim
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_RjeIQI0tEemkE9D2FmZVyw" name="biologicRequest_biologicProduct" memberEnd="_RjfWYI0tEemkE9D2FmZVyw _RjgkgI0tEemkE9D2FmZVyw"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_fkEBUL1VEem6teCTbJ0YYw" name="VocabContext">
+      <ownedLiteral xmi:id="_fkEBUb1VEem6teCTbJ0YYw" name="C-CDA_2.1" classifier="_fkEBUL1VEem6teCTbJ0YYw"/>
+      <ownedLiteral xmi:id="_fkEBUr1VEem6teCTbJ0YYw" name="FHIM_Defined_Content" classifier="_fkEBUL1VEem6teCTbJ0YYw"/>
+      <ownedLiteral xmi:id="_fkEBU71VEem6teCTbJ0YYw" name="HL7_FHIR_R4" classifier="_fkEBUL1VEem6teCTbJ0YYw"/>
+      <ownedLiteral xmi:id="_fkEBVL1VEem6teCTbJ0YYw" name="HL7_ICSR" classifier="_fkEBUL1VEem6teCTbJ0YYw"/>
+      <ownedLiteral xmi:id="_fkEBVb1VEem6teCTbJ0YYw" name="HL7_V2" classifier="_fkEBUL1VEem6teCTbJ0YYw"/>
+      <ownedLiteral xmi:id="_fkEBVr1VEem6teCTbJ0YYw" name="NCPDP_Script" classifier="_fkEBUL1VEem6teCTbJ0YYw"/>
+      <ownedLiteral xmi:id="_fkEBV71VEem6teCTbJ0YYw" name="US_Core_R4" classifier="_fkEBUL1VEem6teCTbJ0YYw"/>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_-rxcsCw6EeKmqZ4YenSzAg" base_Comment="_-rqH8Cw6EeKmqZ4YenSzAg"/>
   <Default:Documentation xmi:id="_06LP4Pa9EeGoRqAZLJ6Mwg" base_Comment="_06Be4Pa9EeGoRqAZLJ6Mwg"/>
@@ -5733,4 +5742,8 @@ Note that FHIR timing can be a Timing, Period, or a DateTime. FHIM currently lim
   <Default:Documentation xmi:id="_ZldzUI0uEemkE9D2FmZVyw" base_Comment="_ZlclMI0uEemkE9D2FmZVyw"/>
   <Default:Documentation xmi:id="_pR53AI0uEemkE9D2FmZVyw" base_Comment="_pR4B0I0uEemkE9D2FmZVyw"/>
   <Default:Documentation xmi:id="_5BMTAI0xEemkE9D2FmZVyw" base_Comment="_5BLr8I0xEemkE9D2FmZVyw"/>
+  <term:Context xmi:id="_jfy3EL1VEem6teCTbJ0YYw" base_Enumeration="_fkEBUL1VEem6teCTbJ0YYw"/>
+  <term:ValueSetConstraints xmi:id="_m7kaYL1VEem6teCTbJ0YYw" base_Property="_qIKSYIAaEeGE1-mzJa42fw">
+    <constraints xmi:id="_oS7O4L1VEem6teCTbJ0YYw" context="HL7_V2" valueSetName="Manufacturers of vaccines (MVX)" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=5AF0E34A-9D15-45BC-9D4B-0B1F7AE17D1A" valueSetOID="2.16.840.1.114222.4.11.826"/>
+  </term:ValueSetConstraints>
 </xmi:XMI>
