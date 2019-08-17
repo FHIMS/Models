@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_420A62FD03B6418FEF4E01D8" name="Pharmacy">
     <eAnnotations xmi:id="_BihQAEDPEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_BI6dMEDPEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -4358,6 +4358,15 @@ on the prescription vial label.&quot; - ASAP Standard for PDMP, DSP23: Rx SIG</b
     <packagedElement xmi:type="uml:Association" xmi:id="_K30w8Iu_EemlfYEhSLS4IA" name="dosage_doseAndRate" memberEnd="_K31YAIu_EemlfYEhSLS4IA _K33NMIu_EemlfYEhSLS4IA">
       <ownedEnd xmi:id="_K33NMIu_EemlfYEhSLS4IA" name="" visibility="private" type="_HqoJ8HE-EeaIzczSuyGEmQ" association="_K30w8Iu_EemlfYEhSLS4IA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_BiOmUMB_Eemq4vgOvwMjwg" name="VocabContext">
+      <ownedLiteral xmi:id="_BiOmUcB_Eemq4vgOvwMjwg" name="C-CDA_2.1" classifier="_BiOmUMB_Eemq4vgOvwMjwg"/>
+      <ownedLiteral xmi:id="_BiOmUsB_Eemq4vgOvwMjwg" name="FHIM_Defined_Content" classifier="_BiOmUMB_Eemq4vgOvwMjwg"/>
+      <ownedLiteral xmi:id="_BiOmU8B_Eemq4vgOvwMjwg" name="HL7_FHIR_R4" classifier="_BiOmUMB_Eemq4vgOvwMjwg"/>
+      <ownedLiteral xmi:id="_BiOmVMB_Eemq4vgOvwMjwg" name="HL7_ICSR" classifier="_BiOmUMB_Eemq4vgOvwMjwg"/>
+      <ownedLiteral xmi:id="_BiOmVcB_Eemq4vgOvwMjwg" name="HL7_V2" classifier="_BiOmUMB_Eemq4vgOvwMjwg"/>
+      <ownedLiteral xmi:id="_BiOmVsB_Eemq4vgOvwMjwg" name="NCPDP_Script" classifier="_BiOmUMB_Eemq4vgOvwMjwg"/>
+      <ownedLiteral xmi:id="_BiOmV8B_Eemq4vgOvwMjwg" name="US_Core_R4" classifier="_BiOmUMB_Eemq4vgOvwMjwg"/>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_-b0PMC13EeCcBZN8gPxxdg" base_Comment="_NB8t4L-0Ed2cYoIY7XWEQw"/>
   <Default:Documentation xmi:id="_-b0PMS13EeCcBZN8gPxxdg" base_Comment="_QbqbsL-0Ed2cYoIY7XWEQw"/>
@@ -4528,4 +4537,64 @@ on the prescription vial label.&quot; - ASAP Standard for PDMP, DSP23: Rx SIG</b
   <Default:Documentation xmi:id="_KhtXAIu_EemlfYEhSLS4IA" base_Comment="_Khsv8Iu_EemlfYEhSLS4IA"/>
   <Default:Documentation xmi:id="_MpXnEIu_EemlfYEhSLS4IA" base_Comment="_MpXAAIu_EemlfYEhSLS4IA"/>
   <Default:Documentation xmi:id="_Vcsd4Iu_EemlfYEhSLS4IA" base_Comment="_VcqosIu_EemlfYEhSLS4IA"/>
+  <term:Context xmi:id="_EO8EMMB_Eemq4vgOvwMjwg" base_Enumeration="_BiOmUMB_Eemq4vgOvwMjwg"/>
+  <term:ValueSetConstraints xmi:id="_WcFxIMB_Eemq4vgOvwMjwg" base_Property="_jWIPYHE4EeaIzczSuyGEmQ">
+    <constraints xmi:id="_enPNoMB_Eemq4vgOvwMjwg" context="HL7_FHIR_R4" valueSetName="CodesForImmunizationSiteOfAdministration" valueSetURI="http://hl7.org/fhir/ValueSet/immunization-site" valueSetOID="http://hl7.org/fhir/ValueSet/immunization-site"/>
+    <constraints xmi:id="_kWfPcMB_Eemq4vgOvwMjwg" context="HL7_V2" valueSetName="Administrative Site (IIS)" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=98257779-17B8-DF11-9BDD-0015173D1785" valueSetOID="2.16.840.1.114222.4.11.3370"/>
+    <constraints xmi:id="_rPRsMMB_Eemq4vgOvwMjwg" context="C-CDA_2.1" valueSetName="Body Site" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.3221.8.9/expansion" valueSetOID="2.16.840.1.113883.3.88.12.3221.8.9"/>
+    <constraints xmi:id="_R1CSwMEJEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="SNOMED CT Anatomical Structure for Administration Site Codes" valueSetURI="http://hl7.org/fhir/ValueSet/approach-site-codes" valueSetOID="http://hl7.org/fhir/ValueSet/approach-site-codes"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_ykEvgMB_Eemq4vgOvwMjwg" base_Property="_420A62FD03B6426E688E0213">
+    <constraints xmi:id="_0O1BIMB_Eemq4vgOvwMjwg" context="HL7_V2" valueSetName="Medication Product Form Value Set" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=78CA17EE-AD34-404E-B5BA-95551CFDFBA2" valueSetOID="2.16.840.1.113883.3.88.12.3221.8.11"/>
+    <constraints xmi:id="_8qY4MMB_Eemq4vgOvwMjwg" context="C-CDA_2.1" valueSetName="AdministrationUnitDoseForm" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.30/expansion" valueSetOID="2.16.840.1.113762.1.4.1021.30"/>
+    <constraints xmi:id="_R1CSwsEJEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="SNOMED CT Form Codes" valueSetURI="http://hl7.org/fhir/ValueSet/medication-form-codes" valueSetOID="http://hl7.org/fhir/ValueSet/medication-form-codes"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_DXrPkMCAEemq4vgOvwMjwg" base_Property="_420A62FD03B64592BCD10203">
+    <constraints xmi:id="_ESM-IMCAEemq4vgOvwMjwg" context="HL7_FHIR_R4" valueSetName="ImmunizationRouteCodes" valueSetURI="http://hl7.org/fhir/ValueSet/immunization-route" valueSetOID="http://hl7.org/fhir/ValueSet/immunization-route"/>
+    <constraints xmi:id="_J-yGcMCAEemq4vgOvwMjwg" context="HL7_V2" valueSetName="Route Of Administration (IIS)" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=294772B1-40F2-E111-B875-001A4BE7FA90" valueSetOID="2.16.840.1.114222.4.11.3369"/>
+    <constraints xmi:id="_PfA00MCAEemq4vgOvwMjwg" context="C-CDA_2.1" valueSetName="Medication Route" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.3221.8.7/expansion" valueSetOID="2.16.840.1.113883.3.88.12.3221.8.7"/>
+    <constraints xmi:id="_TOmsAMCAEemq4vgOvwMjwg" context="C-CDA_2.1" valueSetName="Medication Route" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.12/expansion" valueSetOID="2.16.840.1.113762.1.4.1099.12"/>
+    <constraints xmi:id="_R1C50MEJEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="SNOMED CT Route Codes" valueSetURI="http://hl7.org/fhir/ValueSet/route-codes" valueSetOID="http://hl7.org/fhir/ValueSet/route-codes"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_R1CSw8EJEemjmILgLWyrSg" base_Property="_lvkL8HE4EeaIzczSuyGEmQ">
+    <constraints xmi:id="_R1CSxMEJEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="SNOMED CT Administration Method Codes" valueSetURI="http://hl7.org/fhir/ValueSet/administration-method-codes" valueSetOID="http://hl7.org/fhir/ValueSet/administration-method-codes"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_R1C50cEJEemjmILgLWyrSg" base_Property="_-HZycIu-EemlfYEhSLS4IA">
+    <constraints xmi:id="_R1C50sEJEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="DoseAndRateType" valueSetURI="http://hl7.org/fhir/ValueSet/dose-rate-type" valueSetOID="http://hl7.org/fhir/ValueSet/dose-rate-type"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_R1C508EJEemjmILgLWyrSg" base_Property="_yfwsYDh5EeC17O99ZX8o-w">
+    <constraints xmi:id="_R1C51MEJEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="SNOMED CT Anatomical Structure for Administration Site Codes" valueSetURI="http://hl7.org/fhir/ValueSet/approach-site-codes" valueSetOID="http://hl7.org/fhir/ValueSet/approach-site-codes"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_R1C51cEJEemjmILgLWyrSg" base_Property="_ruMD8ORQEei4Ov8Ehaq7-w">
+    <constraints xmi:id="_R1C51sEJEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Medication usage category codes" valueSetURI="http://hl7.org/fhir/ValueSet/medication-usage-category" valueSetOID="http://hl7.org/fhir/ValueSet/medication-usage-category"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_R1C518EJEemjmILgLWyrSg" base_Property="_nQ1c8ORSEei4Ov8Ehaq7-w">
+    <constraints xmi:id="_R1C52MEJEemjmILgLWyrSg" context="C-CDA_2.1" valueSetName="Problem" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.3221.7.4/expansion" valueSetOID="2.16.840.1.113883.3.88.12.3221.7.4"/>
+    <constraints xmi:id="_R1Dg4MEJEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Condition/Problem/Diagnosis Codes" valueSetURI="http://hl7.org/fhir/ValueSet/condition-code" valueSetOID="http://hl7.org/fhir/ValueSet/condition-code"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_R1Dg4cEJEemjmILgLWyrSg" base_Property="_ykJEkORPEei4Ov8Ehaq7-w">
+    <constraints xmi:id="_R1Dg4sEJEemjmILgLWyrSg" context="C-CDA_2.1" valueSetName="Medication Status" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.11/expansion" valueSetOID="2.16.840.1.113762.1.4.1099.11"/>
+    <constraints xmi:id="_R1Dg48EJEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Medication usage status codes" valueSetURI="http://hl7.org/fhir/ValueSet/medication-usage-status" valueSetOID="http://hl7.org/fhir/ValueSet/medication-usage-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_R1Dg5MEJEemjmILgLWyrSg" base_Property="_UV7kEORQEei4Ov8Ehaq7-w">
+    <constraints xmi:id="_R1Dg5cEJEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="SNOMED CT Drug Therapy Status codes" valueSetURI="http://hl7.org/fhir/ValueSet/reason-medication-status-codes" valueSetOID="http://hl7.org/fhir/ValueSet/reason-medication-status-codes"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_R1Dg5sEJEemjmILgLWyrSg" base_Property="_3X-dkNQXEeG6j-OawvA6JA">
+    <constraints xmi:id="_R1Dg58EJEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="V3 Value SetActPharmacySupplyType" valueSetURI="http://terminology.hl7.org/ValueSet/v3-ActPharmacySupplyType" valueSetOID="http://terminology.hl7.org/ValueSet/v3-ActPharmacySupplyType"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_R1Dg6MEJEemjmILgLWyrSg" base_Property="_3DTkgH2PEemjxJYDpkCV3g">
+    <constraints xmi:id="_R1EH8MEJEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Medication dispense category codes" valueSetURI="http://hl7.org/fhir/ValueSet/medicationdispense-category" valueSetOID="http://hl7.org/fhir/ValueSet/medicationdispense-category"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_R1EH8cEJEemjmILgLWyrSg" base_Property="_6ZR2QH2ZEemjxJYDpkCV3g">
+    <constraints xmi:id="_R1EH8sEJEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="V3 Value SetActSubstanceAdminSubstitutionCode" valueSetURI="http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode" valueSetOID="http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_R1EH88EJEemjmILgLWyrSg" base_Property="_rnuEkHFYEeaVJbp4PC8L9A">
+    <constraints xmi:id="_R1EH9MEJEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="V3 Value SetActSubstanceAdminSubstitutionCode" valueSetURI="http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode" valueSetOID="http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_R1EH9cEJEemjmILgLWyrSg" base_Property="_AzUJkKMxEeSjK-UNpoDZuQ">
+    <constraints xmi:id="_R1EH9sEJEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="TimingAbbreviation" valueSetURI="http://hl7.org/fhir/ValueSet/timing-abbreviation" valueSetOID="http://hl7.org/fhir/ValueSet/timing-abbreviation"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_R1EH98EJEemjmILgLWyrSg" base_Property="_-t2t8HOHEeaZZ59GOtQfLA">
+    <constraints xmi:id="_R1EH-MEJEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Medication request category codes" valueSetURI="http://hl7.org/fhir/ValueSet/medicationrequest-category" valueSetOID="http://hl7.org/fhir/ValueSet/medicationrequest-category"/>
+  </term:ValueSetConstraints>
 </xmi:XMI>

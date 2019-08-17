@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_vKAdQJ93EeGVHtLvLEEdog" name="PublicHealthReporting">
     <eAnnotations xmi:id="_Pi9r8EDPEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_Pi8d0EDPEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -5022,6 +5022,15 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
     <packagedElement xmi:type="uml:Association" xmi:id="_TAFGcL_qEeG9Y6ZcZJMJaA" name="publicHealthClient_publicHealthJurisdiction" memberEnd="_TALNEL_qEeG9Y6ZcZJMJaA _TATv8L_qEeG9Y6ZcZJMJaA">
       <ownedEnd xmi:id="_TATv8L_qEeG9Y6ZcZJMJaA" name="" visibility="public" type="_AyJDEKwlEeG4dfTp_XT2yg" association="_TAFGcL_qEeG9Y6ZcZJMJaA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_DZGRoMDdEemjmILgLWyrSg" name="VocabContext">
+      <ownedLiteral xmi:id="_DZGRocDdEemjmILgLWyrSg" name="C-CDA_2.1" classifier="_DZGRoMDdEemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_DZGRosDdEemjmILgLWyrSg" name="FHIM_Defined_Content" classifier="_DZGRoMDdEemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_DZGRo8DdEemjmILgLWyrSg" name="HL7_FHIR_R4" classifier="_DZGRoMDdEemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_DZGRpMDdEemjmILgLWyrSg" name="HL7_ICSR" classifier="_DZGRoMDdEemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_DZGRpcDdEemjmILgLWyrSg" name="HL7_V2" classifier="_DZGRoMDdEemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_DZGRpsDdEemjmILgLWyrSg" name="NCPDP_Script" classifier="_DZGRoMDdEemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_DZGRp8DdEemjmILgLWyrSg" name="US_Core_R4" classifier="_DZGRoMDdEemjmILgLWyrSg"/>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_0YFEsBFyEeKu1LfuaJwFHw" base_Comment="_0X8h0BFyEeKu1LfuaJwFHw"/>
   <Default:Documentation xmi:id="_4joNMhF0EeKu1LfuaJwFHw" base_Comment="_4joNMRF0EeKu1LfuaJwFHw"/>
@@ -5065,4 +5074,8 @@ Note, for public health reporting purposes, this statusiIndicates the active/ina
   <Default:Documentation xmi:id="_j3WH8K5NEemNUMGq3DeQDw" base_Comment="_j3USwK5NEemNUMGq3DeQDw"/>
   <Default:Documentation xmi:id="_vovSYK5NEemNUMGq3DeQDw" base_Comment="_vourUK5NEemNUMGq3DeQDw"/>
   <Default:Documentation xmi:id="_wPZX0K5PEemNUMGq3DeQDw" base_Comment="_wPXioK5PEemNUMGq3DeQDw"/>
+  <term:Context xmi:id="_EhT24MDdEemjmILgLWyrSg" base_Enumeration="_DZGRoMDdEemjmILgLWyrSg"/>
+  <term:ValueSetConstraints xmi:id="_Ht8yAMDdEemjmILgLWyrSg" base_Property="_80NR0LGeEeGkU9GcFSzOCA">
+    <constraints xmi:id="_KODXQMDdEemjmILgLWyrSg" context="HL7_V2" valueSetName="Immunization Registry Status (HL7)" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=65F45AB5-A31F-4CB2-A77D-8DA9514FEBFF" valueSetOID="2.16.840.1.114222.4.11.3377"/>
+  </term:ValueSetConstraints>
 </xmi:XMI>

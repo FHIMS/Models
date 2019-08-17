@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_420A62FD03B6420A57FD032D" name="Orders">
     <eAnnotations xmi:id="_r4z8oEDOEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_rhPxMEDOEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -1661,7 +1661,7 @@ Code indicating where patient is located when receiving pharmacy services&quot; 
       </ownedAttribute>
       <ownedAttribute xmi:id="_cfpyQLs8Eeeo-pbyiB8NZw" name="identified" visibility="public">
         <ownedComment xmi:id="_gee_ULs8Eeeo-pbyiB8NZw" annotatedElement="_cfpyQLs8Eeeo-pbyiB8NZw">
-          <body>&quot;The date or period when the detected issue was initially identified.&quot; - FHIR DetectedIssue.identified[x]&#xD;
+          <body>&quot;The date or period when the detected issue was initially identified.&quot; - HL7 FHIR, DetectedIssue.identified[x]&#xD;
 Note that in FHIR, the datatype of this property can be either a dateTime or a Period. In FHIM, this is currently modeled as a Period.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_420A62FD03B642387187004E?FHIM/Datatypes/Period?"/>
@@ -1678,7 +1678,7 @@ Note that in FHIR, the datatype of this property can be either a dateTime or a P
       </ownedAttribute>
       <ownedAttribute xmi:id="_wTXqsG9KEemvD7T0D2EM6A" name="implicated" visibility="public">
         <ownedComment xmi:id="_3x3ckG9KEemvD7T0D2EM6A" annotatedElement="_wTXqsG9KEemvD7T0D2EM6A">
-          <body>&quot;Indicates the resource representing the current activity or proposed activity that is potentially problematic.&quot; - FHIR DetectedIssue.implicated&#xD;
+          <body>&quot;Indicates the resource representing the current activity or proposed activity that is potentially problematic.&quot; - HL7 FHIR, DetectedIssue.implicated&#xD;
 Note that the FHIR DetectedIssue resource points to the problematic activity, whereas in the FHIM, the problematic activity generally points to the detected issue.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_r_1eEBvxEd-afqIGzWhetA?FHIM/Datatypes/Any?"/>
@@ -1721,7 +1721,7 @@ Note that the FHIR DetectedIssue resource points to the problematic activity, wh
       </ownedAttribute>
       <ownedAttribute xmi:id="_VCKRYG9MEemvD7T0D2EM6A" name="evidence" visibility="public" type="_S-ABQG9MEemvD7T0D2EM6A" association="_VB2vYG9MEemvD7T0D2EM6A">
         <ownedComment xmi:id="_2fYPEG9MEemvD7T0D2EM6A" annotatedElement="_VCKRYG9MEemvD7T0D2EM6A">
-          <body>&quot;Supporting evidence or manifestations that provide the basis for identifying the detected issue such as a GuidanceResponse or MeasureReport.&quot; - FHIR DetectedIssue.evidence</body>
+          <body>&quot;Supporting evidence or manifestations that provide the basis for identifying the detected issue such as a GuidanceResponse or MeasureReport.&quot; - HL7 FHIR, DetectedIssue.evidence</body>
         </ownedComment>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VCLfgW9MEemvD7T0D2EM6A" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VCLfgG9MEemvD7T0D2EM6A"/>
@@ -2235,9 +2235,12 @@ It is noted that this class is roughly equivalent to an ORC segment in HL7 versi
       <ownedEnd xmi:id="_ciGwpKPsEei7vKr62x5GtA" name="" visibility="private" type="_RhWsgJdVEeiFifyYhiAJ8A" association="_ciGwoKPsEei7vKr62x5GtA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_S-ABQG9MEemvD7T0D2EM6A" name="DetectedIssueEvidence">
+      <ownedComment xmi:id="_l3BmAMA7Eemkq8Nkw3zAQw" annotatedElement="_S-ABQG9MEemvD7T0D2EM6A">
+        <body>&quot;Supporting evidence or manifestations that provide the basis for identifying the detected issue such as a GuidanceResponse or MeasureReport.&quot; HL7 FHIR, DetectedIssue.evidence</body>
+      </ownedComment>
       <ownedAttribute xmi:id="_CGPkgG9NEemvD7T0D2EM6A" name="kind" visibility="public">
         <ownedComment xmi:id="_keiDUG9NEemvD7T0D2EM6A" annotatedElement="_CGPkgG9NEemvD7T0D2EM6A">
-          <body>&quot;A manifestation that led to the recording of this detected issue.&quot; - FHIR DetectedIssue.evidence.code&#xD;
+          <body>&quot;A manifestation that led to the recording of this detected issue.&quot; - HL7 FHIR, DetectedIssue.evidence.code&#xD;
 Note that in FHIR, the cardinality of this property is zero-to-many, but in FHIM we believe that this should be one-to-one, as there can be many instances of this class.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
@@ -2246,7 +2249,7 @@ Note that in FHIR, the cardinality of this property is zero-to-many, but in FHIM
       </ownedAttribute>
       <ownedAttribute xmi:id="_CGPkhG9NEemvD7T0D2EM6A" name="detail" visibility="public">
         <ownedComment xmi:id="_CGPkhW9NEemvD7T0D2EM6A" annotatedElement="_CGPkhG9NEemvD7T0D2EM6A">
-          <body>&quot;Links to resources that constitute evidence for the detected issue such as a GuidanceResponse or MeasureReport.&quot; - FHIR DetectedIssue.evidence.detail</body>
+          <body>&quot;Links to resources that constitute evidence for the detected issue such as a GuidanceResponse or MeasureReport.&quot; - HL7 FHIR, DetectedIssue.evidence.detail</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CGPkhm9NEemvD7T0D2EM6A" value="*"/>
@@ -2255,6 +2258,15 @@ Note that in FHIR, the cardinality of this property is zero-to-many, but in FHIM
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_VB2vYG9MEemvD7T0D2EM6A" name="detectedIssueEvent_evidence" memberEnd="_VCKRYG9MEemvD7T0D2EM6A _VCMGkG9MEemvD7T0D2EM6A">
       <ownedEnd xmi:id="_VCMGkG9MEemvD7T0D2EM6A" name="" visibility="private" type="_420A62FD03B6420BD5E80118" association="_VB2vYG9MEemvD7T0D2EM6A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_7gSmsMD6EemjmILgLWyrSg" name="VocabContext">
+      <ownedLiteral xmi:id="_7gSmscD6EemjmILgLWyrSg" name="C-CDA_2.1" classifier="_7gSmsMD6EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_7gSmssD6EemjmILgLWyrSg" name="FHIM_Defined_Content" classifier="_7gSmsMD6EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_7gSms8D6EemjmILgLWyrSg" name="HL7_FHIR_R4" classifier="_7gSmsMD6EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_7gSmtMD6EemjmILgLWyrSg" name="HL7_ICSR" classifier="_7gSmsMD6EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_7gSmtcD6EemjmILgLWyrSg" name="HL7_V2" classifier="_7gSmsMD6EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_7gSmtsD6EemjmILgLWyrSg" name="NCPDP_Script" classifier="_7gSmsMD6EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_7gSmt8D6EemjmILgLWyrSg" name="US_Core_R4" classifier="_7gSmsMD6EemjmILgLWyrSg"/>
     </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_-sf91Ac0EeGfLeiV6Brugg" base_Comment="_E5XxIPjOEeCmc6EQPl3F9g"/>
@@ -2378,4 +2390,47 @@ Note that in FHIR, the cardinality of this property is zero-to-many, but in FHIM
   <Default:Documentation xmi:id="_keltsG9NEemvD7T0D2EM6A" base_Comment="_keiDUG9NEemvD7T0D2EM6A"/>
   <Default:Documentation xmi:id="_8SI78IuoEemlfYEhSLS4IA" base_Comment="_8R0L0IuoEemlfYEhSLS4IA"/>
   <Default:Documentation xmi:id="_WEnscIuyEemlfYEhSLS4IA" base_Comment="_WEmeUIuyEemlfYEhSLS4IA"/>
+  <Default:Documentation xmi:id="_l3YyYMA7Eemkq8Nkw3zAQw" base_Comment="_l3BmAMA7Eemkq8Nkw3zAQw"/>
+  <term:Context xmi:id="_8sD2QMD6EemjmILgLWyrSg" base_Enumeration="_7gSmsMD6EemjmILgLWyrSg"/>
+  <term:ValueSetConstraints xmi:id="_dd77c8D8EemjmILgLWyrSg" base_Property="_gCgDYLs7Eeeo-pbyiB8NZw">
+    <constraints xmi:id="_dd77dMD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Detected Issue Category" valueSetURI="http://hl7.org/fhir/ValueSet/detectedissue-category" valueSetOID="http://hl7.org/fhir/ValueSet/detectedissue-category"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_dd77dcD8EemjmILgLWyrSg" base_Property="_420A62FD03B6422DFB88019D">
+    <constraints xmi:id="_dd77dsD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="DetectedIssueSeverity" valueSetURI="http://hl7.org/fhir/ValueSet/detectedissue-severity" valueSetOID="http://hl7.org/fhir/ValueSet/detectedissue-severity"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_dd77d8D8EemjmILgLWyrSg" base_Property="_f-K9ALs7Eeeo-pbyiB8NZw">
+    <constraints xmi:id="_dd77eMD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="ObservationStatus" valueSetURI="http://hl7.org/fhir/ValueSet/observation-status" valueSetOID="http://hl7.org/fhir/ValueSet/observation-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_dd77ecD8EemjmILgLWyrSg" base_Property="_CGPkgG9NEemvD7T0D2EM6A">
+    <constraints xmi:id="_dd8igMD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Manifestation and Symptom Codes" valueSetURI="http://hl7.org/fhir/ValueSet/manifestation-or-symptom" valueSetOID="http://hl7.org/fhir/ValueSet/manifestation-or-symptom"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_dd8igcD8EemjmILgLWyrSg" base_Property="_MzJSkLs7Eeeo-pbyiB8NZw">
+    <constraints xmi:id="_dd8igsD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Detected Issue Mitigation Action" valueSetURI="http://hl7.org/fhir/ValueSet/detectedissue-mitigation-action" valueSetOID="http://hl7.org/fhir/ValueSet/detectedissue-mitigation-action"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_dd8ig8D8EemjmILgLWyrSg" base_Property="_mBZaMActEeGfLeiV6Brugg">
+    <constraints xmi:id="_dd8ihMD8EemjmILgLWyrSg" context="HL7_V2" valueSetName="Specimen Risk Type" valueSetURI="http://phinvads.cdc.gov/vads/ViewValueSet.action?id=7DD34BBC-617F-DD11-B38D-00188B398520" valueSetOID="2.16.840.1.113883.11.10405"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_dd8ihcD8EemjmILgLWyrSg" base_Property="_FGFHsIuyEemlfYEhSLS4IA">
+    <constraints xmi:id="_dd8ihsD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Participant Roles" valueSetURI="http://hl7.org/fhir/ValueSet/participant-role" valueSetOID="http://hl7.org/fhir/ValueSet/participant-role"/>
+    <constraints xmi:id="_dd8ih8D8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Procedure Performer Role Codes" valueSetURI="http://hl7.org/fhir/ValueSet/performer-role" valueSetOID="http://hl7.org/fhir/ValueSet/performer-role"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_dd8iiMD8EemjmILgLWyrSg" base_Property="_G4nesAVGEeiuXpuGM4C-xQ">
+    <constraints xmi:id="_dd9JkMD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Request priority" valueSetURI="http://hl7.org/fhir/ValueSet/request-priority" valueSetOID="http://hl7.org/fhir/ValueSet/request-priority"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_dd9JkcD8EemjmILgLWyrSg" base_Property="_420A62FD03B64589570A016D">
+    <constraints xmi:id="_dd9JksD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="MedicationRequest Status Codes" valueSetURI="http://hl7.org/fhir/ValueSet/medicationrequest-status" valueSetOID="http://hl7.org/fhir/ValueSet/medicationrequest-status"/>
+    <constraints xmi:id="_dd9Jk8D8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="RequestStatus" valueSetURI="http://hl7.org/fhir/ValueSet/request-status" valueSetOID="http://hl7.org/fhir/ValueSet/request-status"/>
+    <constraints xmi:id="_dd9JlMD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="SupplyRequestStatus" valueSetURI="http://hl7.org/fhir/ValueSet/supplyrequest-status" valueSetOID="http://hl7.org/fhir/ValueSet/supplyrequest-status"/>
+    <constraints xmi:id="_dd9JlcD8EemjmILgLWyrSg" context="HL7_V2" valueSetName="Healthcare Order Status" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=5BD34BBC-617F-DD11-B38D-00188B398520" valueSetOID="2.16.840.1.114222.4.11.1025"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_dd9JlsD8EemjmILgLWyrSg" base_Property="_3S-u0Fi2EeWPFcZL8Pri7w">
+    <constraints xmi:id="_dd9Jl8D8EemjmILgLWyrSg" context="HL7_V2" valueSetName="SpecifiedPrecaution" valueSetURI="https://vsaccollab.nlm.nih.gov/collab/page/site/2x16x840x1x113762x1x4x1143x127/dashboard" valueSetOID="2.16.840.1.113883.3.2074.1.1.73"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_dd9JmMD8EemjmILgLWyrSg" base_Property="_BEHgkKPjEei7vKr62x5GtA">
+    <constraints xmi:id="_dd9JmcD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Procedure Codes (SNOMED CT)" valueSetURI="http://hl7.org/fhir/ValueSet/procedure-code" valueSetOID="http://hl7.org/fhir/ValueSet/procedure-code"/>
+    <constraints xmi:id="_dd9woMD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Service Request Order Details Codes" valueSetURI="http://hl7.org/fhir/ValueSet/servicerequest-orderdetail" valueSetOID="http://hl7.org/fhir/ValueSet/servicerequest-orderdetail"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_dd9wocD8EemjmILgLWyrSg" base_Property="_F_ljMAcwEeGfLeiV6Brugg">
+    <constraints xmi:id="_dd9wosD8EemjmILgLWyrSg" context="HL7_V2" valueSetName="Healthcare Order Status" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=5BD34BBC-617F-DD11-B38D-00188B398520" valueSetOID="2.16.840.1.114222.4.11.1025"/>
+  </term:ValueSetConstraints>
 </xmi:XMI>

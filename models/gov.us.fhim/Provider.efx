@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_WG-84JNmEeCyufOLCDZkFA" name="Provider">
     <eAnnotations xmi:id="_J7qFMEDPEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_Jild4EDPEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -3827,6 +3827,14 @@ U.S. Postal Service ZIP Code.&quot; - ASAP Standard for PDMP, PHA09: ZIP Code Ad
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GJ5G4xSYEeertqFtRTH1nw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GJ5G4hSYEeertqFtRTH1nw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_F8UaMG95Eem63N3kPi3D_g" name="hoursOfOperation" visibility="public" type="_tlGXsG94Eem63N3kPi3D_g" association="_F8A4MG95Eem63N3kPi3D_g">
+        <ownedComment xmi:id="_KezG4G95Eem63N3kPi3D_g" annotatedElement="_F8UaMG95Eem63N3kPi3D_g">
+          <body>Pointer to a set of timeframes during which the location is available for normal operations.&#xD;
+&quot;What days/times during a week is this location usually open.&quot; - Location.hoursOfOperation</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F8VoUW95Eem63N3kPi3D_g" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F8VoUG95Eem63N3kPi3D_g"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_lV6l0B2IEd-4VI-lpu-JjQ" name="identifier" visibility="public">
         <ownedComment xmi:id="_lWEW0B2IEd-4VI-lpu-JjQ" annotatedElement="_lV6l0B2IEd-4VI-lpu-JjQ">
           <body>A unique string or token used to identify the Organization - Location combination.&#xD;
@@ -3877,14 +3885,6 @@ U.S. Postal Service ZIP Code.&quot; - ASAP Standard for PDMP, PHA09: ZIP Code Ad
         <type xmi:type="uml:Class" href="Datatypes.efx#_fImbAAEYEd-ZUM5xZsXWyw?FHIM/Datatypes/ContactPoint?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zaTccrYuEeGWl-7OlqBMDw" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zaTcc7YuEeGWl-7OlqBMDw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_F8UaMG95Eem63N3kPi3D_g" name="hoursOfOperation" visibility="public" type="_tlGXsG94Eem63N3kPi3D_g" association="_F8A4MG95Eem63N3kPi3D_g">
-        <ownedComment xmi:id="_KezG4G95Eem63N3kPi3D_g" annotatedElement="_F8UaMG95Eem63N3kPi3D_g">
-          <body>Pointer to a set of timeframes during which the location is available for normal operations.&#xD;
-&quot;What days/times during a week is this location usually open.&quot; - Location.hoursOfOperation</body>
-        </ownedComment>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F8VoUW95Eem63N3kPi3D_g" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F8VoUG95Eem63N3kPi3D_g"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_NefmUHS_Ed-Bj4191_mrEA" name="Jurisdiction">
@@ -5828,6 +5828,15 @@ Note that if the party is a Person, this property must not be used and the cardi
     <packagedElement xmi:type="uml:Association" xmi:id="_3N-XQLiGEemFk7yytqlNgw" name="healthcareService_eligibility" memberEnd="_3N_lYLiGEemFk7yytqlNgw _3OAzgLiGEemFk7yytqlNgw">
       <ownedEnd xmi:id="_3OAzgLiGEemFk7yytqlNgw" name="" visibility="private" type="_Xp-n8BTkEeeYjZW8j3SRUg" association="_3N-XQLiGEemFk7yytqlNgw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_cmmdEMD3EemjmILgLWyrSg" name="VocabContext">
+      <ownedLiteral xmi:id="_cmmdEcD3EemjmILgLWyrSg" name="C-CDA_2.1" classifier="_cmmdEMD3EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_cmmdEsD3EemjmILgLWyrSg" name="FHIM_Defined_Content" classifier="_cmmdEMD3EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_cmmdE8D3EemjmILgLWyrSg" name="HL7_FHIR_R4" classifier="_cmmdEMD3EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_cmmdFMD3EemjmILgLWyrSg" name="HL7_ICSR" classifier="_cmmdEMD3EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_cmmdFcD3EemjmILgLWyrSg" name="HL7_V2" classifier="_cmmdEMD3EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_cmmdFsD3EemjmILgLWyrSg" name="NCPDP_Script" classifier="_cmmdEMD3EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_cmmdF8D3EemjmILgLWyrSg" name="US_Core_R4" classifier="_cmmdEMD3EemjmILgLWyrSg"/>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_-8qe8e6sEd-crcWiXVDZrQ" base_Comment="_-8qe8O6sEd-crcWiXVDZrQ"/>
   <Default:Documentation xmi:id="_-lmUsDA8Ed-1aYBV65Lrnw" base_Comment="_-ldKwDA8Ed-1aYBV65Lrnw"/>
@@ -6109,4 +6118,109 @@ Note that if the party is a Person, this property must not be used and the cardi
   <Default:Documentation xmi:id="_m-j3cLiIEemFk7yytqlNgw" base_Comment="_m-ipULiIEemFk7yytqlNgw"/>
   <Default:Documentation xmi:id="_7E9lAriIEemFk7yytqlNgw" base_Comment="_7E898biIEemFk7yytqlNgw"/>
   <Default:Documentation xmi:id="_IMjtZLiJEemFk7yytqlNgw" base_Comment="_IMjtYbiJEemFk7yytqlNgw"/>
+  <term:ValueSetConstraints xmi:id="_sXgUlMD4EemjmILgLWyrSg" base_Property="_wd00gA_gEee_pMnA6wvovQ">
+    <constraints xmi:id="_sXg7oMD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="HL7 v2 table 0360 (Version 2.7)" valueSetURI="http://terminology.hl7.org/ValueSet/v2-2.7-0360" valueSetOID="http://terminology.hl7.org/ValueSet/v2-2.7-0360"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXg7ocD4EemjmILgLWyrSg" base_Property="_ifOGoBAXEeewyID-8Rev-g">
+    <constraints xmi:id="_sXg7osD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Endpoint Connection Type" valueSetURI="http://hl7.org/fhir/ValueSet/endpoint-connection-type" valueSetOID="http://hl7.org/fhir/ValueSet/endpoint-connection-type"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXg7o8D4EemjmILgLWyrSg" base_Property="_zpTXkBAYEeewyID-8Rev-g">
+    <constraints xmi:id="_sXg7pMD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="MimeType" valueSetURI="http://hl7.org/fhir/ValueSet/mimetypes" valueSetOID="http://hl7.org/fhir/ValueSet/mimetypes"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXg7pcD4EemjmILgLWyrSg" base_Property="_zmFEcBAYEeewyID-8Rev-g">
+    <constraints xmi:id="_sXg7psD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Endpoint Payload Type" valueSetURI="http://hl7.org/fhir/ValueSet/endpoint-payload-type" valueSetOID="http://hl7.org/fhir/ValueSet/endpoint-payload-type"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXg7p8D4EemjmILgLWyrSg" base_Property="_ON2fMBAXEeewyID-8Rev-g">
+    <constraints xmi:id="_sXg7qMD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="EndpointStatus" valueSetURI="http://hl7.org/fhir/ValueSet/endpoint-status" valueSetOID="http://hl7.org/fhir/ValueSet/endpoint-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXg7qcD4EemjmILgLWyrSg" base_Property="_t_SQkBsxEd--ZY2-pbJ-Pw">
+    <constraints xmi:id="_sXhisMD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="HL7 v2 table 0360 (Version 2.7)" valueSetURI="http://terminology.hl7.org/ValueSet/v2-2.7-0360" valueSetOID="http://terminology.hl7.org/ValueSet/v2-2.7-0360"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXhiscD4EemjmILgLWyrSg" base_Property="_420A62FD03B64563662203A6">
+    <constraints xmi:id="_sXhissD4EemjmILgLWyrSg" context="US_Core_R4" valueSetName="US Core Provider Role (NUCC) " valueSetURI="http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role" valueSetOID="http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXhis8D4EemjmILgLWyrSg" base_Property="_5Z1BEBJTEeKEjrc2hUE4_Q">
+    <constraints xmi:id="_sXhitMD4EemjmILgLWyrSg" context="C-CDA_2.1" valueSetName="Healthcare Provider Taxonomy" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.1066/expansion" valueSetOID="2.16.840.1.114222.4.11.1066"/>
+    <constraints xmi:id="_sXhitcD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Practitioner role" valueSetURI="http://hl7.org/fhir/ValueSet/practitioner-role" valueSetOID="http://hl7.org/fhir/ValueSet/practitioner-role"/>
+    <constraints xmi:id="_sXhitsD4EemjmILgLWyrSg" context="US_Core_R4" valueSetName="US Core Provider Specialty (NUCC) " valueSetURI="http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty" valueSetOID="http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXhit8D4EemjmILgLWyrSg" base_Property="_4pfuABWJEeeKharB8T6q_A">
+    <constraints xmi:id="_sXhiuMD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Service category" valueSetURI="http://hl7.org/fhir/ValueSet/service-category" valueSetOID="http://hl7.org/fhir/ValueSet/service-category"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXiJwMD4EemjmILgLWyrSg" base_Property="_2nJt8BToEeeYjZW8j3SRUg">
+    <constraints xmi:id="_sXiJwcD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Service type" valueSetURI="http://hl7.org/fhir/ValueSet/service-type" valueSetOID="http://hl7.org/fhir/ValueSet/service-type"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXiJwsD4EemjmILgLWyrSg" base_Property="_N3QvcBWOEeeKharB8T6q_A">
+    <constraints xmi:id="_sXiJw8D4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="ReferralMethod" valueSetURI="http://hl7.org/fhir/ValueSet/service-referral-method" valueSetOID="http://hl7.org/fhir/ValueSet/service-referral-method"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXiJxMD4EemjmILgLWyrSg" base_Property="_IkPokBWMEeeKharB8T6q_A">
+    <constraints xmi:id="_sXiJxcD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="ServiceProvisionConditions" valueSetURI="http://hl7.org/fhir/ValueSet/service-provision-conditions" valueSetOID="http://hl7.org/fhir/ValueSet/service-provision-conditions"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXiJxsD4EemjmILgLWyrSg" base_Property="_5uo8YG94Eem63N3kPi3D_g">
+    <constraints xmi:id="_sXiJx8D4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="DaysOfWeek" valueSetURI="http://hl7.org/fhir/ValueSet/days-of-week" valueSetOID="http://hl7.org/fhir/ValueSet/days-of-week"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXiJyMD4EemjmILgLWyrSg" base_Property="_4yH1gBSMEeertqFtRTH1nw">
+    <constraints xmi:id="_sXiJycD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="LocationMode" valueSetURI="http://hl7.org/fhir/ValueSet/location-mode" valueSetOID="http://hl7.org/fhir/ValueSet/location-mode"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXiw0MD4EemjmILgLWyrSg" base_Property="_gTVQMBQwEee5-b4VaBYq3Q">
+    <constraints xmi:id="_sXiw0cD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="HL7 v2 Bed Status" valueSetURI="http://terminology.hl7.org/ValueSet/v2-0116" valueSetOID="http://terminology.hl7.org/ValueSet/v2-0116"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXiw0sD4EemjmILgLWyrSg" base_Property="_KGk4gBSQEeertqFtRTH1nw">
+    <constraints xmi:id="_sXiw08D4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Location type" valueSetURI="http://hl7.org/fhir/ValueSet/location-physical-type" valueSetOID="http://hl7.org/fhir/ValueSet/location-physical-type"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXiw1MD4EemjmILgLWyrSg" base_Property="_V_H1cBQwEee5-b4VaBYq3Q">
+    <constraints xmi:id="_sXiw1cD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="LocationStatus" valueSetURI="http://hl7.org/fhir/ValueSet/location-status" valueSetOID="http://hl7.org/fhir/ValueSet/location-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXiw1sD4EemjmILgLWyrSg" base_Property="_8V56ABP3Eee2yObkTlcn4g">
+    <constraints xmi:id="_sXiw18D4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Organization type" valueSetURI="http://hl7.org/fhir/ValueSet/organization-type" valueSetOID="http://hl7.org/fhir/ValueSet/organization-type"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXiw2MD4EemjmILgLWyrSg" base_Property="_7TKL57YqEeGWl-7OlqBMDw">
+    <constraints xmi:id="_sXjX4MD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Contact entity type" valueSetURI="http://hl7.org/fhir/ValueSet/contactentity-type" valueSetOID="http://hl7.org/fhir/ValueSet/contactentity-type"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXjX4cD4EemjmILgLWyrSg" base_Property="_mC3MkBsxEd--ZY2-pbJ-Pw">
+    <constraints xmi:id="_sXjX4sD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="HL7 v2 table 0360 (Version 2.7)" valueSetURI="http://terminology.hl7.org/ValueSet/v2-2.7-0360" valueSetOID="http://terminology.hl7.org/ValueSet/v2-2.7-0360"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXjX48D4EemjmILgLWyrSg" base_Property="_X1nK0A_vEeec1rk7YVReNA">
+    <constraints xmi:id="_sXjX5MD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Practitioner role" valueSetURI="http://hl7.org/fhir/ValueSet/practitioner-role" valueSetOID="http://hl7.org/fhir/ValueSet/practitioner-role"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXjX5cD4EemjmILgLWyrSg" base_Property="_zV-sOLNZEeejKsyqENIdXw">
+    <constraints xmi:id="_sXjX5sD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Service category" valueSetURI="http://hl7.org/fhir/ValueSet/service-category" valueSetOID="http://hl7.org/fhir/ValueSet/service-category"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXjX58D4EemjmILgLWyrSg" base_Property="_zV-sPLNZEeejKsyqENIdXw">
+    <constraints xmi:id="_sXjX6MD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Service type" valueSetURI="http://hl7.org/fhir/ValueSet/service-type" valueSetOID="http://hl7.org/fhir/ValueSet/service-type"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXjX6cD4EemjmILgLWyrSg" base_Property="_zV-sQLNZEeejKsyqENIdXw">
+    <constraints xmi:id="_sXj-8MD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Practice Setting Code Value Set" valueSetURI="http://hl7.org/fhir/ValueSet/c80-practice-codes" valueSetOID="http://hl7.org/fhir/ValueSet/c80-practice-codes"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXj-8cD4EemjmILgLWyrSg" base_Property="_zV-sRLNZEeejKsyqENIdXw">
+    <constraints xmi:id="_sXj-8sD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="SlotStatus" valueSetURI="http://hl7.org/fhir/ValueSet/slotstatus" valueSetOID="http://hl7.org/fhir/ValueSet/slotstatus"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXj-88D4EemjmILgLWyrSg" base_Property="_AvIWQOcIEeGjtvsfy1ZDDQ">
+    <constraints xmi:id="_sXj-9MD4EemjmILgLWyrSg" context="FHIM_Defined_Content" valueSetName="Place of service" valueSetURI="https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html" valueSetOID="https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXj-9cD4EemjmILgLWyrSg" base_Property="_7L1mQBSJEeertqFtRTH1nw">
+    <constraints xmi:id="_sXj-9sD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="V3 Value SetServiceDeliveryLocationRoleType" valueSetURI="http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType" valueSetOID="http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXj-98D4EemjmILgLWyrSg" base_Property="_4_430LNVEeejKsyqENIdXw">
+    <constraints xmi:id="_sXj--MD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="HL7 v2 Appointment Reason Codes" valueSetURI="http://terminology.hl7.org/CodeSystem/v2-0276" valueSetOID="http://terminology.hl7.org/CodeSystem/v2-0276"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXkmAMD4EemjmILgLWyrSg" base_Property="_t7ekoLNUEeejKsyqENIdXw">
+    <constraints xmi:id="_sXkmAcD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Service category" valueSetURI="http://hl7.org/fhir/ValueSet/service-category" valueSetOID="http://hl7.org/fhir/ValueSet/service-category"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXkmAsD4EemjmILgLWyrSg" base_Property="_vBoUYLNUEeejKsyqENIdXw">
+    <constraints xmi:id="_sXkmA8D4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Service type" valueSetURI="http://hl7.org/fhir/ValueSet/service-type" valueSetOID="http://hl7.org/fhir/ValueSet/service-type"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXkmBMD4EemjmILgLWyrSg" base_Property="_m3ZocLNVEeejKsyqENIdXw">
+    <constraints xmi:id="_sXkmBcD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Practice Setting Code Value Set" valueSetURI="http://hl7.org/fhir/ValueSet/c80-practice-codes" valueSetOID="http://hl7.org/fhir/ValueSet/c80-practice-codes"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXkmBsD4EemjmILgLWyrSg" base_Property="_jEY0YLNWEeejKsyqENIdXw">
+    <constraints xmi:id="_sXkmB8D4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="SlotStatus" valueSetURI="http://hl7.org/fhir/ValueSet/slotstatus" valueSetOID="http://hl7.org/fhir/ValueSet/slotstatus"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXkmCMD4EemjmILgLWyrSg" base_Property="_TDc2cJYDEeCD7vwmJe8BlA">
+    <constraints xmi:id="_sXkmCcD4EemjmILgLWyrSg" context="US_Core_R4" valueSetName="UspsTwoLetterAlphabeticCodes" valueSetURI="http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state" valueSetOID="http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_CoN9kMD5EemjmILgLWyrSg" base_Property="_-DA40NLMEeaqd8KJKwlLJw">
+    <constraints xmi:id="_FbQs8MD5EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="DaysOfWeek" valueSetURI="http://hl7.org/fhir/ValueSet/days-of-week" valueSetOID="http://hl7.org/fhir/ValueSet/days-of-week"/>
+  </term:ValueSetConstraints>
+  <term:Context xmi:id="_KbpdoMD5EemjmILgLWyrSg" base_Enumeration="_cmmdEMD3EemjmILgLWyrSg"/>
 </xmi:XMI>

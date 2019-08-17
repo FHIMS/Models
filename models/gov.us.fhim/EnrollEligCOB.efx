@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_420A62FD03B645465F2F00A1" name="EnrollEligCOB">
     <eAnnotations xmi:id="_4f2AgEDMEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_4SGfcEDMEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -934,7 +934,7 @@
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_4y6p-MDWEee8L6dSHLP3zQ" visible="false" type="OperationCompartment"/>
           <children xmi:type="notation:SemanticListCompartment" xmi:id="_4y6p-cDWEee8L6dSHLP3zQ" visible="false" type="SignalCompartment"/>
           <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_4y6p-sDWEee8L6dSHLP3zQ" visible="false" type="StructureCompartment"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4y6p8cDWEee8L6dSHLP3zQ" x="60547" y="5706"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4y6p8cDWEee8L6dSHLP3zQ" x="61498" y="6657"/>
         </children>
         <children xmi:type="umlnotation:UMLShape" xmi:id="_cPgeYMDXEee8L6dSHLP3zQ" element="_cO2XEMDXEee8L6dSHLP3zQ" fontName="Arial" fontHeight="10" showListStereotype="None" showListVisibility="None" showListSignature="true" fillColor="8487423" transparency="0" lineColor="3342489" lineWidth="1" showStereotype="Text">
           <children xmi:type="notation:DecorationNode" xmi:id="_cPgeYsDXEee8L6dSHLP3zQ" type="ImageCompartment">
@@ -9493,6 +9493,15 @@ Note that in FHIR, this can be a pointer to a ChargeItem or a Code. Thus in FHIM
     <packagedElement xmi:type="uml:Association" xmi:id="_oSVgAL0IEem6XYOa6zWFYg" name="invoiceLineItem_priceComponent" memberEnd="_oSWHEL0IEem6XYOa6zWFYg _oSWuIL0IEem6XYOa6zWFYg">
       <ownedEnd xmi:id="_oSWuIL0IEem6XYOa6zWFYg" name="" visibility="private" type="_geh3YL0GEem6XYOa6zWFYg" association="_oSVgAL0IEem6XYOa6zWFYg"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ddE8oMD4EemjmILgLWyrSg" name="VocabContext">
+      <ownedLiteral xmi:id="_ddFjsMD4EemjmILgLWyrSg" name="C-CDA_2.1" classifier="_ddE8oMD4EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_ddFjscD4EemjmILgLWyrSg" name="FHIM_Defined_Content" classifier="_ddE8oMD4EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_ddFjssD4EemjmILgLWyrSg" name="HL7_FHIR_R4" classifier="_ddE8oMD4EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_ddFjs8D4EemjmILgLWyrSg" name="HL7_ICSR" classifier="_ddE8oMD4EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_ddFjtMD4EemjmILgLWyrSg" name="HL7_V2" classifier="_ddE8oMD4EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_ddFjtcD4EemjmILgLWyrSg" name="NCPDP_Script" classifier="_ddE8oMD4EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_ddFjtsD4EemjmILgLWyrSg" name="US_Core_R4" classifier="_ddE8oMD4EemjmILgLWyrSg"/>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_-F4bwGuOEeCZQ_Ui4wPHHw" base_Comment="_-Fv44GuOEeCZQ_Ui4wPHHw"/>
   <Default:Documentation xmi:id="_-QEd4ba1Ed-Y0_knsxZjWg" base_Comment="_-QEd4La1Ed-Y0_knsxZjWg"/>
@@ -10031,4 +10040,122 @@ Note that in FHIR, this can be a pointer to a ChargeItem or a Code. Thus in FHIM
   <Default:Documentation xmi:id="_TnB5IL0JEem6XYOa6zWFYg" base_Comment="_TnBSEb0JEem6XYOa6zWFYg"/>
   <Default:Documentation xmi:id="_Tr5LBL0JEem6XYOa6zWFYg" base_Comment="_Tr5LAb0JEem6XYOa6zWFYg"/>
   <Default:Documentation xmi:id="__hvpFL0MEem6XYOa6zWFYg" base_Comment="__hvpEb0MEem6XYOa6zWFYg"/>
+  <term:Context xmi:id="_fGMPgMD4EemjmILgLWyrSg" base_Enumeration="_ddE8oMD4EemjmILgLWyrSg"/>
+  <term:ValueSetConstraints xmi:id="_sXgUkMD4EemjmILgLWyrSg" base_Property="_O4kLMBoAEemG6ZeLgK7_WQ">
+    <constraints xmi:id="_sXgUkcD4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Insurance plan type" valueSetURI="http://hl7.org/fhir/ValueSet/insuranceplan-type" valueSetOID="http://hl7.org/fhir/ValueSet/insuranceplan-type"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_sXgUksD4EemjmILgLWyrSg" base_Property="_7zAksBoBEemG6ZeLgK7_WQ">
+    <constraints xmi:id="_sXgUk8D4EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="PublicationStatus" valueSetURI="http://hl7.org/fhir/ValueSet/publication-status" valueSetOID="http://hl7.org/fhir/ValueSet/publication-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkpBAsD_EemjmILgLWyrSg" base_Property="_XHKA8DVgEeeQAI9kLhpEGw">
+    <constraints xmi:id="_WkpBA8D_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="V3 Value SetActIncidentCode" valueSetURI="http://terminology.hl7.org/ValueSet/v3-ActIncidentCode" valueSetOID="http://terminology.hl7.org/ValueSet/v3-ActIncidentCode"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkpBBMD_EemjmILgLWyrSg" base_Property="_hUXhMK-FEeeEi_Ln3rvPEg">
+    <constraints xmi:id="_WkpBBcD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Account Types" valueSetURI="http://hl7.org/fhir/ValueSet/account-type" valueSetOID="http://hl7.org/fhir/ValueSet/account-type"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkpBBsD_EemjmILgLWyrSg" base_Property="_JZD-oK-FEeeEi_Ln3rvPEg">
+    <constraints xmi:id="_WkpoEMD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="AccountStatus" valueSetURI="http://hl7.org/fhir/ValueSet/account-status" valueSetOID="http://hl7.org/fhir/ValueSet/account-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkpoEcD_EemjmILgLWyrSg" base_Property="_gYMAcMDWEee8L6dSHLP3zQ">
+    <constraints xmi:id="_WkpoEsD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Benefit Type Codes" valueSetURI="http://hl7.org/fhir/ValueSet/benefit-type" valueSetOID="http://hl7.org/fhir/ValueSet/benefit-type"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkpoE8D_EemjmILgLWyrSg" base_Property="_X2MvAIyHEemQwsnSqQ26mw">
+    <constraints xmi:id="_WkpoFMD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="SNOMED CT Body Structures" valueSetURI="http://hl7.org/fhir/ValueSet/body-site" valueSetOID="http://hl7.org/fhir/ValueSet/body-site"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkpoFcD_EemjmILgLWyrSg" base_Property="_fkIX0CVXEeO_iaEYDPvTaA">
+    <constraints xmi:id="_WkpoFsD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="ChargeItemCode" valueSetURI="http://hl7.org/fhir/ValueSet/chargeitem-billingcodes" valueSetOID="http://hl7.org/fhir/ValueSet/chargeitem-billingcodes"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkpoF8D_EemjmILgLWyrSg" base_Property="_Qao1AIyKEemQwsnSqQ26mw">
+    <constraints xmi:id="_WkqPIMD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="ICD-10 Codes" valueSetURI="http://hl7.org/fhir/ValueSet/icd-10" valueSetOID="http://hl7.org/fhir/ValueSet/icd-10"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkqPIcD_EemjmILgLWyrSg" base_Property="_gRqvMIx2EemQwsnSqQ26mw">
+    <constraints xmi:id="_WkqPIsD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="ChargeItemStatus" valueSetURI="http://hl7.org/fhir/ValueSet/chargeitem-status" valueSetOID="http://hl7.org/fhir/ValueSet/chargeitem-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkqPI8D_EemjmILgLWyrSg" base_Property="_kajHQMoZEeeZZoufAxo6MA">
+    <constraints xmi:id="_WkqPJMD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Funds Reservation Codes" valueSetURI="http://hl7.org/fhir/ValueSet/fundsreserve" valueSetOID="http://hl7.org/fhir/ValueSet/fundsreserve"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkqPJcD_EemjmILgLWyrSg" base_Property="_eMr20MoZEeeZZoufAxo6MA">
+    <constraints xmi:id="_WkqPJsD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Process Priority Codes" valueSetURI="http://hl7.org/fhir/ValueSet/process-priority" valueSetOID="http://hl7.org/fhir/ValueSet/process-priority"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkqPJ8D_EemjmILgLWyrSg" base_Property="_xBLUwMoSEeeZZoufAxo6MA">
+    <constraints xmi:id="_WkqPKMD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Financial Resource Status Codes" valueSetURI="http://hl7.org/fhir/ValueSet/fm-status" valueSetOID="http://hl7.org/fhir/ValueSet/fm-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkqPKcD_EemjmILgLWyrSg" base_Property="_KWsykMoTEeeZZoufAxo6MA">
+    <constraints xmi:id="_Wkq2MMD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Example Claim SubType Codes" valueSetURI="http://hl7.org/fhir/ValueSet/claim-subtype" valueSetOID="http://hl7.org/fhir/ValueSet/claim-subtype"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_Wkq2McD_EemjmILgLWyrSg" base_Property="_KIrksMoTEeeZZoufAxo6MA">
+    <constraints xmi:id="_Wkq2MsD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Claim Type Codes" valueSetURI="http://hl7.org/fhir/ValueSet/claim-type" valueSetOID="http://hl7.org/fhir/ValueSet/claim-type"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_Wkq2M8D_EemjmILgLWyrSg" base_Property="_F6e-kMoWEeeZZoufAxo6MA">
+    <constraints xmi:id="_Wkq2NMD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Use" valueSetURI="http://hl7.org/fhir/ValueSet/claim-use" valueSetOID="http://hl7.org/fhir/ValueSet/claim-use"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_Wkq2NcD_EemjmILgLWyrSg" base_Property="_W_HwULBkEeeaRp4uBVUfTA">
+    <constraints xmi:id="_Wkq2NsD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Coverage Type and Self-Pay Codes" valueSetURI="http://hl7.org/fhir/ValueSet/coverage-type" valueSetOID="http://hl7.org/fhir/ValueSet/coverage-type"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_Wkq2N8D_EemjmILgLWyrSg" base_Property="_W9uCILBkEeeaRp4uBVUfTA">
+    <constraints xmi:id="_Wkq2OMD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Financial Resource Status Codes" valueSetURI="http://hl7.org/fhir/ValueSet/fm-status" valueSetOID="http://hl7.org/fhir/ValueSet/fm-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_Wkq2OcD_EemjmILgLWyrSg" base_Property="_EycAcCFFEeO3ioY7BiCZOQ">
+    <constraints xmi:id="_WkrdQMD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="SubscriberPolicyholder Relationship Codes" valueSetURI="http://hl7.org/fhir/ValueSet/subscriber-relationship" valueSetOID="http://hl7.org/fhir/ValueSet/subscriber-relationship"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkrdQcD_EemjmILgLWyrSg" base_Property="_wU-CkMmwEeeW7aW01KV2Hg">
+    <constraints xmi:id="_WkrdQsD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Payment Type Codes" valueSetURI="http://hl7.org/fhir/ValueSet/payment-type" valueSetOID="http://hl7.org/fhir/ValueSet/payment-type"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkrdQ8D_EemjmILgLWyrSg" base_Property="_YzfakMDDEee8L6dSHLP3zQ">
+    <constraints xmi:id="_WkrdRMD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Process Priority Codes" valueSetURI="http://hl7.org/fhir/ValueSet/process-priority" valueSetOID="http://hl7.org/fhir/ValueSet/process-priority"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkrdRcD_EemjmILgLWyrSg" base_Property="_W-20MMDDEee8L6dSHLP3zQ">
+    <constraints xmi:id="_WkrdRsD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Financial Resource Status Codes" valueSetURI="http://hl7.org/fhir/ValueSet/fm-status" valueSetOID="http://hl7.org/fhir/ValueSet/fm-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkrdR8D_EemjmILgLWyrSg" base_Property="_PIStUMDTEee8L6dSHLP3zQ">
+    <constraints xmi:id="_WkrdSMD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Forms" valueSetURI="http://hl7.org/fhir/ValueSet/forms" valueSetOID="http://hl7.org/fhir/ValueSet/forms"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WksEUMD_EemjmILgLWyrSg" base_Property="_NKwpoMDTEee8L6dSHLP3zQ">
+    <constraints xmi:id="_WksEUcD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Claim Processing Codes" valueSetURI="http://hl7.org/fhir/ValueSet/remittance-outcome" valueSetOID="http://hl7.org/fhir/ValueSet/remittance-outcome"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WksEUsD_EemjmILgLWyrSg" base_Property="_b35KRsDEEee8L6dSHLP3zQ">
+    <constraints xmi:id="_WksEU8D_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Financial Resource Status Codes" valueSetURI="http://hl7.org/fhir/ValueSet/fm-status" valueSetOID="http://hl7.org/fhir/ValueSet/fm-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WksEVMD_EemjmILgLWyrSg" base_Property="_9L0kyMmmEeeW7aW01KV2Hg">
+    <constraints xmi:id="_WksEVcD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Financial Resource Status Codes" valueSetURI="http://hl7.org/fhir/ValueSet/fm-status" valueSetOID="http://hl7.org/fhir/ValueSet/fm-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WksEVsD_EemjmILgLWyrSg" base_Property="_ZDmHfMmoEeeW7aW01KV2Hg">
+    <constraints xmi:id="_WksEV8D_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Claim Processing Codes" valueSetURI="http://hl7.org/fhir/ValueSet/remittance-outcome" valueSetOID="http://hl7.org/fhir/ValueSet/remittance-outcome"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WksEWMD_EemjmILgLWyrSg" base_Property="_ZDmHiMmoEeeW7aW01KV2Hg">
+    <constraints xmi:id="_WksEWcD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Financial Resource Status Codes" valueSetURI="http://hl7.org/fhir/ValueSet/fm-status" valueSetOID="http://hl7.org/fhir/ValueSet/fm-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WksrYsD_EemjmILgLWyrSg" base_Property="_VBsFUIVbEeCFWps2bBaH1A">
+    <constraints xmi:id="_WksrY8D_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Claim Payee Type Codes" valueSetURI="http://hl7.org/fhir/ValueSet/payeetype" valueSetOID="http://hl7.org/fhir/ValueSet/payeetype"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WksrZMD_EemjmILgLWyrSg" base_Property="_tJ2ZIMmqEeeW7aW01KV2Hg">
+    <constraints xmi:id="_WksrZcD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Payment Status Codes" valueSetURI="http://hl7.org/fhir/ValueSet/payment-status" valueSetOID="http://hl7.org/fhir/ValueSet/payment-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WksrZsD_EemjmILgLWyrSg" base_Property="_GQeU0MmqEeeW7aW01KV2Hg">
+    <constraints xmi:id="_WksrZ8D_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Financial Resource Status Codes" valueSetURI="http://hl7.org/fhir/ValueSet/fm-status" valueSetOID="http://hl7.org/fhir/ValueSet/fm-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WksraMD_EemjmILgLWyrSg" base_Property="_OPKQUMmvEeeW7aW01KV2Hg">
+    <constraints xmi:id="_WksracD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Forms" valueSetURI="http://hl7.org/fhir/ValueSet/forms" valueSetOID="http://hl7.org/fhir/ValueSet/forms"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WktScMD_EemjmILgLWyrSg" base_Property="_cwsSDMmtEeeW7aW01KV2Hg">
+    <constraints xmi:id="_WktSccD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Claim Processing Codes" valueSetURI="http://hl7.org/fhir/ValueSet/remittance-outcome" valueSetOID="http://hl7.org/fhir/ValueSet/remittance-outcome"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WktScsD_EemjmILgLWyrSg" base_Property="_cwsSGMmtEeeW7aW01KV2Hg">
+    <constraints xmi:id="_WktSc8D_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Financial Resource Status Codes" valueSetURI="http://hl7.org/fhir/ValueSet/fm-status" valueSetOID="http://hl7.org/fhir/ValueSet/fm-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WktSdMD_EemjmILgLWyrSg" base_Property="_-fxJ1MmvEeeW7aW01KV2Hg">
+    <constraints xmi:id="_WktSdcD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="NoteType" valueSetURI="http://hl7.org/fhir/ValueSet/note-type" valueSetOID="http://hl7.org/fhir/ValueSet/note-type"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_iYdX4MEAEemjmILgLWyrSg" base_Property="_VFxIMLq9Eem8r9jDar8qHw">
+    <constraints xmi:id="_ngr18MEAEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Benefit Category Codes" valueSetURI="http://hl7.org/fhir/ValueSet/ex-benefitcategory" valueSetOID="http://hl7.org/fhir/ValueSet/ex-benefitcategory"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_xn2BQMECEemjmILgLWyrSg" base_Property="_POnXwMDTEee8L6dSHLP3zQ">
+    <constraints xmi:id="_xn2BQcECEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Benefit Category Codes" valueSetURI="http://hl7.org/fhir/ValueSet/ex-benefitcategory" valueSetOID="http://hl7.org/fhir/ValueSet/ex-benefitcategory"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_xn2BQ8ECEemjmILgLWyrSg" base_Property="_gPSjIMDWEee8L6dSHLP3zQ">
+    <constraints xmi:id="_xn2BRMECEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Benefit Term Codes" valueSetURI="http://hl7.org/fhir/ValueSet/benefit-term" valueSetOID="http://hl7.org/fhir/ValueSet/benefit-term"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_xn2oUMECEemjmILgLWyrSg" base_Property="_gGhBoMDWEee8L6dSHLP3zQ">
+    <constraints xmi:id="_xn2oUcECEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Unit Type Codes" valueSetURI="http://hl7.org/fhir/ValueSet/benefit-unit" valueSetOID="http://hl7.org/fhir/ValueSet/benefit-unit"/>
+  </term:ValueSetConstraints>
 </xmi:XMI>

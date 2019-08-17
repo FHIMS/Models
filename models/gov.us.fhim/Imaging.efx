@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_420A62FD03B6420A5A37025A" name="Imaging">
     <eAnnotations xmi:id="_UCoAEEDNEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_UCjHkEDNEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -2647,6 +2647,15 @@ Note that as a sub-type of Imaging Event, Specimen Imaging Event includes all of
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i6RJACkzEeesReY_kMDKgw" value="1"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_T5tWsMD9EemjmILgLWyrSg" name="VocabContext">
+      <ownedLiteral xmi:id="_T5tWscD9EemjmILgLWyrSg" name="C-CDA_2.1" classifier="_T5tWsMD9EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_T5tWssD9EemjmILgLWyrSg" name="FHIM_Defined_Content" classifier="_T5tWsMD9EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_T5tWs8D9EemjmILgLWyrSg" name="HL7_FHIR_R4" classifier="_T5tWsMD9EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_T5tWtMD9EemjmILgLWyrSg" name="HL7_ICSR" classifier="_T5tWsMD9EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_T5tWtcD9EemjmILgLWyrSg" name="HL7_V2" classifier="_T5tWsMD9EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_T5tWtsD9EemjmILgLWyrSg" name="NCPDP_Script" classifier="_T5tWsMD9EemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_T5tWt8D9EemjmILgLWyrSg" name="US_Core_R4" classifier="_T5tWsMD9EemjmILgLWyrSg"/>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_M1RKl-LiEduGJrQyRGTO1A" base_Comment="_M1RKluLiEduGJrQyRGTO1A"/>
   <Default:Documentation xmi:id="_MyvbAuLiEduGJrQyRGTO1A" base_Comment="_MyvbAeLiEduGJrQyRGTO1A"/>
@@ -2751,4 +2760,23 @@ Note that as a sub-type of Imaging Event, Specimen Imaging Event includes all of
   <Default:Documentation xmi:id="_vjr9ZNUmEeeaHvV-nCCy9A" base_Comment="_vjr9YdUmEeeaHvV-nCCy9A"/>
   <Default:Documentation xmi:id="_N6nflNUnEeeaHvV-nCCy9A" base_Comment="_N6nfkdUnEeeaHvV-nCCy9A"/>
   <Default:Documentation xmi:id="_qremYdUoEeeaHvV-nCCy9A" base_Comment="_qremYNUoEeeaHvV-nCCy9A"/>
+  <term:Context xmi:id="_fPgxUMD9EemjmILgLWyrSg" base_Enumeration="_T5tWsMD9EemjmILgLWyrSg"/>
+  <term:ValueSetConstraints xmi:id="_tct24MD9EemjmILgLWyrSg" base_Property="_420A62FD03B64586FBE90259">
+    <constraints xmi:id="_tct24cD9EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="ImagingStudyStatus" valueSetURI="http://hl7.org/fhir/ValueSet/imagingstudy-status" valueSetOID="http://hl7.org/fhir/ValueSet/imagingstudy-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tct24sD9EemjmILgLWyrSg" base_Property="_sAPjQPsUEeSc9M34gwVpgg">
+    <constraints xmi:id="_tct248D9EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Acquisition Modality" valueSetURI="http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html" valueSetOID="1.2.840.10008.6.1.19"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tct25MD9EemjmILgLWyrSg" base_Property="_i-MxoNUoEeeaHvV-nCCy9A">
+    <constraints xmi:id="_tcud8MD9EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Procedure Reason Codes" valueSetURI="http://hl7.org/fhir/ValueSet/procedure-reason" valueSetOID="http://hl7.org/fhir/ValueSet/procedure-reason"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tcud8cD9EemjmILgLWyrSg" base_Property="_70pasPsVEeSc9M34gwVpgg">
+    <constraints xmi:id="_tcud8sD9EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="SNOMED CT Body Structures" valueSetURI="http://hl7.org/fhir/ValueSet/body-site" valueSetOID="http://hl7.org/fhir/ValueSet/body-site"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tcud88D9EemjmILgLWyrSg" base_Property="_9isQ4PsVEeSc9M34gwVpgg">
+    <constraints xmi:id="_tcud9MD9EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Laterality" valueSetURI="http://hl7.org/fhir/ValueSet/bodysite-laterality" valueSetOID="http://hl7.org/fhir/ValueSet/bodysite-laterality"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tcud9cD9EemjmILgLWyrSg" base_Property="_zFJT8PsVEeSc9M34gwVpgg">
+    <constraints xmi:id="_tcvFAMD9EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Acquisition Modality" valueSetURI="http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html" valueSetOID="1.2.840.10008.6.1.19"/>
+  </term:ValueSetConstraints>
 </xmi:XMI>

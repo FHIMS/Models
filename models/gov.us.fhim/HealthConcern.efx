@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_420A62FD03B6420A57D1024D" name="HealthConcern">
     <eAnnotations xmi:id="_CVhsMEDNEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_CGNd0EDNEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -1278,7 +1278,7 @@
       <ownedLiteral xmi:id="_Xy44w6RMEeGZ6ueex_Me0w" name="55607006  (Problem)" classifier="_XyxkAKRMEeGZ6ueex_Me0w"/>
       <ownedLiteral xmi:id="_Xy44waRMEeGZ6ueex_Me0w" name="418799008 (Symptom)" classifier="_XyxkAKRMEeGZ6ueex_Me0w"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_L-mioOU7EeWlUtxA-8RVeQ" name="risk-probability">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_L-mioOU7EeWlUtxA-8RVeQ" name="RiskProbability">
       <ownedLiteral xmi:id="_cJSBgOU7EeWlUtxA-8RVeQ" name="negligible" classifier="_L-mioOU7EeWlUtxA-8RVeQ"/>
       <ownedLiteral xmi:id="_tRm0YOU7EeWlUtxA-8RVeQ" name="low" classifier="_L-mioOU7EeWlUtxA-8RVeQ"/>
       <ownedLiteral xmi:id="_8rEcQOU8EeWlUtxA-8RVeQ" name="moderate" classifier="_L-mioOU7EeWlUtxA-8RVeQ"/>
@@ -2188,6 +2188,15 @@ Note that in FHIR, this property can be a boolean, age, Range, date, or a string
     <packagedElement xmi:type="uml:Association" xmi:id="_dwIegLtDEeeo-pbyiB8NZw" name="healthConcern_evidence" memberEnd="_dwIegbtDEeeo-pbyiB8NZw _dwIehLtDEeeo-pbyiB8NZw">
       <ownedEnd xmi:id="_dwIehLtDEeeo-pbyiB8NZw" name="" visibility="private" type="_420A62FD03B6421F8AD00244" association="_dwIegLtDEeeo-pbyiB8NZw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2eapQMDvEemjmILgLWyrSg" name="VocabContext">
+      <ownedLiteral xmi:id="_2eapQcDvEemjmILgLWyrSg" name="C-CDA_2.1" classifier="_2eapQMDvEemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_2eapQsDvEemjmILgLWyrSg" name="FHIM_Defined_Content" classifier="_2eapQMDvEemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_2eapQ8DvEemjmILgLWyrSg" name="HL7_FHIR_R4" classifier="_2eapQMDvEemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_2eapRMDvEemjmILgLWyrSg" name="HL7_ICSR" classifier="_2eapQMDvEemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_2eapRcDvEemjmILgLWyrSg" name="HL7_V2" classifier="_2eapQMDvEemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_2eapRsDvEemjmILgLWyrSg" name="NCPDP_Script" classifier="_2eapQMDvEemjmILgLWyrSg"/>
+      <ownedLiteral xmi:id="_2eapR8DvEemjmILgLWyrSg" name="US_Core_R4" classifier="_2eapQMDvEemjmILgLWyrSg"/>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_4kJWYrZ2EeGWl-7OlqBMDw" base_Comment="_4kJWYbZ2EeGWl-7OlqBMDw"/>
   <Default:Documentation xmi:id="_bhVTIPHtEeGWjrqT5CRABg" base_Comment="_bhUsEfHtEeGWjrqT5CRABg"/>
@@ -2284,4 +2293,58 @@ Note that in FHIR, this property can be a boolean, age, Range, date, or a string
   <Default:Documentation xmi:id="_Nzv60L0oEem6XYOa6zWFYg" base_Comment="_Nzussb0oEem6XYOa6zWFYg"/>
   <Default:Documentation xmi:id="_nakAJL0sEem6XYOa6zWFYg" base_Comment="_nakAIb0sEem6XYOa6zWFYg"/>
   <Default:Documentation xmi:id="_vbJycL0sEem6XYOa6zWFYg" base_Comment="_vbJLYb0sEem6XYOa6zWFYg"/>
+  <term:ValueSetConstraints xmi:id="_tS_g8L3NEem9OOJTKCBP-w" base_Property="_WuRO4ByaEeOR-a0_xUg6BQ">
+    <constraints xmi:id="_tTAIAL3NEem9OOJTKCBP-w" context="C-CDA_2.1" valueSetName="Problem Status" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.80.68/expansion" valueSetOID="2.16.840.1.113883.3.88.12.80.68"/>
+    <constraints xmi:id="_tTCkRr3NEem9OOJTKCBP-w" context="HL7_FHIR_R4" valueSetName="Condition Clinical Status Codes" valueSetURI="http://hl7.org/fhir/ValueSet/condition-clinical" valueSetOID="http://hl7.org/fhir/ValueSet/condition-clinical"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tTAIAb3NEem9OOJTKCBP-w" base_Property="_0VIZdMLFEeGVnuEDZNmvgw">
+    <constraints xmi:id="_tTAIAr3NEem9OOJTKCBP-w" context="C-CDA_2.1" valueSetName="Problem Status" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.80.68/expansion" valueSetOID="2.16.840.1.113883.3.88.12.80.68"/>
+    <constraints xmi:id="_tTDLUL3NEem9OOJTKCBP-w" context="HL7_FHIR_R4" valueSetName="Condition Clinical Status Codes" valueSetURI="http://hl7.org/fhir/ValueSet/condition-clinical" valueSetOID="http://hl7.org/fhir/ValueSet/condition-clinical"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tTAIA73NEem9OOJTKCBP-w" base_Property="_-RwsQOZUEeGuIoEQ4Mvu0w">
+    <constraints xmi:id="_tTAvEL3NEem9OOJTKCBP-w" context="C-CDA_2.1" valueSetName="Problem Type" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.3221.7.2/expansion" valueSetOID="2.16.840.1.113883.3.88.12.3221.7.2"/>
+    <constraints xmi:id="_tTDLVb3NEem9OOJTKCBP-w" context="HL7_FHIR_R4" valueSetName="Condition Category Codes" valueSetURI="http://hl7.org/fhir/ValueSet/condition-category" valueSetOID="http://hl7.org/fhir/ValueSet/condition-category"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tTAvEb3NEem9OOJTKCBP-w" base_Property="_L3L90JpgEeOswd2lHBTpDQ">
+    <constraints xmi:id="_tTAvEr3NEem9OOJTKCBP-w" context="C-CDA_2.1" valueSetName="Problem Status" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.80.68/expansion" valueSetOID="2.16.840.1.113883.3.88.12.80.68"/>
+    <constraints xmi:id="_tTDLVr3NEem9OOJTKCBP-w" context="HL7_FHIR_R4" valueSetName="Condition Clinical Status Codes" valueSetURI="http://hl7.org/fhir/ValueSet/condition-clinical" valueSetOID="http://hl7.org/fhir/ValueSet/condition-clinical"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tTAvE73NEem9OOJTKCBP-w" base_Property="_Zr0aUHiaEd-xd69YcOIcPA">
+    <constraints xmi:id="_tTAvFL3NEem9OOJTKCBP-w" context="C-CDA_2.1" valueSetName="Problem" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.3221.7.4/expansion" valueSetOID="2.16.840.1.113883.3.88.12.3221.7.4"/>
+    <constraints xmi:id="_tTDLV73NEem9OOJTKCBP-w" context="HL7_FHIR_R4" valueSetName="Condition/Problem/Diagnosis Codes" valueSetURI="http://hl7.org/fhir/ValueSet/condition-code" valueSetOID="http://hl7.org/fhir/ValueSet/condition-code"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tTAvFb3NEem9OOJTKCBP-w" base_Property="_TJmP8JpqEeOswd2lHBTpDQ">
+    <constraints xmi:id="_tTAvFr3NEem9OOJTKCBP-w" context="C-CDA_2.1" valueSetName="Reaction Severity" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.3221.6.8/expansion" valueSetOID="2.16.840.1.113883.3.88.12.3221.6.8"/>
+    <constraints xmi:id="_tTDyYL3NEem9OOJTKCBP-w" context="HL7_FHIR_R4" valueSetName="Condition/Diagnosis Severity" valueSetURI="http://hl7.org/fhir/ValueSet/condition-severity" valueSetOID="http://hl7.org/fhir/ValueSet/condition-severity"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tTBWIL3NEem9OOJTKCBP-w" base_Property="_f-AIMPHsEeGWjrqT5CRABg">
+    <constraints xmi:id="_tTBWIb3NEem9OOJTKCBP-w" context="C-CDA_2.1" valueSetName="Family Member Value" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.19579/expansion" valueSetOID="2.16.840.1.113883.1.11.19579"/>
+    <constraints xmi:id="_tTDyZb3NEem9OOJTKCBP-w" context="HL7_FHIR_R4" valueSetName="V3 Value SetFamilyMember" valueSetURI="http://terminology.hl7.org/ValueSet/v3-FamilyMember" valueSetOID="http://terminology.hl7.org/ValueSet/v3-FamilyMember"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tTCkQL3NEem9OOJTKCBP-w" base_Property="_OgOOYBgcEeSfB8OsSP5QtQ">
+    <constraints xmi:id="_tTCkQb3NEem9OOJTKCBP-w" context="FHIM_Defined_Content" valueSetName="Concern context" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.2074.1.1.45/expansion" valueSetOID="2.16.840.1.113883.3.2074.1.1.45"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tTCkQr3NEem9OOJTKCBP-w" base_Property="_IZhS8N-rEeSQwMSQTXiDlA">
+    <constraints xmi:id="_tTCkQ73NEem9OOJTKCBP-w" context="FHIM_Defined_Content" valueSetName="Condition course" valueSetURI="https://vsaccollab.nlm.nih.gov/collab/page/site/2x16x840x1x113762x1x4x1143x156/dashboard" valueSetOID="2.16.840.1.113762.1.4.1062.3"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tTDLUb3NEem9OOJTKCBP-w" base_Property="_h2IOELtEEeeo-pbyiB8NZw">
+    <constraints xmi:id="_tTDLUr3NEem9OOJTKCBP-w" context="HL7_FHIR_R4" valueSetName="Manifestation and Symptom Codes" valueSetURI="http://hl7.org/fhir/ValueSet/manifestation-or-symptom" valueSetOID="http://hl7.org/fhir/ValueSet/manifestation-or-symptom"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tTDLU73NEem9OOJTKCBP-w" base_Property="_C_cVILtBEeeo-pbyiB8NZw">
+    <constraints xmi:id="_tTDLVL3NEem9OOJTKCBP-w" context="HL7_FHIR_R4" valueSetName="SNOMED CT Body Structures" valueSetURI="http://hl7.org/fhir/ValueSet/body-site" valueSetOID="http://hl7.org/fhir/ValueSet/body-site"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tTDyYb3NEem9OOJTKCBP-w" base_Property="_PfFWwIgqEeedq9AzSGovhA">
+    <constraints xmi:id="_tTDyYr3NEem9OOJTKCBP-w" context="HL7_FHIR_R4" valueSetName="ConditionVerificationStatus" valueSetURI="http://hl7.org/fhir/ValueSet/condition-ver-status" valueSetOID="http://hl7.org/fhir/ValueSet/condition-ver-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tTDyY73NEem9OOJTKCBP-w" base_Property="_26GSIMQ0EeSThJ7NwJgY1w">
+    <constraints xmi:id="_tTDyZL3NEem9OOJTKCBP-w" context="HL7_FHIR_R4" valueSetName="Risk probability" valueSetURI="http://hl7.org/fhir/ValueSet/risk-probability" valueSetOID="http://hl7.org/fhir/ValueSet/risk-probability"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_tTEZcL3NEem9OOJTKCBP-w" base_Property="_i9l3ULtCEeeo-pbyiB8NZw">
+    <constraints xmi:id="_tTEZcb3NEem9OOJTKCBP-w" context="HL7_FHIR_R4" valueSetName="Condition Stage" valueSetURI="http://hl7.org/fhir/ValueSet/condition-stage" valueSetOID="http://hl7.org/fhir/ValueSet/condition-stage"/>
+  </term:ValueSetConstraints>
+  <term:Context xmi:id="_4L1NUMDvEemjmILgLWyrSg" base_Enumeration="_2eapQMDvEemjmILgLWyrSg"/>
+  <term:ValueSetConstraints xmi:id="_1Z1KUMDwEemjmILgLWyrSg" base_Property="_Zh9XUNVBEeeaHvV-nCCy9A">
+    <constraints xmi:id="_46fNoMDwEemjmILgLWyrSg" context="C-CDA_2.1" valueSetName="Administrative Gender (HL7 V3)" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.1/expansion" valueSetOID="2.16.840.1.113883.1.11.1"/>
+    <constraints xmi:id="__PWd8MDwEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="AdministrativeGender" valueSetURI="http://hl7.org/fhir/ValueSet/administrative-gender" valueSetOID="http://hl7.org/fhir/ValueSet/administrative-gender"/>
+  </term:ValueSetConstraints>
 </xmi:XMI>

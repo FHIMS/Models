@@ -8733,6 +8733,15 @@ Note that in FHIR, this property can refer to a Device, Organization, Patient, P
     <packagedElement xmi:type="uml:Association" xmi:id="_oMShsL4hEemUPpcTtF6Faw" name="actionPerformed_focalDevice" memberEnd="_oMlcoL4hEemUPpcTtF6Faw _oMn44L4hEemUPpcTtF6Faw">
       <ownedEnd xmi:id="_oMn44L4hEemUPpcTtF6Faw" name="" visibility="private" type="_rr-pACaOEdyiJKb4ZqIfnw" association="_oMShsL4hEemUPpcTtF6Faw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_onrs8MCBEemq4vgOvwMjwg" name="VocabContext">
+      <ownedLiteral xmi:id="_onrs8cCBEemq4vgOvwMjwg" name="C-CDA_2.1" classifier="_onrs8MCBEemq4vgOvwMjwg"/>
+      <ownedLiteral xmi:id="_onrs8sCBEemq4vgOvwMjwg" name="FHIM_Defined_Content" classifier="_onrs8MCBEemq4vgOvwMjwg"/>
+      <ownedLiteral xmi:id="_onrs88CBEemq4vgOvwMjwg" name="HL7_FHIR_R4" classifier="_onrs8MCBEemq4vgOvwMjwg"/>
+      <ownedLiteral xmi:id="_onrs9MCBEemq4vgOvwMjwg" name="HL7_ICSR" classifier="_onrs8MCBEemq4vgOvwMjwg"/>
+      <ownedLiteral xmi:id="_onrs9cCBEemq4vgOvwMjwg" name="HL7_V2" classifier="_onrs8MCBEemq4vgOvwMjwg"/>
+      <ownedLiteral xmi:id="_onrs9sCBEemq4vgOvwMjwg" name="NCPDP_Script" classifier="_onrs8MCBEemq4vgOvwMjwg"/>
+      <ownedLiteral xmi:id="_onrs98CBEemq4vgOvwMjwg" name="US_Core_R4" classifier="_onrs8MCBEemq4vgOvwMjwg"/>
+    </packagedElement>
   </uml:Package>
   <Default:Documentation xmi:id="_4y_8gEWWEeKmiJoj9rWMSg" base_Comment="_4y5O0EWWEeKmiJoj9rWMSg"/>
   <Default:Documentation xmi:id="_5zc1oBHbEeCBuOUrBnIXmQ" base_Comment="_5zTEoBHbEeCBuOUrBnIXmQ"/>
@@ -9249,4 +9258,55 @@ Note that in FHIR, this property can refer to a Device, Organization, Patient, P
   <Default:Documentation xmi:id="_BwQOsL4jEemUPpcTtF6Faw" base_Comment="_BwOZgL4jEemUPpcTtF6Faw"/>
   <Default:Documentation xmi:id="_H36wgL4jEemUPpcTtF6Faw" base_Comment="_H34UQL4jEemUPpcTtF6Faw"/>
   <Default:Documentation xmi:id="_PyQJ0L4jEemUPpcTtF6Faw" base_Comment="_PyO7sL4jEemUPpcTtF6Faw"/>
+  <term:Context xmi:id="_qXNw4MCBEemq4vgOvwMjwg" base_Enumeration="_onrs8MCBEemq4vgOvwMjwg"/>
+  <term:ValueSetConstraints xmi:id="_tFq7MMCBEemq4vgOvwMjwg" base_Property="_CLergIseEeGv9r5ZNThaOw">
+    <constraints xmi:id="_wOSR8MCBEemq4vgOvwMjwg" context="HL7_FHIR_R4" valueSetName="ImmunizationTargetDiseaseCodes" valueSetURI="http://hl7.org/fhir/ValueSet/immunization-target-disease" valueSetOID="http://hl7.org/fhir/ValueSet/immunization-target-disease"/>
+    <constraints xmi:id="_fK3S8MDeEemjmILgLWyrSg" context="HL7_V2" valueSetName="Vaccination Special Indication (IIS)" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=348CE13C-ABB9-DF11-9BDD-0015173D1785" valueSetOID="2.16.840.1.114222.4.11.3290"/>
+    <constraints xmi:id="_kan8YMDeEemjmILgLWyrSg" context="C-CDA_2.1" valueSetName="Problem" valueSetURI="http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.113883.3.88.12.3221.7.4" valueSetOID="2.16.840.1.113883.3.88.12.3221.7.4"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_x1OVwMDdEemjmILgLWyrSg" base_Property="_c3Ff1Dn5EeiefcoRQJXpFA">
+    <constraints xmi:id="_zXKCkMDdEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="ImmunizationReasonCodes" valueSetURI="http://hl7.org/fhir/ValueSet/immunization-reason" valueSetOID="http://hl7.org/fhir/ValueSet/immunization-reason"/>
+    <constraints xmi:id="_dd7UZ8D8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Condition/Problem/Diagnosis Codes" valueSetURI="http://hl7.org/fhir/ValueSet/condition-code" valueSetOID="http://hl7.org/fhir/ValueSet/condition-code"/>
+    <constraints xmi:id="_dd77cMD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="MedicationRequest Status Reason Codes" valueSetURI="http://hl7.org/fhir/ValueSet/medicationrequest-status-reason" valueSetOID="http://hl7.org/fhir/ValueSet/medicationrequest-status-reason"/>
+    <constraints xmi:id="_dd77ccD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Procedure Reason Codes" valueSetURI="http://hl7.org/fhir/ValueSet/procedure-reason" valueSetOID="http://hl7.org/fhir/ValueSet/procedure-reason"/>
+    <constraints xmi:id="_dd77csD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="SupplyRequestReason" valueSetURI="http://hl7.org/fhir/ValueSet/supplyrequest-reason" valueSetOID="http://hl7.org/fhir/ValueSet/supplyrequest-reason"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="__-7bYMDdEemjmILgLWyrSg" base_Property="_PSI_ADn3EeiefcoRQJXpFA">
+    <constraints xmi:id="_A9FFsMDeEemjmILgLWyrSg" context="HL7_V2" valueSetName="Treatment Completion Status (HL7)" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=8AD34BBC-617F-DD11-B38D-00188B398520" valueSetOID="2.16.840.1.114222.4.11.821"/>
+    <constraints xmi:id="_HkA9cMDeEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="ImmunizationStatusCodes" valueSetURI="http://hl7.org/fhir/ValueSet/immunization-status" valueSetOID="http://hl7.org/fhir/ValueSet/immunization-status"/>
+    <constraints xmi:id="_TJZFIMDeEemjmILgLWyrSg" context="C-CDA_2.1" valueSetName="Act Status" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.15933/expansion" valueSetOID="2.16.840.1.113883.1.11.15933"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_dd6tUMD8EemjmILgLWyrSg" base_Property="_BKvtcGtCEeiYVvtnLEaW4w">
+    <constraints xmi:id="_dd7UYMD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="MedicationRequest Category Codes" valueSetURI="http://hl7.org/fhir/ValueSet/medicationrequest-category" valueSetOID="http://hl7.org/fhir/ValueSet/medicationrequest-category"/>
+    <constraints xmi:id="_dd7UYcD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="MedicationRequest Course of Therapy Codes" valueSetURI="http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy" valueSetOID="http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy"/>
+    <constraints xmi:id="_dd7UYsD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Procedure Category Codes (SNOMED CT)" valueSetURI="http://hl7.org/fhir/ValueSet/procedure-category" valueSetOID="http://hl7.org/fhir/ValueSet/procedure-category"/>
+    <constraints xmi:id="_dd7UY8D8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Service Request Category Codes" valueSetURI="http://hl7.org/fhir/ValueSet/servicerequest-category" valueSetOID="http://hl7.org/fhir/ValueSet/servicerequest-category"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_dd7UZMD8EemjmILgLWyrSg" base_Property="_kRFIUImHEempHe065OYC2w">
+    <constraints xmi:id="_dd7UZcD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="MedicationRequest Intent Codes" valueSetURI="http://hl7.org/fhir/ValueSet/medicationrequest-intent" valueSetOID="http://hl7.org/fhir/ValueSet/medicationrequest-intent"/>
+    <constraints xmi:id="_dd7UZsD8EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="RequestIntent" valueSetURI="http://hl7.org/fhir/ValueSet/request-intent" valueSetOID="http://hl7.org/fhir/ValueSet/request-intent"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_WkpBAMD_EemjmILgLWyrSg" base_Property="_420A62FD03B64240710C0054">
+    <constraints xmi:id="_WkpBAcD_EemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Condition/Problem/Diagnosis Codes" valueSetURI="http://hl7.org/fhir/ValueSet/condition-code" valueSetOID="http://hl7.org/fhir/ValueSet/condition-code"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_RQaflsEFEemjmILgLWyrSg" base_Property="_0mIPkP8sEd-Koe9flR96lw">
+    <constraints xmi:id="_RQafl8EFEemjmILgLWyrSg" context="HL7_V2" valueSetName="Specimen Risk Code" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=7DD34BBC-617F-DD11-B38D-00188B398520" valueSetOID="2.16.840.1.113883.1.11.489"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_RQbGoMEFEemjmILgLWyrSg" base_Property="_0jvp8P8sEd-Koe9flR96lw">
+    <constraints xmi:id="_RQbGocEFEemjmILgLWyrSg" context="HL7_V2" valueSetName="Special Handling Code" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=30D34BBC-617F-DD11-B38D-00188B398520" valueSetOID="2.16.840.1.113883.1.11.376"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_RQbGosEFEemjmILgLWyrSg" base_Property="_MqHUQPvQEd-3ndaGus2qMA">
+    <constraints xmi:id="_RQbGo8EFEemjmILgLWyrSg" context="HL7_V2" valueSetName="Specimen Role" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=7ED34BBC-617F-DD11-B38D-00188B398520" valueSetOID="2.16.840.1.113883.1.11.369"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_RQbGpMEFEemjmILgLWyrSg" base_Property="_420A62FD03B642DBE407001C">
+    <constraints xmi:id="_RQbGpcEFEemjmILgLWyrSg" context="FHIM_Defined_Content" valueSetName="Specimen Type" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.2074.1.1.38/expansion" valueSetOID="2.16.840.1.113883.3.2074.1.1.38"/>
+    <constraints xmi:id="_RQbGpsEFEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Specimen Type" valueSetURI="http://terminology.hl7.org/ValueSet/v2-0487" valueSetOID="http://terminology.hl7.org/ValueSet/v2-0487"/>
+    <constraints xmi:id="_RQbGp8EFEemjmILgLWyrSg" context="HL7_V2" valueSetName="Specimen Type" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=E1399690-F6D4-E111-AC0B-0050568D00F8" valueSetOID="2.16.840.1.113883.1.11.487"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_RQbtsMEFEemjmILgLWyrSg" base_Property="_v2X84P8hEd-Koe9flR96lw">
+    <constraints xmi:id="_RQbtscEFEemjmILgLWyrSg" context="HL7_V2" valueSetName="Specimen Type Modifier" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=F1A3A3B0-1DD3-E011-A127-0050568D00F8" valueSetOID="2.16.840.1.113883.1.11.541"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_RQbtssEFEemjmILgLWyrSg" base_Property="_F4IQ4B-uEee94IovPwpKfw">
+    <constraints xmi:id="_RQbts8EFEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="ObservationStatus" valueSetURI="http://hl7.org/fhir/ValueSet/observation-status" valueSetOID="http://hl7.org/fhir/ValueSet/observation-status"/>
+  </term:ValueSetConstraints>
 </xmi:XMI>

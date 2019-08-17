@@ -3,7 +3,7 @@
 <!--Rational Software Architect Designer 9.6.1-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.fragment" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
   <uml:Package xmi:id="_nbBsIFaeEd6rJ7jpZ7LBFg" name="ClinicalObservation">
     <eAnnotations xmi:id="_laZ2IEDLEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragments"/>
     <eAnnotations xmi:id="_laU9oEDLEeOMp8J4NxvidQ" source="com.ibm.xtools.uml.msl.fragmentContainer">
@@ -1559,4 +1559,31 @@ Note that for laboratory observations, the aerobic condition of the culture is i
   <Default:Documentation xmi:id="_aEvM4LNvEeioC_3IyVLSUA" base_Comment="_aEul0bNvEeioC_3IyVLSUA"/>
   <Default:Documentation xmi:id="_a1_qIE9AEem9pppHp85gNA" base_Comment="_a19N4E9AEem9pppHp85gNA"/>
   <Default:Documentation xmi:id="_sZ2tYLYVEemNd-3wg7C_4g" base_Comment="_sZgvILYVEemNd-3wg7C_4g"/>
+  <term:ValueSetConstraints xmi:id="_RQZRcMEFEemjmILgLWyrSg" base_Property="_420A62FD03B64263C9AE023E">
+    <constraints xmi:id="_RQZRccEFEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Observation Interpretation" valueSetURI="http://build.fhir.org/valueset-observation-interpretation.html" valueSetOID="http://build.fhir.org/valueset-observation-interpretation.html"/>
+    <constraints xmi:id="_RQZRcsEFEemjmILgLWyrSg" context="HL7_V2" valueSetName="Abnormal flags" valueSetURI="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=FCD24BBC-617F-DD11-B38D-00188B398520" valueSetOID="2.16.840.1.113883.1.11.78"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_RQZ4gMEFEemjmILgLWyrSg" base_Property="_nbH1L1aeEd6rJ7jpZ7LBFg">
+    <constraints xmi:id="_RQZ4gcEFEemjmILgLWyrSg" context="FHIM_Defined_Content" valueSetName="Anatomical Site Modifier" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.2074.1.1.24/expansion" valueSetOID="2.16.840.1.113883.3.2074.1.1.24"/>
+    <constraints xmi:id="_RQZ4gsEFEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="SNOMED CT Body Structures" valueSetURI="http://hl7.org/fhir/ValueSet/body-site" valueSetOID="http://hl7.org/fhir/ValueSet/body-site"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_RQZ4g8EFEemjmILgLWyrSg" base_Property="_kn6owB7OEeeR140udo0pbA">
+    <constraints xmi:id="_RQZ4hMEFEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Observation Category Codes" valueSetURI="http://hl7.org/fhir/ValueSet/observation-category" valueSetOID="http://hl7.org/fhir/ValueSet/observation-category"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_RQZ4hcEFEemjmILgLWyrSg" base_Property="_EpMB8HywEeSWGIFkX6Zyfg">
+    <constraints xmi:id="_RQZ4hsEFEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="DataAbsentReason" valueSetURI="http://hl7.org/fhir/ValueSet/data-absent-reason" valueSetOID="http://hl7.org/fhir/ValueSet/data-absent-reason"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_RQZ4h8EFEemjmILgLWyrSg" base_Property="_nbH1QlaeEd6rJ7jpZ7LBFg">
+    <constraints xmi:id="_RQZ4iMEFEemjmILgLWyrSg" context="FHIM_Defined_Content" valueSetName="Lab Observation Method" valueSetURI="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.2074.1.1.37/definition" valueSetOID="2.16.840.1.113883.3.2074.1.1.37"/>
+    <constraints xmi:id="_RQZ4icEFEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Observation Methods" valueSetURI="http://hl7.org/fhir/ValueSet/observation-methods" valueSetOID="http://hl7.org/fhir/ValueSet/observation-methods"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_RQafkMEFEemjmILgLWyrSg" base_Property="_GIb5cB7MEeeR140udo0pbA">
+    <constraints xmi:id="_RQafkcEFEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="ObservationStatus" valueSetURI="http://hl7.org/fhir/ValueSet/observation-status" valueSetOID="http://hl7.org/fhir/ValueSet/observation-status"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_RQafksEFEemjmILgLWyrSg" base_Property="_t1BqAB75EeeR140udo0pbA">
+    <constraints xmi:id="_RQafk8EFEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Observation Reference Range Applies To Codes" valueSetURI="http://hl7.org/fhir/ValueSet/referencerange-appliesto" valueSetOID="http://hl7.org/fhir/ValueSet/referencerange-appliesto"/>
+  </term:ValueSetConstraints>
+  <term:ValueSetConstraints xmi:id="_RQaflMEFEemjmILgLWyrSg" base_Property="_8465QB70EeeR140udo0pbA">
+    <constraints xmi:id="_RQaflcEFEemjmILgLWyrSg" context="HL7_FHIR_R4" valueSetName="Observation Reference Range Meaning Codes" valueSetURI="http://hl7.org/fhir/ValueSet/referencerange-meaning" valueSetOID="http://hl7.org/fhir/ValueSet/referencerange-meaning"/>
+  </term:ValueSetConstraints>
 </xmi:XMI>
