@@ -815,7 +815,7 @@
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xuYNMs2FEeim86HQHOyP6A" points="[0, -963, -7688, 4534]$[0, -1623, -7688, 3874]$[8523, -1623, 835, 3874]$[8523, -3057, 835, 2440]"/>
         </edges>
         <edges xmi:type="umlnotation:UMLConnector" xmi:id="_9Ox8QHyzEem396rCQEdNZA" element="_9OlH8HyzEem396rCQEdNZA" source="_CNEA0HMSEeeRrc6SOEd2wQ" target="_w564YHyzEem396rCQEdNZA" fontName="Arial" fontHeight="10" lineColor="3342489" lineWidth="1" showStereotype="Text">
-          <children xmi:type="notation:DecorationNode" xmi:id="_9OzKYHyzEem396rCQEdNZA" type="NameLabel">
+          <children xmi:type="notation:DecorationNode" xmi:id="_9OzKYHyzEem396rCQEdNZA" visible="false" type="NameLabel">
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_9OzxcHyzEem396rCQEdNZA" type="Stereotype"/>
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_9OzxcXyzEem396rCQEdNZA" type="Name"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9OzKYXyzEem396rCQEdNZA" y="-186"/>
@@ -836,19 +836,19 @@
             <children xmi:type="notation:BasicDecorationNode" xmi:id="_9O5RAHyzEem396rCQEdNZA" type="FromRole"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_9O3b0XyzEem396rCQEdNZA" y="-397"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_9O5RAXyzEem396rCQEdNZA" type="ToQualifierLabel" element="_9OqAcHyzEem396rCQEdNZA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_9O5RAXyzEem396rCQEdNZA" visible="false" type="ToQualifierLabel" element="_9OqAcHyzEem396rCQEdNZA">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_9O54EHyzEem396rCQEdNZA" type="QualifierCompartment"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_9O5RAnyzEem396rCQEdNZA" y="-186"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_9O54EXyzEem396rCQEdNZA" type="FromQualifierLabel" element="_9OnkMHyzEem396rCQEdNZA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_9O54EXyzEem396rCQEdNZA" visible="false" type="FromQualifierLabel" element="_9OnkMHyzEem396rCQEdNZA">
             <children xmi:type="notation:SemanticListCompartment" xmi:id="_9O54E3yzEem396rCQEdNZA" type="QualifierCompartment"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_9O54EnyzEem396rCQEdNZA" y="-186"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_9O54FHyzEem396rCQEdNZA" type="ToConstraintLabel" element="_9OqAcHyzEem396rCQEdNZA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_9O54FHyzEem396rCQEdNZA" visible="false" type="ToConstraintLabel" element="_9OqAcHyzEem396rCQEdNZA">
             <children xmi:type="notation:ListCompartment" xmi:id="_9O6fIHyzEem396rCQEdNZA" type="ToConstraintCompartment"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_9O54FXyzEem396rCQEdNZA" y="1058"/>
           </children>
-          <children xmi:type="notation:DecorationNode" xmi:id="_9O6fIXyzEem396rCQEdNZA" type="FromConstraintLabel" element="_9OnkMHyzEem396rCQEdNZA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_9O6fIXyzEem396rCQEdNZA" visible="false" type="FromConstraintLabel" element="_9OnkMHyzEem396rCQEdNZA">
             <children xmi:type="notation:ListCompartment" xmi:id="_9O6fI3yzEem396rCQEdNZA" type="FromConstraintCompartment"/>
             <layoutConstraint xmi:type="notation:Location" xmi:id="_9O6fInyzEem396rCQEdNZA" y="1058"/>
           </children>
@@ -1225,6 +1225,14 @@ Note that FHIR models this as a SimpleQuantity, whereas the FHIM allows an Inter
         <type xmi:type="uml:Class" href="Datatypes.efx#_GmKqYGAfEd6a0qoC8Dh7hA?FHIM/Datatypes/Code?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9YJigVpdEealceNkT9nzrg" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9YJigFpdEealceNkT9nzrg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Lnx0YHyvEem396rCQEdNZA" name="instantiates" visibility="public">
+        <ownedComment xmi:id="_S6U08HyvEem396rCQEdNZA" annotatedElement="_Lnx0YHyvEem396rCQEdNZA">
+          <body>&quot;The URL pointing to a protocol, guideline, orderset or other definition that is adhered to in whole or in part by this NutritionOrder.&quot; - HL7 FHIR, NutritionOrder.instantiates</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UJQtQXyvEem396rCQEdNZA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UJQtQHyvEem396rCQEdNZA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_3rFDQFpjEealceNkT9nzrg" name="instruction" visibility="public">
         <ownedComment xmi:id="_3rFDQVpjEealceNkT9nzrg" annotatedElement="_3rFDQFpjEealceNkT9nzrg">
@@ -1931,4 +1939,5 @@ Note that because this class is a subtype of Observation Statement, a number of 
   <Default:Documentation xmi:id="_9mpfEH12EemjxJYDpkCV3g" base_Comment="_9mnp4H12EemjxJYDpkCV3g"/>
   <Default:Documentation xmi:id="_tW1dAH2AEemjxJYDpkCV3g" base_Comment="_tW0O4H2AEemjxJYDpkCV3g"/>
   <Default:Documentation xmi:id="_6mZ1oH2AEemjxJYDpkCV3g" base_Comment="_6mYngH2AEemjxJYDpkCV3g"/>
+  <Default:Documentation xmi:id="_NL2iUMEjEem-H83RhTOSgA" base_Comment="_S6U08HyvEem396rCQEdNZA"/>
 </xmi:XMI>
